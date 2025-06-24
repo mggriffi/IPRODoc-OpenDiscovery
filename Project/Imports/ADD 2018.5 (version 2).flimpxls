@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsExcelImport
+  SaveWorkbookToFolder="false"
+  WorksheetImportType="topic"
+  PersistFirstRowAsHeader="true"
+  LimitRows="false"
+  LimitRowsCount="30"
+  SaveChartsAs="true"
+  SaveChartsAsType="Png"
+  ConvertEquations="true"
+  ExclusionFilters=""
+  CreateMasterTopic="false"
+  IncludeWorksheetTitlesAsHeadings="false"
+  ImportHiddenRowsColumns="false"
+  KeepSourceLinks="false"
+  AutoSync="false"
+  Stylesheet=""
+  PreserveSourceStyles="false"
+  LastImport="2018-10-17T08:53:53.5505428-07:00">
+  <Files>
+    <Url
+      Source="../../../../ADD 2018.5 (version 2).xlsx"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/ADD 2018.5 (version 2).xlsx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Overview.htm"
+      TimeStamp="10/17/2018 8:53:22 AM" />
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Case Admin.htm"
+      TimeStamp="10/17/2018 8:53:23 AM" />
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Rev Mgr.htm"
+      TimeStamp="10/17/2018 8:53:23 AM" />
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Int Rev.htm"
+      TimeStamp="10/17/2018 8:53:23 AM" />
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Ext Rev.htm"
+      TimeStamp="10/17/2018 8:53:24 AM" />
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Ext Usr.htm"
+      TimeStamp="10/17/2018 8:53:24 AM" />
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Linked Permission.htm"
+      TimeStamp="10/17/2018 8:53:25 AM" />
+    <Url
+      Source="../../Content/ADD 2018.5 (version 2)/Eclipse-specific.htm"
+      TimeStamp="10/17/2018 8:53:25 AM" />
+    <Url
+      Source="../TOCs/ADD 2018.5 (version 2).fltoc"
+      TimeStamp="10/17/2018 8:53:25 AM" />
+  </GeneratedFiles>
+</MsExcelImport>

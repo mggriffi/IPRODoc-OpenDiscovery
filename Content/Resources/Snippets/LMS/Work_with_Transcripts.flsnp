@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <div MadCap:targetName="Add_transcript">
+            <p>Adding a transcript requires that you upload it from a list of transcript files that you keep locally or on your server.</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click the <b>Review &amp; Transcripts</b> module and select a case. Click <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_EnterCase2.png" class="ReduceButtonSize" />. The Visual Search dashboard is displayed.</p>
+                </li>
+                <li>
+                    <p>Click the <b>Transcripts</b> icon (<img src="../../../Graphics/ADD_Review_Graphics/AR_Transcripts_icon.png" style="width: 14px;height: 19px;" class="ReduceButtonSize" />) on the left panel.</p>
+                </li>
+                <li>
+                    <p>Click the plus icon (<img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Plus_White.png" class="ReduceButtonSize" />) to the right of the <b>All Transcripts</b> label. The transcript file upload dialog box appears.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_File_Upload.png" class="Thumbnail" /></p>
+                </li>
+                <li>
+                    <p>Note the file types that are accepted; they are all text-format file types. You can either drag and drop transcript files from a particular location, or display a transcript file folder by clicking the <b>Browse</b> button. In the file folder click a file name for a single selection, or for multiple selections, hold down the SHIFT or CTRL key while selecting files. Click <b>Open</b>.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_File_Folder.png" usemap="#map1" class="Thumbnail" /><br />The accepted text file types are: .<br />txt .ascii .asc .v1 .ptf .ami .trn.</p>
+                </li>
+                <li>
+                    <p>Note that selected files display to the right in the upload dialog box. Click <b>Close</b>.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_File_Upload2.png" class="Thumbnail" /><br />The selected files that are actual transcript files are processed and listed as transcript files in the <b>All Transcripts</b> left pane.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Left_Pane.png" class="Thumbnail" /></p>
+                    <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note: If a file is not a true transcript file, it will not process and will display in the left pane with a <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_file_error_icon.png" class="ReduceButtonSize"></img> to the left of the file name. The following error dialog box appears:</p>
+                                    <p class="Note">
+                                        <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_proc_error.png" class="Thumbnail" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <p>Click a listed transcript file to see it displayed in the file viewer to the right.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_File_View_Pane.png" class="Thumbnail" /><br />The file viewer contains quick search, manual scrolling,  and page navigation. </p>
+                </li>
+                <li>
+                    <p>To perform a quick search, use the <b>Find in transcript</b> field. The results are then highlighted in the transcript. Click the up and down arrows to move to each of the highlighted results.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Quick_Search2.png" class="Thumbnail" /></p>
+                </li>
+                <li>
+                    <p>To manually scroll through the transcript page by page, click the left and right arrows. </p>
+                </li>
+                <li>
+                    <p>To navigate to a particular page, type the page number in the <b>Page</b> box and click ENTER. Note that if you type a non-existing page other than 0, you will be taken to the end of the transcript. If you type 0, you will be taken back to page 1.</p>
+                </li>
+                <li>
+                    <p>To automatically tag portions of the text with particular issues, turn on <b>Auto Annotate</b> and select the desired text segment. The Issues dialog box appears. Select the issues appropriate to the transcript.  Select the appropriate issues and then click <b>OK</b>. </p>
+                    <p>
+                        <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Auto_Annotate.png" />
+                        <br />
+                        <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Issues_dialog.png" class="Thumbnail" />
+                        <br />
+                    </p>
+                    <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note 1: If you choose to turn off <b>Auto Annotate</b>, when you select the text segment, you must manually right-click within the selected segment and click <b>Annotate</b> for the Issues dialog box to appear.</p>
+                                    <p class="Note">
+                                        <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Manual_Annotate.png" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note 2: These issue tags come from those originally created in the Tag Palette. If there are no issue tags set up, or if you would like to add or delete existing issue tags, you must update the list through the Tag Palette. In the Tag Palette screen under Tag Group Rules, there is a check box to enable Transcripts and create/edit tags, including the tag colors. For more information, see <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Manage_Tag_Palettes.htm">Create Tag Palettes</MadCap:xref>.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <p>The areas contain colored vertical-lined annotations within the margins corresponding to the issues selected, plus the region filled in accordingly.<br /></p>
+                    <p>When you hover your mouse over each vertical line, the color of the corresponding issue fills the region.</p>
+                    <p>
+                        <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_auto_annotate2.png" class="Thumbnail" />
+                        <br />
+                    </p>
+                </li>
+                <li>
+                    <p>To see the number of instances in which terms within the transcript appear, turn on <b>Word Index</b>. A list of the terms with the number of instances displays to the right of each term. Click each term to get a drop-down list of the page:line references where the term instances are located.  Clicking a reference takes you to that instance of the term, highlighting the instance in the transcript. The total number of unique terms is displayed at the bottom of the list.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Word_Index.png" /><br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Word_Index_list.png" class="Thumbnail" /><br />Click the <b>Sort</b> icon (<img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Sort_icon.png" style="width: 34px; height: 34px;" class="ReduceButtonSize" />) to sort the list.</p>
+                    <p>
+                        <br />
+                    </p>
+                    <table cellspacing="0" style="mc-table-style: url('../../Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                        <col class="TableStyle-Note_Table-Column-Column1" />
+                        <col class="TableStyle-Note_Table-Column-Column2" />
+                        <tr class="TableStyle-Note_Table-Body-Body1">
+                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                <p style="text-align: center;">
+                                    <img src="../../../Graphics/Review_Note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                <p class="Note">Note: The Word Index can assist in determining the type of transcript it is. For example, by using the sort function, the user can easily see which words are most prevalent; this can help ascertain that the transcript is about  medical malpractice, injury, or a criminal case, for example.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <h3>Display Options</h3>
+            <p>To the right of the <b>Word Index</b> switch is the Display Options (<img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Display_Options.png" />) icon. When you click this icon, you have the option to turn on the <b>Show Context</b> feature.</p>
+            <p>
+                <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Show_Context.png" class="Thumbnail" />
+            </p>
+            <p>This feature allows the currently displayed transcript to be shown with the front matter (title, pre-examination information, and so on) in italics and the examination itself with the questions emboldened. This allows the reader to focus more easily on the examination questions at hand.</p>
+            <p>
+                <img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_context_example.png" class="Thumbnail" />
+            </p>
+        </div>
+    </body>
+</html>

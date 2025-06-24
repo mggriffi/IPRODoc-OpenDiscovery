@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Production and Exports Overview</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Production and Exports Overview</h1>
+        <p class="BodyText">Eclipse<sup>®</sup> by <MadCap:variable name="Primary.IPRO" /> provides a variety of options for exporting 
+ and producing data and/or files from your <MadCap:variable name="Primary.IPRO" /> Eclipse cases. In <MadCap:variable name="Primary.IPRO" /> 
+ Eclipse (web environment), the following data and files can be exported 
+ or produced:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Field/case data 
+ (load files) </p>
+            </li>
+            <li>
+                <p>Image files (with 
+ or without redactions)</p>
+            </li>
+            <li>
+                <p>Text files</p>
+            </li>
+            <li>
+                <p>Native files</p>
+            </li>
+        </ul>
+        <p class="BodyText">Starting with <MadCap:variable name="Primary.IPRO" /> Eclipse 2016.3.0, it is also possible 
+ to load <MadCap:variable name="Primary.IPRO" /> Eclipse data and files directly into Relativity®,
+ should Relativity be required instead of <MadCap:variable name="Primary.IPRO" /> Eclipse for document review. 
+ </p>
+        <h2>Permissions Required</h2>
+        <p class="BodyText">All members of the Super Admin group can define and 
+ run export jobs <MadCap:variable name="Primary.IPRO" /> Eclipse. Others who have appropriate permissions 
+ can also perform export (or production) tasks.</p>
+        <h2 class="BodyText">Working with Production and Export Sets</h2>
+        <p class="BodyText"><MadCap:variable name="Primary.IPRO" /> Eclipse (web environment) provides a single, straightforward 
+ way for you to create an export data set from selected case documents. 
+ Optionally, this data set can be configured for production. It can also 
+ be used to load data directly into Relativity.</p>
+        <p class="BodyText">An export set is a group of documents and/or case data 
+ typically intended to be imported into another application (for example, 
+ printed for deposition preparation), while a production set is a group 
+ of documents to be provided to opposing counsel.</p>
+        <p class="BodyText">From a configuration standpoint, the only difference 
+ between an export and production set is production numbering, which identifies 
+ produced documents as such, writes them back to the database, and allows 
+ them to be included in the case (on the Production tab of the Document 
+ Details pane).</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note:The 
+		 term “export” is often used to refer to either export and production 
+		 sets. Details specific to productions are clearly identified.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">A variety of options exists for export sets, including 
+ file type, numbering, and endorsement choices. Output options are based 
+ on the files defined in your database (that is, if you do not have native 
+ files in your case, none can be exported). For production sets, detailed 
+ summary and history records are maintained for administrative purposes. 
+ </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Beginning with <MadCap:variable name="Primary.IPRO" /> 
+		 Eclipse 2013, <MadCap:variable name="Primary.Name" /> Worker(s) are required for running export/production 
+		 jobs. <MadCap:variable name="Primary.Name" /> Workers allow distributed processing of these jobs and 
+		 are installed with <MadCap:variable name="Primary.IPRO" /> Eclipse. If you have any export/production 
+		 problems or questions, contact the administrator who installed 
+		 or upgraded <MadCap:variable name="Primary.IPRO" /> Eclipse, or contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank" style="font-size: 10pt;">IPRO Support</a>.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="BodyText"><a name="Before_You_Begin"></a>Before You Begin</h2>
+        <h3>Licenses Requirements</h3>
+        <p class="BodyText">If you want to export more than one set of documents 
+ at a time (create and run multiple or concurrent export jobs), your <MadCap:variable name="Primary.IPRO" /> 
+ Eclipse license must be appropriate. If you have any questions about multiple 
+ exports, contact <MadCap:variable name="Primary.IPRO" /> Support.</p>
+        <h3>Basic Preparation</h3>
+        <p class="BodyText">Prepare for export with the following actions:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Case 
+ validation</span>: Beginning with <MadCap:variable name="Primary.IPRO" /> Eclipse 2013, file locations must 
+ be validated in <MadCap:variable name="Primary.IPRO" /> Eclipse Administration after product upgrades, and 
+ this validation is required before an export job can be completed. See 
+ <a href="../../Eclipse_Administration/Case_Setup/Validate_File_Paths.htm">"Validate 
+ File Paths"</a> in the Eclipse Administration Section for details.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Document 
+ identification</span>: Identify 
+ which documents are to be exported, then create and save a search in <MadCap:variable name="Primary.IPRO" /> 
+ Eclipse that will represent these documents. In 
+ addition, determine what types of files should be exported. <MadCap:variable name="Primary.IPRO" /> Eclipse 
+ offers several options, which you can learn about by completing <a href="../../Eclipse_Administration/Exports_Productions/Understand_Export_and_Production.htm#Export_Process_Introduction">"Export 
+ Process Introduction."</a></p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Review 
+ completion</span>: For production jobs, the document review process is 
+ normally completed before you perform the production. Documents should 
+ be tagged, redacted, and annotated so that you will be able to create 
+ appropriate production set(s) as required by the requesting organization 
+ (such as an internal department, opposing counsel, or a government agency). 
+ </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Optional 
+ security criteria</span>: If needed, configure the Production Shield to 
+ define the documents that should not be exported (or produced). </p>
+            </li>
+        </ul>
+        <h2>Production Tab Toolbar</h2>
+        <table style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Button</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">
+                            <img src="../../../Graphics/Eclipse Web Images/btn_image_magnify.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Magnify/reduce image (same as Image tab).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">
+                            <img src="../../../Graphics/Eclipse Web Images/btn_image_rotate_left.png" alt="" style="border: none;" border="0" />
+                            <img src="../../../Graphics/Eclipse Web Images/btn_image_rotate_right.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Rotate image (same as Image tab).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">
+                            <img src="../../../Graphics/Eclipse Web Images/btn_image_print.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Print document.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">
+                            <img src="../../../Graphics/Eclipse Web Images/btn_production_set.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Select a set of produced documents.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

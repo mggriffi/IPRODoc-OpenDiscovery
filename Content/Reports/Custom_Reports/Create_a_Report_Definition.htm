@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports,Primary._FixedList" style="mc-master-page: url('../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head>
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create a Report Definition</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create a Report Definition" />Create a Report Definition</h1>
+        <p class="BodyText">You can include a report definition in the <MadCap:variable name="Primary.Name" /> database 
+ for any report containing parameters, or if you want to include visual 
+ customizations such as charts, aggregates, or specific column formatting.</p>
+        <p class="BodyText">In order to execute and configure the display of a 
+ custom report, a record to the Reporting.ReportDefinition is necessary. 
+ The schema is as follows:</p>
+        <p class="Image">
+            <img src="../../Resources/Images/ReportDefinitionSchema.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">The fields in this table include:</p>
+        <table cellspacing="0" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 550px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field 
+		 Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ReportDefinitionId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 auto-generated ID field for the table.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 display name of the report. This name appears on the Reports page 
+		 in the <MadCap:variable name="Primary.Name" /> website. Make the name as self-descriptive as possible; 
+		 consider naming conventions for custom reports to ensure clarity 
+		 and consistency.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ProductId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Refers 
+		 to the product that your report will be available to. This must 
+		 be a value from the <MadCap:variable name="Primary.Name" /> Product table.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ReportTypeId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Refers to the report 
+		 type. The reports are grouped on the Reports page by the report 
+		 type. The report types are listed in the Reporting.ReportType 
+		 table.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">RequiredPermission</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This field corresponds to the Permission that is required to see and run the report. If this field is left blank, this report will show for all users that have permissions to the Reports component.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IsCommonReport</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This field determines 
+		 whether your custom report should be considered <span style="font-style: italic;">common</span>. 
+		 A common report is displayed in the <MadCap:variable name="Primary.Name" /> Website even if it is 
+		 not automatically detected in the product database.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ExecutionMetadata</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Contains the metadata 
+		 needed by the system to run your report. This field must contain 
+		 valid JSON (JavaScript Object Notation). This is a complex field; 
+		 see<a href="ExecutionMetadata_Field.htm"><MadCap:xref href="ExecutionMetadata_Field.htm"> Execution Metadata Field</MadCap:xref></a> for more information.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">DisplayMetadata</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Contains the metadata 
+		 that customizes the display of your report. This is a complex 
+		 field; see <MadCap:xref href="DisplayMetadata_Field.htm">Display Metadata Field</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Create_Custom_Reports.htm">Create Custom Reports</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_a_Stored_Procedure.htm">Create a Stored Procedure</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Automatic_Report_Detection.htm">Automatic Report Detection</MadCap:xref>
+        </p>
+    </body>
+</html>

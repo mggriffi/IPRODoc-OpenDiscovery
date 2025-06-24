@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <div>
+            <h1>
+                <MadCap:keyword term="Manage Review Passes and Batches;Manage Review Passes" />Manage Review Passes</h1>
+            <div>
+                <p>Once a review pass has been created, you can access, manage, and modify it in the Review Pass Management work area. For information on how to create a review pass, see <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>.</p>
+                <p>This topic outlines the process of working in the Review Pass Management work area. </p>
+                <p>
+                    <img src="../../../Graphics/ADD_Review_Graphics/Review_Passes/AL_OverviewTab.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p>
+                                    <img src="../../Images/myipro_tip.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Review passes can either be <MadCap:variable name="Primary.Active Learning" /> enabled or <MadCap:variable name="Primary.Active Learning" /> disabled. For more information on the difference between the two, see <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Overview_Review_Passes.htm">Overview: Review Passes</MadCap:xref>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Detailed metrics are provided on the  review pass dashboard. From this dashboard, you can view three different tabs:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>
+                            <b>Overview</b>: The Overview tab provides an in-depth breakdown of review metrics, review progress, documents manually reviewed, and batch information.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Reports</b>: The Reports tab offers three different reports to help users visualize data for the review pass.</p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Settings</b>: The Settings tab shows the various parameters defined in the configuration of the review pass.</p>
+                    </li>
+                </ul>
+                <h2>Work with the Review Pass</h2>
+                <div MadCap:targetName="Work_with_Review_Pass">
+                    <p>Active Learning enabled and Active Learning disabled review passes show the same metrics and graphs in the Review Pass Management work area. This is because <MadCap:variable name="Primary.Active Learning" /> disabled review passes still run <MadCap:variable name="Primary.Active Learning" /> “in the background.” For an AL disabled review pass, you can enable AL at any time to get the benefit of document prioritization, so that more relevant documents are batched higher in the queue. </p>
+                    <p>Expand the sections below to learn more about working within each tab, whether for an <MadCap:variable name="Primary.Active Learning" /> enabled or <MadCap:variable name="Primary.Active Learning" /> disabled review pass.</p>
+                    <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">For <MadCap:variable name="Primary.Active Learning" /> disabled review passes, you can fully turn off the <MadCap:variable name="Primary.Active Learning" /> component in SQL. If so, the graphs described below will not be available.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>
+                        <MadCap:toggler targets="Overview">Overview Tab</MadCap:toggler>
+                    </h3>
+                    <div MadCap:targetName="Overview">
+                        <p>The Overview tab provides an in-depth breakdown of review metrics, review progress, documents manually reviewed, and batch information. Read through the sections below to learn more about what you can do on the Overview tab.</p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: The Batch Management section is placed at the top of the Overview tab in AL disabled review passes, but placed at the bottom of the tab in AL enabled review passes.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Review Metrics</h3>
+                        <div MadCap:targetName="Review Metrics">
+                            <p>The Review Metrics table displays an array of data that provides a breakdown of review progress and predictions for the tag selected as your primary review purpose. For information about this section, see the table below.</p>
+                            <p>
+                                <img src="../../../Graphics/ADD_Review_Graphics/Review_Passes/AL_OverviewTab.png" class="Thumbnail" />
+                            </p>
+                            <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                <tbody>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                            <p class="TableText">
+                                                <img src="../../Images/myipro_note.png" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                            <p class="Note">Note: Predictions represented in this chart may fluctuate widely in the early stages of review, but as the model settles they will begin to solidify.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                            <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css'); margin-left: auto; margin-right: auto;" cellspacing="0">
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <thead>
+                                    <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                                        <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                                            <p class="TableHead">Metric</p>
+                                        </th>
+                                        <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                                            <p class="TableHead">Description</p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">Positive</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText"> This metric displays the total number of documents predicted positive,  the number of documents manually reviewed as positive, and the number of unreviewed documents predicted positive. Additionally, it displays any conflicts between the AL  prediction and what reviewers manually tagged. </p>
+                                            <p class="TableText">For example, if you identify the purpose of a review to be determining responsiveness, documents you tag Responsive show up as positive. If the AL system predicts a document to be negative (a tag other than Responsive) and a reviewer tags it Responsive, this gets logged as a conflict. You can view the full list of conflicts by selecting the hyperlinked <MadCap:conditionalText MadCap:conditions="">number associated with this metric. See <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm#Create">Create a QC Batch</MadCap:xref>.</MadCap:conditionalText></p>
+                                            <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                                <tbody>
+                                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                            <p>
+                                                                <img src="../../Images/myipro_tip.png" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                            <p class="Note">Note: For a document to be marked as positive, it has to be tagged with your primary review purpose tag, marked as reviewed, and checked in.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">Negative</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText"> This metric displays the total number of documents predicted as negative,  the number of documents manually reviewed as negative, and the number of unreviewed documents predicted negative. Additionally, it displays any conflicts between the AL  prediction and what reviewers manually tagged. </p>
+                                            <p class="TableText" style="font-style: normal;">For example, if you identify the purpose of a review to be determining responsiveness, documents that are <u>not</u> tagged Responsive show up as negative. If the AL system predicts a document to be positive (i.e. Responsive) and a reviewer tags it as non-Responsive, this gets logged as a conflict. You can view the full list of conflicts by selecting the hyperlinked number associated with this metric. See <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm#Create">Create a QC Batch</MadCap:xref>.</p>
+                                            <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                                <tbody>
+                                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                            <p>
+                                                                <img src="../../Images/myipro_tip.png" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                            <p class="Note">Note: For a document to be marked as negative,  your primary review purpose tag must not be applied, and the document must be marked as reviewed and checked in.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">On Hold</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText"> These are the documents placed on hold manually by reviewers. Generally, these are documents that require an additional set of eyes and can be quickly navigated to by clicking on the search link provided.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">Total Documents</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText"> This metric displays the total number of documents in your review pass, the number of documents that have been tagged manually, the number of unreviewed documents, and the total number of conflicts.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">Precision</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText">The calculated percentage of documents that are both predicted and actually positive.</p>
+                                            <p class="TableText" MadCap:conditions="Primary.Blocked"><![CDATA[ ]]><MadCap:annotation MadCap:createDate="2022-04-05T18:05:58.0944743-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Get with Croye on this" MadCap:editor="mcohen" MadCap:editDate="2022-04-05T18:06:03.7157866-07:00">Precision</MadCap:annotation> is the percentage of predicted positive documents that were actually positive.</p>
+                                            <p class="TableText" MadCap:conditions="Primary.Blocked">For example, let's say you have 1000 documents that the AL system predicts as positive in your review pass. If 800 of these predicted positive documents are <i>actually</i> positive (tagged as such by reviewers), then precision would be 80%.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">Recall</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText">The calculated percentage of relevant documents that have been identified in a data set.</p>
+                                            <p class="TableText" MadCap:conditions="Primary.Blocked">
+                                                <MadCap:annotation MadCap:createDate="2022-04-05T18:04:50.7449256-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Get with Croye on this" MadCap:editor="mcohen" MadCap:editDate="2022-04-05T18:04:57.8765857-07:00">Recall</MadCap:annotation> is the percentage of documents users have tagged as positive compared to the number of system predicted positive documents in the given Review Pass.</p>
+                                            <p class="TableText" MadCap:conditions="Primary.Blocked">For example, let's say you have 1000 documents that the AL system predicts as positive in your review pass. If reviewers have found and tagged 800 of these predicted positive documents, then recall would be 80%. In other words, recall is a measure of how many documents predicted positive have been reviewed and tagged as such.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">Active Learning Status</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText"> A status ranging from poor to excellent is used to indicate the status of the current active learning model. Many of the metrics are less reliable until this status reaches at least “good.”</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                            <p class="TableText">Prevalence</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                            <p class="TableText">  This represents the estimated percentage of documents in the review pass that are positive.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                            <p class="TableText">Responsive Documents</p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                            <p class="TableText"> This is the predicted range of positive documents in the review pass.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3> Review Progress Graph</h3>
+                        <div MadCap:targetName="RevProgressGraph">
+                            <p>The Review Progress graph displays a breakdown of document review by day, week, or month. The numbers on the left side of this graph represent total documents. The numbers on the right side represent the recall percentage, and correspond to the line graph that extends from one column to the next.</p>
+                            <p>
+                                <img src="../../../Graphics/ADD_Review_Graphics/Review_Passes/AL_Overview_ReviewProgress.png" class="Thumbnail" />
+                            </p>
+                            <p>To configure the Review Progress graph:</p>
+                            <ol>
+                                <li>
+                                    <p>Determine the date range that displays on the graph. Click the dates in the top-left corner of this section to open the calendar. From here, select your starting date. The date is highlighted with a blue circle. Next, select your end date. You can click the right arrow button in the popup window to extend the range into the next month. This range represents the scope of the graph.</p>
+                                    <p>
+                                        <img src="../../../Graphics/ADD_Review_Graphics/Review_Passes/AL_Overview_ReviewProgress_Calendar.png" class="Thumbnail" />
+                                    </p>
+                                    <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                        <tbody>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                    <p class="TableText">
+                                                        <img src="../../Images/myipro_note.png" />
+                                                    </p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                    <p class="Note">Note: If you select a starting date, but decide to choose an earlier date on the calendar, the earlier date becomes your new starting date. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <p>Determine if you would like to see the graph represented in days, weeks, or months. Select the appropriate option by clicking <b>Day</b>, <b>Week</b>, or <b>Month</b> in the top-right corner of this section.</p>
+                                </li>
+                                <li>
+                                    <p>To see a quick rundown of review progress over the specified range, hover your mouse over a column in the chart.</p>
+                                    <p>
+                                        <img src="../../../Graphics/ADD_Review_Graphics/Review_Passes/AL_Overview_ReviewProgress_Hover_Tooltip.png" class="Thumbnail" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>To see a more detailed view of review progress by user, click into one of the bars on this chart. Hover over a column to see more information about each reviewer's individual progress. Click the <b>Back</b> button in the top-right of the graph to return to the broader review progress graph.</p>
+                                </li>
+                                <li>
+                                    <p>When you select a column in the graph, a Review Progress Details chart opens with more information about the tagged documents. Select a hyperlinked number to open the associated documents in the Review Grid.</p>
+                                    <p>
+                                        <img src="../../../Graphics/ADD_Review_Graphics/Review_Passes/AL_Overview_ReviewProgress_Details.png" class="Thumbnail" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>When you set a date range for the  chart, you can scroll down to see the <b>Documents Manually Reviewed</b> table. This is a detailed table that provides information on individual documents that have been reviewed within the range selected. The information includes:</p>
+                                    <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css'); margin-left: auto; margin-right: auto;" cellspacing="0">
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                        <thead>
+                                            <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                                                <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                                                    <p class="TableHead">Metric</p>
+                                                </th>
+                                                <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                                                    <p class="TableHead">Description</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                                    <p class="TableText">Begdoc</p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                                    <p class="TableText">The begdoc number that identifies the document.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                                    <p class="TableText">Reviewer</p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                                    <p class="TableText">The individual who reviewed the document. Note that you can see a more detailed view of individual reviewer progress by clicking into one of the bars on the Review Progress chart.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                                    <p class="TableText">Last Reviewed</p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                                    <p class="TableText"> The date and time when the document was last reviewed. </p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                                    <p class="TableText">Reviewer Tag</p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                                    <p class="TableText">Whether the tag applied to the document was positive or negative.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                                    <p class="TableText">Prediction Agreement</p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                                    <p class="TableText">Whether the tag manually applied to the document matched what the AL system predicted.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                    <p class="TableText">Current Relevancy Score</p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                    <p class="TableText">The AL system's prediction for how relevant the document is, with a higher number indicating that the system more confidently predicts the document to be positive.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ol>
+                        </div>
+                        <h3>Batch Information</h3>
+                        <div MadCap:targetName="Batch Management">
+                            <p>Here you can find a high-level overview of the current status of your review pass based on batch progress.</p>
+                            <p>
+                                <img src="../../../Graphics/ADD_Review_Graphics/Review_Passes/BatchMgt_2.png" class="Thumbnail" />
+                            </p>
+                            <p>Additionally, you can:</p>
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p>
+                                        <b>Manage Batches</b> - Click this button to open the Batch Management work area. For more information, see <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm">Manage  Batches</MadCap:xref>. </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>Update Documents</b> - If new documents have been added to the case that meet the scope of the review pass, you can add them to the review pass by clicking the <b>Update</b> button.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>
+                        <MadCap:toggler targets="Reports">Reports Tab</MadCap:toggler>
+                    </h3>
+                    <div MadCap:targetName="Reports">
+                        <p>The Reports tab offers insights into your review pass by means of three graphs. </p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: The information provided on these graphs is updated in real time as you continue to review.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Relevancy Scores Graph</h3>
+                        <p> The <b>Relevancy Scores</b> graph shows a distribution of documents in the selected review pass based on their current relevancy score, also known as their <b>Relevancy Index</b>. This score reveals how confidently the AL system predicts the document to be positive or negative.  Documents with a higher score are predicted to have a higher chance of being positive than documents with a lower score. The relevancy range extends from -100 (least likely to be positive) to 100 (most likely to be positive).</p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: A document with a positive relevancy score (let's say, of 15), does not mean that the document is predicted as positive by the AL system. Rather, this range provides a more nuanced view of the comparative likelihood of a document being positive. A document with a score of 15 is comparatively more likely to be positive than a document with a score of -15.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Hovering over a bar shows the <b>Relevancy Index </b>for that score:</p>
+                        <p>
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_enabled_reports3.png" class="Thumbnail" />
+                        </p>
+                        <p>You can determine the scope of this graph by adjusting the Relevancy Range at the top. The wider the range, the more inclusive the document set. </p>
+                        <p>
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_enabled_reports1.png" style="width: 119px; height: 74px;" class="Thumbnail" />
+                        </p>
+                        <p>Below the graph, a chart depicts a breakdown of tag predictions.</p>
+                        <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <thead>
+                                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                                        <p class="TableHead">Metric</p>
+                                    </th>
+                                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                                        <p class="TableHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                        <p class="TableText">Relevancy Range Index Details - Selected</p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                        <p class="TableText">Tag predictions for the selected relevancy range. Note that if you narrow the relevancy range, for example, to between 60 and 80, fewer documents will display within the <b>Relevancy Range Details</b> section of the chart.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">Relevancy Index Totals</p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="TableText"> Tag predictions for the entire document set within the review pass.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Clicking a link will trigger a Visual Search for that particular document set.</p>
+                        <h3>Desired Recall Graph</h3>
+                        <p>The <b>Desired Recall</b> graph can help you best determine the desired recall you should use for your review pass. Review the document count and precision level associated with each recall percentage and determine what desired recall you should set. You can modify your desired recall at any time, as explained below.</p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: Precision and recall are often inversely related. Setting a higher desired recall will loosen the requirements for what the AL system considers positive, thereby introducing more false positives into your document count. Setting the desired recall lower will, in turn, reduce the number of false positives, but it may prevent some actual positive documents from appearing as such.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_enabled_reports2.png" class="Thumbnail" />
+                        </p>
+                        <p>To use the <b>Desired Recall</b> graph:</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p>Hover your cursor over each bar to see a breakdown of the document counts and precision percentage associated with each recall percentage.</p>
+                            </li>
+                            <li>
+                                <p>Based on these metrics, determine the desired recall percentage that makes most sense for your review. Be mindful that a higher desired recall will introduce more false positives. </p>
+                            </li>
+                            <li>
+                                <p>To change your desired recall, select the <b>Edit</b> icon, <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_CAL_edit.png" />, in the top-right corner, adjust the Desired Recall setting, and select <b>Save</b>.</p>
+                            </li>
+                        </ul>
+                        <h3>Estimated Predicted Relevant Documents Chart</h3>
+                        <p>The <b>Estimated Predicted Relevant Documents</b> chart displays the predicted relevant documents against the number of manually reviewed documents. It can be used to see the number of predicted documents leveling off as the model is refined.</p>
+                        <p>
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_enabled_reports5.png" class="Thumbnail" />
+                        </p>
+                        <p>Hovering over a point shows the manually reviewed documents, as well as the number of documents predicted relevant:</p>
+                        <p>
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_enabled_reports6.png" class="Thumbnail" />
+                        </p>
+                        <p>In the above example, after 30 documents have been manually reviewed, the AL system predicts that a total of 3,228 documents in the review pass are positive.</p>
+                        <p>As documents continue to be reviewed, the number of documents predicted as positive will change, as the AL system refines its algorithms for what is considered a positive match. </p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p>
+                                            <img src="../../Images/myipro_tip.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Tip:  If the line graph varies greatly from one check in to the next, that is a good sign that the model has not stabilized and that review must continue.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3>
+                        <a name="Settings">
+                        </a>
+                        <MadCap:toggler targets="Settings">Settings Tab</MadCap:toggler>
+                    </h3>
+                    <div MadCap:targetName="Settings">
+                        <p>The Settings tab shows you the configuration of your review pass. You can scroll through the list of parameters to get a high-level view of how the review pass was defined. </p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p>
+                                            <img src="../../Images/myipro_tip.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Tip: Certain parameters can be modified at any time. To edit your review pass, select the <b>Edit</b> icon, <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_CAL_edit.png" class="ReduceButtonSize" />, in the top-right corner, adjust setting as needed, and select <b>Save</b>.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>
+                            <MadCap:toggler targets="AL Enabled Settings">Active Learning Enabled Settings</MadCap:toggler>
+                        </h4>
+                        <div MadCap:targetName="AL Enabled Settings">
+                            <p>The table below lists the various parameters defined for your <MadCap:variable name="Primary.Active Learning" /> review pass, along with their descriptions.</p>
+                            <MadCap:snippetBlock src="../Settings_Tab_AL_Enabled.flsnp" />
+                        </div>
+                        <h4>
+                            <MadCap:toggler targets="AL Disabled Settings">Active Learning Disabled Settings</MadCap:toggler>
+                        </h4>
+                        <div MadCap:targetName="AL Disabled Settings">
+                            <p>The table below lists the various parameters defined for your <MadCap:variable name="Primary.Active Learning" /> disabled review pass, along with their descriptions.</p>
+                            <MadCap:snippetBlock src="../Settings_Tab_AL_Disabled.flsnp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Review" style="mc-master-page: url('../../../../../Resources/MasterPages/Review_MP.flmsp');">
+    <head>
+        <link href="../../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Default Search Assumptions</title>
+        <link href="../../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Default Search Assumptions</h1>
+        <p class="BodyText">The following types of searches are available within Advanced Search or Visual Search. </p>
+        <p class="BodyText">Simple searches 
+ – words or phrases with no specific search criteria included – are conducted 
+ by using the following default criteria.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Full text</span>, <span style="font-weight: bold;">all 
+ fields</span>, <span style="font-weight: bold;">all records</span>: All 
+ indexed words in all indexed fields (that the user has rights to view) 
+ of all records are examined. If you have any questions about whether a field 
+ is indexed, contact your administrator. All fields (indexed and non-indexed) 
+ are searchable through a field-specific search. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">All 
+ words</span>: For a plain search (with no operators), all search words 
+ must exist in the database record, but not necessarily in the same field 
+ or in the same order. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Search 
+ order</span>: When multiple words or statements comprise a search expression, 
+ the search is conducted from left to right, top to bottom (similar to 
+ the way a mathematical equation is treated). </p>
+            </li>
+        </ul>
+        <h3>Examples</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p><span style="font-family: 'Courier New', monospace;">annual and profit and 
+ deficit</span>
+                </p>
+            </li>
+            <p class="BodyTextIndent">This simple search will find all records containing 
+ all three words (annual AND profit AND deficit) in any indexed case field. 
+ </p>
+            <li>
+                <p><span style="font-family: 'Courier New', monospace;">(annual 
+ or profit) and deficit</span>
+                </p>
+                <p class="BodyTextIndent">This search phrase will find all records containing 
+ annual OR profit (in any indexed case field) and then reduce that set 
+ to those documents containing the word deficit (in any indexed case field). 
+ </p>
+            </li>
+        </ol>
+        <h2>Case Sensitivity</h2>
+        <p class="BodyText">In <MadCap:variable name="Primary.ProdName_Review" />, searches are not case sensitive. For example, 
+ the same results occur whether you search for <span style="font-family: 'Courier New', monospace;">smith</span>, 
+ <span style="font-family: 'Courier New', monospace;">SMITH</span>, or 
+ <span style="font-family: 'Courier New', monospace;">Smith</span>. Likewise, 
+ all search criteria and operators, as explained in the following paragraphs, 
+ are case insensitive.</p>
+        <h2>Special Characters</h2>
+        <p class="BodyText">Punctuation marks (other than characters defined for 
+ specific uses, such as an asterisk) in a search statement are treated 
+ as spaces. For example, a search for A208(d)(5)(iv) would become A208 
+ d 5 iv (four words). When punctuation marks are included in a search statement, 
+ highlighting may not be consistent between the <span style="font-weight: bold;">Image</span> 
+ and <span style="font-weight: bold;">Text</span> tabs.</p>
+        <p class="BodyText">When entering such search terms, entering spaces in 
+ place of the punctuation may be easier and provide more consistent highlighting 
+ of results. In some cases, enclosing the term in quotation marks (for 
+ a specific search) may also help ensure the needed results are found and 
+ highlighted.</p>
+        <h2>Concatenated Fields</h2>
+        <p class="BodyText">If your case includes concatenated fields (created 
+ when multiple fields are imported into a single field in <MadCap:variable name="Primary.ProdName_Review" />) 
+ and a delimiter is used in the concatenated field, the delimiter will 
+ be ignored during searches. </p>
+        <h2><a name="Types_of_Search"></a><a name="Types"></a>Types of Search</h2>
+        <p class="BodyText">The following table lists the types of searches available 
+ in <MadCap:variable name="Primary.ProdName_Review" />. </p>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 583px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Batch-related searches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch 
+		 Assigned To</span>: Search for batches assigned to a specific 
+		 user(s).</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch Id</span>: Search for documents 
+		 within specific batches by their ID number.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch Review Status</span>: Search 
+		 for documents in batches with a specific status.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch Set</span>: Search for documents 
+		 in a specific batch (review) set.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Saved Searches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Combine 
+		 this with another search to refine the results of a saved public 
+		 search. Must have permission to view saved searches.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Review Status</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">For 
+		 a particular review pass of a particular case, search for documents 
+		 that are tagged as <span style="font-weight: bold;">Reviewed</span>, 
+		 <span style="font-weight: bold;">Not Reviewed</span>, or <span style="font-weight: bold;">On Hold</span>.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Redaction Categories</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents that contain a specified redaction(s).  For information 	 about redactions, see <MadCap:xref href="../../Manage_Case_Settings/Redactions/Manage_Redaction_Categories.htm">Set up Redaction Categories</MadCap:xref> .</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Document Tags</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents that have been marked with a specific document tag. 
+		 </p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Field-specific searches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents with specified content in a selected field.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Timeline Search</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents within a certain date range; the Timeline  displays the selected date range. For details about the Timeline, see<MadCap:xref href="../Overview_Searching.htm"> Overview: Searching</MadCap:xref> <MadCap:xref href="../Defining_Searches/AR_Define_the_Timeline.htm">.</MadCap:xref></p>
+                        <p class="TableText">The Timeline itself or an Advanced Search 
+		 can be used to find documents within a certain date range.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Full Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">The 
+		 simplest type of search. Full-text searches look for words or 
+		 phrases in one or more indexed fields of <MadCap:variable name="Primary.ProdName_Review" />. This includes 
+		 indexed database fields and extracted text as described at the 
+		 beginning of this topic.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">Different search types can easily be combined. With some limitations, search types 
+ are combined in expressions using Boolean operators AND, OR, and NOT.</p>
+        <p>System Fields on which you can search include the following examples: </p>
+        <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../../../../Resources/TableStyles/CD360_Basic_Table.css'); margin-left: 0; margin-right: auto;" cellspacing="0">
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1" MadCap:conditions="">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">System Field</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">BEGATT</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">	A unique number used to track the first page of a document family</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">BEGDOC</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">	A unique number used to track the first page of a document</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">ENDATT</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">	A unique number used to track the last page of a document family</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">ENDDOC</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">	A unique number used to track the last page of a document</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Extracted Text</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">	Document's text</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Extracted Text Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">	Document's text size  (KB)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">MD5 Hash</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText">	A unique value for a document used for determining duplicates</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><i style="font-weight: bold;">Related Topics</i>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Search_Results.htm">Work with Search Results</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../../Manage_Case_Settings/Redactions/Manage_Redaction_Categories.htm">Set up Redaction Categories</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../../Manage_Case_Settings/Tag Palette/Overview_Tags.htm">Managing Tags</MadCap:xref>
+        </p>
+    </body>
+</html>

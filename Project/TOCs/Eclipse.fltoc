@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Getting Started with Eclipse® by Ipro"
+    Link="/Content/Review/Eclipse.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
+    Title="Eclipse Web End User"
+    Link="/Content/Review/Eclipse_web/Eclipse_Web_End_User.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Review/Eclipse_web/First_Steps/Get_Started_with_Eclipse_Web.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/First_Steps/Get_Started_with_Eclipse_Web.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/First_Steps/Log_Into_Eclipse_Web.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/First_Steps/Case_Selection.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/First_Steps/Batch_Selection.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Navigation"
+      Link="/Content/Review/Eclipse_web/Navigation/Interface_Components.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Interface_Components.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Basic_Layout_Changes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Advanced_Layout_Changes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Keyboard_Shortcuts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Case_Details_Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Case_Table.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Navigate_the_Case_Table.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Case_Table_Columns.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Tallying_Column_Data.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Filter_By_Date_Range.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Other_Case_Table_Activities.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Record_View_Pane.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Working_with_Linked_Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Documents_Tab.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Relationships_(Tally)_Pane.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Review_Relationship_Details.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Comparing_Related_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Navigation/Document_History.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Review Set Up"
+      Link="/Content/Review/Eclipse_web/Review_Set_Up/Administrative_Alerts.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Administrative_Alerts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Configure_Smart_Folders.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Working_with_Smart_Folders.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Persistent_Highlighting.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Mass_Actions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Export_Data_for_Multiple_Records.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Tag_Multiple_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Print_Multiple_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Review_Set_Up/Globally_Replace_Field_Content.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Search Functionality"
+      Link="/Content/Review/Eclipse_web/Search_Functionality/Searching_Overview.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Searching_Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Search_Methods.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Default_Search_Assumptions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Search_Syntax.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Run_and_or_Save_a_Search.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Search_Results.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Saved_Searches.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Search_Folders.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Search_History.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Viewing_Search_Results.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Basic Search"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Basic_Search_Expressions.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Basic_Search_Expressions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Multi-Part_Search_Expressions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Advanced Search"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Advanced_Search.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Advanced_Search.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Advanced Search Procedure"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Advanced_Search_Procedure.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Advanced_Text_Search.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+        <TocEntry
+          Title="Define a Concept Search"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Advanced_Concept_Search.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Define a Field Specific Search"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Define_a_Field_Specific_Search.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Visual Search"
+        Link="/Content/Review/Eclipse_web/Search_Functionality/Visual_Search_Overview.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Visual_Search_Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Basic_Visual_Search_Procedure.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/The_Timeline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Search_Functionality/Define_a_Timeline_Search.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Analytics"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      Link="/Content/Review/Eclipse_web/Analytics/Analytics_Overview.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Analytics/Analytics_Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        StartSection="false"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue"
+        ComputeToc="false" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Analytics/Eval_and_Refine_Document_Categories.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Analytics/Evaluate_Document_Clusters.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Analytics/Use_the_Concept_Wheel.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Analytics/TAR.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Ipro Analytics"
+        Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Understand_AnalyticsIA.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/SetUpRelPanel_to_DisplayEmThreadsIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/SetUpRelPanel_to_DisplayND_IA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/Create_FullEmThread_Batches_for_ReviewIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/Create_InclusiveEmailThread_Batches_for ReviewIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/Create_NearDup_Batches_for_ReviewIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/Create_EmailThrandND_Batches_for_ReviewIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+          StartSection="false"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/Analytics_Index_FieldsIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/Email_Threading_FieldsIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Analytics/Ipro Analytics/Near-Duplicate_FieldsIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Case Documents"
+      Link="/Content/Review/Eclipse_web/Case_Documents/Document_Details.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Document_Details.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Document_Image_Tab.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Print_Document_Images.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Transcripts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Opening_a_Transcript.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Finding_Transcript_Content.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Annotating_Transcripts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Printing_Transcripts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Transcript_Reports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Native_Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Viewing_Native_Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Other_Native_File_Actions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Extracted_Text.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Viewing_Extracted_Text.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Case_Documents/Printing_Extracted_Text.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Tags and Annotations"
+      Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Managing_Annotations.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Managing_Annotations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Image_Annotations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Image_Redactions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Working With Tags"
+        Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Tags.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Tagging_Preparation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Types_of_Tags.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Tag_Rules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Tags_and_Related_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Searching_for_Tagged_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Working_with_Private_Tags.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_web/Tags_and_Annotations/Working_with_Public_Tags.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Reports"
+      Link="/Content/Review/Eclipse_web/Reports/Report_Overview.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Reports/Report_Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Reports/Available_Reports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Reports/Run_a_Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Reports/Export_a_Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Exports and Productions"
+      Link="/Content/Review/Eclipse_web/Exports_and_Productions/Production_and_Exports_Overview.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Exports_and_Productions/Production_and_Exports_Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Exports_and_Productions/Production_History.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_web/Exports_and_Productions/Production_Printing.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Review/Eclipse_web/Eclipse_FAQs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Review/Eclipse_web/Eclipse_Web_Videos.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="Eclipse Administration"
+    Link="/Content/Review/Eclipse_Administration/Eclipse_Administration.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Review/Eclipse_Administration/First_Steps/Get_Started_with_Eclipse_Administration.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Get_Started_with_Eclipse_Administration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Log_into_Eclipse_Administration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Eclipse_Administration_Workflow.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Define_Your_Eclipse_Administrative_Team.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Navigate_the_Interface.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Use_Lists.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Eclipse_User_Management_Basics.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Manage_Eclipse_Security.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/Monitor_User_Activity.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/First_Steps/System_Administration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Case Setup"
+      Link="/Content/Review/Eclipse_Administration/Case_Setup/Create_Managing_Clients_and_Clients.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Create_Managing_Clients_and_Clients.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Create a Case"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Create_a_Case.htm">
+        <TocEntry
+          Title="Create a Case in Eclipse"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Create_a_Case_in_Eclipse.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Step_1__Set_Up_a_Case.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Step_2__Load_a_Case_Definition.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Step_3__Define_Database_Fields.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Step_4__Select_Case_Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Step_5__Finish_Case_Creation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Migrate_Cases_from_a_Third-Party_Database.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Enable_an_Ipro_(Cloud)_Case.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Add Alerts"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Case_Instructions_or_Documents.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Case_Instructions_or_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Case_Alerts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Manage a Case"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_a_Case.htm">
+        <TocEntry
+          Title="Basic Case Changes and Actions"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Basic_Case_Changes_and_Actions.htm"></TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Database_Fields.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Create Tag Palettes"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Create_Tag_Palettes.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Modify_Public_Tag_Groups_or_Tags.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Set_Up_Redaction_Categories.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Build Coding Forms"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Build_Coding_Forms.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_New_Coding_Forms.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Define_Coding_Form_Rules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Modify_Coding_Forms.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+        <TocEntry
+          Title="Manage Relationships"
+          Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Relationships.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Relationships.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Create_a_Relationship_List.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Eclipse_Administration/Case_Setup/Modify_a_Relationships_List.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Pick_Lists.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Persistent_Highlighting.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Reports/Manage_Case_Reports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Configure_Predefined_Custom_Layouts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Document_Views.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Configure_Users_and_Groups.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Case_Search_Indexes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Validate_File_Paths.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Manage_Case_Instructions_or_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Case_Setup/Globally_Replace_Image_Paths.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Analytics"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ComputeToc="false">
+      <TocEntry
+        Title="Ipro Analytics"
+        Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Understand_AnalyticsIA.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Define_Analytic_Clusters_IA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Define_Analytic_CategoriesIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Configure_Email_ThreadingIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Configure_Near-Duplicate_AnalyticsIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Create_and_Manage_Search_IndexesIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/Ipro Analytics/Create_and_Manage_FiltersIA.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="TAR"
+        Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Manage_TAR_Projects.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Create_a_TAR_Project.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Manage_the_TAR_Review_Process.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Create_Batches_for_TAR_Review_Passes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Build_TAR_Categories.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Training_the_TAR_System(IA).htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Provide_Instructions_for_Reviewers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Evaluate_TAR_Reports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Manage_the_TAR_Project_when_the_Case_Changes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Analytics/TAR/Modify_or_Delete_TAR_Projects.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Import Data"
+      Link="/Content/Review/Eclipse_Administration/Import_Data/Import_Case_Data.htm">
+      <TocEntry
+        Title="Import Case Data"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Import_Case_Data.htm"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Import_Text_Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Import_Production_History.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Match_Database_Fields.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Select_the_Data_Source.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Select_Mapping_Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Pre-Processing.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Complete_the_Import.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Import Transcript Files"
+      Link="/Content/Review/Eclipse_Administration/Import_Data/Import_Transcript_Files.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Import_Transcript_Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Export_Transcript_Files.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Import_Data/Manage_Transcripts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Import through Ipro® for enterprise Integration"
+      Link="/Content/Review/Eclipse_Administration/Import_Data/Import_through_Ipro_(Cloud)_Integration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Review Process Management"
+      Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Review_Process.htm">
+      <TocEntry
+        Title="Manage Review Process"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Review_Process.htm"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Review_Passes_and_Batches.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_Review_Passes_and_Batches.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Create and Manage Search Indexes"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_an_Index_Profile.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_an_Index_Profile.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_an_Index.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Build_an_Index.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Manage Indexes"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm">
+          <TocEntry
+            Title="Change Index Order"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Change_Index_Order" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Edit an Index Profile"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Edit" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Edit an Index Definition"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Edit2" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Rebuild an Index"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Rebuild_an_Index" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Inactivate an Index"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Inactiva" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Disable User Queries"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Disable_User_Queries" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Delete an Index Profile"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Delete_an_Index_Profile" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Delete an Index"
+            Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Indexes.htm#Delete2" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Create and Manage Keyword Lists"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Manage_Keyword_Lists.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_and_Schedule_Keyword_Lists.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Keyword_List_Activities.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Create Images through Enterprise Imaging"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_Images_through_Enterprise_Imaging.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Define_and_Run_an_Imaging_Job.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Cancel_an_Imaging_Job.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Evaluate_Imaging_Errors.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Evaluate Case Records"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Evaluate_Case_Records.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Evaluate_and_Change_Records.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Work_with_Image_Paths.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Build Coding Forms"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Build_Coding_Forms.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Build_Coding_Forms.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Create_New_Coding_Forms.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Define_Coding_Form_Rules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Modify_Coding_Forms.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Review_Process_Management/Tag_Multiple_Documents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Exports and Productions"
+      Link="/Content/Review/Eclipse_Administration/Exports_Productions/Understand_Export_and_Production.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Exports_Productions/Understand_Export_and_Production.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Create Export Sets"
+        Link="/Content/Review/Eclipse_Administration/Exports_Productions/Create_Export_Sets.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Exports_Productions/Select_Numbering_Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Exports_Productions/Select_Output_Locations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Exports_Productions/Select_Image_Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Eclipse_Administration/Exports_Productions/Complete_the_Export.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Exports_Productions/Configure_Production_Shield.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Exports_Productions/Mass_Action_Exports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Exports_Productions/Export_Case_Definition_File.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Reports"
+      Link="/Content/Review/Eclipse_Administration/Reports/Manage_Case_Reports.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Reports/Manage_Case_Reports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Create_Custom_Eclipse_Reports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Reports/Run_an_Eclipse_Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Reports/Export_an_Eclipse_Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Eclipse_Administration/Reports/Print_an_Eclipse_Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Review/Eclipse_Administration/Eclipse_Administration_FAQs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Review/Eclipse_Administration/Eclipse_Administration_Videos.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="Additional Resources"
+    Link="/Content/Product Resources/Resources_Eclipse.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Product Resources/System Requirements.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Eclipse Keyboard Shortcuts"
+      Link="/Content/Product Resources/Ipro Eclipse 2019.6.1 Keyboard Shortcuts.pdf" />
+    <TocEntry
+      Title="Eclipse Search Syntax Quick Reference"
+      Link="/Content/Product Resources/Ipro Eclipse 2019.6.1 Search Syntax Quick Reference.pdf" />
+    <TocEntry
+      Title="Eclipse Transcript Quick Reference"
+      Link="/Content/Product Resources/Ipro Eclipse 2019.6.1 Transcript Quick Reference.pdf" />
+    <TocEntry
+      Title="Eclipse UI Quick Reference"
+      Link="/Content/Product Resources/Ipro Eclipse 2019.6.1 UI Quick Reference.pdf" />
+    <TocEntry
+      Title="SQLBestPractices"
+      Link="/Content/Product Resources/SQLBestPractices.pdf" />
+    <TocEntry
+      Title="Ipro Cloud Portal and Duo Activation">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/DuoAcctActive.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

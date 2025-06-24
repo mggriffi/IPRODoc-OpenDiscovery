@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Create Near Duplicate Batches for Review (IPRO Analytics)</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create Near Duplicate Batches for Review (<MadCap:variable name="Primary.Analytics" />)</h1>
+        <p class="BodyText">Review all documents in every near duplicate group 
+ by grouping all documents into the same batch. First, in Eclipse Web, you must create and save a search that identifies near duplicates. Once this is completed, in Case Administration, you create the review pass and select the reference your saved search as the search results to use for the batch creation.</p>
+        <h2>Create and Save a Near Duplicate Batches Search</h2>
+        <ol class="NumbListBody">
+            <li>
+                <p>In <span style="font-weight: bold;">Eclipse Web</span>, navigate to <span style="font-weight: bold;">Advanced 
+ Search</span> and select:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Create 
+ a new search entitled <span style="font-weight: bold;">Near Duplicate 
+ Batches</span>.</p>
+                    </li>
+                    <li>
+                        <p style="font-weight: normal;">Under the <b>Include</b> drop-down, select<span style="font-weight: bold;"> Family</span> to ensure 
+ that family relationships will be maintained.</p>
+                    </li>
+                    <p class="Image">
+                        <img src="../../../../Graphics/Eclipse Web Images/scr_near_dup_search_typeIA.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </ol>
+            </li>
+            <li>
+                <p>The criteria of the search should identify 
+ all families that received a Near Duplicate value. This can be accomplished 
+ by searching for any documents where the <span style="font-weight: bold;">IA ND Family</span> 
+ field contains a value. </p>
+            </li>
+            <li>Save the search.</li>
+        </ol>
+        <h2>Create Review Pass Batches Using Near Duplicate Search</h2>
+        <ol class="NumbListBody">
+            <li>
+                <p>In <span style="font-weight: bold;">Case Administration</span> 
+ select <span style="font-style: normal; font-weight: bold;">Review Pass Management</span> and the 
+ <span style="font-style: normal; font-weight: bold;">Plus</span> button.</p>
+            </li>
+            <li><span style="font-style: italic;">Name</span>  the Review Pass and enter 
+ a <span style="font-weight: bold; font-style: normal;">Batch Prefix</span>.</li>
+            <li>
+                <p>Enter 
+ the Batch Size of your choice.</p>
+            </li>
+            <li>Set 
+ the <span style="font-weight: bold; font-style: normal;">Family Field</span> to <span style="font-weight: bold;">IA ND Family</span> 
+ to ensure all Near Duplicates are kept together.</li>
+            <li>Choose 
+ the <span style="font-weight: bold; font-style: normal;">Saved Search</span> you previously created, titled <span style="font-weight: bold;">Near Duplicate Batches</span>.</li>
+            <li>Sort 
+ your Review Pass by <span style="font-weight: bold;">IA ND Sort</span> 
+ ascending</li>
+            <li>Select 
+					<span style="font-weight: bold;">Save</span></li>
+            <li>
+                <p>Select 
+						<span style="font-weight: bold;">Create Batches</span> in the bottom right 
+			corner.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_Near_Dup_Review_Pass.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Near-Duplicate_AnalyticsIA.htm">Configure Near-Duplicate Detection in IPRO Analytics</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="SetUpRelPanel_to_DisplayND_IA.htm">Set Up the Relationship Panel to Display Near-Duplicates ([%=Primary.Analytics%])</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_EmailThrandND_Batches_for_ReviewIA.htm">Create Email Thread with Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Near-Duplicate_FieldsIA.htm">Near-Duplicate Fields in IPRO Analytics</MadCap:xref>
+        </p>
+    </body>
+</html>

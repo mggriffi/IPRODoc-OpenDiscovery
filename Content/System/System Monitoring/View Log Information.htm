@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head><title>View Log Information</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1><a name="top"></a>View Log Information</h1>
+        <p>System logs allow you to collect platform-level information about installed/registered components. Log information includes date/time, machine name, environment, component, type, and event status in a grid format. When the log row is clicked, detailed error information appears, if any. It is necessary to define your existing Elasticsearch endpoint in order to use the <i>optional</i> System Monitoring function. To learn more about this procedure, see <MadCap:xref href="../Ipro_(Cloud)_Settings/Define Elastic Search Endpoint.htm">Define Elasticsearch Endpoint</MadCap:xref>.</p>
+        <p>Complete the following steps to view log information.</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.System Logs">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>System Logs</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_System_Logs.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>Select a report type from drop-down menu. </li>
+            <li>Select a <b>date range</b> by using the supplied calendar fields. </li>
+            <li>To search for specific information in the logs grid, enter a <b>search term</b> in the search field. The grid will reflect the search criteria. To clear the search field, click <img src="../../Graphics/SYS_ADD_SysLogsClearButton.png" />.</li>
+            <li>Click <img src="../../Graphics/SYS_ExportIconLogs.png" /> to export the logs to a .CSV file. </li>
+            <li>
+                <p>To copy the Event column contents to the clipboard, click the desired <b>log record</b> to display the pop up Message dialog as shown in the following figure.<br /><br /><img src="../../Graphics/SYS_ADD_SysLogsMessageDialog.png" class="Thumbnail" /></p>
+                <p>Click <b>Copy Message</b> to select the event text in the Message dialog. Paste the event text to the desired destination such as a text editor. Click <b>OK</b> to close the Message dialog when finished.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="About System Monitoring.htm">About System Monitoring</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Ipro_(Cloud)_Settings/Define Elastic Search Endpoint.htm">Define Elasticsearch Endpoint</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Advanced Search</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Advanced Search</h1>
+        <p class="BodyText">The Advanced Search feature of <MadCap:variable name="Primary.IPRO" /> Eclipse allows 
+ you to easily construct complex search expressions or specialized searches 
+ and display results in the <span style="font-weight: bold;">Search Results</span> 
+ tab. Searches can also be saved for later use or for specific tasks. For 
+ example, batches must be based on a saved search.</p>
+        <p class="BodyText">The following figure shows the <span style="font-weight: bold;">Advanced 
+ Search</span> tab with the <span style="font-weight: bold;">Fields to 
+ Search</span> area expanded and the other areas collapsed. These areas 
+ can be expanded as needed to define the search and/or search options (areas 
+ are introduced in the following paragraphs).</p>
+        <p class="Image">
+            <img src="../../../Graphics/Eclipse Web Images/scr_adv_search.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <h2><a name="About_search_types_and_options"></a>About Search Types and 
+ Options</h2>
+        <h3>Content Analyst Search</h3>
+        <p class="BodyText">If <MadCap:variable name="Primary.IPRO" /> Eclipse Analytics has been implemented at your 
+ firm, the <span style="font-weight: bold;">Advanced Search</span> tab 
+ will include the <span style="font-weight: bold;">Content Analyst</span> 
+ search section.</p>
+        <p class="BodyText">This optional feature helps you search for and identify 
+ concepts and relationships within and across case documents. </p>
+        <h3>Text Searches</h3>
+        <p>Text searches are as the name implies – full text searches for words 
+ or phrases in case database fields (and corresponding images, native files, 
+ etc.).</p>
+        <h3>Fields to Search</h3>
+        <p>This section of the <span style="font-weight: bold;">Advanced Search</span> 
+ tab allows you to create any of the following special searches. See <a href="Default_Search_Assumptions.htm#Types_of_Search">"Types 
+ of Search"</a> for descriptions of these searches.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Fields within the 
+ case</p>
+            </li>
+            <li>
+                <p>Analytics (if installed 
+ at your site)</p>
+                <ul>
+                    <li>
+                        <p>Categories</p>
+                    </li>
+                    <li>
+                        <p>Clusters</p>
+                    </li>
+                    <li>
+                        <p>Analytics 
+ Index</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Batch</p>
+                <ul>
+                    <li>
+                        <p>Assign 
+ to</p>
+                    </li>
+                    <li>
+                        <p>ID</p>
+                    </li>
+                    <li>
+                        <p>Review 
+ Status</p>
+                    </li>
+                    <li>
+                        <p>Set</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Doc Tags</p>
+            </li>
+            <li>
+                <p><MadCap:variable name="Primary.IPRO" /> Intelligence 
+ (primarily for Technology-Assisted Reviews)</p>
+            </li>
+            <li>
+                <p>Redaction Categories</p>
+            </li>
+            <li>
+                <p>Review Status</p>
+            </li>
+            <li>
+                <p>Saved Searches</p>
+            </li>
+            <li>
+                <p>Smart Folders</p>
+            </li>
+        </ul>
+        <h3>Timeline Searches</h3>
+        <p class="BodyText">This section of the <span style="font-weight: bold;">Advanced 
+ Search</span> tab allows you to limit search results to a specific date 
+ range, which will display on the timeline. For more information, see <a href="The_Timeline.htm">"The Timeline."</a></p>
+        <h3>Sort Options</h3>
+        <p class="BodyText">This section of the <span style="font-weight: bold;">Advanced 
+ Search</span> tab allows you to organize (sort) search results based by 
+ field content (the columns in the case table). Up to three fields can 
+ be defined for sorting. </p>
+        <h3>Random Sampling</h3>
+        <p class="BodyText">This section of the <span style="font-weight: bold;">Advanced 
+ Search</span> tab allows you to define a search to return a random sampling 
+ of documents matching your search criteria. Random sampling provides a 
+ representative set of documents from the search results. With random sampling, 
+ every document in your search results has an equal chance of participating 
+ in the sample; the number of documents in the sample depends on either 
+ a fixed value that you define or a statistics calculation based on confidence 
+ level and margin of error values that you set.</p>
+        <h2><a name="Before_you_begin"></a>Before you Begin</h2>
+        <p class="BodyText">Before you use Advanced Search, it is recommended that 
+ you read <a href="Searching_Overview.htm">"Searching Overview."</a></p>
+        <p class="BodyText">Also, if you will be constructing a complex search 
+ with many elements, plan the search carefully. For example, consider how 
+ multiple-part searches will need to be combined. Searches are combined 
+ using the AND operator except as noted here:</p>
+        <p class="BodyText" style="font-family: 'Courier New', monospace;">ConceptSearch 
+ AND (TextSearch AND/OR/NOT Field AND/OR/NOT SpecialSearch Statements) 
+ AND TimelineSearch</p>
+        <p class="BodyText">To combine a concept or timeline search with a different 
+ operator (OR or NOT), save the search and combine it in the <span style="font-weight: bold;">Fields 
+ To Search</span> area. The following example shows that the reviewer wants 
+ to find all documents matching the “Bilingual Education Concept” that 
+ are not authored by people with the name “Smith.”</p>
+        <p class="Image">
+            <img src="../../../Graphics/Eclipse Web Images/scr_concept_search_combined.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <h3>Search Navigation</h3>
+        <p class="BodyText">Navigate between Visual and Advanced search by clicking 
+ the arrow on the <span style="font-weight: bold;">Search</span> tab and 
+ selecting either the <span style="font-weight: bold;">Advanced Search</span> 
+ or <span style="font-weight: bold;">Visual Search</span> options.</p>
+        <p class="Image">
+            <img src="../../../Graphics/Eclipse Web Images/scr_visual_search_navigation.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,1020 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Search Syntax</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Search Syntax</h1>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#Basic_search_operators">Basic Search Operators</a></span>
+                </p>
+            </li>
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#Field-specific_Searching">Field-specific Searching</a></span>
+                </p>
+            </li>
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#Date_fields">Date Fields</a></span>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Searching_for_dates__email_address__and_or_credit_card_numbers">Searching 
+ for Dates, Email Address, and/or Credit Card Numbers</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Extracted_Text_Searching">Extracted 
+ Text Searching</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Proximity_searches">Proximity 
+ Searches</a>
+                </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>Click <MadCap:toggler targets="SSynt_QuickRef">here </MadCap:toggler> to view the printable version of the Search Syntax Quick Reference Sheet.</p>
+        <p MadCap:targetName="SSynt_QuickRef">
+            <img src="../../../Product Resources/Ipro Eclipse 2019.6.1 Search Syntax Quick Reference.pdf#1" />
+        </p>
+        <h2><a name="Basic_search_operators"></a>Basic Search Operators</h2>
+        <p class="BodyText"><MadCap:variable name="Primary.IPRO" /> Eclipse allows you to combine or restrict full-text 
+ search terms using the operators listed in the following <MadCap:toggler targets="t1"> 
+ table.</MadCap:toggler></p>
+        <div MadCap:targetName="t1">
+            <table cellspacing="0" width="100%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 10.202%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 13.535%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 76.263%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">operator</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">syntax</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">And</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">and</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for all words and or phrases 
+			 that are listed</p>
+                            <p class="TableText" style="font-weight: bold;">Example: <span style="font-weight: normal;font-family: 'Courier New', monospace;">smith 
+			 and deficit and profit</span></p>
+                            <p class="TableText" style="font-weight: normal;font-family: 'Courier New', monospace;"><span style="font-family: Arial, sans-serif;font-weight: bold;">Results: 
+			 </span>Records including all three words, in any order and 
+			 in any indexed field (unless a field-specific search is conducted), 
+			 will be returned.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">Or</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">or</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for any of the terms that are 
+			 listed.</p>
+                            <p class="TableText" style="font-weight: bold;">Example: <span style="font-weight: bold;font-family: 'Courier New', monospace;">profit 
+			 or deficit or revenue</span></p>
+                            <p class="TableText"><span style="font-weight: bold;">Results: 
+			 </span>Records that include any one of the three words listed 
+			 will be returned.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">Not</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">and not 
+			 </p>
+                            <p class="TableText" style="text-align: center;">or not </p>
+                            <p class="TableText" style="text-align: center;">not</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for records that do not include 
+			 a particular term.</p>
+                            <p class="TableText" style="font-weight: bold;">Example: </p>
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">profit 
+			 and not deficit</p>
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">profit 
+			 or not deficit</p>
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">not 
+			 profit</p>
+                            <p class="TableText" style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">Results: </span>These searches 
+			 find records that contain a) <span style="font-style: italic;">profit</span> 
+			 but not <span style="font-style: italic;">deficit</span>, 
+			 b) instances of <span style="font-style: italic;">profit</span> 
+			 or none of <span style="font-style: italic;">deficit</span>, 
+			 c) no instances of <span style="font-style: italic;">profit</span>.</p>
+                            <p class="TableText" style="font-family: Arial, sans-serif;">As 
+			 shown, NOT can start a search request. If NOT is not the first 
+			 connector in a request, it must be used with either AND or 
+			 OR as shown in the examples. Use of parentheses helps clarify 
+			 the search.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">Phrases</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">space or</p>
+                            <p class="TableText" style="text-align: center;">" "</p>
+                            <p class="TableText" style="text-align: center;">(quotation 
+			 marks)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">To search for a phrase, enter the phrase 
+			 the way it normally appears. Use quotation marks around a 
+			 phrase to ensure that connector words are interpreted as part 
+			 of the phrase.</p>
+                            <p class="TableText" style="font-weight: bold;">Examples: </p>
+                            <p class="TableText" style="font-weight: normal;font-family: 'Courier New', monospace;">gene 
+			 summer</p>
+                            <p class="TableText" style="font-weight: normal;font-family: 'Courier New', monospace;">"profit 
+			 and deficit"</p>
+                            <p class="TableText" style="font-weight: normal;font-family: Arial, sans-serif;"><span style="font-weight: bold;">Results: </span>First example results 
+			 include records that include the name <span style="font-style: italic;">gene</span><span style="font-style: italic;">summer</span> (<span style="font-style: italic;">not 
+			 gene ray summer</span>). Second example include only those 
+			 records with the exact phrase. Without quotation marks, an 
+			 AND search for the terms <span style="font-style: italic;">profit</span> 
+			 and <span style="font-style: italic;">deficit</span> would 
+			 be conducted. Notes:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Stop 
+			 words in phrases are not ignored. For example, a search for 
+			 proof of ownership would find documents containing that phrase, 
+			 including the stop word of.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Regarding 
+			 phrases that include punctuation, see "Special Characters".</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">Wildcards</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">*</p>
+                            <p class="TableText" style="text-align: center;">(asterisk)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">An asterisk represents zero or more 
+			 characters. It can be included anywhere in a search term.</p>
+                            <p class="TableText" style="font-weight: bold;">Example: <span style="font-weight: normal;font-family: 'Courier New', monospace;">automo* 
+			 or phi*p</span></p>
+                            <p class="TableText"><span style="font-weight: bold;">Results: 
+			 </span>In the first case, results will include records including 
+			 terms such as <span style="font-style: italic;">automobile</span> 
+			 and <span style="font-style: italic;">automotive</span>.</p>
+                            <p class="TableText">In the second case, results will include 
+			 records including names such as <span style="font-style: italic;">phillip</span>, 
+			 <span style="font-style: italic;">philip</span>, and <span style="font-style: italic;">philllip</span>, as well as <span style="font-style: italic;">phitap</span>.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">?</p>
+                            <p class="TableText" style="text-align: center;">(question 
+			 mark)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="font-weight: normal;">A question 
+			 mark represents any single character.</p>
+                            <p class="TableText" style="font-weight: bold;">Example: <span style="font-family: 'Courier New', monospace;">su?anne</span></p>
+                            <p class="TableText"><span style="font-weight: bold;">Results: 
+			 </span><span>Results will include records with spellings such 
+			 as </span><span style="font-style: italic;">susanne, </span><span>and 
+			 </span><span style="font-style: italic;">suzanne, </span><span>but 
+			 not </span><span style="font-style: italic;">suzzanne.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">=</p>
+                            <p class="TableText" style="text-align: center;">(equal sign)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText" style="font-weight: normal;">An equal 
+			 sign represents any single digit.</p>
+                            <p class="TableText" style="font-weight: bold;">Example: <span style="font-family: 'Courier New', monospace;font-weight: normal;">ABC==2</span></p>
+                            <p class="TableText"><span style="font-weight: bold;">Results: 
+			 </span>Results will include all IDs or other instances of 
+			 ABC followed by three digits and ending in 2, such as ABC1232, 
+			 but not ABC1A32 or ABC12342.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+        <h2><a name="Field-specific_Searching"></a>Field-specific Searching</h2>
+        <p class="BodyText">If your administrator has indexed specific fields in 
+ your case, those fields can be searched using the main search bar. This 
+ is a basic text search limited to a specific field. If you have any question 
+ about which fields are indexed, contact your administrator.</p>
+        <p class="BodyText">For example, author contains (jane smith). This search 
+ looks for records in which the Author field includes the entered name.</p>
+        <p class="BodyText">To learn the fields in your <MadCap:variable name="Primary.IPRO" /> Eclipse database:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Study the fields 
+ in your case.</p>
+            </li>
+            <li>
+                <p>If some fields are 
+ not visible, right-click a column heading and click <span style="font-weight: bold;">Grid 
+ Display Options</span> to display needed columns.</p>
+                <p class="BodyText">A full-text search that is limited to a specific field 
+ can include the operators in the following table in addition to those 
+ listed in table above.<span style="color: #5b666d;"> To search for date 
+				see <a href="#Date_fields">"Date fields."</a></span></p>
+                <table cellspacing="0" width="100%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 9.571%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 8.856%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 81.573%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Field</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Syntax</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Contains</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">contains</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Search 
+								for records for which a particular field contains a particular 
+							term or phrase (other content may also exist). </p>
+                                <p class="TableText" style="font-weight: bold;">Examples:</p>
+                                <p class="TableText" style="font-weight: bold;font-family: 'Courier New', monospace;">email to 
+							contains (jan smith)</p>
+                                <p class="TableText" style="font-weight: bold;font-family: 'Courier New', monospace;">email to 
+							contains (smith or hall)</p>
+                                <p class="TableText"><span style="font-weight: bold;">Results: 
+								</span>The first search looks for records in which the Author 
+								field includes the names jan and smith. The second search looks 
+								for records in which the author field contains the name smith 
+							or hall.</p>
+                                <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                    <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                    <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                    <tr class="TableStyle-Note_Table-Body-Body1">
+                                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                            <p class="Note">Note: The wildcard 
+											* (asterisk) can be used with this operator. For example, 
+										consider the following searches. </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <ul class="BulletListTable">
+                                    <li style="font-family: 'Courier New', monospace;margin-left: 40px;">custodian 
+							custodians (Jan)</li>
+                                </ul>
+                                <p class="TableText"><span style="font-family: Arial, sans-serif;">Results 
+								will include the name </span><span style="font-family: Arial, sans-serif;font-style: italic;">Jan, 
+								</span> <span style="font-family: Arial, sans-serif;">as in </span><span style="font-family: Arial, sans-serif;font-style: italic;">Jan 
+								Smith </span><span style="font-family: Arial, sans-serif;">or 
+								</span><span style="font-family: Arial, sans-serif;font-style: italic;">jan.smith@smithco.com</span></p>
+                                <ul class="BulletListTable">
+                                    <li style="font-family: 'Courier New', monospace;margin-left: 40px;">custodian 
+							custodians (jan*)</li>
+                                </ul>
+                                <p class="TableText" style="font-family: Arial, sans-serif;">Results 
+								will contain <span style="font-style: italic;">Jan</span>, <span style="font-style: italic;">Jane</span>, and <span style="font-style: italic;">Janet</span>, 
+								as well as other names/terms starting with "jan," such 
+							as <span style="font-style: italic;">janitor</span>.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Does not contain</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">contains 
+							*? and not</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Search 
+								for records for which a particular field does not contain a particular 
+							term or phrase (other content may exist).</p>
+                                <p class="TableText" style="font-weight: bold;">Example: <span style="font-weight: normal;font-family: 'Courier New', monospace;">author 
+							contains (*? and not brenner)</span></p>
+                                <p class="TableText" style="font-weight: bold;">Results: <span style="font-weight: normal;">This search looks for records in 
+							which the Author field does not contain name </span><span style="font-weight: normal;font-style: italic;">brenner</span><span style="font-weight: normal;">.</span></p>
+                                <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                    <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                    <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                    <tr class="TableStyle-Note_Table-Body-Body1">
+                                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                            <p class="Note">Note: The wildcard 
+											* (asterisk) can be used with this operator as described 
+										above. </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <h2><a name="Date_fields"></a>Date Fields</h2>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: If your administrator 
+		 has configured the case index to automatically recognize dates, 
+		 see "Searching for dates, email addresses, and/or credit 
+		 card numbers."</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">This discussion refers to searching date fields. For 
+ DateTime fields, use Advanced Search.</p>
+        <p class="BodyText">To search for dates using a field-specific search, 
+ note:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>To perform a search 
+ on a date field using the main Search bar, the field must be indexed. 
+ If it is not indexed, use Advanced Search to search date fields. Contact 
+ your administrator if you have any questions.</p>
+            </li>
+            <li>
+                <p>Specify the field 
+ containing the date(s) of interest, such as creation date. For long or 
+ complex field names (particularly containing spaces), enclose the name 
+ in parentheses. See examples in the following table.</p>
+            </li>
+            <li>
+                <p>Enter a date in 
+ the format YYYYMMDD, regardless of the format that appears in the case. 
+ For example, the case may show 12/3/2000; you would enter 20001203.</p>
+            </li>
+            <li>
+                <p>If needed, enter 
+ a range in the format (date1~~date2), as in (20000101~~20001231).</p>
+            </li>
+            <li>
+                <p>If combining a date 
+ search with another search, use parentheses to enclose the field name 
+ and date (or date range). See example in the following table. You can 
+ search for a date alone in a DateTime field by using the * (asterisk) 
+ wildcard, for example: 20101130*.</p>
+                <table cellspacing="0" width="100%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 50%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 50%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead> <tr class="TableStyle-ADD_Help_Tables-Head-Header1"><td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1"><p class="TableHead" style="text-align: center;">What 
+		 to find</p></td><td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1"><p class="TableHead" style="text-align: center;">syntax</p></td></tr></thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">All 
+		 records with a Creation Date of December 22, 2008</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-family: 'Courier New', monospace;margin-left: 48px;text-indent: -36px;">creation 
+		 date contains (20081222)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">All 
+		 records with a Sent Date other than December 22, 2008</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-family: 'Courier New', monospace;margin-left: 48px;text-indent: -36px;">sent 
+		 date contains (*? and not 20081222)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">All 
+		 records with a Creation Date date between January 1, 2001 and December 
+		 31, 2008</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-family: 'Courier New', monospace;margin-left: 48px;text-indent: -36px;">creation 
+		 date contains <span style="font-family: 'Courier New', monospace;">(20010101~~20081231)</span></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">All records containing an email address 
+		 and a 2013 Sent Date</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText" style="font-family: 'Courier New', monospace;margin-left: 48px;text-indent: -36px;">jsmith@myco.com and 
+		 (sent date <span style="font-family: 'Courier New', monospace;">contains 
+		 (20130101~~20131231))</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <h2><a name="Searching_for_dates__email_address__and_or_credit_card_numbers"></a>Searching 
+ for Dates, Email Address, and/or Credit Card Numbers</h2>
+        <p class="BodyText">Use the following syntax if your administrator has 
+ configured the case index to automatically recognize dates, email addresses, 
+ and credit card numbers. Check with your administrator if you have questions.</p>
+        <h3>Dates</h3>
+        <p class="BodyText">With automatic date recognition, anything that appears 
+ to be a date is found when you search for a date using months (English-language 
+ names, including common abbreviations) or numerical formats. Examples 
+ of date formats that are recognized include:</p>
+        <table cellspacing="0" width="42.742%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 151px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 163px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                <td style="border: Solid 1px #898493;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                    <ul class="BulletListTable">
+                        <li>
+                            <p class="TableText">June 15, 2013</p>
+                        </li>
+                        <li>
+                            <p class="TableText">15 
+		 Jun 13</p>
+                        </li>
+                        <li>
+                            <p class="TableText">2013/06/15</p>
+                        </li>
+                    </ul>
+                </td>
+                <td style="border-top: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                    <ul class="BulletListTable">
+                        <li>
+                            <p class="TableText">6/15/13</p>
+                        </li>
+                        <li>
+                            <p class="TableText">6-15-13</p>
+                        </li>
+                        <li>
+                            <p class="TableText">The 
+		 fifteenth of June, two thousand thirteen</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">The basic syntax is date(date). See the following <a href="#Search_Syntax_Table">table</a> for details and examples.</p>
+        <h3>Date Ranges</h3>
+        <p>Do not use open-ended date ranges. To search for all dates before or 
+ after a particular date, use a range that includes the minimum and maximum 
+ dates to cover the needed range.</p>
+        <p>Dates can range from the year 1000 to the year 2900.</p>
+        <p class="BodyText">The basic syntax is <span style="font-family: 'Courier New', monospace;">date(</span><span style="font-family: 'Courier New', monospace;font-style: italic;">date1 
+ to date2</span><span style="font-family: 'Courier New', monospace;">).</span></p>
+        <p class="BodyText" style="font-family: Arial, sans-serif;">See the 
+ table below for details and examples.</p>
+        <h3>Email Addresses</h3>
+        <p class="BodyText">With automatic email address recognition, valid email 
+ addresses (such as sales@iprotech.com) will be found when you search for 
+ an email address, regardless of the alphabet settings for the “at” (@) 
+ and period (.) characters, or any other punctuation that may be present 
+ in an email address.</p>
+        <p class="BodyText">The basic syntax is <span style="font-family: 'Courier New', monospace;">mail(</span><span style="font-family: 'Courier New', monospace;font-style: italic;">emailaddress</span><span style="font-family: 'Courier New', monospace;">)</span><span style="font-family: Arial, sans-serif;">.</span></p>
+        <p class="BodyText" style="font-family: Arial, sans-serif;">See the 
+ table below for details and examples.</p>
+        <h3>Credit Card Numbers</h3>
+        <p class="BodyText"><span style="font-family: Arial, sans-serif;">W</span>ith 
+ automatic credit-card number recognition, any sequence of numbers following 
+ a valid credit card number criteria (as defined by one of the major credit 
+ card issuers) will be found when you perform a credit-card search, regardless 
+ of the pattern of spaces or punctuation embedded in the number.</p>
+        <p class="BodyText">Examples of credit card formats include:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>1234-5678-1234-5678</p>
+            </li>
+            <li>
+                <p>1234567812345678</p>
+            </li>
+            <li>
+                <p>1234 5678 1234 5678</p>
+            </li>
+        </ul>
+        <p class="BodyText">Tests used by the credit card issuers for card validity 
+ are used to identify valid numbers. These tests are not perfect, however, 
+ and some numbers may be found that are not actually credit card numbers.</p>
+        <p class="BodyText">The basic syntax is <span style="font-family: 'Courier New', monospace;">creditcard(</span><span style="font-family: 'Courier New', monospace;font-style: italic;">numbers</span><span style="font-family: 'Courier New', monospace;">)</span><span style="font-family: Arial, sans-serif;">. 
+ See the following <a name="Search_Syntax_Table"></a> <MadCap:toggler targets="t2">table</MadCap:toggler> 
+ for details and examples.</span></p>
+        <div MadCap:targetName="t2">
+            <table cellspacing="0" width="100%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 12.525%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 16.465%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 71.01%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">search type</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">syntax</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><a name="Date"></a>Date</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">date(<span style="font-style: italic;">date</span>)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Find a specific date. This search can 
+			 be combined with other searches, such as a proximity search 
+			 or a field search.</p>
+                            <p class="TableText" style="font-weight: bold;">Examples:</p>
+                            <ul class="BulletListTable">
+                                <li style="font-family: 'Courier New', monospace;font-weight: normal;">date(jun 05 2013)</li>
+                                <li style="font-family: 'Courier New', monospace;font-weight: normal;">date(6/15/2013 to 13/31/2013)</li>
+                                <li style="font-family: 'Courier New', monospace;font-weight: normal;">date(jun 15 2013) w/10 stadium</li>
+                                <li style="font-family: 'Courier New', monospace;font-weight: normal;"><span style="font-style: italic;">datefield 
+			 </span>conains date(12-31-2013)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><a name="Date_range"></a>Date range</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">date(<span style="font-style: italic;">date1 to date2</span>)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Find dates in a specified range (not 
+			 an open-ended range).</p>
+                            <p class="TableText">Dates can range from a year 1000 to the 
+			 year 2900</p>
+                            <p class="TableText" style="font-weight: bold;">Examples:</p>
+                            <ul class="BulletListTable">
+                                <li style="font-family: 'Courier New', monospace;">date(1/1/2014 
+			 to 12/31/2014)<p class="TableText"><span style="font-family: Arial, sans-serif;font-style: italic;">Find 
+			 all dates occurring in 2014.</span></p></li>
+                                <li style="font-family: 'Courier New', monospace;">date(1-15/10 
+			 to 12-31-2900)<p class="TableText"><span style="font-family: Arial, sans-serif;font-style: italic;">Find 
+			 all dates on or after January 15, 2010.</span></p></li>
+                                <li style="font-family: 'Courier New', monospace;">date(jan 
+			 1 1000 to jun 15 2013)<p class="TableText"><span style="font-family: Arial, sans-serif;font-style: italic;">Find 
+			 all dates before June 15, 2013.</span></p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><a name="Email_address"></a>Email address</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">mail(<span style="font-style: italic;">email address</span>)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Find email address. Wildcard characters 
+			 allowed in the email address include:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">?(question 
+			 mark): Find any single character.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">*(asterisk): 
+			 Find any number of characters.</p>
+                                </li>
+                            </ul>
+                            <p class="TableText" style="font-weight: bold;">Examples:</p>
+                            <ul class="BulletListTable">
+                                <li style="font-family: 'Courier New', monospace;">mail(sales@iprotech.com)</li>
+                                <li style="font-family: 'Courier New', monospace;">mail(sa*@iprotech.com)</li>
+                                <li style="font-family: 'Courier New', monospace;"><span style="font-family: 'Courier New', monospace;">mail(jh?ll@iprotech.com)</span>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText"><a name="Credit_card_number"></a>Credit card number</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">creditcard(<span style="font-style: italic;">number</span>)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Find credit card numbers. Wildcard characters 
+			 ? and * are allowed as described previously.</p>
+                            <p class="TableText" style="font-weight: bold;">Examples:</p>
+                            <ul class="BulletListTable">
+                                <li style="font-family: 'Courier New', monospace;">creditcard(1234123412341234)</li>
+                                <li style="font-family: 'Courier New', monospace;">creditcard(1234*)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+        <h2><a name="Extracted_Text_Searching"></a>Extracted Text Searching</h2>
+        <p class="BodyText"><span style="font-family: Arial, sans-serif;">U</span>se 
+ the following syntax to limit a search to text in extracted text files 
+ (as opposed to fields). Results are highlighted on the <span style="font-weight: bold;">Extracted 
+ Text</span> tab.</p>
+        <table cellspacing="0" width="78.226%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 37.371%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 62.629%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">syntax</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">//TEXT 
+		 contains (term)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search extracted text for the specified 
+		 term or phrase. For example:</p>
+                        <p class="TableText"><span style="font-family: 'Courier New', monospace;">//TEXT 
+		 contains (limited resources)</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">//TEXT 
+		 contains (term1 or term2)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search extracted text for either of the 
+		 specified terms or phrases. For example:</p>
+                        <p class="TableText"><span style="font-family: 'Courier New', monospace;">//TEXT 
+		 contains (solar or wind) </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">//TEXT 
+		 contains (term1 and term2)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Search extracted text for both of the specified 
+		 terms or phrases. For example:</p>
+                        <p class="TableText"><span style="font-family: 'Courier New', monospace;">//TEXT 
+		 contains (electricity and gas)</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Proximity_searches"></a>Proximity Searches</h2>
+        <p class="BodyText">Proximity searching applies to full-text searches and 
+ involves looking for two words or phrases that</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>are located before, 
+ after, or within some number of words from one another (in any order),</p>
+            </li>
+            <li>
+                <p>are located within 
+ some number of words from the first or last word in a field, or</p>
+            </li>
+            <li>
+                <p>are not located 
+ within some number of words from one another.</p>
+            </li>
+        </ul>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: </p>
+                    <p class="Note">Except for first- 
+		 or last-word proximity searches, full-text proximity searching 
+		 within <MadCap:variable name="Primary.IPRO" /> Eclipse spans fields and may therefore return additional 
+		 results under very rare conditions. The SQL platform utilizes 
+		 dtSearch for full-text searching, which does not limit the proximity 		 search to within one field.</p>
+                    <p class="Note">For example, if you search for DAVIS w/5 JONES, 
+		 and DAVIS exists at the end of Field 1 and JONES exists at the 
+		 beginning of Field 2 in a particular record, then that record 
+		 will be included in the search results even though DAVIS and JONES 
+		 do not exist within the same field. This currently is a limitation 
+		 of the dtSearch engine. The potential for this scenario is rare; 
+		 searches will not miss documents but may occasionally return additional 
+		 results.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">Syntax and usage for full-text proximity searches are 
+ as listed in the following <MadCap:toggler targets="t3">table.</MadCap:toggler></p>
+        <div MadCap:targetName="t3">
+            <table cellspacing="0" width="77.016%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 13.279%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 8.677%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 78.044%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Operator</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">syntax</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Within</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">W/</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for records in which two terms 
+			 are within a specific distance of one another, in any order:</p>
+                            <p class="TableText" style="font-weight: bold;">Example: <span style="font-weight: normal;font-family: 'Courier New', monospace;">profit 
+			 w/5 deficit</span></p>
+                            <p class="TableText"><span style="font-weight: bold;">Results: 
+			 </span>The search results would include records containing 
+			 both of the following expressions:</p>
+                            <ul class="BulletListTable">
+                                <li style="font-style: italic;">
+                                    <p class="TableText">The 
+			 profit will be offset by the deficit...</p>
+                                </li>
+                                <li style="font-style: italic;">
+                                    <p class="TableText">The 
+			 deficit will not impact the profit...</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Not 
+			 within</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">not w/</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for words that are no closer 
+			 than a specified number of words.</p>
+                            <p class="TableText" style="font-weight: bold;">Example: <span style="font-family: 'Courier New', monospace;">profit not 
+			 w/5 deficit</span></p>
+                            <p class="TableText"><span style="font-weight: bold;">Results: 
+			 </span>Results will include records where <span style="font-style: italic;">profit</span> 
+			 does not exist within five words of <span style="font-style: italic;">deficit</span>.</p>
+                            <ul class="BulletListTable">
+                                <li>Will 
+			 be included in search results: <p class="TableText"><span style="font-style: italic;">The </span><span style="font-style: italic;font-weight: bold;">profit 
+			 </span><span style="font-style: italic;">will be offset by 
+			 this year's annual </span><span style="font-style: italic;font-weight: bold;">deficit...</span></p></li>
+                                <li>Will 
+			 not be included in search results:<p class="TableText">The <span style="font-weight: bold;">deficit 
+			 </span>and <span style="font-weight: bold;">profit </span>will...</p></li>
+                            </ul>
+                            <p class="TableText">This search will return all records where 
+			 profit does not exist within five words of deficit. Included 
+			 would be records that do not include the word profit or deficit 
+			 as well as records in which profit and deficit are separated 
+			 by more than five words.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Before</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">pre/</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for a word that precedes another 
+			 word by a specified amount.</p>
+                            <p class="TableText"><span style="font-weight: bold;">Example: 
+			 </span><span style="font-family: 'Courier New', monospace;">profit 
+			 pre/5 deficit</span>
+                            </p>
+                            <p class="TableText"><span style="font-family: Arial, sans-serif;font-weight: bold;">Results: </span>The 
+			 word <span style="font-style: italic;">profit</span> must 
+			 occur five or fewer words before the word <span style="font-style: italic;">deficit</span>.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">First 
+			 word proximity</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">w/# xfirst-word</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for a word that is near the first 
+			 word in a field by a specified amount.</p>
+                            <p class="TableText" style="font-weight: bold;">Examples: <span style="font-family: 'Courier New', monospace;font-weight: normal;">profit 
+			 w/5 xfirstword</span></p>
+                            <p class="TableText" style="font-weight: bold;">Results: <span style="font-weight: normal;">The word </span><span style="font-weight: normal;font-style: italic;">profit</span><span style="font-weight: normal;"> 
+			 must occur five or fewer words after the first word of a field.</span></p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Last 
+			 word proximity</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">w/# xlast-word</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Search for a word that is near the last 
+			 word in a field by a specified amount.</p>
+                            <p class="TableText" style="font-weight: bold;">Examples: <span style="font-family: 'Courier New', monospace;">profit w/5 
+			 xlastword</span></p>
+                            <p class="TableText"><span style="font-weight: bold;font-family: Arial, sans-serif;">Results: 
+			 </span>The word <span style="font-style: italic;">profit</span> 
+			 must occur five or fewer words before the last word of a field.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+        <h2>Additional Full-text Search Options</h2>
+        <p class="BodyText">In addition to searching for a literal term in a full-text 
+ search, <MadCap:variable name="Primary.IPRO" /> Eclipse includes search options listed in the following <MadCap:toggler targets="t4">table.</MadCap:toggler></p>
+        <div MadCap:targetName="t4">
+            <table cellspacing="0" width="77.419%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 10.807%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 14.583%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 74.609%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Option</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">syntax</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Fuzzy</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">% (selective)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for terms that are a close, but 
+			 not an exact, match. Useful for searching text fields in which 
+			 some characters may not have been interpreted correctly by 
+			 an OCR engine. </p>
+                            <p class="TableText">Although you should use Advanced Search 
+			 with the Fuzzy option for most fuzzy searches, you can specify 
+			 fuzziness selectively using the percent character, %. The 
+			 number of % characters included determines the number of differences 
+			 that will be ignored during a search. The position of the 
+			 % characters determines how many letters at the start of the 
+			 word have to match exactly. For example: </p>
+                            <p class="TableText"><span style="font-family: 'Courier New', monospace;">aut%%mobile</span>
+                            </p>
+                            <p class="TableText"><span style="font-family: Arial, sans-serif;font-weight: bold;">Results: </span><span style="font-family: Arial, sans-serif;">Returns </span>records 
+			 containing the word <span style="font-style: italic;">automobile</span> 
+			 and other words beginning with aut with at most two differences 
+			 between it and <span style="font-style: italic;">automobile</span>.</p>
+                            <p class="TableText">Fuzzy search results may vary, depending 
+			 on such factors as the length of the search term and/or position 
+			 of incorrect characters. </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Phonic</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">#</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search for terms that sound similar 
+			 but are spelled differently. Enter a phonic search by using 
+			 the number sign, #. For example: </p>
+                            <p class="TableText"><span style="font-family: 'Courier New', monospace;">#smith</span>
+                            </p>
+                            <p class="TableText"><span style="font-weight: bold;">Results:</span> 
+			 Returns records containing the name <span style="font-style: italic;">smith</span> 
+			 as well as <span style="font-style: italic;">smithe</span> 
+			 and <span style="font-style: italic;">smythe.</span></p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Stemming</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">~</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Search for terms and all words beginning 
+			 with the root form of the word. For example:</p>
+                            <p class="TableText" style="font-family: 'Courier New', monospace;">operation~</p>
+                            <p class="TableText"><span style="font-weight: bold;">Results:</span> 
+			 The root of operation would be identified as <span style="font-style: italic;">operat</span>, 
+			 so results will include <span style="font-style: italic;">operation</span>, 
+			 operate, and <span style="font-style: italic;">operator</span>. 
+			 </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

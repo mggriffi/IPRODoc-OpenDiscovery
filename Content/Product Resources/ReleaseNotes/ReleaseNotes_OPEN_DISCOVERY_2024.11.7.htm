@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>OPEN DISCOVERY Release Notes 2024.11.7</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>OPEN DISCOVERY Release Notes 2024.11.7</h1>
+        <p>The new release of OPEN DISCOVERY focuses on the features you have been asking for. IPRO is committed to an ongoing balance between innovation and meeting customer needs.</p>
+        <p MadCap:conditions="Primary.Blocked">Schedule your upgrade with IPRO Support today!</p>
+        <h3 MadCap:conditions="Primary.Blocked">New Release Video</h3>
+        <p MadCap:conditions="Primary.Blocked">Click the link to view a video highlighting a few of the key features: <a href="https://reveal.awsapps.com/workdocs/index.html#/share/document/1d7ebbde2bcc683e5b0762d1e73dbe9fec36ec89c4dade619959a1bede9f072d" target="_blank">OPEN DISCOVERY 2024.11.6 Release- Key Features</a></p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0" MadCap:conditions="Primary.Blocked">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: This release is currently only available for IPRO Cloud customers. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Key Features</h2>
+        <h3>Review</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p><b>Mass Action Download Performance Enhancements</b> </p>
+                <p>Speeds have been significantly improved over previous and original implementations.</p>
+            </li>
+            <li>
+                <p><b>Create Fields on the Fly During Import into Eclipse Admin</b>
+                </p>
+                <p>You now have the ability to create new fields on the fly when using Eclipse Admin to load data imports. A new option is available when choosing the fields '&lt;Create New Field&gt;' which when used allows configuration of a new field in real time. This prevents the need to have to stop the import workflow and exit in order to create a new field reducing time spent mapping fields.</p>
+            </li>
+            <li>
+                <p><b>Mass Field Creation in Eclipse Admin</b>
+                </p>
+                <p>Multiple fields can now be created at a time using the 'Import CSV' button and supplying a CSV that is pre-populated with field information allowing increased efficiency when generating a large list of fields.</p>
+            </li>
+            <li>
+                <p><b>Print to PDF Performance Improvements</b>
+                </p>
+                <p>Print to PDF performance has been improved so reduce time to complete these requests by 20%.</p>
+            </li>
+            <li>
+                <p><b>Support of Nested Searches in CSE Templates</b>
+                </p>
+                <p>Increased support of CSE templates to allow import of nested searches.</p>
+            </li>
+        </ul>
+        <h3>Reports</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p style="font-weight: bold;">Additional eCapture Reports added to the <MadCap:variable name="Primary.Name" /> Reports Module:</p>
+                <p>The <i>Deduplication Overlay</i> report from the eCapture Controller is now available in Open Discovery so that this report is more easily accessible.</p>
+                <p>The<i> Deduplication Detailed </i>report from the eCapture Controller is now available in Open Discovery so that this report is more easily accessible.</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">Enhanced Data Extract Errors Detailed Report in <MadCap:variable name="Primary.Name" />.</p>
+                <p>A new aggregate table has been added to the <i>Data Extract Error Detailed</i> report so that it more closely resembles the older report available from the eCapture Controller.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h2>Resolved Issues</h2>
+        <h3>Review</h3>
+        <p><b>AR - 22020</b> - With the updated Export Sets\Production UI an issue was present causing export page counts to be calculate incorrectly. This has been updated to properly show the correct page counts.</p>
+        <p><b>AR - 22043</b> - Certain users could experience extreme slowness or failure when attempting Self Service uploads larger than 20 GB in size. Changes have been implemented to increase efficiency and ensure higher success on larger uploads.</p>
+        <p><b>AR - 22023</b> - With the release of the new Mass Action Download feature there was a notable drop in performance when generating DAT and\or CSV output. We have gone back and made some changes to drastically improve that performance and have been able to exceeds pre 2024.11.6 speeds not only for DAT and\or CSV output, but also for those that include Natives.</p>
+        <p><b>AR - 21921</b> - An issue has been resolved where Smart Folders could disappear visually in cases containing a large amount of Smart Folders.</p>
+        <p><b>AR - 21056</b> - Native file validation performed in Eclipse Admin has been improved to better ensure better consistency and accuracy when performing the actual export out of Review. Reporting has also been improved to better identify specific files which may be missing valid native path values.</p>
+        <p><b>AR - 20188</b> - Users could be kicked out of a case if they lack the 'Manage Indexes' permission when accessing Case Settings. Handling has been improved so the user maintains their logged in session as expected.</p>
+        <p><b>AR - 20118</b> - A concurrent user error could be encountered in Review when SQL time zone is different from IIS/Auth which could cause users to be kicked out of a case. Handling has been improved to prevent this error and maintain the users session within a case.</p>
+        <p><b>AR - 20116 </b>- Print to PDF performance has been improved so reduce time to complete these requests by 20%.</p>
+        <p><b>AR - 18548</b> - The System Processing ID field is now read as a numeric value and sorts as expected.</p>
+        <p><b>AR - 18008</b> - Native optimization could fail when documents do have have a valid native path. Better handling has been implemented to ensure job success by skipping invalid native paths.</p>
+        <p><b>AR - 16858</b> - Increased support of CSE templates to allow import of nested searches.</p>
+        <p><b>AR - 15273</b> - Users could run into problems saving changes on documents when the case date format used the hyphen delimiter. Changes have been made to better support this format and prevent failures saving changes to documents.</p>
+        <p><b>AR - 12909</b> - Active learning indexes would fail to create when multiple instances of a tag name were present. Handling has been improved to support this scenario. The associated "IA” set of fields have also been updated to better reflect this, the naming convention will now report in the following format “{fieldName} ({reviewPassName}-{tagName})”</p>
+        <p><b>AR - 10804</b> - In certain situations users need the ability to export redacted text, but not the redacted images associated. Handling has been introduced to allow for this scenario using the 'Apply Redactions' option under 'Redaction Options' and 'Include Images' is disabled under 'Images'.</p>
+        <p><b>AR - 10710</b> - In certain situations the Ipro Analytics Service could stop with no warning leading to issues with Active Learning. Resiliency has been improved to recover and continue processing these job types.</p>
+        <p><b>AR - 22221</b> - Additional fields for configuration could be skipped when the 'Load to Relativity' option is selected during a Production\Export could result in failed output. These fields are now required to ensure they are populated prior to starting the Production\Export.</p>
+        <h3>Processing</h3>
+        <p><b>AP - 6034</b> - When exporting multi-page images or PDF's from Legacy eCapture Processing jobs the OCRT line of DLF load files would list the Processing Directory. Handling has been implemented to properly utilize the output directory path configured in the Export Job.</p>
+        <p><b>AP - 5843 </b>- Streaming Discovery Imaging and Mass Action imaging could leave extra working data in the Temp Directories. Cleanup improvements have been made to better manage this storage and ensure these files are removed when no longer required.</p>
+    </body>
+</html>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedList" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Default Search Assumptions</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Default Search Assumptions</h1>
+        <p class="BodyText"><a name="Default_Search_Beginning"></a>Simple searches 
+ – words or phrases with no specific search criteria included – are conducted 
+ using the following default criteria for advanced searches. (At this time, 
+ a simple search performed using the Search bar searches extracted text 
+ and indexed fields.) </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Full text</span>, <span style="font-weight: bold;">all 
+ fields</span>, <span style="font-weight: bold;">all records</span>: All 
+ indexed words in all indexed fields (that the user has rights to view) 
+ of all records are examined. If you have any questions on whether a field 
+ is indexed, contact your administrator. All fields (indexed and non-indexed) 
+ are searchable using a field-specific search in Advanced Search.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">All 
+ words</span>: For a plain search (with no operators), all search words 
+ must exist in the database record, but not necessarily in the same field 
+ or in the same order. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Search 
+ order</span>: When multiple words or statements comprise a search expression, 
+ the search is conducted from left to right, top to bottom (similar to 
+ the way a mathematical equation is treated). </p>
+            </li>
+        </ul>
+        <h3>Examples</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p><span style="font-family: 'Courier New', monospace;">annual and profit and 
+ deficit</span> </p>
+            </li>
+            <p class="BodyTextIndent">This simple search will find all records containing 
+ all three words (annual AND profit AND deficit) in any indexed case fields. 
+ </p>
+            <li>
+                <p><span style="font-family: 'Courier New', monospace;">(annual 
+ or profit) and deficit</span>
+                </p>
+                <p class="BodyTextIndent">This search phrase will find all records containing 
+ annual OR profit (in any indexed case field) and then reduce that set 
+ to those documents containing the word deficit (in any indexed field). 
+ </p>
+            </li>
+        </ol>
+        <h2>Case Sensitivity</h2>
+        <p class="BodyText"><MadCap:variable name="Primary.IPRO" /> Eclipse searches are not case sensitive. For example, 
+ the same results will occur whether you search for <span style="font-family: 'Courier New', monospace;">smith</span>, 
+ <span style="font-family: 'Courier New', monospace;">SMITH</span>, or 
+ <span style="font-family: 'Courier New', monospace;">Smith</span>. Likewise, 
+ all search criteria and operators, as explained in the following paragraphs, 
+ are case insensitive.</p>
+        <h2>Special Characters</h2>
+        <p class="BodyText">Punctuation marks (other than characters defined for 
+ specific uses, such as an asterisk) in a search statement are treated 
+ as spaces. For example, a search for A208(d)(5)(iv) would become A208 
+ d 5 iv (four words). When punctuation marks are included in a search statement, 
+ highlighting may not be consistent between the <span style="font-weight: bold;">Image</span> 
+ and <span style="font-weight: bold;">Extracted Text</span> tabs.</p>
+        <p class="BodyText">When entering such search terms, entering spaces in 
+ place of the punctuation may be easier and provide more consistent highlighting 
+ of results. In some cases, enclosing the term in quotation marks (for 
+ a specific search) may also help ensure the needed results are found and 
+ highlighted.</p>
+        <h2>Concatenated Fields</h2>
+        <p class="BodyText">If your case includes concatenated fields (created 
+ when multiple fields are imported into a single field in <MadCap:variable name="Primary.IPRO" /> Eclipse) 
+ and a delimiter is used in the concatenated field, the delimiter will 
+ be ignored during searches. </p>
+        <h2><a name="Types_of_Search"></a><a name="Types"></a>Types of Search</h2>
+        <p class="BodyText">The following table lists the types of searches available 
+ in <MadCap:variable name="Primary.IPRO" /> Eclipse, which can be performed using the Advanced Search. Some 
+ search types (such as full text searches) can be performed using the main 
+ Search bar (quick search).</p>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 82.53%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Analytics-based searches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">If 
+		 <MadCap:variable name="Primary.IPRO" /> Eclipse Analytics has been implemented at your firm, the 
+		 following searches are available:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Concepts</span>: Search for concepts 
+		 and relationships within and across case documents. </p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Categories</span>: Search for documents 
+		 within specific categories.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Clusters</span>: Search for documents 
+		 within specific clusters.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Analytics Index</span>: Search for 
+		 documents matching (or not matching) the criteria of a conceptual 
+		 search index defined for your case. Contact your administrator 
+		 for details about the concept search indexes defined for your 
+		 cases. </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Batch-related searches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch 
+		 Assigned To</span>: Search for batches assigned to a specific 
+		 user(s).</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch Id</span>: Search for documents 
+		 within specific batches by their ID number.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch Review Status</span>: Search 
+		 for documents in batches with a specific status.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Batch Set</span>: Search for documents 
+		 in a specific batch (review) set.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Document Tags</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents that have been marked with a specific document tag. 
+		 </p>
+                        <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Tip: 
+				 To find documents tagged in a certain way from the <span style="font-weight: bold;">Document (or Page) Tags</span> 
+				 tab, right-click the tag or tag group title of interest 
+				 and select <span style="font-weight: bold;">Search &gt; 
+				 Search for all tagged documents</span> (or <span style="font-weight: bold;">untagged 
+				 documents</span>). See <a href="../Tags_and_Annotations/Tags.htm">"Tags"</a><![CDATA[ 
+				 ]]>for more information on using tags.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Field-specific searches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents with specified content in a selected field.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Full Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 simplest type of search. Full-text searches look for words or 
+		 phrases in one or more indexed fields of <MadCap:variable name="Primary.IPRO" /> Eclipse. This includes 
+		 indexed database fields and extracted text as described at the 
+		 beginning of this <a href="#Default_Search_Beginning">page.</a></p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IPRO Intelligence</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Searches 
+		 for all documents required for review in order to train <MadCap:variable name="Primary.IPRO" /> Eclipse 
+		 Analytics for categorization of documents. This search is used 
+		 primarily for technology-assisted review (TAR).</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Redaction Categories</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents that contain a specified redaction(s). See <a href="../Tags_and_Annotations/Image_Redactions.htm#Working_with_Redactions">"Working 
+		 with Redactions"</a> for information 
+		 on redactions.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Review Status</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">For 
+		 a particular review pass of a particular case, search for documents 
+		 that are tagged as <span style="font-weight: bold;">Reviewed</span>, 
+		 <span style="font-weight: bold;">Not Reviewed</span>, or <span style="font-weight: bold;">On Hold</span>.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Saved Searches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Combine 
+		 this with another search to refine the results of a saved public 
+		 search. Must have permission to view saved searches.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Smart Folders</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents included in or excluded from a specific Smart Folder. 
+		 Combine this search to find needed documents within a Smart Folder, 
+		 for example, find documents in a Smart Folder that contain certain 
+		 text.</p>
+                        <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Note: Searches based 
+				 on Smart Folders created/saved before <MadCap:variable name="Primary.IPRO" /> Eclipse 2016.3.0 
+				 will be available after you upgrade to 2016.3.0 or later, 
+				 but will need to be modified, due to Smart Folder changes. 
+				 See <a href="../Review_Set_Up/Working_with_Smart_Folders.htm">"Working 
+				 with Smart Folders"</a> for details.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Timeline Search</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Search 
+		 for documents within a certain date range; the timeline in the 
+		 corresponding <span style="font-weight: bold;">Search Results</span> 
+		 tab will display the selected date range. See <a href="../Navigation/Filter_By_Date_Range.htm">"Filter 
+		 By Date Range"</a> for details on the timeline.</p>
+                        <p class="TableText">The timeline itself or an advanced search 
+		 can be used to find documents within a certain date range.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">Different search types can easily be combined using 
+ the <MadCap:variable name="Primary.IPRO" /> Eclipse Advanced Search. With some limitations, search types 
+ are combined in expressions using Boolean operators AND, OR, and NOT.</p>
+        <h2>Other Search Options</h2>
+        <p class="BodyText">By default, a search in <MadCap:variable name="Primary.IPRO" /> Eclipse will return a 
+ list of all documents matching your search criteria. Options for limiting 
+ search results exist for advanced searches (such as by using random sampling), 
+ as explained in <a href="Advanced_Search.htm#About_search_types_and_options">"About 
+ search types and options."</a></p>
+        <h2 id="Where_Search_Results_Appear">Where Search Results Appear</h2>
+        <p class="BodyText">The following paragraphs introduce search results. 
+ More details are presented in <a href="Viewing_Search_Results.htm">"Viewing 
+ Search Results."</a></p>
+        <h3>Search Results Tab</h3>
+        <p class="BodyText">Search results replace the contents of the current 
+ tab in the case pane (<span style="font-weight: bold;">Documents</span>, 
+ <span style="font-weight: bold;">Batch</span>, etc.) tab. Search results 
+ are based on the entire case. (That is, they are not limited to a batch 
+ if a batch is open. To limit a search to a specific batch, use an advanced 
+ search based on the batch of interest.)</p>
+        <h3>Document Details Pane Tabs</h3>
+        <p class="BodyText">Search “hits” are highlighted in tabs within the <span style="font-weight: bold;">Document Details</span> pane if the search 
+ term exists in the image, native, and/or extracted text file, not if the 
+ term exists only within a field(s).</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Image</span>: 
+ Hits are highlighted in images if documents have been processed for word 
+ coordinates (a standard function of <MadCap:variable name="Primary.IPRO" /> processing, but not always implemented). 
+ </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Native 
+ Viewer</span>: Hits are highlighted if a native file associated with the 
+ selected record exists and contains the search term. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Extracted 
+ Text</span>: Hits are highlighted if text (OCR) associated with the selected 
+ record exists and contains the search term. </p>
+            </li>
+        </ul>
+        <p class="BodyText">The following example shows an excerpt of search results 
+ (highlighted in yellow) in the <span style="font-weight: bold;">Extracted 
+ Text</span> tab.</p>
+        <p class="Image">
+            <img src="../../../Graphics/Eclipse Web Images/scr_search_results_ex.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Blocked" style="mc-master-page: url('..\..\..\..\..\Resources\MasterPages\Review_MP.flmsp');">
+    <head><title>Manage Relationship Settings</title>
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Manage <MadCap:annotation MadCap:createDate="2022-06-08T14:00:46.4833025-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="This topic is a duplicate of the Overview Relationships topic and also doesn't belong here." MadCap:editor="ddavidson" MadCap:editDate="2022-06-08T14:01:26.3421235-04:00">Relationships</MadCap:annotation></h1>
+        <p class="BodyText"><i>Relationships</i> are based on the content of a specific 
+ field. When users select a particular record and view relationship details 
+ in <MadCap:variable name="Primary.ProdName_Review" />, the Relationships list presents all documents with matching 
+ field content (as in a field-specific search). The following relationships 
+ are included with <MadCap:variable name="Primary.ProdName_Review" /> by default:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Family:</span> 
+	 intended to show documents that are related to one another, as in 
+	 an email and its attachment. Family relationships are grouped by the 
+	 BEGATTACH field and sorted by the BEGDOC field; you can define the 
+	 details (fields and/or tag groups) to be included in the list.
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Duplicates:</span> 
+	 intended to show documents that are the same in 
+	 content. Duplicates are grouped by the MD5HASH field and sorted by 
+	 the BEGDOC field; you can define the details (fields and/or tag groups) 
+	 to be included in the list
+            </p>
+            </li>
+            <li>
+                <p><b>Near Duplicates:</b> intended to show documents that are nearly the same in 
+					content. Duplicates are grouped by the MD5HASH field and sorted by 
+					the BEGDOC field; you can define the details (fields and/or tag groups) 
+					to be included in the list
+                </p>
+            </li>
+            <li>
+                <p><b>Email Thread:</b> displays relationships among a family of email headers
+					to be identified, based on their content and associated metadata. A combination of email headers and email body content is used to determine when emails belong in the same thread.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Document History:</span> 
+	 displays history of actions such as redactions and tags applied to 
+	 the selected document. Although not modifiable, this report can be 
+	 secured.
+</p>
+            </li>
+            <li><b>Similar Documents:</b> displays a list of documents that contain elements similar to a selected document.</li>
+        </ul>
+        <h3>Family Relationships Example</h3>
+        <p class="BodyText">This figure shows the <span style="font-weight: bold;">Family</span> 
+ relationship in <MadCap:variable name="Primary.ProdName_Review" />. </p>
+        <p class="BodyText">
+            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Scr_Rel_Family_Example_Updated.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">In addition to the BEGDOC field, two tag groups (Responsiveness 
+ and Privileged) have been added by the administrator. </p>
+        <h3>Duplicates Relationships Example</h3>
+        <p class="BodyText">Another default relationship is the duplicates relationship 
+ for cases using an MD5Hash field. The following figure shows this relationship 
+ in <MadCap:variable name="Primary.ProdName_Review" />. In addition to the BEGDOC field, two tag groups (Responsiveness 
+ and Confidentiality) have been added by the administrator. </p>
+        <p class="BodyText">In this example, the administrator has included the 
+ document compare tool (as indicated by the magnifying glass button). This 
+ tool allows users to compare a document selected in the <span style="font-weight: bold;">Documents</span> 
+ (or <span style="font-weight: bold;">Search Results</span>, etc.) tab 
+ to one in the <span style="font-weight: bold;">Relationships</span> list.</p>
+        <p>
+            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Scr_Rel_Duplicates_Example_Updated.png" class="Thumbnail" />
+        </p>
+        <h3>Planning</h3>
+        <p class="BodyText">Before defining a relationship, plan the type of information 
+ that will assist your users as they review case details, including the 
+ field upon which each relationship should be based, the field and tag 
+ details that should be displayed in the <span style="font-weight: bold;">Relationships</span> 
+ listing, and how the information should be sorted. </p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p><a href="AR_Create_a_Relationship_List.htm"><MadCap:xref href="AR_Create_a_Relationship_List.htm">Create a Relationship List</MadCap:xref></a>
+        </p>
+        <p><a href="AR_Modify_a_Relationships_List.htm"><MadCap:xref href="AR_Modify_a_Relationships_List.htm">Modify a Relationships List</MadCap:xref></a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="New.Term0"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Multi-Tenant</Term>
+    </Terms>
+    <Definition
+      Link="">A shared Cloud services environment (for Starter and Business packages).</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

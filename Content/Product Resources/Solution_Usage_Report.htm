@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../Resources/MasterPages/Enterprise_and_Eclipse_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>myIPRO Solution Usage Report</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>myIPRO Solution Usage Report</h1>
+        <p>The my<MadCap:variable name="Primary.IPRO" /> Solution Usage Report can be accessed from my<MadCap:variable name="Primary.IPRO" /> <a href="https://my.ipro.com/client" target="_blank">here</a>. Follow the steps below to run the report. </p>
+        <ol>
+            <li>
+                <p>Log into <a href="https://my.ipro.com/client">https://my.ipro.com/client</a> to access the report.</p>
+            </li>
+            <li>
+                <p>Select <b>Reports</b> from the menu.</p>
+                <p>
+                    <img src="../Graphics/Report_Graphics/Solutions_Usage_Report_Menu.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the <b>Solution Usage Report</b> page, enter the <b>Usage Period</b> and the <b>Case</b> you want to generate the report for.</p>
+                <p>
+                    <img src="../Graphics/Report_Graphics/Solutions_Usage_Report.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p> Enter a dollar value per gigabyte for the processing and review items on the report. </p>
+                <p>
+                    <img src="../Graphics/Report_Graphics/Solutions_Usage_Values.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Preview or download the  report.</p>
+                <p>
+                    <img src="../Graphics/Report_Graphics/Solutions_Usage_Report_options.png" class="Thumbnail" />
+                </p>
+                <p>The report is generated.</p>
+                <p>
+                    <img src="../Graphics/Report_Graphics/Solutions_Usage_Example.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: The Processed Data Size is calculated based on the job date instead of averaging all time. Review Data Size is calculated based on averaging all time.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h3>Report Details</h3>
+        <p>The <b>Solution Usage Report</b> contains the following details:</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');width: 50%;" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 138px;" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 699px;" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: left;">item</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: left;">definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1" style="height: 59px;">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText"><b>Case</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">The case name or the referred to code name.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">&#160;</p>
+                        <p class="TableText"><b>Review Data Size</b>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">The average of all hosted review data including all images, natives, extracted text and production images. All data hosted is pulled regardless of when an import or production was done. This does not include database size.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText"><b>Processed Data Size</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText">A peak sum of the processed data including discovery, extracted data and processing jobs. This will be based on the job completion dates. Only jobs done within the date range are considered for calculating the peak sum. This does not consider the source data (compressed) size and does not include database size.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

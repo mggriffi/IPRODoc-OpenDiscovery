@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Smart Folders</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Configure Smart Folders</h1>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#Getting_Started_SF">Getting Started</a></span>
+                </p>
+            </li>
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#Creating_Smart_Folders">Creating Smart Folders</a></span>
+                </p>
+            </li>
+        </ul>
+        <h2>About Smart Folders</h2>
+        <p class="BodyText">Smart Folders provide a way to find case records/documents 
+ based on a case field or document tag group (public tags, not private). 
+ Smart Folders are public by default; they can be private if you limit 
+ the folder scope to a private search.</p>
+        <p class="BodyText">Smart Folders can be based on the fields listed in 
+ the following table. Check with your administrator if you have any questions 
+ about the fields in your case.</p>
+        <table cellspacing="0" width="62.198%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 16.828%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 219px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 246px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td style="border: Solid 1px #898493;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field type</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">fields</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">User-defined 
+		 fields</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">FixedLengthText</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Feature-specific 
+		 fields</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Keyword List (KWL_FL) fields</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">System 
+		 fields</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">BEGATT</p>
+                            </li>
+                            <li>
+                                <p class="TableText">BEGDOC</p>
+                            </li>
+                            <li>
+                                <p class="TableText">CUSTODIAN</p>
+                            </li>
+                            <li>
+                                <p class="TableText">ENDATTACH</p>
+                            </li>
+                            <li>
+                                <p class="TableText">ENDDOC</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><MadCap:variable name="Primary.Name" />IMAGINGJOB</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText"><MadCap:variable name="Primary.Name" />IMAGINGSTATUS</p>
+                            </li>
+                            <li>
+                                <p class="TableText">MD5HASH</p>
+                            </li>
+                            <li>
+                                <p class="TableText">NATIVE</p>
+                            </li>
+                            <li>
+                                <p class="TableText">NATIVEFILE 
+		 EXTENSION</p>
+                            </li>
+                            <li>
+                                <p class="TableText">NATIVEFILETYPEDESC</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText" style="font-weight: bold;">&#160;</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Smart Folders created 
+		 prior to Eclipse 2016.3.0 are affected as follows by upgrades 
+		 to 2016.3.0 or later:</p>
+                    <ul class="BulletListTable">
+                        <li>
+                            <p class="Note">For 
+		 a Smart Folder created based on Categories, a new Smart Folder 
+		 is created based on the selected field; the folder name is unchanged.</p>
+                        </li>
+                        <li>
+                            <p class="Note">For 
+		 a Smart Folder created based on Doc/Page Tags, new Smart Folders 
+		 are created for each tag group included in the original folder.</p>
+                        </li>
+                    </ul>
+                    <p class="Note">For 
+		 example, a single Smart Folder containing a tag from “Tag Group 
+		 A” and two tags from “Tag Group B” will become two Smart Folders, 
+		 one for “Tag Group A” and one for “Tag Group B.”</p>
+                    <p class="Note">To 
+		 replicate the original Smart Folder (individual tags or those 
+		 from different tag groups in a single folder), create/save an 
+		 applicable search and then create a Smart Folder based on the 
+		 search.</p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="Getting_Started_SF"></a>Getting Started</h2>
+        <p class="BodyText">Smart Folders are located in the <span style="font-weight: bold;">Case 
+ View</span> pane (<span style="font-weight: bold;">Documents</span> section) 
+ as shown in the example in this figure. </p>
+        <p class="Image">
+            <img src="../../../Graphics/Eclipse Web Images/scr_smartfolder_ex.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">To begin working with Smart Folders:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Log in to Eclipse and open the needed case 
+ or batch.</p>
+            </li>
+            <li>
+                <p>Open the <span style="font-weight: bold;">Case 
+ View</span> tab, pin it, and click (expand) <span style="font-weight: bold;">Documents</span>.</p>
+            </li>
+            <li>
+                <p>Plan your Smart Folder:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Identify 
+ the needed folder content (field or tag group).</p>
+                    </li>
+                    <li>
+                        <p>If 
+ you want to limit the scope of the folder to a specific set of documents, 
+ identify and/or create the applicable saved search.</p>
+                    </li>
+                    <li>
+                        <p>Give 
+ some consideration to the folder name so that folder content and purpose 
+ are clear. If several folders will be defined, consider naming conventions 
+ for consistency and ease-of-use.</p>
+                    </li>
+                    <li>
+                        <p>Ensure 
+ that the field or tag group is available in the case or batch (for example, 
+ is included in the selected coding form).</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Continue with the procedures on the following 
+ pages.</p>
+            </li>
+        </ol>
+        <h2><a name="Creating_Smart_Folders"></a>Creating Smart Folders</h2>
+        <p class="BodyText">If you have the permission to do so, create a Smart 
+ Folder as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete 
+ the steps in <a href="#Getting_Started_SF">"Getting Started<span style="font-style: italic;">."</span></a></p>
+            </li>
+            <li>
+                <p>Under Documents, click <img src="../../../Graphics/Eclipse Web Images/btn_create_smartfolder.gif" alt="" border="0" class="button_inline" />.</p>
+            </li>
+            <li>
+                <p>Complete the Smart Folder options dialog box, 
+ shown in the following figure and described in the following table.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Eclipse Web Images/mnu_smartfolder_dialogue.gif" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+            <p class="Image">&#160;</p>
+            <table cellspacing="0" width="57.786%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 22.564%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 77.436%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td style="border: Solid 1px #898493;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">item</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Group 
+		 Type</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Select the folder content, Field or Tag 
+		 Group.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Folder 
+		 Content</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Select either an individual field or tag 
+		 group name.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Scope</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Select either <span style="font-weight: bold;">All 
+		 Documents</span> (entire case) or <span style="font-weight: bold;">Saved 
+		 Search</span><span>.</span></p>
+                            <p class="TableText">If you select <span style="font-weight: bold;">Saved 
+		 Search</span>, the list of available searches will be listed; 
+		 select the needed search. Click <img src="../../../Graphics/Eclipse Web Images/btn_arrow_right.gif" alt="" border="0" class="button_inline" /> to expand 
+		 the list of <span style="font-weight: bold;">Public</span> or 
+		 <span style="font-weight: bold;">Private Searches</span>.</p>
+                            <p class="TableText">If you select a private search, only you will 
+		 be able to see/use the Smart Folder.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Preview</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Click the <span style="font-weight: bold;">Preview</span> 
+		 link to display the folder content based on your group, content, 
+		 and scope selections.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Folder 
+		 Name</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Enter a name for the folder. By default, 
+		 the folder name is either the selected field or tag group name.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Rebuild 
+		 on import</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Select this option to automatically rebuild 
+		 the folder if new data is added to your case.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <li>
+                <p class="BodyText">When the folder definition is complete, click<span style="font-weight: bold;"> Save</span>. The folder will be added 
+ in the <span style="font-weight: bold;">Documents </span>area of the <span style="font-weight: bold;">Case View </span>pane. </p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

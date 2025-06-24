@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Basic Advanced Search Procedure</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Basic Advanced Search Procedures</h1>
+        <p class="BodyText">To construct and run, save, or save and run an advanced 
+ search:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Open 
+ the case you want to search.</p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Case 
+ View</span> pane of <MadCap:variable name="Primary.IPRO" /> Eclipse, click <span style="font-weight: bold;">Advanced 
+ Search</span>. The <span style="font-weight: bold;">Advanced Search</span> 
+ tab replaces the <span style="font-weight: bold;">Documents</span> tab.</p>
+            </li>
+            <li>
+                <p>If a previously defined search is in the <span style="font-weight: bold;">Advanced Search</span> tab, click <span style="font-weight: bold;">New Search</span> in the <span style="font-weight: bold;">Advanced 
+ Search</span> area of the <span style="font-weight: bold;">Case View</span> 
+ pane or the <span style="font-weight: bold;">Clear</span> button at the 
+ bottom of the tab. (To edit the existing search definition, see <a href="#Changing_an_Advanced_Search">"Changing 
+ an Advanced Search"</a>).</p>
+            </li>
+            <li>
+                <p>Complete the top portion of the <span style="font-weight: bold;">Advanced 
+ Search</span> tab:</p>
+            </li>
+            <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 82.53%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Component</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Name</p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">If 
+		 you will be saving the search, enter a unique name here. Leave 
+		 this field blank if you will not be saving the search.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Parent Folder</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">If 
+		 you will be saving the search, select the folder in which the 
+		 search should be saved. By default, a saved search will be public 
+		 (available to all users with access to the case or batch). It 
+		 can also be private or shared. Folders are used to organize saved 
+		 searches and are created as described in <a href="Search_Folders.htm#Working_with_Search_Folders">"Working 
+		 with Search Folders"</a>.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Include</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">To 
+		 include documents related to those in the search results, select 
+		 one or more of the Include options (click &#160;on the right side 
+		 of the Include field). All fields defined with the Allow Group 
+		 by option will be available; typical selections include fields 
+		 that indicate:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Family 
+		 (based on case BEGATTACH field)</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Near-duplicates 
+		 (based on CAATND field)</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Duplicates 
+		 (based on MD5HASH field)</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Email 
+		 relationships (based on various CAAT fields)</p>
+                                </li>
+                            </ul>
+                            <p class="Image">
+                                <img src="../../../Graphics/Eclipse Web Images/scr_advsearch_include_option.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                <tr class="TableStyle-Note_Table-Body-Body1">
+                                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                        <p style="text-align: center;">
+                                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                        <p class="Note">Note: This option 
+				 cannot be selected when random sampling is used. </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ol>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="Advanced_Concept_Search.htm">Define a Concept Search</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="Advanced_Text_Search.htm">Define a Text Search</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="Define_a_Field_Specific_Search.htm">Define a Field-specific 
+ or Special Search</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="Define_a_Timeline_Search.htm">Define a Timeline Search</a>
+                </p>
+            </li>
+        </ul>
+        <h2 id="Specify_Sort_Order">Specify Sort Order</h2>
+        <p class="BodyText">Search results can be organized based by field content 
+ (the columns in the case table). Up to three fields can be defined for 
+ sorting. When you sort based upon multiple fields, the order of the sorting 
+ is based on the order in which the fields are selected.</p>
+        <p class="BodyText">To specify sort order:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Define 
+ a search using the previous procedures.</p>
+            </li>
+            <li>
+                <p>If the <span style="font-weight: bold;">Sort 
+ Options</span> section is not visible in the <span style="font-weight: bold;">Advanced 
+ Search</span> tab, click the corresponding <img src="../../../Graphics/Eclipse Web Images/btn_adv_search_collapse.png" alt="" border="0" class="button_inline" />.</p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Eclipse Web Images/btn_plus_2.png" alt="" style="border: none;" border="0" /><span style="font-weight: bold;">Add sort by field</span>.</p>
+            </li>
+            <li>
+                <p>Select the first field to be sorted. This is 
+ the primary order for the search results.</p>
+            </li>
+            <li>
+                <p>Select the sort order—<span style="font-weight: bold;">Ascending</span> 
+ (lowest to highest) or <span style="font-weight: bold;">Descending</span> 
+ (highest to lowest).</p>
+            </li>
+            <li>
+                <p>To specify a second sort order, click <img src="../../../Graphics/Eclipse Web Images/btn_plus_2.png" alt="" border="0" class="button_inline" /> and repeat <span style="font-weight: bold;">step 4</span> 
+ and <span style="font-weight: bold;">step 5</span> for the second field.</p>
+            </li>
+            <li>
+                <p>To specify a third sort order, click <img src="../../../Graphics/Eclipse Web Images/btn_plus_2.png" alt="" border="0" class="button_inline" /> and repeat <span style="font-weight: bold;">step 
+ 4</span> and <span style="font-weight: bold;">step 5</span> for the third 
+ field. Search results will be sorted 
+ first by author name and then by sent date.</p>
+            </li>
+            <li>
+                <p>Evaluate the sort order. The top field will 
+ be sorted first, the middle field second, and the third field last. To 
+ change the order, identify the field to be moved and drag its &#160;to 
+ the desired location. A green bar identifies the selected field’s location:</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Eclipse Web Images/scr_sort_order_bar.png" alt="" style="border: none;" border="0" />
+                </p>
+            </li>
+            <li>
+                <p>Review 
+ your selections. Note:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Make 
+ changes if needed.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ remove one of the sort-definition rows, point to the right side of the 
+ row and click <span style="font-weight: bold;">X</span>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>After the sort order is defined, continue with 
+ one of the following actions as needed:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Define 
+ random sampling for the search results, next.</p>
+                    </li>
+                    <li>
+                        <p><a href="Run_and_or_Save_a_Search.htm">"Run or save the search"</a>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2 id="Add_Random_Sampling_to_a_Search">Add Random Sampling to 
+ a Search</h2>
+        <p class="BodyText">To return a random sample of documents instead of all 
+ documents meeting your search criteria, complete the following steps. 
+ An overview of random sampling can be found in <a href="Advanced_Search.htm#About_search_types_and_options">"About 
+ search types and options."</a></p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Define 
+ a search using the previous procedures.</p>
+            </li>
+            <li>
+                <p>Ensure the <span style="font-weight: bold;">Include</span> 
+ option is <span style="font-style: italic;">not</span> selected.</p>
+            </li>
+            <li>
+                <p>If the <span style="font-weight: bold;">Random 
+ Sampling</span> section is not visible in the <span style="font-weight: bold;">Advanced 
+ Search</span> tab, click the corresponding <img src="../../../Graphics/Eclipse Web Images/btn_adv_search_collapse.png" alt="" border="0" class="button_inline" />.</p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Random 
+ Sampling</span> section, select <span style="font-weight: bold;">Apply 
+ to Search</span>.</p>
+            </li>
+            <li>
+                <p>Select the needed sampling type and associated 
+ options as described in the following table.</p>
+            </li>
+            <table cellspacing="0" width="95%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 82.53%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Sampling 
+		 Type</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Fixed size</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Select 
+		 this type to create a sample containing a specific number of documents 
+		 in the search results. </p>
+                            <p class="TableText">When this option is selected, enter the desired 
+		 size (a value equal to or greater than 1) in the <span style="font-weight: bold;">Fixed 
+		 Size</span> field. </p>
+                            <p class="TableText">The value you choose should be based on the 
+		 size of the search results without random sampling applied and 
+		 what number of those documents represents a good sampling size.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Statistical sampling</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Statistical 
+		 sampling is based on standard statistics calculations that utilize 
+		 a confidence level and margin of error.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Confidence Level</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Confidence 
+		 level represents the reliability of an estimate, that is, how 
+		 likely it is that the sample returned will be representative of 
+		 all search results. </p>
+                            <p class="TableText">The larger the confidence level is, the narrower 
+		 the range of documents will be that are considered to be representative.</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">90</span>: wider range of documents 
+		 considered (fewer documents typically returned).
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">95</span>: medium range of documents 
+		 considered.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">99</span>: narrower range of documents 
+		 (more documents typically returned).
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;">Margin of Error</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">The 
+		 margin of error expresses the amount of error to be allowed in 
+		 the search results sample.</p>
+                            <p class="TableText">Select a value from <span style="font-weight: bold;">1</span> 
+		 - <span style="font-weight: bold;">5</span>, where <span style="font-weight: bold;">1</span> 
+		 is the least amount of error and <span style="font-weight: bold;">5</span> 
+		 is the highest amount of error. </p>
+                            <p class="TableText">A setting of <span style="font-weight: bold;">1</span> 
+		 typically returns the most documents; a setting of <span style="font-weight: bold;">5</span> 
+		 typically returns the fewest documents.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <li>
+                <p>When your search is defined and random sampling 
+ is configured, continue with <a href="Run_and_or_Save_a_Search.htm">"Run 
+ and/or save a search"</a> next.</p>
+            </li>
+        </ol>
+        <h2><a name="Changing_an_Advanced_Search"></a>Changing an Advanced Search</h2>
+        <h3>Before a Search is Run</h3>
+        <p>Any time before an advanced search is run, revise the 
+ search as follows:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Conceptual or Text 
+ Search entries in the top portion of the <span style="font-weight: bold;">Advanced 
+ Search</span> tab can be changed.</p>
+            </li>
+            <li>
+                <p>In the Fields to 
+ Search section of the tab:</p>
+                <ul>
+                    <li>
+                        <p>Individual 
+ search statements can be added or removed by using the <img src="../../../Graphics/Eclipse Web Images/btn_adv_search_add_line.png" alt="" border="0" class="button_inline" /> 
+ or <img src="../../../Graphics/Eclipse Web Images/btn_adv_search_remove_line.png" alt="" border="0" class="button_inline" /> buttons.</p>
+                    </li>
+                    <li>
+                        <p>Value 
+ selections for a search statement can be changed, but you cannot change 
+ the <span style="font-weight: bold;">Search Type</span> once a type has 
+ been selected. You must remove the statement(s) and re-create the correct 
+ statement(s).</p>
+                    </li>
+                    <li>
+                        <p>To 
+ change values, click <img src="../../../Graphics/Eclipse Web Images/btn_pencil_2.png" alt="" border="0" class="button_inline" /> 
+ to expand the search statement. Do not enter details in the <span style="font-weight: bold;">Value</span> 
+ field.</p>
+                    </li>
+                    <li>
+                        <p>Any 
+ connectors can be changed or parentheses can be added.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To 
+ remove all entries in the <span style="font-weight: bold;">Advanced Search</span> 
+ tab and start over, click <span style="font-weight: bold;">Clear Fields</span> 
+ above the search-statement area.</p>
+            </li>
+            <li>
+                <p>Random 
+ sampling can be added, changed, or removed.</p>
+            </li>
+        </ul>
+        <h3>After a Search is Run</h3>
+        <p class="BodyText">To edit a search that has just been run (whether it 
+ was saved or not), click <span style="font-weight: bold;">Edit Search</span> 
+ in the <span style="font-weight: bold;">Advanced Search</span> section 
+ of the <span style="font-weight: bold;">Case View</span> pane. The search 
+ definition will be in the <span style="font-weight: bold;">Advanced Search</span> 
+ tab. Make changes as described in the previous topic.</p>
+        <h3>Modify Saved Searches</h3>
+        <p class="BodyText">See <a href="Saved_Searches.htm">"Saved Searches"</a> 
+ and <a href="Search_History.htm">"Search History"</a> for details 
+ on changing searches you have saved.</p>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

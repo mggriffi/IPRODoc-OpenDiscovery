@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary._FixedMulti-Level,Primary.Blocked" style="mc-template-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Export Guide for Archives</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Export Guide for Archives</h1>
+        <p class="BodyText">Use the following guide to help ensure OPEN Discovery productions/exports are ran correctly prior to sending to cloud services.</p>
+        <h2>Production/Export Checklist</h2>
+        <h4>Questions To Answer Prior To Running a Production</h4>
+        <ol>
+            <li>
+                <p>What is the Saved search that will be used for this production and the expected document count?</p>
+            </li>
+            <li>
+                <p>Will the documents be re-numbered and if so, what would you like the documents to be numbered: EX: PROD_0000001 or PROD000001.</p>
+            </li>
+            <li>
+                <p>	Image type (Available Types: Single Page Images (this is the standard), Multi-page images, Single-Page PDFs, Multi-Page PDFs (PDFs can also be made searchable).</p>
+            </li>
+            <li>
+                <p>Natives - default is to only produce the native version of Excel files and other files that cannot be imaged and create a placeholder image for it. Indicate if this will work or if you have a preference.</p>
+            </li>
+            <li>
+                <p>Text - this would be separate text files - one per document being produced.</p>
+            </li>
+            <li>
+                <p>Metadata - what columns of data from the database should be included with the production? i.e: email sent/received, email to/from, date created, etc.</p>
+            </li>
+            <li>
+                <p>	Which load files should be included? Typically, we include a DAT file for the metadata, natives &amp; text and either OPT or LFP files for the images. If unsure, and you know what software opposing counsel is using, please contact services and they can provide the proper load files.</p>
+            </li>
+            <li>
+                <p>Do you need any confidentiality endorsements on the produced documents? If so, what language should be used and where would you like it to appear on the documents?</p>
+            </li>
+            <li>
+                <p>	Other endorsements:  Are the documents being endorsed with the bates number?</p>
+            </li>
+        </ol>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: If you have an agreed upon ESI protocol or a document that discusses the format of production and answers the above questions, we recommend using that as it will have exactly what should be provided.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Once the above information is provided, the production/export can now be started.</p>
+        <h3>Run a Saved Search</h3>
+        <ol>
+            <li>
+                <p>Run same search with family if the original search wasn’t bringing in family. If there is a change in the number of documents, please reach out to the client and confirm if this is intentional.</p>
+            </li>
+            <li>
+                <p>If client mentioned tag(s) they want to include/exclude, perform a tally on the tag group(s) and ensure that proper tags are included/excluded. If there is a discrepancy, decide if they need to be excluded or included.</p>
+            </li>
+            <li>
+                <p>If the above is accurate to the clients request, select a document from the grid, change the coding form to Productions. Right-click on the production Tag Group &gt; Add Tag and create a tag for this production. Some examples of the tag name could be the name of the production provided by the client, or if nothing is provided, the date the production is being ran EX: 20230215_PROD001</p>
+            </li>
+            <li>
+                <p>Mass tag all documents in the search with the newly created tag.</p>
+            </li>
+            <li>
+                <p>Create a new Saved search folder called “PRODUCTIONS”</p>
+            </li>
+            <li>
+                <p>Create a saved search for the tagged documents</p>
+            </li>
+            <li>
+                <p>Modify the search to include a new field search variable: “System Has Image” &gt; Not Equal &gt; “Yes” (Ensure that you are not including family in this search)</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_FieldSearch.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Send the results through Mass Action Imaging, providing File Name for “Original File name".</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_Image.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>You can check the quality of the images sent by using “Admin &gt; “QC - Imaging Searches” &gt; “Imaging Errors/Exceptions</p>
+            </li>
+            <li>
+                <p>If any documents are returned, please reach out to the Services team so that they can run Imaging QC and resolve those errors.</p>
+            </li>
+            <li>
+                <p>Verify that images are correct in the case by adding the following to your search: “System Imaging Errors” &gt; Set and make the necessary <MadCap:annotation MadCap:createDate="2023-06-07T13:22:55.8320047-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Replace images" MadCap:editor="ddavidson" MadCap:editDate="2023-06-07T13:23:04.9017589-04:00">adjustments</MadCap:annotation></p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_Field1.png" style="width: 734px; height: 57px;" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Locate all placeholder documents by modifying the saved search , adding the following: "System Imaging Error Flags"&gt;Contains&gt;*place*</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_Field3.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select a document from the grid, change the coding form to Productions. Right-click on the production Tag Group &gt; Add Tag. Name the tag “Native_Placeholder”</p>
+            </li>
+            <li>
+                <p>On the grid, Mass tag all documents in the search with the newly created tag.</p>
+            </li>
+            <li>
+                <p>Create production/export based on the information provided by the above checklist</p>
+            </li>
+            <li>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>Export Sets</p>
+            </li>
+            <li>
+                <p>In the Exports Set section for a production select the _ProductionTemplate and select the copy icon</p>
+                <p> <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/ExportMT.png" class="Thumbnail" /></p>
+            </li>
+            <li>
+                <p>Name the copy of the production something you’d like to be referenced in the future under the Production tab and also select “Zip upon completion” as this will zip the production up allowing you to provide a single zip of the entire production to opposing counsel.</p>
+                <p>•	If you want to retain the original begdoc for these documents, skip this next step</p>
+            </li>
+            <li>
+                <p>Under numbering options, this is where you set the numbering for your documents,</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_NumberOptions.png" class="Thumbnail" /> <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/NumberingOptMT.png" class="Thumbnail" /></p>
+            </li>
+            <li>
+                <p>•	Under the image section, select the image type you wish to export:</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/Image options.png" class="Thumbnail" />
+                </p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>In the “Output locations” section you will select 'SPECIFY BY FILE TYPE OR TAG” under the native section</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_OutputLocations.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select “Document Tag” from the drop down, then select your Native placeholder tag. This will tell the system to provide a native of the documents that have a placeholder image.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_SpecifyTag.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click ok when complete.</p>
+            </li>
+            <li>
+                <p>Under the image section, select the image type you wish to export.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_Image2.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>In the next section is where you select the load files you need and the metadata you need to provide within the load file(s).</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_OutputLoadFiles.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The next section is volume information, this needs to be unique to the productions folder, if this is your first production, you can leave it as it is, but on any future productions, you would want to change this (the easiest way is to increment the starting number by 1).</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_Volumeinfo.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The last section is where you select the options for redactions and the image endorsement. Our default template will burn all default redactions, endorse all documents with the image key (that you set in the first section) and endorse any document tagged with a confidentiality tag.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_RedactionOpt.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Once completed select <MadCap:annotation MadCap:createDate="2023-06-07T13:40:21.5208962-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Replace image" MadCap:editor="ddavidson" MadCap:editDate="2023-06-07T13:40:28.4366842-04:00">save</MadCap:annotation></p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_ExportTools.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the right hand side select " Select Documents" and select your search and set your search <MadCap:annotation MadCap:createDate="2023-06-07T13:38:44.8271443-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Replace Image" MadCap:editor="ddavidson" MadCap:editDate="2023-06-07T13:38:50.7994805-04:00">options</MadCap:annotation>.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_SelectSearch.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select Validate (You may get items in the validation that can be overridden (by clicking the Override button). If the override button is greyed out, you have something in either your search, or settings that makes the production impossible to run</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_ValidateRep.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Assuming everything is correct, click override</p>
+            </li>
+            <li>
+                <p>click “Export” on the right-hand side</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/Export Settings/EX_MT_Summary.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>There is a refresh at the bottom right where you can check the progress</p>
+            </li>
+            <li>
+                <p>&#160;</p>
+            </li>
+            <li>
+                <p>&#160;</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <li>
+            <p>To include or exclude the corresponding custodians perform any of the following actions in the right-hand panel of the <b>Connectors and Custodians</b> field:</p>
+            <ol style="list-style-type: lower-alpha;">
+                <li>
+                    <p>To add all corresponding custodians, enable the <b>Select All</b> option. </p>
+                </li>
+                <li>
+                    <p>To add individual custodians, manually select the relevant custodians from the available list. </p>
+                </li>
+                <li>
+                    <p>To exclude all custodians, disable the <b>Select All</b> option. </p>
+                </li>
+                <li>
+                    <p>To exclude all custodians and  individually select the custodians to be included, disable the <b>Select All</b> option and manually select the relevant custodians from the available list.</p>
+                </li>
+            </ol>
+        </li>
+    </body>
+</html>

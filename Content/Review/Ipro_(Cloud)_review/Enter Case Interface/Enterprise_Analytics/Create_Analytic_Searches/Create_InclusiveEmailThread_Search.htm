@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Review" style="mc-template-page: url('../../../../../Resources/MasterPages/Review_MP.flmsp');">
+    <head>
+        <link href="../../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Inclusive Email Thread Search </title>
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create Inclusive Email Thread Search  </h1>
+        <p class="BodyText">For email threading, one way of reviewing batches is using an inclusive email thread search. In this scenario, you set up your batch review by email thread to exclude documents whose text is fully contained within another email.  By excluding emails in a thread that are wholly contained within another email, you can greatly decrease the number of documents reviewers must review and the total review time, while still allowing for review of all content in every document. </p>
+        <ol>
+            <li>
+                <p>Open the Advanced Search window to create a new <b>Field Search</b>.  Include Families on the search by ensuring <span style="font-weight: bold;"> Family</span> is selected from the drop-down.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/Advanced Search/NewSearch_1.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The criteria of the search should identify 
+ all documents that received an <b>IA Inclusive</b> value and include their 
+ families. This can be accomplished with the 
+ following criteria.  For more information about the <b>IA Inclusive </b>field and other email threading fields, see <MadCap:xref href="../../../Review Pass Interface/View_Relationships/Understand_Email_Threading_Fields.htm">Understand Email Threading Fields</MadCap:xref>.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/AR_AdvSearch_InclField.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click  <img src="../../../../../Graphics/ADD_Review_Graphics/Advanced Search/NewSave_2.png" class="ReduceButtonSize" /> and provide a name for the search. For example you could name the search<b> Email Thread Inclusive</b>.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/AR_AdvSearch_Incl.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>When creating a new<b> Active Learning Disabled Review Pass </b>use your 
+ Advanced Search for the documents to be batched. See <MadCap:xref href="../../../Review Pass Interface/Review_Pass_Actions/Manage_Review_Passes.htm">Manage Review Passes</MadCap:xref> for additional information.</p>
+                <table style="mc-table-style: url('../../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: When creating an Email Thread Inclusive review batch the following fields should be selected:</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p style="font-size: 10pt;">Set 
+ the <b>family field</b> to <span style="font-weight: bold;">IA Email Set ID</span> 
+ to ensure all families and threads are kept together.</p>
+                                    </li>
+                                    <li style="font-size: 10pt;">Sort the Review Pass by <b>IA Email Sort</b> descending.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Review Pass Interface/View_Relationships/Work_with_Relationships.htm">Working with Relationships</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_Email_Full_Thread_Search.htm">Create Email Full Thread Search    </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_Near_Duplicate_Not_Email_Thread_Search.htm">Create Near Duplicate Search Excluding Email Thread</MadCap:xref>
+        </p>
+    </body>
+</html>

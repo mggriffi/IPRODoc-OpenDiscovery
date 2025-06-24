@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head><title>discovery ][ Enterprise Release Notes 2021.9.0</title>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>discovery ][ Enterprise Release Notes 2021.9.0</h1>
+        <p><MadCap:variable name="Primary.IPRO" /> is pleased to announce the 2021.9.0 release of <MadCap:variable name="Primary.IPRO" /> for <MadCap:variable name="Primary.Name First" />.</p>
+        <p><MadCap:variable name="Primary.Name" /> continues to evolve with this exciting new release focused about security, productivity, reporting, and much more.</p>
+        <p>Driven by a mission for better governance, faster insights, and smarter discovery, <MadCap:variable name="Primary.Name" /> represents one of most impactful <MadCap:variable name="Primary.IPRO" /> releases to date. New solutions let you search data in place, collect less through smarter collections, expands Artificial Intelligence to your document review, and includes productivity enhancements with a focus on the functionality that you have asked for most.</p>
+        <ul class="BulletListBody">
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1" MadCap:conditions="Primary.Blocked">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note"><b>Note 1</b>: <MadCap:variable name="Primary.Name" /> 2020.8.0 requires SQL Server 2016 or later, .NET Core 3.1 or later, and .NET Framework 4.8 or later. In addition, the updated version of Auth is required for this release.<br /></p>
+                            <p class="Note"><b>Note 2</b>: Using Single Sign-on (SSO) requires enabling TLS 1.2 with an outbound HTTP connection to the identity provider. For more information about SSO and TLS, see the Security section that follows.</p>
+                            <p class="Note">For more overall information, see the <MadCap:xref href="../System Requirements.htm">System Requirements</MadCap:xref> document.</p>
+                            <p class="Note"><b>Note 3</b>: Eclipse web has been removed and replaced with our new, modern document review interface.  See <MadCap:xref href="#Resolved">Resolved Issues</MadCap:xref> in this document for more information.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ul>
+        <h2><a name="New"></a>
+        </h2>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table" MadCap:conditions="Primary.Blocked">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" MadCap:conditions="" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" MadCap:conditions="" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/tip_sysadm.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">To view the <MadCap:variable name="Primary.Name" /> 2020.8.0 new features video, click</p>
+                    <p class="Note">
+                        <MadCap:toggler targets="new_features_video">here</MadCap:toggler>.</p>
+                    <p class="Note" MadCap:targetName="new_features_video">
+                        <object src="https://vimeo.com/412907334" style="width: 560px;height: 315px;" MadCap:conditions="Primary.Blocked">
+                        </object>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>To view the “What’s new in <MadCap:variable name="Primary.Name" /> 2021.9.0 “ video, click:</p>
+        <p><a href="https://ipro.com/resources/videos/discovery-enterprise-2021-release/" target="_blank">What's new in Enterprise 2021.9.0</a>
+        </p>
+        <h2><b><MadCap:toggler targets="new_features_9_0">New Features</MadCap:toggler></b>
+        </h2>
+        <div MadCap:targetName="new_features_9_0">
+            <h3>LIVE EDA (Early Data Assessment)</h3>
+            <p>Work upstream and transform the way you think of eDiscovery  with <MadCap:variable name="Primary.LIVE EDA" />. Now you can access, search, and collect data in place across multiple on-prem or cloud data sources including, documents, emails, and now chats (Slack or Teams) with this release.</p>
+            <p>Reduce eDiscovery costs, time and complexity by collaborating before collecting. Search all your information repositories through a single view. Find relevant ESI in-place and collect only what you need and then promote them directly to Review.* see <a href="https://myipro.iprotech.com/help/NG/Master_Project/eDiscovery_Admin/netgovern/release_notes/release_notes_65.htm">NetGovern 6.5 Release Notes</a></p>
+            <p>When you open a <MadCap:variable name="Primary.LIVE EDA" /> case in <MadCap:variable name="Primary.Name" />, you are directed to <MadCap:variable name="Primary.NetGovern" /> Search where you can perform searches on live content across multiple repositories—see <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/live_eda.htm">Create a LIVE EDA Case</a>.</p>
+            <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p>
+                            <img src="../../Graphics/Admin_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">*Note: <MadCap:variable name="Primary.LIVE EDA" /> functionality requires additional purchase, see your account representative for more information.</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>Review</h3>
+            <h4><b>Active Learning</b>
+            </h4>
+            <p>Active Learning review, works in the background acting as a virtual team member, assisting you for higher quality, faster document review. Active Learning tracks your review progress, estimates work left to complete, and helps you identify conflicts and areas requiring quality checks. What if you could predict how much you need to review in a matter of hours? Our  Active Learning algorithm is 3x faster than market competitors , designed to focus on getting predictions faster.</p>
+            <p>Active Learning review helps in three ways:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Identify review progression and estimate completion - see what has been reviewed so far and estimate when the review will complete.</p>
+                </li>
+                <li>
+                    <p>Improved Review Quality Control - increase trust in your review by comparing machine learning insights against your human review teams’ selections.</p>
+                </li>
+                <li>
+                    <p>Prioritized, dynamic batches reduce review time - delivers documents to reviewers in priority order, based on the likelihood that they are relevant, for faster, higher quality.</p>
+                </li>
+            </ol>
+            <p>For more information, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/AL_Frequently_Asked_Questions.htm">Active Learning Frequently Asked Questions</MadCap:xref>.</p>
+            <h4><b>Visual Search</b>
+            </h4>
+            <p>Visual Search improvements are focused on increasing usability, user adoption, and time-to-value including:</p>
+            <ul>
+                <li>
+                    <p>Random Sampling of search results. </p>
+                </li>
+                <li>
+                    <p>Searching for Smart Folders</p>
+                </li>
+                <li>
+                    <p>Filter chips for collapsing or expanding sections</p>
+                </li>
+                <li>
+                    <p>User preference for the x/y axis of Visual Search charts are now autosaved per user.</p>
+                </li>
+                <li>
+                    <p>Save search dialog box that displays when saving searches now displays in the bottom left of the screen.</p>
+                </li>
+                <li>
+                    <p>"Save As" now allows the user to save a new version of the existing search with a new search name.</p>
+                </li>
+            </ul>
+            <p>For more information, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm">Work With the Visual Search Dashboard</MadCap:xref>.</p>
+            <h4><b>Advanced Search</b>
+            </h4>
+            <p>New options and usability improvements make Advanced Search more approachable and powerful:</p>
+            <ul class="BulletListBody">
+                <li>
+                    <p>New option to allow users to quickly re-order search criteria within Advanced Search.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Added the ability to tab over in Advanced Search to help facilitate creating searches primarily with the keyboard.</p>
+                </li>
+                <li>
+                    <p>Users can now type into the "Search Type" drop-down menu to quickly filter for type in Advanced Search.</p>
+                </li>
+                <li>
+                    <p>Save search dialog box that displays when saving searches now displays in the bottom left of the screen.</p>
+                </li>
+                <li>
+                    <p>"Save As" will now allow the user to save a new version of the existing search with a new search name.</p>
+                </li>
+            </ul>
+            <p>For more information, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm">Work With Advanced Search</MadCap:xref>.</p>
+            <h4><b>Other</b>
+            </h4>
+            <p>Updated “Print to PDF” mass action to output a separate PDF file per document.</p>
+            <ul>
+                <li>
+                    <p>Named after BegDoc</p>
+                </li>
+                <li>
+                    <p>Results provided within a .zip archive for downloading.</p>
+                </li>
+            </ul>
+            <p>Expanded display options to allow users to right-click the document grid to quickly add one or more fields in front of the selected field.</p>
+            <h3>Processing</h3>
+            <p>Configure case settings for ingestion, filtering, passwords, and <MadCap:variable name="Primary.Name" /> Imaging options directly within the web UI without having to leave the application.</p>
+            <p>Job Manager now handles all Review scheduled jobs and is now integrated into a single queue within the application to monitor and prioritize all mass action jobs. Improved sorting and filtering functionality and visibility into job tasks.</p>
+            <p>Performance Improvements examples gained from Job Manager updates;</p>
+            <p>•	OCR over 40% increase in speed</p>
+            <p>•	DtSearch Indexing 50% increase in speed</p>
+            <p>•	<MadCap:variable name="Primary.IPRO" /> Analytics Indexing 75% increase in speed.</p>
+            <p>Additional Virtual Machines (processing workers) added to an environment will automatically be set to “Eligible” allowing for processing tasks to be picked up right away.</p>
+            <h3>Administration</h3>
+            <h4><b>Case Settings Updates</b>
+            </h4>
+            <p>New UI allows you to delete empty Code Names within Case Management.</p>
+            <p>New Job Manager permission allows users to view jobs associated with cases they have permission to access.</p>
+            <p>See the <a href="https://myipro.iprotech.com/help/product-life-cycle/">Supported Product Life-cycle Calendar</a>.</p>
+            <p>Please contact Support@IPROtech.com to schedule an upgrade.</p>
+        </div>
+        <p>
+            <br />
+        </p>
+        <h2><a name="Resolved"></a>
+            <MadCap:toggler targets="resolved_issues">Resolved Issues</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="resolved_issues">
+            <h3><b>Review</b>
+            </h3>
+            <p><b>AR-6579</b> –Updated document grid to maintain document per page settings after performing a search.</p>
+            <p><b>AR-7385</b> - Improved "Check in Batch" dialog box text to visually notify users that they are checking in a batch.</p>
+            <p><b>AR-7283</b> – When creating a new review case, the Review App Environment setting is now a required field.</p>
+            <p><b>AR-7470</b> – Updated "Map System Fields" setting option in Admin for “EXTRACTEDTEXT” field to retain previous settings instead of defaulting to ASCII.</p>
+            <p><b>AR-7374</b> – Updated Visual Search Timeline "RESET" button to revert date picker to current date.</p>
+            <p><b>AR-7373</b> – Editing a Visual Search filter field with a yes/no drop down menu value no longer changes the value to "yes" as default.</p>
+            <p><b>AR-7341</b> – Improved handling of date search to validate date range is valid before running a search.</p>
+            <p><b>AR-6877</b> - Removed the ability to add duplicate fields to sort order in Visual Search.</p>
+            <p><b>AR-7394</b> – BEGDOC sort order is no longer applied automatically to reopened saved searches.</p>
+            <p><b>AR-7390</b> – Visual Search sort order option updated to avoid field naming cut-offs when large number of fields are selected.</p>
+            <p><b>AR-8974</b> – Updated UI to allow batch filtering when browser zoom is not equal to 100%.</p>
+            <h3><b>Processing</b>
+            </h3>
+            <p><b>AP-1857</b> – Improved handling of Carbon Copy exports to disk to avoid additional documents being included in export.</p>
+            <p><b>AP-1524</b> –  During imaging of PowerPoint files, improved handing of “Print Hidden Slides” option to properly display when the “Notes Pages Split” view is selected for output.</p>
+            <p><b>AP-1420</b> – PDF files returning, “Error: IPRO PDF Library returned error code when attempting to paginate” improved to provide successful imaging results.</p>
+            <p><b>AP-2669</b> – During HTML email conversion. Data Extract and Streaming Discovery jobs improved to prevent timeouts when encountering duplicate references to inline images.</p>
+            <p><b>AP-2607</b> – Improved handling of EML files to remove erroneous detection of the “From” field in the email body and prevent hanging of the application.</p>
+            <p><b>AP-2515</b> – Improved handling and reporting of password-protected archives attached to MSG files during file extraction in Standard Discovery.</p>
+            <p><b>AP-2449</b> – Updated extraction of  files attached by using the OLE or EMBEDDED_MSG method to digitally signed emails to prevent timeouts.</p>
+            <p><b>AP-2267</b> – Improved handling and reporting on large PDF Portfolio files containing emails to prevent timeouts.</p>
+            <p><b>AP-2156</b> – Support of Relativity Desktop Client executable v9 and v10 for importing directly into Relativity.</p>
+            <p><b>AP-1913</b> –PDF Portfolios found at the same directory as other archive file types are now properly identified as containers.</p>
+            <p><b>AP-1631</b> – Improved error reporting for non-extractable attachments during Streaming Discovery jobs.</p>
+            <p><b>AP-1319</b> – Updated time zone offset for Text Mail files to calculate proper “Sent Date”.</p>
+            <p><b>AP-2305</b> – Removal of unused <MadCap:variable name="Primary.eCapture" /> WinRar dll as it was identified as having a potential security vulnerability.</p>
+            <p><b>AP-2299</b> – Updated Daylight Saving offset to support positive UTC when processing in <MadCap:variable name="Primary.eCapture" />.</p>
+            <p><b>AP-1962</b> – Improved identification and flagging of “Excel Hidden Worksheets” during Streaming Discovery.</p>
+            <p><b>AP-1697</b> – Methodology for processing PST files through Media Manager are updated to include the proper population for Mailstore ID and MailstoreName metadata fields.</p>
+            <p><b>AP-1477</b> – Identification method for flagging embedded documents in Streaming QC is updated to exclude falsely identifying items extracted from emails.</p>
+            <p><b>AP-2069</b> – Updated Streaming detailed de-duplication report logic to omit “ItemHash” values for items unable to extract.</p>
+            <p><b>AP-1356</b> – Updated logic to remove overlay export calculations from being included on Export Series Summary report.</p>
+            <p><b>AP-982</b> – Updated Source Container report logic to handle long paths when the parent is within the 255-character limit but extracted children would exceed  255 characters.</p>
+            <p><b>AP-2407</b> – Updated methodology to identify and process multi-page image content for OCR of all pages.</p>
+            <p><b>AP-1851</b> – Removed the ability to configure custom email hash settings for “LastModDate” during Streaming Discovery as it has always defaulted to “LastModification Date” regardless of user setting.</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>
+                <br />
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Additional Resources">
+    <TocEntry
+      Title="ReleaseNotes">
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2020.8.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2020.8.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2020.8.1"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2020.8.1.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2021.9.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2021.9.1"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.1.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2021.9.2"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.2.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2022.10.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2022.10.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2022.11.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2022.11.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2022.11.1 and 11.2"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2022.11.1_11.2.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2023.11.3"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2023.11.3.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2023.11.5"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2023.11.5.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2024.11.6"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2024.11.6.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2024.11.7.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Import Third-Party Data">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Overview_Import_Third_Party_Data.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Create_the_Import_for_Third_Party_Data.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Production_History.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Text_Files.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Transfer Files">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Transfer Files Using Media Shuttle.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Transfer Files Using CloudFiles.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Ipro Cloud Portal and Duo Activation">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/DuoAcctActive.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Ipro_Cloud Self Service Password Reset.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Anti_Virus_Exclusions_2021_9.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Anti_Virus_Exclusions_2022_10.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Contact_Support.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Resources_Eclipse.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Solution_Usage_Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Personalize_Your_Environment_Branding.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/SQL_Server_Best_Practices.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/System Requirements.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/FAQ_Install.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/TB_Apache_Vulnerability.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/VM_FAQ.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Supported_File_Types.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/VM_Deployment.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Misc_Resources_OPEN_DISCOVERY.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Forensic_Imaging_Handling.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

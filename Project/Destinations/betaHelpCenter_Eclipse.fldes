@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publish Eclipse Help on myiprobeta-new myipro path"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-betptl001\c$\Core\Help\FlareProjects\Eclipse"
+  Port=""
+  ViewUrl="https://myiprobeta.iprotech.com/help/Eclipse"
+  Type="file"></CatapultDestination>

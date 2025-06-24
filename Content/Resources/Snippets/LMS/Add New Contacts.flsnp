@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <p class="BodyText">To add new contacts:</p>
+            <MadCap:snippetBlock src="../System_Navigation.flsnp" MadCap:conditionTagExpression="include[System_Nav.Contacts]" />
+            <ol class="NumbListBody" start="3">
+                <li>Click the <img src="../../../Graphics/System_Graphics/System_Add_Icon.png" class="ReduceButtonSize" /> button at the top of the screen to open the <b>Create New Contact</b> page. </li>
+                <li>Enter basic details for the contact as needed. 
+ All required fields are marked with an asterisk; 
+ all other entries are optional.</li>
+                <li>When the details have been defined for the contact, click 
+ <b>Save</b>.</li>
+                <li>Repeat these steps to define other contacts.</li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

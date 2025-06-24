@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse" style="mc-master-page: url('../../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Near-Duplicate Fields in IPRO Analytics</title>
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Near-Duplicate Fields in IPRO Analytics</h1>
+        <p class="BodyText">Fields used for near-duplicates analysis are listed 
+ in the following table. These fields can be created at the time you configure 
+ near-duplicates analytics. Fields are required unless otherwise noted.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 700px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">analytics 
+		 field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;ND&#160;Family</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">An identifier that is used to define items in near-duplicate groups.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA ND&#160;Score</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The similarity of this item to the principal item of a near-duplicate group.</p>
+                        <p class="TableText">This value is expressed as a decimal percent in the range of [0-100].</p>
+                        <p class="TableText">The principal item of the group and any exact duplicates of it will always have a value of 100.</p>
+                        <p class="TableText">No item will have a value less than the Minimum Similarity setting (expressed as a percentage) used when near-duplicate detection was performed.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;ND Sort</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">A value for items that can be used to sort near-duplicates in a group so that the principal document is first and all other group members follow in order from the highest to the lowest similarity.</p>
+                        <p class="TableText">If multiple groups need to be sorted, the groups should first be sorted by their near dupe family value and then be sorted by this value.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">IA ND Words</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">The number of duplicative words in the document compared to the principal item on the near duplicate group.</p>
+                    </td>
+                </tr>
+            </tbody> </table>
+        <p>For more information about near-duplicates see the Near Duplicate Detection video.</p>
+        <p><span class="BoldItalic"><img src="../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+        </p>
+        <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t1">Click 
+ here to watch the Near Duplicates video</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://vimeo.com/273940902" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+            <p>&#160;</p>
+            <p><b style="font-style: italic;">Related Topics</b>
+            </p>
+            <p>
+                <MadCap:xref href="../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Near-Duplicate_AnalyticsIA.htm">Configure Near-Duplicate Detection in IPRO Analytics</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="SetUpRelPanel_to_DisplayND_IA.htm">Set Up the Relationship Panel to Display Near-Duplicates ([%=Primary.Analytics%])</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="Create_NearDup_Batches_for_ReviewIA.htm">Create Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+            </p>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

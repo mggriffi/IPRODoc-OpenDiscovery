@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Blocked">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import Users from a File</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="Primary.FutureDelete">Import Users from a <MadCap:annotation MadCap:createDate="2022-10-11T16:31:10.2339107-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="This topic will be in the new Work with Users topic- to be deleted" MadCap:editor="ddavidson" MadCap:editDate="2023-02-08T09:09:59.5646952-05:00">File</MadCap:annotation></h1>
+        <p>Rather than creating users manually, you can import multiple users using a .CSV or .JSON file. A header row may be included in the file, but it is not necessary. Super Admin permissions are required to import users from a file.</p>
+        <h3>CSV Format</h3>
+        <p>The .CSV file must be in the following format prior to importing:</p>
+        <p class="Code">FirstName , LastName , UserName/Email , Managing Client , Password , true/false , true/false, true/false</p>
+        <p>The last three items in each row ('true" or "false") identify whether the user is Active, a Review User, and whether or not they need to change their password upon signing into the platform for the first time. Inactive users cannot log in.</p>
+        <p>For example:</p>
+        <p class="Code">Hubert, Quick , hquick@globex.com , Lawyers Inc , MyPassword@321 , True , True, False</p>
+        <p>If needed, these details can be changed after the users are imported.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" style="width: 61px;height: 61px;" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Important: When entering the managing client name, ensure it is entered exactly as it exists with proper spelling, spaces, and case. If the managing client name differs, the table will show a blank space in the Managing Client column. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>JSON Format</h3>
+        <p>The .JSON file must be in the following format prior to importing:</p>
+        <p class="Code">[</p>
+        <p class="Code">{</p>
+        <p class="Code">"FirstName": " ",</p>
+        <p class="Code">"LastName": " ",</p>
+        <p class="Code">"Username": " ",</p>
+        <p class="Code">"Password": " ",</p>
+        <p class="Code">"IsActive": true/false,</p>
+        <p class="Code">"ForceNewPassword": true/false</p>
+        <p class="Code">}</p>
+        <p class="Code">]</p>
+        <p>Separate users in the file by adding a comma between the ending } of one user and the starting { of the next. The example below demonstrates the formatting when adding two users.</p>
+        <p class="Code">[</p>
+        <p class="Code">{</p>
+        <p class="Code">"FirstName": "Hubert",</p>
+        <p class="Code">"LastName": "Quick",</p>
+        <p class="Code">"Username": "hquick@globex.com",</p>
+        <p class="Code">"Password": "MyPassword@321",</p>
+        <p class="Code">"IsActive": true,</p>
+        <p class="Code">"ForceNewPassword": false</p>
+        <p class="Code">},</p>
+        <p class="Code">{</p>
+        <p class="Code">"FirstName": "Ashley",</p>
+        <p class="Code">"LastName": "Gordon",</p>
+        <p class="Code">"Username": "agordon@globex.com",</p>
+        <p class="Code">"Password": "MyPassword@123",</p>
+        <p class="Code">"IsActive": false,</p>
+        <p class="Code">"ForceNewPassword": false</p>
+        <p class="Code">}</p>
+        <p class="Code">]</p>
+        <p>If needed, these details can be changed after the users are imported.</p>
+        <h3>Import File</h3>
+        <p>To import the users from a .CSV or .JSON file, do the following:</p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/System_Navigation.flsnp" MadCap:conditionTagExpression="include[System_Nav.Users] " />
+        <ol start="3">
+            <li>
+                <p>Click the <img src="../../Graphics/Icons/Vertical_dots.png" class="Thumbnail" /> button at the top of the screen. From the menu that appears, select  <b>Import Users from File</b>. The <b>Imort Users from File</b> page appears.</p>
+            </li>
+            <li>Click <b>Browse</b>. A file explorer opens.</li>
+            <li>Browse to the .CSV or .JSON file and click <b>Open</b>. The File Name field populates automatically. Click <b>Next</b>.</li>
+            <li>The Manage Import page opens, displaying the list of users found in the file. Make any needed changes to the list. When finished, complete the import by selecting <b>Save</b>.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Import User from Active Directory.htm">Import Users from Active Directory</MadCap:xref>
+        </p>
+    </body>
+</html>

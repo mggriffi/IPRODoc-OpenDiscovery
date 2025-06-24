@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <p class="BodyText">To construct and run, save, or save and run an advanced 
+ search:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Open 
+ the case you want to search. The dashboard appears.</p>
+                </li>
+                <li>
+                    <p>
+                   In the dashboard, go to <b>Need to construct an Advanced Search?</b> at the upper right corner and click <b>Advanced Search</b>. The Advanced Search case view appears.
+                </p>
+                </li>
+                <li>
+                    <p>If a previously defined search is already displayed on the dashboard, click <b>Clear</b> at the top of the Advanced Search case view. The title for the search changes to <i>Untitled</i>.</p>
+                </li>
+                <li>
+                    <p>Begin building the advanced search by expanding any of the required sections on the Advanced Search page and creating your search criteria.  Steps 5 through 11 describe criteria you can add to modify the scope of your search. Note that adding criteria does not automatically run the search. When ready to run the search, click the <b>Search</b> button at the top-right corner of the screen.</p>
+                    <h4><b>Optionally Modifying the Scope of your Search</b>
+                    </h4>
+                    <p>The following steps  are optional methods for modifying the scope of your search. You can complete one or all, depending on how focused you would like the search to be. The steps are listed in one common workflow scenario. However, you can complete them in whatever order you like. </p>
+                </li>
+                <ol>
+                    <li>
+                        <p>Select date criteria for the search by means of the <b>Timeline</b>:</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                <p>Expand the <b>Timeline</b> area on the Advanced Search page by clicking the <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" style="width: 32px;height: 20px;" /> icon. </p>
+                            </li>
+                            <li>
+                                <p>Select the date field you would like to use when running the Timeline search.</p>
+                            </li>
+                            <li>
+                                <p>Select the range of dates to which you would like to limit the scope of the search. You can input these dates manually by typing them into the <b>Filter Dates</b> fields, or select them by clicking and opening the calendars beside the fields. The first field is the start date and the second field is the end date. Additionally, you can select a date range of interest by clicking the Timeline itself and dragging right or left as required to define the range of interest. For more information about selecting a date range, see <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm#Define2" MadCap:conditions="Primary.Admin">Define a Timeline Search</MadCap:xref><a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Define_the_Timeline.htm" target="_blank" MadCap:conditions="Primary.LMS_v8_0">Define a Timeline Search</a>.</p>
+                            </li>
+                            <li>
+                                <p><i>Optional</i>: Select the <span style="font-weight: bold;">Include
+					Empty/Invalid Dates</span> option to include into the document set documents that contain date 
+					problems. This option affects only the documents listed 
+				in the case table; it does not affect the Timeline.</p>
+                            </li>
+                            <li>When finished defining your Timeline search, close the Timeline area by selecting the <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Advanced_Search_Open_Arrow.png" style="width: 21px;height: 21px;" /> icon beside Timeline.</li>
+                            <li>
+                                <p>Continue defining the search by selecting additional criteria, or run the search by clicking the <b>Search</b> button at the top-right corner of the screen.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Run a search for conceptually similar documents by means of the <b>Analytics</b> area of the Advanced Search page.</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                <p>Expand the <b>Analytics</b> area on the <b>Advanced Search</b> page by clicking the <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" style="width: 32px;height: 20px;" /> icon. </p>
+                                <p>
+                                    <img src="../../../Graphics/ADD_Review_Graphics/AR_Sec_Adv_Search_Analytics2.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Complete the <b>Analytics</b> section of the Advanced 
+ Search page as described in the following table.</p>
+                                <table cellspacing="0" width="95%" style="mc-table-style: url('../../Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 82.53%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <thead>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">component</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">Description</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText"><span style="font-weight: bold;">Minimum Similarity</span>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">Select 
+		 a relevancy threshold to be used for the search. The threshold 
+		 expands or narrows the evaluation for conceptually matching documents. 
+		 </p>
+                                                <p class="TableText">Note: </p>
+                                                <ul class="BulletListTable">
+                                                    <li>
+                                                        <p class="TableText">A 
+		 typical value is 50. </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="TableText">A 
+		 higher number represents higher precision but less recall.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="TableText">A 
+		 lower number represents lower precision but higher recall.</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText"><span style="font-weight: bold;">Analytics Index</span>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">Select 
+		 the search index that has been defined for the concept of interest. 
+		 Your administrator must configure concept search 
+		 indexes. Contact your administrator for details about your concept 
+		 search indexes.</p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                                <p class="TableText"><span style="font-weight: bold;">Concept 
+		 </span>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                                <p class="TableText">Enter 
+		 your query into the <span style="font-weight: bold;">Concept</span> 
+		 field. The query can be any size, but a more fully described concept 
+		 will usually yield better results than just one or two terms.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>When finished defining your concept search, close the Analytics area by selecting the <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Advanced_Search_Open_Arrow.png" style="width: 21px;height: 21px;" /> icon beside Analytics.</li>
+                            <li>
+                                <p>Continue defining the search by selecting additional criteria, or run the search by clicking the <b>Search</b> button at the top-right corner of the screen.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="BodyText">To define a text search, perform the following steps. 
+ The following figure shows a typical text search.</p>
+                        <p>
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Scr_Text_Search.png" class="Thumbnail" />
+                        </p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>If the <span style="font-weight: bold;">Text Search</span> 
+ section is not visible on the <span style="font-weight: bold;">Advanced Search</span> page, click the corresponding arrow <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" style="width: 32px;height: 20px;" />.</li>
+                            <li>
+                                <p>As required, select one or more search options 
+ from the <span style="font-weight: bold;">Search Features</span> list, as described 
+ in the following table. </p>
+                                <p>Note:</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p>These 
+ options apply to all entries in the <span style="font-weight: bold;">Keyword</span> 
+ field.</p>
+                                    </li>
+                                    <li>
+                                        <p>Applying 
+ any of these options to multiple terms can slow the search.</p>
+                                    </li>
+                                    <li>
+                                        <p>Select 
+		 from one or more special types of search as follows. </p>
+                                    </li>
+                                </ul>
+                                <table cellspacing="0" width="95%" style="mc-table-style: url('../../Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 82.53%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <thead>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                            <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">Component</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">Description</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText" style="font-weight: bold;">Stemming</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">Search for terms and all words beginning with 
+		 the root form of the word entered. For example, searching for 
+		 operation with this option selected will return documents containing 
+		 operation, operate, and operator. (The root form of operation 
+		 is considered operat.)</p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText"><span style="font-weight: bold;">Phonic</span>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">Search 
+		 for terms that sound similar but are spelled differently. For 
+		 example, searching for smith with this option selected will return 
+		 documents containing smith, smithe, and smythe. </p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText"><span style="font-weight: bold;">Fuzzy</span>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">Search 
+		 for terms that are not quite an exact match but are close. Useful 
+		 for searching text fields in which some characters may not have 
+		 been interpreted correctly by an OCR engine.</p>
+                                                <p class="TableText">Select a number from 0 to 9 to specify the 
+		 degree of fuzziness that will be accepted. Values from 1 to 3 
+		 represent moderate levels of error tolerance and are used most 
+		 often. Higher numbers result in a higher error tolerance (more 
+		 results). </p>
+                                                <p class="TableText">Fuzzy search results may vary, depending on 
+		 such factors as the length of the search term and/or position 
+		 of incorrect characters. </p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText"><span style="font-weight: bold;">Synonyms</span>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">Search 
+		 term(s) that have the same meaning as the word that 
+		 you enter, such as the words legal and authorized. Synonyms are 
+		 defined by the WordNet® concept network. For details about WordNet, 
+		 see <a href="http://wordnet.princeton.edu/" target="_blank">http://wordnet.princeton.edu/</a>.</p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                                <p class="TableText"><span style="font-weight: bold;">Related 
+		 Words</span>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                                <p class="TableText">Search 
+		 for the term you enter and related terms as defined by the WordNet 
+		 concept network. For example, words may be related by being a 
+		 subset of the search term (such as furniture and chair). WordNet 
+		 considers many types of relationships, as discussed on their Web 
+		 site. </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Enter any full-text search term or phrase in 
+ the <b>Keyword</b> field. Use 
+ the syntax explained in <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Search_Syntax.htm" MadCap:conditions="Primary.Admin">Search Syntax</MadCap:xref><MadCap:conditionalText MadCap:conditions="Primary.LMS_v8_0"><a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Search_Functionality/AR_Search_Syntax.htm" target="_blank">Search Syntax</a></MadCap:conditionalText> to construct any type of full-text search. You can also use any of the Boolean operators on the drop-down menu at the bottom-left of the <b>Keyword</b> field:</p>
+                                <p>
+                                    <img src="../../../Graphics/ADD_Review_Graphics/AR_DrpDown_Boolean_Keywd.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Continue defining the advanced search by selecting additional criteria. Save and/or run the search by clicking either the <b>Search, Save</b>, or <b>Save and Search</b> button at the top-right corner of the screen.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="BodyText">To define field-specific criteria for the search, perform the following steps. 
+ The following figure
+ shows a simple field-specific search combined with a redaction search.</p>
+                        <p class="BodyText">
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Tab_Sec_Field_Search_Complex.png" style="width: 765px; height: 88px;" class="Thumbnail" />
+                        </p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>If the <span style="font-weight: bold;">Field Search</span> section is not visible on the <span style="font-weight: bold;">Advanced 
+ Search</span> page, click the corresponding arrow <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" style="width: 32px;height: 20px;" /> to expand the section.</li>
+                            <li>
+                                <p>Construct the first statement for your 
+ search by selecting a search type, selecting or inputting values associated with the search type, and selecting the required operator. For more information about this step, see<MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Define_a_Field-Specific_Search.htm"><![CDATA[
+           ]]></MadCap:xref><MadCap:conditionalText MadCap:conditions="Primary.Admin"><MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm#Define">Define a Field Specific Search
+</MadCap:xref></MadCap:conditionalText><a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Define_a_Field-Specific_Search.htm" target="_blank" MadCap:conditions="Primary.LMS_v8_0">Define a Field-Specific Search</a>.</p>
+                            </li>
+                            <li>
+                                <p>To include another search statement in this 
+ area, select the required connector (<span style="font-weight: bold;">And</span>, 
+ <span style="font-weight: bold;">Or</span>, <span style="font-weight: bold;">Not</span>) 
+ on the right side of the statement, then click <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_GreenPlusSign.png" style="width: 28px;height: 26px;" />. Define this search statement using the same process described in step b. Repeat this step for any additional search statements that are required to be added.</p>
+                                <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                    <tbody>
+                                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                <p class="TableText">
+                                                    <img src="../../Images/myipro_note.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                <p class="Note">Note: If two or more statements should be grouped 
+ into an expression, you must use parentheses. See <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm#Multi-en" MadCap:conditions="Primary.Admin">Define a Field-Specific Search with Multiple Search Statements</MadCap:xref><a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Define_a_Field-Specific_Search.htm%23Multi-en" target="_blank"><MadCap:conditionalText MadCap:conditions="Primary.LMS_v8_0">Define a Field-Specific Search with Multiple Search Statements</MadCap:conditionalText></a>.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>After the field and/or special search is defined, 
+ complete your advanced search definition as required. When finished, save and/or run the search by clicking either the <b>Search, Save</b>, or <b>Save and Search</b> button at the top-right corner of the screen.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>If required, specify the sort order for the advanced search. Up to three fields can be defined for 
+ sorting. When you sort based on multiple fields, the order of the sorting 
+ is based on the order in which the fields are selected. To specify sort order:</p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>If the <span style="font-weight: bold;">Sort 
+ Options</span> section is not visible on the <span style="font-weight: bold;">Advanced 
+ Search</span> page, click the corresponding arrow <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" style="width: 32px;height: 20px;" />.</li>
+                            <li>
+                                <p>Click <img src="../../../Graphics/Eclipse Web Images/btn_plus_2.png" alt="" style="border: none;" border="0" /><span style="font-weight: bold;">Add sort by field</span>.</p>
+                            </li>
+                            <li>
+                                <p>Select the first field to be sorted. This is 
+ the primary order for the search results.</p>
+                            </li>
+                            <li>
+                                <p>Select the sort order—<span style="font-weight: bold;">Ascending</span> 
+ (lowest to highest) or <span style="font-weight: bold;">Descending</span> 
+ (highest to lowest).</p>
+                            </li>
+                            <li>
+                                <p>To specify a second or third sort order, click <img src="../../../Graphics/Eclipse Web Images/btn_plus_2.png" alt="" border="0" class="button_inline" /><b>Add sort by field</b>. Repeat the previous <span style="font-weight: normal;">steps </span>for the second and/or third field.</p>
+                                <p>In the following example, search results are sorted 
+ first by author name and then by date created.</p>
+                                <p>
+                                    <img src="../../../Graphics/ADD_Review_Graphics/AR_Tab_Sec_SortOptions.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Continue defining the advanced search by selecting additional criteria. Save and/or run the search by clicking either the <b>Search, Save</b>, or <b>Save and Search</b> button at the top-right corner of the screen.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>To add random sampling, perform the following steps. 
+ When Random Sampling is used, the search returns a random sample of documents instead of all 
+ documents meeting your search criteria. An overview of random sampling can be found in <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm#Random" MadCap:conditions="Primary.Admin">Random Sampling</MadCap:xref><a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Advanced_Search.htm%23About_search_types_and_options" target="_blank"><MadCap:conditionalText MadCap:conditions="Primary.LMS_v8_0">About Search Types and Search Options</MadCap:conditionalText></a>.</p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: If using random sampling, do not include any of the relationship selections in the <b>[SELECT]</b> drop-down menu.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>
+                                <p>If the <span style="font-weight: bold;">Random 
+ Sampling</span> section is not visible on the <span style="font-weight: bold;">Advanced 
+ Search</span> page, click the corresponding arrow, <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" style="width: 32px;height: 20px;" /></p>
+                            </li>
+                            <li>In the <span style="font-weight: bold;">Random 
+ Sampling</span> section, select <span style="font-weight: bold;">Apply 
+ to Search</span>.</li>
+                            <li>
+                                <p>On the drop-down menus, select the required sampling type and associated 
+ options as described in the following table.</p>
+                                <table cellspacing="0" width="95%" style="mc-table-style: url('../../Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 82.53%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <thead>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">Sampling 
+		 Type</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">Description</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText"><b>Sampling Type</b>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText"><b>Statistical Sampling</b> - based on standard statistics calculations that use
+		 a confidence level and margin of error.</p>
+                                                <p class="TableText"><b>Fixed Size </b>- creates a sample containing a specific number of documents 
+		 in the search results.</p>
+                                                <ul class="BulletListTable">
+                                                    <p class="TableText">When this option is selected, enter the desired 
+		 size (a value equal to or greater than 1) in the <span style="font-weight: bold;">Fixed 
+		 Size</span> field. The value you choose should be based on the 
+		 size of the search results without random sampling applied and how many of those documents represent a good sampling size.</p>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText" style="font-weight: bold;">Confidence Level</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">Confidence 
+		 level represents the reliability of an estimate, that is, how 
+		 likely it is that the sample returned will be representative of 
+		 all search results. </p>
+                                                <p class="TableText">The larger the confidence level is, the narrower 
+		 the range of documents will be that are considered to be representative.</p>
+                                                <ul class="BulletListTable">
+                                                    <li>
+                                                        <p class="TableText"><span style="font-weight: bold;">90</span>: wider range of documents 
+		 considered (fewer documents typically returned).
+                            </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="TableText"><span style="font-weight: bold;">95</span>: medium range of documents 
+		 considered.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="TableText"><span style="font-weight: bold;">99</span>: narrower range of documents 
+		 (more documents typically returned).
+                            </p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                                <p class="TableText" style="font-weight: bold;">Margin of Error</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                                <p class="TableText">The 
+		 margin of error expresses the amount of error to be allowed in 
+		 the search results sample.</p>
+                                                <p class="TableText">Select a value from <span style="font-weight: bold;">1</span> 
+		 - <span style="font-weight: bold;">5</span>, where <span style="font-weight: bold;">1</span> 
+		 is the least amount of error and <span style="font-weight: bold;">5</span> 
+		 is the highest amount of error. </p>
+                                                <p class="TableText">A setting of <span style="font-weight: bold;">1</span> 
+		 typically returns the most documents; a setting of <span style="font-weight: bold;">5</span> 
+		 typically returns the fewest documents.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Continue defining the advanced search by selecting additional criteria. Save and/or run the search by clicking either the <b>Search, Save</b>, or <b>Save and Search</b> button at the top-right corner of the screen.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>To 
+		 include documents related to the search results, you can select a relationship type from the <b>[SELECT]</b> drop-down menu. Options include:</p>
+                        <ul class="BulletListBody">
+                            <li>Duplicates</li>
+                            <li>Email Thread</li>
+                            <li>Family</li>
+                            <li>Near Duplicates</li>
+                            <li>Similar Documents</li>
+                        </ul>
+                        <p>
+                            <img src="../../../Graphics/ADD_Review_Graphics/AR_Advanced_Visual_Search_Relationships_Dropdown.png" class="Thumbnail" />
+                        </p>
+                        <p>To learn more about each relationship type, see <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Overview_Relationships.htm">Overview: Relationships</MadCap:xref>.</p>
+                        <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: This option 
+				 should not be selected when random sampling is used. </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Continue defining the advanced search by selecting additional criteria. Save and/or run the search by clicking either the <b>Search, Save</b>, or <b>Save and Search</b> button at the top-right corner of the screen.</p>
+                    </li>
+                </ol>
+            </ol>
+        </div>
+    </body>
+</html>

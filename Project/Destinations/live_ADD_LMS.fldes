@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publish to LMS Enterprise folder on Live"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-itsptl002\c$\Core\Help\FlareProjects\LMS\Enterprise"
+  Port=""
+  ViewUrl="https://myipro.iprotech.com/LMS/Enterprise"
+  Type="file"
+  UploadLogFile="true"
+  ConnectionMode="Active"></CatapultDestination>

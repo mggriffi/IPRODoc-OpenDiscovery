@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedList,Primary.Reports" style="mc-master-page: url('../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Custom Reports</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create Custom Reports" />Create Custom Reports</h1>
+        <h3><MadCap:variable name="Primary.Name" /> Security</h3>
+        <p>As of version 2018.5.0, security was implemented in <MadCap:variable name="Primary.Name" /> allowing the <MadCap:variable name="Primary.Name" /> Administrator to create groups, assign users to those groups, and grant permissions to existing <MadCap:variable name="Primary.Name" /> reports as well as custom reports. In addition, a new field was added that corresponds with the named permission required to see and run the report.</p>
+        <h3>About Custom Reports</h3>
+        <p class="BodyText">Administrators with a strong SQL background can use 
+			stored procedures to create custom reports for inclusion in the <MadCap:variable name="Primary.Name" /> Reports 
+		component.</p>
+        <p class="BodyText">The following figure shows a custom report that has 
+		been included in <MadCap:variable name="Primary.Name" /> <b style="font-weight: normal;">Reports</b>.</p>
+        <p class="Image">
+            <img src="../../Graphics/Report_Graphics/CustomReports/CustomReports.png" alt="" border="0" class="Thumbnail" />
+        </p>
+        <p class="BodyText">Creating custom reports can be as simple as creating 
+			a stored procedure that returns the data for a report (see <MadCap:xref href="Create_a_Stored_Procedure.htm">Create a Stored Procedure</MadCap:xref>), or you can define charts and graphs and fine-tune 
+			the layout of the data (see <MadCap:xref href="Create_a_Report_Definition.htm">Create a Report Definition</MadCap:xref>).</p>
+        <table class="TableStyle-Note_Table" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" cellspacing="0">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../Graphics/Report_Graphics/Report_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note 
+					the following when creating a custom report for <MadCap:variable name="Primary.Name" />:</p>
+                    <ul style="list-style: square;" class="BulletListTable">
+                        <li>
+                            <p class="Note">By default, report data is displayed as 
+								a table with the columns in the same order as they appear 
+							in the resulting dataset(s).</p>
+                        </li>
+                        <li>
+                            <p class="Note">Multiple datasets can be returned from 
+								the same stored procedure and will be displayed when the report 
+							is run.</p>
+                        </li>
+                        <li>
+                            <p class="Note">The <MadCap:variable name="Primary.Name" /> reporting system will automatically 
+								aggregate any fields containing numbers. Do not include IDs, 
+								codes, or other numeric fields that you do not want aggregated. 
+								(This behavior can be overridden by customizing the data display 
+								as described in the  <MadCap:xref href="Reporting.ParameterListDefinition_Table.htm">Reporting.ParameterListDefinition Table</MadCap:xref> topic.)</p>
+                        </li>
+                        <li>
+                            <p class="Note">If you are planning on including charts 
+								in your report, be aware that extremely large datasets may 
+							not display well in charts.</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p class="MsoNormal">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Create_a_Stored_Procedure.htm">Create a Stored Procedure</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_a_Report_Definition.htm">Create a Report Definition</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Automatic_Report_Detection.htm">Automatic Report Detection</MadCap:xref>
+        </p>
+    </body>
+</html>

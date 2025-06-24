@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Review" style="mc-master-page: url('../../../../../Resources/MasterPages/Review_MP.flmsp');" MadCap:conditionTagExpression="exclude[Primary.Blank]">
+    <head>
+        <link href="../../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage a Search Index</title>
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Manage a Search Index</h1>
+        <p class="BodyText"><MadCap:variable name="Primary.Name" /> Review includes a powerful text search capability 
+ using the dtSearch® search engine (from dtSearch Corp). Administrators 
+ can configure and maintain the accuracy of this index using the procedures 
+ explained in this section.</p>
+        <p class="BodyText">
+            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Index_Details_Pane_Full.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">Indexes themselves are initially created as part of 
+ the import process, unless the indexing step was skipped (for example, 
+ to save time). In addition, various changes require that the index be 
+ rebuilt, such as:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                Adding new fields to a case and importing data 
+	 into them.
+            </p>
+            </li>
+            <li>
+                <p>
+                Changing the indexing option for a field from 
+	 No to Yes.
+            </p>
+            </li>
+            <li>
+                <p>
+                Editing (changing the value of) fields that 
+	 have the indexing option set.
+            </p>
+            </li>
+            <li>
+                <p>
+                Replacing or adding text files.
+</p>
+            </li>
+        </ul>
+        <h2>Manage a Case Search Index</h2>
+        <p class="BodyText">To manage a case search index:</p>
+        <ol>
+            <li>
+                <p>Open <MadCap:variable name="Primary.ProdName_Review" />. </p>
+            </li>
+            <li>
+                <p>Click 
+ the <b>Case Settings</b> button.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_CaseSettings.png" />
+                </p>
+            </li>
+            <li>Select the <b>Index Management</b> tab.</li>
+            <li>
+                <p>In 
+ the <b>Index Management</b> window, select the pencil icon to edit the index.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_EditReviewPass.png" style="width: 51px;height: 29px;" />
+                </p>
+            </li>
+            <li>
+                <p>
+                    <p>Update the options in the <b>Index Information</b> section as needed. Be advised that the index build time may be longer when these options are selected, but search times will typically be faster for these types of searches:</p>
+                    <table style="mc-table-style: url('../../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../../../../Resources/Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note: The <b>Index Name</b> and <b>Index Path</b> cannot be modified. Index Name will be auto-filled as "Default dtSearch Index." The Index Path shows the full path and directory in which the index file is maintained. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p><b>Auto Recognize Date, Email and Credit Cards</b>: When this option is selected, dates, email addresses, and credit-card number recognition will be used instead of simple character recognition for these items when users search for them.</p>
+                        </li>
+                        <li><b>Auto Break CJK Words</b>: For cases that may have Chinese, Japanese, or Korean words that need to be searched, selecting this option will allow you to split characters in the search without having to search for the whole word.</li>
+                        <li><b>Number of Indexes</b>: The number of index files can be changed here if needed. Particularly for large and diverse data collections, it can speed index and search processing to define multiple index files.</li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>Update the <b>Auto Indexing Options</b> as needed.</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If the <b>Auto Indexing Enabled</b> feature is selected, you may set the following options for when the index runs:</p>
+                        <ul>
+                            <li>If you would like the Index to run a build once, select the <b>Occurs once at</b> option and select the time you would like the index to start building.</li>
+                            <li>
+                                <p>If you would like the Index to run a build at regular intervals, select the <b>Occurs every</b> option and adjust the following settings as necessary.</p>
+                                <ul>
+                                    <li style="font-weight: normal;">Hour(s): determines how often the index will be built.</li>
+                                    <li style="font-weight: normal;">Starting at: determines when Auto Indexing will begin.</li>
+                                    <li style="font-weight: normal;">Ending at: determines when Auto Indexing will stop.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><b>Alphabet</b>: Specify how different characters are classified. If changes are made to this area, ensure that each character appears in only one of the sections. For example: if you want an ampersand, &amp;, to be ignored, delete it in the <b>[Spaces]</b> section and add it to the <b>[Ignore]</b> section.</p>
+                        <table cellspacing="0" style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                            <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <col style="width: 600px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <thead>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                        <p class="TableHead" style="text-align: center;">Section</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                        <p class="TableHead" style="text-align: center;">Description</p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText" style="font-weight: bold;">[Letters]</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">Searchable 
+			 characters, including all alphabetic characters (upper and 
+			 lower case) and digits. All letters and digits should be classified 
+			 as letters (A-Z, a-z, and 0-9).</p>
+                                        <p class="TableText">In the <span style="font-weight: bold;">Alphabet</span> 
+			 list, the four entries for each letter include the original 
+			 letter plus lower case, upper case, and unaccented forms of 
+			 the letter.</p>
+                                        <p class="TableText">Four entries are required for each character.</p>
+                                    </td>
+                                </tr>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText" style="font-weight: bold;">[Hyphen]</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">The 
+			 hyphen character is considered as a searchable character, 
+			 a space, or is ignored (or all three) depending on the selected 
+			 <span style="font-weight: bold;">Hyphen Option</span> as described in the <b>[END]</b> section of this table.</p>
+                                        <p class="TableText">Rarely, other characters might be entered 
+			 in this section for the same treatment. If you do so, make 
+			 sure they are removed from other sections (<span style="font-weight: bold;">Spaces</span> 
+			 or <span style="font-weight: bold;">Ignored</span>).</p>
+                                    </td>
+                                </tr>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText" style="font-weight: bold;">[Spaces]</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">Characters 
+			 entered in this section are treated as plain spaces. For example, 
+			 if the period (.) is included in this section, M.D. would 
+			 be indexed as two separate words, M&#160;and&#160;D.</p>
+                                        <p class="TableText">To make any character in this area searchable, 
+			 delete it from this area and add it to the <span style="font-weight: bold;">[Letters]</span> 
+			 section.</p>
+                                        <p class="TableText">For example, if you want the plus character, 
+			 +, to be searchable (perhaps you need to find the company 
+			 name “Green+Smith”), you would remove it from the<span style="font-weight: bold;"> 
+			 [Spaces]</span> section and add it as follows in the <span style="font-weight: bold;">[Letters]</span> section as shown 
+			 here.</p>
+                                        <p class="Image">
+                                            <img src="../../../../../Graphics/Admin_Graphics/dtSearch-AlphabetListEx.png" alt="" border="0" class="Thumbnail" />
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText" style="font-weight: bold;">[Ignored]</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">Characters 
+			 entered in this section are ignored. For example, if the period 
+			 is ignored, the abbreviation M.D. would be indexed as a single 
+			 term, MD.</p>
+                                    </td>
+                                </tr>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                        <p class="TableText" style="font-weight: bold;">[End]</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                        <p class="TableText">Additional 
+			 alphabet options</p>
+                                        <p class="TableText">1 - Treat 
+			 hyphens as spaces. <span style="font-style: italic;">Even-tempered</span> 
+			 will be indexed as two words, <span style="font-style: italic;">even</span> 
+			 and <span style="font-style: italic;">tempered</span>.</p>
+                                        <p class="TableText">2 - Treat 
+			 hyphens as searchable characters. <span style="font-style: italic;">Even-tempered</span> 
+			 will be the indexed term.</p>
+                                        <p class="TableText">3 - Ignore 
+			 hyphens. <span style="font-style: italic;">Eventempered</span> 
+			 will be the indexed term. This is the default selection.</p>
+                                        <p class="TableText">4 - Treat 
+			 hyphens as all three. This option is rarely beneficial, as 
+			 many extra words are indexed, often yielding excess and unexpected 
+			 search results. When this option is selected, each hyphenated 
+			 pair of words results in six words in the index.</p>
+                                        <table style="mc-table-style: url('../../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 74px;" />
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                            <tbody>
+                                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                        <p class="TableText">
+                                                            <img src="../../../../../Resources/Images/myipro_note.png" style="width: 55px;height: 55px;" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                        <p class="Note">Note: The only advantage to option 4 might be 
+			 where both hyphenated and solid forms of several terms are 
+			 used and need to be found. For example, a search for <span style="font-style: italic;">email</span> would also include 
+			 e-mail in the results.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Noise Words</span>: 
+ To use a default list of over 100 noise words (commonly used words that 
+ should be ignored, such as in, or, of) for the index, skip this entry. 
+ Or complete the following steps to customize the list.</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p>To create a custom list of stop words, enter 
+ or paste the list of words into the <b>Noise Words</b> text
+ box, then click <span style="font-weight: bold;">OK</span>. Ensure only 
+ one word is on each line.</p>
+                            </li>
+                            <li>
+                                <p>To modify the default list of noise words: Click 
+ <span style="font-weight: bold;">Load dtSearch Defaults</span> located above the <b>Noise Words</b> text box. Add 
+ words to or remove them from the list using common editing methods. Ensure 
+ only one word is on each line.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Save</span>. 
+ </p>
+            </li>
+        </ol>
+        <p>&#160;</p><span class="BoldItalic">Related Topics</span>
+        <p>
+            <MadCap:xref href="Build_and_Monitor_Index.htm">Build and Monitor an Index</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Manage_Review_Case_Settings.htm">Manage Review Case Settings</MadCap:xref>
+        </p>
+    </body>
+</html>

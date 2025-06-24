@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin,Primary._FixedList" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Define Barcodes</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Define Barcodes" />Define Barcodes</h1>
+        <p class="BodyText">If your organization uses standard code 128 numeric 
+ or alphanumeric barcodes for media identification (ID), the barcode format 
+ can be defined and will be used in the media definition process. Otherwise, 
+ sequential numbering beginning with 001 is used.</p>
+        <p class="BodyText">To define a specific barcode format for your organization:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Environment">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Environment Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Environment_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>Click the edit icon <img src="../../Resources/Images/Icons/Edit_Icon.png" class="ReduceButtonSize" /> in the top-right corner of the screen to modify the fields on this page.</li>
+            <li>
+                <p>Enter a <b>Barcode Label Prefix</b> and 
+ <b>Label ID Padding Length</b> matching 
+ your organization’s guidelines, as shown in the following example.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Barcode_Example.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li><span>Click <b>Save</b>.</span>
+            </li>
+        </ol>
+        <table cellspacing="0" width="100%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 6.445%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 93.555%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../Graphics/Admin_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note:</p>
+                    <ul class="BulletListTable">
+                        <li>
+                            <p class="Note">The 
+		 total number of characters for prefix+number is 128.</p>
+                        </li>
+                        <li>
+                            <p class="Note">A prefix is optional; when used, it is typically 
+		 comprised of numbers and/or letters; it may also include other 
+		 ASCII characters (for example, periods or dashes).</p>
+                        </li>
+                        <li>
+                            <p class="Note">The padding length defines the total length of 
+		 the barcode number following the prefix. For example, a padding 
+		 value of 5 will result in numbering 00001, 00002, and so on, through 
+		 99999.</p>
+                        </li>
+                        <li>
+                            <p class="Note">Changes to the barcode format after any media have 
+		 been defined are not retroactive. Thus if you define a new format 
+		 after some media are defined, you will have different ID formats. 
+		 The sequential numbering does not change, however. </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Manage_Ipro_(Cloud)_Settings.htm">Manage [%=Primary.Name%] Environment Settings</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Change_Environment_Share_Settings.htm">Change Environment/Share Settings</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Define_Media_Attachment_File_Path.htm">Define Media Attachment File Path</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Define Elastic Search Endpoint.htm">Define Elasticsearch Endpoint</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Complete the Export</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Complete the Export" />Complete the Export</h1>
+        <p class="BodyText">To validate and run an export job after the previous 
+ procedures are completed: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get Started:</p>
+                <ol>
+                    <li>
+                        <p>If 
+ a saved public search representing the documents to be produced does not 
+ exist, create and save the needed search as explained in <a href="../../Eclipse_web/Search_Functionality/Saved_Searches.htm">Saved Searches</a>. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ Production Shield has not been configured and you want security applied 
+ to this export job, complete <a href="Configure_Production_Shield.htm">Configure 
+ Production Shield</a>. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ the export set is saved/not open, in the <span style="font-weight: bold;">Case 
+ View</span> pane, click <span style="font-weight: bold;">Case Administration</span> 
+ &gt; <span style="font-weight: bold;">Export Set</span>. Select the needed 
+ set in the list and click <img src="../../../Graphics/Admin_Graphics/btn_pencil_Web.png" alt="" border="0" class="button_inline" />.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Export 
+ Tools</span> section of the screen, click <span style="font-weight: bold;">Select 
+ Documents</span>. </p>
+            </li>
+            <li>
+                <p>In the Select Documents dialog box, select 
+ the needed saved search.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Validate</span> 
+ and evaluate the Validation Report. A typical report is shown in the following 
+ figure; different entries will exist depending on your export selections. 
+ </p>
+            </li>
+            <p class="Image">
+                <img src="../../../Graphics/Admin_Graphics/Production-Validation_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p>If the report identifies conflicts, either 
+ export the report by clicking <span style="font-weight: bold;">Export</span> 
+ or close the report and refer to <span style="font-weight: bold;">Summary</span> 
+ details in the right pane of the export-set form. Possible issues and 
+ override details are explained in the following table. In the table, Override 
+ indicators are as follows:</p>
+            </li>
+            <p class="BodyTextIndent">Y = Can be overridden</p>
+            <p class="BodyTextIndent">S = Can sometimes be overridden (depending on 
+ circumstances)</p>
+            <p class="BodyTextIndent">N = Cannot be overridden</p>
+            <p class="BodyTextIndent" style="font-weight: normal;">
+                <MadCap:toggler targets="t1">Export/Production 
+ Troubleshooting</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t1">
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 100px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 100px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 500px;" />
+                    <thead>
+                        <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Conflict</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Override?</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 117px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Missing 
+			 natives</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">S</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">One or more native files in the production 
+			 set do not exist in the location defined for the case.</p>
+                                <p class="TableText">Can be overridden if you are exporting 
+			 both images and native files, in which case missing native 
+			 files will simply be skipped.</p>
+                                <p class="TableText">Cannot be overridden if you are producing 
+			 only native files.</p>
+                                <p class="TableText">To correct this conflict, take such actions 
+			 as placing needed native files in the correct location or 
+			 changing the export set to exclude those documents.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 204px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Missing images</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">N</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">No image is associated with one or more documents in the
+export set (no image path is defined).</p>
+                                <p class="TableText">Correct this conflict by actions such as adding a custom
+placeholder for records lacking an image path, or
+performing a global replace for the image path. For details,
+see:
+</p>
+                                <ul class="BulletListTable">
+                                    <li>
+                                        <p class="TableText">"<a href="Select_Output_Locations.htm">Select Output Locations</a>" step 3
+</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">"<a href="../Case_Setup/Globally_Replace_Image_Paths.htm">Globally Replacing Image Paths</a></p>
+                                    </li>
+                                </ul>
+                                <p class="TableText"><b>NOTE</b>: Other image problems are not considered to
+be missing images. For example, an incorrect file
+path, an image missing in the specified location,
+server problems, etc. They are indicated in the production
+export by an “Error Processing Image” placeholder.
+</p>
+                                <p class="TableText">Make corrections to these types of problems on a case-bycase
+basis, depending on the type of problem.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 90px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Missing text</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">Y</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">One or more text files in the export set do not exist in the
+location specified for the files.</p>
+                                <p class="TableText">If this problem is overridden, a “Missing Text” placeholder
+page will be included for each missing text file.</p>
+                                <p class="TableText">Alternatively, correct this conflict by such actions as placing
+needed text files in the defined location or changing the
+production set to exclude those documents.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 67px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Shield conflicts</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">Y</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Export documents are checked for all defined rules.
+</p>
+                                <p class="TableText">Before overriding this issue, review the rules and documents
+in the document set to make sure overriding is the correct
+action.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 156px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Valid output path</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">N</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The defined Output Location cannot be verified.
+Correct the location. Make sure the following conditions are
+met:</p>
+                                <ul class="BulletListTable">
+                                    <li>
+                                        <p class="TableText">The location is in UNC format (such as \\server001\productions\
+smith-jones\).</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">The destination folder exists.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><MadCap:variable name="Primary.IPRO" /> Eclipse has access to the location (for example, it is
+in the same or a trusted domain).</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">A volume with same name as the one defined for this
+production set does not already exist in the output location.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="height: 85px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Valid native naming field</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">N</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Occurs if naming native files by a field and the field contains
+no data (or only spaces or an empty string) for some
+documents.
+</p>
+                                <p class="TableText">Either change the way native files are named or edit the
+empty fields so that they contain the needed data.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 86px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Broken family</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">Y</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Include Family is part of the saved search used to specify
+documents for the export set, and not all family documents
+can be located.
+</p>
+                                <p class="TableText">Before overriding this issue, review documents in the
+document set to make sure overriding is the correct action.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 108px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Bates Number conflict</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">N</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">This conflict will occur a) only if Document Numbering is
+Use image priority and b) only if documents with duplicate
+numbers have been selected from the various document
+sets (original image and/or production export jobs chosen
+for this export).</p>
+                                <p class="TableText">Resolve duplicate numbers by such actions as changing the
+order of document sets selected for numbering or choosing
+a different type of numbering.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 5px;" class="TableStyle-ADD_Help_Tables-Body-Body1" />
+                    </tbody>
+                </table>
+            </div>
+            <li>
+                <p>Continue as follows:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If 
+ conflicts were found, make needed corrections and/or override the conflicts 
+ as required. then go to step 7. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ no conflicts were found, go to step 8. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>After resolving or overriding conflicts, click 
+ <span style="font-weight: bold;">Validate</span> to re-check the export 
+ set. </p>
+            </li>
+            <li>
+                <p>After all conflicts are resolved and/or overridden, 
+ click <span style="font-weight: bold;">Export</span> to complete the job. 
+ (The <span style="font-weight: bold;">Export</span> button is available 
+ only when all conflicts have been addressed.) </p>
+            </li>
+            <li>
+                <p>Observe <span style="font-weight: bold;">Export 
+ Status</span> below <span style="font-weight: bold;">Export Summary</span> 
+ in the right pane. Status will change as process steps complete, and may 
+ include the terms listed in the following table.</p>
+            </li>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t2">Export 
+ Status Details</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t2">
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 550px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Status</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Not 
+			 Started</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 export process has not yet begun.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Staging</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 export data is being placed in the staging database.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Staging 
+			 Complete</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">All 
+			 export data is in the staging database.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Pending</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 export job has been placed in a queue.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">In 
+			 Progress</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 export data is being processed.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Paused</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 export job has been placed on hold.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Deleting</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 export job has been canceled and Eclipse is retrieving data 
+			 about the job, such as errors and information about the status 
+			 of the job at the point of cancellation.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Deleted</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Cancellation 
+			 has been completed.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Complete</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">The 
+			 production job has finished; production data may be transferring 
+			 from the staging database back to Eclipse or the data transfer 
+			 may have finished.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <li>
+                <p>When the export job is complete, export files 
+ are ready for use, either in Eclipse or in Relativity, depending 
+ on your export selections.</p>
+            </li>
+            <li>
+                <p>If errors exist, click the <span style="font-weight: bold;">Total 
+ Errors</span> number (a link). A Production Errors dialog box opens and 
+ lists documents, page, and load file error information. Details can be 
+ exported to a .CSV file if needed.</p>
+            </li>
+            <li>
+                <p>As needed, review production related-reports. 
+ See <a href="../../Eclipse_web/Eclipse_Web_End_User.htm">Eclipse Web 
+ End User</a> for details on working with reports. </p>
+            </li>
+        </ol>
+    </body>
+</html>

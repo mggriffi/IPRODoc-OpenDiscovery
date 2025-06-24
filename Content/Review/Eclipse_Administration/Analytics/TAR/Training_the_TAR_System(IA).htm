@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');" MadCap:conditions="Primary.Eclipse">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Train the TAR System (IPRO Analytics)</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Train the TAR System (IPRO Analytics)</h1>
+        <p class="BodyText">The field created as part of the TAR project is named TAR_ABC_Prediction, where ABC is the prefix defined for the TAR project. Values for this field include:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText"><b>Predicted_Relevant</b>: Documents identified as relevant to the issues/ needs of the case by either <MadCap:variable name="Primary.IPRO" /> Eclipse analysis or human review.</p>
+            </li>
+            <li>
+                <p class="BodyText"><b>Predicted_NON_RELEVANT</b>: Documents identified as not relevant to the issues/needs of the case by either <MadCap:variable name="Primary.IPRO" /> Eclipse analysis or human review.</p>
+            </li>
+            <li>
+                <p class="BodyText"><b>PREDICTION_UNDETERMINED</b>: Documents that could not be identified as relevant or non-relevant because the document was mostly binary data or contained little or no words.</p>
+            </li>
+        </ul>
+        <p class="BodyText">After a TAR batch has been marked as completed, the system is able to learn from the decisions made by a human reviewer. Before each TAR round, the previous round should be checked in as completed.</p>
+        <h3>To train the TAR System:</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p>Getting started:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse and log in as an <MadCap:variable name="Primary.IPRO" /> Eclipse administrator.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Open the case for which the TAR categories are being created/updated.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">In the case view pane, click <b>Batches</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Locate the completed TAR Batch.</p>
+            </li>
+            <li>
+                <p class="BodyText">If necessary, mark the batch as Active.</p>
+            </li>
+            <li>
+                <p class="BodyText">Left-click the <b>Check In</b> button and select Completed.</p>
+            </li>
+            <li>
+                <p class="BodyText">Click <b>OK</b>. Wait as the batch is checked in.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: If you will be conducting a review of all documents (for example, a prioritization review) instead of a certification round after validation rounds are complete, use the Predicted_Relevant and Predicted_Non_Relevant fields to create final review passes.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+    </body>
+</html>

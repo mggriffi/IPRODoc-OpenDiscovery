@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Users">
+                <p>The System Manager opens. In the left pane of the System Manager, the <b>Users</b> tab opens by default.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Users.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Security Templates">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Templates</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Temps.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Security,System_Nav.API">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Public API Clients</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_API.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Security Settings">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Environment">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Environment Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Environment_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.System Logs">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>System Logs</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_System_Logs.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Copy Stations">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Copy Stations</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Copy_Stations.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Storage Locations">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Storage Locations</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Storage_Locations.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Contacts">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Contacts</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Contacts.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../Resources/MasterPages/Enterprise_and_Eclipse_MP.flmsp');" MadCap:conditions="Primary.Blocked" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Ipro Cloud Portal for Customers</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>IPRO Cloud Portal for Customers</h1>
+        <p>This topic explains how to log in to the <MadCap:variable name="Primary.IPRO" /> Cloud portal, the available applications on the portal, and how to access the applications via a virtual desktop. It also covers how to upload/download via FTP and how to add a new user.</p>
+        <h2>Log in to Cloud Portal</h2>
+        <p><MadCap:variable name="Primary.IPRO" /> provides a secure portal into your environment using two-factor authentication through Citrix and Duo Security.  To access the cloud portal, you must first activate your account.  Follow steps in <MadCap:xref href="DuoAcctActive.htm">IPRO Cloud Portal Citrix-Duo Account Activation</MadCap:xref><MadCap:variable name="Primary.IPRO" />  to get set up.</p>
+        <p>Once activated you will be able to access your environment using two-factor authentication.  Access the portal using any web browser.</p>
+        <ol class="NumbListBody">
+            <li>Go to https://iprocloud.iprotech.com</li>
+            <li>
+                <p>Enter your User name and password, click Log On.</p>
+                <p>
+                    <img src="../Resources/Images/signin page.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>Choose an authentication method.<ol><li>Send Me a Push is recommended</li><li>Select Remember me for 8 hours</li><li><p>Approve authenticate using your mobile device</p><p><img src="../System/cloud_authmethod.png" /></p></li></ol></li>
+        </ol>
+        <h2>	Available Applications</h2>
+        <p>Once logged in, you will be presented with a few virtual applications that are available in your environment.  Below is description of each:</p>
+        <p>
+            <img src="../System/avail_apps.png" />
+        </p>
+        <h3>Application	Description</h3>
+        <p>&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Application</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">7-zip File Manager</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">7-zip File Manager can be used to compress a collection of one or more files and/or folders into a single file for easy transportation and compression.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">eCapture Controller</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The desktop console used for manually creating clients, cases (projects), custodians, discovery jobs, managing/assigning task tables, creating export series, viewing detailed information about each Worker and the tasks being performed.  The eCapture Controller will be required to requeue and publish any errors/exceptions from a Streaming Discovery Job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">eCapture QC</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The QC Module checks the accuracy of discovery and processed jobs. Use this application to manually reprocess individual files or groups of files based on field or flag value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Eclipse Admin</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Eclipse Admin console is used to manually create clients, cases, create and manage fields, import pre-processed data and manage analytics features within your review case</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Windows Explorer</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Windows Explorer provides a graphical user interface for accessing the file systems of your cloud environment.  Windows Explorer will be needed to create directories for cases and exports/productions.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Access Applications Using a Virtual Desktop</h2>
+        <p>If you prefer, you can also choose to access these applications through a virtual desktop.  The virtual desktop will have all applications needed in your cloud environment.</p>
+        <p>
+            <img src="../System/dt_option.png" />
+        </p>
+        <h2>Upload/Download Through FTP</h2>
+        <p>When you need to upload data to or download data from your cloud environment, using FTP, in most cases is the fastest and most cost effective. FileZilla will need to be installed on your local machine in order to use this feature.</p>
+        <ul class="BulletListBody">
+            <li>It is recommended to compress your data set to an archive container (.zip) prior to uploading to minimize the upload times. 7-zip, WinRAR, or WinZip are utilities that can be used to compress your files and/or folders.</li>
+            <li>An FTP account is provided for every cloud environment created.  Please reach out to your <MadCap:variable name="Primary.IPRO" /> project manager if you do not have this information.</li>
+            <li>If data is too large to FTP, you may request to ship a copy of your media directly to <MadCap:variable name="Primary.IPRO" />.  Contact your <MadCap:variable name="Primary.IPRO" /> project manager to get the correct forms needed for this process.</li>
+        </ul>
+        <h2>Add New User</h2>
+        <p>If an additional user needs access to the cloud portal, please reach out to our <MadCap:variable name="Primary.IPRO" /> project manager to have it created.  The full name as well as their email address will be required to create a new cloud user.</p>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="DuoAcctActive.htm">IPRO Cloud Portal Citrix-Duo Account Activation</MadCap:xref>
+        </p>
+    </body>
+</html>

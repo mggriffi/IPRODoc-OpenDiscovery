@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Blocked">
+    <head><title>Overview: Reports</title>
+        <link href="../Resources/Stylesheets/CSH.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 class="h1_CSH">
+            <MadCap:keyword term="View All Reports;All Reports" />Overview: Reports</h1>
+        <p>Below is a quick definition of each report available for Processing, Review and Systems listed in Alphabetical order.</p>
+        <h2>
+            <MadCap:toggler targets="Processing Reports">Processing Reports</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Processing Reports">
+            <h3>
+                <MadCap:toggler targets="DataExtractDeDupSummary">Data 
+ Extract De-duplication Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="DataExtractDeDupSummary">
+                <p class="BodyText">This report provides a summary of items not processed 
+ due to de-duplication settings. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="DataExtDetailed">Data Extract Detailed Error Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="DataExtDetailed">
+                <p>This report provides a list of extraction and OCR errors and status messages encountered during data extraction. The end of the report displays a list of password-protected files that includes the Item ID, Location, item type, file, and physical location for each file.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="DataExtrSum">Data 
+ Extract Error Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="DataExtrSum">
+                <p class="BodyText">This report provides a summary of errors encountered 
+ during processing. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="DataExtrFilter">Data 
+ Extract Filter Manager Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="DataExtrFilter">
+                <p class="BodyText">This report provides results of rules applied and detail 
+ on how they affected the final total of promoted documents. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="DataExtrItemSummary">Data Extract Item Summary</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="DataExtrItemSummary">
+                <p>Summary of items processed by type and category.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="DiscDetailedError">Discovery Detailed Error Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="DiscDetailedError">
+                <p>This report provides a list of extraction and OCR errors and status messages encountered during discovery. The end of the report displays a list of password-protected files that includes the Item ID, Location, item type, file, and physical location for each file.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="Discovery Summary">Discovery Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Discovery Summary">
+                <p>Summary of items discovered by item type and category.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ExportSeriesSummary">Export 
+ Series Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ExportSeriesSummary">
+                <p class="BodyText">This report provides results of all exports within 
+ a series based on Export Jobs and their associated Volumes. Additional 
+ information is provided that breaks down the exported documents by sizes 
+ and type. Files not exported are also broken down by type along with any 
+ error information associated with exports within the series. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="LangSummary">Language 
+ Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="LangSummary">
+                <p class="BodyText">This report provides a breakdown of identified languages 
+ grouped by file type and further by language. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ProcCaseReport">Processing Case Storage Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ProcCaseReport">
+                <p class="BodyText">This report presents information on the processed data for a case over a specified date range, aggregated at the project, custodian, job type, and individual job level. Date range is optional. Columns may be sorted. All sizes are exported in GB.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="SourceContainer">Source 
+ Container Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="SourceContainer">
+                <p class="BodyText">This report provides a list of the top level containers 
+ for selected case</p>
+            </div>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Reviewer Reports">Reviewer Reports</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Reviewer Reports">
+            <h3>
+                <MadCap:toggler targets="CaseDataSum">Case Data Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="CaseDataSum">
+                <p>This report summarizes case size details such as number 
+ and total size (in GB) of files (image, native, and text files). If documents 
+ have been part of a production set, production size details also included. 
+ Report can be based on any field defined in <MadCap:variable name="Primary.IPRO" /> Eclipse with the Category 
+ option. For example, if a CUSTODIAN field is defined with the Category 
+ option, a report could be generated to summarize size details for all 
+ documents broken down by custodian. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="GapReport">Gap 
+ Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="GapReport">
+                <p class="BodyText">Identifies missing pages, that is, breaks in the numbering 
+ sequence of image keys (case, production, or other document numbers) for 
+ a particular case. For example, if ECL000009 is a single-page document 
+ and the next document number in the case is ECL000012, a gap exists and 
+ will be included in the report. <a name="I"></a></p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="PrivReport">Privileged 
+ Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="PrivReport">
+                <p class="BodyText">This report presents documents based on tags selected 
+ for the report. Included are document totals, the applied tag(s), and 
+ field data and other applied tags as defined by your administrator. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ProdDeliverable">Production 
+ Deliverable Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ProdDeliverable">
+                <p class="BodyText">This report presents details on production and imported 
+ production history jobs. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ProdSummary">Production 
+ Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ProdSummary">
+                <p class="BodyText">This report summarizes production and imported production 
+ history jobs completed in Eclipse Administration. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="RedactedDocs">Redacted 
+ Documents Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="RedactedDocs">
+                <p class="BodyText">This report summarizes redaction activity for a selected 
+ case. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="RedactionDetail">Redaction 
+ Detail Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="RedactionDetail">
+                <p class="BodyText">This report includes detailed information on redacted 
+ documents as defined by your administrator. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ReviewCaseStorage">Review Case Storage Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ReviewCaseStorage">
+                <p class="BodyText">This report returns the size of all records in the associated case database that were imported within the selected date range. End Date represents the most recent date that terminates the desired date range. All parameters are optional. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ReviewStatusCustodian">Review 
+ Status by Custodian Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ReviewStatusCustodian">
+                <p class="BodyText">This report presents review status of documents in 
+ a particular review pass, sorted by a field selected by your administrator 
+ that contains custodian details. Tag details may also be included if configured 
+ by your administrator.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ReviewStatusReviewer">Review 
+ Status by Reviewer Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ReviewStatusReviewer">
+                <p class="BodyText">This report includes review status of documents in 
+ a particular batch, sorted by assigned reviewers. Tag details may also 
+ be included if configured by your administrator. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ReviewerEditsDay">Reviewer 
+ Edits Per Day Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ReviewerEditsDay">
+                <p class="BodyText">This report lists all reviewers by user name and the 
+ number of distinct actions (field editing and/or tagging) each reviewer 
+ has made on each day of the date range, for a specific date range. Can 
+ be useful in evaluating review efficiency. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ReviewerHistory">Reviewer 
+ History Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ReviewerHistory">
+                <p class="BodyText">This report summarizes reviewer activities (such as 
+ field editing and tagging) for a selected period of time, including total 
+ hours spent by each reviewer, number of edits, and edits per hour and 
+ day. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ReviewerHistoryDetails">Reviewer 
+ History Details Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ReviewerHistoryDetails">
+                <p class="BodyText">This report provides detailed information on reviewer 
+ activities (such as field editing and tagging) for a selected period of 
+ time, including day-by-day summary of time spent and editing details. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="ReviewerBatchHistory">Reviewer Batch History Details Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="ReviewerBatchHistory">
+                <p class="BodyText">This report provides detailed information on reviewer 
+ activities  in a given batch, including check out and check in times, view counts, and editing details.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="SummarybyCustodian">Summary 
+ by Custodian Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="SummarybyCustodian">
+                <p class="BodyText">This report summarizes review activities (number of 
+ documents reviewed, not reviewed, etc.) sorted by a field selected by 
+ your administrator that contains custodian details. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="TARProjCert">TAR 
+ Project Certification Details Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="TARProjCert">
+                <p class="BodyText">This report presents detailed results for the certification 
+ round, including precision data for the review in terms of how accurately 
+ non-responsive documents have been identified by the TAR process. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="TARProjDiscrepancies">TAR 
+ Project Discrepancies Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="TARProjDiscrepancies">
+                <p class="BodyText">This report identifies documents for which there is 
+ a disagreement between the reviewer and the TAR analysis regarding document 
+ responsiveness. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="TARProjDistribution">TAR 
+ Project Score Distribution Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="TARProjDistribution">
+                <p>This report presents distributed category scores (per 
+ validation round) for all rounds in the TAR project. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="TARProjSum">TAR 
+ Project Summary Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="TARProjSum">
+                <p class="BodyText">Provides an overview of the TAR project, with data 
+ ranging from the total number of documents in the TAR project (based on 
+ the category index selected for the project), to projected Responsive 
+ and Non Responsive documents for the project. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="TARValidation">TAR 
+ Validation Details Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="TARValidation">
+                <p class="BodyText">Presents detailed results for each validation round, 
+ including precision data for the review in terms of how accurately Responsive 
+ documents have been identified by the TAR process.</p>
+            </div>
+        </div>
+        <h2>
+            <MadCap:toggler targets="System Reports">System Reports</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="System Reports">
+            <h3>
+                <MadCap:toggler targets="FileType">File 
+ Type Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="FileType">
+                <p class="BodyText">This report summarizes media file count and file size 
+ based on file extensions. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="IproProcStorage">IPRO Processing Storage Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="IproProcStorage">
+                <p>Reports system-level aggregations of processed data over a specified date range, as well as current database sizes. All parameters are optional. Columns may be sorted. All sizes are exported in GB. Default granularity is set to Managing Client / Client Level.</p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="IproReviewStorage">IPRO Review Storage Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="IproReviewStorage">
+                <p>Reports the total size of all records in the selected Managing Client's case database(s) that were loaded within the selected date range. End Date will represent the most recent date that terminates the desired date range. Default aggregation is by Case, Client, and Managing Client. All parameters are optional. </p>
+            </div>
+            <h3>
+                <MadCap:toggler targets="UserBilling">User 
+ Billing Report</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="UserBilling">
+                <p>This report provides User Name, Days Active, Managing 
+ Client, and Date user was created/enabled in Eclipse for a selected 
+ time period. </p>
+            </div>
+        </div>
+    </body>
+</html>

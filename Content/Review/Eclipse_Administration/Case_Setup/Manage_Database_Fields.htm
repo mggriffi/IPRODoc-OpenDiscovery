@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Database Fields</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Review/Change Database Records;Manage Database Fields" />Manage Database Fields</h1>
+        <p class="BodyText">After a case is created or migrated, you may need to 
+ change various aspects of the database fields. Note:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Adding fields: new 
+ fields can be added to a case.</p>
+            </li>
+            <li>
+                <p>Deleting fields: 
+ </p>
+            </li>
+            <li>
+                <p>System fields cannot 
+ be deleted (see <a href="Step_3__Define_Database_Fields.htm">Step 3: Define 
+ Database Fields</a> for details on these fields). </p>
+            </li>
+            <li>
+                <p>Other fields can 
+ be deleted, whether or not they contain data.</p>
+            </li>
+            <li>
+                <p>Changing fields:</p>
+            </li>
+            <li>
+                <p>Field type cannot 
+ be changed once a field has been created. </p>
+            </li>
+            <li>
+                <p>Other aspects of 
+ each field (name, length, and/or other aspects of the field definition 
+ can be changed after fields have been created.</p>
+            </li>
+        </ul>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Some changes to the database 
+		 require that it be re-indexed for searching and other purposes. 
+		 See <a href="Manage_Case_Search_Indexes.htm">Manage Case Search 
+		 Indexes</a> for details. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;">C</span>hange Field 
+	 Definitions</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:keyword term="Add New Fields" />Add New Fields</p>
+            </li>
+            <li>
+                <p>Import Fields from a CSV file.</p>
+            </li>
+            <li>
+                <p>Change 
+	 Field-Level Security</p>
+            </li>
+            <li>
+                <p>Review/Change 
+	 Database Records</p>
+            </li>
+        </ul>
+        <h2><a name="Change_Field_Definitions"></a>
+            <MadCap:keyword term="Change Field Definitions" />Change Field Definitions</h2>
+        <p class="BodyText">To change field definitions:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Case 
+ Management</span> &gt; <span style="font-weight: bold;">Case Management</span>. 
+ </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Case Management window, select the needed managing client and case. 
+ </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Review the change criteria discussed above.</p>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Database 
+ Fields</span> tab in the Case Management screen. Field details for the 
+ case are listed.</p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/btn_pencil.png" alt="" border="0" class="button_inline" />&#160;corresponding 
+ to the field to be edited. (You may need to scroll horizontally to find 
+ this button.)</p>
+            </li>
+            <li>
+                <p>Make needed changes in the Edit Field dialog 
+ box and click <span style="font-weight: bold;">Save</span>. </p>
+            </li>
+        </ol>
+        <h2><a name="Add_New_Fields"></a>Add New Fields</h2>
+        <p class="BodyText">Complete the following steps to add new fields to an 
+ existing case: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Case 
+ Management</span> &gt;<span style="font-weight: bold;"> Case Management</span>. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the needed managing client and case. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Database 
+ Fields</span> tab. Field details for the case are listed.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">New 
+ Field</span>.</p>
+            </li>
+            <li>
+                <p>Complete the definition of the field. For details 
+ on field definition options, refer to <a href="Step_3__Define_Database_Fields.htm">Step 
+ 3: Define Database Fields</a>. </p>
+            </li>
+            <li>
+                <p>When finished, click <span style="font-weight: bold;">OK</span>.</p>
+            </li>
+        </ol>
+        <h2>Import Fields from a CSV file</h2>
+        <p class="BodyText">Complete the following steps to mass import new fields to an 
+ existing case: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Case 
+ Management</span> &gt;<span style="font-weight: bold;"> Case Management</span>. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the needed managing client and case. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Database 
+ Fields</span> tab. Field details for the case are listed.</p>
+            </li>
+            <li>
+                <p>Select <b>Import CSV</b> in the upper right corner.</p>
+                <p>
+                    <img src="../../../Graphics/ADD_Review_Graphics/Eclipse Admin/Import CSV.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select your CSV and click Open. The fields will be added to your case.</p>
+            </li>
+        </ol>
+        <h2><a name="Change_Field-Level_Security"></a>
+            <MadCap:keyword term="Change Field-Level Security" />Change Field-Level Security</h2>
+        <h3>Before You Begin</h3>
+        <p class="BodyText">By default, most fields in the Eclipse database can 
+ be viewed and data changed in Eclipse by anyone assigned to a case. Field-level 
+ security applies to viewing and changing field data, not modifying field 
+ definitions. </p>
+        <p class="BodyText">Field-level security applies to both Eclipse Administration 
+ and Eclipse activities, to either a case or a user group(s). It does not 
+ apply to Eclipse administrators, who can edit all fields within a case 
+ regardless of field-level security settings.</p>
+        <p class="BodyText">As needed, the Eclipse administrator can allow or deny 
+ for a case or a group, the rights to view and/or update data for individual 
+ fields. (To change field-level security for a group, the group must be 
+ assigned to the case.) </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">View:</span> 
+ Allows field to be viewed only. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Update:</span> 
+ Allows field to be viewed and updated in an Eclipse coding form or through 
+ the Eclipse Administration global replace function. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Deny:</span> 
+ Prevents field from being viewed or updated. </p>
+            </li>
+        </ul>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: For best results, evaluate 
+		 case fields and plan a field-level security strategy before continuing 
+		 with field-level security changes. </p>
+                </td>
+            </tr>
+        </table>
+        <h3><a name="Change_Field-Level_Security"></a>Change Field-Level Security</h3>
+        <p class="BodyText">By default, all fields are set to Update for a case 
+ and no settings appear for groups or users. If no settings are explicitly 
+ made for a group, security will be inherited from the case. If field-level 
+ security is defined for a group, then these settings will apply to all 
+ users in the group. </p>
+        <h4>Basic Procedure</h4>
+        <p class="BodyText">To change field-level security:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Review 
+ <span style="font-style: italic;">Before You Begin</span> above.</p>
+                    </li>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Case 
+ Management</span> &gt; <span style="font-weight: bold;">Case Management</span>. 
+ </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Case Management window, select the needed managing client and case. 
+ </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Database 
+ Fields</span> tab.</p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Field 
+ Security</span> field, select either [Case] or a group name, then click 
+ <img src="../../../Graphics/Admin_Graphics/Btn_EditCAStopWords.png" alt="" border="0" class="button_inline" />. </p>
+            </li>
+            <li>
+                <p>Ensure the needed item is selected in case/group 
+ list, then select the needed security level for one or more fields (<span style="font-weight: bold;">View</span>, <span style="font-weight: bold;">Update</span>, 
+ or <span style="font-weight: bold;">Deny</span>).</p>
+            </li>
+            <li>
+                <p>When finished, click <span style="font-weight: bold;">OK</span>.</p>
+            </li>
+            <li>
+                <p>Repeat this procedure for other cases or groups 
+ as needed. </p>
+            </li>
+        </ol>
+        <h2><a name="Review_Change_Database_Records"></a>Review/Change Database 
+ Records</h2>
+        <p class="BodyText">The Case Management screen provides a summary and details 
+ for the records in your database on the Database Records tab. Evaluate 
+ or verify records in a particular case as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Case 
+ Management</span> &gt; <span style="font-weight: bold;">Case Management</span>. 
+ </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Case Management screen, select the needed managing client and case. 
+ </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Database 
+ Records</span> tab. </p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">List 
+ All Records</span> to see records in the <span style="font-weight: bold;">Documents</span> 
+ list, or click<span style="font-weight: bold;"> Load Search</span> to 
+ view records matching a saved search. </p>
+            </li>
+            <li>
+                <p>Evaluate or change records as explained in 
+ <a href="../Review_Process_Management/Evaluate_Case_Records.htm">Evaluate 
+ Case Records</a>. Possible activities include:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Reviewing 
+ the <span style="font-weight: bold;">Documents</span> list</p>
+                    </li>
+                    <li>
+                        <p>Reviewing 
+ document details</p>
+                    </li>
+                    <li>
+                        <p>Deleting 
+ a document or page</p>
+                    </li>
+                    <li>
+                        <p>Checking/changing 
+ file paths</p>
+                    </li>
+                    <li>
+                        <p>Viewing 
+ images</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>When finished, continue with other administrative 
+ activities.</p>
+            </li>
+        </ol>
+    </body>
+</html>

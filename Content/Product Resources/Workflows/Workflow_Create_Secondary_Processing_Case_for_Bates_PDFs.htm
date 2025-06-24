@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Workflow: Create Secondary Processing Case for Bates PDFs</title>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Workflow: Create a Secondary Processing Case for Bates PDFs</h1>
+        <p>As an administrator of <MadCap:variable name="Primary.Name" /> it is common to receive already processed data in the form of PDFs named per Bates Number. This document will walk through setting up a secondary processing case to specifically handle Bates Numbered PDFs without a load file. This processing case will be used to extract text from the PDF and perform OCR if the PDF is not already searchable. The PDFs will be loaded into review named per the beginning bates number (filename).</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note"><i>Note: This procedure is assuming you already have a processing and review case created through <MadCap:variable name="Primary.Name" /> Case Management.</i>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Step 1: Create a New Processing Case</h2>
+        <ol>
+            <li>
+                <p>	Log in to <MadCap:variable name="Primary.Name First" /> and navigate to <b>Case Management</b>.</p>
+            </li>
+            <li>
+                <p>Click the hamburger icon under<b> Code Name</b> to add a new Case to an existing Code Name Group.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Cursor_over_Code_Name.png" class="Thumbnail" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/Add new Case.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Create a new <b>Processing Case </b>with an identifying suffix of ‘ – PDF’</p>
+                <p>
+                    <img src="../../Resources/Images/CreatenewProcCase.png" class="Thumbnail" />
+                </p>
+                <p>
+                    <img src="../../Resources/Images/Proc_PDF.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Your Code Name group should now consist of two processing cases and one review case.</p>
+                <p> <img src="../../Resources/Images/New Case2.png" class="Thumbnail" /></p>
+            </li>
+        </ol>
+        <h2>Step 2: Create a New Import Series</h2>
+        <ol>
+            <li>
+                <p>Open <b>Case Management</b> and locate the Processing case for which you would like to create an import series.</p>
+            </li>
+            <li>
+                <p>Click the hamburger icon corresponding to the required case.</p>
+            </li>
+            <li>
+                <p>In the menu that displays, select <b>Case Settings</b>. The work area opens. Select the <b>Load to Review</b> tab near the top.</p>
+            </li>
+            <li>
+                <p>On the Review Importing page, select <b>Create Import Series</b>.</p>
+            </li>
+            <li>
+                <p>On the first step of the Import Series wizard, define a name for the new Import Series, such as "Bates PDF."</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Ensure the <b>Set as Active Series</b> option is selected.  When active, the import series is able to promote ingested documents into the selected Review case. When inactive, the import series is "turned off" and any customization defined in the series is not used during processing.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Proceed through the steps of the Import Series wizard, customizing as needed. See <MadCap:xref href="../../Case_Management/Import_Series/Create_Import_Series.htm">Create an Import Series</MadCap:xref> for more information on the various options. </p>
+            </li>
+            <li>
+                <p>On the fourth step of the wizard, ensure you select the <b>Use filename</b> option.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_Create_Step_4_Use_Filename.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>When all options have been defined, click <b>Finish</b> to create the Import Series.</p>
+            </li>
+        </ol>
+        <h2>Step 3: Ingest Data in Self-Service</h2>
+        <p>After the above configurations have been completed you are ready to ingest the data through Self-Service.</p>
+        <ol>
+            <li>
+                <p>Open the <MadCap:variable name="Primary.Name" /> <b>Self-Service</b> module.</p>
+            </li>
+            <li>
+                <p> On the 
+ <span style="font-weight: normal;">Self-Service</span> page, click <span style="font-weight: bold;">I want to upload a file to process into 
+ review.</span></p>
+                <p>
+                    <img src="../../Graphics/SelfService_Graphics/Processing_Review.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>Select the file you want to upload and click <b>Open</b>.</li>
+            <li>
+                <p>Select your new<b> PDF processing case.</b></p>
+            </li>
+            <li>
+                <p>Select <b>Custodian</b> &gt; click <b>Go</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/SSpdf.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../Self_Service/Self_Service.htm">Self-Service</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../../Self_Service/Upload_Data_via_Self-Service.htm">Upload Data via Self-Service</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,1308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term0"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>.CSV</Term>
+    </Terms>
+    <Definition>A comma-separated values (CSV) file used to store tabular data.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term1"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>.LFP File</Term>
+    </Terms>
+    <Definition>A load file used to load images and image data into various Ipro applications. Each record in the file contains a two-letter command followed by various parameters, such as the image key and the data to be loaded.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term2"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>.LOG File</Term>
+    </Terms>
+    <Definition>A file that shows the status of a process. eCapture has several different .LOG files called Controller, DeletionHistory, QueueManager, Worker, WorkerAgent, and WorkerDiagnostics. Each of these files is defined in this Glossary. When .LOG files are accessed through the User Interface, the associated application is launched. If there is no associated application, Notepad will be launched instead.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term3"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>.MHT File</Term>
+    </Terms>
+    <Definition>An archived web page file with information in Multipurpose Internet Mail Extension HTML (MHTML) format with an .MHT file extension. All relative links in the web page are remapped and the embedded content is included in the .MHT file.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term4"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>&lt;jobID&gt;_ImageKeyErrors.TXT</Term>
+    </Terms>
+    <Definition>Contains image key errors encountered during export.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term5"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>&lt;jobID&gt;_ImageKeyWarnings.TXT</Term>
+    </Terms>
+    <Definition>Contains image key warnings encountered during export.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term6"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Activity</Term>
+    </Terms>
+    <Definition>Sets of tasks performed by the eCapture Worker in order to accomplish a specified objective.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term8"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Assigned</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the Worker has been assigned a task and hasn't picked it up, or, more commonly, all threads are busy.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term9"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Bandwidth Limit Reached</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the Worker would have been assigned a task, but it is doing too much at the present time.  The Worker bandwidth is set with the Worker Bandwidth Throttle value in QueueManager.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term10"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Barcode</Term>
+    </Terms>
+    <Definition>An optical, machine-readable, representation of data. Media is barcoded for identification, storage and tracking.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term11"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Binary Files</Term>
+    </Terms>
+    <Definition>Examples include executables, fragments of documents that were recovered from an undelete process, or blocks of data recovered forensically.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term12"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>BlackICE Drivers</Term>
+    </Terms>
+    <Definition>Printer drivers that are installed with eCapture and used by the software during Discovery and Processing Jobs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term13"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Blank Page Threshold</Term>
+    </Terms>
+    <Definition>A value (in bytes) that is used to determine whether eCapture should discard any file, as a blank page, that is below the indicated threshold value.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term14"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Boolean Operators</Term>
+    </Terms>
+    <Definition>Used when performing keyword searches. Operators include, but are not limited to, AND, OR, and NOT. For example, the criteria may be written as follows: “all documents that contain the words toxic AND wells”. In this case, only documents that contain BOTH “toxic” and “wells” will be returned in the search.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term15"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Busy</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates all threads are currently performing a task.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term17"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Chain of Custody</Term>
+    </Terms>
+    <Definition>Tracks evidence from the time the investigative parties obtain it until the time the case goes to the courts or is dismissed from the courts.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term18"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Client</Term>
+    </Terms>
+    <Definition
+      Link="">The highest level in the Ipro (Cloud) hierarchy.  A Client is required to create a case.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term19"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Color Depth (Image or PDF)</Term>
+    </Terms>
+    <Definition>Color depth refers to the number bits per pixel (bpp) in any given image.  1bit would be a black and white image, 8 bits may be grayscale/color and 24 bits may be a full color image.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term20"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Connection Setting</Term>
+    </Terms>
+    <Definition>In eCapture, used to establish a connection between eCapture and Microsoft SQL Server.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term21"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Container File</Term>
+    </Terms>
+    <Definition>A metafile format whose specification describes how different elements of data and metadata coexist in a computer file.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term22"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Copy Station</Term>
+    </Terms>
+    <Definition>The devices in your network from which incoming media will be copied, such as computer and server hard drives (internal and external).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term23"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Custodian</Term>
+    </Terms>
+    <Definition>In eDiscovery, the data custodian is usually the person responsible for, or the person with administrative control over, granting access to an organization's documents or electronic files while protecting the data as defined by the organization's security policy or its standard IT practices.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term24"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Data</Term>
+    </Terms>
+    <Definition>Comprises documents, numbers, files, emails, and any other information stored on a digital device. In eCapture, refers to the electronic files that are discovered and processed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term25"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Data Extraction Reports</Term>
+    </Terms>
+    <Definition>Two types are available: Summary and Detailed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term26"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Data Location</Term>
+    </Terms>
+    <Definition>The location of Natives, Images, Text, and Load Files for media jobs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term27"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Database</Term>
+    </Terms>
+    <Definition>A collection or records. Each record contains a set of fields. Each field contains a unit of information. For example, a residential telephone directory (the database) contains a collection of records (the residential listings) that contain fields (name, address, and phone number of each resident).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term28"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>De-duplication</Term>
+    </Terms>
+    <Definition
+      Link="">Similar to single-sourcing of documents and their elements, the process of identifying and separating identical electronic documents. In eCapture, the MD5 hash value of each document is generated during the discovery phase. When de-duplication is performed, a look-up for the same MD5 hash is performed across the specified de-duplication scope (Current Job, Custodian, Project and Client) for all previously-processed data. If a match is found, the item is marked a duplicate; if not, it is marked an original. Additional scope options within eCapture allow families of documents to be maintained through de-duplication such that if the top-level parent document is marked a duplicate, the entire family is marked as duplicates. Alternatively, items within a family can be de-duplicated individually. Only items selected for processing can be eligible for de-duplication, and only non-filtered (i.e., processed) items are marked as an original. If two items have matching MD5 hashes, the SHA-1 hash value is checked as well. If those values still match and the documents are parents, a family hash is generated by hashing the concatenated MD5 hash values of the entire family. This allows for a through hash comparison for the entire family in the event of differences between child documents. Bit-by-bit comparisons between files can also be performed during de-duplication, and matching file names can also be made a requirement for de-duplication.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term29"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>De-duplication Reports</Term>
+    </Terms>
+    <Definition>Two types are available: 1) Summary (summary report of items not processed due to de-duplication settings), and 2) Detailed (list of errors and status messages encountered during discovery).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term30"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>DeletionHistory.LOG file</Term>
+    </Terms>
+    <Definition>Located in the path of ...eCapture\Controller, this file records all activities conducted by the Deletion Agent.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term31"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Delivery</Term>
+    </Terms>
+    <Definition>Contains case-related media sent from your clients or related sources. Deliveries are sent by a shipment company, email, FTP, Electronic Delivery, or Physical Delivery.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term32"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Discovery</Term>
+    </Terms>
+    <Definition>Process used to determine file type(s) to later be processed.  The process of making data known to the eCapture system and assigning an index value to this data.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term33"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Discovery Job</Term>
+    </Terms>
+    <Definition>In eCapture, a single directory is chosen to run the discovery job from in order to determine file types. During the discovery process, the MD5 hash for files (sans container files) are calculated and indexing occurs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term34"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Discovery Reports</Term>
+    </Terms>
+    <Definition>Two types are available: 1) Summary (summary of items discovered by item type and category), and 2) Detailed (list of all items discovered).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term35"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Document</Term>
+    </Terms>
+    <Definition>In eCapture, refers to an electronic file (letter, spreadsheet, slideshow, etc.) that can be discovered; or discovered and processed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term36"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Drive Form Factor</Term>
+    </Terms>
+    <Definition>The size of the hard drive and how it connects to your computer.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term37"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>eCapture Controller</Term>
+    </Terms>
+    <Definition>Used to create projects, run discovery jobs, and processing jobs.  The Controller manages the status of executing the jobs along with performing other functions such as changing a project’s priority, managing Worker task tables, viewing Worker status information from a grid, modifying project options for both discovery and processing jobs, running reports, and exporting data.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term38"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>ECN</Term>
+    </Terms>
+    <Definition>Enterprise Code Name. Used to organize one or more product-specific projects (cases) under a single Enterprise-level case. It can also be used to provide an alias to the actual project (case) name.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term39"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Electronic Data Discovery (EDD)</Term>
+    </Terms>
+    <Definition>The act or process of discovering data by using a computer and appropriate software.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term40"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Electronic Delivery</Term>
+    </Terms>
+    <Definition>An electronic delivery method other than email or FTP.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term41"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Embedded File</Term>
+    </Terms>
+    <Definition>A file that is embedded in another file such as a graphic (.GIF) file embedded in a Word document. For example, the company logo (.GIF file) was inserted into the Word document.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term42"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>ESI</Term>
+    </Terms>
+    <Definition>Electronically Stored Information</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term43"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Extended Metadata</Term>
+    </Terms>
+    <Definition>Metadata that consists of all the regular, standard metadata as well as additional metadata that was captured and placed in the extended list.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term44"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Extracted Text</Term>
+    </Terms>
+    <Definition>Based on the native file and is completely accurate. Unlike OCR, it does not rely on character recognition. A separate text file is created for each page processed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term45"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Families</Term>
+    </Terms>
+    <Definition>Documents that are part of or contain other documents. These documents can be treated as a whole or with each item treated individually.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term46"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Filtering</Term>
+    </Terms>
+    <Definition>In eCapture, options that include processing only specific file types, processing by date range, or processing only those files that do not contain specified extensions.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term47"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Filtering Reports</Term>
+    </Terms>
+    <Definition>Two types are available: 1) Summary (summary of items not processed due to filter settings), and 2) Detailed (list of items not processed due to filter settings).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term48"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Flags</Term>
+    </Terms>
+    <Definition>In eCapture, a status/description list the QCer can select from and apply to a document/page at QC time. Flag types include, but are not limited to, Foreign Language, Passed QC, Exception, and Threshold.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term49"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>FTP</Term>
+    </Terms>
+    <Definition>File Transfer Protocol</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term50"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Fuzzy Searching</Term>
+    </Terms>
+    <Definition>Finds misspelled or poorly imaged word. Use a % within the word to allow for extra fuzziness.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term51"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Going Nuclear</Term>
+    </Terms>
+    <Definition>A task has time out, or n (configurable, 10 default) errors have been encountered during task execution.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term52"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Graceful Shutdown</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates a planned restart when the worker has performed 2500 tasks, has been running for 6 hours since its first task, or when physical available memory falls below 20%. These can be configured in the WORKER.INI file.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term53"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>GUID</Term>
+    </Terms>
+    <Definition>Globally Unique Identifier. In eCapture, used to more positively identify eCapture items records. Can be selected as a Content Type when performing a Data Extract Job - Data Extract Import. Also available as an Advanced Criteria option in the Flex Processor.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term54"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>ID</Term>
+    </Terms>
+    <Definition>In the eCapture Controller, a number assigned (through the SQL database) to every Project, Discovery Job, or Processing Job.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term55"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Inaccessible Path</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates a task has been received where the target item was not accessible to the Worker. The Worker will suspend task acceptance for one minute if this condition occurs. This message is erroneously displayed when the Worker patches itself.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term56"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Indexing</Term>
+    </Terms>
+    <Definition>In eCapture, you can choose whether or not to create the dtSearch index during initial discovery. Indexing prepares files for full-text searching prior to processing. eCapture integrates dtSearch, a third party program that facilitates advanced searching functions such as fuzzy searching, synonym searching, and more. A processing job can be created that utilizes searching. The items found will be processed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term57"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Information Panel</Term>
+    </Terms>
+    <Definition>In Capture, located in the Client Management tab. It is the area to the right of the Tree View. When you click an item in the Tree View, its information displays in the Information Panel.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term58"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Item ID</Term>
+    </Terms>
+    <Definition>In eCapture, this field is unique per Client database.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term59"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Limited Controller</Term>
+    </Terms>
+    <Definition>Designed to give full viewing access to Clients, Projects, and Jobs. The Controller is required to perform a number of functions including, but not limited to, performing NIST matches, modifying Job Priorities, etc. Note: The Save as default option is not available.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term60"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Load File</Term>
+    </Terms>
+    <Definition>A file used to load images or data into a third-party application such as Concordance® or into Ipro Tech’s Suite. In eCapture, these load files are created during the export process. Several load file formats are available.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term61"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Low Disk Space</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the free space available on the network storage used by eCapture has dropped below the allowable limit. The Worker will suspend task acceptance for one minute if this condition occurs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term62"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Managing Client</Term>
+    </Terms>
+    <Definition>Managing clients provide the basis of the relationship between cases and reviewers (groups and users). This can be thought of as a one-to-one relationship. For example, the law firm is called Attorney Group Limited, PLLC, and it would have multiple managing clients (Globex, Consolidated Industries, etc.). These managing clients will then have their own clients and cases. For Service Providers, who host their own multiple customers, all clients may be associated with a single managing client. For example, the managing client is called Service Providers, Inc., and it may have one or more clients that are associated with it. These managing clients will then have their own clients and cases.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term63"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>MD5 Hash Value</Term>
+    </Terms>
+    <Definition>A 128-bit algorithm performed on a document (during discovery) that results in a 32-digit hexadecimal value. It is a unique representation of the data contained in a document. It is always 40 characters.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term64"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Media</Term>
+    </Terms>
+    <Definition>The medium (hard drive, DVD, network share, etc.) associated with the delivery.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term65"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Media Manager</Term>
+    </Terms>
+    <Definition
+      Link="">A component of the Ipro (Cloud) workflow provides a solution for efficient, secure media management.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term66"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Metadata</Term>
+    </Terms>
+    <Definition
+      Link="">Metadata describes how and when and by whom a particular set of data was collected, and how the data is formatted. Created by the native program (e.g. Microsoft Word, Outlook) and is maintained with the native file (the letter or e-mail). eCapture uses a component called Oracle® Outside-In Technology (formerly Stellent), which extracts the metadata from the native files during the electronic discovery process. metadata can show the history of a document, where it went, how it was used, what it “did”. It shows how a document was created, the date it was created, modified, and/or transmitted, and the person or persons who handled the document.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term67"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Metadata Report</Term>
+    </Terms>
+    <Definition>In eCapture, list of all processed items and selected metadata values.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term68"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Natural Language</Term>
+    </Terms>
+    <Definition>(Search Function) Automatically weights the words in an “Any Words” search to disregard words such as AND and OR and focus on the more relevant, less frequently found words.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term69"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Network share</Term>
+    </Terms>
+    <Definition>A device or piece of information on a computer that can be remotely accessed from another computer.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term70"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>NIST</Term>
+    </Terms>
+    <Definition>National Institute of Standards and Technology. For more information, visit the website www.nsrl.nist.gov. Ipro Tech allows for the optional loading and use of the NIST database for use with eCapture.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term71"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Node</Term>
+    </Terms>
+    <Definition>Describes items in the Client Management tree view such as Client, Custodian, Project, etc. In reports, an error may be defined as a Node-level error (e.g., email store).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term72"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>OCR</Term>
+    </Terms>
+    <Definition>Optical character recognition. In eCapture, OCR text is created during a Processing Job, if possible. Otherwise, extracted text is created. A separate text file is created for each page processed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term73"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>OCR Status Report</Term>
+    </Terms>
+    <Definition>A list of image files sent through the OCR engine and the OCR results.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term74"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Original Size (Column in Export Summary Report)</Term>
+    </Terms>
+    <Definition>The sum of the native file size of parent documents in the export; not the Discovery Job.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term75"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Page Threshold</Term>
+    </Terms>
+    <Definition>In eCapture, a setting (in page numbers) used for bypassing larger files and inserting a placeholder for them. For example, if you set a threshold page value of 10, then eCapture will process items with 1 to 10 pages and insert a placeholder for items with 11 or more pages.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term76"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Page Threshold Report</Term>
+    </Terms>
+    <Definition>Shows a list of processed items that exceeded the page threshold. The page threshold is set under the Processing Option, General Options tab.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term77"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Pending Cleanup</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the Worker is waiting for active tasks to complete before Going Nuclear or restarting.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term78"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Phonic</Term>
+    </Terms>
+    <Definition>(Search Function) Finds words that sound like the requested word. Use a # in front of the word to search phonetically.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term79"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Premium EDD Printer Drivers</Term>
+    </Terms>
+    <Definition>Drivers that are installed during the installation process. They appear in the eCapture Worker screen. A maximum of eight drivers can be installed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term80"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Print Spooler Error</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the print spooler service on the Worker isn't running and could not be automatically restarted. The Worker will suspend task acceptance for one minute and try again. Manual intervention may be necessary.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term81"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Processing Errors Reports</Term>
+    </Terms>
+    <Definition>In eCapture, there are two types available: 1) Summary (summary of errors encountered during processing), and 2) Detailed (list of errors encountered during processing).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term82"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Processing Job</Term>
+    </Terms>
+    <Definition>There are two types: Search and Standard. The Search Processing Job allows the culling of data by the dtSearch indices created during discovery. The Standard Processing Job acts upon all files of the selected Discovery Job or Jobs. If more than one Discovery Job is selected, the contents are treated as a single, combined Discovery job for the purposes of searching and de-duplication. During this process task, images are created, raw text is extracted, word positions are extracted, and metadata is extracted for an item.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term83"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Project</Term>
+    </Terms>
+    <Definition
+      Link="">In Ipro (Cloud) the level beneath Client in the hierarchy. Projects can have one or more Custodians.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term84"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Project Directory</Term>
+    </Terms>
+    <Definition>An empty directory (mapped) that is selected each time a new project is created. Discovery Job data and Processing Job data is stored in this directory. Path structure example  \\projects\Discovery Jobs\DJ00005\Attach (E-mail) (SearchIndex) and \\projects\Processing Jobs\PJ00001\Output\1000\1 (2) (3), and so on.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term85"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Project Priority</Term>
+    </Terms>
+    <Definition>In eCapture, a project’s priority (place in the queue) can be changed. Priority values range from 1 to 10 with 1 representing the highest priority. When a project’s priority is changed from 5 to 1 for example, then it will be moved into the appropriate position in the Project Tree of the Client Management tree view.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term86"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>QC</Term>
+    </Terms>
+    <Definition>Quality Control. A process performed on a Processing Job to ensure accuracy of the final, delivered data. QCing can be performed on one, some, or all available categories and/or one, some, or all flags (Passed QC, Text Missing, Low Priority, etc.)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term87"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Query</Term>
+    </Terms>
+    <Definition>A set of criteria and logical operators used together or separately to search documents during a processing job.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term88"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Queue</Term>
+    </Terms>
+    <Definition>The jobs that waiting to be processed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term89"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Queue Manager Configuration</Term>
+    </Terms>
+    <Definition>Includes setting SQL Connection, Task Distribution (System wide bandwidth throttle, queue manager task cache count, queue manager bullpen trigger count, worker bandwidth throttle, queue manager non-blocking update count, queue manager blocking update count, and queue manager system exclusive update count), Functionality (allowed embedded file extraction error percentage, allowed extraction error percentage, allowed password protected percentage), Size Limits, and Worker Instance Quantity.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term90"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>QueueManager.LOG file</Term>
+    </Terms>
+    <Definition>Located in the path of ...eCapture\QueueManager, this file records each task distributed by the Queue Manager, all hung job detection activities, and any errors encountered by the Queue Manager when attempting to query the SQL tables to distribute tasks.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term91"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Raw Text</Term>
+    </Terms>
+    <Definition>In eCapture, extraction of raw text (text without any special attributes) occurs when a Processing Job runs. Extract Raw Text is an option available under Processing Options, General Options tab.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term92"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Ready</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the Worker has one or more free threads and is waiting to be assigned a task.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term93"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Ready Unlicensed</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the Worker is Ready, but there are more Workers than licenses and the Queue Manager has designated this worker as unlicensed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term94"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Restarting</Term>
+    </Terms>
+    <Definition>In eCapture, a status in the Status column on the Worker Status Information tab that indicates the Worker has completed its tasks and is completing the scheduled restart.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term95"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Restricted Documents</Term>
+    </Terms>
+    <Definition>Though multi-threaded processing is supported, certain document types can only be processed one at a time. For example, when using Internet Explorer to print HTML documents, we are forced to set a system-wide default printer. Since there can only be one default printer at any given time, HTML files are restricted. Other restricted types include but are not limited to Word, Excel, PowerPoint, Lotus Notes, and GroupWise documents.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term96"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Scope</Term>
+    </Terms>
+    <Definition>The level on which the document and its relationships must match the rule in order for the rule to apply.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term97"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Search Reports</Term>
+    </Terms>
+    <Definition>In eCapture, two types are available: 1) Summary (summary of items selected for processing resulting from search hits). 2) Detailed (list of items selected for processing by search string).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term98"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Self-Service</Term>
+    </Terms>
+    <Definition
+      Link="">A component of the Ipro (Cloud) Streaming workflow, provides a simple and easy-to-use solution to upload your own data for processing and review.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term99"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Stemming</Term>
+    </Terms>
+    <Definition>(Search Function) Finds formats of the word such as apply, applies, etc. Use ~ at the end of the word to search for stemming variations.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term100"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Storage Location</Term>
+    </Terms>
+    <Definition>The physical storage locations (for example in an evidence room) for incoming media.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term101"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Streaming</Term>
+    </Terms>
+    <Definition>The process of automatically copying, processing, filtering and loading data into review systems.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term102"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Super User</Term>
+    </Terms>
+    <Definition
+      Link="">In Ipro (Cloud) these are the administrators who have the ability to govern all aspects of Ipro (Cloud) at their site.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term103"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Synonyms</Term>
+    </Terms>
+    <Definition>(Search Function) Finds synonyms of the requested word. Use “&amp;” at the end of the word to search for synonyms in individual words.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term104"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>TAR</Term>
+    </Terms>
+    <Definition>Technology Assisted Review</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term105"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Task</Term>
+    </Terms>
+    <Definition>In eCapture, a single process performed by the Worker.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term106"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Task Table</Term>
+    </Terms>
+    <Definition>In eCapture, a list of tasks for the Workers to perform. Task tables are setup and given customized names through the eCapture Controller. Once the task tables are set up, then each Worker is assigned a task table. Task tables are used to partition certain Workers to work on certain projects.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term107"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>UNC</Term>
+    </Terms>
+    <Definition>The Universal Naming Convention (UNC) is a way to identify a shared file in a computer without having to specify (or know) the storage device it is on.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term108"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Unicode</Term>
+    </Terms>
+    <Definition>An encoding system where a unique number exists for every character regardless of the platform, application, or language.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term109"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Upload</Term>
+    </Terms>
+    <Definition
+      Link="">Upload means to transmit data from a computer or other source into Ipro (Cloud).</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term110"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>VPN</Term>
+    </Terms>
+    <Definition>A virtual private network (VPN) extends a private network across a public network.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term111"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Worker</Term>
+    </Terms>
+    <Definition>An eCapture module. The Worker (also called the Client) runs from individual workstations and processes tasks.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term112"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Worker.LOG file</Term>
+    </Terms>
+    <Definition>Located in the path of ...eCapture\Worker, this file records each task assigned to the worker and any subsequent status updates to that task.  Records any errors encountered while completing the assigned tasks. Records any errors encountered when communicating with the SQL server.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term113"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>WorkerAgent.LOG file</Term>
+    </Terms>
+    <Definition>Located in the path of ...eCapture\Worker, this file records information related to the worker agent and worker restarts.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term114"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>WorkerDiagnostics.LOG file</Term>
+    </Terms>
+    <Definition>Located in the path of ...eCapture\Worker, this file records status information every time worker diagnostics is run.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term115"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Zero-Byte File</Term>
+    </Terms>
+    <Definition>Files that contain no data.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term116"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Zero-Byte Files Report</Term>
+    </Terms>
+    <Definition>In eCapture, two types are available: 1) Discovery Reports tab - A discovery report that lists any discovered items with zero length. 2) Processing Reports, Other tab - A list of zero-length files encountered while processing that made it through discovery.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term16"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>Similar Documents</Term>
+    </Terms>
+    <Definition
+      Link="">Documents that are similar to a document compared to within the Results tab list. The level of similarity depends on the confidence score the similar document receives - the higher the score, the "more similar" is that document to the one being compared to.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term117"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>Visual Search</Term>
+    </Terms>
+    <Definition
+      Link="">Enables you to perform and review searches by using one of three two-dimensional charts as well as a Concept Wheel. This type of searching lets you view results in a manner that correlates between two or more data fields, or in relation to a data set as a whole.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term118"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Advanced Search</Term>
+    </Terms>
+    <Definition
+      Link="">Allows you to easily construct complex search expressions or specialized searches and display results in the Results tab. Searches can also be saved for later use or for specific tasks. For example, batches must be based on a saved search.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term119"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Concept Wheel</Term>
+    </Terms>
+    <Definition
+      Link="">A visual representation of cluster details and corresponds to the details listed for a selected top-level cluster.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term120"
+    TermClass="Popup"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Concept Clusters</Term>
+    </Terms>
+    <Definition
+      Link="">The clustering function groups and sorts documents based on content that is conceptually similar as defined by a conceptual search index. Clusters are named automatically, based on analyzing the common concepts found within the documents.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term121"
+    Stem=""
+    IgnoreCase="false"
+    TermClass="Popup">
+    <Terms>
+      <Term>Smart Folders</Term>
+    </Terms>
+    <Definition
+      Link="">Folders that allow finding case records/documents based on a case field or document public tag group. Smart Folders are dynamic in that they will periodically refresh based on changes that are made (such as tagging more documents) that match the defined criteria.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term123"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Review Pass</Term>
+    </Terms>
+    <Definition
+      Link="">Requires the following general criteria:
+The review pass
+ name and the saved search on which it is based. 
+The maximum size of each batch.
+[Yesterday 4:56 PM] Darryl Mondrow
+    Review Passes - Based in searches planned and saved in Ipro for enterprise Review. They require the following general criteria:
+
+The review pass 
+ name and the saved search on which it is based.
+
+ 
+The maximum size of each batch.
+
+A prefix for batch numbering.
+
+The search on which the review pass is based. 
+
+The coding form/tag palette containing the fields, tags, rules, and permissions required for the review pass.
+
+Optionally, 
+
+A batch priority (Low - Critical).
+
+
+A category to define how batches are grouped.
+
+
+A field indicating family relationships.
+
+
+A sort order for fields in the case.
+
+
+Also, the review pass may be limited to specific user groups.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term122"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Search Criteria</Term>
+    </Terms>
+    <Definition
+      Link="">During Advanced Search, the ability to refine search results through definitions in pull-down sections: Timeline, Analytics, Text Search, Field Search, Sort Options, and Random Sampling.
+During Visual Search, the ability to refine search results in a Search Criteria pane by combining one or more of the text-based and mnetadata-based filter options: Text Search, Custodian, Email Domains, File Category, File Type, and so on.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term7"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Case Settings</Term>
+    </Terms>
+    <Definition
+      Link="">In Review - The Case Settings icon (gear) on the left side of Case View opens a page that contains multiple tabs allowing you to make the case settings:
+Index Management – Managing Index Information and Auto Indexing Options
+Relationships – Defining the parameters of each relationship type
+Redaction Categories – Setting redaction color and the color of the font within the redactions
+Tag Palette – Setting Tag Groups, Tag Group Rules, and modifying Tag Groups.
+Persistent Highlighting – Setting highlight color, font color within the highlight, highlighted terms, and group security permissions
+Pick Lists - Determining pick list properties and assigned fields
+Coding Forms – Determining Information, Fields, Tags, Rules, and group security permissions.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="ADD_Help.Term124"
+    Stem=""
+    IgnoreCase="false">
+    <Terms>
+      <Term>Saved Searches</Term>
+    </Terms>
+    <Definition
+      Link="">In Review - the Saved Searches panel contains the folder hierarchy showing where you have stored your searches. The hierarchy comprises folders that are labeled Private, Public, Shared, Recent, and Smart Folders.</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedList,Primary.Admin" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Sign In With Multi-Factor Authentication</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage ADD Settings" />Sign In With Multi-Factor Authentication (MFA)</h1>
+        <p class="BodyText">Administrators can bolster their security by enabling multi-factor authentication (MFA) for users logging in to <MadCap:variable name="Primary.Name First" />. Once enabled, users are required to use a secondary device (such as a mobile phone) to confirm their identity when attempting to sign in to <MadCap:variable name="Primary.Name" />. An authentication app, which the user can download onto their secondary device, provides a time-based, one time passcode (TOTP) that the user can input when logging in to <MadCap:variable name="Primary.Name" />. </p>
+        <p class="BodyText">Common authentication apps available for download include:  Google Authenticator, Microsoft Authenticator, FreeOTP, Authy, and Protectimus Smart OTP.</p>
+        <p class="BodyText">For answers to common questions related to multi-factor authentication, see <MadCap:xref href="SSO_MFA_FAQ.htm">FAQ: Single Sign-on and Multi-Factor Authentication</MadCap:xref>.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Multi-Factor Authentication and Two-Factor Authentication are used interchangeably in this topic. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Enable Multi-Factor Authentication</h2>
+        <p>Administrators can enable multi-factor authentication in the System Manager. After signing in to <MadCap:variable name="Primary.Name" /> with administrator credentials, follow the steps below to enable multi-factor authentication:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Before enabling multi-factor authentication, your server should be synced to an NTP server. This ensures consistency between <MadCap:variable name="Primary.Name" /> and the authentication app.  </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Security Settings">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol class="NumbListBody" start="3">
+            <li MadCap:conditions="Primary.Blocked">Click the edit icon <img src="../../Resources/Images/Icons/Edit_Icon.png" /> in the top-right corner of the screen to modify the fields on this page.</li>
+            <li>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="Primary.Blocked">Scroll down to the Security Settings section of the page. </MadCap:conditionalText>Click the slider next to <b>Two Factor Authentication</b> to enable this feature.</p>
+            </li>
+        </ol>
+        <h2>Sign in with Multi-Factor Authentication</h2>
+        <p class="BodyText">Once multi-factor authentication has been enabled, users must synchronize an authentication app on a secondary device (such as a mobile phone) with their <MadCap:variable name="Primary.Name" /> account in order to log in. Users can accomplish this by following the steps in this section:</p>
+        <ol>
+            <li>
+                <p>Download an authentication app to a mobile phone or other secondary device. There are many authentication apps available for download, such as Google Authenticator and Microsoft Authenticator. The only requirement for the authentication app is that it uses a time-based, one-time passcode.</p>
+            </li>
+            <li>The first time you sign in to <MadCap:variable name="Primary.Name" /> after multi-factor authentication has been enabled, a screen appears with instructions on how to synchronize your authentication app with your <MadCap:variable name="Primary.Name" /> account. This screen displays both a QR code and a secret key. To initiate the synchronization, either scan the QR code on this screen using your authentication app, or input the secret key where prompted in your authentication app. </li>
+            <li>Your app generates a 6-digit verification code. Input this code into the <b>Verification Code</b> field on the <MadCap:variable name="Primary.Name" /> screen. Each code is valid for 90 seconds. Once the 90 second window has elapsed, a new code must be used instead. </li>
+            <li>
+                <p>Click <b>Verify</b>. If valid, the authentication app is successfully configured and <MadCap:variable name="Primary.Name" /> signs in.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note:  If invalid, wait for a new code to generate in your app. Input the new code, ensuring that all digits are correct and that you click <b>Verify</b> before the code becomes invalid. If still unable to sign in, contact an Administrator for assistance.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>For all subsequent logins, after inputting your user credentials on the <MadCap:variable name="Primary.Name" /> login screen, a Two-Factor Authentication screen displays. Open your authentication app to access the latest verification code. Then input this code into the <b>Verification Code</b> field on the Two-Factor Authentication screen. Click <b>Verify</b> to log in.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/2FA_Authentication_Screen.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="SSO_MFA_FAQ.htm">FAQ: Single Sign On and Two-Factor Authentication<br /></MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Configure_Single_Sign_On.htm">Configure Single Sign-on (SSO)</MadCap:xref>
+        </p>
+    </body>
+</html>

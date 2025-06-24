@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>You can configure the <MadCap:variable name="Primary.LIVE EDA" /> environment settings for <MadCap:variable name="Primary.Name" /> via the System <MadCap:annotation MadCap:createDate="2022-07-21T15:26:57.9760147-04:00" MadCap:creator="ltonak" MadCap:initials="LT" MadCap:comment="CURRENTLY NOT FOR LMS" MadCap:editor="ltonak" MadCap:editDate="2022-07-21T15:27:10.9282152-04:00">Manager.</MadCap:annotation></p>
+        <ol>
+            <li>
+                <p>Log in to <MadCap:variable name="Primary.Name"></MadCap:variable> and navigate to the System Manager, accessed from the gear icon <img src="../../Images/Icons/Settings_Icon.png"></img> at the top-right corner of the screen.</p>
+                <p>
+                    <img src="../../../Graphics/System_Graphics/Cursor_over_Settings_Icon.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the left-hand panel of the System Manager, select <b>Environment Settings</b>.</p>
+            </li>
+            <li>
+                <p>Scroll down to <b>EDA&#160;Settings</b>. </p>
+            </li>
+            <li>
+                <p>In Early Data Assessment Search Endpoint, enter the correct <b>Search Endpoint</b>. This is the URL the user navigates to in order to view the <MadCap:variable name="Primary.LIVE EDA" /> case.</p>
+            </li>
+            <li>
+                <p>In Early Data Assessment Environment Endpoint, enter the correct <b>EDA API Endpoint</b>. This is the URL of <MadCap:variable name="Primary.NetGovern" />'s internal API.</p>
+            </li>
+            <li>
+                <p>In Early Data Assessment API&#160;Key, paste the <b>API Key</b>. </p>
+            </li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+                <p>
+                    <img src="../../../Graphics/LiveEDA_Graphics/NG UI_Live EDA Configuration_EDA Settings_11.0.png" class="Thumbnail" style="width: 425px;height: 216px;">
+                    </img>
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

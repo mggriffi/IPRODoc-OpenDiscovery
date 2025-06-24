@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Additional Resources">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Product Resources/Misc_Resources_OPEN_DISCOVERY.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="ExternalTools">
+      <TocEntry
+        Title="Cloud Services: How to Request a New Case"
+        Link="/Content/Product Resources/ExternalTools/Cloud_ Services_How_to_Request_a_New_Case.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Using Media Shuttle"
+        Link="/Content/Product Resources/ExternalTools/Using_Media Shuttle.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Native_Redactions">
+      <TocEntry
+        Title="Overview: Native Redactions"
+        Link="/Content/Product Resources/Native_Redactions/Overview_Native_Redactions.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Understand Native Redaction Options"
+        Link="/Content/Product Resources/Native_Redactions/Understand_Native_Redaction_Options.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Workflow: Native Redactions"
+        Link="/Content/Product Resources/Native_Redactions/Workflow_Native_Redactions.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Quick_References">
+      <TocEntry
+        Title="OPEN DISCOVERY Quick References"
+        Link="/Content/Product Resources/Quick_References/Open_Discovery_Quick_References.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Schemas Enterprise">
+      <TocEntry
+        Title="Diagnostic Schema"
+        Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Diagnostic.html" />
+      <TocEntry
+        Title="Enterprise Schema"
+        Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Enterprise.html" />
+      <TocEntry
+        Title="Media Manager Schema"
+        Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Media Manager.html" />
+      <TocEntry
+        Title="Membership Schema"
+        Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Membership.html" />
+      <TocEntry
+        Title="Permissions Schema"
+        Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Permissions.html" />
+      <TocEntry
+        Title="Reporting Schema"
+        Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Reporting.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Workflows">
+      <TocEntry
+        Title="Create Export for Archiving Case"
+        Link="/Content/Product Resources/Workflows/Create_Export_for_Archiving_Case.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Migrate a LOCAL DISCOVERY Case to OPEN DISCOVERY"
+        Link="/Content/Product Resources/Workflows/Migrate_Local_Case_to_Open_Discovery.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Migrate an Eclipse SE Case to OPEN DISCOVERY"
+        Link="/Content/Product Resources/Workflows/Migrate_SE_Case_to_Open_Discovery.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Workflow: Get Started in Media Manager"
+        Link="/Content/Product Resources/Workflows/MM_Workflow.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Workflows"
+        Link="/Content/Product Resources/Workflows/Open_Discovery_Workflows.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Getting Started: Multi-Tenant Environment"
+        Link="/Content/Product Resources/Workflows/Quick_Start_Multi_Tenant.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Workflow for Users and Group Management"
+        Link="/Content/Product Resources/Workflows/Workflow for Users and Group Management.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Workflow: Extract Text From Third Party Imports"
+        Link="/Content/Product Resources/Workflows/Workflow_ Extract_Text_From_Third_Party_Imports .htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Workflow: Create Secondary Processing Case for Bates PDFs"
+        Link="/Content/Product Resources/Workflows/Workflow_Create_Secondary_Processing_Case_for_Bates_PDFs.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

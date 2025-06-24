@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <p class="BodyText">One of the primary activities when preparing documents 
+ for discovery is applying tags. A tag is a type of “marker” that allows 
+ you to categorize and identify specific document characteristics.</p>
+            <p class="BodyText">Typically defined by an administrator, tags allow 
+ you and your organization to find and identify similar documents—for example, 
+ those that are privileged in some way, or those requiring review by a topic 
+ expert. <MadCap:variable name="Primary.ProdName_Review" /> makes it easy for you to tag documents. </p>
+            <p class="BodyText">Administrators define 
+ each case to include document  tags. </p>
+            <p class="Image">
+                <img src="../../../Graphics/ADD_Review_Graphics/AR_TagPalette_ReviewCase.png" class="Thumbnail" />
+            </p>
+        </div>
+    </body>
+</html>

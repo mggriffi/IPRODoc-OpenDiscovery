@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Getting Started"
+    Link="/Content/Enterprise.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Workflow_Getting_Started_With_Enterprise.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Product Resources/Workflows/Quick_Start_Multi_Tenant.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Case Management"
+    Link="/Content/Case_Management/Case_Management.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Case_Management/First Steps/Overview_Case_Management.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/First Steps/Overview_Case_Management.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Clients"
+      Link="/Content/Case_Management/Clients/Create_New_Managing_Clients_and_Clients.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Clients/Create_New_Managing_Clients_and_Clients.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Clients/Modify_Managing_Client_or_Client.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Clients/Delete_Managing_Clients,_Clients,_or_Cases.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Cases"
+      Link="/Content/Case_Management/Cases/Create_A_New_Case.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Cases/Create_A_New_Case.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Cases/Modify_Case.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Cases/Workflow_ Create _Case_Template.htm" />
+      <TocEntry
+        Title="Manage Processing Case Settings"
+        Link="/Content/Case_Management/Processing_Case_Settings/Edit_Processing_Case_Settings.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Case_Detail_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Password_Handling.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Ingestion_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Filtering_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_General_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Word_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_PowerPoint_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Excel_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Placeholder_Settings.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Case_Management/Case Management FAQs/Case Management FAQs.htm" />
+    <TocEntry
+      Title="Import Series"
+      Link="/Content/Case_Management/Import_Series/Overview_Import_Series.htm">
+      <TocEntry
+        Title="Create Import Series"
+        Link="/Content/Case_Management/Import_Series/Create_Import_Series.htm" />
+      <TocEntry
+        Title="Work with Import Series"
+        Link="/Content/Case_Management/Import_Series/Work_with_Import_Series.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="LIVE EDA"
+    Link="/Content/LiveEDA/LiveEDA.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Overview_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Configure_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Create_Case_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Work_in_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Promote_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Review_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Edit_Case_LiveEDA.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Self Service"
+    Link="/Content/Self_Service/Self_Service.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Self_Service/First Steps/Overview_Self-Service.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Self_Service/First Steps/Overview_Self-Service.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Self_Service/Upload_Data_via_Self-Service.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Self_Service/View_Upload_History_and_Status.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Self_Service/Self-Service_FAQs.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Media Manager"
+    Link="/Content/Media_Manager/Media_Manager.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Media_Manager/First_Steps/Overview_Media_Manager.htm"
+      StartSection="false">
+      <TocEntry
+        Title="Overview: Media Manager"
+        Link="/Content/Media_Manager/First_Steps/Overview_Media_Manager.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/First_Steps/Understand_the_Media_Manager_Interface.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Deliveries"
+      Link="/Content/Media_Manager/Deliveries/Overview_Deliveries.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Overview_Deliveries.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Add_New_Incoming_Delivery.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Add_New_Outgoing_Delivery.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Add_Media_to_Your_Delivery.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Manage_Existing_Deliveries.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Media"
+      Link="/Content/Media_Manager/Media/Create_New_Media.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Media/Create_New_Media.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Media/Manage_Existing_Media.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Media/Copy_Data_to_Network.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Data Locations"
+      Link="/Content/Media_Manager/Data_Locations/Monitor_Job_Status.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Process_Data_Locations.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Monitor_Job_Status.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Requeue_Job_Errors.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Manage_Data_Locations.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Media_Manager/FAQs/Media_Manager_FAQs.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Review"
+    Link="/Content/Review/Review_ECAReview.htm">
+    <TocEntry
+      Title="Manage Your Review"
+      Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Ipro_(Cloud)_Review_Enter_Case.htm">
+      <TocEntry
+        Title="Manage Case Settings"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Manage_Review_Case_Settings.htm">
+        <TocEntry
+          Title="Index Management"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Index Management/Build_and_Monitor_Index.htm">
+          <TocEntry
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Index Management/Manage_a_Search_Index.htm"
+            MadCap:generatedToc="true"
+            Title="[%=System.LinkedTitle%]" />
+        </TocEntry>
+        <TocEntry
+          Title="Relationships"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Relationships/Manage_Relationships.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Relationships/Manage_Relationships.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Redactions"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Redactions/Manage_Redaction_Categories.htm">
+          <TocEntry
+            Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Apply_Redactions.htm"
+            Title="[%=System.LinkedTitle%]"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Tag Palette"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Overview_Tags.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Overview_Tags.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Manage_Tag_Palettes.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Working_With_Tag_Options.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Persistent Highlighting"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Persistent_Highlighting.htm">
+          <TocEntry
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Persistent Highlighting/Manage_Persistent_Highlighting.htm"
+            Title="[%=System.LinkedTitle%]"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Pick Lists"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Pick Lists/Manage_Pick_Lists.htm"></TocEntry>
+        <TocEntry
+          Title="Coding Forms"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Overview_Coding_Forms.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Overview_Coding_Forms.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Manage_Coding_Forms.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Performance"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Performance/Manage_Performance.htm">
+          <TocEntry
+            Title="Performance Management"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Performance/Manage_Performance.htm" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Manage Keyword Lists"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Manage_Keyword_Lists.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Overview_Keyword_Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Create_and_Schedule_Keyword_Lists.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Keyword_List_Activities.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Manage Review Passes"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Overview_Review_Passes.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Review_Passes.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm"
+          MadCap:generatedToc="true" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm" />
+        <TocEntry
+          Title="Active Learning with OPEN DISCOVERY"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Active_Learning_Summary.htm" />
+        <TocEntry
+          Title="Active Learning: Frequently Asked Questions"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/AL_Frequently_Asked_Questions.htm" />
+        <TocEntry
+          Title="Unlocking the Benefits of Active Learning"
+          Link="/Content/Product Resources/Unlocking the Benefits of Active Learning.pdf" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/AR_Insights_Review_Pass_Management.htm" />
+        <TocEntry
+          Title="Review Pass Acceleration"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Review_Pass_Doc_Load_Accel.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Search the Database"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Overview_Searching.htm">
+        <TocEntry
+          Title="Search Basics ">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Search_Syntax.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Default_Search_Assumptions.htm"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Work with Searches">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Saved_Searches.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Smart_Folders.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Pub_Shared_Priv_Search_Folders.htm"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Visual Search"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Overview_Visual_Search.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Understand_Cluster_Sets.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Advanced Search"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Overview_Advanced_Search.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm" />
+          <TocEntry
+            Title="Create Analytic Search">
+            <TocEntry
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Understand_Analytics_Index_Fields.htm"
+              Title="[%=System.LinkedTitle%]" />
+            <TocEntry
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Email_Full_Thread_Search.htm"
+              Title="[%=System.LinkedTitle%]" />
+            <TocEntry
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_InclusiveEmailThread_Search.htm"
+              Title="[%=System.LinkedTitle%]" />
+            <TocEntry
+              Title="[%=System.LinkedTitle%]"
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Near_Duplicate_Not_Email_Thread_Search.htm" />
+          </TocEntry>
+        </TocEntry>
+        <TocEntry
+          Title="Search Results"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Search_Results.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_the_Results_Grid_Columns.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Filter Search Results.htm" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Analytics">
+        <TocEntry
+          Title="First Steps in Analytics">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Create_and_Manage_Content_Filters.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Create_and_Manage_Analytic_Indexes.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Configure_Near-Duplicate_Detection.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Configure_Email_Threading.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Set Up TAR Project"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Manage_the_TAR_Review_Process.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Create_a_TAR_Project.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Create_Batches_for_TAR_Review_Passes.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Manage_TAR_Projects.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Manage_the_TAR_Project_when_the_Case_Changes.htm"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Create Analytic Searches">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Understand_Analytics_Index_Fields.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Email_Full_Thread_Search.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_InclusiveEmailThread_Search.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Near_Duplicate_Not_Email_Thread_Search.htm" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Transcripts"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Transcripts_Overview.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Work with Transcripts.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Run Transcript Reports.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Work with Export Sets and Productions"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Overview_Export_and_Production.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Create_Export_and_Production_Sets.htm"
+          MadCap:generatedToc="true" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Workflow_ Create _a _Production.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/About_the_Production_Shield.htm"
+          MadCap:generatedToc="true" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Conduct Your Review"
+      Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/ADD_Review_Passes.htm">
+      <TocEntry
+        Title="First Steps"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/First_Steps/Get_Started_Conducting_Review.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/First_Steps/Get_Started_Conducting_Review.htm"
+          MadCap:generatedToc="true" />
+      </TocEntry>
+      <TocEntry
+        Title="Review Documents"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Conduct_Review.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Conduct_Review.htm"
+          MadCap:generatedToc="true" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Use_Keyboard_Shortcuts.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Workflow_Review_Non_Review_Pass_Docs.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Workflow_Review_Pass_Docs.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="View Relationships"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Overview_Relationships.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Work_with_Relationships.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Manage_Mass_Actions_Relationships_Panel.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Understand the Document Viewer"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Overview_Document_Viewer.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Work_With_Document_Viewer_Tabs.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Understand_Document_Viewer_Options.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Right_Click_Tag_Options_in_the_Document_Viewer.htm" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Reports"
+    Link="/Content/Reports/Reports.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Reports/Get_Started_with_Reports.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Get_Started_with_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Log_Into_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Customizing_the_Report_Preview_Image.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Report Quick Reference"
+      Link="/Content/Reports/All_Reports.htm">
+      <TocEntry
+        Title="All Reports"
+        Link="/Content/Reports/All_Reports.htm" />
+      <TocEntry
+        Title="Reports by Type"
+        Link="/Content/Reports/Reports_by_Type.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Generate Report"
+      Link="/Content/Reports/Run_Reports.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Run_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/View_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Export_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Print_Reports.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Select Reports"
+      Link="/Content/Reports/System_Reports/System_Reports.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/System_Reports/System_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Processing_Reports/Processing_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Review_Reports/Review_Reports.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Customize Reports"
+      Link="/Content/Reports/Custom_Reports/Create_Custom_Reports.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Custom_Reports/Create_Custom_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Custom_Reports/Create_a_Stored_Procedure.htm" />
+      <TocEntry
+        Title="Create a Report Definition"
+        Link="/Content/Reports/Custom_Reports/Create_a_Report_Definition.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Reports/Custom_Reports/ExecutionMetadata_Field.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Reports/Custom_Reports/Reporting.ParameterListDefinition_Table.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Reports/Custom_Reports/DisplayMetadata_Field.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Reports/Custom_Reports/Customize_Grid_Columns.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Custom_Reports/Automatic_Report_Detection.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Reports/Report_FAQs.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="System"
+    Link="/Content/System/Administration.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/System/Get_Started_with_System_Administration.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Get_Started_with_System_Administration.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Log_into_Administration.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Users and Groups"
+      Link="/Content/System/Users and Groups/Manage_Users_and_Groups.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Users and Groups/Create_New_User.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Users and Groups/Work_with_Users.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        conditions="Primary.Upcoming Release" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Users and Groups/Modify_User_Details.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Users and Groups/Delete_Users.htm" />
+      <TocEntry
+        Link="/Content/System/Users and Groups/Create New Groups.htm"
+        Title="[%=System.LinkedTitle%]" />
+      <TocEntry
+        Link="/Content/System/Users and Groups/Edit a Group.htm"
+        Title="[%=System.LinkedTitle%]" />
+      <TocEntry
+        Link="/Content/System/Users and Groups/Delete a Group.htm"
+        Title="[%=System.LinkedTitle%]" />
+      <TocEntry
+        Link="/Content/Product Resources/Workflows/Workflow for Users and Group Management.htm"
+        Title="[%=System.LinkedTitle%]" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Permissions"
+      Link="/Content/System/Users and Groups/Permissions/Permissions_List.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Users and Groups/Permissions/Permissions_List.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Users and Groups/Permissions/Assign_Permissions.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Users and Groups/Permissions/User_Group_Comparison.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Security Templates"
+      Link="/Content/System/Security_Templates/Overview_Security_Templates.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Templates/Create_Security_Template.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Templates/Modify_Security_Template.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Templates/Delete_Security_Template.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Security Settings">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Settings/Sign_In_Two_Factor_Authentication.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Settings/Configure_Single_Sign_On.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Settings/Configure_Activity_Timeout.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Settings/Configure_Trusted_IPs.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Security_Settings/SSO_MFA_FAQ.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Manage Environment Settings"
+      Link="/Content/System/Ipro_(Cloud)_Settings/Manage_Ipro_(Cloud)_Settings.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Change_Environment_Share_Settings.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Define_Media_Attachment_File_Path.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Define Elastic Search Endpoint.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Define_Barcodes.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/LiveEDA/Configure_LiveEDA.htm"
+        conditions="Primary.FutureDelete" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Configure_LiveEDA_in_System_Manager.htm"
+        conditions="Primary.Upcoming Release" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/System/System Monitoring/About System Monitoring.htm"
+      Title="Manage System Logs">
+      <TocEntry
+        Link="/Content/System/System Monitoring/View Log Information.htm"
+        Title="[%=System.LinkedTitle%]" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System/Copy_Stations/Manage_Copy_Stations.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Copy_Stations/Create_Copy_Stations.htm"
+        MadCap:generatedToc="true" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Copy_Stations/Delete_Copy_Stations.htm"
+        MadCap:generatedToc="true" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Copy_Stations/Modify_Copy_Stations.htm"
+        MadCap:generatedToc="true" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System/Storage_Locations/Manage_Storage_Locations.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Storage_Locations/Create_Storage_Locations.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Storage_Locations/Modify_Storage_Locations.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Storage_Locations/Delete_Storage_Locations.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System/Contacts/Manage_Contacts.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Contacts/Define_New_Contacts.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Contacts/Modify_Contact_Details.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Contacts/Delete_Contacts.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Job Manager"
+      Link="/Content/System/Job_Manager/Overview_Job_Manager.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Job_Manager/Overview_Job_Manager.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Job_Manager/Work_with_In_Progress_Jobs.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Job_Manager/Work_with_Completed_Jobs.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Job_Manager/Work_with_Scheduled_Jobs.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Job_Manager/Job_Manager_Agents.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System/System_Administration_FAQs.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System/Security_Settings/SSO_MFA_FAQ.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/System/Administration_Videos.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Additional Resources">
+    <TocEntry
+      Title="OPEN DISCOVERY Resources">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Workflows/Open_Discovery_Workflows.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Quick_References/Open_Discovery_Quick_References.htm" />
+      <TocEntry
+        Title="System Requirements"
+        Link="/Content/Product Resources/System Requirements.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/VM_Deployment.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Anti_Virus_Exclusions_2022_10.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Forensic_Imaging_Handling.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Native Files List.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Solution_Usage_Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Misc_Resources_OPEN_DISCOVERY.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Release Notes">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2024.11.7.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2024.11.6.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Release Notes 2023.11.3"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2023.11.3.htm"></TocEntry>
+      <TocEntry
+        Title="Release Notes 2022.11.1 and 11.2"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2022.11.1_11.2.htm" />
+      <TocEntry
+        Title="Release Notes 2022.11.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2022.11.0.htm" />
+      <TocEntry
+        Title="Release Notes 2022.10.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2022.10.0.htm" />
+      <TocEntry
+        Title="Release Notes 2021.9.2"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.2.htm"></TocEntry>
+      <TocEntry
+        Title="Release Notes 2021.9.1"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.1.htm" />
+      <TocEntry
+        Title="Release Notes 2021.9.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.0.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Import Third-Party Data">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Overview_Import_Third_Party_Data.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Create_the_Import_for_Third_Party_Data.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Manage_Database_Fields.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Production_History.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Text_Files.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Transfer Files">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Transfer Files Using Media Shuttle.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Transfer Files Using CloudFiles.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Ipro Cloud Portal and Duo Activation">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/DuoAcctActive.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Ipro_Cloud Self Service Password Reset.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

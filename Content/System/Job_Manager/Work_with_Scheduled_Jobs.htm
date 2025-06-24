@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\Resources\MasterPages\Admin_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Work with Scheduled Jobs</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Work with Scheduled Jobs</h1>
+        <p>Scheduled jobs are jobs  configured to run at some point in the future. These could be one-time jobs, or recurring jobs that are scheduled to run on a consistent basis. To view scheduled jobs, navigate to the Job Manager by proceeding through the steps described in <a href="Overview_Job_Manager.htm#Open">Open the Job Manager</a>.</p>
+        <p>With the Job Manager open, click the <b>Scheduled </b> tab in the top-left corner of the page. All scheduled  jobs appear in a grid. </p>
+        <p>
+            <img src="../../Graphics/System_Graphics/JM_Scheduled_Jobs.png" class="Thumbnail" />
+        </p>
+        <p>The Scheduled Jobs table displays information about each job, including:</p>
+        <ul class="BulletListBody">
+            <li>Type </li>
+            <li>Case Name</li>
+            <li>Schedule</li>
+            <li>Date Modified</li>
+            <li>Submitted By</li>
+            <li>Last Ran</li>
+            <li>Next Run</li>
+        </ul>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: You can open the configuration settings for the scheduled job by selecting the <img src="../../Graphics/System_Graphics/btn_JM_Scheduled_Jobs_OpenSettings.png" /> icon on the right side of the grid.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Sort the Jobs Grid</h3>
+        <p>You can sort the list of scheduled jobs alphanumerically by selecting the column head in the grid whose contents you would like to sort. Clicking the   Submitted By column, for instance, will show all scheduled jobs in alphabetical order based on the names of the users who submitted the jobs.</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/btn_Submitted_By_Up_1.png" class="Thumbnail">
+            </img>
+        </p>
+        <p> If you click the column head once more, all jobs display in reverse-alphabetical order.</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/btn_Submitted_By_Down.png" class="Thumbnail" />
+        </p>
+        <h3>Filter the Jobs <MadCap:annotation MadCap:createDate="2023-05-26T08:30:18.2533439-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Check this for new images" MadCap:editor="ddavidson" MadCap:editDate="2023-05-26T08:30:26.6022499-04:00">Grid</MadCap:annotation></h3>
+        <p>The Job Manager also provides filtering capabilities to help you locate the specific jobs you need. Review the information below to learn more about working with filters.</p>
+        <ul>
+            <li>
+                <p>When you apply a filter, the chip associated with the filter turns blue to indicate that it has been applied. Additionally, a number displays on the chip that represents the number of parameters configured within that filter. In the example below, two job types have been selected and applied. As such, the Job Type filter card has turned blue, and displays +2 beside the name.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/JM_Filter_JobType_2_Items.png" />
+                </p>
+            </li>
+            <li>
+                <p>You can apply more than one filter at a time. For instance, you can use the Job Type filter to search exclusively for Keyword List jobs, while using the Case filter to locate such jobs within a specific case. The combination of filters provides you with a more fine-grained search experience. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">This is particularly helpful when working with hundreds or thousands of jobs.</MadCap:conditionalText></p>
+            </li>
+            <li>
+                <p>For most filter options, a <b>Select All</b> button is available for you to select every parameter in that filter with a single click.  Once all items are selected, you can then deselect the one or two items that you do not need. For instance, if you would like to include most job types in your filter, you can save time by clicking the checkbox for <b>Select All</b>, then unchecking any of the job types you would like to exclude.</p>
+            </li>
+            <li>
+                <p>You can set how many jobs you would like displayed in the grid by using the Show Jobs dropdown. Options include showing 25, 50, 100, 300, and 1000 jobs.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/JM_Filter_ShowJobs_Dropdown.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <p>The table below describes the filtering options available on the <b>Scheduled </b>tab of the Job Manager.</p>
+        <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 659px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Option</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Job Type</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Use this filter to specify which job types to include in the jobs grid. Select the checkbox beside a job type to include all jobs of that type in the grid. For instance, if you select the checkbox beside  Keyword List, only Keyword List jobs will appear in the grid.</p>
+                        <p class="TableText">Click the <b>Apply</b> button to apply the filter options you selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Case</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">You can use this filter to specify which cases to include in the jobs grid. Select the checkbox beside a case to include jobs associated with that case in the grid. For instance, if there are twenty cases available, and you select the checkbox beside Case 1, only jobs associated with Case 1 will display in the grid.</p>
+                        <p class="TableText">Click the <b>Apply</b> button to apply the filter options you selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Submitted By</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> You can use this filter to only display jobs submitted by specific users. Select the checkbox beside a user to include jobs submitted by that user in the grid. Any jobs submitted by other users are excluded. </p>
+                        <p class="TableText">Click the <b>Apply</b> button to apply the filter options you selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: normal;">Date Modified</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This filter displays jobs that were last modified on a specific date or date range. Choose from the options below:</p>
+                        <ul>
+                            <li>
+                                <p class="TableText"><b>By Date</b>: If you would like to show jobs last modified on a specific date, use the <b>By Date</b> option. On the calendar popup that appears, select the date needed. Any jobs that were last modified on a different date are excluded from the grid.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><b>By Date Range</b>:  If you would like to show jobs last modified within a specific date range, use the <b>By Date Range</b> option. On the calendar popup that appears, select the start date needed. A blue circle indicates the selected day. Next, choose an end date for the range. The calendar popup closes and the range is applied. Any jobs last modified outside of that date range are excluded from the grid.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: normal;">Last Ran</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This filter displays jobs that were last run on a specific date or date range. Choose from the options below:</p>
+                        <ul>
+                            <li>
+                                <p class="TableText"><b>By Date</b>: If you would like to show jobs that last ran on a specific date, use the <b>By Date</b> option. On the calendar popup that appears, select the date needed. Any jobs that last ran on a different date are excluded from the grid.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><b>By Date Range</b>:  If you would like to show jobs that last ran within a specific date range, use the <b>By Date Range</b> option. On the calendar popup that appears, select the start date needed. A blue circle indicates the selected day. Next, choose an end date for the range. The calendar popup closes and the range is applied. Any jobs that last ran outside of that date range are excluded from the grid.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="font-weight: normal;">Next Run</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">This filter displays jobs that are scheduled to run next on a specific date or date range. Choose from the options below:</p>
+                        <ul>
+                            <li>
+                                <p class="TableText"><b>By Date</b>: If you would like to show jobs that are scheduled to run next on a specific date, use the <b>By Date</b> option. On the calendar popup that appears, select the date needed. Any jobs that are scheduled to run next on a different date are excluded from the grid.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><b>By Date Range</b>:  If you would like to show jobs that are scheduled to run next within a specific date range, use the <b>By Date Range</b> option. On the calendar popup that appears, select the start date needed. A blue circle indicates the selected day. Next, choose an end date for the range. The calendar popup closes and the range is applied. Any jobs that are slated to process next outside of that date range are excluded from the grid.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Overview_Job_Manager.htm">Overview: Job Manager</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_In_Progress_Jobs.htm">Work with In Progress Jobs</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Completed_Jobs.htm">Work with Completed Jobs</MadCap:xref>
+        </p>
+    </body>
+</html>

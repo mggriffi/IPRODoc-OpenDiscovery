@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import Users from File</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Import Users from File" />Import Users from File</h1>
+        <p class="BodyText">Rather than creating users manually, you can import 
+ multiple users using a .CSV file. </p>
+        <p class="BodyText">The .CSV file must be in the following format:</p>
+        <p class="BodyText" style="margin-left: 40px;"><span class="Code">true/false,UserName,LastName,FirstName,Password</span>
+        </p>
+        <p class="BodyText">where the first item in each row (“true” or “false”) 
+ identifies whether the user is enabled or disabled upon import. Disabled 
+ users cannot log in. </p>
+        <p class="BodyText">For example: </p>
+        <p class="BodyText" style="margin-left: 40px;"><span class="Code">true,hbrown@myco.com,Brown,Henry,MyPassword@321</span>
+        </p>
+        <p class="BodyText" style="margin-left: 40px;"><span class="Code">false,ssmith@myco.com,Smith,Sally,MyPassword@321</span>
+        </p>
+        <p class="BodyText">If needed, these details can be changed after the users 
+ are imported.</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Imported users are initially 
+		 defined with the same managing client and optionally, user type 
+		 (which you choose). </p>
+                    <p class="Note">For large numbers of users who need to be defined 
+		 with different managing clients and user types, the most efficient 
+		 approach is to use separate files based on user type/managing 
+		 client assignments so that these assignments can be made for all 
+		 users at once, without the need for revisions after the import.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">To import users from a .CSV file:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Make 
+ sure you have a .CSV file with user details in the format explained above. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Log 
+ in as a user who is a member of the Super Admin group. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the Eclipse button, <img src="../../../Graphics/Admin_Graphics/Btn_Eclipse-Web2.png" alt="" border="0" class="button_inline" />, 
+ and select <span style="font-weight: bold;">Administration</span>.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ the <span style="font-weight: bold;">System Administration</span> pane 
+ is collapsed, click the pane title to expand it. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Users</span>.</p>
+            </li>
+            <li>
+                <p>On the right side of the <span style="font-weight: bold;">Users</span> 
+ tab, click <span style="font-weight: bold;">Import Users</span> &gt; <span style="font-weight: bold;">From File</span>.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Open 
+ File</span>, then navigate to and open the needed .CSV file.</p>
+            </li>
+            <li>
+                <p>From the drop-down lists, select the needed 
+ <span style="font-weight: bold;">Managing Client</span> and optionally 
+ <span style="font-weight: bold;">User Type</span>. These selections will 
+ be applied to all selected users in the group.</p>
+            </li>
+            <li>
+                <p>If a header row exists in your .CSV file, select 
+ the <span style="font-weight: bold;">First line is column header</span> 
+ option.</p>
+            </li>
+            <li>
+                <p>Review the user details in the Import Users 
+ dialog box; if problems other than the <span style="font-weight: bold;">Enabled</span> 
+ settings exist, cancel the import, correct file errors, and then perform 
+ this procedure again.</p>
+            </li>
+            <li>
+                <p>When the list is correct, if any of the users 
+ should be initially disabled, clear the <span style="font-weight: bold;">Enabled</span> 
+ option. Disabled users cannot log in to Eclipse.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Import</span>.</p>
+            </li>
+            <li>
+                <p>While the import is in process, the list of 
+ users in the <span style="font-weight: bold;">Users</span> tab will be 
+ dimmed. When it becomes active, review the new users added to the list; 
+ revise details for individual users if needed. </p>
+            </li>
+            <li>
+                <p>Inform users of their Eclipse log-in names 
+ and passwords. </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,1235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../Resources/MasterPages/Enterprise_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Anti-Virus Exclusions - OPEN DISCOVERY 2022.10.0</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Anti-Virus Exclusions - <MadCap:variable name="Primary.Name" /> (2022.10.0)</h1>
+        <p>Generally, IPRO recommends not having anti-virus active monitoring on the machines with IPRO <MadCap:variable name="Primary.Name" /> components on them. This especially applies to workers because it can cause task timeouts, slow down discovery and processing, or even prevent document access. Instead, IPRO recommends scanning incoming data before ingesting it. If antivirus is mandatory, below is a list of directories, executables, and services we recommend making exceptions or exclusions for. Please keep in mind that this isn't an exhaustive list and will need to be updated with each new <MadCap:variable name="Primary.Name" /> release.</p>
+        <p>Also see: <MadCap:xref href="System Requirements.htm#Ipro11"> <MadCap:variable name="Primary.Name" /> 2022.10.0 Network Ports Requirements</MadCap:xref>.</p>
+        <h3>Virus Scanning Best Practices for eDiscovery</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p>Maintain network compartmentalization</p>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p>Service accounts should have minimal network permissions</p>
+            </li>
+            <li>
+                <p>Restrict outbound network traffic from processing networks</p>
+            </li>
+        </ul>
+        <h3>Observe general best practices</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p>SQL Server: <a href="http://support.microsoft.com/kb/309422">http://support.microsoft.com/kb/309422</a></p>
+            </li>
+            <li>
+                <p>Hyper-V Hosts</p>
+                <ul>
+                    <li>
+                        <p>If you are running antivirus software on the physical server, consider excluding the <b>vmms.exe</b> and <b>vmswp.exe</b> processes. Also, exclude the directories that contain the virtual machine configuration files and virtual hard disks from active scanning. An added benefit of using pass-through disks in your virtual machines is that you can use the antivirus software running on the physical server to protect that virtual machine.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Windows Server specific <a href="http://support2.microsoft.com/kb/822158">http://support2.microsoft.com/kb/822158</a></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Exclude antivirus product install directories (engine specific)</p>
+            </li>
+            <li>
+                <p>Evaluate the priority of performance over AV aggression, the better performing settings are going to be the ones that minimize scanning of in-process data.</p>
+            </li>
+            <li>
+                <p>Exclude Service account Temp Folders</p>
+            </li>
+            <li>
+                <p>Exclude %PROGRAMFILES% (AGGRESSIVE)</p>
+            </li>
+            <li>
+                <p>Exclude %PROGRAMDATA% (AGGRESSIVE)</p>
+            </li>
+            <li>
+                <p>Exclude %USERPROFILE% for service account</p>
+            </li>
+        </ul>
+        <h3>Network Share Exclusions</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p>Exclude file shares that house Customer original Data.</p>
+            </li>
+            <li>
+                <p>Exclude file shares that house intermediate processing (eCapture Client directories).</p>
+            </li>
+            <li>
+                <p>Exclude file shares that hold exported results.</p>
+            </li>
+            <li>
+                <p>Exclude <MadCap:variable name="Primary.Name" /> Case File paths, including native &amp; image paths.</p>
+            </li>
+        </ul>
+        <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: You should always follow security best practices set by your organization; the above exclusions assume data has been pre-scanned prior to copy or processing the data.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Programs to exclude for IPRO troubleshooting on all machines:</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p>PowerShell - allows us to troubleshoot a myriad of issues</p>
+            </li>
+            <li>
+                <p>Command prompt - same as PowerShell</p>
+            </li>
+            <li>
+                <p>Fiddler - a web packet sniffer that helps read packets sent between components</p>
+            </li>
+        </ul>
+        <h3>General Software Paths</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p>C:\Program Files\IPRO Tech</p>
+            </li>
+            <li>
+                <p>C:\Program Files\Common Files\IPRO Tech</p>
+            </li>
+        </ul>
+        <h3>IPRO Paths</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p>C:\Program Files (x86)\Ipro Tech</p>
+            </li>
+            <li>
+                <p>C:\Program Files (x86)\Common Files\IPRO Tech</p>
+            </li>
+            <li>
+                <p>C:\ProgramData\IPRO Tech</p>
+            </li>
+            <li>
+                <p>%USERPROFILE% for windows service account user</p>
+            </li>
+            <li>
+                <p>%TEMP% for windows service account user</p>
+            </li>
+        </ul>
+        <h3>All IPRO Installation Paths</h3>
+        <ul class="BulletListBody">
+            <li>
+                <p>C:\Users\%USERPROFILE%\AppData\Local</p>
+            </li>
+            <li>
+                <p>C:\ProgramData\IPRO Tech</p>
+            </li>
+            <li>
+                <p>C:\Program Files\IPRO Tech</p>
+            </li>
+            <li>
+                <p>C:\Program Files\Common Files\Ipro Tech</p>
+            </li>
+            <li>
+                <p>C:\Program Files (x86)\IPRO Tech</p>
+            </li>
+            <li>
+                <p>C:\Program Files (x86)\Common Files\IPRO Tech</p>
+            </li>
+        </ul>
+        <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: These are default paths for the software. Some paths have the option to be changed during installation, and if so these changes will need to be taken into account.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>IPRO<MadCap:variable name="Primary.Name" /> Executables &amp; Services</p>
+        <table style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 402px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Program/ Service Name</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Executable</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Path / Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="3">
+                        <p class="TableText" style="color: #000000;">Note: A red asterisk (<span style="color: #ff0000;">*</span>) indicates that multiple copies exist in different locations</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EASE  </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">EASE.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">IproSqlGenerator.exe</p>
+                            </li>
+                        </ul>
+                        <p class="TableText">&#160;</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\EASE\EASE.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Authorization Manager  </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">IproAuthManager.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">IproAuthService.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">IproServiceConfig.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\IPRO Auth Server\IproAuthManager.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\IPRO Auth Server\IproAuthService.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\IPRO Auth Server\IproServiceConfig.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Metric Agent </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">LauncherService.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">prometheus.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">sql_exporter.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">UpdaterService.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Metric Agent\LauncherService.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Metric Agent\prometheus\prometheus.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Metric Agent\sql_exporter\sql_exporter.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Updater\UpdaterService.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Common Files </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Stellent-8.5.3</p>
+                                <ul>
+                                    <li>
+                                        <p class="TableText">oilink.exe<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">extract_archive.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">extract_object.exe</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="TableText">TopicModelingEngine</p>
+                                <ul>
+                                    <li>
+                                        <p class="TableText">TMEdispatcher.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">TMEnaming.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">TMEversion.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">TMEworker.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">TopicModelingEngine.exe</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="TableText">Gecko</p>
+                                <ul>
+                                    <li>
+                                        <p class="TableText">crashreporter.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">js.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">plugin-container.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">plugin-hang-ui.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">redit.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">updater.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">xulrunner.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">xulrunner-stub.exe</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\Common Files\IPRO Tech\Stellent-8.5.3\oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Stellent-8.5.3\oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Stellent-8.5.3\extract_archive.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Stellent-8.5.3\extract_object.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Common Files\IPRO Tech\TopicModelingEngine\TMEdispatcher.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Common Files\IPRO Tech\TopicModelingEngine\TMEnaming.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Common Files\IPRO Tech\TopicModelingEngine\TMEversion.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Common Files\IPRO Tech\TopicModelingEngine\TMEworker.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Common Files\IPRO Tech\TopicModelingEngine\TopicModelingEngine.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\crashreporter.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\js.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\plugin-container.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\plugin-hang-ui.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\redit.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\updater.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\xulrunner.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\Common Files\IPRO Tech\Gecko\xulrunner\xulrunner-stub.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Eclipse Admin</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Eclipse Admin.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Eclipse\Admin\Eclipse Admin.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - Analytics Service</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Analytics.Service.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">cclustify_64.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">clustify_footer_finder_64.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">clustify_server_64.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">TopicModelingEngine.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.Platform.JobManager.TaskProgramRegistration.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\AnalyticsService\Analytics.Service.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\AnalyticsService\Dependencies\Clustify\cclustify_64.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\AnalyticsService\Dependencies\Clustify\clustify_footer_finder_64.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\AnalyticsService\Dependencies\Clustify\clustify_server_64.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\AnalyticsService\Dependencies\TopicModelingEngine\TopicModelingEngine.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\AnalyticsService\TaskProgramRegistration\Ipro.Platform.JobManager.TaskProgramRegistration.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - dtSearch Service</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.dtSearch.ServiceHost.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\dtSearchService\Ipro.dtSearch.ServiceHost.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - FileUpload Service</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.<MadCap:variable name="Primary.Name" />.FileUploadService.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\FileUpload\Ipro.<MadCap:variable name="Primary.Name" />.FileUploadService.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - Job Manager Agent</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.Platform.JobManager.Agent.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.Cryptography.Utility.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\Job Manager Agent\Ipro.Platform.JobManager.Agent.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\Job Manager Agent\Utility\Ipro.Cryptography.Utility.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - UserNotifcations WebHook </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.WebHook.SvcApp.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Services\UserNotificationsWebHook\Ipro.WebHook.SvcApp.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - <MadCap:variable name="Primary.Name" /> Services</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.eCapture.<MadCap:variable name="Primary.Name" /> Services.WindowsServiceHost.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\Services\<MadCap:variable name="Primary.Name" /> Services\Ipro.eCapture.<MadCap:variable name="Primary.Name" /> Services.WindowsServiceHost.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - FileMounting Service</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.FileMounting.ServiceHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">GetDataNetworkServer.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">MIP.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">MIPGUI.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">OSFMount.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\Services\FileMountingService\Ipro.FileMounting.ServiceHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\GetData\Mount Image Pro v6\GetDataNetworkServer.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\GetData\Mount Image Pro v6\MIP.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\GetData\Mount Image Pro v6\MIPGUI.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\OSFMount\OSFMount.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Services - RelativityImport Service </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.Relativity.ServiceHost.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\Services\RelativityImportService\Ipro.Relativity.ServiceHost.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Web - ADD Services</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.Configuration.Service.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.LiveEda.Service.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.Platform.JobManager.TaskProgramRegistration.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.ADD.Log.API.Service.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\ADDServices\Configuration\Ipro.Configuration.Service.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\ADDServices\LiveEDA\Ipro.LiveEda.Service.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\ADDServices\LiveEDA\RegistrationTool\Ipro.Platform.JobManager.TaskProgramRegistration.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\ADDServices\LogsService\Ipro.ADD.Log.API.Service.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Web - ADDWeb</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Nucleus.UI.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\ADDWeb\Nucleus.UI.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Web - Components</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.Identity.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.Identity.ManageJwtCert.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.Identity.MigrateNucleus.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.Platform.Web.Api.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\Components\Identity\Ipro.Identity.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\Components\Identity\Ipro.Identity.ManageJwtCert.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\Components\Identity\Ipro.Identity.MigrateNucleus.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\Components\Job Manager\Ipro.Platform.Web.Api.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Web - EclipseWeb</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">Eclipse.MigrateSchedules.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.Platform.JobManager.TaskProgramRegistration.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\EclipseWeb\bin\oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\EclipseWeb\bin\OutsideInRedist-8.5.3\oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\EclipseWeb\bin\MigrationTool\Eclipse.MigrateSchedules.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\EclipseWeb\bin\RegistrationTool\Ipro.Platform.JobManager.TaskProgramRegistration.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Web - Permissions Service</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.Permissions.Service.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\PermissionsServices\Ipro.Permissions.Service.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Web - Website</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Ipro.Platform.Web.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\IPRO Tech\Web\Website\Ipro.Platform.Web.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Redis</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">redis-benchmark.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">redis-check-aof.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">redis-cli.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">redis-server.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files\Redis\redis-benchmark.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Redis\redis-check-aof.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Redis\redis-cli.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Redis\redis-server.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Job Manager Agent &amp; WebAPI</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Analytics.JobManager.AnalyticsTasks.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">ReviewTasks.MassActions.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Leadtools.JobProcessor.WorkerLayer.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Leadtools.JobProcessor.WorkerService.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">LeadtoolsServicesHostManager_Original.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">NuanceLS.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">xocr32b.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">ReviewTasks.Transcripts.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">ReviewTasks.WebViewExport.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">ReviewTasks.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">TopicModelingAnalyticsTaskProgram.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\Analytics.JobManager.AnalyticsTasks-1\Analytics.JobManager.AnalyticsTasks.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.MassActions-1\ReviewTasks.MassActions.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.MassActions-1\Leadtools\19.0.4\Document\Leadtools.JobProcessor.WorkerLayer.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.MassActions-1\Leadtools\19.0.4\Document\Leadtools.JobProcessor.WorkerService.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.MassActions-1\Leadtools\19.0.4\Document\LeadtoolsServicesHostManager_Original.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.MassActions-1\Leadtools\19.0.4\Ocr\NuanceLS.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.MassActions-1\Leadtools\19.0.4\Ocr\xocr32b.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.MassActions-1\OutsideInRedist-8.5.3\oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.Transcripts-1\ReviewTasks.Transcripts.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.WebViewExport-1\ReviewTasks.WebViewExport.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks.WebViewExport-1\OutsideInRedist-8.5.3\oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks-1\OutsideInRedist-8.5.3\oilink.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\ReviewTasks-1\ReviewTasks.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache\TopicModelingAnalyticsTaskProgram-1\TopicModelingAnalyticsTaskProgram.exe</p>
+                            </li>
+                        </ul>
+                        <p>&#160;</p>
+                        <p class="TableText" style="color: #ff0000;"><b>NOTE</b>: IPRO recommends a blanket white-list for the following directory rather than individual EXEs; organizations have the ability to write custom task programs which would not be listed above.  Additionally, the folder names inside of “<b>TaskProgramCache</b>” may have different package versions <b>[-1]</b>, <b>[-2]</b>, and so on which can differ from environment to environment.</p>
+                        <p class="TableText" style="color: #ff0000;"><b>**[C:\ProgramData\IPRO Tech\JobManager\Agent\TaskProgramCache]**</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">eCapture Controller</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">Controller.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">DBQuery.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">eCaptureImporter.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Controller\Controller.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+
+C:\Program Files (x86)\IPRO Tech\eCapture\Controller\DBQuery.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+
+C:\Program Files (x86)\IPRO Tech\eCapture\Controller\eCaptureImporter.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">eCapture Queue Manager</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">DeletionAgent.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">QueueManager.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\QueueManager\DeletionAgent.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\QueueManager\QueueManager.exe</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">eCapture QC\Worker</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">QC.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Worker.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">WorkerAgent.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.eCapture.ecProcess.ServiceHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ipro.eCapture.CurrentDiscovery.ServiceHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">StreamingDiscoveryUIHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">DialogDismisser.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">DbxConv.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">7za.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">OCR components</p>
+                                <ul>
+                                    <li>
+                                        <p class="TableText">Ltthunkserver.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">NuanceLS.exe<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">thdriver.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">xocr32b.exe<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="TableText">pdf-xchange print driver software</p>
+                                <ul>
+                                    <li>
+                                        <p class="TableText">pdfSaver5.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">PrnInstaller.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">XCVault.exe</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">PDFX5SA_sm.exe</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="TableText">BlackICE</p>
+                                <ul>
+                                    <li>
+                                        <p class="TableText">BlackICEInstaller.exe<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">BuCAppNT.exe<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">BuCAppTS.exe<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">PremiumCaptureInstall4.cmd<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">PremiumCaptureInstall8.cmd<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">PremiumCaptureUninstall.cmd<span style="color: #ff0000;">*</span></p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\QC.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\Worker.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\WorkerAgent.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\Ipro.eCapture.ecProcess.ServiceHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\CurrentDiscovery\Ipro.eCapture.CurrentDiscovery.ServiceHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\CurrentDiscovery\StreamingDiscoveryUIHost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\DialogDismisser.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\DbxConv.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\7za.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\Leadtools\Ocr\Ltthunkserver.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\Leadtools\Ocr\NuanceLS.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\Leadtools\Ocr\thdriver.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\Leadtools\OcrArabic\thdriver.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\Worker\Leadtools\Ocr\xocr32b.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Tracker Software\PDF-XChange 5\pdfSaver5.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Tracker Software\PDF-XChange 5\PrnInstaller.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files\Tracker Software\Vault\XCVault.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\PDF-Xchange\PDFX5SA_sm.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\NT\BlackICEInstaller.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\TS\BlackICEInstaller.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\NT\DriverFiles\BuCAppNT.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\TS\DriverFiles\BuCAppTS.exe<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\NT\PremiumCaptureInstall4.cmd<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\TS\PremiumCaptureInstall4.cmd<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\NT\PremiumCaptureInstall8.cmd<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\TS\PremiumCaptureInstall8.cmd<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\NT\PremiumCaptureUninstall.cmd<span style="color: #ff0000;">*</span></p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Program Files (x86)\IPRO Tech\eCapture\_InstallSpecific\Blackice\TS\PremiumCaptureUninstall.cmd<span style="color: #ff0000;">*</span></p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Windows - Optional</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">conhost.exe</p>
+                            </li>
+                            <li>
+                                <p>spoolsv.exe</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </li>
+                            <li>
+                                <p>IIS</p>
+                                <ul>
+                                    <li>
+                                        <p>*.tmp</p>
+                                    </li>
+                                    <li>
+                                        <p>*.html</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Windows\System32\conhost.exe</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Windows\System32\spoolsv.exe</p>
+                            </li>
+                        </ul>
+                        <p class="TableText" style="color: #ff0000;"><b>NOTE</b>: The conhost.exe (Console Windows Host) file is provided by Microsoft and is usually legitimate and completely safe. conhost.exe needs to run to allow Command Prompt to work with Windows Explorer. One of its features is that it gives you the ability to drag and drop files/folders straight into Command Prompt.</p>
+                        <p class="TableText" style="color: #000000;font-weight: bold;">IIS/WEB server only</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">C:\Windows\Temp\*.tmp</p>
+                            </li>
+                            <li>
+                                <p class="TableText">C:\Windows\Temp\HtmlExports\*.html</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

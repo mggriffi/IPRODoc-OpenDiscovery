@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\Resources\MasterPages\Admin_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Monitor Job Manager Agents</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Monitor Job Manager Agents</h1>
+        <p> You can monitor the status of Job Manager agents in your environment to ensure that agents are online and accepting tasks. The <b>Agents</b> tab in the Job Manager provides details about the status of each agent, and can be useful for troubleshooting any issues that may arise when processing tasks in the Job Manager. To view Job Manager agents configured in your environment, navigate to the Job Manager by proceeding through the steps described in <a href="Overview_Job_Manager.htm#Open">Open the Job Manager</a>.</p>
+        <p>With the Job Manager open, click the <b>Agents</b> tab at the top of the page. All Job Manager agents appear in a grid. </p>
+        <p>
+            <img src="../../Graphics/System_Graphics/JM_Agents_1.png" class="Thumbnail" />
+        </p>
+        <p>The <b>Agent Status</b> table displays information about each agent, including:</p>
+        <ul class="BulletListBody">
+            <li>Name</li>
+            <li>Worker Version</li>
+            <li>Status</li>
+            <li>Start Time</li>
+            <li>Active Tasks</li>
+        </ul>
+        <p>Review the table below to learn more about each column:</p>
+        <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">Column</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead">Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Name</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">The name of the Job Manager agent.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Worker Version</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">The version the agent is currently running. Note: if an agent has not been updated to the same version as others configured in your system, the agent's status may report <b>Unresponsive</b>. When this happens, the agent cannot accept tasks for any jobs that have been submitted to the Job Manager. When the agent is updated to the correct version, the status changes to <b>Online</b>, and the agent can begin processing tasks.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Status</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">This columns reports the current status for each Job Manager agent. Status types include:</p>
+                        <ul>
+                            <li>
+                                <p class="TableText">Online</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Offline</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Unresponsive</p>
+                            </li>
+                        </ul>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p>
+                                            <img src="../../Resources/Images/myipro_tip.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Tip: You can learn more about the agent's status by hovering your cursor over the status message. A tooltip appears providing more information, which may help when troubleshooting why agents may be <b>Unresponsive</b>.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Start Time</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">For Job Manager agents with an <b>Online</b> status, the Start Time column indicates the date and time when the agent was turned on.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">Active Tasks</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText">This column shows the number of tasks the agent is currently processing, compared to the total number of tasks the agent can handle at one time. For instance, if the value in this column is 10/20, the agent is currently processing 10 tasks, out of a total of 20 tasks that the agent could be processing.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Download Agent Status</h3>
+        <p>To download a .json file that contains a further breakdown of the full list of agents and their status, click the <b>Download Agent Status</b> button.</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/btn_Download_Agent_Status.png" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: To access the downloaded file, ensure that you have a text editor installed on your machine that can open .json files.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <h3>Configure Agent Priority Setting</h3>
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: This functionality is only available for users who belong to the SuperAdmin group.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The priority status of a job determines the order in which it gets picked up for processing by an available Job Manager Agent. A job with a Critical priority status takes precedence over a job with a High priority, which in turn is processed before a job with a Normal priority. This system ensures that the most crucial jobs are worked on first. For a list of job types and their priority levels, click <MadCap:toggler targets="Priority">here</MadCap:toggler>.</p>
+            <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');margin-left: 0;margin-right: auto;" cellspacing="0" MadCap:targetName="Priority">
+                <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                        <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                            <p class="TableHead">priority </p>
+                        </th>
+                        <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                            <p class="TableHead">Job type</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Critical</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p class="TableText">Print to PDF</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                            <p class="TableText">High</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p class="TableText">Native HTML Conversion</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">Normal</p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p class="TableText">Analytics</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Import</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Indexing</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Keyword List</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Mass Action OCR</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>To prevent Normal priority jobs from being completely starved while the system processes higher priority jobs, you have the ability to dedicate a set percentage of agent bandwidth to process jobs with a Normal priority status. For instance, let's say you dedicate 20% of Job Manager resources to Normal priority jobs. If the system is fully occupied with Critical or High priority jobs, and you submit a job with a Normal priority status, 20% of Job Manager tasks will be diverted to work on the Normal priority job that you submitted.</p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: The percentage of resources you dedicate for Normal priority jobs only applies when a Normal job is available for processing. If there are only Critical and High priority jobs available, the system automatically dedicates 100% of its resources to processing these jobs.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>To determine the Agent Priority percentage, follow the steps below:</p>
+            <ol>
+                <li>
+                    <p>Open the Job Manager. See  <MadCap:xref href="Overview_Job_Manager.htm">Overview: Job Manager</MadCap:xref> for more information on how to complete this step.</p>
+                </li>
+                <li>
+                    <p>With the Job Manager open, click the <b>Agents</b> tab at the top of the page. All Job Manager agents appear in a grid. </p>
+                    <p>
+                        <img src="../../Graphics/System_Graphics/JM_Agents_1.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>Click the <b>Agent Priority Setting</b> button.</p>
+                </li>
+                <li>
+                    <p>In the popup that appears, select the desired priority percentage for processing Normal priority jobs. </p>
+                    <p>
+                        <img src="../../Graphics/System_Graphics/JM_Agent_Priority_Dialog.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>With the desired percentage selected, click <b>Save</b> to save your changes and close the dialog box.</p>
+                </li>
+            </ol>
+        </div>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Overview_Job_Manager.htm">Overview: Job Manager</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_In_Progress_Jobs.htm">Work with In Progress Jobs</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Completed_Jobs.htm">Work with Completed Jobs</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Scheduled_Jobs.htm">Work with Scheduled Jobs</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.CaseMgmt" style="mc-master-page: url('../Resources/MasterPages/LiveEDA_MP.flmsp');">
+    <head>
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure LIVE EDA</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <map id="map1">
+            <area shape="rectangle" coords="110,-3,217,155" dragDirection="0" href="#1." />
+            <area shape="rectangle" coords="235,-5,341,159" dragDirection="0" href="#2." />
+            <area shape="rectangle" coords="349,-5,446,187" dragDirection="0" href="#3." />
+            <area shape="rectangle" coords="466,-4,557,173" dragDirection="0" href="#4." />
+            <area shape="rectangle" coords="582,-2,680,169" dragDirection="0" href="#5." />
+            <area shape="rectangle" coords="699,0,799,153" dragDirection="0" href="#6." />
+            <area shape="rectangle" coords="809,-2,906,166" dragDirection="0" href="#7." />
+            <area shape="rectangle" coords="919,-1,1016,170" dragDirection="0" href="Create_Case_LiveEDA.htm" />
+        </map>
+        <h1>
+            <MadCap:keyword term="Create Case" />Configure LIVE EDA</h1>
+        <p class="BodyText">To successfully create and work in a <MadCap:variable name="Primary.LIVE EDA" /> case in <MadCap:variable name="Primary.Name" />, you must configure <MadCap:variable name="Primary.LIVE EDA" /> in both  the <MadCap:variable name="Primary.LIVE EDA Admin UI" /> and in the
+ <MadCap:variable name="Primary.Name" /> <MadCap:variable name="Primary.LIVE EDA" /> case. </p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 900px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Resources/Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Warning: In addition to completing  the configuration processes explained in this topic, you must complete the required configuration tasks in the  <MadCap:variable name="Primary.LIVE EDA Admin UI" />. For more information about how to complete these configuration tasks, start with <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/configure_locations.htm">Configure Locations</a>. Then, to ensure all users are mapped, consult <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/configure_usermapping.htm">Configuring User Mapping</a>. To make the live data available and searchable in the <MadCap:variable name="Primary.LIVE EDA" /> case, set up and run the required indexing and archiving jobs in the <MadCap:variable name="Primary.LIVE EDA Admin UI" />. Consult <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/index_teams.htm">Configuring Teams Indexing</a> and <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/index_slack.htm">Configuring Slack Indexing</a>, followed by <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/archive_teams.htm">Configuring Teams Archiving</a> and <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/archive_slack.htm">Configuring Slack Archiving</a>. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">This article outlines the tasks that must be completed to configure <MadCap:variable name="Primary.LIVE EDA&#160;Search" /> within <MadCap:variable name="Primary.Name" />, post-installation of <MadCap:variable name="Primary.LIVE EDA" /> services. The applicable workflow is shown in the following diagram. This topic also includes links to  user guides that further describe the action(s) or function(s) <MadCap:annotation MadCap:createDate="2022-12-22T08:39:19.7961073-07:00" MadCap:creator="ctaylor" MadCap:initials="CT" MadCap:comment="Remember to update the diagram below." MadCap:editor="ctaylor" MadCap:editDate="2022-12-22T08:39:28.7123410-07:00">mentioned.</MadCap:annotation></p>
+        <p>
+            <img src="../Graphics/LiveEDA_Graphics/re-branded_visio.png" style="width: 1013px;height: 297px;" />
+        </p>
+        <h3>
+            <MadCap:toggler targets="1.Enable">1. Enable SSO in the LIVE EDA Admin UI</MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="1.Enable">
+            <p>First, implement  SSO (Single Sign-On). You will be completing the tasks of an Administrator. </p>
+            <ol>
+                <li>
+                    <p>Open the  <MadCap:variable name="Primary.LIVE EDA Admin UI" />. Log in with your credentials. </p>
+                </li>
+                <li>
+                    <p>On the Services Home page, click the <b>SSO</b> tab. </p>
+                </li>
+                <li>
+                    <p>From the <b>SSO Type</b> dropdown menu, select <b>OpenID&#160;Connect</b>.</p>
+                </li>
+                <li>
+                    <p>In the <b>Identity Provider URL</b> field, enter the URL of the <MadCap:variable name="Primary.IPRO" /> Identity Server. </p>
+                </li>
+                <li>
+                    <p>Enable <b><MadCap:variable name="Primary.IPRO" /> IDP</b>. Select the checkbox. </p>
+                </li>
+                <li>
+                    <p style="font-weight: normal;">Click<b> <MadCap:annotation MadCap:createDate="2023-08-10T09:07:53.6478944-07:00" MadCap:creator="ctaylor" MadCap:initials="CT" MadCap:comment="Update screenshot." MadCap:editor="ctaylor" MadCap:editDate="2023-08-10T09:15:11.4005136-07:00">Save</MadCap:annotation></b>. </p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/NG UI_Live EDA Configuration_SSO.png" class="Thumbnail" />
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <h3>
+            <MadCap:toggler targets="2.Enable">2. Enable SSO in </MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="2.Enable">
+            <p style="text-align: left;">Configure the SSO settings for <MadCap:variable name="Primary.Name" /> services. </p>
+            <ol>
+                <li>
+                    <p>Set up a remote connection to the <MadCap:variable name="Primary.IPRO" /> Identity Server machine. </p>
+                </li>
+                <li>
+                    <p>Go to the Identity&#160;Server installation folder. </p>
+                </li>
+                <li>
+                    <p style="font-weight: bold;"><span style="font-weight: normal;">Open the appsettings.json file: </span><b>C:\Program Files\IPRO Tech\Web\Components\Identity\appsettings.json</b><span style="font-weight: normal;">. This contains the redirects for the Identity Server. </span>
+                    </p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/Ipro Identity Server_NG UI_Live EDA Configuration_SSO_Edit Appsettingsjcon.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>Add a new client. Follow the example below. The <b>SERVER_URL</b> is the URL of the master archive node or client access node. </p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/Ipro Identity Server_NG UI_Live EDA Configuration_SSO_2.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p><b>Save</b>. Changes take effect immediately. </p>
+                </li>
+            </ol>
+        </div>
+        <h3>
+            <MadCap:toggler targets="3. Configure">3. Configure LIVE EDA&#160;Endpoints</MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="3. Configure">
+            <p>Configure the <MadCap:variable name="Primary.LIVE EDA" /> endpoints in the <MadCap:variable name="Primary.LIVE EDA Admin UI" />. </p>
+            <ol>
+                <li>
+                    <p>Return to the <MadCap:variable name="Primary.LIVE EDA Admin UI" />. </p>
+                </li>
+                <li>
+                    <p>Navigate to the left-hand panel. Expand the Agents dropdown. Select <b><MadCap:variable name="Primary.LIVE EDA" /></b>. </p>
+                </li>
+                <li>
+                    <p>In the <b>Configuration</b> tab, complete the following steps:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>
+                            <p>Check the box <b>Enabled</b>. This will enable the <MadCap:variable name="Primary.LIVE EDA" /> mode.</p>
+                        </li>
+                        <li>
+                            <p>Enter the <b>BaseUI</b>. The BaseUI is the UI for <MadCap:variable name="Primary.IPRO" /> Web.</p>
+                        </li>
+                        <li>
+                            <p>Enter the <b>BaseAPI</b>. The BaseAPI is the UI for <MadCap:variable name="Primary.IPRO" /> Services. </p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 901px;" />
+                                <tbody>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                            <p class="TableText">
+                                                <img src="../Resources/Images/myipro_note.png" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                            <p class="Note">Note: Entering the BaseUI and BaseAPI will automatically populate URLs in the QueryProcessingCases, PromoteDocuments, CaseAccessValidation, and NavPermission fields. </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ol>
+                </li>
+                <li value="4">
+                    <p>Click <b>Save Changes</b>. </p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/NG UI_Live EDA_Configuration tab.png" class="Thumbnail" />
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <h3>
+            <MadCap:toggler targets="4. Set SSL">4. Set an SSL Certificate</MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="4. Set SSL">
+            <p>To use <MadCap:variable name="Primary.LIVE EDA" />, you must set up the  <MadCap:variable name="Primary.LIVE EDA Admin UI" />, <MadCap:variable name="Primary.LIVE EDA&#160;Search" />, and internal APID sites to use a trusted certificate. This requires configuration of the SSL certificate. </p>
+            <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 901px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: An SSL certificate is required even if the environment is not exposing anything to the internet. In that case, however, it can be a self-signed certificate that is trusted by the <MadCap:variable name="Primary.IPRO" /> IIS machine. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>For information about how to generate a key and configure a certificate, see <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/config_port_ssl_certificate.htm">Installing an External Certificate for  LIVE EDA</a>.</p>
+            <ol>
+                <li>
+                    <p>Navigate to the left-hand panel of the <MadCap:variable name="Primary.LIVE EDA Admin UI" />. Expand the <b>Nodes</b> drop-down menu. Select the <b>Default Master</b> node.</p>
+                </li>
+                <li>
+                    <p>Go to the <b>Advanced</b> tab and click <b>Set Certificate</b>. </p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/NG UI_LIve EDA Configuration_Set Certificate.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>The URL of the <MadCap:variable name="Primary.LIVE EDA Admin UI" /> for certifications will open. The private key and certificate are imported here.</p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/NG UI_Live EDA_Set Certificate.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>Use an SSL certificate in PEM format. Copy and paste it into the relevant directory, or click <b>Browse</b> to find the file. </p>
+                    <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 861px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../Resources/Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note: If using the file browse method, you might be required to copy and paste the <b>certificate chain</b> and <b>private key</b> values in the correct directories, depending on the formatting of the certificate. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <p>Click <b>Set Certificate </b>to validate. </p>
+                    <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../Resources/Images/myipro_warn.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Warning: <MadCap:variable name="Primary.LIVE EDA" /> Services will restart during this process, and sites cannot be accessed until complete. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ol>
+        </div>
+        <h3>
+            <MadCap:toggler targets="5. Validate">5. Validate Services Run as Domain User</MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="5. Validate">
+            <p>Once all services run on the same identity, you can start validation. When promoting a <MadCap:variable name="Primary.LIVE EDA" /> case,  the .zip archive file is copied to the <MadCap:variable name="Primary.eCapture" /> or Processing case folder location. To do so, it needs access to that location, or location share. Ensure that the <MadCap:variable name="Primary.NetGovern" /> services run as the specific domain user with access to that share. </p>
+            <p>During set up, you will need to provide <MadCap:variable name="Primary.NetGovern" /> account credentials. </p>
+            <ol start="1">
+                <li>
+                    <p>Open the<b> </b><MadCap:variable name="Primary.NetGovern" style="font-weight: bold;" /><b> node</b>. </p>
+                </li>
+                <li value="2">
+                    <p>Open <b>Windows Services</b>. </p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/NG UI_Live EDA_Configuration_Windows Services.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>Ensure that the <b>Log On As</b> account is set to the correct domain user for all following services. The selected user must be a local administrator.</p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p><MadCap:variable name="Primary.NetGovern" /> Platform Service</p>
+                        </li>
+                        <li>
+                            <p><MadCap:variable name="Primary.NetGovern" /> Indexer</p>
+                        </li>
+                        <li>
+                            <p><MadCap:variable name="Primary.NetGovern" /> Directory</p>
+                        </li>
+                        <li>
+                            <p><MadCap:variable name="Primary.NetGovern" /> Client Access</p>
+                        </li>
+                        <li>
+                            <p><MadCap:variable name="Primary.NetGovern" /> Archiving Service</p>
+                        </li>
+                        <li>
+                            <p><MadCap:variable name="Primary.NetGovern" /> Archive</p>
+                        </li>
+                        <li>
+                            <p><MadCap:variable name="Primary.NetGovern" /> Admin</p>
+                        </li>
+                    </ul>
+                </li>
+                <li value="4">
+                    <p>Update the accounts. Right-click the service, go to Properties, and select the <b>Log On As</b> tab. Test the account that is going to have access to both the <MadCap:variable name="Primary.NetGovern" /> and <MadCap:variable name="Primary.Name" /> file shares. </p>
+                </li>
+                <li>
+                    <p>When you have updated an account, restart the service. </p>
+                </li>
+                <li>
+                    <p>Repeat the steps listed above for both the <b>Default Master </b>and the<b> Worker</b> nodes.</p>
+                </li>
+            </ol>
+        </div>
+        <h3>
+            <MadCap:toggler targets="6. Generate">6. Generate API&#160;Key</MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="6. Generate">
+            <p>The <MadCap:variable name="Primary.LIVE EDA" /> API Key allows the <MadCap:variable name="Primary.Name" /> <MadCap:variable name="Primary.LIVE EDA" /> service to communicate to <MadCap:variable name="Primary.LIVE EDA" />. </p>
+            <p>Super Admin permissions are required to complete the following steps.</p>
+            <ol>
+                <li>
+                    <p>Navigate to the left-hand panel of the <MadCap:variable name="Primary.LIVE EDA Admin UI" />. Expand the <b>Agents</b> dropdown. Select <b><MadCap:variable name="Primary.LIVE EDA" /></b>.</p>
+                </li>
+                <li>
+                    <p>In the Configuration tab, click <b>Generate </b>to generate the<b> API Key</b>. </p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/NG UI_Live EDA_API Key_Generate.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>Copy and paste the API&#160;Key value in a note created in Notepad. <b>Save</b>. </p>
+                    <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 900px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../Resources/Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note: You can only generate the  API Key once. It cannot be retrieved. If you lose it, you will need to return to this step, select <b>Revoke and regenerate</b>, and complete the steps in this section. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ol>
+        </div>
+        <h3>
+            <MadCap:toggler targets="7. Configure">7. Configure LIVE EDA Environment Settings in </MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="7. Configure">
+            <p>You can configure the <MadCap:variable name="Primary.LIVE EDA" /> environment settings for <MadCap:variable name="Primary.Name" /> via the System <MadCap:annotation MadCap:createDate="2022-07-21T15:26:57.9760147-04:00" MadCap:creator="ltonak" MadCap:initials="LT" MadCap:comment="CURRENTLY NOT FOR LMS" MadCap:editor="ltonak" MadCap:editDate="2022-07-21T15:27:10.9282152-04:00">Manager.</MadCap:annotation></p>
+            <ol>
+                <li>
+                    <p>Log in to <MadCap:variable name="Primary.Name" /> and navigate to the System Manager, accessed from the gear icon <img src="../Resources/Images/Icons/Settings_Icon.png" /> at the top-right corner of the screen.</p>
+                    <p>
+                        <img src="../Graphics/System_Graphics/Cursor_over_Settings_Icon.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>In the left-hand panel of the System Manager, select <b>Environment Settings</b>.</p>
+                </li>
+                <li>
+                    <p>Scroll down to <b>EDA&#160;Settings</b>. </p>
+                </li>
+                <li>
+                    <p>In Early Data Assessment Search Endpoint, enter the correct <b>Search Endpoint</b>. This is the URL the user navigates to in order to view the <MadCap:variable name="Primary.LIVE EDA" /> case.</p>
+                </li>
+                <li>
+                    <p>In Early Data Assessment Environment Endpoint, enter the correct <b>EDA API Endpoint</b>. This is the URL of <MadCap:variable name="Primary.NetGovern" />'s internal API.</p>
+                </li>
+                <li>
+                    <p>In Early Data Assessment API&#160;Key, paste the <b>API Key</b>. </p>
+                </li>
+                <li>
+                    <p>Click <b>Save</b>.</p>
+                    <p>
+                        <img src="../Graphics/LiveEDA_Graphics/NG UI_Live EDA Configuration_EDA Settings_11.0.png" class="Thumbnail" style="width: 425px;height: 216px;" />
+                    </p>
+                </li>
+            </ol>
+            <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 484px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: You also have the option to configure environment settings during installation via the setup wizard. When prompted, enter the <b>NetGovern Archive Web URL</b>, <b>NetGovern API URL</b> and <b>NetGovern API Key</b>. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4><a name="Manage"></a>Manage Environment Settings at the Client Level</h4>
+            <p><MadCap:variable name="Primary.LIVE EDA" />&#160;will use the default environment unless otherwise specified. If your organization has multiple clients, you have the option to configure different environments for each client in <MadCap:annotation MadCap:createDate="2022-07-21T15:27:35.8049428-04:00" MadCap:creator="ltonak" MadCap:initials="LT" MadCap:comment="CURRENTLY NOT FOR LMS" MadCap:editor="ltonak" MadCap:editDate="2022-07-21T15:27:37.2917301-04:00">the</MadCap:annotation><b> Case Management</b> module:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click <b>Case Management</b> 
+ on the <MadCap:variable name="Primary.Name" /> Home page (or <b>Case Management</b> 
+ on the main menu located in the left pane).</p>
+                </li>
+                <li>
+                    <p>Take one of the following actions as needed:</p>
+                </li>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Click 
+ <img src="../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" /> corresponding 
+ to the needed managing client and click <b>Edit 
+ Managing Client</b>. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <img src="../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" /> corresponding 
+ to the needed client and click <b>Edit 
+ Client</b>. </p>
+                    </li>
+                    <li>
+                        <p>Under <b>Early Data Assessment Environment</b>, deselect <b>Use System Default</b>.</p>
+                        <p>
+                            <img src="../Graphics/LiveEDA_Graphics/use_system_default_option.png" class="Thumbnail" style="width: 181px;height: 164px;" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Enter the desired <b>Search Endpoint</b> and <b>API&#160;Endpoint</b> for that client. </p>
+                    </li>
+                    <li>
+                        <p>Click <b>Save</b>.</p>
+                    </li>
+                </ul>
+            </ol>
+            <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 490px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: You cannot configure the Early Data Assessment Search Endpoint when creating a new client, only by editing an existing client in the Case Manager.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>
+            <MadCap:toggler targets="8.Create">8. Create LIVE EDA Case in OPEN DISCOVERY</MadCap:toggler>
+        </h3>
+        <div MadCap:targetName="8.Create">
+            <p MadCap:targetName="Create Live EDA Case in Enterprise">A <MadCap:variable name="Primary.LIVE EDA" />  case is created in the Case Management module of <MadCap:variable name="Primary.Name" /> and allows you to perform searches on live content across multiple repositories and promote the relevant data to your <MadCap:variable name="Primary.LIVE EDA" />&#160;Review case. See <MadCap:xref href="Create_Case_LiveEDA.htm">Create LIVE EDA&#160;Case</MadCap:xref> for details.</p>
+        </div>
+        <p>When the above has been completed, you must also complete the configuration steps required to make the external, live data sources accessible and searchable in your <MadCap:variable name="Primary.LIVE EDA" /> cases. For more information about how to complete these configuration tasks, start with <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/configure_locations.htm">Configure Locations</a>. Then, to ensure all users are mapped, consult <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/configure_usermapping.htm">Configuring User Mapping</a>. To make the live data accessible and searchable in the <MadCap:variable name="Primary.LIVE EDA" /> case, set up and run the required indexing and archiving jobs in the <MadCap:variable name="Primary.LIVE EDA Admin UI" />. Consult <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/index_teams.htm">Configuring Teams Indexing</a> and <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/index_slack.htm">Configuring Slack Indexing</a>, followed by <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/archive_teams.htm">Configuring Teams Archiving</a> and <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/archive_slack.htm">Configuring Slack Archiving</a>. </p>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Overview_LiveEDA.htm">Overview: LIVE EDA</MadCap:xref>
+        </p>
+    </body>
+</html>

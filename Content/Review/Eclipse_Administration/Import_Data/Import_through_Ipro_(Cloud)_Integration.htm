@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import through OPEN DISCOVERY Integration</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Import through Ipro (Cloud) Integration" />Import through <MadCap:variable name="Primary.Name" /> Integration</h1>
+        <p class="BodyText">Eclipse<sup>®</sup> by <MadCap:variable name="Primary.IPRO" /> can receive case data and image, native, and/or 
+ text files directly from eCapture<sup>®</sup> by <MadCap:variable name="Primary.IPRO" />, or starting with release 2015.2.0, 
+ through <MadCap:variable name="Primary.IPRO" /> Streaming Discovery. </p>
+        <p class="BodyText">Also starting with release 2015.2.0, Eclipse supports 
+ concurrent “Direct to <MadCap:variable name="Primary.IPRO" /> Eclipse” imports into a single case from either 
+ eCapture (or Allegro, if it exists at your site.) or Streaming Discovery. 
+ The amount of imports that can be handled at once depends on the number 
+ of available Eclipse Agents. </p>
+        <p class="BodyText">If the number of agents is not sufficient to handle 
+ all jobs at once, then they are added to a queue in the Schedule Manager 
+ and processed in order. Eclipse Administration displays a “Syncing with 
+ Scheduler” message if a job is placed in the queue. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Eclipse activities that 
+		 may be managed concurrently include:</p>
+                    <ul style="list-style: square;" class="BulletListBody">
+                        <li>
+                            <p class="Note">
+                            Imports through <MadCap:variable name="Primary.Name" /> integration
+                        </p>
+                        </li>
+                        <li>
+                            <p class="Note">
+                            Migrations from Concordance
+                        </p>
+                        </li>
+                        <li>
+                            <p class="Note">
+                            OCR imports
+                        </p>
+                        </li>
+                        <li>
+                            <p class="Note">
+                            Eclipse Analytics email threading and/or 
+			 near duplication (“dupe”) detection
+                        </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">Requirements include:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>The Integration 
+ Service must be installed and the service running. </p>
+            </li>
+            <li>
+                <p>The Eclipse Scheduler 
+ Service and Agent(s) must be installed and the service running.</p>
+            </li>
+            <li>
+                <p>The Eclipse case 
+ must exist and needed fields must be defined. </p>
+            </li>
+            <li>
+                <p>Product versions 
+ must be:</p>
+                <ul>
+                    <li>
+                        <p>Eclipse 
+ 2014.0.0 or later<span class="FootnoteSuperscript">[1]</span></p>
+                    </li>
+                    <li>
+                        <p>eCapture 
+ 6.0.0 or later<span class="FootnoteSuperscript">[2]</span></p>
+                    </li>
+                    <li>
+                        <p>To 
+ use <MadCap:variable name="Primary.Name" /> Streaming Discovery, a Streaming Discovery worker license is required, 
+ and Eclipse and eCapture (and optionally Allegro) version 2015.2.0 or 
+ later are required.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="footnote"><span class="FootnoteSuperscript">[1]</span>Earlier 
+ versions of Eclipse accepted eCapture (or Allegro) data using a different 
+ methodology. </p>
+        <p class="footnote"><span class="FootnoteSuperscript">[2]</span>Or Allegro 
+ 3.0.0 or later, if it exists at your site.</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><a href="#About_Ipro_Cloud_integration">About <MadCap:variable name="Primary.Name" />
+Integration</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Monitor_Ipro_Cloud_Processing">Monitor <MadCap:variable name="Primary.Name" />	 Processing</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Restart_an_Ipro_Cloud_Job">Restart an <MadCap:variable name="Primary.Name" /> 
+	 Job</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="About_Ipro_Cloud_integration"></a>
+            <MadCap:keyword term="About Ipro (Cloud) integration" />About <MadCap:variable name="Primary.Name" /> Integration</h2>
+        <p class="BodyText">In all cases, a “Direct to Eclipse” export job is created 
+ and processed. During processing, one or more .DLF load files are created, 
+ which are then imported by Eclipse into an existing case (selected in 
+ eCapture or Allegro). Note: </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                In eCapture, the data set that is imported 
+	 is based on one or more eCapture processing jobs and additional user 
+	 selections.
+            </p>
+            </li>
+            <li>
+                <p>
+                For Streaming Discovery, the data set that 
+	 is imported is based on a selected export series and additional user 
+	 selections.
+            </p>
+            </li>
+            <li>
+                <p>
+                In Allegro, the data set that is imported is 
+	 based on one or more “snapshots,” which are data sets filtered in 
+	 a certain way (for example, by a date range), as well as other user 
+	 selections.
+            </p>
+            </li>
+        </ul>
+        <h2><a name="Monitor_Ipro_Cloud_Processing"></a>
+            <MadCap:keyword term="Monitor Ipro (Cloud) Processing" />Monitor <MadCap:variable name="Primary.Name" /> Processing</h2>
+        <p class="BodyText">After jobs are sent from eCapture or Streaming Discovery 
+ (or Allegro) to Eclipse, they can be monitored in Eclipse as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the Eclipse button, <img src="../../../Graphics/Admin_Graphics/Btn_Eclipse-Web2.png" alt="" border="0" class="button_inline" />, 
+ and select <span style="font-weight: bold;">Administration</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the System Administration pane, click <span style="font-weight: bold;">Schedule Manager</span>.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: You may need to wait for 
+		 jobs sent from eCapture (or Allegro) to display in the Eclipse 
+		 Schedule Manager. The amount of time depends on job size and complexity.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>Whenever viewing the <span style="font-weight: bold;">Schedule 
+ Manager</span> tab, click <span style="font-weight: bold;">Refresh</span> 
+ periodically in the Job Actions pane to ensure details are up to date; 
+ complete of the following steps as needed.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Review jobs 
+ and statuses</span>: Review the list of active jobs in the left pane for 
+ an overview of all scheduler activity. Jobs are listed by case name; eCapture 
+ (and Allegro) jobs include the identifier “DLF Import.”</p>
+                <p class="BodyTextIndent">Click <img src="../../../Graphics/Admin_Graphics/Btn_ArrowRight7_Web.png" alt="" border="0" class="button_inline" /> 
+ next to a job name to see the individual tasks and statuses. Each job 
+ includes multiple tasks (“child jobs”), such as staging, integration, 
+ and indexing. The jobs list includes color-coding to indicate job and 
+ task status:</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 50px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 300px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">&#160;</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Status</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Job 
+		 or TAsks Is...</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-White_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">On 
+		 Hold</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 is waiting to be placed in worker queue.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Blue_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">In 
+		 Queue</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 is waiting to begin.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Yellow_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">In 
+		 Process</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 is being processed.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Green_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Complete</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 has successfully completed.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Red_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Failed</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 has been stopped due to an error. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Find a job/specific 
+ details</span>: Take any of the following actions to find a specific job 
+ or job details:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Refresh</span> in the Job Actions pane.</p>
+                    </li>
+                    <li>
+                        <p>Scroll 
+ vertically and/or horizontally in the jobs list. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the right border and drag to make it wider.</p>
+                    </li>
+                    <li>
+                        <p>Sort 
+ the list by clicking the sort button, <img src="../../../Graphics/Admin_Graphics/Btn_Sort-Web.png" alt="" border="0" class="button_inline" />, and choosing 
+ from the different options. Click a selected option again to reverse the 
+ sort order.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ find specific details in a long list, start typing any of the following 
+ items in the search box: the case or agent name, job type, part of the 
+ job’s scheduled or completion date, or job status. This is a plain text 
+ search that searches these items in order for all jobs (not tasks); the 
+ list is filtered as search matches are located. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">View job/task 
+ details</span>: Expand a job and click a specific task to view details 
+ for the task; click Refresh periodically to ensure details are up to date. 
+ Note:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>When 
+ a job is in progress, details and errors for each task display in the 
+ Job Details pane when the task is selected. </p>
+                    </li>
+                    <li>
+                        <p>Completed 
+ jobs are routinely removed from the list.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ a job fails, it remains in the list. Its error log can be saved and the 
+ job can be restarted as described in the next procedure.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Evaluate error 
+ files</span>: An exportfile_errors.dat file may be generated during <MadCap:variable name="Primary.Name" /> 
+ imports, where exportfile is the name of the original load file. This 
+ file includes field-level error details.</p>
+                <p>This file is placed in the export folder containing 
+ the .DLF files created at the beginning of the export from eCapture (or 
+ Allegro). </p>
+                <p>After evaluating the error details, make needed 
+ corrections and import the corrected .DAT file in Eclipse Administration. 
+ </p>
+            </li>
+        </ol>
+        <h2><a name="Restart_an_Ipro_Cloud_Job"></a>
+            <MadCap:keyword term="Restart an Ipro (Cloud) Job" />Restart an <MadCap:variable name="Primary.Name" /> Job</h2>
+        <p class="BodyText">If an eCapture or Allegro job fails, take the following 
+ steps:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the Eclipse button, <img src="../../../Graphics/Admin_Graphics/Btn_Eclipse-Web2.png" alt="" border="0" class="button_inline" />, 
+ and select <span style="font-weight: bold;">Administration</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the System Administration pane, click <span style="font-weight: bold;">Schedule Manager</span>.</p>
+            </li>
+            <li>
+                <p>In the jobs list, expand the failed job and 
+ click the task that has failed.</p>
+            </li>
+            <li>
+                <p>Review data in the Job Details pane and/or 
+ save details to a separate text file by clicking <span style="font-weight: bold;">Save 
+ Log</span> and completing the Save As dialog box. </p>
+            </li>
+            <li>
+                <p>Analyze the log and assess other possible issues 
+ (such as system resource problems) to determine the cause of the failure.</p>
+            </li>
+            <li>
+                <p>Make needed corrections.</p>
+            </li>
+            <li>
+                <p>After corrections have been made:</p>
+                <ol>
+                    <li>
+                        <p>Return 
+ to the Schedule Manager.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the jobs list, locate and click the failed task.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Reset Job</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Monitor the job as described in the previous 
+ procedure.</p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

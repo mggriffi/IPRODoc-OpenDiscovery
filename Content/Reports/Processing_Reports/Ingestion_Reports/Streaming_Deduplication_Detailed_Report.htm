@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports" style="mc-master-page: url('../../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head><title>Streaming Deduplication Detailed Report</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Data Extract Error Summary Report" />Streaming Deduplication Detailed Report</h1>
+        <p>This report contains detailed de-duplication  and indicates the original file a document was a duplicate of.</p>
+        <p>The De-duplication setting (Custodian, Project, or None) in the Discovery Options dialog determines the report output.</p>
+        <p>The report, in the form of a .CSV file, contains the following information:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Relationship (Original and its Duplicates)</p>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p>ItemID</p>
+            </li>
+            <li>
+                <p>DiscoveryPath (original location where the file was located at time of discovery)</p>
+            </li>
+            <li>
+                <p>ItemFileName (original document filename and the duplicate copy of the original document)</p>
+            </li>
+            <li>
+                <p>FileSizeKB</p>
+            </li>
+            <li>
+                <p>FamilyHash (for Streaming, this accounts for the additional layer of de-duplication for identifying duplicate families)</p>
+            </li>
+            <li>
+                <p>ItemHashValue (this value is the equivalent of the MD5 Hash; however, Streaming uses SHA1 for de-duplication)</p>
+            </li>
+            <li>
+                <p>ProjectName</p>
+            </li>
+            <li>
+                <p>ProjectDescription</p>
+            </li>
+            <li>
+                <p>CustodianName</p>
+            </li>
+            <li>
+                <p>CustodianDescription</p>
+            </li>
+            <li>
+                <p>JobName</p>
+            </li>
+            <li>
+                <p>OriginalJobName</p>
+            </li>
+        </ul>
+        <h2>Report Example</h2>
+        <p>
+            <img src="../../../Graphics/Report_Graphics/ProcessingReports/ProcessingReportExamples/Streaming_Dedeplication_Detailed_Report.png" class="Thumbnail" />
+        </p>
+    </body>
+</html>

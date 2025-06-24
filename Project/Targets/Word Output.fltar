@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  GlossaryTermConversion="marked"
+  GetLatestBeforeCompile="false"
+  OutputFolder="C:\Users\ddavidson\Documents\MIGRATION DOCUMENTS\LEGACY DOCUMENTS\OPEN DISCOVERY"
+  MasterStylesheetOverride="true"
+  EmbedImages="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Copy of ADDReview.css"
+  MasterPage="/Content/Resources/MasterPages/Admin_MP.flmsp"
+  MasterToc="/Project/TOCs/Test_ Product Resources_2_ ADD_Primary.fltoc">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    OutputFormat="docx"
+    PopupConversion="expand"
+    ExpandingTextConversion="expand"
+    MultiDocWordOutput="false" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/Word Export Test.fldes"
+      Publish="true"
+      IsResource="false" />
+  </Destinations>
+</CatapultTarget>

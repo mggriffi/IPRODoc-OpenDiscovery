@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/SelfService.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="BodyText">Before logging in, you will need to obtain the URL and user credentials defined for Self-Service (or Media Manager), along with any additional instructions from your Media Manager administrator.</p>
+        <p>To log in to Self-Service:</p>
+        <ol>
+            <li>Open your web browser.</li>
+            <li>Enter or navigate to the URL defined for <MadCap:variable name="Primary.Name" />.</li>
+            <li>On the Login screen, enter the credentials provided by your administrator.<p class="Image"><img src="../../../Graphics/System_Graphics/Log_In_Screen.png" class="Thumbnail" /></p></li>
+            <li>Click Login. Depending on your user permissions, either the Self-Service page or <MadCap:variable name="Primary.Name" /> Home page displays.</li>
+            <li>If you are working in <MadCap:variable name="Primary.Name" />, click <b>Self-Service</b> on the Home page or the main menu.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

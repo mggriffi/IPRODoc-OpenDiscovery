@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create a TAR Project</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create a TAR Project" />Create a TAR Project</h1>
+        <h2>Preparation</h2>
+        <p class="BodyText">TAR success begins with planning. As an Eclipse administrator, 
+ consider the following items before implementing TAR: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">Identify 
+ the <span style="font-weight: bold;">goals</span> of the TAR review.</p>
+            </li>
+            <li>
+                <p class="BodyText">To configure a TAR project, an <span style="font-weight: bold;">Analytics 
+ search index</span> and an <span style="font-weight: bold;">Analytics 
+ cluster</span> are needed, so make sure an index and cluster have been 
+ created that will provide proper representation of the documents in the 
+ case for which TAR will be used. For details, see:</p>
+                <ul>
+                    <li>
+                        <p class="BodyText"><a href="../Ipro Analytics/Create_and_Manage_Search_IndexesIA.htm">Create and Manage Analytics Indexes</a> (<MadCap:variable name="Primary.IPRO" /> Analytics)</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="BodyText">Prepare 
+ <span style="font-weight: bold;">guidelines</span> for reviewers who will 
+ participate in the TAR review. Guidelines should help reviewers understand 
+ their role and the tasks they will need to perform. See <a href="../../Case_Setup/Add_Case_Instructions,_Documents,_and_Alerts.htm">Add Case Instructions, 
+ Documents, and Alerts</a> for details on providing instructions within Eclipse. 
+ </p>
+            </li>
+        </ul>
+        <h2><a name="TAR_Project_Configuration"></a>TAR Project Configuration</h2>
+        <p class="BodyText">To configure a TAR project:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Get started:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Review 
+ <a href="Manage_TAR_Projects.htm">Manage TAR Projects</a>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Start 
+ Eclipse and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Open 
+ the case for which the TAR project is being created. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">In the <span style="font-weight: bold;">Case 
+ View</span> pane, click <span style="font-weight: bold;">Case Administration</span> 
+ and then <span style="font-weight: bold;">TAR Project Setup</span> as 
+ shown in this figure. </p>
+            </li>
+            <p class="Image">
+                <img src="../../../../Graphics/Admin_Graphics/TAR ProjSetup_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p class="BodyText">Complete basic TAR Project Settings:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p class="BodyText"><span style="font-weight: bold;">Project Name</span>: enter a unique name 
+ of up to 50 characters for the TAR project. Alphanumeric characters and 
+ the underscore character are allowed.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText"><span style="font-weight: bold;">Project Prefix</span>: enter a unique prefix 
+ of up to 10 characters. Alphanumeric characters and the underscore character 
+ are allowed. This prefix is used to help administrators and reviewers 
+ identify TAR components within Eclipse, including coding forms, tags, 
+ review passes, and so forth . </p>
+                    </li>
+                    <p class="BodyText">TAR components begin with 
+ a prefix of “TAR_,” to which this entry is appended. For example, if you 
+ enter a prefix of “ABC1,” the coding form created for this TAR project 
+ will be named “TAR_ABC1.”</p>
+                    <li>
+                        <p class="BodyText"><span style="font-weight: bold;">Analytic Index</span>: select the  
+ Analytics index needed for this TAR project.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText"><span style="font-weight: bold;">Cluster Set</span>: select the <MadCap:variable name="Primary.IPRO" /> Eclipse Analytics cluster needed for this TAR project. (Content Analyst)</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="BodyText">Scroll down in the TAR Project Settings form 
+ until the bottom of the form is visible . </p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: The Coding section of the 
+		 screen and review pass names will be filled in automatically as 
+		 the project is defined. </p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p class="BodyText">Review the default <span style="font-weight: bold;">Training 
+ Set</span>, <span style="font-weight: bold;">Validation Rounds</span>, 
+ and <span style="font-weight: bold;">Certificate Set</span> configurations 
+ (see the following figure), then take one of the following action.</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p class="BodyText">Accept 
+ the default settings: skip to step 9.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Change 
+ the settings: continue with step 6 and/or step 7 as needed.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="BodyText">To change the batch size for the training set, 
+ enter the desired number (number of documents) in the <span style="font-weight: bold;">Training 
+ Set Batch Size</span> field. </p>
+            </li>
+            <p class="Image">
+                <img src="../../../../Graphics/Admin_Graphics/TAR RevPasses_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p class="BodyText">To change the sampling criteria for the <span style="font-weight: bold;">Validation Round</span>, select the sampling 
+ type (<span style="font-weight: bold;">Fixed Size</span> or <span style="font-weight: bold;">Statistical</span>) 
+ and associated options as described in the table on the next page. </p>
+            </li>
+            <li>
+                <p class="BodyText"><span style="font-weight: bold;">Permissions</span>: 
+ If the coding form and review passes should be limited to certain user 
+ groups:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">In the <span style="font-weight: bold;">Permissions</span> 
+ area (on the right side of the window), click <span style="font-weight: bold;">Add/Remove 
+ Groups</span>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Select needed groups and click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: To make a TAR project available 
+		 to all groups currently defined for the case, click <span style="font-weight: bold;">Select 
+		 All</span>. The project will be unavailable to groups added after 
+		 this selection (unless you add them). Do not apply security to individual TAR review 
+		 passes or coding forms; control access to these components through 
+		 TAR project permissions.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p class="BodyText">When the project definition is complete, click 
+ <span style="font-weight: bold;">Save</span>. </p>
+            </li>
+            <li>
+                <p class="BodyText">Optional:</p>
+                <p class="BodyText">If you are using <MadCap:variable name="Primary.IPRO" /> Analytics, once the TAR project has been saved, you have the option to use documents that have already been coded during manual review, pre-coded, in order to train your system as opposed to using the training set. To use pre-coded documents to train your TAR project:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Click the <img src="../../../../Graphics/Admin_Graphics/btn_pencil_Web.png" class="button_inline" /> button above the TAR Project Settings.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Scroll down to the <b>Pre-Coded Documents</b> section.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">In the <b>Documents</b> drop-down, select the saved search that contains the pre-coded documents you would like to add to your training batch.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">In the <b>Responsiveness</b> drop-down, select the TAR Tag that should be mapped to the corresponding Responsiveness tag used in the selected saved search.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Click <b>Add Documents</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Once the documents have been added to the training batch, click <b>Save</b>.</p>
+                        <p class="BodyText">The pre-coded documents are put into a TAR Training batch and marked as complete. This batch must be checked-in before the system can learn from them.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <p class="BodyTextIndent">
+            <MadCap:toggler targets="t1">TAR 
+ Validation/Certification Round Sampling Options</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <table cellspacing="0" width="90%" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 21.97%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 78.03%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Sampling 
+			 Type</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Fixed Size 
+			 <br />			(Validation Round Only)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">If 
+			 this type is selected for validation rounds:</p>
+                            <ol class="NumbListTable">
+                                <li>
+                                    <p class="TableText">Select 
+			 this type to create a sample containing a specific number 
+			 of documents for the validation round.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">When 
+			 this option is selected, enter the desired size in the<span style="font-weight: bold;"> Fixed Size</span> field. (An entry 
+			 of 50-100 is a typical entry.)</p>
+                                </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Statistical 
+			 Sampling</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">This 
+			 type is selected automatically for the certification round; 
+			 it is an option for validation rounds. When this type is selected, 
+			 a sample is created using standard statistical calculations.</p>
+                            <p class="TableText">Complete the sampling definition by selecting 
+			 a <span style="font-weight: bold;">Confidence Level</span> 
+			 and <span style="font-weight: bold;">Margin of Error</span> 
+			 as described next.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Confidence 
+			 Level</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Confidence 
+			 level represents the reliability of an estimate, that is, 
+			 how likely it is that the sample returned will be representative 
+			 of all documents in the set.</p>
+                            <p class="TableText">The larger the confidence level is, the 
+			 narrower the range of documents will be that are considered 
+			 to be representative.</p>
+                            <p class="TableMultiList" style="margin-left: 40px;"><span style="font-weight: bold;">90</span>: wider range of documents 
+			 considered (fewer documents typically returned).</p>
+                            <p class="TableMultiList" style="margin-left: 40px;"><span style="font-weight: bold;">95</span>: medium range of documents 
+			 considered.</p>
+                            <p class="TableMultiList" style="margin-left: 40px;"><span style="font-weight: bold;">99</span>: narrower range of documents 
+			 (more documents typically returned).</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Margin of Error</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">The 
+			 margin of error expresses the amount of error to be allowed 
+			 in the sample.</p>
+                            <p class="TableText">Select a value from <span style="font-weight: bold;">1 
+			 - 5</span>, where <span style="font-weight: bold;">1</span> 
+			 is the least amount of error and <span style="font-weight: bold;">5</span> 
+			 is the highest amount of error.</p>
+                            <p class="TableText">A setting of <span style="font-weight: bold;">1</span> 
+			 typically returns the most documents; a setting of <span style="font-weight: bold;">5</span> 
+			 typically returns the fewest documents.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

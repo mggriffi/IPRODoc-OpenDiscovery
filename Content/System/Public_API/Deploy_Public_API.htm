@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary._FixedMulti-Level,Primary.Blocked" style="mc-template-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Deploy Public API</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create New Contacts" />Deploy Public API</h1>
+        <h3>What's in the package?</h3>
+        <p>The tar.gz file contains docker images for both Public API service and the Public API gateway (Kong). All of the files needed to configure and deploy are in this package.</p>
+        <h3>Where to deploy?</h3>
+        <p>In theory, anywhere a docker container can run could work, as long as the containers will have access to the IPRO upstream services via HTTP/HTTPS (IIS and Processing box).</p>
+        <h3>Specs</h3>
+        <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css'); margin-left: 0; margin-right: auto;" cellspacing="0">
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">Component</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead">Requirement</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">OS</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> CentOS 7</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">CPUs</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> 4</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Memory</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> 4-8 GB (dynamic)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">Storage</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText"> 100 GB</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Prerequisites</h3>
+        <p>Docker Engine installed</p>
+        <p>https://docs.docker.com/engine/install/</p>
+        <p>Docker Compose installed</p>
+        <p>https://docs.docker.com/compose/install/</p>
+        <p>Static IP available for routing</p>
+        <p>Downloaded Public API packages</p>
+        <p>SSL Certificate - a PEM formatted certificate is needed and is provided in the docker-compose files. At the very least, if using HTTPS with self-signed certs, a CA cert file is needed for Public API to validate against IPRO Identity Server.</p>
+        <h3>Running the Public API containers</h3>
+        <p>Follow the instructions in the extracted README file for configuration &amp; deployment. Commands are included for the docker load and compose portions.</p>
+        <h3>Summary</h3>
+        <p>ipro-papi.env:</p>
+        <p>URLs</p>
+        <p>Timezone</p>
+        <p>Logging</p>
+        <p>CA Cert</p>
+        <p>docker-compose.yml:</p>
+        <p>Uncomment the SSL certificate areas (1 - 3)</p>
+        <p>Lines 54-55, 76-78, 107-109</p>
+        <p>Comment out HTTP - line 59</p>
+        <p>(optional) - change SSL port - line 60</p>
+        <p>"${KONG_INBOUND_SSL_PROXY_LISTEN:-0.0.0.0}:443:8443/tcp"</p>
+        <p>kong.yaml:</p>
+        <p>(optional, but recommended): Uncomment "auth_upstream" section to allow forwarding of Identity server</p>
+        <p>update target -- has to include port, even if 443.</p>
+        <p>Example: alphaweb.testing.local:443</p>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+            <p>
+                <MadCap:xref href="Overview_Public_API.htm">Overview: Public API</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="Add_API_Client.htm">Add API Clients</MadCap:xref>
+            </p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../Resources/MasterPages/Enterprise_and_Eclipse_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Personalize Your Environment Branding</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Personalize Your Environment Branding<br /></h1>
+        <p>Service providers and business owners who want to differentiate themselves and sell their own branded solutions can build  personalized logo and favicon assets. Those assets can be replaced on the deployed server to update the branding of the web application. This will allow for a complete rebranding of our <MadCap:variable name="Primary.IPRO" /> solution to your personal brand with a simple drop of a few files (images &amp; color Schema) in a folder.</p>
+        <p>For on-premise clients who have access to their full environment, the following describes the areas that will need to be modified to replace the <MadCap:variable name="Primary.IPRO" /> logo.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: For customers who do not have access to the file locations below, you can create a services ticket with the appropriate image/png size and we will apply the change. Click here to create a <a href="https://iprotech.atlassian.net/servicedesk/customer/portal/4/group/9/create/97" target="_blank">Services ticket</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Update Branding</h3>
+        <h4>PNG Logo:</h4>
+        <p>The PNG logo needs to be sized at 675 pixels wide by 225 pixels tall so it can be scaled down where needed and saved as a transparent PNG. The logo file needs to be named “logo.png” and replaced at the below locations.</p>
+        <p style="font-weight: bold;">Identity Server:</p>
+        <p>C:\Program Files\Ipro Tech\Web\Components\Identity\wwwroot\lib\ipro\logo.png</p>
+        <p style="font-weight: bold;"><MadCap:variable name="Primary.Name" /> Web:</p>
+        <p>C:\Program Files\Ipro Tech\Web\ADDWeb\wwwroot\shell\img\logo.png</p>
+        <p style="font-weight: bold;">Platform Web:</p>
+        <p>C:\Program Files\Ipro Tech\Web\Website\wwwroot\live-eda\assets\images\logo.png</p>
+        <p>C:\Program Files\Ipro Tech\Web\Website\wwwroot\review\assets\images\logo.png</p>
+        <h4>Favicon Icons:</h4>
+        <p>For the favicon in the web applications, it is recommended that the favicon be designed as a square PNG graphic to be sized in multiples of 48px (example: 48x48, 96x96, 144x144, …) The icon file needs to be named “favicon.png” and replaced at the below locations.</p>
+        <p style="font-weight: bold;">Identity Server:</p>
+        <p>C:\Program Files\Ipro Tech\Web\Components\Identity\wwwroot\favicon.png</p>
+        <p style="font-weight: bold;"><MadCap:variable name="Primary.Name" /> Web:</p>
+        <p>C:\Program Files\Ipro Tech\Web\ADDWeb\wwwroot\favicon.png</p>
+        <p style="font-weight: bold;">Platform Web:</p>
+        <p>C:\Program Files\Ipro Tech\Web\Website\wwwroot\job-manager\favicon.png</p>
+        <p>C:\Program Files\Ipro Tech\Web\Website\wwwroot\live-eda\favicon.png</p>
+        <p>C:\Program Files\Ipro Tech\Web\Website\wwwroot\review\favicon.png</p>
+        <p>C:\Program Files\Ipro Tech\Web\Website\wwwroot\sd-settings\favicon.png</p>
+        <p>C:\Program Files\Ipro Tech\Web\Website\wwwroot\system\favicon.png</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Due to web server and browser caching rules, unless the browser cache is cleared manually, it make take up to 24 hours for the new assets to display.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

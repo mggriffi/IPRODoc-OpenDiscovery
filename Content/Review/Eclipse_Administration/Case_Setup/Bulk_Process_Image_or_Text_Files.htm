@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Z_Excluded V1" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Bulk Process Image or Text Files</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Bulk Process Image or Text Files" />Bulk Process Image <MadCap:annotation MadCap:createDate="2019-07-08T07:10:42.1658445-07:00" MadCap:creator="jbadger" MadCap:initials="JB" MadCap:comment="support for this was removed in 2018.6.0. While support for it might come back in future releases, it will likely be on the mass actions menu. Still, keeping the topic in case we need it in the future." MadCap:editor="jbadger" MadCap:editDate="2019-07-08T07:11:20.1572599-07:00">or </MadCap:annotation>Text Files</h1>
+        <p class="BodyText">Eclipse Administration allows you to address the issue 
+ of missing image files or text (EXTRACTEDTEXT field content) in a case 
+ as follows: </p>
+        <ul>
+            <li>
+                <p class="BodyText">If the case has 
+ native files but is missing images, the missing files can be created from 
+ the native files.</p>
+            </li>
+            <li>
+                <p class="BodyText">If the case has 
+ image files (TIFF or JPG) but is missing text, the missing text can be 
+ created from image files. </p>
+            </li>
+            <li>
+                <p class="BodyText">If the case has 
+ single- or multi-page PDF files but is missing text, the missing text 
+ can be created as follows:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p class="BodyText">Load 
+ the PDFs as native files, not as image files.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Create 
+ images from the PDFs as explained in <a href="#Create_Image_Files">Create 
+ Image Files</a>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Create 
+ text from the images as explained in <a href="#Create_OCR_Text">Create 
+ OCR Text</a>. </p>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        <p class="BodyText">Although the following procedures can be performed 
+ on an entire case, it is much more typical that you will create/save a 
+ search to find only the documents that are missing images and/or OCR. 
+ For example, a search on the HASIMAGE field (No) or your EXTRACTEDTEXT 
+ field (Not Set) will identify all documents that are missing images or 
+ OCR. If text exists but need to be replaced, then use another type of 
+ search to identify the needed set of documents. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: The options available for 
+		 processing image files with this method are quite limited. Eclipse 
+		 <MadCap:variable name="Primary.Name" /> Imaging can process larger numbers of images more efficiently 
+		 and offers several additional processing options. See <a href="../Review_Process_Management/Create_Images_through_Enterprise_Imaging.htm"><MadCap:variable name="Primary.Name" />
+		 Imaging</a> for details.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText"><a href="#Get_Started"><MadCap:keyword term="Get Started Bulk Processing" />Get Started Bulk Processing</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="#Create_OCR_Text"><MadCap:keyword term="Create OCR Text" />Create OCR Text</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="#Create_Image_Files">Create Image 
+	 Files</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Get_Started"></a>Get Started Bulk Processing</h2>
+        <p class="BodyText">
+            <img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Click 
+ here to watch the Bulk Imaging Natives video</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://player.vimeo.com/video/223179670" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">Complete the following steps to prepare for bulk processing:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">If a 
+ saved search does not exist for the documents to be processed, create 
+ and save the search in Eclipse. </p>
+            </li>
+            <li>
+                <p class="BodyText">Start Eclipse Administration and log in as 
+ an Eclipse administrator. </p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Only members of the Super 
+		 Admin group can perform this procedure.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p class="BodyText">On the Case Management ribbon, click <span style="font-weight: bold;">Process</span>. Wait as the Eclipse OCR 
+ and Imaging application starts. </p>
+            </li>
+            <li>
+                <p class="BodyText">Select the needed managing client and case.</p>
+            </li>
+            <li>
+                <p class="BodyText">Continue with <a href="#Create_OCR_Text">Create 
+ OCR Text</a> and/or <a href="#Create_Image_Files"><MadCap:keyword term="Create Image Files" />Create Image Files</a> 
+ as needed.</p>
+            </li>
+        </ol>
+        <h2><a name="Create_OCR_Text"></a>Create OCR Text</h2>
+        <p class="BodyText">
+            <img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t2">Click 
+ here to watch the Creating OCR Text video</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t2">
+            <p>
+                <object src="https://player.vimeo.com/video/223188394" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">For each document in a selected document set (saved 
+ search results or entire case) that has an image file, the following procedure 
+ will create text and place it in the corresponding EXTRACTEDTEXT field. 
+ </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Text that exists for any 
+		 of the documents in the selected document set will be overwritten 
+		 automatically. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To create text for multiple documents in a case: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Complete 
+ <a href="#Get_Started">Get Started</a>. </p>
+            </li>
+            <li>
+                <p class="BodyText">In the <span style="font-weight: bold;">Search</span> 
+ list, select the needed document set, either<span style="font-weight: bold;"> 
+ &lt;Entire Case&gt;</span> or a saved search. </p>
+            </li>
+            <li>
+                <p class="BodyText">Click <span style="font-weight: bold;">Display 
+ Records</span> and review document details in the <span style="font-weight: bold;">Database 
+ Records</span> tab to make sure it meets your expectations. The following 
+ example shows that 674 documents exist in the document set (based on a 
+ saved search).</p>
+            </li>
+            <p class="Image">
+                <img src="../../../Graphics/Admin_Graphics/BulkProcessing_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p class="BodyText">Click the <span style="font-weight: bold;">OCR 
+ Images</span> tab and review the details at the top of the tab to ensure 
+ it also matches your expectations. </p>
+            </li>
+            <li>
+                <p class="BodyText">To re-index the case after OCR is created, 
+ select the<span style="font-weight: bold;"> Index after process completes</span> 
+ option. (Or clear the option and make a note to re-index the case at a 
+ later time.)</p>
+            </li>
+            <li>
+                <p class="BodyText">Click <span style="font-weight: bold;">Run 
+ OCR</span> and watch progress details.</p>
+            </li>
+            <li>
+                <p class="BodyText">When the process completes, click <span style="font-weight: bold;">View 
+ Log File</span>; read file details and identify issues to be resolved. 
+ </p>
+            </li>
+            <li>
+                <p class="BodyText">When finished, click <span style="font-weight: bold;">X</span> 
+ to close the Eclipse OCR and Imaging application.</p>
+            </li>
+        </ol>
+        <h2><a name="Create_Image_Files"></a>Create Image Files</h2>
+        <p class="BodyText">For each document in a selected document set (saved 
+ search results or entire case) that does not have an image file but does 
+ have a native file, the following procedure will create an image file 
+ and place it in the case’s image file location.</p>
+        <p class="BodyText">The image files created will be black-and-white, 300 
+ DPI TIFF files.</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Image files that exists 
+		 for any of the documents in the selected document set will be 
+		 overwritten automatically. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To create images for multiple documents in a case: 
+ </p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Complete 
+ <a href="#Get_Started">Get Started</a>. </p>
+            </li>
+            <li>
+                <p class="BodyText">In the Search list, select the needed document 
+ set, either <span style="font-weight: bold;">&lt;Entire Case&gt;</span> 
+ or a saved search. </p>
+            </li>
+            <li>
+                <p class="BodyText">Click <span style="font-weight: bold;">Display 
+ Records</span> and review document details in the <span style="font-weight: bold;">Database 
+ Records</span> tab to ensure that it matches your expectations. See the 
+ example in the previous procedure. </p>
+            </li>
+            <li>
+                <p class="BodyText">Click the <span style="font-weight: bold;">Image 
+ Natives</span> tab and review the details at the top of the tab to ensure 
+ it also matches your expectations. The following figure shows results 
+ for an entire Eclipse case. This example indicates that native files exist 
+ for nearly all documents in the case, and that 3,595 of those native files 
+ can be used for documents that are missing images. </p>
+            </li>
+            <p class="Image">
+                <img src="../../../Graphics/Admin_Graphics/BulkProcessing2_Web.png" alt="" style="border: none;" border="0" />
+            </p>
+            <li>
+                <p class="BodyText">Click <span style="font-weight: bold;">Run 
+ Imaging</span> and watch progress details.</p>
+            </li>
+            <li>
+                <p class="BodyText">When the process completes, click <span style="font-weight: bold;">View 
+ Log File</span>; read file details and identify issues to be resolved. 
+ </p>
+            </li>
+            <li>
+                <p class="BodyText">When finished, click <span style="font-weight: bold;">X</span> 
+ to close the Eclipse OCR and Imaging application.</p>
+            </li>
+        </ol>
+    </body>
+</html>

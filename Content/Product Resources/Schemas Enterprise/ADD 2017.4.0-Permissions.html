@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Permissions Schema</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <map id="map1">
+            <area shape="rectangle" coords="189,28,323,157" dragDirection="0" href="#Group" />
+            <area shape="rectangle" coords="37,200,146,332" dragDirection="0" href="#PermissionGrant" />
+            <area shape="rectangle" coords="189,199,283,293" dragDirection="0" href="#Permission" />
+            <area shape="rectangle" coords="319,197,412,317" dragDirection="0" href="#GroupUser" />
+        </map>
+        <h1>Permissions Schema</h1>
+        <p><b>Project:</b> SqlServer</p>
+        <p><b>Layout:</b> Permissions</p>
+        <p>&#160;</p>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/tip_sysadm.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Tip: Click on a table to jump to the field-level descriptions for the table.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/permission_schema.png" usemap="#map1" />
+        </p>
+        <p>&#160;</p>
+        <table id="dbs" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p style="color: #ffffff;text-align: left;"><a name="Group"></a>Group</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="Id"></a>Id</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL AUTOINCREMENT  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="Name"></a>Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> nvarchar( 64 ) NOT NULL  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="Description"></a>Description</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> nvarchar( 256 )   </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="ManagingClientId"></a>ManagingClientId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" style="background-color: #898493;">
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="color: #ffffff;"><b>Indexes</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">PK_Permissions_Group primary key</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> ON Id</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IXU_Permissions_Group_Name_ManagingClientId unique</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> ON Name, ManagingClientId</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" style="background-color: #898493;">
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="color: #ffffff;"><b>Foreign Keys</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">FK_Permissions_Group_ManagingClient</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> ( ManagingClientId ) ref ManagingClient (ManagingClientId) </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table id="dbs" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableText" style="text-align: left;color: #ffffff;"><a name="GroupUser"></a>GroupUser</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="Id"></a>Id</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL AUTOINCREMENT  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="GroupId"></a>GroupId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="UserId"></a>UserId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> uniqueidentifier NOT NULL  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" style="background-color: #898493;">
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="color: #ffffff;"><b>Indexes</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">PK_Permissions_GroupUser primary key</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> ON Id</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" style="background-color: #898493;">
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="color: #ffffff;"><b>Foreign Keys</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">FK_Permissions_GroupUser_User</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> ( UserId ) ref Users (UserId) </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">FK_Permissions_GroupUser_Group</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> ( GroupId ) ref <a href="#Group">Group</a> (Id) </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <table id="dbs" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableText" style="text-align: left;color: #ffffff;"><a name="Permission"></a>Permission</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="Id"></a>Id</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL AUTOINCREMENT  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="Name"></a>Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> nvarchar( 64 ) NOT NULL  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" style="background-color: #898493;">
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="color: #ffffff;"><b>Indexes</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">PK_Permissions_Permission primary key</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> ON Id</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">UX_Permissions_Permissions_UniqueName unique</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> ON Name</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table id="dbs" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableText" style="text-align: left;color: #ffffff;"><a name="PermissionGrant"></a>PermissionGrant</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="Id"></a>Id</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL AUTOINCREMENT  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="ContextId"></a>ContextId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> nvarchar( 64 )   </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="ContextKind"></a>ContextKind</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> nvarchar( 128 )   </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="GroupId"></a>GroupId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><a name="PermissionId"></a>PermissionId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> int NOT NULL  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" style="background-color: #898493;">
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="color: #ffffff;"><b>Indexes</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">PK_Permissions_PermissionGrant primary key</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> ON Id</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" style="background-color: #898493;">
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="color: #ffffff;"><b>Foreign Keys</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">FK_Permissions_PermissionGrant_Group_Id</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> ( GroupId ) ref <a href="#Group">Group</a> (Id) </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">FK_Permissions_PermissionGrant_Permissions_Id</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> ( PermissionId ) ref <a href="#Permission">Permission</a> (Id) </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>________________</p>
+        <p style="font-style: italic;"><MadCap:variable name="Primary.Name" /> 2017.4.0</p>
+    </body>
+</html>

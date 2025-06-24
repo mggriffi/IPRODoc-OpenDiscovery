@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="RoboHelpCheckList.Ran Smart Index,FlareHelpStatus.Complete" MadCap:conditions="Primary.Processing">
+    <head><title>Set the System Options</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Set System Options</h1>
+        <p class="BodyText">Before beginning to set the system options, ensure 
+ that the:</p>
+        <ul class="BulletListBody">
+            <li>SQL 
+ Server Authentication is enabled</li>
+            <li>local 
+ logging in to the SQL Server was successful</li>
+            <li>SQL 
+ Database Script Created the Configuration database</li>
+            <li>TCP/IP 
+ is enabled in the SQL Server Configuration Manager</li>
+        </ul>
+        <p class="BodyText">Consult with your System Administrator for additional 
+ SQL Server configuration requirements prior to using eCapture.</p>
+        <ol class="NumbListBody">
+            <li>Start 
+ the eCapture Controller by double-clicking the icon on the desktop or 
+ choosing it from the Windows Start menu. The first time it is started, 
+ the System Options dialog appears. (If it does not appear, choose View 
+ &gt; System Options from the menu bar.)</li>
+            <p class="Image">
+                <img src="../../Graphics/ProcessingGraphics/ServerSystemOptionsDB.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <MadCap:toggler targets="t1">Enter 
+ the information required to establish the connection</MadCap:toggler>:
+					<div MadCap:targetName="t1"><ul class="BulletListBody"><li>If 
+ the connection is not established, the dialog will present some options 
+ to try in order to establish the connection.</li><li>If 
+ the connection is successful, the dialog will state: The connection was 
+ tested successfully. Click OK to close this dialog.</li></ul></div></li>
+            <li>
+                <MadCap:toggler targets="t2">From 
+ the Low Disk Space Cutoff box, select a value for the Network and/or Worker</MadCap:toggler>.</li>
+            <div MadCap:targetName="t2">
+                <p>Under 
+ User-Interface Settings, select from:</p>
+                <ul class="BulletListBody">
+                    <li>Expand 
+ Custodian Tree Nodes in Export Job Creation is selected by default. When 
+ an export job is started, every node is usually expanded. If there are 
+ a lot of custodians, there usually will also be a lot of processing jobs. 
+ This option, when selected, will minimize the amount of time it will take 
+ to scroll through the tree.</li>
+                    <li>Display 
+ Search Progress is selected by default. When Search criteria is selected 
+ in the Flex Processor Rules Manager and applied or previewed, a search 
+ progress meter appears. Deselect this option to hide the search progress 
+ meter.</li>
+                </ul>
+            </div>
+            <li>Select a Tree View Sorting option. The tree 
+ view in the Client Management tree view can be sorted by either ID (default)<br />or by name (alphabetically). Sorting applies to all entities. The tree 
+ view collapses<br />(refreshes) after an option is selected.
+            </li>
+            <li>Select 
+ a Remote Desktop option. These settings are available for both the Full 
+ and Limited Controller and allow for connecting via remote desktop to 
+ a specific worker. The machine name and 
+ IP address is stored in the Worker Status Information tab. Select the 
+ method to connect by:</li>
+            <ul class="BulletListBody">
+                <li>Connect 
+ Using Name</li>
+                <li>Connect 
+ using IP address</li>
+                <p class="BodyTextIndent">Enter a Custom Port value to optionally connect 
+ to a non-default port. All connection requests use the same port. Executed 
+ by building a command string and shelling to mstsc.exe.</p>
+            </ul>
+            <li>Under 
+ Multi-Language OCR Licenses, (as of version 2016.3.1) this control is 
+ used to support the multi-language OCR worker license type. The maximum 
+ number of QC multi-language OCR licenses that may be reserved for QC are 
+ one less than the number of multi-language OCR licenses that exist. For 
+ example, for 10 multi-language OCR licenses, the max value may be set 
+ to 9. Slide the control to reduce the number of licenses and to keep the 
+ Worker from consuming all available licenses.</li>
+            <li>Under 
+ Flex Processor Rule Application, adjust the Thread values for:</li>
+            <ul class="BulletListBody">
+                <li>
+                    <MadCap:toggler targets="t3">Search 
+ Threads (Default value is 1, maximum value is 8)</MadCap:toggler>
+                </li>
+                <div MadCap:targetName="t3">
+                    <p>Adjust this value to allow for how many dtSearch rules can run simultaneously. A
+						higher value will use more resources from the eCapture Controller; however, it will
+						allow multiple searches to finish faster if the Controller machine has enough processor
+						capacity. Too many threads may not be handled well on slow or heavily loaded machines.</p>
+                </div>
+                <li>
+                    <MadCap:toggler targets="t4">Rule 
+ Application Threads (Default value is 1, maximum value is 8)</MadCap:toggler>
+                </li>
+                <div MadCap:targetName="t4">
+                    <p>Adjust this value to allow for how many non-dtSearch rule applications can run at
+						once (file type filters, item ID imports, etc). These rule applications impact the
+						SQL server rather than the eCapture Controller, and in turn can impact how well eCapture
+						runs on the whole due to increased SQL activity while rules are applied.</p>
+                </div>
+            </ul>
+            <li>
+                <MadCap:toggler targets="t5">(Optional) NIST Database Settings:</MadCap:toggler>
+                <div MadCap:targetName="t5">
+                    <ul class="BulletListBody">
+                        <li>Enter the name of the NIST database. Note: The NIST database is optional. It does
+				not come with eCapture. For information about NIST, visit http://www.nsrl.nist.gov.</li>
+                        <li>Click <img src="TestConnectionButton.gif" class="" />. A dialog appears with connection status information.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>Under 
+ Time Zone Handling: Click <img src="TimeZoneUpdateButtonSystemOptionsDB.gif" alt="" border="0" class="" /> 
+ to pull the registry version into the two time zone database tables. An 
+ hourglass appears indicating the update is in progress (wait before clicking 
+ OK to close the System Options dialog). When the update is finished, the 
+ versions will match. Versions can only be incremented, not decremented. 
+ The <img src="TimeZoneUpdateButtonSystemOptionsDB.gif" alt="" border="0" /> button is enabled when a newer version is available. 
+ If the available time zone version is lower than, or matches the installed 
+ time zone version, the button is disabled.<br /><br />Time zone information is now stored in database tables in the eCapture 
+ Configuration database. Worker machines will apply the time zone offset 
+ value stored in the eCapture Configuration database. The Use Local Time 
+ Zone option was removed from the Case (Project) and Job Options dialogs. 
+ For Cases (Projects) that were set to Use Local Time Zone, the Local Time 
+ Zone is determined from the eCapture Controller machine when the Project 
+ options are loaded and that time zone value is written to the eCapture 
+ Configuration database.<br /><br />When re-processing documents that are contained in Cases (Projects) prior 
+ to this change and that were set to Use Local Time Zone, the local time 
+ zone is determined from the QC machine and is written to the eCapture 
+ Configuration database. This value is used during the re-processing</li>
+            <li>Click 
+ OK to close the System Options dialog. If you have not already done so, 
+ start the <MadCap:toggler targets="t6">Queue 
+			Manager</MadCap:toggler>.</li>
+            <div MadCap:targetName="t6">
+                <p>To start the eCapture Queue Manager, right-click the eCapture Queue Manager icon 
+					in the system tray and choose Start. The eCapture Queue Manager starts and the
+					icon color changes.</p>
+            </div>
+        </ol>
+        <p class="BodyText" style="margin-top: 4pt;margin-bottom: 4pt;font-size: 11pt;color: #565656;font-family: Arial;line-height: 22px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: normal;letter-spacing: normal;orphans: 2;text-indent: 0px;text-transform: none;white-space: normal;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;text-decoration-style: initial;text-decoration-color: initial;">&#160;</p>
+        <p class="BodyText" style="margin-top: 4pt;margin-bottom: 4pt;font-size: 11pt;color: #565656;font-family: Arial;line-height: 22px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: normal;letter-spacing: normal;orphans: 2;text-indent: 0px;text-transform: none;white-space: normal;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;text-decoration-style: initial;text-decoration-color: initial;" MadCap:conditions="Primary.Z_Excluded V1"><span class="BoldItalic">Next Step:</span> &#160;Configure 
+ the Queue Manager</p>
+        <p class="BodyText" style="margin-top: 4pt;margin-bottom: 4pt;font-size: 11pt;color: #565656;font-family: Arial;line-height: 22px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: normal;letter-spacing: normal;orphans: 2;;text-indent: 0px;text-transform: none;white-space: normal;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;text-decoration-style: initial;text-decoration-color: initial;" MadCap:conditions="Primary.Z_Excluded V1">&#160;</p>
+        <p class="BodyText" style="margin-top: 4pt;margin-bottom: 4pt;font-size: 11pt;color: #565656;font-family: Arial;line-height: 22px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: normal;letter-spacing: normal;orphans: 2;;text-indent: 0px;text-transform: none;white-space: normal;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;text-decoration-style: initial;text-decoration-color: initial;" MadCap:conditions="Primary.Z_Excluded V1"><span class="BoldItalic">Related pages:</span>
+        </p>
+        <p MadCap:conditions="Primary.Z_Excluded V1">Access 
+ Stored Configuration Database Connection Settings</p>
+        <p MadCap:conditions="Primary.Z_Excluded V1">Select 
+ a Different SQL Server and Database</p>
+        <p MadCap:conditions="Primary.Z_Excluded V1">Add 
+ or Configure Additional Databases</p>
+        <p>&#160;</p>
+    </body>
+</html>

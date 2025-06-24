@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName">MadCap Software</Variable>
+  <Variable
+    Name="ProdName_Review"
+    Comment=""
+    EvaluatedDefinition="OPEN DISCOVERY Review">OPEN DISCOVERY Review</Variable>
+  <Variable
+    Name="Analytics"
+    Comment="This is for ADD Review references to what used to be called Ipro Eclipse Analytics"
+    EvaluatedDefinition="Analytics">Analytics</Variable>
+  <Variable
+    Name="Name"
+    Comment=""
+    EvaluatedDefinition="OPEN DISCOVERY">OPEN DISCOVERY</Variable>
+  <Variable
+    Name="Eclipse"
+    Comment=""
+    EvaluatedDefinition="Eclipse">Eclipse</Variable>
+  <Variable
+    Name="eCapture"
+    Comment=""
+    EvaluatedDefinition="eCapture">eCapture</Variable>
+  <Variable
+    Name="Review &amp; Transcripts"
+    Comment=""
+    EvaluatedDefinition="Review &amp; Transcripts">Review &amp; Transcripts</Variable>
+  <Variable
+    Name="LIVE EDA Search"
+    Comment=""
+    EvaluatedDefinition="LIVE EDA Search">LIVE EDA Search</Variable>
+  <Variable
+    Name="NetGovern"
+    Comment=""
+    EvaluatedDefinition="NetGovern">NetGovern</Variable>
+  <Variable
+    Name="Active Learning"
+    Comment=""
+    EvaluatedDefinition="Active Learning">Active Learning</Variable>
+  <Variable
+    Name="Name First"
+    Comment=""
+    EvaluatedDefinition="OPEN DISCOVERY">OPEN DISCOVERY</Variable>
+  <Variable
+    Name="IPRO"
+    Comment=""
+    EvaluatedDefinition="IPRO">IPRO</Variable>
+  <Variable
+    Name="Local"
+    Comment=""
+    EvaluatedDefinition="LOCAL DISCOVERY">LOCAL DISCOVERY</Variable>
+  <Variable
+    Name="LIVE EDA Admin UI"
+    Comment=""
+    EvaluatedDefinition="LIVE EDA Admin UI">LIVE EDA Admin UI</Variable>
+  <Variable
+    Name="ECA &amp; Review"
+    Comment=""
+    EvaluatedDefinition="Review">Review</Variable>
+  <Variable
+    Name="LIVE EDA"
+    Comment=""
+    EvaluatedDefinition="LIVE EDA">LIVE EDA</Variable>
+</CatapultVariableSet>

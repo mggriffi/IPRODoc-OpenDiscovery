@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <table style="width: 100%;mc-table-style: url('../Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 378px;" MadCap:conditions="" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" style="width: 608px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">SETTINGS</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">DESCRIPTION</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                        <p><b>General</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">Active Learning</td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Switch on - enabled</p>
+                        <p style="font-size: 10pt;">Switch off - disabled<br /></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">Coding Form</td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">Coding form being used for the review pass.</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Primary Review Purpose</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">Allows <MadCap:variable name="Primary.IPRO"></MadCap:variable> Analytics to learn from the work done by reviewers. If the Primary Review Purpose tag is applied to a document, then the system will learn from that document.</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <p style="font-size: 10pt;">If the document is marked "Reviewed" and the Primary Review Purpose <u>is</u> applied, then that document is recorded as a "positive"</p>
+                            </li>
+                            <li>
+                                <p style="font-size: 10pt;">If the document is marked "Reviewed" and the Primary Review Purpose is <u>not</u> applied, then that document is recorded as a "negative"</p>
+                            </li>
+                        </ul>
+                        <p><span style="font-size: 10pt;">Reviewers should use the On Hold review status when reviewing documents if they are unsure whether the document is a positive or negative example.  This prevents the document from being added as an example until a review decision can be made.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Recall</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">The estimate of the percentage of positive documents in the review pass. The desired recall for the review pass can be configured from 70% to 90% in increments of 10%.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">Saved Search</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">Saved search of records to be included in the review pass.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Batch Size</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">The number of documents a reviewer will receive at a time.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Batch Prefix</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">The prefix added before each batch.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Batch By</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p class="TableText"><span style="font-size: 10pt;">Method for grouping documents within batches. Ensure <b>None</b> is selected if you prefer to organize batches in numerical order by image key. Otherwise, you can choose to batch documents either by field or by analytics categories. </span>
+                        </p>
+                        <p class="TableText">For example, you might group documents based on the File Type field, in which case all like documents (.MSG, .DOC, .XLS, etc.) will be grouped into batches based on batch size.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Batch Priority</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">The priority set for each batch.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Family Field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">Ensures all  documents with the same value in this field are kept together in batches.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Layout Style</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">Determines whether the reviewer can see only the Document Viewer (Form View) or both the Document Viewer and the Grid (Grid View).</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Batching Order</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Sort documents by the content of up to three fields.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;" colspan="2">
+                        <p style="font-size: 10pt;"><span style="font-size: 11pt; font-weight: bold;">Permissions</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Group(s)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Contains Groups assigned to the normal batches in the review pass.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Review QC Groups(s)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                        <p style="font-size: 10pt;">Controls the QC batch permissions. Contains Groups assigned to the QC batches within the review pass.</p>
+                        <table cellspacing="0" style="mc-table-style: url('../Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../Graphics/Review_Note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Note: Not selecting either of these group types allows access to both types of groups.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p><span style="font-size: 10pt;">If a Review QC Group is selected, users who are part of that group will always receive a QC Batch for the review pass if one is available.  If a QC Batch is not available and the user is part of the regular review group, they will receive a normal batch.</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

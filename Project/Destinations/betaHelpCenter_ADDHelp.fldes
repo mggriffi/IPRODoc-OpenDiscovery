@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publish Enterprise Help (w/Review) on myiprobeta - new myipro path"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-betptl001\c$\Core\Help\FlareProjects\Enterprise"
+  Port=""
+  ViewUrl="https://myiprobeta.iprotech.com/help/Enterprise"
+  Type="file"
+  ChangedOnly="false"></CatapultDestination>

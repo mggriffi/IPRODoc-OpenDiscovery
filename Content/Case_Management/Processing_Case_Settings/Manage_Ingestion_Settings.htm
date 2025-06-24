@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/CaseMgmt_MP.flmsp');" MadCap:conditions="Primary.UI_Linked">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../eCapture/Content/Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Ingestion Settings</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Manage  Ingestion Settings</h1>
+        <p>You can view and modify ingestion settings for a Processing case in <MadCap:variable name="Primary.Name First" />. These settings, which are also found in <MadCap:variable name="Primary.eCapture" />, offer you the flexibility  of customizing how files are ingested into your case. Settings modified in <MadCap:variable name="Primary.Name" /> are updated in <MadCap:variable name="Primary.eCapture" />, and vice-versa.</p>
+        <p>Follow the instructions below to learn how to view and modify ingestion settings in <MadCap:variable name="Primary.Name" />, as well as to review detailed definitions for each setting.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1">
+            </col>
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;">
+            </col>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p>
+                            <img src="../../Resources/Images/myipro_tip.png">
+                            </img>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: There are additional ingestion settings available in <MadCap:variable name="Primary.eCapture" />. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">The settings found in <MadCap:variable name="Primary.Name" /> represent the most commonly modified settings.</MadCap:conditionalText> For further customization options, use the <MadCap:variable name="Primary.eCapture" /> app. See <a href="https://myipro.iprotech.com/help/ECapture/#eCapture/Jobs/Create_a_Streaming_Discovery_Job.htm%3FTocPath%3DeCapture%25C2%25AE%2520Controller|Jobs|Streaming%2520Discovery|_____1">Create a Streaming Discovery Job</a> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="Primary.Blocked">For a visual overview of Ingestion settings, see the below video.</p>
+        <p MadCap:conditions="Primary.Blocked">
+            <object src="https://vimeo.com/851733338?share=copy" style="width: 560px; height: 315px;" class="Border">
+            </object>
+        </p>
+        <h2>View and Modify Ingestion Settings</h2>
+        <p>To view and/or modify ingestion settings:</p>
+        <ol>
+            <li>
+                <p>Open <b>Case Management</b> and locate the Processing case whose settings you would like to view or modify.</p>
+            </li>
+            <li>
+                <p>Click the hamburger icon corresponding to the needed case.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Hamburger.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>From the menu that appears, select <b>Case Settings</b>.</p>
+            </li>
+            <li>
+                <p>Click the <b>Ingestion</b> tab at the top of the Case Settings work area.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Ingestion_Tab.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On this page you can view a selection of ingestion and filtering settings. To view and/or modify the full set of ingestion settings available in <MadCap:variable name="Primary.Name" />, click the <b>Manage Ingestion</b> button.</p>
+            </li>
+            <li>
+                <p>Update settings as needed. See the table below for more information about these settings.</p>
+            </li>
+            <li>
+                <p>When finished, click the <b>Save</b> button in the top-right corner of the page. If you exit without saving, any changes you made will be lost.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1">
+                    </col>
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;">
+                    </col>
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: You can discard any changes you have made by clicking the <b>Cancel</b> button in the top-right corner of the page, or by exiting the page. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2>How Hash Values are Generated For Deduplication</h2>
+        <p>Deduplication does not take into account the filename, but only the content, when hashing. Emails are a little different, and you may  customize the fields used to generate the hash value. For documents that are part of a family, the entire family will be included when deduping.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/Case_Settings/Manage Case Settings/EmailDedup.png" class="Thumbnail" />
+        </p>
+        <h2>Understand Ingestion Settings</h2>
+        <p>Review the table below to learn more about the various ingestion settings you can update  in <MadCap:variable name="Primary.Name" />.</p>
+        <table style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Setting</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Time Zone</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <div>
+                            <p class="TableText"> Select the time zone to be applied to extracted date metadata. Use the dropdown to locate the needed time zone.</p>
+                            <p class="TableText">For more information about Time Zone Handling, see <a href="https://myipro.iprotech.com/help/ECapture/#QC/How_Ipro_eCapture_Handles_Time_Zones.htm">How IPRO eCapture Handles Dates and Time Zones</a>.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;"><span style="font-weight: normal;">Container handling</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Determine the treatment of archive (.zip, .rar, etc.) and PDF Portfolio/Package containers. When "Treat as containers" is selected all extracted files will be treated as a single family of documents with the container being identified as the <MadCap:annotation MadCap:createDate="2021-02-14T17:35:31.9673749-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Research &quot;treat as directories&quot; option" MadCap:editor="mcohen" MadCap:editDate="2021-02-14T17:35:55.4907200-07:00">parent.</MadCap:annotation></p>
+                        <p class="TableText" MadCap:conditions="Primary.Blocked">PDF Portfolio files allow email boxes to be stored/converted within a folder structure. This folder structure information is extracted and available for export in the existing ‘MailFolder’ metadata field.</p>
+                        <ul>
+                            <li class="CellBody">
+                                <p class="TableText" MadCap:conditions="Primary.Blocked"><b>Treat archives as directories</b>: Select this option if you want the files in the archived folder to be treated as parent and child docs when running a Discovery Job. In addition, WINMAIL.DAT attachments are treated like archives and will be processed like .ZIP files. The following are treated like archive files:</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_ZIP = 1802</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_ZIPEXE = 1803</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_ARC = 1804</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_TAR = 1807</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_STUFFIT = 1812</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_LZH = 1813</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_LZH_SFX = 1814</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_GZIP = 1815</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">IPRO_FI_RAR = 13000</p>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked">FI_TNEF = 1197</p>
+                            </li>
+                            <li>
+                                <p class="TableText" MadCap:conditions="Primary.Blocked"><span style="font-weight: bold;">Treat PDF Portfolios/Packages as Containers</span>: This option is selected by default. The PDF Portfolio file is treated as a directory and its contents extracted and treated as loose files (except children of the contained PDFs). The PDF Portfolio will not be treated as an item, only as a container in the Nodes table. Documents inside the PDF package are treated as parent files. If this option is not selected, the PDF Portfolio file will be treated as a file parent and its contents extracted and treated as attachments in the items table. The PDF Portfolio will be treated as an item and can be processed/filtered/exported.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><span style="font-weight: normal;">File extraction</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The<b> File extraction is on</b> option is selected by default. The related Extract options are also selected by default and may be cleared independently, if desired.</p>
+                        <p class="TableText">If this option is disabled (the related Extract options are also cleared) and data is submitted for extraction, no extraction occurs from file types, such as mail stores and archives. This enables documents to be sent through Streaming Discovery knowing that all the docs were already extracted including file parents (e.g., emails and edocs). </p>
+                        <table style="mc-table-style: url('../../../../eCapture/Content/Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../../../eCapture/Content/Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: Node records are generated for container files such as .PST, .NSF, and archives; however, no items are extracted. The status indicator states: "No Content extracted, file extraction disabled by user".</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Extract inline images from emails</span>: When enabled, inline images in email messages (e.g., signature files) are extracted as attachments and treated as child documents. </p>
+                                <p class="TableText">When disabled, inline images are not extracted as children. The images are not treated as separate documents, and therefore are not OCRed, language-identified, or indexed. The images are rendered inline as they would look in the native file.</p>
+                                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                    <tbody>
+                                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                <p class="TableText">
+                                                    <img src="../../Resources/Images/myipro_note.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                <p class="Note">Note: Selecting this option can lead to a significant increase in the number of documents extracted.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Extract embedded files when possible</span>: An embedded file is an object that has been inserted into a document and, if extracted, can act as a standalone document. This option consolidates Excel documents, Word documents, PowerPoint documents, Email File Attachments (Outlook.FileAttach), Visio drawings, Package-Embedded documents, Acrobat documents, Email Message Attachments (MailMsgATT), and Email File Attachments (MailFileAtt). <br /><br />When selected, the embedded files are extracted as separate documents and treated as child documents. If this option is not selected, then the embedded files are not extracted as separate documents.<br /><br />All files embedded inside of non-emails (e-docs) are extracted. These files are sent through the discovery, text extraction, metadata extraction and export with their parent. However, if this option is not selected, all files embedded inside of non-emails (edocs) are not extracted. They are ignored and only the parent document is processed.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">OCR</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <div>
+                            <p class="TableText">Configure your OCR settings. Optical Character Recognition is used to identify and extract text from image-based files that can be indexed and searched in Review. To use OCR on image-based files such as .pdf, .jpg, .bmp, .tiff, etc., ensure the slider at the top is set to <b>OCR is on</b>.</p>
+                            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                <tbody>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                            <p class="TableText">
+                                                <img src="../../Resources/Images/myipro_note.png" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                            <p class="Note">Note: You can turn off OCR by selecting the slider so that it turns gray. Note that disabling OCR prevents the identification and extraction of text from image-based files.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>You can likewise set the following options:</p>
+                            <ul>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">OCR Images</span>: Images are OCRed to retrieve any available text from the image. The OCR is available for indexing and searching in the Review application.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">OCR PowerPoint</span>: Turn this option on to perform OCR on Microsoft PowerPoint files during indexing to get text from embedded content in the slides. This results in slower indexing speeds for PowerPoint files, but more accurate search results.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">OCR PDF pages missing text</span>: PDFs with no embedded text perform OCR before indexing or language identification. PDF pages with embedded text (text-behind) will have text extracted. Comments on a PDF file are also extracted.
+The OCR text is added to any extracted text from the PDF. All text is available for indexing and searching in the Review application.</p>
+                                    <p class="TableText">Optionally, select the option <span style="font-weight: bold;">Specify OCR threshold for PDFs </span><MadCap:conditionalText MadCap:conditions="Primary.Blocked"><span style="font-weight: bold;">OCR any page with fewer</span><b>than </b><span style="font-style: italic;font-weight: bold;">n</span><b> characters</b></MadCap:conditionalText> and indicate a value. The default value is 75 characters. The maximum value is 100. If the value is less than the threshold you set, <MadCap:variable name="Primary.eCapture" /> will send the page to be OCRed; otherwise, the text will just be <MadCap:annotation MadCap:createDate="2021-02-14T18:37:43.6978602-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Get clarity on this option" MadCap:editor="mcohen" MadCap:editDate="2021-02-14T18:37:49.4441134-07:00">extracted.</MadCap:annotation></p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">Minimum average OCR confidence (1-100)</span>: The level range settings are from 1 to 100. The default is 50. The confidence level is the average percentage of confidence for each document for all pages within a document on which OCR was performed. Success or failure of OCR results is based on the average confidence level of the document. If the average confidence level is below the selected threshold, the page is considered as an OCR error.</p>
+                                    <p class="TableText" MadCap:conditions="Primary.Blocked">The Discovery Job Status and Summary Panel displays OCR Applied[Errors], where Applied shows the number of pages that required OCR (not OCRed) and where [Errors] shows the number of those pages that did not meet the specified average confidence level. </p>
+                                    <table style="mc-table-style: url('../../../../eCapture/Content/Resources/TableStyles/CD360_Basic_Table.css');border-left-style: solid;border-left-width: 1px;border-left-color: #898493;border-right-style: solid;border-right-width: 1px;border-right-color: #898493;border-top-style: solid;border-top-width: 1px;border-top-color: #898493;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #898493;margin-left: 0;margin-right: auto;" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="Primary.Blocked" />
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="Primary.Blocked" />
+                                        <tbody>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                    <p class="TableText">
+                                                        <img src="../../../../eCapture/Content/Resources/Images/myipro_note.png" />
+                                                    </p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                    <p class="Note">Note: For  calculating average page confidence, pages in PDF docs with text behind them are considered 100%. OCR failures are considered 0%.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">Use OCR Workers</span>: Select this option to simultaneously create an <MadCap:variable name="Primary.Name" /> OCR job with the <MadCap:variable name="Primary.Name" /> Streaming Discovery Job. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">The Job remains active until the  Streaming Discovery Job is complete. <br />OCR must be complete before the document is eligible for export.</MadCap:conditionalText></p>
+                                    <p class="TableText">Workers that are <MadCap:variable name="Primary.Name" /> Eligible or <MadCap:variable name="Primary.Name" /> Exclusive will accept OCR tasks if licensing is available. A different task table may be specified for <MadCap:variable name="Primary.Name" /> OCR Workers.</p>
+                                    <p class="TableText">Selecting this option can improve performance. If the <b>Use OCR Workers</b> option is not selected, OCR tasks are assigned to licensed  Streaming Discovery Workers. </p>
+                                    <p class="TableText"><span style="font-weight: bold;">OCR worker task table</span>: If a custom task table is selected from the drop-down menu, OCR tasks are sent to those Workers assigned to the selected task table.</p>
+                                    <table style="mc-table-style: url('../../../../eCapture/Content/Resources/TableStyles/CD360_Basic_Table.css');margin-left: 0;margin-right: auto;" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                    <p class="TableText">
+                                                        <img src="../../../../eCapture/Content/Resources/Images/myipro_note.png" />
+                                                    </p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                    <p class="Note">Note: For information about the OCR Worker Task Table, see <a href="https://myipro.iprotech.com/help/ECapture/#eCapture/Controller/Create_Task_Tables.htm">Create Task Tables</a> and <a href="https://myipro.iprotech.com/help/ECapture/#eCapture/Controller/Assign_Task_Tables_to_Workers.htm">Assign Task Tables to Workers</a>.<br /></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">OCR Languages</span>: <MadCap:variable name="Primary.Name" /> includes multi-language OCR capability. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">The QC document contains the original OCR languages that were selected for the  Data Extract Job.</MadCap:conditionalText> A valid multi-language OCR license must be available in order to modify the original selected languages, if necessary.</p>
+                                    <p class="TableText" MadCap:conditions="Primary.Blocked">To reserve a portion of the multi-language OCR licenses for QC and to keep the Worker from consuming all available licenses, use the Multi-Language OCR License slider located in the Controller System Options dialog box. </p>
+                                    <p class="TableText">In the <b>OCR Languages</b> field, click <img src="../../Graphics/Case_Mgmt_Graphics/btn_OCR_Languages_popout.png" /> to display the OCR Foreign Language dialog box. </p>
+                                    <p class="TableText">
+                                        <img src="../../Graphics/Case_Mgmt_Graphics/OCR_Languages_dialog.png" class="Thumbnail" />
+                                    </p>
+                                    <p class="TableText">After selecting the languages, click <b>OK</b> to close the dialog box. </p>
+                                    <p class="TableText">Click <MadCap:toggler targets="SupportedLangs">here </MadCap:toggler> to view a list of supported languages.</p>
+                                    <table style="width: 100%;" MadCap:targetName="SupportedLangs">
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <tbody>
+                                            <tr>
+                                                <td style="vertical-align: top;">
+                                                    <ul class="BulletListTable">
+                                                        <li>
+                                                            <p class="TableText">English</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Arabic</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Chinese Simplified</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Chinese Traditional</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Japanese</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Korean</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Afrikaans</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Albanian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Basque</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Belarusian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Bulgarian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Catalan</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Croatian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Czech</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Danish</p>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td style="vertical-align: top;">
+                                                    <ul class="BulletListTable">
+                                                        <li>
+                                                            <p class="TableText">Dutch</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Estonian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Faorese</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Finnish</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">French</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Galician</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">German</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Greek</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Hungarian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Icelandic</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Indonesian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Italian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Latvian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Lithuanian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Macedonian</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p>&#160;</p>
+                                                </td>
+                                                <td style="vertical-align: top;">
+                                                    <ul class="BulletListBody">
+                                                        <li>
+                                                            <p class="TableText">Norwegian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Polish</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Portuguese</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Portuguese Brazil</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Romanian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Russian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Serbian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Serbian Cyrillic</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Slovak</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Slovenian</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Spanish</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Swedish</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Turkish</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="TableText">Ukrainian</p>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="TableText">Click here to view some <MadCap:toggler targets="OCRcaveats">caveats to OCR Foreign Language handling</MadCap:toggler>.</p>
+                                    <div MadCap:targetName="OCRcaveats">
+                                        <p class="TableText">English is the only language that is selected by default. The more languages that are selected; the lower the confidence level will be for correctly identifying the languages in a document.</p>
+                                        <ul style="list-style: disc;">
+                                            <li>
+                                                <p class="TableText">If English is selected, Arabic will not be available for selection.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">If Arabic is selected, all other languages will not be available for selection.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">If one of the CJK (Chinese, Japanese, Korean) languages are selected, then all remaining CJK languages will not be available for selection. Other languages (excluding Arabic) may be selected.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">If Chinese Simplified is selected, Chinese Traditional, Japanese, and Korean will not be available for selection.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">If Chinese Traditional is selected, Chinese Simplified, Japanese, and Korean will not be available for selection.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">If Japanese is selected, Chinese Simplified, Chinese Traditional, and Korean will not be available for selection.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">If Korean is selected, Chinese Simplified, Chinese Traditional, and Japanese will not be available for selection.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Email Hash</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <div>
+                            <p class="TableText" MadCap:conditions="Primary.Blocked">Displays the Custom Email Hash dialog box. Select from the following options:</p>
+                            <p class="TableText" MadCap:conditions="Primary.Blocked">Some emails may have identical values in the properties that <MadCap:variable name="Primary.eCapture"></MadCap:variable> uses to generate hashes; however, the values may differ in the attachment contents. Family hash accounts for this by using the hash values of the extracted attachments to calculate a second hash for the email parent.</p>
+                            <p class="TableText" MadCap:conditions="Primary.Blocked">De-duplication may be performed on parent hash values rather than family hash values for newly created Streaming Discovery Jobs that are using version 2016.3.3 only. (Note: Existing Streaming Discovery Jobs retain the family hash setting.) The default setting uses family hash. </p>
+                            <p class="TableText" MadCap:conditions="Primary.Blocked">This setting is found in the DedupUseFamilyHash field of the ConfigurationProperties table for the <MadCap:variable name="Primary.eCapture"></MadCap:variable> Configuration database. The default value is 1. To switch to parent hash value, change the value from 1 to 0 in the DedupUseFamilyHash field. If the value is set to 0 in the ConfigurationProperties table, then family hashes will not be considered when applying de-duplication.</p>
+                            <p class="TableText" MadCap:conditions="Primary.Blocked">The method of gathering and creating the MD5 hash values changed for newly created Cases (Projects). Hashing of emails uses Coordinated Universal Time (UTC) to ensure proper de-duplication across time zones.</p>
+                            <p class="TableText" MadCap:conditions="Primary.Blocked">In most cases, MD5 hash values are calculated on the file itself. For more reliable de-duplication of emails though, it is required that de-duplication occur on the information contained within it and not the file itself. There are many reasons for this; the simplest is that when an email is saved out of its container (PST, NSF, etc.), the file created contains information that would change the hash value of the same email each time the email is saved out.</p>
+                            <p class="TableText">When an email is discovered within <MadCap:variable name="Primary.Name" />, it is assigned a hash value based on fields chosen by the user. The values of these fields are concatenated, and the text is hashed. Select from the following email fields to generate the hash value:</p>
+                            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                <tbody>
+                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                            <p class="TableText">
+                                                <img src="../../Resources/Images/myipro_note.png" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                            <p class="Note">Note: Changing selected fields midway through a case will not update values of historic documents. This may result in the failure to identify future duplicates.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li>
+                                    <p class="TableText"><b>Subject</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><b>Body</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText"><b>Body Whitespace</b>: Whitespace in the email body could cause slight differences between the same emails, which could result in different hashes being generated. On the Body Whitespace drop-down menu, select either  <b>Remove</b> or <b>Include</b>.  <b>Remove</b> - removes all whitespace between lines of text in the email body before hashing. <b>Include</b> - keeps the whitespace.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="TableText"><b>Recipients</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="TableText" style="font-weight: bold;">From/Author</p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><b>Email Date</b>: Sent Date is used for all emails. When no Sent Date is available, Create Date will be used instead.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><b>CC</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><b>BCC</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="TableText" style="font-weight: bold;">Attachment Count</p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><b>Attachment Names</b>
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="TableText">
+                                <MadCap:conditionalText MadCap:conditions="Primary.Blocked">Select from either <span style="font-weight: bold;">Creation Date</span> or <span style="font-weight: bold;">Last Modification Date</span>. The selected value will be used when calculating the MD5 hash value if the normal <b>Email Date</b> value is not present. This commonly occurs for Draft messages that have not been sent.<br /><br /><b>Start Time</b> is always used if it exists.<br /><br />By default, <b>Subject</b>, <b>From/Author</b>, <b>Email Date</b>, and an <b>Alternate Email Date of Creation Date</b> are used for email hash generation.</MadCap:conditionalText>
+                            </p>
+                            <p class="TableText">&#160;</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Edit_Processing_Case_Settings.htm">Manage Settings for a Processing Case </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Filtering_Settings.htm">Manage  Filtering Settings</MadCap:xref>
+        </p>
+    </body>
+</html>

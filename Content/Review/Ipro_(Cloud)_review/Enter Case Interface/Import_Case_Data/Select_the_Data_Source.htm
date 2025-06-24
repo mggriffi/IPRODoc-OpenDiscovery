@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary._FixedMulti-Level,Primary.Blocked" style="mc-master-page: url('../../../../Resources/MasterPages/Eclipse_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Select the Data Source</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Select the Data Source</h1>
+        <p class="BodyText">After completing preparation (see <a href="../../../Eclipse_Administration/Import_Data/Import_Case_Data.htm#Before_You_Begin">Before 
+ You Begin</a> above), complete the following steps: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>If your 
+ import file is open in another application, for example, a .CSV file is 
+ open in Microsoft® Excel, close the file and the application. </p>
+            </li>
+            <li>
+                <p>In the Import Data screen, click the <span style="font-weight: bold;">Step 1. Select Source</span> tab.</p>
+            </li>
+            <li>
+                <p>Select the managing client and case into which 
+ data is to be imported. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Job Name</span>: 
+ If desired, replace the default job name with a name of your own choosing. 
+ This job name is used in the Import-Job History for the case. The log 
+ file path cannot be changed.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Import File</span>: 
+ Enter the full path to the needed import file. Alternatively, click the 
+ <img src="../../../../Graphics/Admin_Graphics/Btn_Folder.png" alt="" border="0" class="button_inline" />&#160;button and navigate to and choose the needed 
+ file. Files may be any of the following types:</p>
+                <ol class="BulletListBody">
+                    <li>
+                        <p>Document-level 
+ data: .CSV, .DAT, .DLF, .DII, or .TXT</p>
+                    </li>
+                    <li>
+                        <p>Page-level 
+ data: .DLF, .LFP, or .OPT</p>
+                    </li>
+                    <li>
+                        <p>Document-level 
+ text (extracted text) files: .LST</p>
+                    </li>
+                </ol>
+            </li>
+            <table style="margin-left: 40px;mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" cellspacing="0" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: To import multiple files 
+		 at once (for example, a service bureau has provided multiple files 
+		 for a case), select any one of the files to be imported now. Additional 
+		 files will be selected in step 12. </p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p><span style="font-weight: bold;">Number of 
+ sample records:</span> Select a sample of 1, 15, or 100 records. The initial 
+ lines in the import file are evaluated in order to display the number 
+ of records (documents and/or pages) specified here. If the selected number 
+ of records is not defined within the lines that are evaluated, then the 
+ sample will be smaller than specified. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">First line 
+ is a header:</span> Select this option if the first row in the import 
+ file contains column titles instead of data. (Some file types, such as 
+ .OPT, will select this option automatically.) </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Encoding:</span> 
+ Select the character set to be used. Common encodings are available for 
+ selection. </p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: For each case, make sure 
+		 that the same encoding option is used for the load file containing 
+		 the case metadata (such as .DAT, .DLF, .DII, or .TXT file) and 
+		 the corresponding image load file (.OPT or .LFP) for the case.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p><span style="font-weight: bold;">Sample Data</span>: 
+ Review the excerpt of data from the import file. </p>
+            </li>
+            <p class="BodyTextIndent">The columns in the table will differ, depending 
+ on which type of file is being imported. If you are importing an LFP or 
+ OPT file, columns will be similar to this figure. </p>
+            <p class="Image">
+                <img src="../../../../Graphics/Admin_Graphics/Import_LFP Sample Data.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <p class="BodyTextIndent">If default delimiters are not used in your load 
+ file, the sample data will not display correctly. In this case, continue 
+ to step 10. </p>
+            <li>
+                <p><span style="font-weight: bold;">Delimiters</span>: 
+ If the data imported includes delimiters other than the standard types, 
+ change the delimiters to match the file. For details on default delimiters 
+ and instructions on using custom delimiters, see <a href="#Delimiter_Details">Delimiter 
+ Details</a>. </p>
+            </li>
+            <p class="BodyTextIndent">Ignore any delimiters that are not pertinent 
+ to your load file. (The entries in this area will be ignored if they do 
+ not apply to your load file.) </p>
+            <p class="BodyTextIndent">Delimiter options include:</p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><span style="font-weight: bold;">Field</span>: Select the character that 
+ separates each field. </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Quote</span>: This optional delimiter typically 
+ marks the beginning and end of a field (as in .CSV files). </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Newline</span>: Select the character that 
+ signifies the start of a new line in the load file. </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Multi-Value</span>: Select the character 
+ that separates values within multi-value fields (TEXT_TM fields). </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Merged Fields</span>: Eclipse allows you 
+ to merge multiple fields (in <a href="../../../Eclipse_Administration/Import_Data/Match_Database_Fields.htm">Match 
+ Database Fields</a>). For example, you may be importing a case in which 
+ two fields were used for a large amount of text.</p>
+                </li>
+            </ul>
+            <p class="BodyTextIndent">If you want to merge fields, but also want an 
+ indicator of the original field separations, specify the delimiter here. 
+ The delimiter will be included in the merged data to identify the original 
+ field delineation(s). </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><span style="font-weight: bold;">Nested Value</span>: If you are importing 
+ tags (including nested tags) from a .TXT or .CSV file, select the delimiter 
+ that identifies the nested tags.</p>
+                </li>
+            </ul>
+            <p class="BodyTextIndent">When delimiters have been defined, review the 
+ <span style="font-weight: bold;">Sample Data</span> to ensure it appears 
+ as intended.</p>
+            <li>
+                <p><span style="font-weight: bold;">Date Format</span>: 
+ Select the date format that most closely matches the dates in your import 
+ file. For example, if your file includes dates in the format of <span class="Code">dd-mm-yyyy</span>, select the <span style="font-weight: bold;">D/M/Y</span> 
+ option. Also note the following:</p>
+            </li>
+            <ul>
+                <li>
+                    <p>Dates 
+ to be imported must be in a common date format. (For example, 27-09-2009 
+ or 27 Sept 2009.) </p>
+                </li>
+                <li>
+                    <p>If 
+ you are importing data from a .DLF file, the format must be <span style="font-weight: bold;">Y/M/D</span>.</p>
+                </li>
+                <li>
+                    <p>Partial 
+ dates will not be imported (for example, 09/2009 or Sept 2009).</p>
+                </li>
+            </ul>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Regarding imports from LFP 
+		 files:</p>
+                        <p class="Note">The import process imports/updates only those records 
+		 specified in the LFP. Therefore, related documents are updated 
+		 only if they are specified in the LFP file. </p>
+                        <p class="Note">Not all LFP commands are supported. Supported commands 
+		 include: AN, FT, IM, OF, OI, OT, VN. Unsupported commands are 
+		 ignored.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p><span style="font-weight: bold;">Batch Import</span>: 
+ To select additional files to import, complete the following steps. If 
+ the file selected in step 5 is the only file to be imported, skip to <a href="../../../Eclipse_Administration/Import_Data/Match_Database_Fields.htm">Match Database Fields</a>.</p>
+                <ol>
+                    <li>
+                        <p>Files 
+ must be of the same type and have the same fields as defined in the file 
+ specified in the <span style="font-weight: bold;">Import File</span> field. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Determine 
+ whether you are adding a single file, a directory of files, or multiple 
+ recursive directories. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Batch Import</span> area, click the 
+ <span style="font-weight: bold;">Add</span> button.</p>
+                    </li>
+                    <li>
+                        <p>Navigate 
+ to and select the needed file(s), then click <span style="font-weight: bold;">OK</span>. 
+ Use Shift+click or Ctrl+click to select a contiguous or non-contiguous 
+ set of files, respectively. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ needed, repeat steps b and c to locate and select additional files.</p>
+                    </li>
+                    <li>
+                        <p>Review 
+ the files listed in the File Name list. If a file should not be imported, 
+ click the file in the list and then click Remove. </p>
+                    </li>
+                    <li>
+                        <p>When 
+ the set of files is correct, continue with <a href="../../../Eclipse_Administration/Import_Data/Match_Database_Fields.htm">Match 
+ Database Fields</a>. </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h3><a name="Delimiter_Details"></a>Delimiter Details</h3>
+        <p class="BodyText">This information supplements step 10 above. </p>
+        <h4>Default Delimiters</h4>
+        <p class="BodyText">Eclipse includes default delimiters based on file type, 
+ as listed in the following table. In this table:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>
+                    A box, □, represents a non-printing character.
+                </p>
+            </li>
+            <li>
+                <p>
+                    “NA” indicates the delimiter is not applicable 
+	 to the file type.
+                </p>
+            </li>
+        </ul>
+        <p class="BodyTextIndent">
+            <MadCap:toggler targets="t1">Default 
+ Delimeters</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">File 
+			 Type</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Field</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Quote</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Newline</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Multi-VAlue</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Merged Field</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Nested VAlue</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">.CSV</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">,<span>&#160;</span>&#160;(0044)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">"<span>&#160;</span>&#160;(0034)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                        <td rowspan="8" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">;<span>&#160;</span>&#160;(0059)</p>
+                        </td>
+                        <td rowspan="8" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                        <td rowspan="8" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">.DAT</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">□<span>&#160;</span>&#160;(0020)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">þ<span>&#160;</span>&#160;(0254)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">®<span>&#160;</span>&#160;(0174)</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">.DII</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">.DLF</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">NA</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">.LFP</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">,<span>&#160;</span>&#160;(0044)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">"<span>&#160;</span>&#160;(0034)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">.LST</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">,<span>&#160;</span>&#160;(0044)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">"<span>&#160;</span>&#160;(0034)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">.OPT</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">,<span>&#160;</span>&#160;(0044)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">"<span>&#160;</span>&#160;(0034)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="MsoNormal">.TXT</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="MsoNormal">,<span>&#160;</span>&#160;(0044)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="MsoNormal">"<span>&#160;</span>&#160;(0034)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="MsoNormal">(none)</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+        <h4>Create Custom Delimiters</h4>
+        <p class="BodyText">Certain import files, such as .CSV, .DAT, or .TXT, 
+ may include custom delimiters. To select a custom delimiter in step 10 
+ of <a href="../../../Eclipse_Administration/Import_Data/Select_the_Data_Source.htm">Select the Data Source</a>: </p>
+        <ol>
+            <li>
+                <p>In the 
+ needed delimiter field, select <span style="font-weight: bold;">Custom</span>. 
+ (You will need to scroll to the bottom of the delimiter list.)</p>
+            </li>
+            <li>
+                <p>In the Create Custom Delimiter dialog box, 
+ click the <span style="font-weight: bold;">Characters</span> or <span style="font-weight: bold;">ASCII Values</span> option, depending on 
+ how you will specify the delimiter character(s). </p>
+            </li>
+            <li>
+                <p>If you select <span style="font-weight: bold;">Characters</span>, 
+ enter the character(s) in the top field under the <span style="font-weight: bold;">Characters</span> 
+ option. Separate more than one character with a space. The ASCII value 
+ for each character appears in the bottom field. </p>
+            </li>
+            <li>
+                <p>If you select <span style="font-weight: bold;">ASCII 
+ Values</span>, enter the ASCII value(s) for the needed character(s) in 
+ the top field under the <span style="font-weight: bold;">ASCII Values</span> 
+ option. Separate more than one value with a space. The character corresponding 
+ to each value appears in the bottom field.</p>
+            </li>
+            <li>
+                <p>When finished, click <span style="font-weight: bold;">OK</span>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Create an Index</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create an Index" />Create an Index</h1>
+        <p class="BodyText">To create an index for conceptual searching:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Eclipse 
+ Analytics</span> &gt; <span style="font-weight: bold;">Manage Analytics 
+ Indexes</span>. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Manage Indexes window, select the needed managing client and case.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ saved searches are needed for the training and/or searchable sets, make 
+ sure these searches have been saved in Eclipse. (See steps 6 and 7.)</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Create 
+ New Index</span> and complete the dialog box as explained in the following 
+ steps.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Name</span>: 
+ Enter a meaningful, unique name for the index. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Configuration 
+ Profile</span>: Select the needed profile. If the needed profile does 
+ not exist, click <span style="font-weight: bold;">New</span> and define 
+ the profile as explained in <a href="Create_an_Index_Profile.htm">Create 
+ an Index Profile</a>.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Active</span>: 
+ Select this option unless you do not want the index to be available for 
+ searching until a later date. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Training Set</span>: 
+ Select the training data for the searchable index, either the entire case 
+ or the search-result documents for a public search saved in Eclipse. Training 
+ items should be representative of all searchable items. Note:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Using 
+ the entire case as training data requires more memory than using a subset 
+ of the searchable items. </p>
+                    </li>
+                    <li>
+                        <p>Training 
+ datasets can be much smaller than the entire case as long as the concepts 
+ and terms contained in the case are well-represented in the training items. 
+ </p>
+                    </li>
+                    <li>
+                        <p>At 
+ least ten training data items are needed to build an index; more than 
+ ten are preferred. If you provide fewer than ten training data items for 
+ building an index, the build process will fail. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Searchable 
+ Set</span>: Select the set of documents that will be searched when the 
+ search is executed in Eclipse. This may be the entire case or the search-result 
+ documents for a public search saved in Eclipse. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Stop Words</span>: 
+ To use a default list of over 600 stop words (commonly used words that 
+ should be ignored, such as in, or, of) for the index, skip this entry. 
+ Or complete step 9 or step 10 to customize the list.</p>
+            </li>
+            <li>
+                <p>To create a custom list of stop words, enter 
+ or paste the list of words into the Content Analyst Stop Words dialog 
+ box, then click <span style="font-weight: bold;">OK</span>. Ensure only 
+ one word is on each line.</p>
+            </li>
+            <li>
+                <p>To modify the default list of stop words:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <img src="../../../Graphics/Admin_Graphics/Btn_EditCAStopWords.png" alt="" border="0" class="button_inline" />.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Load Default Stop Words</span>.</p>
+                    </li>
+                    <li>
+                        <p>Add 
+ words to or remove them from the list using common editing methods. Ensure 
+ only one word is on each line.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Save</span>. 
+ </p>
+            </li>
+        </ol>
+    </body>
+</html>

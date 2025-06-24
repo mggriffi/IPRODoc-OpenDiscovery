@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Blocked" style="mc-master-page: url('../../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Pre-Processing</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Pre-Processing" />Pre-Processing</h1>
+        <p class="BodyText">As part of the import process, evaluate the import 
+ file for tags and/or redactions that do not match those defined for the 
+ case into which the data is being imported. To do so:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the <span style="font-weight: bold;">Step 
+ 2</span> tab of the Import Data window, in the Action area, select <span style="font-weight: bold;">Pre-Process</span>. </p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Submit</span>.</p>
+            </li>
+            <li>
+                <p>When the pre-process is completed, click <span style="font-weight: bold;">View Results</span>.</p>
+            </li>
+            <li>
+                <p>In the Pre-process Results dialog box, evaluate 
+ each tab for problems. </p>
+            </li>
+        </ol>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#Manage_Undefined_Tags"><MadCap:keyword term="Manage Undefined Tags" />Manage Undefined Tags</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Manage_Undefined_Redactions"><MadCap:keyword term="Manage Undefined Redactions" />Manage Undefined Redactions</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Evaluate_Load_File_Errors"><MadCap:keyword term="Evaluate Load File Errors" />Evaluate Load File Errors</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Manage_Undefined_Tags"></a>Manage Undefined Tags</h2>
+        <p class="BodyText">Undefined tags are those that do not match tags in 
+ your case. Tags that do match your case will be imported. After completing 
+ <a href="../../../Eclipse_Administration/Import_Data/Pre-Processing.htm">Pre-Processing</a>, follow these steps to 
+ manage undefined tags:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Review 
+ the tags listed on the <span style="font-weight: bold;">Tags</span> tab 
+ of the Pre-Process Results dialog box, and the groups in the <span style="font-weight: bold;">Tag 
+ Groups</span> pull-down list.</p>
+            </li>
+            <li>
+                <p>Take the following steps as needed:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If 
+ suitable groups exist for all of the tags, skip to step 4. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ a new group is needed for some (or all) of the tags, go to step 3. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ you do not want to import one or more tags, leave the group as (not set) 
+ and skip to step 6.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To create one or more new tag groups for undefined 
+ tags:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <img src="../../../../Graphics/Admin_Graphics/Btn_CreateBatch_Web.png" alt="" border="0" class="button_inline" />&#160;on the right side of 
+ the tab. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Create Tag Group dialog box, enter a new tag group name and select 
+ needed group rules. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ steps a - c for other new tag groups.</p>
+                    </li>
+                    <li>
+                        <p>Continue 
+ with the next step.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>For each undefined tag to be imported, click 
+ the tag, then select the needed group from the Tag Group list. </p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Tip: Right-click 
+		 a tag to select the needed group. To apply the same selection to multiple tags, click 
+		 the first tag, then Shift+click the last tag to select a contiguous 
+		 set of tags or Ctrl+click other tags to select a non-contiguous 
+		 set. </p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>Repeat step 4 for all tags to be imported. 
+ </p>
+            </li>
+            <li>
+                <p>Continue with other pre-processing tasks as 
+ needed. If none exist, go to <a href="../../../Eclipse_Administration/Import_Data/Complete_the_Import.htm">Complete 
+ the Import</a>. </p>
+            </li>
+        </ol>
+        <h2><a name="Manage_Undefined_Redactions"></a>Manage Undefined Redactions</h2>
+        <p class="BodyText">Undefined redactions are those that do not match redactions 
+ in your case. Redactions that do match your case will be imported. </p>
+        <p class="BodyText">After completing <a href="../../../Eclipse_Administration/Import_Data/Pre-Processing.htm">Pre-Processing</a>, 
+ follow these steps to manage undefined redactions:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Review 
+ the redactions listed on the <span style="font-weight: bold;">Redaction 
+ Categories</span> tab of the Pre-Process Results dialog box. An ID of 
+ zero indicates that the redaction label is not found in the case.</p>
+            </li>
+            <li>
+                <p>Select the redactions you want to import and 
+ add to your case. For multiple redactions, click the first redaction, 
+ then Shift+click the last redaction to select a contiguous set of redactions 
+ or Ctrl+click other redactions to select a non-contiguous set. </p>
+            </li>
+            <li>
+                <p>When all needed redactions are selected, click 
+ <span style="font-weight: bold;">Create Redaction Categories</span>. An 
+ ID number will be assigned to all selected redactions. </p>
+            </li>
+            <li>
+                <p>Continue with other pre-processing tasks as 
+ needed. If none exist, go to <a href="../../../Eclipse_Administration/Import_Data/Complete_the_Import.htm">Complete 
+ the Import</a>. </p>
+            </li>
+        </ol>
+        <h2><a name="Evaluate_Load_File_Errors"></a>Evaluate Load File Errors</h2>
+        <p class="BodyText">The Pre-Process function evaluates the load file for 
+ errors. After completing <a href="../../../Eclipse_Administration/Import_Data/Pre-Processing.htm">Pre-Processing</a>, 
+ follow these steps to check load file errors before you import case data:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the 
+ Pre-Process Results dialog box, click the <span style="font-weight: bold;">Load 
+ File Errors</span> tab. </p>
+            </li>
+            <li>
+                <p>Review the error summary in the top portion 
+ of the screen.</p>
+            </li>
+            <li>
+                <p>To see the load file content for a particular 
+ error:</p>
+                <ol>
+                    <li>
+                        <p>Select 
+ the error.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the <span style="font-weight: bold;">Preview Load File</span> option.</p>
+                    </li>
+                    <li>
+                        <p>Review 
+ the actual load file content in the bottom portion of the window.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Your action will depend on the number and type 
+ of errors. For severe problems, correct the load file or obtain a new 
+ one. For few or minor problems, continue with other pre-processing tasks 
+ as needed. If none exist, go to <a href="../../../Eclipse_Administration/Import_Data/Complete_the_Import.htm">Complete 
+ the Import</a>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

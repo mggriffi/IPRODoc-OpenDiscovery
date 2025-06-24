@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileTagSet
+  Type="FlareHelpStatus">
+  <FileTag
+    Name="Complete" />
+  <FileTag
+    Name="In Progress" />
+  <FileTag
+    Name="ADD Shots"
+    Comment="" />
+  <FileTag
+    Name="Revisit"
+    Comment=""
+    OriginalName="Revisit" />
+</CatapultFileTagSet>

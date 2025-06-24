@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Blocked" style="mc-master-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Review Passes</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage Review Passes and Batches;Manage Review Passes" />Manage Review Passes</h1>
+        <p class="BodyText">Once review passes are created, you can manage 
+ them as required in <MadCap:variable name="Primary.Name First" />. For a detailed overview, see <MadCap:xref href="AR_Manage_Review_Process.htm">Review Passes and Batches</MadCap:xref>.</p>
+        <p class="BodyText">In this topic, you will find information to help you:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">
+                    <MadCap:xref href="#Get">Get Started</MadCap:xref>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:xref href="#Evaluate">Evaluate Review Pass Status</MadCap:xref>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:xref href="#Change">Change a Review Pass Definition</MadCap:xref>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:xref href="#Delete">Delete a Review Pass</MadCap:xref>
+                </p>
+            </li>
+        </ul>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table" MadCap:conditions="Primary.Blocked">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Batch Management FAQ:</p>
+                    <p class="Note">Q. Is the overall progress of batch management tracked in Review the same way it is done in Eclipse?</p>
+                    <p class="Note">A. Yes. Often this is done through a Review Manager or Attorney tracking the overall progress in the Batch Management screen.</p>
+                    <p class="Note">&#160;</p>
+                    <p class="Note">
+                        Q. Can batches be checked out by other reviewers?                </p>
+                    <p MadCap:targetName="Assign_batches" class="Note">A. Yes. Specific reviewers who have the proper expertise can check out batches.</p>
+                    <p class="Note">&#160;</p>
+                    <p class="Note">
+                        Q. Is there a way to allow manually checking out a batch before a specified timeout? Will the same batch be returned?
+
+                    </p>
+                    <p MadCap:targetName="SQL_timeout" class="Note">A. There is a feature that allows manually checking out a batch before a specific timeout; 30 minutes is the default, and the timeout period can be reconfigured through SQL. However, when the batch is checked back in, it is partially complete, so the next user/reviewer who selects that review pass could get that same batch. This works just as if the batch timed out and was placed back into the pool of available batches.</p>
+                    <p class="Note">&#160;</p>
+                    <p class="Note">For more FAQ about ECA &amp; Review, see <MadCap:xref href="../../Review_FAQ.htm"> Review FAQ</MadCap:xref>.</p>
+                    <p class="Note">
+                        <br />
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h3><a name="Get"></a>Get Started</h3>
+        <p class="BodyText">Complete the following steps to work with review passes 
+ in <MadCap:variable name="Primary.ProdName_Review" />: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the <b>Review Pass Management</b> panel, click the required review pass. If a large number 
+ of review passes exists, take any of the following actions to find the 
+ required one:</p>
+                <ol>
+                    <li>
+                        <p>Scroll 
+ vertically to locate the review pass in the list.</p>
+                    </li>
+                    <li>
+                        <p>Sort 
+ the keyword list names by clicking the sort button, <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Sort2.png" style="width: 29px; height: 29px;" class="ReduceButtonSize" />, 
+ and selecting from the different options. Click a selected option again 
+ to reverse the sort order.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_Sortpng4.png" class="Thumbnail">
+                            </img>
+                        </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the search box,  start typing any of the following 
+ items: the keyword list name, the name of the administrator who created/modified 
+ the group, or part of the created/modified date. This is a plain text 
+ search that searches these items in order.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_Search3.png" class="Thumbnail">
+                            </img>
+                        </p>
+                    </li>
+                    <li>Click the desired review pass.</li>
+                </ol>
+            </li>
+        </ol>
+        <h3><a name="Evaluate"></a>Evaluate Review Pass Status</h3>
+        <p class="BodyText">To evaluate details (total number of documents in the 
+ review pass, number of batched and unbatched documents, and so forth) 
+ for an individual review pass:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete the
+ <MadCap:xref href="#Get">Get Started</MadCap:xref> section. </p>
+            </li>
+            <li>
+                <p>For the selected review pass, click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Refresh.png" style="width: 37px; height: 36px;" class="ReduceButtonSize" />&#160;in the <span style="font-weight: bold;">Review 
+ Pass Information</span> area.</p>
+            </li>
+            <li>
+                <p>Evaluate details in the area. The following 
+ figure shows an example.</p>
+                <p class="Image">
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_RevPassInfo.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h3><a name="Change"></a>Change a Review Pass Definition</h3>
+        <p class="BodyText">After a review pass is defined, you can change any 
+ part of its definition. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: If batches have already 
+		 been created, some changes will have no effect on existing batches 
+		 (for example changing batch size). Changing the search on which 
+		 the review pass is based will add documents that were not results 
+		 of the first search to the review pass. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To change a review pass definition:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete the <MadCap:xref href="#Get">Get Started</MadCap:xref> section. </p>
+            </li>
+            <li>
+                <p>For the selected review pass, click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_EditReviewPass.png" class="ReduceButtonSize" />&#160;and make the required changes. 
+ For details about options, see <MadCap:xref href="AR_Work_with_Review_Passes_AL_Enabled.htm">Work with Active Learning Enabled Review Passes</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>When finished, click <span style="font-weight: bold;">Save</span>. 
+ </p>
+            </li>
+            <li>
+                <p>Inform users of changes. </p>
+            </li>
+        </ol>
+        <h3><a name="Delete"></a>Delete a Review Pass</h3>
+        <p class="BodyText">To delete a review pass (all batches will also be deleted):</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete  the <MadCap:xref href="#Get">Get Started</MadCap:xref> section.</p>
+            </li>
+            <li>
+                <p>For the selected review pass, click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_DeleteReviewPass.png" class="ReduceButtonSize" />; in the confirmation dialog box, click <span style="font-weight: bold;">OK</span>. </p>
+            </li>
+        </ol>
+        <h3><a name="Define"></a>
+        </h3>
+        <p class="BodyText"><b style="font-style: italic;">Related Topics:</b>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Manage_Batches.htm">Manage  Batches</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="AR_Work_with_Review_Passes_AL_Disabled.htm">Work with Active Learning Disabled Review Passes</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="AR_Work_with_Review_Passes_AL_Enabled.htm">Work with Active Learning Enabled Review Passes</MadCap:xref>
+        </p>
+    </body>
+</html>

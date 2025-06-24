@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Z_Excluded V1" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Eclipse by IPRO User Management Basics</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Security Beyond User and Group Permissions;Eclipse User Management Basics" />Eclipse<sup>®</sup> by IPRO User Management Basics</h1>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#Users_and_Groups"><MadCap:keyword term="Users and Groups" />Users and Groups</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Permissions_"><MadCap:keyword term="Permissions" />Permissions</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Security_Beyond_User_and_Group_Permissions">Security 
+	 Beyond User and Group Permissions</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Users_and_Groups"></a>Users and Groups</h2>
+        <h3>Users</h3>
+        <p class="BodyText">Users are individual members of your organization who 
+ will use Eclipse<sup>®</sup> by <MadCap:variable name="Primary.IPRO" /> (for example, case reviewers, attorneys, or other specialists). 
+ See <a href="Manage_Eclipse_Security.htm#Before_You_Begin">Before You 
+ Begin</a> for details on user licenses.</p>
+        <p class="BodyText">User permissions are determined by group and case assignment. 
+ </p>
+        <p class="BodyText">Starting with release 2014.1.0, <MadCap:variable name="Primary.Name" /> (Services component) 
+ serves as a centralized database in which all <MadCap:variable name="Primary.Name" /> users, including Eclipse 
+ users, are managed. Users can be created in <MadCap:variable name="Primary.Name" /> System Administration or Eclipse 
+ and once enabled, they are available in all <MadCap:variable name="Primary.IPRO" /> applications.</p>
+        <h3>User Types</h3>
+        <p class="BodyText">Eclipse users can be identified by type, such as “Billable” 
+ and “Non-billable.” You can create any user types needed to track activities 
+ at your company. </p>
+        <h3>Groups</h3>
+        <p class="BodyText">Users are combined into groups that are assigned to 
+ cases for review and management purposes. Permissions are assigned to 
+ groups in conjunction with case assignment, allowing secure case reviews 
+ and efficient case management. Each group can have up to 1,000 users. 
+ </p>
+        <p class="BodyText">Three default groups exist in Eclipse:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">SuperAdminGroup</span>: 
+	 This group is for administrators who govern all aspects of Eclipse 
+	 at their site. Members of this group can perform all actions for all 
+	 cases within Eclipse and Eclipse Administration, as well as all actions 
+	 in <MadCap:variable name="Primary.Name" />. Users in this group must be added in Eclipse.
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">MediaManager</span>: 
+	 Users in this group are equivalent to Eclipse Super Administrators, 
+	 plus they can access <MadCap:variable name="Primary.Name" /> and perform all <MadCap:variable name="Primary.Name" /> actions (Administration, 
+	 Media Management, and Self-Service).
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">MediaManagerSelfService</span>: 
+	 This group is intended for non-administrative users who will be uploading 
+	 files through Self-Service. Users in this group have access only to 
+	 the stand-alone <MadCap:variable name="Primary.Name" /> Self-Service page (unless the group is assigned 
+	 to one or more cases in Eclipse).
+            </p>
+            </li>
+        </ul>
+        <h2><a name="Permissions_"></a>Permissions</h2>
+        <p class="BodyText">Permissions govern activities in both Eclipse and Eclipse 
+ Administration; they are grouped basically as described in the following 
+ paragraphs.</p>
+        <h3>System Administration Permissions</h3>
+        <p class="BodyText">Members of the Super Admin group can perform all actions 
+ within Eclipse and Eclipse Administration. </p>
+        <p class="BodyText">Members of this group are the only users with access 
+ to the System Administration pane in Eclipse. Here, the security components 
+ listed can be managed. </p>
+        <p class="BodyText">The ability to perform certain Eclipse Administration 
+ functions are also limited to this group.</p>
+        <p class="Image">
+            <img src="../../../Graphics/Admin_Graphics/SysAdmin_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <h3>User Interface Permissions</h3>
+        <p class="BodyText">The following permissions govern access to various 
+ components in the Eclipse Web interface. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: To perform actions (for 
+		 example, open a batch or redact an image) in these components, 
+		 other permissions or settings may be required in either Eclipse 
+		 or Eclipse Administration. Details are presented later in this 
+		 topic.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText" style="font-size: 11.0pt;font-family: Verdana, sans-serif;"><span><MadCap:toggler targets="t1">User 
+ Interface Permissions</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Permission</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Allows users to...</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Case Details</p>
+                            <ul style="list-style: square;" class="BulletListBody">
+                                <li>
+                                    <p class="TableText">
+                                Batch Review Status
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Case Documents
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Case Alerts
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Case Instructions
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>View components of the <b>Case 
+			 Details Dashboard</b>.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Documents</p>
+                            <ul style="list-style: square;" class="BulletListBody">
+                                <li>
+                                    <p class="TableText">
+                                Native Viewer
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Image Viewer
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Production Viewer
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Extracted Text
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Transcript Viewer
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Timeline
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>View tabs in the <b>Document 
+			 Details</b> pane. Also, view and use the timeline to filter 
+			 the document set by a date range.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span>Batches</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>View the <b>Batching</b> tab.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span>Advanced 
+			 Search</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>View the <b>Advanced Search</b> 
+			 tab.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span>Analytics</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>Access the <b>Analytics</b> 
+			 tab and view clusters or categories (if configured).</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span>Reports</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>View the <b>Reports</b> tab 
+			 and run/view specific reports.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText"><span>Case 
+			 Administration</span>
+                            </p>
+                            <ul style="list-style: square;" class="BulletListBody">
+                                <li>
+                                    <p class="TableText">
+                                Case Administration
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Case Details
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Case Permissions
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Coding Forms
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText"><![CDATA[
+                                ]]><MadCap:variable name="Primary.Name" /> Imaging
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Export Sets
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Production
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Index Management
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Keyword Management
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Permission Templates
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Persistent Highlighting
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Pick Lists
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Production Shield
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Redaction Categories
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Relationships
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Review Pass Management
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Tag Palette
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                TAR Project Setup
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText"><span>Manage case functionality and 
+			 review features in <MadCap:variable name="Primary.IPRO" /> Eclipse (web environment).</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>Security permissions</h3>
+        <p class="BodyText">These permissions govern user actions in Eclipse. Rights 
+ and options are assigned to groups; users in the group will have the ability 
+ to perform associated tasks in the cases to which the group is assigned. 
+ </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t2">Security 
+ Permissions</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t2">
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Permission</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Allows users to...</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Documents</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Edit</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Options:</p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText">Print</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Create 
+			 Tiff on the Fly</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Delete 
+			 Image</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Launch 
+			 Native Files</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Modify 
+			 Grid Display</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Quick 
+			 Search</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Add 
+			 New Pick List Items</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View and/or edit records.</p>
+                            <p class="TableText">The Edit right allows editing in Record 
+			 View.</p>
+                            <p class="TableText">Options govern the document-specific actions 
+			 listed; other permissions may also be required (such as right 
+			 to view the <span style="font-weight: bold;">Image</span> 
+			 tab).</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Tag Palette</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Edit, Create</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Option: 
+			 Page Tags</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View the<span style="font-weight: bold;"> 
+			 Doc Tags</span> tab (including tags that have been applied 
+			 to documents), and edit or create tags (in <MadCap:variable name="Primary.IPRO" /> Eclipse Case 
+			 Administration or during document review).</p>
+                            <p class="TableText">Optionally, have access to the <span style="font-weight: bold;">Page 
+			 Tags</span> palette.</p>
+                            <p class="TableText"><span style="font-weight: bold;">Note</span>: 
+			 to apply/remove tags to/from documents, users must also have 
+			 the right to edit documents.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Annotations</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Edit, Create, Delete</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Option: 
+			 Modify/Delete other users’</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View, edit, create, or delete mark-ups, 
+			 sticky notes, embedded text, or highlighting. Optionally modify/delete 
+			 annotations made by other users.</p>
+                            <p class="TableText"><span style="font-weight: bold;">Note</span>: 
+			 to work with annotations, users must also have the right to 
+			 view the <span style="font-weight: bold;">Image</span> tab.</p>
+                            <p class="TableText">Users with the rights to view annotations 
+			 will have the option to print them if they have the Documents 
+			 Print permission.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Redactions</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Edit, Create, Delete</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Option: 
+			 Modify/Delete other users’</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View, edit, create, or delete redactions. 
+			 Optionally modify/delete redactions made by other users.</p>
+                            <p class="TableText"><span style="font-weight: bold;">Note</span>: 
+			 to work with redactions, users must also have the right to 
+			 view the <span style="font-weight: bold;">Image</span> tab.</p>
+                            <p class="TableText">Users without the right to view redactions 
+			 will see all document content if they have permission to view 
+			 Documents.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Saved Searches</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Edit, Create, Delete</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View and run<span class="FootnoteSuperscript">[1]</span>, 
+			 edit, create, or delete saved searches.<span>&#160;&#160;</span></p>
+                            <p class="TableText">Note: to work with saved searches, users 
+			 must also have the right to view <span style="font-weight: bold;">Documents</span> 
+			 and <span style="font-weight: bold;">Advanced Search</span>.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Shared Folders</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Modify</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View and/or modify a search folder that 
+			 is shared. Folders are shared based on a user’s group assignment.</p>
+                            <p class="TableText">See the Saved Searches note above.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Smart Folders</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Build, Edit, Create, Delete</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View, rebuild, edit, create, or delete 
+			 Smart Folders.</p>
+                            <p class="TableText">See the Saved Searches note above.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Expand Batch 
+			 List</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Rights: 
+			 View, Edit, Split, Delete</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">View, edit, split, or delete batches 
+			 in the <span style="font-weight: bold;">Batching</span> tab.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Build Categories</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Gives users the ability to build the 
+			 categorization index in Eclipse Analytics (on the web).</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <hr size="1" width="33%" align="left" />
+                <div id="ftn1">
+                    <p class="footnote"><span class="FootnoteSuperscript">[1]</span><span>The <b>View</b> permission allows 
+			 users to create/run advanced searches as well as view and 
+			 run public saved searches.</span>
+                    </p>
+                </div>
+            </div>
+            <p>&#160;</p>
+        </div>
+        <h3>Mass Actions</h3>
+        <p class="BodyText">Governs “global” actions (actions performed on multiple 
+ documents at one time).</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 600px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Permission</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Allows users to...</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Print</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Print 
+		 selected (multiple) documents at one time.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Edit</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Apply 
+		 a tag(s) to multiple documents at one time or change field content 
+		 for multiple documents at one time.</p>
+                        <p class="TableText"><span style="font-weight: bold;">Note</span>: 
+		 This permission is also required for tagging search results from 
+		 the <span style="font-weight: bold;">Doc</span> and/or <span style="font-weight: bold;">Page 
+		 Tags</span> tabs.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Export</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Export 
+		 data for selected documents to a .CSV or .DAT file.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Eclipse Administration Permissions</h3>
+        <p class="BodyText">Eclipse Admin App permissions give users access to 
+ the following functions in Eclipse Administration:</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 600px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Permission</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Allows users to...</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Case Management</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Create 
+		 or migrate cases and manage such case components as fields, reports, 
+		 and views. </p>
+                        <p class="TableText">Also governs ability to perform such actions 
+		 as transcript import and configuration, global replace, path validation, 
+		 and Eclipse Analytics management.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Export Case Data</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Export 
+		 data from Eclipse Administration. </p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Import Case Data</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Import 
+		 case data and documents. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Security_Beyond_User_and_Group_Permissions"></a>Security Beyond 
+ User and Group Permissions</h2>
+        <p class="BodyText">In addition to the permissions assigned in Eclipse 
+ System or Case Management, security is set in Eclipse Administration as 
+ follows: </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 550px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Item</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Alerts</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Individual 
+		 alert messages.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Batches</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Access 
+		 to batches of a case to which the user group is assigned.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Document Views</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Use 
+		 of different document views.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Fields</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Individual 
+		 fields can be secured (view-only, update, and/or denied) for cases 
+		 or user groups.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Reports</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Access 
+		 to individual reports.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject
+  Version="1"
+  xml:lang="en-us"
+  IncludePattern="*.*"
+  AutoExcludeNonTaggedFiles="false"
+  IncludeLinkedFiles="false"
+  DeleteStale="false"
+  DeleteUnreferenced="false"
+  AutoSync="false"
+  LastImport="2017-12-15T14:21:25.1365942-07:00">
+  <Files>
+    <Url
+      Source="file:///C:/ADD_Help_RH_to_Flare/FlareProj_Converted2/MediaManager/MediaManager.flprj"
+      AbsoluteSource="file:///C:/ADD_Help_RH_to_Flare/FlareProj_Converted2/MediaManager/MediaManager.flprj" />
+  </Files>
+  <ExcludedFiles>
+    <Url
+      Source="../../Content/Media_Manager/Recap_&amp;_Next_Steps.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Recap_&amp;_Next_Steps.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Process_Data_Locations.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Process_Data_Locations.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Monitor_Job_Status.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Monitor_Job_Status.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Media_Manager_FAQs.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Media_Manager_FAQs.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Manage_Existing_Media.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Manage_Existing_Media.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Delete_a_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Delete_a_Delivery.htm" />
+    <Url
+      Source="../../Content/Media_Manager/View_Location_Details.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/View_Location_Details.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Incoming_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Incoming_Delivery.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Get_Started_with_Media_Manager.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Get_Started_with_Media_Manager.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Work_with_Grids.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Work_with_Grids.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Understand_Object_Relationships.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Understand_Object_Relationships.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Add_Media_to_Your_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Add_Media_to_Your_Delivery.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Add_Existing_Media_to_a_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Add_Existing_Media_to_a_Delivery.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Add_New_Outgoing_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Add_New_Outgoing_Delivery.htm" />
+    <Url
+      Source="../ConditionTagSets/Primary.flcts"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Project/ConditionTagSets/Primary.flcts" />
+    <Url
+      Source="../../Content/Media_Manager/Modify_Delivery_Details.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Modify_Delivery_Details.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Create_New_Media.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Create_New_Media.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Copy_Data_to_Network.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Copy_Data_to_Network.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Requeue_a_Job.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Requeue_a_Job.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Log_Into_Media_Manager.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Log_Into_Media_Manager.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Add_New_Incoming_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Add_New_Incoming_Delivery.htm" />
+    <Url
+      Source="../TOCs/ADD_Help.fltoc"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Project/TOCs/ADD_Help.fltoc" />
+    <Url
+      Source="../../Content/Media_Manager/Media_Manager_Videos.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Media_Manager_Videos.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Outgoing_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Outgoing_Delivery.htm" />
+    <Url
+      Source="../../Content/Media_Manager/Use_the_Interface.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Use_the_Interface.htm" />
+    <Url
+      Source="../../Content/Media_Manager/View_Data_Location_Summary.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/View_Data_Location_Summary.htm" />
+    <Url
+      Source="../Glossaries/ADD_Help.flglo"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Project/Glossaries/ADD_Help.flglo" />
+    <Url
+      Source="../../Content/Media_Manager/Media_Manager.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/Media_Manager.htm" />
+    <Url
+      Source="../../Content/Media_Manager/What_s_New.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/What_s_New.htm" />
+    <Url
+      Source="../../Content/Media_Manager/MM_Main_Menu.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Content/Media_Manager/MM_Main_Menu.htm" />
+    <Url
+      Source="../VariableSets/Primary.flvar"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/ADD_Help/Project/VariableSets/Primary.flvar" />
+  </ExcludedFiles>
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../MediaManager/Content/ehlpdhtm.js"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/ehlpdhtm.js" />
+    <Url
+      Source="../../../MediaManager/Content/MediaManager.css"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/MediaManager.css" />
+    <Url
+      Source="../../../MediaManager/Content/Placeholder.cpz"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Placeholder.cpz" />
+    <Url
+      Source="../../../MediaManager/Content/Placeholder4.cpz"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Placeholder4.cpz" />
+    <Url
+      Source="../../../MediaManager/Content/Placeholder7.cpz"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Placeholder7.cpz" />
+    <Url
+      Source="../../../MediaManager/Content/TitilliumWeb-Regular.ttf"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/TitilliumWeb-Regular.ttf" />
+    <Url
+      Source="../../../MediaManager/Content/!ScreenLayout!/Ipro/usersettings.js"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/!ScreenLayout!/Ipro/usersettings.js" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Add.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Add.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/AddExistingMedia.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/AddExistingMedia.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/ADDHomePage_MM.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/ADDHomePage_MM.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/AddNewMedia.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/AddNewMedia.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/AddNewMedia_DeliveryTab.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/AddNewMedia_DeliveryTab.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/ADD_main_menu_MM.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/ADD_main_menu_MM.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/BrowseAttachment.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/BrowseAttachment.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Calendar.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Calendar.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Checkmark.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Checkmark.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/ClearFilter.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/ClearFilter.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/CopyDatatoNetwork.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/CopyDatatoNetwork.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/CreateMedia.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/CreateMedia.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/CreateProcessData.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/CreateProcessData.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/CreateProcessDataLoc.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/CreateProcessDataLoc.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/DataLocations.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/DataLocations.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/DataLocationsArrow.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/DataLocationsArrow.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/DataLocationsDetail.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/DataLocationsDetail.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Delete.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Delete.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/delivery.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/delivery.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/directory-submission-symbol.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/directory-submission-symbol.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/DownArrow.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/DownArrow.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/DragFiles.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/DragFiles.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Edit.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Edit.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/EditDelivery.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/EditDelivery.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/FAQ.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/FAQ.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/FilterList.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/FilterList.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/FindList.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/FindList.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/GreenCheckmark.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/GreenCheckmark.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/hard-disc (3).png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/hard-disc (3).png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/ImageActions.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/ImageActions.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Incoming.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Incoming.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/IncomingWorkflow.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/IncomingWorkflow.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/LogInADD.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/LogInADD.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/ManageImages.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/ManageImages.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/MMRelationships.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/MMRelationships.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/MM_Note.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/MM_Note.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/MM_Tip.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/MM_Tip.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/MM_Warning.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/MM_Warning.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/ModifyDelivery.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/ModifyDelivery.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Monitor.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Monitor.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/NavBar.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/NavBar.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/NewDeliveryForm.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/NewDeliveryForm.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Open.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Open.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Outgoing.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Outgoing.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/OutgoingWorkflow.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/OutgoingWorkflow.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/RequeueJob.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/RequeueJob.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/SmallVideo.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/SmallVideo.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Start.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Start.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/StartButton.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/StartButton.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Tabs.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Tabs.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Type.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Type.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/UpArrow.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/UpArrow.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Videos.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Videos.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/Video_Logo.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/Video_Logo.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/YellowArrow.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/YellowArrow.png" />
+    <Url
+      Source="../../../MediaManager/Content/Graphics/YellowArrowDown.png"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Graphics/YellowArrowDown.png" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Add_Existing_Media_to_a_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Add_Existing_Media_to_a_Delivery.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Add_Media_to_Your_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Add_Media_to_Your_Delivery.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Add_New_Incoming_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Add_New_Incoming_Delivery.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Add_New_Outgoing_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Add_New_Outgoing_Delivery.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Copy_Data_to_Network.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Copy_Data_to_Network.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Create_New_Media.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Create_New_Media.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Delete_a_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Delete_a_Delivery.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Get_Started_with_Media_Manager.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Get_Started_with_Media_Manager.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Incoming_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Incoming_Delivery.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Log_Into_Media_Manager.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Log_Into_Media_Manager.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Manage_Existing_Media.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Manage_Existing_Media.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Media_Manager.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Media_Manager.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Media_Manager_FAQs.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Media_Manager_FAQs.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Media_Manager_Videos.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Media_Manager_Videos.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/MM_Main_Menu.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/MM_Main_Menu.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Modify_Delivery_Details.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Modify_Delivery_Details.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Monitor_Job_Status.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Monitor_Job_Status.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Outgoing_Delivery.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Outgoing_Delivery.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Process_Data_Locations.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Process_Data_Locations.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Recap_&amp;_Next_Steps.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Recap_&amp;_Next_Steps.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Requeue_a_Job.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Requeue_a_Job.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Ship_Media.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Ship_Media.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Understand_Object_Relationships.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Understand_Object_Relationships.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Use_the_Interface.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Use_the_Interface.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/View_Data_Location_Summary.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/View_Data_Location_Summary.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/View_Location_Details.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/View_Location_Details.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/What_s_New.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/What_s_New.htm" />
+    <Url
+      Source="../../../MediaManager/Content/Media_Manager/Work_with_Grids.htm"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Content/Media_Manager/Work_with_Grids.htm" />
+    <Url
+      Source="../../../MediaManager/Project/Advanced/BSSCDefault.h"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Advanced/BSSCDefault.h" />
+    <Url
+      Source="../../../MediaManager/Project/Advanced/MediaManager.flali"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Advanced/MediaManager.flali" />
+    <Url
+      Source="../../../MediaManager/Project/Advanced/MediaManager.flbrs"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Advanced/MediaManager.flbrs" />
+    <Url
+      Source="../../../MediaManager/Project/Glossaries/MediaManager.flglo"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Glossaries/MediaManager.flglo" />
+    <Url
+      Source="../../../MediaManager/Project/TOCs/MediaManager.fltoc"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/TOCs/MediaManager.fltoc" />
+    <Url
+      Source="../../../MediaManager/Project/ConditionTagSets/Primary.flcts"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/ConditionTagSets/Primary.flcts" />
+    <Url
+      Source="../../../MediaManager/Project/Glossaries/ADD_Help.flglo"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Glossaries/ADD_Help.flglo" />
+    <Url
+      Source="../../../MediaManager/Project/Skins/Default.flskn"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Skins/Default.flskn" />
+    <Url
+      Source="../../../MediaManager/Project/Skins/HTML5 - Top Navigation.flskn"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Skins/HTML5 - Top Navigation.flskn" />
+    <Url
+      Source="../../../MediaManager/Project/Skins/HTML5 - Tripane.flskn"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Skins/HTML5 - Tripane.flskn" />
+    <Url
+      Source="../../../MediaManager/Project/Targets/HTML5.fltar"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Targets/HTML5.fltar" />
+    <Url
+      Source="../../../MediaManager/Project/TOCs/ADD_Help.fltoc"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/TOCs/ADD_Help.fltoc" />
+    <Url
+      Source="../../../MediaManager/Project/VariableSets/Primary.flvar"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/VariableSets/Primary.flvar" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles>
+    <Url
+      Source="../../../MediaManager/Project/ConditionTagSets/Primary.flcts"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/ConditionTagSets/Primary.flcts" />
+    <Url
+      Source="../../../MediaManager/Project/Glossaries/ADD_Help.flglo"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Glossaries/ADD_Help.flglo" />
+    <Url
+      Source="../../../MediaManager/Project/Skins/Default.flskn"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Skins/Default.flskn" />
+    <Url
+      Source="../../../MediaManager/Project/Skins/HTML5 - Top Navigation.flskn"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Skins/HTML5 - Top Navigation.flskn" />
+    <Url
+      Source="../../../MediaManager/Project/Skins/HTML5 - Tripane.flskn"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Skins/HTML5 - Tripane.flskn" />
+    <Url
+      Source="../../../MediaManager/Project/Targets/HTML5.fltar"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/Targets/HTML5.fltar" />
+    <Url
+      Source="../../../MediaManager/Project/TOCs/ADD_Help.fltoc"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/TOCs/ADD_Help.fltoc" />
+    <Url
+      Source="../../../MediaManager/Project/VariableSets/Primary.flvar"
+      AbsoluteSource="file:///C:/Users/jbadger/Documents/TFS/MediaManager/Project/VariableSets/Primary.flvar" />
+  </SkippedSourceFiles>
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/ehlpdhtm.js"
+      TimeStamp="11/3/2017 2:47:15 PM" />
+    <Url
+      Source="../../Content/MediaManager.css"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Placeholder.cpz"
+      TimeStamp="10/31/2017 10:30:38 AM" />
+    <Url
+      Source="../../Content/Placeholder4.cpz"
+      TimeStamp="10/31/2017 10:30:36 AM" />
+    <Url
+      Source="../../Content/Placeholder7.cpz"
+      TimeStamp="10/31/2017 10:30:36 AM" />
+    <Url
+      Source="../../Content/TitilliumWeb-Regular.ttf"
+      TimeStamp="10/31/2017 10:30:37 AM" />
+    <Url
+      Source="../../Content/!ScreenLayout!/Ipro/usersettings.js"
+      TimeStamp="10/31/2017 10:30:40 AM" />
+    <Url
+      Source="../../Content/Graphics/Add.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/AddExistingMedia.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/ADDHomePage_MM.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/AddNewMedia.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/AddNewMedia_DeliveryTab.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/ADD_main_menu_MM.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/BrowseAttachment.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/Calendar.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/Checkmark.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/ClearFilter.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/CopyDatatoNetwork.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/CreateMedia.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/CreateProcessData.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/CreateProcessDataLoc.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/DataLocations.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/DataLocationsArrow.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/DataLocationsDetail.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/Delete.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/delivery.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/directory-submission-symbol.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/DownArrow.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/DragFiles.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/Edit.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/EditDelivery.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/FAQ.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/FilterList.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/FindList.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/GreenCheckmark.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/hard-disc (3).png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/ImageActions.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/Incoming.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/IncomingWorkflow.png"
+      TimeStamp="10/31/2017 10:30:52 AM" />
+    <Url
+      Source="../../Content/Graphics/LogInADD.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/ManageImages.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/MMRelationships.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/MM_Note.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/MM_Tip.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/MM_Warning.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/ModifyDelivery.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Monitor.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/NavBar.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/NewDeliveryForm.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Open.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Outgoing.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/OutgoingWorkflow.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/RequeueJob.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/SmallVideo.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Start.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/StartButton.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Tabs.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Type.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/UpArrow.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Videos.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/Video_Logo.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/YellowArrow.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Graphics/YellowArrowDown.png"
+      TimeStamp="10/31/2017 10:30:53 AM" />
+    <Url
+      Source="../../Content/Media_Manager/Add_Existing_Media_to_a_Delivery.htm"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Add_Media_to_Your_Delivery.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Add_New_Incoming_Delivery.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Add_New_Outgoing_Delivery.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Copy_Data_to_Network.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Create_New_Media.htm"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Delete_a_Delivery.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Get_Started_with_Media_Manager.htm"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Incoming_Delivery.htm"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Log_Into_Media_Manager.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Manage_Existing_Media.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Media_Manager.htm"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Media_Manager_FAQs.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Media_Manager_Videos.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/MM_Main_Menu.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Modify_Delivery_Details.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Monitor_Job_Status.htm"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Outgoing_Delivery.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Process_Data_Locations.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Recap_&amp;_Next_Steps.htm"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Requeue_a_Job.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Ship_Media.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Understand_Object_Relationships.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Use_the_Interface.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/View_Data_Location_Summary.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/View_Location_Details.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/What_s_New.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../../Content/Media_Manager/Work_with_Grids.htm"
+      TimeStamp="12/15/2017 12:15:43 PM" />
+    <Url
+      Source="../Advanced/BSSCDefault.h"
+      TimeStamp="10/31/2017 10:30:34 AM" />
+    <Url
+      Source="../Advanced/MediaManager.flali"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../Advanced/MediaManager.flbrs"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../Glossaries/MediaManager.flglo"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../TOCs/MediaManager.fltoc"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../ConditionTagSets/Primary.flcts"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../Glossaries/ADD_Help.flglo"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../Skins/Default.flskn"
+      TimeStamp="8/5/2017 12:03:28 PM" />
+    <Url
+      Source="../Skins/HTML5 - Top Navigation.flskn"
+      TimeStamp="8/5/2017 12:03:26 PM" />
+    <Url
+      Source="../Skins/HTML5 - Tripane.flskn"
+      TimeStamp="8/5/2017 12:03:26 PM" />
+    <Url
+      Source="../Targets/HTML5.fltar"
+      TimeStamp="8/5/2017 12:03:26 PM" />
+    <Url
+      Source="../TOCs/ADD_Help.fltoc"
+      TimeStamp="12/15/2017 12:15:42 PM" />
+    <Url
+      Source="../VariableSets/Primary.flvar"
+      TimeStamp="8/5/2017 12:03:28 PM" />
+  </GeneratedFiles>
+</CatapultProject>

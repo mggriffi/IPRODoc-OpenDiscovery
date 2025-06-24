@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedList,Primary.Admin" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Single Sign On</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage ADD Settings" />Configure Single Sign-on (SSO)</h1>
+        <p class="BodyText">Administrators can configure <MadCap:variable name="Primary.Name First" /> to use an external identity provider for Single Sign-on (SSO).  If SSO has been configured, users are able to sign in to <MadCap:variable name="Primary.Name" /> through the third-party identity provider, rather than having to use <MadCap:variable name="Primary.IPRO" />-specific login credentials. This removes some of the burdens for users who have to remember multiple login credentials, as well as for administrators who have to manage user security across applications.  <MadCap:variable name="Primary.IPRO" /> supports any 3rd party identity provider that uses OpenID Connect. Popular providers include: </p>
+        <ul class="BulletListBody">
+            <li>Google</li>
+            <li>Microsoft</li>
+            <li>Okta</li>
+            <li>Ping</li>
+        </ul>
+        <h2>Identity Provider Diagram</h2>
+        <p>The external identity provider block diagram is as follows:</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/Federated Identity.png" class="Thumbnail" />
+        </p>
+        <p>This topic provides instructions on how to configure a new identity provider for SSO, as well as how to modify your configuration at a later date. For answers to common questions related to SSO, see <MadCap:xref href="SSO_MFA_FAQ.htm">FAQ: Single Sign-on and Multi-Factor Authentication</MadCap:xref>.</p>
+        <h2><a name="Add"></a>Add a New Identity Provider</h2>
+        <p class="BodyText">Administrators can configure SSO integration in the System Manager. Follow the instructions below  to set up the SSO integration:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: You can only set up one external identity provider per environment.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Security Settings">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Select the <b>Add New Provider</b> button to the right of Single Sign On.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/SSO_Add_New_Provider.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>In the window that displays, configure the  fields and select the needed options to set up the integration with the identity provider. For more information on the fields and options available, click <MadCap:toggler targets="SSO_options">here</MadCap:toggler>.</p>
+                <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css'); margin-left: 0; margin-right: auto;" cellspacing="0" MadCap:targetName="SSO_options">
+                    <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                            <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                                <p class="TableHead">Parameter Name</p>
+                            </th>
+                            <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                                <p class="TableHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Provider Name</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The name of the external provider (for display purposes only). This name appears on the Environment Settings page, once the provider has been configured.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Enable Provider</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">This option enables SSO integration with the provider. If turned off, users are not able to sign in to <MadCap:variable name="Primary.Name" /> by means of this external identity provider.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Default Identity Provider</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The Default Identity Provider option changes the login screen to automatically redirect to the external provider, preventing users from logging in using a local <MadCap:variable name="Primary.IPRO" /> Identity account.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Authority URI</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The URI to the external provider</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">OpenId Connect Flow</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The flow type (Authorization Code or Implicit)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Client ID</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The Client ID provided by the external provider</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Client Secret</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The Client Secret provided by the external provider</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Use PKCE</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">A Boolean flag to specify whether to use the Proof Key for Code Exchange standard when the OpenId Connect Flow is “Authorization Code” </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Login Screen Button Text</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The button text to appear on the login page. For example, if "Sign in with Microsoft" is used here, the login screen displays as such:</p>
+                                <p class="TableText">
+                                    <img src="../../Graphics/System_Graphics/SSO_Login_Screen.png" class="Thumbnail" />
+                                    <br />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Subject Claim Name</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The name of the claim in the external provider’s access token that contains the user’s login name or email address</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Authorization Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s authorization endpoint </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Login Redirect URI</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The URI the external provider will use to redirect the authentication responses to Identity Server</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Logout Redirect URI</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The URI the external provider will use to redirect logout requests</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Token Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s token endpoint </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">User Info Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s user info endpoint </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">End Session Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s end session endpoint</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>When you've finished defining the information for the new provider, select <b>Save</b>. The identity provider's information appears beneath the Single Sign On option on the Environment Settings Page.</li>
+            <li>
+                <p>Having configured your identity provider, you now have the ability to enable your users to log in with the new provider. There are two methods you can use to accomplish this:</p>
+                <ul class="BulletListBody">
+                    <li>To enable only certain users, see <MadCap:xref href="#Enable">Enable Select Users for SSO</MadCap:xref>.</li>
+                    <li>To enable all users, see <MadCap:xref href="#Enable2">Enable All Users for SSO</MadCap:xref>.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3><a name="Enable"></a>Enable Select Users for SSO</h3>
+        <p>If you would like only certain users to sign in with the external identity provider, you can enable them manually in the System Manager. Be advised that users enabled for SSO can no longer sign in with their <MadCap:variable name="Primary.IPRO" /> credentials. To enable individual users, follow the steps below:</p>
+        <ol>
+            <li>Ensure that an external identity provider has been configured in <MadCap:variable name="Primary.Name" />. See <MadCap:xref href="#Add">Add a New Identity Provider</MadCap:xref> for more information on this step.</li>
+            <li>
+                <p>Navigate to the Users tab in the System Manager. If the System Manager is not already open, you can open it by selecting the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. In the left pane of the System Manager, ensure the <b>Users</b> tab is selected.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Users.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>From the list of users, locate the one you would like to enable for SSO. Click on their name. The user profile opens on the right side of the screen.</li>
+            <li>
+                <p>Click the <b>Edit</b> icon <img src="../../Resources/Images/Icons/Edit_Icon.png" class="ReduceButtonSize" />. The user profile can now be modified.</p>
+            </li>
+            <li>Select the <b>Use External Identity Provider</b> slider. An orange slider means the option has been set.</li>
+            <li>Click <b>Save</b> in the top-right corner of the screen. Repeat these steps for any additional users that need to be enabled for SSO. </li>
+        </ol>
+        <h3><a name="Enable2"></a>Enable All Users for SSO</h3>
+        <p>If you would like all users in your system to sign in  with the external identity provider, you can bulk convert all users simultaneously. Be advised that users enabled for SSO can no longer sign in with their <MadCap:variable name="Primary.IPRO" /> credentials. Review the instructions below for steps on how to bulk convert your users:</p>
+        <ol>
+            <li>Ensure that an external identity provider has been configured in <MadCap:variable name="Primary.Name" />. See <MadCap:xref href="#Add">Add a New Identity Provider</MadCap:xref> for more information on this step.</li>
+            <li>
+                <p>Navigate to the Security Settings tab in the System Manager. From this page, select the <b>Migrate Users</b> button to the right of Single Sign On.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/SSO_Enabled_with_Migrate_Users.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The Migrate Users dialog displays. To bulk convert all users to the new provider, select the <b>External Identity Provider</b> option.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/SSO_Migrate_Users.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Convert</b>. A pop-up window appears listing the number of users successfully converted, as well as the number  who failed to convert. The names of any users who failed to convert, as well as the reason for why they could not be converted, are also listed in this window. </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: The main reason a user would fail to convert is if the account's username isn't an email address; in order to map users from an external provider, the username must match the username (email address) associated with the external provider. This error can be resolved by editing the user account so that the username is the associated email address. After this is resolved, the specifically affected account can be individually made an external account. For instructions on how to edit a user, see <MadCap:xref href="../Users and Groups/Modify_User_Details.htm">Modify User Details</MadCap:xref>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2>Modify the Configuration of an Identity Provider</h2>
+        <p>You can change the configuration of an external identity provider at any time. For instructions on how to accomplish this, follow the steps below:</p>
+        <ol>
+            <li>
+                <p>Click the <b>Settings </b>icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screeen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name" /> platform.</p>
+            </li>
+            <li MadCap:conditions="System_Nav.Security Settings">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Select the <img src="../../Graphics/System_Graphics/SSO_Provider_Icon.png" /> icon to the right of the identity provider's name.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/SSO_Expand_Provider.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>The configuration for the provider expands below the name. To edit the configuration, select <b>Edit Provider</b> at the bottom of the screen.</li>
+            <li>
+                <p>In the window that displays, modify any  fields as needed to properly configure the integration with the identity provider. For more information on the fields and options available, click <MadCap:toggler targets="Modify_SSO_options">here</MadCap:toggler>.</p>
+                <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css'); margin-left: 0; margin-right: auto;" cellspacing="0" MadCap:targetName="Modify_SSO_options">
+                    <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                            <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                                <p class="TableHead">Parameter Name</p>
+                            </th>
+                            <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                                <p class="TableHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Provider Name</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The name of the external provider (for display purposes only). This name appears on the Environment Settings page, once the provider has been configured.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Enable Provider</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">This option enables SSO integration with the provider. If turned off, users are not able to sign in to <MadCap:variable name="Primary.Name" /> by means of this external identity provider.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Default Identity Provider</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The Default Identity Provider option changes the login screen to automatically redirect to the external provider, preventing users from logging in using a local <MadCap:variable name="Primary.IPRO" /> Identity account.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Authority URI</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The URI to the external provider</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">OpenId Connect Flow</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The flow type (Authorization Code or Implicit)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Client ID</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The Client ID provided by the external provider</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Client Secret</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The Client Secret provided by the external provider</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Use PKCE</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">A Boolean flag to specify whether to use the Proof Key for Code Exchange standard when the OpenId Connect Flow is “Authorization Code” </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Login Screen Button Text</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The button text to appear on the login page. For example, if "Sign in with Microsoft" is used here, the login screen displays as such:</p>
+                                <p class="TableText">
+                                    <img src="../../Graphics/System_Graphics/SSO_Login_Screen.png" class="Thumbnail" />
+                                    <br />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Subject Claim Name</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The name of the claim in the external provider’s access token that contains the user’s login name or email address</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Authorization Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s authorization endpoint </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Login Redirect URI</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The URI the external provider will use to redirect the authentication responses to Identity Server</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Logout Redirect URI</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The URI the external provider will use to redirect logout requests</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">Token Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s token endpoint </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                                <p class="TableText">User Info Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s user info endpoint <MadCap:conditionalText MadCap:conditions="Primary.Blocked">(empty by default which means don’t use the user info endpoint)</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">End Session Endpoint</p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="TableText">The path for the external provider’s end session endpoint</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>When you've finished modifying the information for the identity provider, select <b>Save</b>. </li>
+        </ol>
+        <h2>Delete an Identity Provider</h2>
+        <p>If you would like to delete an identity provider, see the following instructions:</p>
+        <ol>
+            <li>
+                <p>Click the <b>Settings </b>icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screeen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name" /> platform.</p>
+            </li>
+            <li MadCap:conditions="System_Nav.Security Settings">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p> Select the <img src="../../Graphics/System_Graphics/SSO_Provider_Icon.png" /> icon to the right of the identity provider's name.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/SSO_Expand_Provider.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>The configuration for the provider expands below the name. To remove the provider from the system, select <b>Delete Provider</b> at the bottom of the screen.</li>
+            <li>A warning message displays, indicating that the provider will be permanently deleted. To proceed with the removal, select <b>Yes</b>.</li>
+        </ol>
+        <p>&#160;</p>
+        <p> <b style="font-style: italic;">Related Topics</b></p>
+        <p class="BodyText">
+            <MadCap:xref href="SSO_MFA_FAQ.htm">FAQ: Single Sign On and Two-Factor Authentication</MadCap:xref>
+        </p>
+    </body>
+</html>

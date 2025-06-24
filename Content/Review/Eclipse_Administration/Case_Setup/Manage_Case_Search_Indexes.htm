@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Case Search Indexes</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage Case Search Indexes" />Manage Case Search Indexes</h1>
+        <h2>About Case Indexes</h2>
+        <p class="BodyText">Eclipse includes a powerful text search capability 
+ using the dtSearch® search engine (from dtSearch Corp.). Eclipse administrators 
+ can configure and maintain the accuracy of this index using the procedures 
+ explained in this section. </p>
+        <p class="BodyText">Indexes themselves are initially created as part of 
+ the import process, unless the indexing step was skipped (for example, 
+ to save time). In addition, various changes require that the index be 
+ rebuilt, such as:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                Adding new fields to a case and importing data 
+	 into them.
+            </p>
+            </li>
+            <li>
+                <p>
+                Changing the indexing option for a field from 
+	 No to Yes.
+            </p>
+            </li>
+            <li>
+                <p>
+                Editing (changing the value of) fields that 
+	 have the indexing option set.
+            </p>
+            </li>
+            <li>
+                <p>
+                Replacing or adding text files.
+            </p>
+            </li>
+        </ul>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#Configure_a_Case_Index">Configure 
+	 a Case Index</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Build_Rebuild_an_Index">Build/Rebuild 
+	 an Index</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Monitoring_Index_Processing">Monitor 
+	 Index Processing</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Restart_an_Index_Job">Restart an 
+	 Index Job</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Configure_a_Case_Index"></a>
+            <MadCap:keyword term="Configure a Case Index" />Configure a Case Index</h2>
+        <p class="BodyText">To configure a case index:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>Open 
+ the case for which the index is being configured. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Case View</span> pane, click <span style="font-weight: bold;">Index Management</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Default 
+ dtSearch Index</span> and index information and options listed on the 
+ page and details provided in the next step.</p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/btn_pencil_Web.png" alt="" border="0" class="button_inline" />&#160;and 
+ make changes as needed. See the following steps for details on index options.</p>
+            </li>
+            <li>
+                <p>Complete this section as described in the following 
+ table.</p>
+            </li>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t1">Index Information</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t1">
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 600px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Option</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Index Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 name of the index – do not edit this name.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Index Path</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 full path and directory in which the index file is maintained 
+			 – do not edit this path in Eclipse.</p>
+                                <p class="TableText">To change the index path, use Eclipse 
+			 Administration. See<a href="Basic_Case_Changes_and_Actions.htm"> 
+			 Basic Case Changes and Actions</a> for details.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Auto Recognize 
+			 Date, Email, and Credit Cards</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">When 
+			 this option is selected, dates, email address, and credit-card 
+			 number recognition will be used instead of simple character 
+			 recognition for these items when users search for them.</p>
+                                <ul class="BulletListTable">
+                                    <li>
+                                        <p class="TableText"><span style="font-weight: bold;">Dates:</span> Looks for anything 
+			 that appears to be a date (common date formats, including 
+			 English-language months and month abbreviations). Examples 
+			 include 15 Feb 2013, 2-15-13, or 2013-02-15.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><span style="font-weight: bold;">Email:</span> Looks for valid email-address 
+			 patterns, such as jsmith@myco.com, regardless of alphabet 
+			 settings for the at sign (@), period (.), and any other punctuation 
+			 that is part of the email address.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><span style="font-weight: bold;">Credit card numbers:</span> Looks 
+			 for numeric sequences that match typical credit card numbers 
+			 from major credit card issuers, such as 1234-1234-1234-1234. 
+			 Dashes, spaces, or other punctuation within the credit card 
+			 number are ignored.</p>
+                                    </li>
+                                </ul>
+                                <p class="TableText"><span style="font-weight: bold;">NOTE</span>: 
+			 Index build time may be longer when this option is selected, 
+			 but search times will typically be faster for these types 
+			 of searches.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Number of 
+			 indexes</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Originally 
+			 defined during case creation, the number of index files can 
+			 be changed here if needed. Particularly for large and diverse 
+			 data collections, it can speed index and search processing 
+			 to define multiple index files.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <li>
+                <p>To automatically rebuild the dtSearch index 
+ so that changes are incorporated regularly, select the <span style="font-weight: bold;">Auto 
+ Indexing Enabled</span> option and one of the following intervals:</p>
+            </li>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t2">Auto Indexing 
+ Options</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t2">
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 600px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Option</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Occurs once 
+			 at (time)</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Rebuild 
+			 the index automatically (if case changes have occurred) once 
+			 a day at the specified time. For example, rebuild the index 
+			 every day at 10 p.m. Enter or click <img src="../../../Graphics/Admin_Graphics/Btn_Clock_Web.png" alt="" border="0" class="button_inline" /> 
+			 to enter/choose the time.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Occurs every... 
+			 Starting/Ending at (times)</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Rebuild 
+			 the index automatically (if case changes have occurred) at 
+			 the specified interval (from 1 to 23 hours) over the specified 
+			 time period. For example, rebuild the index every two hours 
+			 between 7 a.m. and 7 p.m. (i.e., when reviewers are at work). 
+			 </p>
+                                <p class="TableText">Enter the interval (or use the up/down 
+			 arrows to select) and enter the starting and ending times 
+			 or click <img src="../../../Graphics/Admin_Graphics/Btn_Clock_Web.png" alt="" style="border: none;" border="0" /> 
+			 to select them. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <li>
+                <p>Specify how different characters are classified. 
+ To use the default settings, click Load dtSearch Defaults above the Alphabet 
+ list. Modify the defaults as described in the following table or skip 
+ to step 8 if no modifications are needed. </p>
+            </li>
+            <p class="BodyTextIndent">If changes are made, ensure that each character 
+ appears in only one of the sections (for example, if you want an ampersand, 
+ &amp;, to be ignored, delete it in the [Spaces] section and add it to 
+ the [Ignore] section.)</p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Alphabet customization applies 
+		 only to characters in the Unicode range 33-127. The Unicode specification 
+		 governs other character properties. For details, see <a href="http://www.unicode.org/" target="_blank" style="font-size: 10pt;">www.unicode.org</a>.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t3">Alphabet File</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t3">
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 600px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Section</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">[Letters]</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Searchable 
+			 characters, including all alphabetic characters (upper and 
+			 lower case) and digits. All letters and digits should be classified 
+			 as letters (A-Z, a-z, and 0-9).</p>
+                                <p class="TableText">In the <span style="font-weight: bold;">Alphabet</span> 
+			 list, the four entries for each letter include the original 
+			 letter plus lower case, upper case, and unaccented forms of 
+			 the letter.</p>
+                                <p class="TableText">Four entries are required for each character.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">[Hyphen]</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The 
+			 hyphen character is considered as a searchable character, 
+			 a space, or is ignored (or all three) depending on the selected 
+			 <span style="font-weight: bold;">Hyphen Option</span> (see 
+			 step&#160;7).</p>
+                                <p class="TableText">Rarely, other characters might be entered 
+			 in this section for the same treatment. If you do so, make 
+			 sure they are removed from other sections (<span style="font-weight: bold;">Spaces</span> 
+			 or <span style="font-weight: bold;">Ignored</span>).</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">[Spaces]</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Characters 
+			 entered in this section are treated as plain spaces. For example, 
+			 if the period (.) is included in this section, M.D. would 
+			 be indexed as two separate words, M&#160;and&#160;D.</p>
+                                <p class="TableText">To make any character in this area searchable, 
+			 delete it from this area and add it to the <span style="font-weight: bold;">[Letters]</span> 
+			 section.</p>
+                                <p class="TableText">For example, if you want the plus character, 
+			 +, to be searchable (perhaps you need to find the company 
+			 name “Green+Smith”), you would remove it from the<span style="font-weight: bold;"> 
+			 [Spaces]</span> section and add it as follows in the <span style="font-weight: bold;">[Letters]</span> section as shown 
+			 here.</p>
+                                <p class="Image">
+                                    <img src="../../../Graphics/Admin_Graphics/dtSearch-AlphabetListEx.png" alt="" border="0" class="Thumbnail_Popup" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">[Ignored]</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Characters 
+			 entered in this section are ignored. For example, if the period 
+			 is ignored, the abbreviation M.D. would be indexed as a single 
+			 term, MD.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">[End]</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Additional 
+			 alphabet options; see the next step.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <li>
+                <p>Additional options are presented at the bottom 
+ of the Alphabet list. Except for hyphenation, it is recommended that you 
+ do not make changes in this section. CJK options relate to treatment of 
+ Chinese, Japanese, and Korean characters. </p>
+            </li>
+            <p class="BodyTextIndent">The following table explains possible hyphen 
+ options.</p>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t4">Alphabet [End] 
+ Options</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t4">
+                <table style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Hyphen Option</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">1</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Treat 
+			 hyphens as spaces. <span style="font-style: italic;">Even-tempered</span> 
+			 will be indexed as two words, <span style="font-style: italic;">even</span> 
+			 and <span style="font-style: italic;">tempered</span>.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">2</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Treat 
+			 hyphens as searchable characters. <span style="font-style: italic;">Even-tempered</span> 
+			 will be the indexed term.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">3</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Ignore 
+			 hyphens. <span style="font-style: italic;">Eventempered</span> 
+			 will be the indexed term. This is the default selection.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="text-align: center;">4</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Treat 
+			 hyphens as all three. This option is rarely beneficial, as 
+			 many extra words are indexed, often yielding excess and unexpected 
+			 search results. When this option is selected, each hyphenated 
+			 pair of words results in six words in the index.</p>
+                                <p class="TableText">The only advantage to option 4 might be 
+			 where both hyphenated and solid forms of several terms are 
+			 used and need to be found. For example, a search for <span style="font-style: italic;">email</span> would also include 
+			 e-mail in the results.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <li>
+                <p><span style="font-weight: bold;">Noise Words:</span> 
+ These are common words that are ignored during searches of your Eclipse 
+ database. To use the default noise words, click <span style="font-weight: bold;">Load 
+ dtSearch Defaults</span> above the <span style="font-weight: bold;">Noise 
+ Words</span> list. Add or remove words from this list as needed. </p>
+            </li>
+            <li>
+                <p>When finished, click <span style="font-weight: bold;">Save</span>. 
+ In response to the re-indexing message, click <span style="font-weight: bold;">Yes</span> 
+ to rebuild the index now or<span style="font-weight: bold;"> No</span> 
+ to do it later as described in the following procedure.</p>
+            </li>
+            <p class="BodyTextIndent">If you select , see <a href="#Monitoring_Index_Processing">Monitor 
+ Index Processing</a>. </p>
+        </ol>
+        <h2><a name="Build_Rebuild_an_Index"></a>
+            <MadCap:keyword term="Build/Rebuild an Index" />Build/Rebuild an Index</h2>
+        <p class="BodyText">Complete the following steps to build or rebuild the 
+ case index. Rebuilding is needed when the case changes (for example, if 
+ additional documents are imported into a case). </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Select 
+ an appropriate time to rebuild your indexes.</p>
+                    </li>
+                    <li>
+                        <p>Start 
+ Eclipse and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>Open 
+ the case for which relationships are being defined. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Case View</span> pane, click <span style="font-weight: bold;">Index Management</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>If users might be logged on, alert them that 
+ performance may be affected while you rebuild the indexes. (You may also 
+ require that users log off, depending on the size and complexity of your 
+ databases.)</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Default 
+ dtSearch Index</span>.</p>
+            </li>
+            <li>
+                <p>Click one of the following <span style="font-weight: bold;">Index 
+ Tools</span> buttons:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Full Build:</span> Rebuild the index for 
+ all documents in the case database. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Incremental Build:</span> Rebuild the index 
+ only for documents that have not yet been indexed.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Observe progress as described in <a href="#Monitoring_Index_Processing">Monitor 
+ Index Processing</a>.</p>
+            </li>
+            <li>
+                <p>If needed, after the index is built, alert 
+ users that index maintenance is completed.</p>
+            </li>
+        </ol>
+        <h2><a name="Monitoring_Index_Processing"></a>
+            <MadCap:keyword term="Monitor Index Processing" />Monitor Index Processing</h2>
+        <p class="BodyText">The following paragraphs explain the two types of indexing 
+ details that are provided in Eclipse when a case index is built or rebuilt. 
+ </p>
+        <h3>Case Management Index Details</h3>
+        <p class="BodyText">After completing Build/Rebuild an Index, view the Index 
+ Details and Index Build Status panes in the Case Management tab for index 
+ management as shown in the following figure. Click &#160;to ensure details 
+ are up to date. </p>
+        <h3><a name="Schedule_Manager"></a>Schedule Manager</h3>
+        <p class="BodyText">View the progress of index processing jobs in the Eclipse 
+ Schedule Manager as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the Eclipse button, <img src="../../../Graphics/Admin_Graphics/Btn_Eclipse-Web2.png" alt="" border="0" class="button_inline" />, 
+ and select <span style="font-weight: bold;">Administration</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the System Administration pane, click <span style="font-weight: bold;">Schedule Manager</span>. </p>
+            </li>
+            <li>
+                <p>Whenever viewing the <span style="font-weight: bold;">Schedule 
+ Manager</span> tab, click <span style="font-weight: bold;">Refresh</span> 
+ periodically in the Job Actions pane to ensure details are up to date; 
+ complete of the following steps as needed.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Review jobs 
+ and statuses:</span> review the list of active jobs in the left pane for 
+ an overview of all scheduler activity. Jobs are listed by case name; index 
+ jobs include the identifier such as “Index” or “Reindex.” </p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Btn_ArrowRight7_Web.png" alt="" border="0" class="button_inline" />&#160;next 
+ to a job name to see the individual tasks and statuses. Each index job 
+ includes a task (“child job”) for each index file comprising the case 
+ index. The jobs list includes color-coding to indicate job and task status:</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 50px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 300px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td colspan="2" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Status</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Job or Task Is...</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-White_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">On 
+		 Hold</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 is waiting to be placed in worker queue.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Blue_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">In 
+		 Queue</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 is waiting to begin.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Yellow_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">In 
+		 Progress</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 is being processed.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Green_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Complete</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 has successfully completed.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../Graphics/Admin_Graphics/SchedMgrStatus-Red_Web.gif" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Failed</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Job/task 
+		 has been stopped due to an error.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Find a job/specific 
+ details:</span> take any of the following actions to find a specific job 
+ or job details:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Refresh</span> in the Job Actions pane.</p>
+                    </li>
+                    <li>
+                        <p>Scroll 
+ vertically and/or horizontally in the jobs list. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the right border and drag to make it wider.</p>
+                    </li>
+                    <li>
+                        <p>Sort 
+ the list by clicking the sort button, <img src="../../../Graphics/Admin_Graphics/Btn_Sort-Web.png" alt="" border="0" class="button_inline" />, and choosing 
+ from the different options. Click a selected option again to reverse the 
+ sort order.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ find specific details in a long list, start typing any of the following 
+ items in the search box: the case or agent name, job type, part of the 
+ job’s scheduled or completion date, or job status. This is a plain text 
+ search that searches these items in order for all jobs (not tasks); the 
+ list is filtered as search matches are located. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">View job/task 
+ details:</span> expand a job and click a specific task to view details 
+ for the task; click <span style="font-weight: bold;">Refresh</span> periodically 
+ to ensure details are up to date. Note:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>When 
+ a job is in progress, details and errors for each task display in the 
+ Job Details pane when the task is selected. </p>
+                    </li>
+                    <li>
+                        <p>Completed 
+ jobs are routinely removed from the list.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ a job fails, it remains in the list. Its error log can be saved and the 
+ job can be restarted as described in the next procedure.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2><a name="Restart_an_Index_Job"></a>
+            <MadCap:keyword term="Restart an Index Job" />Restart an Index Job</h2>
+        <p class="BodyText">If an index job fails, take the following steps:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the Eclipse button, <img src="../../../Graphics/Admin_Graphics/Btn_Eclipse-Web2.png" alt="" border="0" class="button_inline" />, 
+ and select <span style="font-weight: bold;">Administration</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the System Administration pane, click <span style="font-weight: bold;">Schedule Manager</span>.</p>
+            </li>
+            <li>
+                <p>In the jobs list, expand the failed job and 
+ click the task that has failed.</p>
+            </li>
+            <li>
+                <p>Review data in the Job Details pane and/or 
+ save details to a separate text file by clicking <span style="font-weight: bold;">Save 
+ Log</span> and completing the Save As dialog box. </p>
+            </li>
+            <li>
+                <p>Analyze the log and assess other possible issues 
+ (such as system resource problems) to determine the cause of the failure.</p>
+            </li>
+            <li>
+                <p>Make needed corrections.</p>
+            </li>
+            <li>
+                <p>After corrections have been made:</p>
+                <ol>
+                    <li>
+                        <p>Return 
+ to the Schedule Manager.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the jobs list, locate and click the failed task.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Reset Job</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Monitor the job as described in the previous 
+ procedure. </p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

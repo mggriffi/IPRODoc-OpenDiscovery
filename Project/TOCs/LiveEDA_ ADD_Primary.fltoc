@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="LIVE EDA"
+    Link="/Content/LiveEDA/LiveEDA.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Overview_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Configure_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Create_Case_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Work_in_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Promote_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Review_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Edit_Case_LiveEDA.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/LiveEDA/Workflow_Getting_Started_With_LiveEDA_OpenDiscovery.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+</CatapultToc>

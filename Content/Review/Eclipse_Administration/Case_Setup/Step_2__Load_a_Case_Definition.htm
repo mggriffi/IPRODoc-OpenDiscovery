@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Step 2: Load a Case Definition</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Step 2\: Load a Case Definition" />Step 2: Load a Case Definition</h1>
+        <h2>About Case Definition Options</h2>
+        <p class="BodyText">The second step in creating a case in Eclipse is typically 
+ that of defining needed database fields. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" style="width: 334px;" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Each case can include a maximum of 
+		 500 fields.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">This step can be accomplished in one of four ways:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Option 1:</span> 
+	 Copy the definition of an existing case.
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Option 2:</span> 
+	 Use a case definition (.CSE) file.
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Option 3</span>: 
+	 Use a load file (typically a .CSV, .DAT, .DLF. or .TXT file).
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Option 4:</span> 
+	 Define all aspects of the case manually.
+            </p>
+            </li>
+        </ul>
+        <h2>Choosing the Correct Option</h2>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                For a new case being created in Eclipse, any 
+	 of these methods may be appropriate, depending on your circumstances. 
+            </p>
+            </li>
+            <li>
+                <p>
+                For a case created in eCapture and being enabled 
+	 in Eclipse, you will typically choose <span style="font-weight: bold;">Option 
+	 3</span> and select the load file created during the eCapture export 
+	 (optimally, a .DAT file) to ensure that the fields in Eclipse match 
+	 those created in eCapture. Refer to your eCapture case and documentation 
+	 for details on the fields in the case.
+            </p>
+            </li>
+        </ul>
+        <h2>Field Types</h2>
+        <p class="BodyText">Regardless of the method chosen, Eclipse includes the 
+ following system fields (even if they are not included or defined during 
+ case definition).</p>
+        <p class="BodyText" style="font-weight: bold;">Basic system fields:</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                    <p class="BodyText">BEGATTACH</p>
+                    <p class="BodyText">BEGDOC</p>
+                    <p class="BodyText">CUSTODIAN</p>
+                    <p class="BodyText">DOCUMENTDATE</p>
+                    <p class="BodyText">DOCKEY</p>
+                </td>
+                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                    <p class="BodyText">ENDATTACH</p>
+                    <p class="BodyText">ENDDOC </p>
+                    <p class="BodyText">EXTRACTEDTEXT</p>
+                    <p class="BodyText">EXTRACTEDTEXTSIZE</p>
+                    <p class="BodyText">MD5HASH</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText" style="font-weight: bold;">File-related fields:</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                    <p class="BodyText">HASIMAGE</p>
+                    <p class="BodyText">HASNATIVEFILE</p>
+                    <p class="BodyText">NATIVE</p>
+                    <p class="BodyText">NATIVEFILEEXTENSION</p>
+                </td>
+                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                    <p class="BodyText">NATIFEFILESIZE</p>
+                    <p class="BodyText">NATIVEFILETYPE</p>
+                    <p class="BodyText">NATIVEFILETYPEDESC</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText" style="font-weight: bold;"> <MadCap:variable name="Primary.Name" /> imaging fields:</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 275px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 275px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                    <p class="BodyText"><MadCap:variable name="Primary.Name" /> IMAGINGERRORS</p>
+                    <p class="BodyText"><MadCap:variable name="Primary.Name" />IMAGINGERRORFLAGS </p>
+                </td>
+                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                    <p class="BodyText"><MadCap:variable name="Primary.Name" />IMAGINGJOB</p>
+                    <p class="BodyText"><MadCap:variable name="Primary.Name" />IMAGINGSTATUS</p>
+                </td>
+            </tr>
+        </table>
+        <h4>
+            <MadCap:toggler targets="t1">Option 1: Copy 
+ from an existing case</MadCap:toggler>
+        </h4>
+        <div MadCap:targetName="t1">
+            <p class="BodyText">Select this option to use the case definition of 
+	 an existing case for your new case. The following case details will 
+	 be copied. All details can be modified for the new case if needed. 
+	 </p>
+            <ul style="list-style: square;" class="BulletListBody">
+                <li>
+                    <p>
+                    Database field names and types (system 
+		 field names can be changed)
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Tag palette
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Redaction palette
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Noise (stop) words
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Case options (tagging level, date/time 
+		 format options)
+                </p>
+                </li>
+            </ul>
+            <p class="BodyText">To copy from an existing case:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>After 
+	 completing <a href="Step_1__Set_Up_a_Case.htm">Step 1: Set Up a Case</a>, 
+	 click the <span style="font-weight: bold;">Step 2. Load Case Definition</span> 
+	 tab.</p>
+                </li>
+                <li>
+                    <p>Select <span style="font-weight: bold;">Option 
+	 1</span>.</p>
+                </li>
+                <li>
+                    <p>Select the needed managing client and case. 
+	 </p>
+                </li>
+                <li>
+                    <p>Review the copied case fields; take one 
+	 of the following actions:</p>
+                </li>
+                <li>
+                    <p>Continue with <a href="Step_3__Define_Database_Fields.htm">Step 
+	 3: Define Database Fields</a> to make changes to field definitions 
+	 or add/remove fields. </p>
+                </li>
+                <li>
+                    <p>If no changes are needed to fields or you 
+	 want to complete field definitions later, continue with <a href="Step_4__Select_Case_Options.htm">Step 
+	 4: Select Case Options</a>. </p>
+                </li>
+            </ol>
+        </div>
+        <h4>
+            <MadCap:toggler targets="t2">Option 2: Load 
+ from a case definition file</MadCap:toggler>
+        </h4>
+        <div MadCap:targetName="t2">
+            <p class="BodyText">Eclipse Administration allows you to create case 
+	 definition (.CSE) files, which can serve as “templates” for future 
+	 cases. Case definition files specify the following aspects of a case:</p>
+            <ul style="list-style: square;" class="BulletListBody">
+                <li>
+                    <p>
+                    Database field names and types
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Tag palette
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Redaction palette
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Noise (stop) words
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Coding forms
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Relationships
+                </p>
+                </li>
+                <li>
+                    <p>
+                    Case options
+                </p>
+                </li>
+            </ul>
+            <p class="BodyText">For details on creating case definition files, 
+	 see <a href="../Exports_Productions/Export_Case_Definition_File.htm">Export a Case Definition File</a>. </p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: To use this option, 
+			 the .CSE file must have been exported from <MadCap:variable name="Primary.IPRO" /> Eclipse 2013 
+			 or later. </p>
+                    </td>
+                </tr>
+            </table>
+            <p class="BodyText">To use a .CSE file as the basis for your new case, 
+	 complete the following steps: </p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>After completing <a href="Step_1__Set_Up_a_Case.htm">Step 
+	 1: Set Up a Case</a>, click the <span style="font-weight: bold;">Step 
+	 2. Load Case Definition</span> tab.</p>
+                </li>
+                <li>
+                    <p>Select <span style="font-weight: bold;">Option 
+	 2</span>.</p>
+                </li>
+                <li>
+                    <p>Click the <img src="../../../Graphics/Admin_Graphics/Btn_Folder.png" alt="" border="0" class="button_inline" />&#160;button 
+	 corresponding to <span style="font-weight: bold;">Option 2</span> 
+	 to navigate to the needed .CSE file. </p>
+                </li>
+                <li>
+                    <p>Select the file and click <span style="font-weight: bold;">Open</span>.</p>
+                </li>
+                <li>
+                    <p>In the Case Definition dialog box, review 
+	 the summary information, then select the type of case detail that 
+	 you want to copy into the new case:</p>
+                    <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col style="width: 350px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Select All</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">All 
+			 detail in the .CSE file will be used for the new case.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Database 
+			 Fields</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Field 
+			 names, types, and option settings</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Tag Palette</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Tag 
+			 groups and tags</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Redaction 
+			 Palette</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">All 
+			 aspects of each redaction category</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Noise Words</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Words 
+			 to be excluded from searching (stop words)</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Coding Forms</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">“Field 
+			 sets” defined for the <span style="font-weight: bold;">Record</span> 
+			 pane in Eclipse.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Relationships</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Related-document 
+			 details as defined in the .CSE file</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Options</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">Tagging 
+			 level, date/time format options.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="BodyText">&#160;</p>
+                    <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                        <col class="TableStyle-Note_Table-Column-Column1" />
+                        <col class="TableStyle-Note_Table-Column-Column2" />
+                        <tr class="TableStyle-Note_Table-Body-Body1">
+                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                <p style="text-align: center;">
+                                    <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                <p class="Note">Note: To use this option, 
+			 the .CSE file must have been exported from <MadCap:variable name="Primary.IPRO" /> Eclipse 2013 
+			 or later. </p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <p>When 
+	 selection is complete, click <span style="font-weight: bold;">OK</span>.</p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p>Continue 
+	 with <a href="Step_3__Define_Database_Fields.htm">Step 3: Define Database 
+	 Fields</a> to make changes to field definitions or add/remove fields. 
+	 </p>
+                        </li>
+                        <li>
+                            <p>If 
+	 no changes are needed to fields or you want to complete field definitions 
+	 later, continue with <a href="Step_4__Select_Case_Options.htm">Step 
+	 4: Selecting Case Options</a>.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <h4>
+            <MadCap:toggler targets="t3">Option 3: Load 
+ from a data load file</MadCap:toggler>
+        </h4>
+        <div MadCap:targetName="t3">
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: To migrate an entire 
+			 case directly from Concordance, see <a href="Migrate_Cases_from_a_Third-Party_Database.htm">Migrate 
+			 Cases from a Third-Party Database</a>.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="BodyText">If you have any of the following types of data 
+	 load file, use it to define the database fields of the case you are 
+	 creating: </p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 450px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Load File</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">.CSV[1]</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>A delimited ASCII text file 
+			 typically with a delimiter format of quote-comma-quote or 
+			 commas.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span>DAT</span>[1]</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>A delimited ASCII text file 
+			 containing field data and metadata exported from <MadCap:variable name="Primary.IPRO" /> eCapture, 
+			 LexisNexis Concordance, or other product that can create such 
+			 a file.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span>DLF</span>[1]</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>A type of <MadCap:variable name="Primary.IPRO" /> load-file 
+			 format for the legal industry. It is an .XML file created 
+			 when a case or data is exported from <MadCap:variable name="Primary.IPRO" /> Eclipse (or other 
+			 sources). A .DLF file can include most case characteristics.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span style="font-weight: normal;">.DII</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>A Summation Document Image Information 
+			 load file. An ASCII text file formatted using a non-delimited, 
+			 multiple line format.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span>TXT</span>[1]</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span>Plain text file (such as one 
+			 saved from Concordance, Microsoft Excel, or another database 
+			 system).</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span style="font-weight: normal;">.LFP</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span><MadCap:variable name="Primary.IPRO" /> Tech load file for image 
+			 data. </span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText"><span style="font-weight: normal;">.OPT</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText"><span>Opticon load file for image 
+			 data.</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="ftn111">
+                <p class="TableText">&#160;</p>
+                <p class="footnote">[1]For these load files, the field type for 
+		 all fields defaults to FixedLengthText.</p>
+            </div>
+            <p class="BodyText">&#160;</p>
+            <p class="BodyText" style="font-weight: bold;">Procedure</p>
+            <p class="BodyText">To use one of the listed data load files to define 
+	 the fields for your new case:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>After 
+	 completing <a href="Step_1__Set_Up_a_Case.htm">Step 1: Set Up a Case</a>, 
+	 click the <span style="font-weight: bold;">Step 2. Load Case Definition</span> 
+	 tab.</p>
+                </li>
+                <li>
+                    <p>Select <span style="font-weight: bold;">Option 
+	 3</span>.</p>
+                </li>
+                <li>
+                    <p>Click the corresponding <img src="../../../Graphics/Admin_Graphics/Btn_Folder.png" alt="" border="0" class="button_inline" /> 
+	 button and navigate to the needed file. </p>
+                </li>
+                <li>
+                    <p>Select the load file and click <span style="font-weight: bold;">Open</span>.</p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Delimiters</span>: 
+	 If you are using a DLF or DII file, skip to step 6. Otherwise, check 
+	 the default delimiters and change if needed.</p>
+                    <p class="BodyText">Default delimiters are 
+	 comma (,) and quotation mark (") for Field and Quote, respectively. 
+	 If these delimiters are used in your data load file, skip to step 
+	 6. If other delimiters are used, select them as follows. </p>
+                    <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                        <col class="TableStyle-Note_Table-Column-Column1" />
+                        <col class="TableStyle-Note_Table-Column-Column2" />
+                        <tr class="TableStyle-Note_Table-Body-Body1">
+                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                <p style="text-align: center;">
+                                    <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                <p class="Note">Note: The Field delimiter 
+			 is the character that separates each field. For example, for 
+			 .CSV files, it is a comma; for Concordance .DAT files, it 
+			 is typically an ASCII 20 control character. The Quote delimiter 
+			 is optional. If used, it is the character that marks the beginning 
+			 and end of a field’s content. For .CSV files this is normally 
+			 a quotation mark. For Concordance .DAT files it is the ASCII 
+			 254 character. If the Quote delimiter is not applicable to 
+			 your data, any entry in this field is simply ignored. </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <ol>
+                        <li>
+                            <p>In 
+	 the <span style="font-weight: bold;">Field</span> list, select <span style="font-weight: bold;">Custom</span>. </p>
+                        </li>
+                        <li>
+                            <p>Click 
+	 the option for the type of entry you want to make (text characters 
+	 or ASCII character code).</p>
+                        </li>
+                        <li>
+                            <p>For 
+	 characters, enter the needed character in the top field of the <span style="font-weight: bold;">Characters</span> column. The ASCII value 
+	 appears beneath your entry.</p>
+                        </li>
+                        <li>
+                            <p>For 
+	 ASCII values, enter the needed value in the top field of the <span style="font-weight: bold;">Ascii Values</span> column. The character 
+	 appears beneath your entry.</p>
+                        </li>
+                        <li>
+                            <p>Click 
+	 <span style="font-weight: bold;">OK</span>.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Encoding</span>: 
+	 Select the character set to be used. Common encodings are available 
+	 for selection.</p>
+                </li>
+                <li>
+                    <p>Review the copied case fields; take one 
+	 of the following actions:</p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p>Continue 
+	 with <a href="Step_3__Define_Database_Fields.htm">Step 3: Define Database 
+	 Fields</a> to make changes to field definitions or add/remove fields. 
+	 </p>
+                        </li>
+                        <li>
+                            <p>If 
+	 no changes are needed to fields or you want to complete field definitions 
+	 later, continue with Step <a href="Step_4__Select_Case_Options.htm">4: 
+	 Select Case Options.</a></p>
+                            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                <col class="TableStyle-Note_Table-Column-Column1" />
+                                <col class="TableStyle-Note_Table-Column-Column2" />
+                                <tr class="TableStyle-Note_Table-Body-Body1">
+                                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                        <p style="text-align: center;">
+                                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                        <p class="Note">Note: As a minimum, ensure 
+			 that all system fields are mapped correctly. See Map System 
+			 Fields in <a href="Step_3__Define_Database_Fields.htm">Step 
+	 3: Define Database Fields</a>. </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <h4>
+            <MadCap:toggler targets="t4">Option 4: Use 
+ a blank template</MadCap:toggler>
+        </h4>
+        <div MadCap:targetName="t4">
+            <p class="BodyText">If you are starting “from scratch” and do not have 
+	 an existing case or file on which your case can be based, follow these 
+	 steps:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>After 
+	 completing <a href="Step_1__Set_Up_a_Case.htm">Step 1: Setting Up 
+	 a Case</a>, click the <span style="font-weight: bold;">Step 2. Load 
+	 Case Definition</span> tab.</p>
+                </li>
+                <li>
+                    <p>Select <span style="font-weight: bold;">Option 
+	 4</span>. </p>
+                </li>
+                <li>
+                    <p>Continue with <a href="Step_3__Define_Database_Fields.htm">Step 
+	 3: Define Database Fields</a>.</p>
+                </li>
+            </ol>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Next Steps: </span><a href="Step_3__Define_Database_Fields.htm">Step 
+ 3: Define Database Fields</a>
+        </p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

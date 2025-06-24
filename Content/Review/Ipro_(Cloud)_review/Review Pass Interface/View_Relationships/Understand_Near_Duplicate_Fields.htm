@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-template-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');" MadCap:conditions="Primary.Review">
+    <head><title>Understand  Near-Duplicate Fields </title>
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Understand Near-Duplicate Fields </h1>
+        <h2>Required Fields</h2>
+        <p class="BodyText">Fields used for near-duplicates analysis are listed 
+ in the following table. These fields can be created at the time you configure 
+ near-duplicates analytics.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 700px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;"> 
+		 field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;ND&#160;Family</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">An identifier that is used to define items in near-duplicate groups.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA ND&#160;Score</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The similarity of this item to the principal item of a near-duplicate group.</p>
+                        <p class="TableText">This value is expressed as a decimal percent in the range of [0-100].</p>
+                        <p class="TableText">The principal item of the group and any exact duplicates of it will always have a value of 100.</p>
+                        <p class="TableText">No item will have a value less than the Minimum Similarity setting (expressed as a percentage) used when near-duplicate detection was performed.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;ND Sort</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">A value for items that can be used to sort near-duplicates in a group so that the principal document is first and all other group members follow in order from the highest to the lowest similarity.</p>
+                        <p class="TableText">If multiple groups need to be sorted, the groups should first be sorted by their near dupe family value and then be sorted by this value.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">IA ND Words</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">The number of duplicative words in the document compared to the principal item on the near duplicate group.</p>
+                    </td>
+                </tr>
+            </tbody> </table>
+        <div MadCap:targetName="t1">
+            <p>&#160;</p>
+            <p><b style="font-style: italic;">Related Topics</b>
+            </p>
+            <p>
+                <MadCap:xref href="Work_with_Relationships.htm">Working with Relationships</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="../../Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Near_Duplicate_Not_Email_Thread_Search.htm">Create Near Duplicate Search Excluding Email Thread</MadCap:xref>
+            </p>
+        </div>
+    </body>
+</html>

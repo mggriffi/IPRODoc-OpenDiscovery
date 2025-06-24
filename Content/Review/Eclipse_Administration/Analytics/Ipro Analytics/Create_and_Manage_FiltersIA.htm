@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create and Manage Content Filters</title>
+        <link href="../../../../Resources/Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create and Manage Content Filters</h1>
+        <p class="BodyText">This topic describes how to create and manage Content Filters that are used to determine what information should not be included in the case. To learn more about Content Filters and Indexes, watch the Content Filters and Indexes video.</p>
+        <p><span class="BoldItalic"><img src="../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+        </p>
+        <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t1">Click 
+ here to watch the Content Filters and Indexes video</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://vimeo.com/273940466" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <h2><a name="Before"></a>Before You Begin</h2>
+        <ol>
+            <li>
+                <p class="BodyText">Make sure you understand your case data and which content should be filtered out from your analytics index (confidentiality notices, email signatures, etc).</p>
+            </li>
+            <li>
+                <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and log in as an <MadCap:variable name="Primary.IPRO" /> Eclipse administrator.</p>
+            </li>
+            <li>
+                <p class="BodyText">On the Case Management ribbon, select <b>IPRO Eclipse Analytics</b> &gt; <b>IPRO Analytics Content Filters</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Select the needed managing client and case.</p>
+            </li>
+        </ol>
+        <p class="BodyText">Continue with the procedures explained in this section.</p>
+        <h2>Create a New Content Filter</h2>
+        <p class="BodyText">To create a new Content Filter:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Click the <b>New Filter</b> button to open the Content Filter Text window.</p>
+            </li>
+            <li>
+                <p class="BodyText">Enter the content you would like to be filtered out of your case.</p>
+                <p class="BodyText">
+                    <img src="../../../../Graphics/Content_Filter_Text_2.gif" />
+                </p>
+            </li>
+            <li>
+                <p class="BodyText">Once the content has been entered and reviewed for accuracy, click <b>OK</b>.</p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" cellspacing="0" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: If the text entered matches an already existing filter, an error will notify you that the filter has already been created, and the new filter will not be added to the case.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p class="BodyText">Repeat these steps for any additional content you would like to be excluded from the case.</p>
+            </li>
+        </ol>
+        <h2>Manage Content Filters</h2>
+        <h3>Edit a Filter</h3>
+        <ol>
+            <li>
+                <p class="BodyText">Complete the steps described in <MadCap:xref href="#Before">"Before You Begin."</MadCap:xref></p>
+            </li>
+            <li>
+                <p class="BodyText">To edit a filter, click the  corresponding <img src="../../../../Graphics/Eclipse Web Images/btn_edit.gif" class="button_inline" /> to the filter you would like to change. This will open the Content Filter Text window.</p>
+            </li>
+            <li>
+                <p class="BodyText">Make any necessary changes to the text in the filter and click <b>OK</b>.</p>
+            </li>
+        </ol>
+        <h3>Delete Filters</h3>
+        <ol>
+            <li>
+                <p class="BodyText">Complete the steps described in <MadCap:xref href="#Before">"Before You Begin."</MadCap:xref></p>
+            </li>
+            <li>
+                <p class="BodyText">To delete a filter, click the <img src="../../../../Graphics/Admin_Graphics/Btn_DelBatch.png" class="button_inline" />  corresponding to the filter you would like to delete. This will open a dialogue box that confirms whether or not you “want to delete all filters.” This action is permanent, so double-check to make sure you have selected the correct filter before continuing. If you would like to proceed deleting the selected filter, click <b>OK</b>. If not, click <b>Cancel</b>.</p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" cellspacing="0" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: If you would like to delete <b>ALL</b> of the filters associated with a selected case, click the <b>Delete All Filters</b> button and follow the same instructions with the dialogue box as mentioned in Step 2.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

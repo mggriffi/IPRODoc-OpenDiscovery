@@ -1,0 +1,2429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.SampleTopics" style="mc-master-page: url('Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>WorkflowExport</title>
+        <link href="Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Set Up and Run Exports</h1>
+        <p><b>Applies To:</b> <i>Eclipse Administration and <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud System Administration</i></p>
+        <h2 MadCap:conditions="Primary.Print_Exclude">In this article</h2>
+        <p MadCap:conditions="Primary.Print_Exclude"><a href="#Prereqs">Review the Prerequisites</a>
+        </p>
+        <p MadCap:conditions="Primary.Print_Exclude">1. <a href="#CreateExpSets">Create Export Sets</a></p>
+        <p MadCap:conditions="Primary.Print_Exclude">2. <a href="#SelNumOptions">Select Numbering Options</a></p>
+        <p MadCap:conditions="Primary.Print_Exclude">3. <a href="#SelOutputOptions">Select Output Locations</a></p>
+        <p MadCap:conditions="Primary.Print_Exclude">4. <a href="#SelImageOptions">Select Image Options</a></p>
+        <p MadCap:conditions="Primary.Print_Exclude">5. <a href="#CompExpSet">Complete the Export Set</a></p>
+        <p>&#160;</p>
+        <p>This topic contains high-level procedures to help you set up and run <i><MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud Export Sets.</i>. </p>
+        <p>The basic information required for an export set includes name, environment, numbering types (basic, advanced, etc.), output (natives, images, text, etc.), and redactions/endorsement mappings. Once this information is configured for the export set, the document selection, validation, and export takes place.</p>
+        <p>See <a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Overview_Export_and_Production.htm">Understand Export and Production</a> to review the overall concepts for exports/productions..</p>
+        <p>The following illustration shows the basic <i>Export workflow </i>&#160;setup process. The numbers correspond to the procedures later in this topic.</p>
+        <p>&#160;</p>
+        <p>&lt;INSERT WORKFLOW IMAGE</p>
+        <p class="Note">&lt;This is just a sample image. I&#160;have blocked it from publication in builds. Where possible, we will leave these images at regular size. If we must, we'll put them in a thumbnail. I'm displaying this image, in particular, because I'd like us to follow a standard workflow design. It would be something similar to this design.&gt;</p>
+        <p class="Note">&#160;</p>
+        <p>
+            <img src="Graphics/workflow_sample.png" MadCap:conditions="Primary.SampleTopics" />
+        </p>
+        <p>&#160;</p>
+        <p>Basic steps for setting up and running <i>an Export Set&gt;</i> for the first time.</p>
+        <p>Setup tasks that are especially complex are not listed in this topic. Instead, they are included in the <i>&lt;Insert link to the advanced topic area &gt;</i> section. Review the advanced setup topics before you begin the basic <MadCap:annotation MadCap:createDate="2018-11-18T12:21:49.2880738-07:00" MadCap:creator="Despina" MadCap:initials="DR" MadCap:comment="This particular statement is not applicable in this case. But left it in so mgmt can see that is may apply in other cases." MadCap:editor="Despina" MadCap:editDate="2018-11-18T12:22:23.8905337-07:00">workflow.</MadCap:annotation></p>
+        <p>This topic describes functionality that is available only if the criteria is <MadCap:annotation MadCap:createDate="2018-11-14T10:31:29.7872195-07:00" MadCap:creator="jbadger" MadCap:initials="JB" MadCap:comment="Add this caveat if the workflow is only about tasks that take place when the product is configured a certain way" MadCap:editor="jbadger" MadCap:editDate="2018-11-14T10:32:15.7577545-07:00">met as described in <i>Preview the Prerequisites</i> below</MadCap:annotation></p>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="Graphics/tip_sysadm.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Tip: To make it easier to find the procedures you need, the procedures are collapsed. If you want to expand a procedure, click the triangle next to the procedure title to open and close the detailed <MadCap:annotation MadCap:createDate="2018-11-14T10:31:48.3417081-07:00" MadCap:creator="jbadger" MadCap:initials="JB" MadCap:comment="always include this instruction" MadCap:editor="jbadger" MadCap:editDate="2018-11-14T10:32:22.8238295-07:00">information.</MadCap:annotation></p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h2><a name="Prereqs"></a>
+            <MadCap:toggler targets="Prereqs">Review the Prerequisites</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Prereqs">
+            <p>The following table shows the prerequisites that must be in place before you start.</p>
+            <table style="width: 100%;mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 150px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 150px;" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Task</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Notes</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead">Links</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Verify Export Environment </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">All export and production jobs 
+			 are processed using <MadCap:variable name="Primary.IPRO" /> eCapture and <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud Workers. An export environment must be previously configured prior to exporting. The environments available 
+			 are based on the application environments previously defined in 
+			 <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud Case Management and/or Eclipse.</p>
+                            <p class="TableText">A specific environment may be set as the 
+			 system default. When this is done, the designated environment 
+			 will be selected by default. See additional notes following 
+			 this table.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="Review/Eclipse_Administration/First_Steps/System_Administration.htm">IPRO Eclipse System Administration</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Create a Saved Search</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Saved searches can be public, private, or they can 
+ be limited to certain user groups that have access to the case or review 
+ batch in which the search is created/saved. Search access is managed through 
+ folders.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">
+                                <MadCap:xref href="Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Saved_Searches.htm">Work with Saved Searches</MadCap:xref>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">(Optional) Set a Production Shield for a Saved Search</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">A production shield may be optional set for a saved search that defines documents that are not to be exported/produced. There is no need to configure the Production Shield in <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/About_the_Production_Shield.htm">About the Production Shield</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">&lt;configuration task&gt;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">&lt;information about the task they need to complete and why&gt;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">&lt;links to related topics&gt;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">&lt;configuration task&gt;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">&lt;information about the task they need to complete and why&gt;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">&lt;links to related topics&gt;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>&#160;</p>
+        <h2><a name="CreateExpSets"></a> <MadCap:toggler targets="Process1">1. Create Export Sets</MadCap:toggler></h2>
+        <div MadCap:targetName="Process1">
+            <p>Before you run an Export for the first time, ensure the export environments are configured in <i>Eclipse</i> and/or <i><MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud System Administration</i>,the required searches are saved containing the documents for export; and if necessary, set a production shield for the saved search that will exclude certain documents from exporting. After these tasks are completed, you can proceed with creating <i>Export Sets</i>.</p>
+            <p>&#160;</p>
+            <table cellspacing="0" width="95%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p>
+                            <img src="Graphics/Admin_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Important: Exports are permission based. If you do not have permissions to create exports, see your <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>.</p>
+            <p class="BodyText">Begin defining an export set with the following steps: 
+ </p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Start <b><MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud</b> and log in as an <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator.</p>
+                </li>
+                <li>
+                    <p>Choose <MadCap:variable name="Primary.ProdName_Review" /> from the <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud main menu. </p>
+                </li>
+                <li>
+                    <p class="BodyText">Select the <b>case card</b> for which the export (or production) 
+ job is to be run.</p>
+                </li>
+                <li>
+                    <p>Click <img src="Graphics/ECA_EnterCaseButton.png" /> to open the <MadCap:variable name="Primary.ProdName_Review" /> Case Administration page.</p>
+                </li>
+                <li>
+                    <p>Click <img src="Graphics/EXP_ExportPageIcon.png" /> to access the Export set up page.</p>
+                </li>
+                <li>
+                    <p>Click <img src="Graphics/EXP_PlusSignIcon.png" /> to create a new export.</p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Information</span>: 
+ Complete <b>basic export-set</b> information shown in the table below.</p>
+                </li>
+                <li>
+                    <p>Continue with the procedures explained in this 
+ topic.</p>
+                </li>
+            </ol>
+            <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Click 
+		 <img src="Graphics/Admin_Graphics/Btn_Expand_Web.png" alt="" border="0" class="button_inline" />&#160;or <img src="Graphics/Admin_Graphics/Btn_Collapse_Web.gif" alt="" border="0" class="button_inline" />&#160;to expand or collapse 
+		 each section. Save an export set definition at any time by clicking 
+		 Save at the bottom of the form. Continue work on an unfinished 
+		 definition by selecting it in the list of export sets and clicking 
+		 <img src="Graphics/Admin_Graphics/btn_pencil_Web.png" alt="" border="0" class="button_inline" />. </p>
+                    </td>
+                </tr>
+            </table>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t1">Basic Export 
+ Information</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t1">
+                <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');width: 100%;" class="TableStyle-ADD_Help_Tables">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 150px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Option</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Enter 
+			 a name for the set.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Date</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Enter 
+			 the date the export (or production) job is estimated to be 
+			 completed or delivered, or click<span>&#160;</span><img src="Graphics/Admin_Graphics/Btn_Calendar3.png" alt="" border="0" class="button_inline" />&#160;and select the date.</p>
+                                <p class="TableText">Use a date format of MM/DD/YYYY. A single 
+			 digit for month and/or day is acceptable.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Output 
+			 Location</p>
+                            </td>
+                            <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-right: 3px;padding-left: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Enter 
+			 the full path for exported files, or click <span style="font-weight: bold;">Browse</span> 
+			 and navigate to/select the needed folder.</p>
+                                <p class="TableText"><span style="font-weight: bold;">IMPORTANT</span>: 
+			 Make sure the following conditions are met:</p>
+                                <p class="TableText">The location is in UNC format (such as			\\server001\exports\smith-jones\).</p>
+                                <p class="TableText">The destination folder exists.</p>
+                                <p class="TableText">The path does not already have exported data in it.</p>
+                                <p class="TableText"><MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud has access to the location (for 
+			 example, it is in the same or a trusted domain).</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Export 
+			 Environment</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">All export and production jobs 
+			 are processed using <MadCap:variable name="Primary.IPRO" /> eCapture and <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud Workers.</p>
+                                <p class="TableText">Click in the <span style="font-weight: bold;">Export 
+			 Environment</span> field and select the environment 
+			 for this export/production job. The environments available 
+			 are based on the application environments defined in <MadCap:variable name="Primary.IPRO" /> 
+			 eDiscovery Cloud Case Management and/or <MadCap:variable name="Primary.IPRO" /> Eclipse.</p>
+                                <p class="TableText">A specific environment may be set as the 
+			 system default, When this is done, the designated environment 
+			 will be selected by default. See additional notes following 
+			 this table.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Notes</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Optional: 
+			 Enter additional information about this export set.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <h3>Export Environment Notes</h3>
+            <p class="BodyText">Members of the Super Admin group can set a default 
+ export environment by clicking <span style="font-weight: bold;">Set System 
+ Default</span> as shown in the following figure. This is appropriate if 
+ a single environment should be used for most export and production jobs. 
+</p>
+            <p class="BodyText">In the following figure, the “eCap-1” environment has 
+ already been designated as the <span style="font-weight: bold;">System 
+ Default</span> (all users will see this designation), and a Super Administrator 
+ is preparing to select the “eCap-2” environment to be the default. The 
+ <span style="font-weight: bold;">Set System Default</span> command appears 
+ when an environment is highlighted. </p>
+            <p class="BodyText">
+                <img src="Graphics/EXP_ExportEnvirDropDown.png" class="Thumbnail_Popup" />
+            </p>
+            <p>&#160;</p>
+            <h2>Additional Export Set Functions</h2>
+            <h3>Search for an Export Set</h3>
+            <p>To search for the desired export, enter the beginning characters of the export set name in the Search field. .</p>
+            <p>
+                <img src="Graphics/EXP_ExportSearchField.png" />
+            </p>
+            <p class="BodyText">The export set to sets that match the enter characters display. To return the entire list of export sets, clear the search field.</p>
+            <h3>Sort the Export Set List</h3>
+            <p class="BodyText">To sort the export set list, do the following:</p>
+            <p class="BodyText">Click <img src="Graphics/EXP_SortExportListIcon.png" /> located next to the Search field and select a <b>sort option</b>: Name (default), Created Date, Created By, Modified Date, or Modified By. </p>
+            <h3>Edit an Existing Export Set</h3>
+            <p>To edit an existing export set, do the following:</p>
+            <ol>
+                <li>Select the <b>export</b>.</li>
+                <li>Click <img src="Graphics/EXP_EditExportSetPencilIcon.png" />.</li>
+                <li><b>Edit</b> the fields.</li>
+                <li>Click <img src="Graphics/EXP_SaveButton.png" /> when finished.</li>
+            </ol>
+            <h3>Copy an Existing Export Set</h3>
+            <p>To copy an existing export set, do the following:</p>
+            <ol>
+                <li>Select the <b>export</b>.</li>
+                <li>Click <img src="Graphics/ADD_Review_Graphics/AR_Btn_ExportCopyIcon2.png" />. The export sets page displays the contents of the copied export set.</li>
+                <li><b>Edit</b> the fields as needed.</li>
+                <li>Click <img src="Graphics/EXP_SaveButton.png" /> when finished.</li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <h2>
+            <MadCap:toggler targets="Process2">2. <a name="SelNumOptions"></a>Select Numbering Options </MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process2">
+            <p class="BodyText">This area of the form allows you to define the way 
+ in which you want exported documents numbered. </p>
+            <p class="BodyText">To select numbering options: </p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>In the export set form, click Numbering Options 
+ if this area of the form is not visible. </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: normal;">Complete 
+ this section as described in the following table.</span>
+                    </p>
+                </li>
+                <p class="BodyTextIndent" style="font-weight: normal;">
+                    <MadCap:toggler targets="t1">Bates Numbering</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t1">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Continue 
+			 Previous Numbering</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Criteria 
+			 for use</p>
+                                    <p class="TableText">If the following conditions are true, 
+			 complete the following procedure.</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText">Multiple 
+			 export sets comprise a single export job and you want continuous 
+			 numbering for the entire job.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">You 
+			 are creating new numbers, not using original document numbers.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">The 
+			 export set being configured is not the first set in the complete 
+			 job and a previous export set has been completed.</p>
+                                        </li>
+                                    </ul>
+                                    <p class="TableText" style="font-weight: bold;">Procedure</p>
+                                    <ol class="NumbListTable" style="list-style-type: lower-alpha;">
+                                        <li>
+                                            <p class="TableText">Click 
+			 <span style="font-weight: bold;">Continue Previous Numbering</span>.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">In 
+			 the resulting dialog, select the export set that numbering 
+			 should follow and click <span style="font-weight: bold;">OK</span>.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Skip 
+			 to skip to step&#160;3.</p>
+                                        </li>
+                                    </ol>
+                                    <table style="margin-bottom: 10px;mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" class="TableStyle-ADD_Help_Tables">
+                                        <col style="width: 5.464%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p style="text-align: center;">
+                                                    <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="Note">Choosing to 
+					 continue previous numbering and then creating a new 
+					 numbering scheme negates the <span style="font-weight: bold;">Continue 
+					 Previous Numbering</span> setting.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Document 
+			 Numbering</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the needed option:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Create new numbers</span>: Re-number 
+			 pages/documents using the remaining options in this section 
+			 of the form.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Use image priority</span>: Select 
+			 one or more document sets from which documents will be selected. 
+			 See the following paragraphs.</p>
+                                        </li>
+                                    </ul>
+                                    <p class="TableText" style="font-weight: bold;">Image priority 
+			 details</p>
+                                    <p class="TableText">Basic information:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText">Document 
+			 sets include original images and production sets that have 
+			 previously been created.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Each 
+			 document will be numbered as it was in the set from which 
+			 it is taken.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">In 
+			 addition to selecting the document sets, use the Up and Down 
+			 buttons to organize the sets. The following figure shows an 
+			 example in which multiple document sets have been selected 
+			 and organized.</p>
+                                        </li>
+                                    </ul>
+                                    <p class="TableText">When multiple sets are selected, documents 
+			 will be chosen as follows:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><MadCap:variable name="Primary.ProdName_Review" />
+			 looks first in the image set at the top of the list; if the 
+			 image is found, it will be produced.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">If 
+			 the image is not found in the first set, <MadCap:variable name="Primary.ProdName_Review" /> checks the 
+			 second set; if the image is found, that is the version that 
+			 will be produced.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">If 
+			 the image is not found in the first/second sets, <MadCap:variable name="Primary.ProdName_Review" /> continues 
+			 to check remaining image sets in the Selected list, from top 
+			 to bottom.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">As 
+			 soon as it finds the image, that is the version that will 
+			 be produced.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">If 
+			 no image is found in any set, a conflict will be noted during 
+			 validation as described in Export/Production Troubleshooting.</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Type</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">If 
+			 you are creating document numbers for the export set, select 
+			 a numbering scheme:</p>
+                                    <p class="TableText"><span style="font-weight: bold;">Basic</span>: 
+			 Includes text prefix, delimiter, starting page, and page number 
+			 width options. Each page will be numbered as a separate document.</p>
+                                    <p class="TableText"><span style="font-weight: bold;">Advanced</span>: 
+			 Includes basic options plus the ability to define document 
+			 numbering in addition to page numbering. Each page will be 
+			 numbered using document and page identification.</p>
+                                    <p class="TableText"><b>3 level rollover numbering</b>: Includes prefix, starting parent, parent width, document delimiter, starting document, document width, page delimiter, starting page, and page width. This option applies for the Ringtail load file format and Output location.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText"><span style="font-weight: bold;">Basic 
+			 Options</span> - define for basic and advanced numbering.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Prefix</p>
+                                </td>
+                                <td rowspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText"><i>Optional</i>. 
+			 Enter a prefix and optionally select a delimiter for your 
+			 new numbering scheme.</p>
+                                    <p class="TableText">Prefix must be alphanumeric prefix (no 
+			 special characters).</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Prefix 
+			 Delimiter</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Starting 
+			 Page</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the starting page number (a whole number greater than zero).</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;font-style: normal;">Starting Parent</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Starting parent field has default value of 1. Enter a numeric value only.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;font-style: normal;">Parent Width</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText"> The default numeric value is 8. Use the spin controls to increase (maximum 9) or decrease (minimum 1) the numeric value or type a numeric value directly in the field. This value should be greater than or equal to the width of the starting parent number.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;font-style: normal;">Document Delimiter</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select a delimiter to be used between the Starting Folder and Starting Document. The default setting is None. </p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Page			 Width</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the number of digits to be used for page numbers (greater 
+			 than or equal to the size of the starting page number). Leading 
+			 zeros will be used as needed.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Example</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">This 
+			 example matches the numbering scheme you have defined. Review 
+			 it to make sure the scheme is correct.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText"><span style="font-weight: bold;">Advanced 
+			 Options</span> - select all of the above options, plus the 
+			 following.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Starting 
+			 Document</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 a starting document number. The default starting value is 1.</p>
+                                    <p class="TableText">Document number must be a whole number 
+			 greater than zero.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Document 
+			 Width</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the number of digits to be used for document numbers (greater 
+			 than or equal to the size of the starting page number). Leading 
+			 zeros will be used as needed.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Page 
+			 Delimiter</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">Select 
+			 a delimiter to be used between the document and page numbers. The default setting is None.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p>If the export set being defined is not for 
+ formal production, skip to step 5. For a production set, go to step 4.</p>
+                </li>
+                <li>
+                    <p>The selections in the following table require 
+ user-defined FixedLengthText fields that correspond to the data described 
+ for each field. In addition, security for these fields must allow updates 
+ by the <MadCap:variable name="Primary.ProdName_Review" /> user creating this production set. Data for the current 
+ production will overwrite data in the fields. </p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t2"><span style="font-weight: bold;">Production 
+ Numbering Fields</span>
+                    </MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t2">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Begin Bates</p>
+                                </td>
+                                <td rowspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Requires 
+			 fields for storing beginning- and/or ending-production numbers. 
+			 Select these fields.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">End Bates</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Begin Attachment 
+			 Bates</p>
+                                </td>
+                                <td rowspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Requires 
+			 fields for storing beginning- and/or ending-production numbers 
+			 for attachments. Select these fields.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">End Attachment 
+			 Bates</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Custom Text 
+			 Field</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">If 
+			 your case includes a field for storing production-related 
+			 notes, select the field in which the notes should be stored.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Custom Text</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">If 
+			 you select a custom text field, enter notes for the production 
+			 in this field.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: Production Numbering options 
+		 are visible to users only if they have the Production permission.</p>
+                        </td>
+                    </tr>
+                </table>
+                <li>
+                    <p>When all numbering options have been defined, 
+ either complete other procedures in this section or click <span style="font-weight: bold;">Save</span> 
+ to save the current definition. </p>
+                </li>
+                <li>
+                    <p>When the definition is complete, go to <MadCap:xref href="Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/AR_Complete_the_Export.htm">Complete the Export</MadCap:xref>.</p>
+                </li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Process3">3.<a name="SelOutputOptions"></a> Select Output Options </MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process3">
+            <p class="BodyText">This area of the form allows you to define the types 
+ of files that will be produced and how they will be organized in your 
+ export media.</p>
+            <p class="BodyText">To select output options: </p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>In the export-set form, click <span style="font-weight: bold;">Output 
+ Locations</span> if this area of the form is not visible; continue with 
+ the following steps.</p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Native</span>: 
+ To export native files, the files must exist in the case. Ensure they 
+ exist in the location(s) defined in the case before completing an export 
+ job. Complete the <span style="font-weight: bold;">Native</span> section 
+ of the export-set form as follows:</p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t1">Native 
+ Files Options</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t1">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Natives</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 this option to include native files in the export set.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Reference 
+			 Existing Location</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">If 
+			 you do not want to copy native files to an export location, 
+			 but instead want to reference the existing file location in 
+			 your exported load files, select this 
+			 option.</p>
+                                    <p class="TableText">When this option is selected, the existing 
+			 native file names will be maintained.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">File Naming</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">If 
+			 you did not select the <span style="font-weight: bold;">Reference 
+			 Existing Location</span> option, select a naming convention 
+			 for native files:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Use new number</span>: Name native 
+			 files based on selected document numbering. Example: ABC-0001.docx.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Append field or tag name</span>: 
+			 Name native files with the selected document number followed 
+			 by the value of a specific field or the name of a specific 
+			 tag group. After this option is selected, choose a delimiter 
+			 and the field/name from the lists that appear.</p>
+                                        </li>
+                                        <p class="TableText">Ineligible 
+			 characters will be omitted from the name and very long names 
+			 may be truncated.</p>
+                                        <p class="TableText">Example: ABC-0001_Confidential.docx</p>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Use field</span>: Name native files 
+			 with the value of a specific field (such as a field containing 
+			 the original file name). After this option is selected, choose 
+			 the needed field from the list that appears.</p>
+                                        </li>
+                                        <p class="TableText">Ineligible 
+			 characters will be omitted from names and very long names 
+			 may be truncated.</p>
+                                        <p class="TableText">Example: Distribution 
+			 Report.docx</p>
+                                    </ul>
+                                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                        <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                        <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                        <tr class="TableStyle-Note_Table-Body-Body1">
+                                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                                <p style="text-align: center;">
+                                                    <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                                <p class="Note">Note: If the selected 
+					 field contains the same value for different documents 
+					 and multiple documents with the same name end up in 
+					 the same output folder, then duplicate files will 
+					 be overwritten.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Exclude Native 
+			 if Redacted</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 this option to remove native files from the export set if 
+			 images have been redacted.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">View Specific 
+			 Natives</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">Click 
+			 this button to limit production of native files to specific 
+			 file types.</p>
+                                    <p class="TableText">After clicking this option, select file 
+			 types in the Specific Natives dialog and click 
+			 <span style="font-weight: bold;">OK</span>. You can choose 
+			 a category (such as <span style="font-weight: bold;">Database</span>) 
+			 and/or individual software products.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </div>
+                <li>
+                    <p><span style="font-weight: bold;">Image</span>: 
+ To produce image files (TIFF or PDF), the files must exist in the location 
+ specified in the case. If they do not exist, create them before 
+ completing a production job. Complete the Image section of the production-set 
+ form as described in the following table. </p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t2">Image 
+ Option</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t2">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Images</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 this option to include image files in the production set.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <th class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;text-align: left;">Reference 
+			 Existing Location</p>
+                                </th>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">If 
+			 you do not want to copy image files to an export location, 
+			 but instead want to reference the existing file location in 
+			 your exported load files, select this 
+			 option.</p>
+                                    <p class="TableText">When this option is selected, the existing 
+			 image file types will be maintained.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Image Type</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">If 
+			 you did not select the <span style="font-weight: bold;">Reference 
+			 Existing Location</span> option, select the way in which document 
+			 pages will be processed and the format to be used for image 
+			 files:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Single-page 
+				 image</span>: Each document page will be produced in a 
+				 single TIFF file. (Each page of a ten-page document will 
+				 be produced in a separate file.)</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Multi-page 
+				 image</span>: All document pages will be produced in a 
+				 single TIFF file. (Ten pages will be contained in one 
+				 file.)</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Single-page 
+				 PDF</span>: Each document page will be produced in a single 
+				 image PDF file that is PDF/A compliant. (Each page of 
+				 a ten-page document will be produced in a separate file.)</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Multi-page 
+				 PDF</span>: All document pages will be produced in a single 
+				 image PDF file that is PDF/A compliant. (Ten pages will 
+				 be contained in one file.)</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Searchable 
+				 single</span>- or <b>multi-page PDF</b>: Same as above, except 
+				 the PDFs will contain searchable text.</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Placeholder 
+			 Missing Images</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 this option to include a custom placeholder file for documents 
+			 with no associated images. The file will include the text 
+			 you enter in the <span style="font-weight: bold;">Placeholder 
+			 Text</span> field. Placeholder text is limited to 128 characters.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Placeholder 
+			 Text</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">This 
+			 option applies only to documents for which an image path is 
+			 not defined. Other problems—an incorrect file path, a file 
+			 missing in the specified location, server problems, etc.—are 
+			 considered as processing errors (not missing images). They 
+			 are indicated in the production by an “Error Processing Image” 
+			 placeholder.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </div>
+                <li>
+                    <p><span style="font-weight: bold;">Text</span>: 
+ To produce text files, the files must exist in the location specified 
+ in the case. Complete the <span style="font-weight: bold;">Text</span> 
+ section of the production-set form as described in the following table.</p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t3">Text 
+ File Options</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t3">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 36px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText"><b>Text Files</b>
+                                    </p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 this option to include text (OCR) files for all documents 
+			 in the production set. If documents have redactions, text 
+			 files will be produced, but redacted text will be omitted 
+			 based on the Burn Redactions option. </p>
+                                    <table cellspacing="0" width="98%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                        <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                        <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                        <tr class="TableStyle-Note_Table-Body-Body1">
+                                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                                <p style="text-align: center;">
+                                                    <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                                <p class="Note">Note: If using image 
+					 priority and including production images, documents 
+					 with redactions in selected production sets will be 
+					 re-OCR’ed to ensure redacted text is removed from 
+					 those documents.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="height: 46px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText"><b>File Type</b>
+                                    </p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the way in which document pages will be processed:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Document-level 
+				 text</span>: All document pages will be produced in a 
+				 single text file.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Page-level 
+				 text</span>: Each document page will be produced in a 
+				 single text file.</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr style="height: 66px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText"><b>Replace w/Placeholder Text</b>
+                                    </p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">If 
+			 you are exporting images and using a placeholder for missing 
+			 images, you can select this option to use the same placeholder 
+			 text for text files corresponding to missing images (whether 
+			 or not original text files are missing).</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p><span style="font-weight: bold;">Output Locations</span>: 
+ The following types of load file or location can be exported/produced.</p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p>Concordance 
+ .DAT</p>
+                        </li>
+                        <li>
+                            <p><MadCap:variable name="Primary.IPRO" /> 
+ LFP</p>
+                        </li>
+                        <li>
+                            <p>Opticon 
+.OPT</p>
+                        </li>
+                        <li><MadCap:variable name="Primary.IPRO" /> DLF</li>
+                        <li>
+                            <p>Custom
+ .TXT</p>
+                        </li>
+                        <li>
+                            <p>Text .LST</p>
+                        </li>
+                        <li>
+                            <p>Ringtail Database</p>
+                        </li>
+                    </ul>
+                </li>
+                <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: The <span style="font-weight: bold;">Ringtail Database</span> load file option applies only for the Document Numbering Type: 3 level rollover numbering..</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="BodyTextIndent">Complete the <span style="font-weight: bold;">Output 
+ Locations</span> section as described in the following table.</p>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t4">Output 
+ Location Options</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t4">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 46px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Load File 
+			 &amp; Output Locations</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">This 
+			 field will list the types of load files/locations chosen with 
+			 the <span style="font-weight: bold;">Select</span> button.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 366px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Select</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Click 
+			 this button to select the load file(s) to be exported. Available 
+			 load-file types (listed in the introduction to this table) 
+			 vary depending on the “primary” type of output selected (none, 
+			 native, image, and/or text files).</p>
+                                    <p class="TableText">Optional: If Custom is selected (for a 
+			 .TXT file), default delimiters are comma and quotation mark. 
+			 Select other delimiters if needed:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Field Delimiter</span>: 
+				 The character that separates each field.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Enclose Delimiter</span>: 
+				 The character that marks the beginning and end of a field’s 
+				 content.</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Select Fields &amp;
+			 Tags</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">This 
+			 field will list the fields and tag groups chosen with the 
+			 <span style="font-weight: bold;">Select Fields &amp; Tags</span> 
+			 button, in the order selected.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 535px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Select 
+			 Fields &amp; Tags</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Click 
+			 this button to select the fields and/or tag groups to be included 
+			 in selected load files. In the Field Selection dialog:</p>
+                                    <ol class="NumbListTable">
+                                        <li>
+                                            <p class="TableText">In 
+			 the left lists, locate a field(s) and/or tag(s) to be included 
+			 in the export.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Take 
+			 any of the following actions:</p>
+                                            <ul class="BulletListTable">
+                                                <li>
+                                                    <p class="TableText">To 
+			 select all fields and tags, click <img src="Graphics/Admin_Graphics/Btn_ArrowRight-Dbl2_Web.png" alt="" border="0" class="button_inline" />.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="TableText">To 
+			 select individual fields/tags, double-click each one in the 
+			 “Available” list.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="TableText">To 
+			 select multiple items, click a field/tag name, then Shift+click 
+			 or Ctrl+click additional items to choose a contiguous or non-contiguous 
+			 set, respectively. When all items have been selected, click 
+			 <img src="Graphics/Admin_Graphics/Btn_ArrowRight6_Web.png" alt="" border="0" class="button_inline" />.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">To 
+			 select the field order, click a field in the “Selected” column 
+			 and click <span style="font-weight: bold;">Up</span> or <span style="font-weight: bold;">Down</span> to move the field in 
+			 the list. Repeat for other fields until the order is as desired. 
+			 (Top-to-bottom in this list equates to left-to-right in the 
+			 load file.)</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">When 
+			 fields are defined as needed, click <span style="font-weight: bold;">OK</span>.</p>
+                                        </li>
+                                    </ol>
+                                    <p class="TableText">Production exports only:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText">In 
+			 addition to case-specific fields, fields for production-related 
+			 data will be available. These fields are included at the top 
+			 of the field list as in this example. The type of production 
+			 data available depends on the type of load file selected.</p>
+                                        </li>
+                                        <p class="TableText">For production 
+			 exports, the fields are also added to your case.</p>
+                                        <p class="TableText">These fields 
+			 are not typically selected for export jobs, but if selected, 
+			 they will be included in load files but not added to your 
+			 case.</p>
+                                        <li>
+                                            <p class="TableText">For 
+			 .DAT files, if [ProductionText] is selected, redacted text 
+			 will be omitted from the file based on the <span style="font-weight: bold;">Burn 
+			 Redactions</span> option. </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Encoding</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the character set to be used. Common encodings are available 
+			 for selection.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Date 
+			 Format</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the date format to be used. Common formats are available for 
+			 selection.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 297px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">File 
+			 Path</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the way in which file paths (exported image, native, and/or 
+			 text file paths, depending on which file types are being exported 
+			 and which load file is selected). Options include:</p>
+                                    <p class="TableText">Absolute: Include the complete export 
+			 path.</p>
+                                    <p class="TableText">Custom: Replace details preceding the 
+			 production volume name with a custom path. Enter the needed 
+			 path in the Custom Text field.</p>
+                                    <p class="TableText">Relative path: All path details preceding 
+			 the production volume name will be replaced with a backslash.</p>
+                                    <p class="TableText">Examples: If the actual path for an exported/produced 
+			 image is:</p>
+                                    <p class="TableText">\\server001\production\vol001\images\001\ABC0001.TIF</p>
+                                    <p class="TableText">For each option, the path in the load 
+			 file will be as follows:</p>
+                                    <p class="TableText">Absolute: Same as actual path.</p>
+                                    <p class="TableText">Custom: If user defines the custom path 
+			 to be E:\, then the path in the load files will be: E:\vol001\images\001\ABC0001.TIF</p>
+                                    <p class="TableText">Relative: The path will be: \vol001\images\001\ABC0001.TIF</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Custom 
+			 Text</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 custom file path as described above.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 28px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Export 
+			 Annotations</p>
+                                </td>
+                                <td rowspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">If 
+			 you selected .DLF and/or .LFP load files, then select the 
+			 <span style="font-weight: bold;">Export Annotations</span> 
+			 and/or <span style="font-weight: bold;">Export Redaction</span> 
+			 option to include annotation and/or redaction details in the 
+			 load file(s).</p>
+                                    <p class="TableText">Annotations include highlights, sticky 
+			 flags, embedded text, and/or markups.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 30px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Export 
+			 Redactions</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </div>
+                <li>
+                    <p><span style="font-weight: bold;">Ringtail Database
+ Settings</span>: If you did not select <span style="font-weight: bold;">Ringtail Database</span> in the previous step, skip to step 7. If you did 
+ make this selection, complete the following steps:</p>
+                    <ol>
+                        <li>
+                            <p><span style="color: #565656;">Under
+ the </span><span style="font-weight: bold;"><span style="color: #565656;">Ringtail Database</span></span><span style="color: #565656;"> option, select from the following fields.</span>
+                            </p>
+                            <div MadCap:targetName="t5">
+                                <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <thead>
+                                        <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">Option</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                                <p class="TableHead" style="text-align: center;">Description</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText" style="font-weight: bold;">Email Fields</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">These fields will auto populate with expected field names if they exist. Otherwise, select a field from each correspondence type:&#160;From, To, CC, and BCC. .Choose a Field Delimiter from the drop-down menu to separate the fields. The default delimiter is 059.</p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText" style="font-weight: bold;">	 Ringtail Title</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">These fields will auto populate with expected field names if they exist. Otherwise, select a field.</p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                                <p class="TableText" style="font-weight: bold;">Ringtail Date</p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                                <p class="TableText">These fields will auto populate with expected field names if they exist. Otherwise, select a field.</p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                                <p class="TableText"><b>Custom File Delimiters</b>
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                                <p class="TableText">Select a Field Delimiter (default value 044) to separate each field. Select an Enclose Delimiter (default value 034) to enclose the contents of the field.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Volume Information</span>: 
+ Complete this section to define an identifier for the root-level directory 
+ (top-level folder) for export results. Multiple volumes may be created, 
+ depending on the size of the production and maximum volume size defined. 
+ </p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t5">Volume 
+ Information</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t5">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Volume Prefix</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 a “base” volume name. By default, the prefix is VOL. If no 
+			 prefix is used, the volume will be identified by number.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Starting 
+			 Number</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the beginning number (1 or greater) for the set of volumes 
+			 that will be used for the current production.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Volume Number 
+			 Width</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the number of digits to be used in the volume number, from 
+			 1 - 9. The minimum recommended width is 3.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Max Size</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">Select 
+			 from a list of common media capacities or enter another maximum 
+			 size in megabytes. <span style="font-weight: bold;">No Limit</span> 
+			 can also be selected.</p>
+                                    <p class="TableText">When the maximum size is reached, a new 
+			 volume will be created.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p>The <span style="font-weight: bold;">Folder 
+ Information</span> section allows you to define the folders that will 
+ be used to organize files in volumes (or you can accept the default names). 
+ Complete this section as follows for the types of files being produced: 
+ </p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t6">Folder 
+ Information</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t6">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Image 
+			 Folder</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 a name for the folder in which produced image files will be 
+			 placed.</p>
+                                    <table cellspacing="0" width="98%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                        <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                        <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                        <tr class="TableStyle-Note_Table-Body-Body1">
+                                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                                <p style="text-align: center;">
+                                                    <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                                <p class="Note">Note: This setting 
+					 does not apply if you selected Reference Existing 
+					 Location for images in the Output Locations area.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Native 
+			 Folder</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 a name for the folder in which produced native files will 
+			 be placed.</p>
+                                    <table cellspacing="0" width="98%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                        <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                        <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                        <tr class="TableStyle-Note_Table-Body-Body1">
+                                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                                <p style="text-align: center;">
+                                                    <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                                <p class="Note">Note: This setting 
+					 does not apply if you selected Reference Existing 
+					 Location for native files in the Output Locations 
+					 area.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Text 
+			 Folder</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 a name for the folder in which produced text (OCR) files will 
+			 be placed.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Load 
+			 Files Folder</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 a name for the folder in which produced load files will be 
+			 placed.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Files 
+			 per Folder</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the total number of files to be allowed per folder. If this 
+			 number is exceeded, a new folder will be created. Folder numbers 
+			 are based on the <span style="font-weight: bold;">Starting 
+			 Folder</span> value.</p>
+                                    <p class="TableText"><b>Ringtail</b>: The default files per folder value is 99999999. This value reflects the default page width value of 8. Each time the page width value is changed, the files per folder value changes to reflect the new value. For example, if the page width value is set to 4, the files per folder value changes to 9999. The files per folder value may be modified if necessary. However, if the page width value changes subsequently, the files per folder value will change accordingly.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Starting 
+			 Number</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the beginning number (1 or greater) for the set of folders 
+			 that will be used for the current production. This number 
+			 will apply to each folder being used (<span style="font-weight: bold;">Image</span>, 
+			 <span style="font-weight: bold;">Native</span>, etc.)</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Folder 
+			 Number Width</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">Enter 
+			 the number of digits to be used in the folder number, from 
+			 1 - 9. The minimum recommended width is 3.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p>Review your volume/folder definition in the 
+ <span style="font-weight: bold;">Sample Directory Structure</span> area; 
+ make changes if needed. </p>
+                </li>
+                <li>
+                    <p>When all output options have been defined, 
+ either complete other procedures in this section or click <span style="font-weight: bold;">Save</span> 
+ to save the current definition.</p>
+                </li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Process4">4. <a name="SelImageOptions"></a> Select Image Options</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process4">
+            <p class="BodyText">Most endorsement options apply to both TIFF and PDF; 
+ those that are unique to one type or the other will be unavailable (dimmed).</p>
+            <p class="BodyText">To select image options: </p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>In the export-set form, click <span style="font-weight: bold;">Image 
+ Options</span> if this area of the form is not visible. </p>
+                </li>
+                <li>
+                    <p>Complete the <span style="font-weight: bold;">Redaction 
+ Options</span> section as described in the following table.</p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t1">Redaction Information</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t1">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Burn 
+			 Redactions</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 this option to include redactions in exported images.</p>
+                                    <p class="TableText">When a user selects this option (and selects 
+			 at least one redaction type to burn), selected redactions 
+			 will be burned on the exported images. If text files are included 
+			 in the output, the redacted text will not appear in the text 
+			 files, nor in a .DAT file (if selected) and user chooses to 
+			 include [Production Text] in the file.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Redaction 
+			 Options</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the way in which redactions will appear—basic black and white 
+			 options are available, or you can select <span style="font-weight: bold;">As 
+			 is</span><span style="font-weight: bold;">color</span> to 
+			 maintain the redaction colors as defined for the case.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Selected 
+			 Redactions</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">This 
+			 field will list the redactions chosen with the <span style="font-weight: bold;">Select 
+			 Redactions</span> button.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Select 
+			 Redactions</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">Click 
+			 this button to select the redactions to be included in produced 
+			 images.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p>Complete the <span style="font-weight: bold;">Endorsement 
+ Setting</span> section. For each endorsement to be included, make the 
+ selections listed in the following table. </p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t2">Endorsement 
+ Settings</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t2">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Option</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Endorsement 
+			 Type</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the type of information to be used for the endorsement:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Image key</span>: Document numbers 
+			 as defined under Numbering Options.</p>
+                                        </li>
+                                    </ul>
+                                    <table cellspacing="0" width="98%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                        <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                                        <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                                        <tr class="TableStyle-Note_Table-Body-Body1">
+                                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                                <p style="text-align: center;">
+                                                    <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                                <p class="Note">Note: If document 
+					 numbering is set to <span style="font-weight: bold;">Use 
+					 image priority</span> and both original and production 
+					 images are selected, production images selected for 
+					 the export job may have two endorsements. This would 
+					 happen if endorsements exist from the original production—they 
+					 would be in addition to the image key endorsement 
+					 for the current export job.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Bar Code</span>: A bar-code version 
+			 of the document number.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Tag group</span>: A selected tag 
+			 group (tags from the selected group that have been applied).</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Custom text</span>: A message that 
+			 you define.</p>
+                                        </li>
+                                    </ul>
+                                    <p class="TableText">The following endorsement types require 
+			 additional selections; make needed choices depending on the 
+			 type you selected:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Field</span>: Select the field 
+			 to be used for the endorsement.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Tag Group</span>: Select the tag 
+			 group to be used for the endorsement.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText"><span style="font-weight: bold;">Tag Type</span>: Select whether 
+			 document or page tags (or both) should be used.</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Apply 
+			 To</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the pages to which the endorsement will be applied: <span style="font-weight: bold;">All Pages or First page only</span>.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Font 
+			 Size</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the size of the font to be used for endorsements. Smaller 
+			 fonts allow more text to be included.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Location 
+			 to Map</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Select 
+			 the location in the document header (<span style="font-weight: bold;">Top</span> 
+			 choices) or footer (<span style="font-weight: bold;">Bottom</span> 
+			 choices) where the endorsement should be placed.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Map Endorsement</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">Click 
+			 to add the endorsement to the selected location.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p>Repeat step 3 for each endorsement to be added. 
+ In addition to adding endorsements to the different locations in the header 
+ and/or footer, more than one endorsement can be added to a single location. 
+ </p>
+                </li>
+                <li>
+                    <p>After all endorsements have been added, review 
+ the result in the <span style="font-weight: bold;">Endorsement Mappings</span> 
+ area. If needed, make changes to the mappings:</p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p>Click 
+ an individual endorsement, then click <span style="font-weight: bold;">Clear</span> 
+ to remove that endorsement. </p>
+                        </li>
+                        <li>
+                            <p>Click 
+ <span style="font-weight: bold;">Clear</span> in a particular area to 
+ remove all endorsements from that area.</p>
+                        </li>
+                        <li>
+                            <p>Click 
+ <span style="font-weight: bold;">Clear All</span> to remove all endorsements 
+ that have been mapped.</p>
+                        </li>
+                        <li>
+                            <p>Click 
+ an individual endorsement and use the up or down buttons for the mapped 
+ location to move the endorsement. </p>
+                        </li>
+                    </ul>
+                </li>
+                <p class="BodyTextIndent">The example on the right shows that the bar code 
+ endorsement has been selected and is ready to be moved or deleted from 
+ the bottom right area. </p>
+                <p class="Image">
+                    <img src="Graphics/Admin_Graphics/EndorsementEx2.png" alt="" style="border: none;" border="0" />
+                </p>
+                <li>
+                    <p>When all image options have been defined, either 
+ complete other procedures in this section or click <span style="font-weight: bold;">Save</span> 
+ to save the current definition.</p>
+                </li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Process5">5. <a name="CompExpSet"></a>&lt;Complete the Export Set&gt;</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process5">
+            <p>&#160;</p>
+            <p class="BodyText">To validate and run an export job, ensure the procedures were completed in <a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Create_Export_and_Production_Sets.htm">Create Export Sets</a>:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Get Started:</p>
+                    <ol>
+                        <li>
+                            <p>If 
+ a saved public search representing the documents to be produced does not 
+ exist, create and save the needed search as explained in <a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Ipro_(Cloud)_Review_Enter_Case.htm">IPRO (Cloud )Review Enter Case</a>  Help. </p>
+                        </li>
+                        <li>
+                            <p>If 
+ Production Shield has not been set for the desired search and you want security applied 
+ to this export job, right click the desired search and choose Set Production Shield. See <a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/About_the_Production_Shield.htm">About the Production Shield</a> for additional information.</p>
+                        </li>
+                        <li>
+                            <p>If 
+ the export set is saved/not open, click <img src="Graphics/EXP_ExportPageIcon.png" /> to access the Export setup page. Select the <b>export set</b>.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>In the <span style="font-weight: bold;">Export 
+Tools</span> section of the page, click <img src="Graphics/EXP_SelectDocumentsButton.png" />. </p>
+                </li>
+                <li>
+                    <p>In the Select Documents dialog box, select 
+ the needed <b>saved search</b> and optionally select fields to sort by and their sort order. Click <b>OK</b>.</p>
+                </li>
+                <li>
+                    <p>Click <img src="Graphics/EXP_ValidateButton.png" /> 
+ and evaluate the Validation Report. A typical report is shown in the following 
+ figure; different entries will exist depending on your export selections. 
+</p>
+                </li>
+            </ol>
+            <p style="color: #ff1493;text-align: left;margin-left: 0.55in;">
+                <img src="Graphics/ADD_Review_Graphics/AR_ExportSetValidationReportDialog.png" class="Thumbnail_Popup" />
+            </p>
+            <ol class="NumbListBody" start="5">
+                <li>
+                    <p>If the report identifies conflicts, resolve the conflicts. Possible issues and 
+ override details are explained in the following table. In the table, Override 
+ indicators are as follows: </p>
+                </li>
+                <p class="BodyTextIndent">Y = Can be overridden</p>
+                <p class="BodyTextIndent">S = Can sometimes be overridden (depending on 
+ circumstances)</p>
+                <p class="BodyTextIndent">N = Cannot be overridden</p>
+                <p class="BodyTextIndent" style="font-weight: normal;">
+                    <MadCap:toggler targets="t1">Export/Production 
+ Troubleshooting</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t1">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Conflict</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Override?</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 117px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Missing 
+			 natives</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">S</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">One or more native files in the production 
+			 set do not exist in the location defined for the case.</p>
+                                    <p class="TableText">Can be overridden if you are exporting 
+			 both images and native files, in which case missing native 
+			 files will simply be skipped.</p>
+                                    <p class="TableText">Cannot be overridden if you are exporting
+			 only native files.</p>
+                                    <p class="TableText">To correct this conflict, take such actions 
+			 as placing needed native files in the correct location or 
+			 changing the export set to exclude those documents.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 204px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Missing images</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">No</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">No image is associated with one or more documents in the
+export set (no image path is defined).</p>
+                                    <p class="TableText">Correct this conflict by actions such as adding a custom
+placeholder for records lacking an image path, or
+performing a global replace for the image path by editing field content across multiple records at one time. For details,
+see:
+</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText">"<a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/AR_Select_Output_Locations.htm">Select Output Locations</a>" step 3
+</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">"<MadCap:xref href="Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm#Edit">Edit Multiple Fields</MadCap:xref>"</p>
+                                        </li>
+                                    </ul>
+                                    <p class="TableText"><b>NOTE</b>: Other image problems are not considered to
+be missing images. For example, an incorrect file
+path, an image missing in the specified location,
+server problems, etc. They are indicated in the production
+export by an “Error Processing Image” placeholder.
+</p>
+                                    <p class="TableText">Make corrections to these types of problems on a case by case
+basis, depending on the type of problem.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 90px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Missing text</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">Yes</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">One or more text files in the export set do not exist in the
+location specified for the files.</p>
+                                    <p class="TableText">If this problem is overridden, a “Missing Text” placeholder
+page will be included for each missing text file.</p>
+                                    <p class="TableText">Alternatively, correct this conflict by such actions as placing
+needed text files in the defined location or changing the
+production set to exclude those documents.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 67px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText"><b>Missing Enddocs</b>
+                                    </p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;"> No</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Indicates the number of fields that are vacant.</p>
+                                    <p class="TableText">Make corrections by locating the saved search. Click the Advanced Search tab and under Field Search, choose ENDDOC from the drop-down list. Populate the field(s) and save the changes.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 67px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText"><b>Missing Priority Documents</b>
+                                    </p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">No</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">One or images are missing when produced.</p>
+                                    <p class="TableText">In Eclipse, <MadCap:variable name="Primary.Name" /> image the missing document or documents.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 67px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Shield conflicts</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">Yes</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Export documents are checked for all defined rules.
+</p>
+                                    <p class="TableText">Before overriding this issue, review the rules and documents
+in the document set to make sure overriding is the correct
+action.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 156px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Valid output path</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">No</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">The defined Output Location cannot be verified.
+Correct the location. Make sure the following conditions are
+met:</p>
+                                    <ul class="BulletListTable">
+                                        <li>
+                                            <p class="TableText">The location is in UNC format (such as \\server001\productions\
+smith-jones\).</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">The destination folder exists.</p>
+                                        </li>
+                                        <li>The path was not used for a previous export.</li>
+                                        <li>
+                                            <p class="TableText"><MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud has access to the location (for example, it is
+in the same or a trusted domain).</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">A volume with same name as the one defined for this
+production set does not already exist in the output location.</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr style="height: 85px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Valid native naming field</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">No</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Occurs if naming native files by a field and the field contains
+no data (or only spaces or an empty string) for some
+documents.
+</p>
+                                    <p class="TableText">Either change the way native files are named or edit the
+empty fields so that they contain the needed data.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 86px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Broken family</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">Yes</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Include Family is part of the saved search used to specify
+documents for the export set, and not all family documents
+can be located.
+</p>
+                                    <p class="TableText">Before overriding this issue, review documents in the
+document set to make sure overriding is the correct action.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 108px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Bates Number conflict</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="text-align: center;">No</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">This conflict will occur a) only if Document Numbering is
+Use image priority and b) only if documents with duplicate
+numbers have been selected from the various document
+sets (original image and/or production export jobs chosen
+for this export).</p>
+                                    <p class="TableText">Resolve duplicate numbers by such actions as changing the
+order of document sets selected for numbering or choosing
+a different type of numbering.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 5px;" class="TableStyle-ADD_Help_Tables-Body-Body1" />
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p>Continue as follows:</p>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p>If 
+ conflicts were found, make needed corrections and/or override the conflicts 
+ as required. then go to step 7. </p>
+                        </li>
+                        <li>
+                            <p>If 
+ no conflicts were found, go to step 8. </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>After resolving or overriding conflicts, click <img src="Graphics/EXP_ValidateButton.png" /> to re-check the export 
+ set. </p>
+                </li>
+                <li>
+                    <p>After all conflicts are resolved and/or overridden, 
+ click <img src="Graphics/ADD_Review_Graphics/AR_ExportExportButton.png" /> to start the export 
+ (The <img src="Graphics/ADD_Review_Graphics/AR_ExportExportButton.png" /> button is available 
+ only when all conflicts have been addressed.) </p>
+                </li>
+                <li>Optional: Click <img src="Graphics/ADD_Review_Graphics/AR_ExportRefreshIcon.png" /> (located in the bottom right of the Status area) to refresh the data in the Status area.</li>
+                <li>
+                    <p>Observe <span style="font-weight: bold;">
+ Status</span> below <span style="font-weight: bold;">Summary</span> 
+ in the right pane. Status will change as process steps complete, and may 
+ include the terms listed in the following table.</p>
+                </li>
+                <p class="BodyTextIndent">
+                    <MadCap:toggler targets="t2">Export 
+ Status Details</MadCap:toggler>
+                </p>
+                <div MadCap:targetName="t2">
+                    <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                        <thead>
+                            <tr style="height: 27px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Status</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                    <p class="TableHead" style="text-align: center;">Description</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Not 
+			 Started</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">The 
+			 export process has not yet begun.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Staging</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">The 
+			 export data is being placed in the staging database.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Staging 
+			 Complete</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">All 
+			 export data is in the staging database.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Pending</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">The 
+			 export job has been placed in a queue.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">In 
+			 Progress</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">The 
+			 export data is being processed.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Paused</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">The 
+			 export job has been placed on hold.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Deleting</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">The 
+			 export job has been canceled and <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud is retrieving data 
+			 about the job, such as errors and information about the status 
+			 of the job at the point of cancellation.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Deleted</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                    <p class="TableText">Cancellation 
+			 has been completed.</p>
+                                </td>
+                            </tr>
+                            <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                    <p class="TableText" style="font-weight: bold;">Complete</p>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                    <p class="TableText">The 
+			 production job has finished; production data may be transferring 
+			 from the staging database back to <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud or the data transfer 
+			 may have finished.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <li>
+                    <p>When the export job is complete, export files 
+ are ready for use.</p>
+                </li>
+                <li>
+                    <p>If errors exist, click the <span style="font-weight: bold;">Total 
+ Errors</span> number (a link). An Export Errors dialog opens and 
+ shows information about document errors, page errors, and load file errors. Details can be 
+ exported to a .CSV file if needed</p>
+                </li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <h2 MadCap:conditions="Primary.Print_Exclude">
+            <MadCap:toggler targets="SeeAlso"><a name="SeeAlso"></a>See Also</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="SeeAlso">
+            <p MadCap:conditions="Primary.Print_Exclude"><a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Searching_Overview.htm">Searching Overview</a>
+            </p>
+            <p MadCap:conditions="Primary.Print_Exclude">
+                <MadCap:xref href="Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Define_an_Advanced_Search.htm#Create_Save_Advanced_Search">Create and Save an Advanced Search</MadCap:xref>
+            </p>
+            <p MadCap:conditions="Primary.Print_Exclude"><a href="Case_Management/Permissions Tables/Overview.htm">Permissions Overview</a>
+            </p>
+            <p MadCap:conditions="Primary.Print_Exclude"><a href="Case_Management/Permissions Tables/Rev Mgr.htm">Review Manager Template</a>
+            </p>
+        </div>
+    </body>
+</html>

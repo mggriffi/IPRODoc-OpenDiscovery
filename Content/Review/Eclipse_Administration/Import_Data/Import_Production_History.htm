@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import Production History</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Import Production History" />Import Production History</h1>
+        <p class="BodyText">If you have image files from a production job created 
+ in an application other than Eclipse Administration, import them using 
+ the following procedure to make them available for display in Eclipse 
+ on the Production History tab. </p>
+        <h2>Import Procedure</h2>
+        <p class="BodyText">To import production history files:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Before 
+ you begin, make sure production files are available to the computer on 
+ which the import will be performed. For example, if they are in a network 
+ location, ensure that the Eclipse Administration computer has access to 
+ that location. </p>
+                    </li>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator.</p>
+                    </li>
+                    <li>
+                        <p>Identify 
+ (or create) the case into which the files will be imported. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Import</span> 
+ &gt; <span style="font-weight: bold;">Import Production History</span>.</p>
+                    </li>
+                    <li>
+                        <p>Review 
+ the <span style="font-weight: bold;">Import Production History</span> 
+ window and ensure you have needed information. For example, make sure 
+ you know which delimiters are used in the image load file.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Select the needed managing client and case; 
+ complete screen entries as described in the following steps.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Cross Reference 
+ File</span>: Enter the path to, or click <img src="../../../Graphics/Admin_Graphics/Btn_Folder.png" alt="" border="0" class="button_inline" />&#160;and 
+ navigate to, the needed cross-reference file. Cross-reference files map 
+ original image keys to those created during production and may be in one 
+ of the following formats: .CSV, .TXT, or .DAT. These files may be manually 
+ created (such as ASCII delimited text files) or may come from another 
+ <MadCap:variable name="Primary.IPRO" /> application (such as <MadCap:variable name="Primary.IPRO" /> Build).</p>
+            </li>
+            <p class="BodyTextIndent">For manually created files, the format should 
+ be similar to the following:</p>
+            <p class="BodyTextIndent"><span class="Code">OriginalImageKey001|ProductionImageKey001</span>
+            </p>
+            <p class="BodyTextIndent"><span class="Code">OriginalImageKey004|ProductionImageKey004</span>
+            </p>
+            <p class="BodyTextIndent"><span class="Code">OriginalImageKey007|ProductionImageKey007</span>
+            </p>
+            <p class="BodyTextIndent">Each image key is for the first page of each 
+ document. </p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Files are imported for each 
+		 document, not on a page-by-page basis. Thus if your cross-reference 
+		 file includes individual page details for multi-page documents, 
+		 error messages will indicate “Document not found in case database 
+		 with this original image key” for all but the first page of a 
+		 document. </p>
+                        <p class="Note">This message can be ignored unless it exists for 
+		 the first page of a document (in which case, the document does 
+		 not exist in the case and you will need to determine whether the 
+		 document should be in the case, or the cross-reference file is 
+		 in error.)</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p><span style="font-weight: bold;">Delimiters:</span> 
+ With the cursor in the <span style="font-weight: bold;">Cross Reference 
+ File</span> field, select the delimiter(s) used to separate the original 
+ from the production image keys if those included by Eclipse are not correct. 
+ Typical cross-reference delimiters include those shown in the following 
+ figure.</p>
+            </li>
+            <p class="Image">
+                <img src="../../../Graphics/Admin_Graphics/DelimiterEx.png" alt="" style="border: none;" border="0" />
+            </p>
+            <li>
+                <p><span style="font-weight: bold;">Image Load 
+ File:</span> Enter the path to, or click &#160;and navigate to, the needed 
+ production image load file. This is the load file created during production 
+ (an .LFP or .OPT file), which identifies records by the produced image 
+ key.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Delimiters:</span> 
+ With the cursor in the <span style="font-weight: bold;">Image Load File</span> 
+ field, select the delimiters used in the image load file.</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Field:</span> Select the character that 
+ separates each field. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Quote:</span> This optional delimiter typically 
+ marks the beginning and end of a field (as in .CSV files). </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Production 
+ Name:</span> Enter a meaningful name for the set of production images. 
+ This name is listed in Eclipse on the <span style="font-weight: bold;">Production 
+ History</span> tab and also in the Eclipse Administration <span style="font-weight: bold;">Production 
+ History</span> tab (should you want to produce a case based on an imported 
+ production). </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Date Produced:</span> 
+ The date of the cross-reference file will be automatically entered in 
+ this field; enter a different date if needed. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Notes:</span> 
+ Add a brief job explanation if desired. </p>
+            </li>
+            <li>
+                <p>Evaluate the sample data to ensure it represents 
+ case data as expected:</p>
+                <ol>
+                    <li>
+                        <p>Select 
+ First line is the header option if applicable to your load file.</p>
+                    </li>
+                    <li>
+                        <p>Adjust 
+ the number of sample records if desired.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ sample data is not as expected, review your cross-reference and load files 
+ and the delimiters defined. Make changes as needed.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When data appears correctly, click<span style="font-weight: bold;"> 
+ Import Production Job</span>. </p>
+            </li>
+            <li>
+                <p>After the import is completed, click <span style="font-weight: bold;">View Log File</span> to check details of 
+ the import if needed. </p>
+            </li>
+            <li>
+                <p>Inform your users that the production history 
+ images are available in the case and explain proper use of these files 
+ in their case review.</p>
+            </li>
+        </ol>
+    </body>
+</html>

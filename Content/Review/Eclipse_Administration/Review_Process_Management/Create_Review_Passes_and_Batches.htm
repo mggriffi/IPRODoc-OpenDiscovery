@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Create Review Passes and Batches</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create Review Passes and Batches;Create Review Passes" />Create Review Passes and Batches</h1>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#Review_Pass_Basics"><MadCap:keyword term="Review Pass Basics" />Review Pass Basics</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Create_Review_Passes">Create Review 
+	 Passes</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Create_Batches"><MadCap:keyword term="Create Batches" />Create Batches</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Review_Pass_Basics"></a>Review Pass Basics</h2>
+        <p class="BodyText">Review passes are based on searches saved in Eclipse. 
+ Thus, searches must be planned and saved in Eclipse before you create 
+ review passes. For each review pass, you will define:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>The review pass 
+ name and the saved search on which it is based.</p>
+            </li>
+            <li>
+                <p>The maximum size 
+ of each batch.</p>
+            </li>
+            <li>
+                <p>A prefix for batch 
+ numbering. </p>
+            </li>
+            <li>
+                <p>The search upon 
+ which the review pass will be based. </p>
+            </li>
+            <li>
+                <p>Optionally, you 
+ may define:</p>
+                <ul>
+                    <li>
+                        <p>A 
+ batch priority (Low - Critical).</p>
+                    </li>
+                    <li>
+                        <p>A 
+ category to define how batches are grouped </p>
+                    </li>
+                    <li>
+                        <p>A 
+ field indicating family relationships.</p>
+                    </li>
+                    <li>
+                        <p>A 
+ sort order for fields in the case.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Finally, you may 
+ limit the review pass to specific user groups.</p>
+            </li>
+        </ul>
+        <h2><a name="Create_Review_Passes"></a>Create Review Passes</h2>
+        <p class="BodyText">To create a review pass:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ Started:</p>
+                <ol>
+                    <li>
+                        <p>Complete 
+ planning as explained in <a href="Manage_Review_Process.htm#Before_You_Begin">Before 
+ You Begin</a>. Start Eclipse and log in as an Eclipse administrator.</p>
+                    </li>
+                    <li>
+                        <p>Log 
+ in to Eclipse and open the case for which review passes are being created.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Case View pane, click <span style="font-weight: bold;">Case Administration</span>, 
+ and then <span style="font-weight: bold;">Review Pass Management</span> 
+ as shown in this figure.</p>
+                        <p class="Image">
+                            <img src="../../../Graphics/Admin_Graphics/RevPassMgmt_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Plus_Web.png" alt="" border="0" class="button_inline" />.</p>
+            </li>
+            <li>
+                <p>Enter a name for the review pass and complete 
+ other required entries:</p>
+                <ol>
+                    <li>
+                        <p>Enter 
+ the maximum <span style="font-weight: bold;">Batch Size</span> (number 
+ of documents) that each batch can be. This entry must be ten (10) or greater. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Enter 
+ a <span style="font-weight: bold;">Batch Prefix</span> for batch names. 
+ This name is added to sequential numbering for the batches.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the <span style="font-weight: bold;">Saved Search</span> upon which the 
+ review pass will be based.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>As needed, complete optional entries described 
+ in the following steps.</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="Primary.Z_Excluded V1">Optional: Select a <b>Layout Style</b>. The default setting is Grid Review. If Grid Review is selected, the grid displays when the review pass loads along with the document view tabs window in the foreground. If the Form Review is selected, the document view tabs appear when the review pass loads.</MadCap:conditionalText>
+                </p>
+            </li>
+            <li>
+                <p>Optional: Select a <span style="font-weight: bold;">Batch 
+ Priority</span> to be assigned to all batches in the set. </p>
+            </li>
+            <li>
+                <p>Optional: In the <span style="font-weight: bold;">Batch 
+ by Category</span> field, select a method for grouping documents within 
+ batches. </p>
+            </li>
+            <li>
+                <p>Optional: Select a <span style="font-weight: bold;">Family 
+ Field</span> to keep related documents together.</p>
+                <p>For steps 6 and 7, see <a href="Manage_Review_Process.htm#How_Documents_are_Organized_into_Batches">How Documents are Organized into Batches</a> to determine whether you want to set either of these options.</p>
+            </li>
+            <li>
+                <p>Optional: Define a batching (sort) order based 
+ on up to three fields. </p>
+            </li>
+            <li>
+                <p>Optional: Click <img src="../../../Graphics/Admin_Graphics/Btn_CodingFormSec2.png" alt="" border="0" class="button_inline" />&#160;and 
+ select the user groups who will be reviewing the documents in this review 
+ pass. If specific groups are not assigned to the review pass, then all 
+ users in all user groups assigned to the case will be able to select batches 
+ in the review pass. </p>
+            </li>
+            <li>
+                <p>When all entries are complete, click <span style="font-weight: bold;">Save</span>.</p>
+            </li>
+            <li>
+                <p>Go to the next procedure to continue defining 
+ the review pass. </p>
+            </li>
+        </ol>
+        <h2><a name="Create_Batches"></a>Create Batches</h2>
+        <p class="BodyText">To create batches: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Start 
+ Eclipse and log in as an Eclipse administrator.</p>
+                    </li>
+                    <li>
+                        <p>Open 
+ the case for which review passes are being created.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Case View pane, click <span style="font-weight: bold;">Case Administration</span>, 
+ and then <span style="font-weight: bold;">Review Pass Management</span>. 
+ </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the left pane of the <span style="font-weight: bold;">Case 
+ Administration</span> tab, click the needed review pass. If a large number 
+ of review passes exists, take any of the following actions to find the 
+ needed one:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Scroll 
+ vertically and/or horizontally.</p>
+                    </li>
+                    <li>
+                        <p>Drag 
+ the pane’s borders to make it wider.</p>
+                    </li>
+                    <li>
+                        <p>Sort 
+ the keyword list names by clicking the sort button, <img src="../../../Graphics/Admin_Graphics/Btn_Sort-Web.png" alt="" border="0" class="button_inline" />, 
+ and choosing from the different options. Click a selected option again 
+ to reverse the sort order.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the search box above the left pane, start typing any of the following 
+ items: the keyword list name, the name of the administrator who created/modified 
+ the group, or part of the created/modified date. This is a plain text 
+ search that searches these items in order.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Btn_Refresh.png" alt="" border="0" class="button_inline" />&#160;to 
+ update data in the <span style="font-weight: bold;">Review Pass Information</span> 
+ area.</p>
+            </li>
+            <li>
+                <p>Review the number of unbatched documents in 
+ the review pass, then click <span style="font-weight: bold;">Create Batches</span>.</p>
+            </li>
+            <li>
+                <p>After batches are created, evaluate data in 
+ the <span style="font-weight: bold;">Review Pass Information</span> area. 
+ Click <img src="../../../Graphics/Admin_Graphics/Btn_Refresh.png" alt="" border="0" class="button_inline" />&#160;again to ensure data 
+ is updated.</p>
+            </li>
+            <li>
+                <p>Repeat these steps to create other review passes. 
+ </p>
+            </li>
+            <li>
+                <p>When finished, provide instructions to users 
+ who will be reviewing the documents in the batches. For details on providing 
+ instructions within Eclipse, see <a href="../Case_Setup/Add_Case_Instructions%2c_Documents%2c_and_Alerts.htm">Add 
+ Case Instructions, Documents, and Alerts</a>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

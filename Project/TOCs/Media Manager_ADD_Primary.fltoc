@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Media Manager"
+    Link="/Content/Media_Manager/Media_Manager.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Media_Manager/MM_Workflow.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Media_Manager/First_Steps/Overview_Media_Manager.htm"
+      StartSection="false">
+      <TocEntry
+        Title="Overview: Media Manager"
+        Link="/Content/Media_Manager/First_Steps/Overview_Media_Manager.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/First_Steps/Understand_the_Media_Manager_Interface.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Deliveries"
+      Link="/Content/Media_Manager/Deliveries/Overview_Deliveries.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Overview_Deliveries.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Add_New_Incoming_Delivery.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Add_New_Outgoing_Delivery.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Add_Media_to_Your_Delivery.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Deliveries/Manage_Existing_Deliveries.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Media"
+      Link="/Content/Media_Manager/Media/Create_New_Media.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Media/Create_New_Media.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Media/Manage_Existing_Media.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Media/Copy_Data_to_Network.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Data Locations"
+      Link="/Content/Media_Manager/Data_Locations/Monitor_Job_Status.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Process_Data_Locations.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Monitor_Job_Status.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Requeue_Job_Errors.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Media_Manager/Data_Locations/Manage_Data_Locations.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Media_Manager/FAQs/Media_Manager_FAQs.htm" />
+  </TocEntry>
+</CatapultToc>

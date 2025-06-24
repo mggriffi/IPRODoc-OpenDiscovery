@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/Processing.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/Admin_Note.png" />
+                    </p>
+                    <p>
+                        <img src="../../Graphics/tip_sysadm.png" />
+                    </p>
+                    <p>
+                        <img src="../../Graphics/warn_sysadmin.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Text Text Text Text.</p>
+                    <p class="Note">&#160;</p>
+                    <p class="Note">Tip: Text Text Text.</p>
+                    <p class="Note">&#160;</p>
+                    <p class="Note">Warning: Text Text Text.</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

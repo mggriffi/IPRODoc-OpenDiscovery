@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse" style="mc-master-page: url('../../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Email Threading Fields in IPRO Analytics</title>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Email Threading Fields in IPRO Analytics</h1>
+        <h2>Required Fields</h2>
+        <p class="BodyText">Fields required for email threading analysis are listed 
+ in the following table. These fields can be created automatically (auto-mapped) 
+ at the time you configure email threading. When auto-mapping is used, 
+ the resulting <MadCap:variable name="Primary.IPRO" /> Eclipse fields are as listed in the table. </p>
+        <p><span class="BoldItalic"><img src="../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+        </p>
+        <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t1">Click 
+ here to watch the Email Threading video</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://vimeo.com/273777630" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Email threading is typically configured by your case administrator. 
+ For more information, contact your case administrator or see <a href="../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Email_ThreadingIA.htm"><MadCap:xref href="../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Email_ThreadingIA.htm">Configure Email Threading in IPRO Analytics</MadCap:xref></a> in the Eclipse Administration section. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">For more information on email threading, see <MadCap:xref href="../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Email_ThreadingIA.htm">Configure Email Threading in IPRO Analytics</MadCap:xref>.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 110px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 590px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA Email Action</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="BodyText">A value indicating the action the sender of the email performed to generate this email. Possible values include: SEND, REPLY, REPLY-ALL, FORWARD, or DRAFT.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA Email Set ID</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p>All items contain this value, which identifies the email family to which each email belongs. Emails and their attachments all contain the same value.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;Inclusive</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This value indicates a subset of emails in a family that contains all of the text of all emails and their attachments in the family. This value will indicate the reason the email is considered inclusive. Values may be one of the following:</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText">MESSAGE: indicates the email has new message content.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">ATTACHMENT: indicates this email has new attachment content.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">MESSAGE-ATTACHMENT: indicates this email has new message and attachment content.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">NONE: indicates this email is not inclusive and its content is contained in one or more emails within the email thread.</p>
+                            </li>
+                        </ul>
+                        <p class="TableText">Inferred Matches: These are emails that did not match the thread exactly, but were similar enough to determine it should be included in the thread. This is most often attributed to confidentiality notices added by the mail server. Another possible reason for an inferred match is when text in the original message was changed in the reply.</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">MESSAGE INFERRED-MATCH: A document that is inclusive because of content AND was found to be a near duplicate of another document in the family.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">ATTACHMENT INFERRED-MATCH: A document that is inclusive because of an attachment AND was found to be a near duplicate of another document in the family.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">MESSAGE AND ATTACHMENT INFERRED-MATCH: A document that is inclusive because of content and an attachment AND was found to be a near duplicate of another document in the family.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">NONE INFERRED-MATCH: A document that is NOT inclusive but is a member of the family because it is a near duplicate of another document in the family.</p>
+                            </li>
+                        </ul>
+                        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note" style="font-weight: normal;"><b>TIP:</b> This value can be used as a sort key to indicate which inclusive emails to read first to speed up review.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">IA Email Sort</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p style="font-size: 10pt;">This field can help you determine the conversational order of an email thread by looking at the extracted text. This value is expressed by a string of numbers, such as"+2+2+3+2-1+0."</p>
+                        <ul>
+                            <li>
+                                <p><span style="font-size: 10pt;">Each node, including the root node, represents one email sent to perhaps multiple people, and will contain all copies of this email.</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p style="font-size: 10pt;">The first character in a string represents the IA Email Set ID and the root node (parent email) of the entire email tree.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p style="font-size: 10pt;">The Email Set ID is followed by a "+" symbol if the root email exists in the data set.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p style="font-size: 10pt;">The Email Set ID is followed by a "-" symbol if the root email does NOT exist in the data set.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Email_ThreadingIA.htm">Configure Email Threading in IPRO Analytics</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_FullEmThread_Batches_for_ReviewIA.htm">Create Full Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_InclusiveEmailThread_Batches_for ReviewIA.htm">Create Inclusive Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_EmailThrandND_Batches_for_ReviewIA.htm">Create Email Thread with Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create an Index Profile</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create an Index Profile" />Create an Index Profile</h1>
+        <p class="BodyText">The index profile allows you to specify various options 
+ for building the index, such as number of dimensions, pruning values, 
+ processes, and so on. To create an index profile: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Eclipse 
+ Analytics</span> &gt; <span style="font-weight: bold;">Manage Analytics 
+ Indexes</span>. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Manage Indexes window, select the needed managing client and case.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Manage 
+ Index Profiles</span>.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Create 
+ New Profile</span>. </p>
+            </li>
+            <li>
+                <p>Enter the following basic information in the 
+ top portion of the dialog box.</p>
+            </li>
+            <p class="BodyText">
+                <MadCap:toggler targets="t1">Click 
+ here for Index Profile details</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t1">
+                <table cellspacing="0" width="90%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 17.47%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 82.53%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Item</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Profile 
+			 Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText"><span style="font-weight: bold;">Required</span>. Enter a name for 
+			 the index profile.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Content 
+			 Analyst Server</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText"><span style="font-weight: bold;">Required</span>. Select the Content 
+			 Analyst Server to be used. If the server is not listed:</p>
+                                <ol class="NumbListTable">
+                                    <li>
+                                        <p class="TableText">Click<span>&#160;</span><img src="../../../Graphics/Admin_Graphics/Btn_EditCAStopWords.png" alt="" border="0" class="button_inline" />&#160;next to the server list.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Click 
+								<span style="font-weight: bold;">Add Server</span>.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Enter 
+								the URL for the needed Content Analyst Server and click <span style="font-weight: bold;">OK</span>.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Click 
+								<span style="font-weight: bold;">OK</span>.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Select 
+								the server in the list.</p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Dimensions</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Enter 
+			 the dimension to be used in the conceptual search, typically 
+			 a number from 100 to 300. The default and recommended dimension 
+			 setting is 100.</p>
+                                <p class="TableText">“Dimensions” are an aspect of the conceptual 
+			 search calculation, representing the concept space into which 
+			 documents are mapped when an index is built.</p>
+                                <p class="TableText">When considering this entry, note:</p>
+                                <ul style="list-style: square;" class="BulletListTable">
+                                    <li>
+                                        <p class="TableText">A higher dimension will yield 
+				 a greater the number of search results, because conceptual 
+				 values are increased and relationships are refined. It 
+				 also increases query processing time and utilizes more 
+				 of the query server’s resources, particularly RAM.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">A lower dimension setting may 
+				 lead to less accurate search results.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">An entry of 0 (zero) instructs 
+				 the index to select a reasonable value.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <li>
+                <p><span style="font-weight: bold;">Create New 
+ Filter(s)</span>: To create filters for repeated content:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>In 
+ the Index Profiles dialog box, click <span style="font-weight: bold;">Create 
+ New Filter</span>.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Name:</span> Enter a unique name for the 
+ repetitive text you are defining. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Type:</span> Select <span style="font-weight: bold;">Literal</span> 
+ or <span style="font-weight: bold;">Regular Expression</span> to specify 
+ the type of expression you are defining. Use regular expressions if you 
+ are familiar with the syntax and construction of such expressions.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Pattern:</span> Enter the content to be 
+ filtered (literal or regular expression). Check your entry carefully to 
+ ensure it defines the pattern you want filtered.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ steps a-e to define other content to be filtered.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">OK</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When your index profile is complete, click 
+ <span style="font-weight: bold;">Save Modifications</span>, then <span style="font-weight: bold;">Close Window</span>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

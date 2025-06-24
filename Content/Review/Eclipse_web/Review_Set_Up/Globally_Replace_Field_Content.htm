@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Globally Replace Field Content</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Globally Replacing Field Content</h1>
+        <p class="BodyText">Users with appropriate permissions can replace field 
+ content across multiple records at one time as described in the following 
+ steps:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Getting 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Verify 
+ the details needed for this operation (what is to be found and the needed 
+ replacement path or text). </p>
+                    </li>
+                    <li>
+                        <p>Log 
+ in to <MadCap:variable name="Primary.IPRO" /> Eclipse and open the needed case. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Case View pane, click <span style="font-weight: bold;">Documents</span>. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Optional: 
+ Display a specific subset of records by performing a search, opening a 
+ Smart Folder, filtering on one or more columns, or selecting an Analytics 
+ cluster or category.</p>
+                    </li>
+                    <li>
+                        <p>Batches 
+ only: If you are working in a batch, select the scope of listed documents 
+ in the <span style="font-weight: bold;">Documents from</span> list. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>On the <span style="font-weight: bold;">Documents</span> 
+ or related tab’s toolbar, click <span style="font-weight: bold;">actions</span> 
+ to show the “mass actions” toolbar.</p>
+            </li>
+            <li>
+                <p>Select the documents for which an image path 
+ or field content is to be changed in the same way:</p>
+                <ol>
+                    <li>
+                        <p>To 
+ change all documents in the current set (entire case, batch, search results, 
+ etc.), select <span style="font-weight: bold;">All</span> from the mass 
+ actions toolbar and skip to <span style="font-weight: bold;">step 4.</span></p>
+                        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Note: All documents in a 
+		 batch or an entire case may be changed, although such selections 
+		 may be too large to be processed effectively.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p>To 
+ change some, but not all, documents, click the options on the left side 
+ of the needed records in the case table. See the first figure <a href="Export_Data_for_Multiple_Records.htm#scr_ma_print_select_docs.png">here</a>.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ Checked from the menu above the case table. See the second figure <a href="Export_Data_for_Multiple_Records.htm#scr_ma_all_checked">here</a>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>From the adjacent menu, select <span style="font-weight: bold;">Edit</span>, 
+ then click <span style="font-weight: bold;">Submit</span>. </p>
+            </li>
+            <li>
+                <p>In the Apply Mass Action dialog box, select 
+ the <span style="font-weight: bold;">Field Edit</span> option as shown 
+ in the following figure. Note that the title of the dialog box includes 
+ the number of selected documents.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Eclipse Web Images/scr_ma_mass_action_field_edit.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Field 
+ Edit Options</span> list, select one of the following actions:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Search and Replace</span>: Find specific 
+ content in a selected field(s) and replace it with different content. 
+ See <span style="font-weight: bold;">step 7</span>.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Copy Field</span>: Copy the content of 
+ one field to another field. See <span style="font-weight: bold;">step 
+ 8</span>.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Overwrite Field</span>: Replace whatever 
+ content exists in a selected field(s) with different content. See <span style="font-weight: bold;">step 9</span>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>If you selected <span style="font-weight: bold;">Search 
+ and Replace</span>:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ the list of <span style="font-weight: bold;">Available Fields</span>, 
+ double-click each field to be changed in the same way. Alternatively, 
+ use Shift+click or Ctrl+click to select a contiguous or non-contiguous 
+ set of fields, respectively, then click &gt; to move these fields into 
+ the <span style="font-weight: bold;">Selected Fields</span> list.</p>
+                    </li>
+                    <li>
+                        <p>Enter 
+ the content to be replaced in the <span style="font-weight: bold;">Search 
+ for</span> box. This entry is not case sensitive.</p>
+                        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Tip: 
+		 An entry is required in the <span style="font-weight: bold;">Search</span> 
+		 box. If you want to replace empty fields with content, use the 
+		 <span style="font-weight: bold;">Overwrite Field</span> option.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Enter 
+ the new content in the Replace with box. The format of your entry must 
+ match the field type (for example, if a Date field needs to be changed 
+ from 01/01/2014 to another date, use the same format for your replacement 
+ entry). For text entries, the capitalization used here will be used in 
+ the selected field(s).</p>
+                    </li>
+                    <li>
+                        <p>Skip to <b>step 10</b>.</p>
+                    </li>
+                </ol>
+            </li>
+            <p class="BodyTextIndent"><span style="font-weight: bold;">Example</span>: 
+ All or part of a field’s content can be entered. For example, a company 
+ name might be entered as both “SmithCo Automation” and “SmithCo International” 
+ in your case. For consistency, you could search for “Automation” and replace 
+ it with “International” so that the company name is consistent. See the 
+ following figure.</p>
+            <p class="Image">
+                <img src="../../../Graphics/Eclipse Web Images/scr_ma_mass_action_field_edit2.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p>If you 
+ selected <span style="font-weight: bold;">Copy Field</span>:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Copy From</span> field, select the 
+ field containing the content you want to copy.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Copy To</span> field, select the 
+ field in which the same content should be used.</p>
+                    </li>
+                    <li>
+                        <p>Skip 
+ to <span style="font-weight: bold;">step 10</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>If you selected <span style="font-weight: bold;">Overwrite 
+ Field</span>:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ the list of Available Fields, double-click each field to be changed in 
+ the same way. Alternatively, use Shift+click or Ctrl+click to select a 
+ contiguous or non-contiguous set of fields, respectively, then click &gt; 
+ to move these fields into the Selected Fields list.</p>
+                    </li>
+                    <li>
+                        <p>Enter 
+ the new content in the Overwrite Selected Field with this Text box. The 
+ format of your entry must match the field type (for example, if a Date 
+ field needs to be changed from 01/01/2014 to another date, use the same 
+ format for your replacement entry). For text entries, the capitalization 
+ used here will be used in the selected field(s). </p>
+                    </li>
+                    <li>
+                        <p>Go 
+ to <span style="font-weight: bold;">step 10</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Select 
+ the <span style="font-weight: bold;">Run Incremental Index</span> option 
+ to rebuild the index based on changes being made now. If this option is 
+ not selected, then the index will need to be rebuilt at a later time in 
+ order for the changes to be incorporated into the search index (so that 
+ your changes are searchable).</p>
+            </li>
+            <li>
+                <p>Click 
+ <span style="font-weight: bold;">Submit</span> and wait as the changes 
+ are made. When all changes have been made, a completion message appears 
+ at the bottom of the dialog box, as shown in the following example:</p>
+            </li>
+            <p class="Image">
+                <img src="../../../Graphics/Eclipse Web Images/scr_ma_mass_action_field_edit_completion.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p>To perform another mass action on the same 
+ selected documents, click <span style="font-weight: bold;">Edit</span> 
+ and repeat this procedure or complete <a href="Tag_Multiple_Documents.htm">"Tag 
+ Multiple Documents."</a></p>
+            </li>
+            <li>
+                <p>When you are finished, click <span style="font-weight: bold;">Close</span>.</p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <p class="BodyText">To create a Relationship list: </p>
+            <ol>
+                <li>
+                    <p class="BodyText">Review <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Manage_Review_Case_Settings.htm">Manage Review Case Settings</MadCap:xref> for instructions on opening the case settings options.</p>
+                </li>
+                <li>
+                    <p>Click the <b>Relationships </b>tab.</p>
+                </li>
+                <li>
+                    <p>In the <span style="font-weight: bold;">Relationship List</span> pane, click <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Add2.png" class="ReduceButtonSize" />. The Relationships window appears.
+</p>
+                    <p>
+                        <img src="../../../Graphics/ADD_Review_Graphics/AR_RelationshipsWindow.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>Type a <b>Name</b> for the relationship that will 
+ be meaningful to users, then complete the following steps as required:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>
+                            <p><span style="font-weight: bold;">Sort By:</span><![CDATA[ 
+ ]]><i>(required)</i> Select the field on which the data in the list will be sorted (data will 
+ be sorted in ascending order).</p>
+                        </li>
+                        <li>
+                            <p><b>Relate By</b>: <i>(required)</i> Select either the <b>Document Fields</b> or the <b>Similar Documents</b> check box.</p>
+                        </li>
+                        <li><span style="font-weight: bold;">Group By Field:</span><![CDATA[ 
+]]><i>(required if you selected </i><b style="font-style: italic;">Document Fields</b><i>)</i> Select the field on which the relationship will be based. All documents 
+ with the same data in this field will be included in the relationships 
+ list.</li>
+                        <li>
+                            <p><span style="font-weight: bold;">Analytics Index:</span><![CDATA[ 
+ ]]><i>(required if you selected </i><i style="font-weight: bold;"><i>Similar Documents</i></i><i>)</i> Select the field on which the data in the list will be sorted (data will 
+ be sorted in ascending order).</p>
+                        </li>
+                        <li><b>Available Fields:</b>  
+ Add fields to the <b>Selected Fields</b> list to be displayed for the relationship by using the arrow buttons. Note: The BEGDOC field displays in the <b>Selected Fields</b> list by default for newly created relationships and cannot be removed. This field cannot be repositioned. It is a mandatory field that shows related documents in Review.
+</li>
+                        <li><b>Selected Fields:</b> Displays fields from the <b>Available Fields</b> list and the <b>Available Tag Groups</b> list that are selected for the relationship.</li>
+                        <li><span style="font-weight: bold;">Available Tag Groups:</span> 
+ Add tag groups to be displayed for the relationship by using the arrow 
+ buttons.</li>
+                        <li><span style="font-weight: bold;">Compare</span> 
+ option: For the relationships (Family, Duplicate, Near Duplicate, Email Thread, or Similar Document) within the Relationships panel list of the Document Viewer, select 
+ <span style="font-weight: bold;">Show document compare tool</span> 
+ if you want users to be able to compare the documents through the Document Viewer. For more information, see<MadCap:conditionalText MadCap:conditions="Primary.Admin"> <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Overview_Document_Viewer.htm">Overview: Document Viewer</MadCap:xref></MadCap:conditionalText> <a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Overview_Document_Viewer.htm" target="_blank" MadCap:conditions="Primary.LMS">Overview Document Viewer</a>.</li>
+                        <li>
+                            <p><span style="font-weight: bold;">Add/Remove&#160;Groups:</span> 
+ If the relationship should be restricted to certain review groups:</p>
+                            <ul>
+                                <li>
+                                    <p>Click <b>Add/Remove&#160;Groups</b> (to the right of the 
+ Relationships window). The Group Security dialog box appears.</p>
+                                    <p>
+                                        <img src="../../../Graphics/ADD_Review_Graphics/AR_GroupSecurity.png" class="Thumbnail" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Select the required groups 
+ and click <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_OK.png" class="ReduceButtonSize" />.</p>
+                                    <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                        <tbody>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                    <p class="TableText">&#160;</p>
+                                                    <p>
+                                                        <img src="../../Images/myipro_tip.png" />
+                                                    </p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                    <p class="Note">Tip: To make 
+		 a relationship available to all groups that are currently defined 
+		 for the case, click <b>Select All</b>. The form will be unavailable for 
+		 groups added after this selection (unless you add them).</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>Organize the required selected fields and tag groups in a way to best meet the requirements of your users. 
+The required fields and tag groups are then displayed left to right in <MadCap:variable name="Primary.ProdName_Review" /> based on the order (top-to-bottom) 
+ defined here. To change the order:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>
+                            <p>Click a field or 
+ tag group to be reordered.</p>
+                        </li>
+                        <li>
+                            <p>Click <span style="font-weight: bold;"><img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Up.png" class="ReduceButtonSize" /></span> 
+ or <span style="font-weight: bold;"><img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Down.png" class="ReduceButtonSize" /></span> until the field/tag group 
+ is in the desired location.</p>
+                        </li>
+                        <li>
+                            <p>Repeat these steps  
+ to reorder additional fields/tag groups.</p>
+                        </li>
+                        <li>
+                            <p>When finished, click <span style="font-weight: bold;"><img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Save2.png" class="ReduceButtonSize" /></span>. </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>Repeat this procedure to configure other relationships.</p>
+                </li>
+                <li>
+                    <p>Explain to users how to use the Relationship list as they review cases.</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

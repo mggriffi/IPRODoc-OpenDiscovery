@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Media_Manager" style="mc-master-page: url('../../Resources/MasterPages/Media_Manager_MP.flmsp');">
+    <head>
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Monitor Job Status</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Monitor Job Status in the Media Tab;Media Manager;Monitor Job Status" />Monitor Job Status In Media Manager</h1>
+        <p class="BodyText">
+ On the Media tab of the Media Manger interface, you can monitor the status of your job, including how 
+ much data has been copied, discovered, filtered, exported, and is in Review. </p>
+        <p class="BodyText">When a media job is being processed or copied to the 
+ network, progress displays in the <span style="font-weight: bold;">Data 
+ Locations</span> pane on the Media tab for specific media. </p>
+        <p class="BodyText">
+            <img src="../../Resources/Images/MM_Monitor_Status.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">The <span style="font-weight: bold;">Job Status</span> 
+ popup displays additional information (as provided) when you hover over 
+ the progression dials. The following table details the components displayed in the Job Status window. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 763px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="color: #ffffff;font-size: 10pt;">FIELD</th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="color: #ffffff;font-size: 10pt;">DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Status</p>
+                    </td>
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Current 
+		 state of processing, such as <span style="font-style: italic;">Not 
+		 Started</span>, <span style="font-style: italic;">In Progress</span>, 
+		 <span style="font-style: italic;">Complete</span>, or <span style="font-style: italic;">Complete With Errors</span>. 
+		 Processing is not complete until all process phases are completed 
+		 (copying, discovery, etc.). The status icons change color as each 
+		 phase is processed. See <MadCap:xref href="Requeue_Job_Errors.htm">Requeue Job Errors</MadCap:xref> for details. </p>
+                        <p class="TableText">Once processing begins, if a job needs to 
+		 be stopped or canceled, do so in the Job Manager (see <MadCap:xref href="../../System/Job_Manager/Work_with_In_Progress_Jobs.htm">Work with In Progress Jobs</MadCap:xref> for details).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Copied</p>
+                    </td>
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Amount 
+		 of data copied from medium, plus number of errors encountered 
+		 while copying (if any).</p>
+                        <p class="TableText">If you did not select <b>Auto Start Discovery 
+		 Job</b>, only the Copied phase will indicate a status, and it pauses 
+		 when copying is completed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Discovered</p>
+                    </td>
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">For 
+		 data processing only (not copying to the network), the number of documents 
+		 that have completed the Discovery phase in <MadCap:variable name="Primary.eCapture" />, 
+		 plus number of errors encountered during discovery (if any).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Filtered</p>
+                    </td>
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">For 
+		 data processing only, the number of documents excluded based on 
+		 filtering rules defined for the selected  Processing 
+		 case, plus number of errors encountered during discovery (if any).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Exported</p>
+                    </td>
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">For 
+		 data processing only, the number of documents that have completed 
+		 the Export phase in the <MadCap:variable name="Primary.Name" /> Processing module, plus the number 
+		 of errors encountered while exporting (if any).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">In Review</p>
+                    </td>
+                    <td style="padding-left: 3px;vertical-align: top;" class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">For 
+		 data processing only, the number of documents that have completed 
+		 the <MadCap:variable name="Primary.Name" /> Processing Export phase and are ready for review.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 636px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">For long lists, use 
+		 the navigation bar to define the number of data locations to appear 
+		 per page and use the arrow buttons to navigate between pages. 
+		 See <MadCap:xref href="../First_Steps/Understand_the_Media_Manager_Interface.htm">Understand the Media Manager Interface</MadCap:xref> for 
+		 more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Process_Data_Locations.htm">Process Data Locations</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../Media/Copy_Data_to_Network.htm">Copy Data to Network</MadCap:xref>
+        </p>
+    </body>
+</html>

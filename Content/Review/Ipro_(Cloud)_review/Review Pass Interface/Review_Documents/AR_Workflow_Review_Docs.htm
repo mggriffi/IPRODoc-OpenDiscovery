@@ -1,0 +1,1044 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');" MadCap:conditions="Primary.Blocked">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Workflow: Review a Case</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1><a name="top"></a>Workflow: Review a Case</h1>
+        <p class="BodyText"><b>Applies to:</b> <MadCap:variable name="Primary.Name" /> Review</p>
+        <h2>In this Article</h2>
+        <p>
+            <MadCap:xref href="#Review2">Review the Prerequisites</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="#Run">1. Build and Save Searches</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="#Create">2. Create Review Passes and Batches</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="#Review">3. Review Documents</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="#Check">4. Check In Batches</MadCap:xref>
+        </p>
+        <p>&#160;</p>
+        <p>In the Review module, reviewers analyze the documents that belong to the case. Reviewing a case is an iterative process; the review tasks and the order that the review tasks are completed depends on the requirements of your business. The procedures described in this article explain only some of the many tasks you can complete in Review, and offer a possible workflow for completing these tasks. </p>
+        <p>
+            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Workflow_Review_Case_Visio_1.png" />
+        </p>
+        <h2><a name="Review2"></a>Review the Prerequisites</h2>
+        <p class="BodyText">The following table shows the prerequisites that must be in place before you start:</p>
+        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 497px;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">Task</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead">Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Assign Privileges</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">Make sure all users have the proper privileges assigned to them before reviewing a case. Privileges determine what activities users are allowed to undertake in Review.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Disable Pop-up Blocker</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText">If you use a pop-up blocker in your browser, make sure to disable it for <MadCap:variable name="Primary.Name" /> pages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">Tags and Coding Forms</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText">To tag documents and make use of coding forms, both are required to already have been defined in your case. You can create new tags and coding forms in the Case Settings area of the ECA &amp; Review module. See <MadCap:xref href="../../Enter Case Interface/Manage_Case_Settings/Tag Palette/Overview_Tags.htm">Managing Tags</MadCap:xref> and <MadCap:xref href="../../Enter Case Interface/Manage_Case_Settings/Coding Forms/Create_New_Coding_Forms.htm">Create New Coding Forms</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <h2><a name="Run"></a>
+            <MadCap:toggler targets="Run a Search">1. Build and Save Searches</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Run a Search">
+            <p>The following sections describe a high-level workflow for creating both visual and advanced searches, as well as saving a search. For a general overview of searching in <MadCap:variable name="Primary.Name" />, see <MadCap:xref href="../../Enter Case Interface/Search_the_Database/Defining_Searches/AR_Searching_Overview.htm">Searching Overview</MadCap:xref>.</p>
+            <h3><a name="Define"></a><b><MadCap:toggler targets="Define a Visual Search">Define a Visual Search</MadCap:toggler></b>
+            </h3>
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/Define_Visual_Search.flsnp" MadCap:targetName="Define a Visual Search" />
+            <h3>
+                <MadCap:toggler targets="Create an Advanced Search">Create an Advanced Search</MadCap:toggler>
+            </h3>
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/Create_Advanced_Search.flsnp" MadCap:targetName="Create an Advanced Search" />
+            <h3><![CDATA[
+                ]]><MadCap:toggler targets="Save a Search">Save a Search</MadCap:toggler></h3>
+            <p MadCap:targetName="Save a Search">This section describes how to save both a Visual Search and an Advanced Search. To learn more about managing saved searches, see <MadCap:xref href="../../Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Saved_Searches.htm">Work with Saved Searches</MadCap:xref>.</p>
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/Save_a_Search.flsnp" MadCap:targetName="Save a Search" />
+        </div>
+        <h2><a name="Create"></a>
+            <MadCap:toggler targets="Create RP and Batches">2. Create Review Passes and Batches</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Create RP and Batches">
+            <p class="BodyText">Review passes are based on searches saved in <MadCap:variable name="Primary.ProdName_Review" />. 
+Therefore, searches must be planned and saved in <MadCap:variable name="Primary.ProdName_Review" /> before you create 
+ review passes. Coding forms are also required for a review pass. For each review pass, you must define: </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p>The review pass 
+ name and the saved search on which it is based.</p>
+                </li>
+                <li>
+                    <p>The maximum size 
+ of each batch.</p>
+                </li>
+                <li>
+                    <p>A prefix for batch 
+ numbering. </p>
+                </li>
+                <li>
+                    <p>The search on 
+ which the review pass will be based. </p>
+                </li>
+                <li>The coding form/tag palette that contains the fields, tags, rules, and permissions required for the review pass.</li>
+                <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: You may 
+ limit the review pass to specific user groups.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p>Optionally, you may define:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>A batch priority (Low - Critical)</p>
+                    </li>
+                </ul>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>A category to define how batches are grouped.</p>
+                    </li>
+                    <li>
+                        <p>A field indicating family relationships.</p>
+                    </li>
+                    <li>
+                        <p>A sort order for fields in the case.</p>
+                    </li>
+                </ul>
+            </ul>
+            <p class="BodyText" MadCap:conditions="Primary.Blocked">Before you get started working with review passes, you might want to watch the Review Pass Management video.</p>
+            <p class="BodyText" MadCap:conditions="Primary.Blocked">
+                <img src="../../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+            </p>
+            <p class="BodyText" MadCap:conditions="Primary.Blocked">
+                <MadCap:toggler targets="RevPassMgmt">Click 
+			here to watch the Review Pass Management video</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="RevPassMgmt">
+                <p class="BodyText" style="font-weight: bold;" MadCap:conditions="Primary.Blocked">
+           Review Pass Management video
+</p>
+                <p class="BodyText" style="font-weight: normal;" MadCap:conditions="Primary.Blocked">The following video provides a basic review of the Review Pass Management functionality. The purpose of the video is to help you: </p>
+                <ul class="BulletListBody">
+                    <li MadCap:conditions="Primary.Blocked">Learn how to create Review Passes</li>
+                    <li MadCap:conditions="Primary.Blocked">Understand how the optional fields will impact how documents are batched</li>
+                </ul>
+                <p MadCap:conditions="Primary.Blocked">
+                    <object src="https://vimeo.com/311551400" style="width: 640px;height: 360px;">
+                    </object>
+                </p>
+                <MadCap:snippetBlock src="../../../../Resources/Snippets/Old_Video.flsnp" MadCap:conditions="Primary.Blocked" />
+            </div>
+            <h3><a name="Create2"></a>
+                <MadCap:toggler targets="Create RP">Create Review Passes</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Create RP">
+                <p class="BodyText">To create a review pass:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Get 
+ Started:</p>
+                        <ol>
+                            <li>
+                                <p>Log in as an administrator.</p>
+                            </li>
+                            <li>
+                                <p>In <MadCap:variable name="Primary.ProdName_Review" />, click a case card.</p>
+                                <p>
+                                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Card_Case.png" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Click the <b>Enter Case</b> button. The <b>Case View</b> appears.</p>
+                            </li>
+                            <li>
+                                <p>In the left pane, click the <b>Review Pass Management</b> button, <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPassMgmt.png" style="width: 34px;height: 29px;" />.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_Plus_Grey.png" style="width: 30px;height: 28px;" />.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_AddRevPass_ScrnSnapshot.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Enter a name for the review pass and complete 
+ other required entries:</p>
+                        <ol>
+                            <li>
+                                <p>Enter 
+ the maximum <span style="font-weight: bold;">Batch Size</span> (number 
+ of documents) that each batch can be. This entry must be 10 or greater. 
+ </p>
+                            </li>
+                            <li>
+                                <p>Enter 
+ a <span style="font-weight: bold;">Batch Prefix</span> for batch names. 
+ This name is added to sequential numbering for the batches.</p>
+                            </li>
+                            <li>
+                                <p>Select 
+ the <span style="font-weight: bold;">Saved Search</span> upon which the 
+ review pass will be based.</p>
+                            </li>
+                            <li>Select the <b>Coding Form</b>.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>As required, complete optional entries described 
+ in steps 5 through 11.</p>
+                    </li>
+                    <li>
+                        <p><i>Optional</i>: From the <span style="font-weight: bold;">Layout Style</span>, choose Grid review (default) or Form review. Review Grid:: When the review pass is opened, the review grid appears (similar to the Results tab under Case Settings &gt; Search). Form Review: When the review pass is opened, the Document View tabs appear.</p>
+                    </li>
+                    <li>
+                        <p><i>Optional</i>: Select a <span style="font-weight: bold;">Batch 
+ Priority</span> to be assigned to all batches in the set. </p>
+                    </li>
+                    <li>
+                        <p><i>Optional</i>: In the <span style="font-weight: bold;">Batch 
+ by Category</span> field, select a method for grouping documents within 
+ batches. </p>
+                    </li>
+                    <li>
+                        <p><i>Optional</i>: Select a <span style="font-weight: bold;">Family 
+ Field</span> to keep related documents together.</p>
+                    </li>
+                    <li>
+                        <p>Determine whether you want to set either the Batch Priority option or the Batch by Category option.</p>
+                    </li>
+                    <li>
+                        <p><i>Optional</i>: Define a <b>Batching (sort) Order</b> based 
+ on up to three fields. When entering the Review grid, the selected fields reflect the sort order (1, 2, 3) and the sort by (ascending or descending) as shown in the following example.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_SortOrderFieldHeadingsNumberArrows.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p><i>Optional</i>: Click <b>Add/Remove Groups</b> and 
+ select the user groups that will be reviewing the documents in this review 
+ pass. If specific groups are not assigned to the review pass, then all 
+ users in all user groups assigned to the case are then able to select batches 
+ in the review pass. </p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_Permissions_AddRemove.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>When all entries are complete, click <span style="font-weight: bold;">Save</span>.</p>
+                    </li>
+                    <li>
+                        <p>Go to the next procedure to continue defining 
+ the review pass. </p>
+                    </li>
+                </ol>
+            </div>
+            <h3>
+                <MadCap:toggler targets="Create Batch">Create Batches</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Create Batch">
+                <p class="BodyText">To create batches: </p>
+                <ol class="NumbListBody" start="1">
+                    <li>
+                        <p>Get 
+ started:</p>
+                        <ol>
+                            <li>
+                                <p>Start <MadCap:variable name="Primary.ProdName_Review" /> and log in as an administrator.</p>
+                            </li>
+                            <li>
+                                <p>In <MadCap:variable name="Primary.ProdName_Review" />, click a case card.</p>
+                                <p>
+                                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Card_Case.png" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Click the <b>Enter Case</b> button. The <b>Case View</b> appears.</p>
+                            </li>
+                            <li>
+                                <p>In the left pane, click the <b>Review Pass Management</b> button, <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPassMgmt.png" style="width: 35px;height: 30px;" />.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>In the <b>Review Pass Management</b> panel, click the required review pass. If a large number 
+ of review passes exists, take any of the following actions to find the 
+ required one:</p>
+                        <ul>
+                            <li>
+                                <p>Scroll 
+ vertically to locate the review pass in the list.</p>
+                            </li>
+                            <li>
+                                <p>Sort 
+ the keyword list names by clicking the sort button, <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Sort.png" style="width: 31px;height: 28px;" />, 
+ and selecting from the different options. Click a selected option again 
+ to reverse the sort order.</p>
+                                <p>
+                                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_Sortpng.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>In 
+ the <b>Search</b> box , <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Search.png" style="width: 165px;height: 34px;" /> start typing any of the following 
+ items: the keyword list name, the name of the administrator who created/modified 
+ the group, or part of the created/modified date. This is a plain text 
+ search that searches these items in order.</p>
+                                <p>
+                                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_Search.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Refresh.png" style="width: 24px;height: 23px;" />&#160;to 
+ update data in the <span style="font-weight: bold;">Review Pass Information</span> 
+ area.</p>
+                    </li>
+                    <li>
+                        <p>Review the number of unbatched documents in 
+ the review pass, then click <span style="font-weight: bold;">Create Batches</span>.</p>
+                    </li>
+                    <li>
+                        <p>After batches are created, evaluate data in 
+ the <span style="font-weight: bold;">Review Pass Information</span> area. 
+ Click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Refresh.png" style="width: 24px;height: 23px;" />&#160;again to ensure that the data 
+ is updated.</p>
+                    </li>
+                    <li>
+                        <p>Repeat steps 1 through 5 to create other review passes. </p>
+                    </li>
+                </ol>
+            </div>
+            <h3>
+                <MadCap:toggler targets="Rebatch">
+Re-batch Unreviewed Documents</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Rebatch">
+                <p>To re-batch documents that have not been reviewed:</p>
+                <ol class="NumbListBody" start="1">
+                    <li value="1">If it is required that you create a new review pass, first complete the  <MadCap:xref href="#Create2">Create Review Passes</MadCap:xref> section.</li>
+                    <li>Click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Refresh.png" style="width: 24px;height: 23px;" />&#160;again to ensure that the data 
+ is updated.</li>
+                    <li>
+                        <p>After it is determined in the <b>Review Pass Information</b> area that there are unreviewed documents, click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_RebatchUnreviewedDocs.png" style="width: 216px;height: 27px;" /> to have these documents organized into new batches.</p>
+                        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../../../Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: The <b>Re-Batch Unreviewed Docs</b> button also re-batches <b>On Hold Batches</b>.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <h2><a name="Review"></a>
+            <MadCap:toggler targets="Conduct Review">3. Review Documents</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Conduct Review">
+            <p>Reviewing documents in a case is a multi-step and iterative process. The review tasks and the order that the review tasks are completed depends on the requirements of your business. When working on documents in a batch, reviewers may:</p>
+            <ul class="BulletListBody">
+                <li>Review a document's images, extracted text, metadata, and production history.</li>
+                <li>Analyze related documents, including family documents, duplicates, near duplicates, conceptually similar documents, and documents that belong to the same email thread.</li>
+                <li>Edit document fields as required.</li>
+                <li>Tag documents.</li>
+                <li>Apply mass actions to multiple documents at one time.</li>
+                <li>Apply annotations and redactions to documents.</li>
+            </ul>
+            <p>The activities explained in this section require a variety of permissions that are defined by the <MadCap:variable name="Primary.Name" /> administrator. Ask your administrator if you are not able to perform activities required for your review.</p>
+            <p class="BodyText" MadCap:conditions="Primary.Blocked">Before you get started reviewing documents in batches, you might want to watch the Working in Batches video.</p>
+            <p class="BodyText" MadCap:conditions="Primary.Blocked">
+                <img src="../../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+            </p>
+            <p class="BodyText" MadCap:conditions="Primary.Blocked">
+                <MadCap:toggler targets="BatchMgmt">Click 
+			here to watch the Working in Batches video</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="BatchMgmt">
+                <p class="BodyText" style="font-weight: bold;" MadCap:conditions="Primary.Blocked">
+           Working in Batches video
+</p>
+                <p class="BodyText" style="font-weight: normal;" MadCap:conditions="Primary.Blocked">The following video provides a basic review of working in batches. The purpose of the video is to help you: </p>
+                <ul class="BulletListBody">
+                    <li MadCap:conditions="Primary.Blocked">Understand how to open a review pass</li>
+                    <li MadCap:conditions="Primary.Blocked">Learn where to tag or code documents</li>
+                    <li MadCap:conditions="Primary.Blocked">Understand navigation of Review</li>
+                </ul>
+                <p MadCap:conditions="Primary.Blocked">
+                    <object src="https://vimeo.com/310396911" style="width: 640px;height: 360px;">
+                    </object>
+                </p>
+            </div>
+            <p>To review batches through <MadCap:variable name="Primary.Name" /> ECA &amp; Review, perform the following steps:</p>
+            <h3>
+                <MadCap:toggler targets="Edit Document Fields">Edit Document Fields</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Edit Document Fields">
+                <p>You can edit the fields of an individual document by performing the following steps. To update or replace field values across multiple records, see the <MadCap:xref href="#Edit">Edit Multiple Fields via Mass Action</MadCap:xref> section in this topic.</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>In <MadCap:variable name="Primary.ProdName_Review" />, click  a case card.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Card_Case.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>A list of review passes defined for the selected case displays beneath the case card. Select the desired review pass located on the right side of the funnel graph. The Review grid opens with the batch document set, predefined relationships, and the coding form/tag palette. </p>
+                    </li>
+                    <li>
+                        <p>When the review pass is accessed for the first time, the Document Viewer window opens automatically with the first document in the batch. If the Document Viewer window did not open automatically when you accessed the review pass, double-click a document in the grid to open it. Perform the following steps.</p>
+                    </li>
+                    <li>
+                        <p><i>Optional</i>: If required, a different review pass may be selected from the Document Viewer window by using the Review Pass drop-down menu. The Review Passes are in alphabetical order. See <MadCap:xref href="../Understand_the_Document_Viewer/AR_Change_to_a_Different_Review_Pass.htm">Move Between Review Passes/Batches</MadCap:xref> for more information.</p>
+                        <p>
+                            <img src="../../../../Graphics/ECA_ReviewPassDropDown.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>You have the option to edit field values for a selected document in the Document Viewer window.  </p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Document_Viewer_Coding Form.png" class="Thumbnail" />
+                        </p>
+                        <p>In the coding form, located on the right side of the Document Viewer window,  do any of the following:</p>
+                        <ol style="list-style-type: lower-alpha;margin-left: 0.35in;text-align: left;">
+                            <li>
+                                <p class="BodyText">Double-click in the field to be edited and make required changes.  Some fields may display gray text to assist with formatting entries, such as the Coding Date field.</p>
+                            </li>
+                            <li>
+                                <p class="BodyText">For Hyperlink fields, enter or edit the linked file’s complete path. The entry should be a single file path in UNC format (for example, \\server001\files\smith01.msg). To view a linked file, click <img src="../../../../Graphics/ECA_CodingFormHyperlinkIcon.png" style="width: 23px;height: 18px;" />. </p>
+                            </li>
+                            <li>
+                                <p class="BodyText">For Pick Lists, click <img src="../../../../Graphics/ECA_CodingFormPickListIcon.png" style="width: 22px;height: 23px;" />  to display the list. Click the desired item. To search for an item in the list, enter the search term. Values may be entered directly into the field not included in the pick list, however, these values will not be added to the pick list. The <MadCap:variable name="Primary.Name" /> administrator may add/delete entire pick lists or modify the values of a pick list. Ensure you examine the pick list for any changes.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Complete any additional procedures. When finished, perform one of the following actions by using the coding form/tag palette navigation toolbar shown as follows:</p>
+                        <p> <img src="../../../../Graphics/ECA_CodingFormFullToolbar.png" class="Thumbnail" /></p>
+                        <ul style="list-style-type: lower-alpha;margin-left: 0.35in;text-align: left;" class="BulletListBody">
+                            <li>
+                                <p class="BodyText"> Click <img src="../../../../Graphics/ECA_CodingFormUndoButton.png" />  to clear the changes.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormGotoFirstButton.png" />to move to the first document in the batch.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormSaveandGotoPreviousButton.png" />  to go to previous document and save the changes.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormSaveandGotoNextButton.png" />  to go to next document and save the changes.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormGotoLastButton.png" /> to move to the first document in the batch.</p>
+                            </li>
+                            <li>
+                                <p>Click   <img src="../../../../Graphics/ECA_CodingFormSaveButton.png" /> to save the changes and remain on the document.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <h3>
+                <MadCap:toggler targets="Tag Documents">Tag Documents</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Tag Documents">
+                <p class="BodyText">One of the primary activities when preparing documents 
+ for discovery is applying tags. A tag is a type of “marker” that allows 
+ you to categorize and identify specific document characteristics. Typically defined by your administrator, tags allow 
+ you and your organization to find and identify similar documents—for example, 
+ those that are privileged in some way, or those requiring review by a topic 
+ expert.</p>
+                <p class="BodyText">Tagging a document enables you to mark the review status for that document as "Reviewed." In the following image, the document has not yet been tagged, and the "Reviewed" button displays as grayed-out.</p>
+                <p class="BodyText">
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Status.png" class="Thumbnail" />
+                </p>
+                <p class="BodyText"> To  quickly filter the documents in a batch based on their review status, use the <b>Review Status </b>drop-down menu located above the review grid.  By selecting the various options in the drop-down menu, you can filter by reviewed documents, unreviewed documents, or all documents. </p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_DropDown_Review_Status.png" class="Thumbnail" />
+                </p>
+                <p>To tag documents in the Document Viewer window, perform the following steps. To tag multiple documents at a time, see <MadCap:xref href="#Tag">Tag Related Documents via Mass Action</MadCap:xref> in this topic.</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>In <MadCap:variable name="Primary.ProdName_Review" />, click  a case card.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Card_Case.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>A list of review passes defined for the selected case displays beneath the case card. Select the desired review pass located on the right side of the funnel graph. The Review grid opens with the batch document set, predefined relationships, and the coding form/tag palette. </p>
+                    </li>
+                    <li>When the review pass is accessed for the first time, the Document Viewer window opens automatically with the first document in the batch. If the Document Viewer window did not open automatically when you accessed the review pass, double-click a document in the grid to open it. Perform the following steps.</li>
+                    <li>
+                        <p><i>Optional</i>: If required, a different review pass may be selected from the Document Viewer window by using the Review Pass drop-down menu. The Review Passes are in alphabetical order. See <MadCap:xref href="../Understand_the_Document_Viewer/AR_Change_to_a_Different_Review_Pass.htm">Move Between Review Passes/Batches</MadCap:xref> for more information.</p>
+                        <p>
+                            <img src="../../../../Graphics/ECA_ReviewPassDropDown.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Select a Document Viewer tab to assist in the review of the document. The tabs, available at the top of the Document Viewer window, include:</p>
+                        <ul class="BulletListBody">
+                            <li>Web Viewer</li>
+                            <li>Image</li>
+                            <li>Production</li>
+                            <li>Text</li>
+                            <li>Metadata</li>
+                        </ul>
+                        <p>Each tab displays a different view of the document and provides a separate toolbar that allows you to perform various actions depending on the tab selected. For more information about the activities you can complete on the various Document Viewer tabs, see <MadCap:xref href="../Understand_the_Document_Viewer/AR_Document_Views.htm">Work with Document Viewer Tabs</MadCap:xref>.</p>
+                    </li>
+                    <li>
+                        <p>In the tag palette located on the right side below the coding form, do any of the following:</p>
+                        <ul style="text-align: left;margin-left: 0.35in;">
+                            <li>
+                                <p>If a tag group is collapsed, expand the tag group by clicking   <img src="../../../../Graphics/ECA_TagGroupExpander.png" /> to see the tags.  Click <img src="../../../../Graphics/ECA_TagGroupCollapse.png" /> to collapse the tag group.</p>
+                                <p class="BodyText">
+                                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_TagPalette_ReviewCase_1.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                            <li>
+                                <p class="BodyText">Select all applicable tags by selecting the radio button or check box beside the tag name. Multiple tags may be selected for a group that is not exclusive. Only one tag may be selected in an exclusive group.</p>
+                                <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                    <tbody>
+                                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                <p>
+                                                    <img src="../../../../Resources/Images/myipro_tip.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                <p class="Note">Tip: If a keyboard shortcut has been assigned to a tag, you can apply that tag quickly to a document by pressing the keys associated with that shortcut. Ask your administrator if any shortcut keys have been assigned to your tags.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>If a tag group is marked as required, you must select at least one tag within the group. The following image shows a tag group that is both required and exclusive.</p>
+                                <p>
+                                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Tags_Exclusive_Required.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="BodyText">Set a <b>Review Status</b> for the document: Not Reviewed (default), Reviewed, or On Hold. </p>
+                        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../../../Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: Before you can check in a batch, every document must be marked as Reviewed.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>When finished, do one of the following actions by using the coding form/tag palette navigation toolbar shown as follows:</p>
+                        <p> <img src="../../../../Graphics/ECA_CodingFormFullToolbar.png" class="Thumbnail" /></p>
+                        <ul style="list-style-type: lower-alpha;margin-left: 0.35in;text-align: left;" class="BulletListBody">
+                            <li>
+                                <p class="BodyText"> Click <img src="../../../../Graphics/ECA_CodingFormUndoButton.png" />  to clear the changes.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormGotoFirstButton.png" />to move to the first document in the batch.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormSaveandGotoPreviousButton.png" />  to go to previous document and save the changes.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormSaveandGotoNextButton.png" />  to go to next document and save the changes.</p>
+                            </li>
+                            <li>
+                                <p>Click <img src="../../../../Graphics/ECA_CodingFormGotoLastButton.png" /> to move to the first document in the batch.</p>
+                            </li>
+                            <li>
+                                <p>Click   <img src="../../../../Graphics/ECA_CodingFormSaveButton.png" /> to save the changes and remain on the document.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <h3>
+                <MadCap:toggler targets="Apply Mass Actions">Apply Mass Actions</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Apply Mass Actions">
+                <p>Mass Actions are actions performed on multiple documents at one time, such as populating coding fields, OCRing documents, printing to PDF, and/or applying tags. The following sections  cover the process of applying tags to multiple documents, as well as editing field values across multiple records, through mass action. For more information about other mass actions you can perform in <MadCap:variable name="Primary.Name" /> Review, see <MadCap:xref href="../../Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm">Work with Mass Actions</MadCap:xref>.</p>
+                <h3><a name="Tag"></a>Tag Related Documents Through Mass Action</h3>
+                <p class="BodyText">If you have the permissions required to do so, use the 
+ following procedure to tag related documents in the same way all at once. 
+ You can perform mass actions from any relationship menu except for <b>Document History</b>. See <MadCap:xref href="../View_Relationships/Overview_Relationships.htm">About Relationships</MadCap:xref> for more information.</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>In <MadCap:variable name="Primary.ProdName_Review" />, click  a case card.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Card_Case.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>A list of review passes defined for the selected case displays beneath the case card. Select the desired review pass located on the right side of the funnel graph. The Review grid opens with the batch document set, predefined relationships, and the coding form/tag palette. </p>
+                    </li>
+                    <li>
+                        <p>When the review pass is accessed for the first time, the Document Viewer window opens automatically with the first document in the batch. If the Document Viewer window did not open automatically when you accessed the review pass, double-click a document in the grid to open it. Perform the following steps.</p>
+                    </li>
+                    <li>
+                        <p>Select a relationship tab, along the left pane of the Document Viewer window, to locate related documents and to perform mass actions. Using the left pane relationship tabs, you can search for:</p>
+                        <ul class="BulletListBody">
+                            <li>Family documents</li>
+                            <li>Duplicates</li>
+                            <li>Near Duplicates</li>
+                            <li>Documents belonging to the same email thread</li>
+                            <li>Document history</li>
+                            <li>Conceptually similar documents</li>
+                        </ul>
+                        <p>See <MadCap:xref href="../View_Relationships/Overview_Relationships.htm">About Relationships</MadCap:xref> for more information about searching for related documents.</p>
+                    </li>
+                    <li>
+                        <p>Expand the desired relationship menu and pin it in place by clicking  <img src="../../../../Graphics/ECA_PinExpanderSidewaysIcon.png" style="width: 24px;height: 28px;" />.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Panel_RelMenus_Updated.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>Select the check box to the left of the field columns to display the <b>Mass Action</b> button as shown in the following figure. All items are selected.</li>
+                    <p class="BodyText">
+                        <img src="../../../../Graphics/ADD_Review_Graphics/AR_Panel_MassActionCheckboxes_Updated.png" class="Thumbnail" />
+                    </p>
+                    <li>Do any of the following:</li>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p class="BodyText">Clear items to be excluded for mass actions.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Clear the check box to the left of the field columns to clear all items in the menu.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Select individual items for mass actions.</p>
+                        </li>
+                    </ul>
+                    <li>Click <b>Mass Action</b> to display the coding form/tag palette dialog box as shown in the following figure.</li>
+                    <p style="margin-left: 0.45in;">
+                        <img src="../../../../Graphics/ADD_Review_Graphics/AR_Dialog_MassAction.png" class="Thumbnail" />
+                    </p>
+                    <p>
+                        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../../Graphics/Review_Note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Note: Coding form rules are not enforced when tags are applied in this manner.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <li>Do any of the following:</li>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p class="BodyText">Modify the coding form fields as required.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Select the applicable tag group.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Add individual tags by moving the slider over to the right as shown in the following:</p>
+                            <p class="BodyText">
+                                <img src="../../../../Graphics/ECA_TagSliderGreenBar.png" class="Thumbnail" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Remove tags by moving the slider to the left as shown in the following:</p>
+                            <p class="BodyText"> <img src="../../../../Graphics/ECA_TagSliderRedBar.png" class="Thumbnail" /></p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 0.35in;"><b>Note</b>: When the slider control is left in the center, the tag remains unchanged as shown in the following: </p>
+                    <p style="margin-left: 0.35in;">
+                        <img src="../../../../Graphics/ECA_TagSliderMiddle.png" class="Thumbnail" />
+                    </p>
+                    <li>Click <b>Apply</b>. The Mass Action dialog box closes and applies the fields/tags to the selected documents. The previously selected documents in the selected Relationship menu revert to the default status; they are all cleared. The coding form/tag palette reflects the changes made in the Mass Actions dialog box.</li>
+                    <p style="margin-left: 0.35in;"><b>Note</b>: A prompt may appear if invalid characters and/or formats are entered in the coding form or if the number of characters exceed the total allowed for a field.</p>
+                    <li>Repeat the previous steps for other groups of documents requiring to be tagged in the same way.</li>
+                </ol>
+                <h3><a name="Edit"></a>Edit Multiple Fields Through Mass Action</h3>
+                <div MadCap:targetName="Edit Multiple Fields">
+                    <p class="BodyText">Users who have appropriate permissions can replace field 
+ content across multiple records at one time.</p>
+                    <ol class="NumbListBody">
+                        <li>
+                            <p>Perform the steps described in <MadCap:xref href="../../Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm#Select">Select Documents for Mass Action</MadCap:xref>. </p>
+                        </li>
+                        <li>
+                            <p>Click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_Mass_Actions.png" class="button_inline" />
+  in the mass action toolbar to display the menu. </p>
+                            <p>
+                                <img src="../../../../Graphics/ADD_Review_Graphics/AR_Scr_Mass_Actions_Menu_newer.png" class="Thumbnail" />
+                            </p>
+                        </li>
+                        <li>Select 
+ the <span style="font-weight: bold;">Edit Fields</span> option.</li>
+                        <li>
+                            <p>In the <span style="font-weight: bold;">
+ Edit Fields Options</span> list, select one of the following actions:</p>
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p><span style="font-weight: bold;">Search and Replace</span>: Find specific 
+ content in a selected field(s) and replace it with different content. 
+ See <span style="font-weight: normal;">step 5</span>.</p>
+                                </li>
+                                <li>
+                                    <p><span style="font-weight: bold;">Copy Field</span>: Copy the content of 
+ one field to another field. See <span style="font-weight: normal;">step 
+ 6</span>.</p>
+                                </li>
+                                <li>
+                                    <p><span style="font-weight: bold;">Overwrite Field</span>: Replace whatever 
+ content exists in a selected field(s) with different content. See <span style="font-weight: normal;">step 7</span>.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>If you selected <span style="font-weight: bold;">Search 
+ and Replace</span>:</p>
+                            <ol>
+                                <li>
+                                    <p>In 
+ the list of <span style="font-weight: bold;">Available Fields</span>, 
+ double-click each field to be changed in the same way. Alternatively, 
+ use SHIFT+click or CTRL+click to select a contiguous or non-contiguous 
+ set of fields, respectively, then click “&gt;” to move these fields into 
+ the <span style="font-weight: bold;">Selected Fields</span> list.</p>
+                                </li>
+                                <li>
+                                    <p>Enter 
+ the content to be replaced in the <span style="font-weight: bold;">Search 
+ for</span> field. This entry is not case sensitive.</p>
+                                    <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                        <tbody>
+                                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                    <p>
+                                                        <img src="../../../../Resources/Images/myipro_tip.png" />
+                                                    </p>
+                                                </td>
+                                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                    <p class="Note">Tip: An entry is required in the <span style="font-weight: bold;">Search</span><![CDATA[ 
+		 ]]><b>for</b> field. If you want to replace empty fields with content, use the 
+		 <span style="font-weight: bold;">Overwrite Field</span> option.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <p>Enter 
+ the new content in the <b>Replace with</b> field. The format of your entry must 
+ match the field type (for example, if a Date field must be changed 
+ from 01/01/2014 to another date, use the same format for your replacement 
+ entry). For text entries, the capitalization used here will be used in 
+ the selected field(s).</p>
+                                </li>
+                                <li>
+                                    <p>Skip to step 8.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <p class="BodyTextIndent"><span style="font-weight: bold;">Example</span>: 
+ All or part of a field’s content can be entered. For example, a Custodian's
+ name might be entered as both “Jon Smith” and “John Smith” 
+ in your case. For consistency, you could search for “Jon” and replace 
+ it with “John” so that the company name is consistent. See the 
+ following:</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Scr_Search_and_Replace_Fields2.png" class="Thumbnail" />
+                        </p>
+                        <li>
+                            <p>If you 
+ selected <span style="font-weight: bold;">Copy Field</span>:</p>
+                            <ol>
+                                <li>
+                                    <p>In 
+ the <span style="font-weight: bold;">Copy From</span> field, select the 
+ field that contains the content you want to copy.</p>
+                                </li>
+                                <li>
+                                    <p>In 
+ the <span style="font-weight: bold;">Copy To</span> field, select the 
+ field in which the same content should be used.</p>
+                                </li>
+                                <li>
+                                    <p>Skip 
+ to step 8<span style="font-weight: bold;">.</span></p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p>If you selected <span style="font-weight: bold;">Overwrite 
+ Field</span>:</p>
+                            <ol>
+                                <li>
+                                    <p>In 
+ the list of Available Fields, double-click each field to be changed in 
+ the same way. Alternatively, use SHIFT+click or CTRL+click to select a 
+ contiguous or non-contiguous set of fields, respectively, then click “&gt;” 
+ to move these fields into the Selected Fields list.</p>
+                                </li>
+                                <li>
+                                    <p>Enter 
+ the new content in the Overwrite Selected Field with this Text box. The format of your entry must match the field type (for example, if a Date 
+ field must be changed from 01/01/2014 to another date, use the same 
+ format for your replacement entry). For text entries, the capitalization used here will be used in the selected field(s). </p>
+                                </li>
+                                <li>
+                                    <p>Go 
+ to <span style="font-weight: normal;">step 8</span>.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p>Click 
+ <span style="font-weight: bold;"><img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_Submit.png" style="vertical-align: baseline;width: 63px;height: 26px;" />.</span></p>
+                        </li>
+                        <li>
+                            <p>To perform another mass action on the same 
+ selected documents, click <span style="font-weight: bold;">Edit </span> <b>Fields</b> and repeat steps 1 through 8.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <h3><a name="Apply"></a>
+                <MadCap:toggler targets="Apply Redactions">Apply Redactions</MadCap:toggler>
+            </h3>
+            <div MadCap:targetName="Apply Redactions">
+                <p class="BodyText">Redactions obscure the content of image files so that only appropriate 
+ information is visible in the files you prepare for discovery. In <MadCap:variable name="Primary.ProdName_Review" />, up to 99 redaction categories—with different colors and labels 
+ for each—may be used. Redactions are viewed in <MadCap:variable name="Primary.ProdName_Review" /> as solid (if user has appropriate permissions.) </p>
+                <h3><a name="Redact_Image_Content"></a>Redact Image Content</h3>
+                <p class="BodyText">If you have sufficient permissions, redact information 
+ in an image as follows:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s <span style="font-weight: bold;">Image</span> tab, locate the information 
+ to be redacted.</p>
+                    </li>
+                    <li>
+                        <p>Click <img src="../../../../Graphics/Eclipse Web Images/btn_images_more_buttons.png" alt="" border="0" class="button_inline" /> next to the Redaction button 
+ and select the required redaction from the Redaction Category  menu, 
+ as shown in the following figure:</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_RedactionDropDownImageTab.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>If required, click the button again to activate 
+ the redaction action.</p>
+                    </li>
+                    <li>
+                        <p>Point, click, and drag across the text or image area that is 
+ to be redacted..</p>
+                    </li>
+                    <li>
+                        <p>When the selection is complete, release the 
+ mouse button. An example of redacted text is shown as follows:</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_RedactedTextExampleImageTab.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Repeat steps 1 through 5 to apply other redactions.</p>
+                    </li>
+                    <li>
+                        <p>When finished, click <img src="../../../../Graphics/Eclipse Web Images/btn_image_pointer.png" alt="" border="0" class="button_inline" /> 
+ or another button to stop the redaction activity.</p>
+                    </li>
+                </ol>
+                <h3><a name="Show_Text_Behind_Redactions"></a>Show Text Behind Redactions</h3>
+                <p class="BodyText">For any or all redactions in the image, you can expose the text by clicking <img src="../../../../Graphics/ADD_Review_Graphics/AR_ShowHideRedacIconDocViewTabs.png" />located to the right of the Redaction drop-down menu. When you click this icon, it changes to <img src="../../../../Graphics/ADD_Review_Graphics/AR_ShowRedactionIconImageTab.png" />, You can click <img src="../../../../Graphics/ADD_Review_Graphics/AR_ShowRedactionIconImageTab.png" />again to hide the text. An example of exposed text behind a redaction is shown as follows: </p>
+                <p class="BodyText">
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_RedactedSeeThroughExampleImageTab.png" class="Thumbnail" />
+                </p>
+                <h3><a name="Resize_a_Redaction"></a>Resize a Redaction</h3>
+                <p class="BodyText">If you have sufficient permissions, change the size 
+ of a redaction as follows:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s <span style="font-weight: bold;">Image</span> tab, locate a redaction 
+ to be resized.</p>
+                    </li>
+                    <li>
+                        <p>Click the redaction to select it, then drag 
+ an edge or a corner to resize it.</p>
+                    </li>
+                    <li>
+                        <p>Repeat steps 1 and 2 to resize additional redactions..</p>
+                    </li>
+                </ol>
+                <h3><a name="Move_a_Redaction"></a>Move a Redaction</h3>
+                <p class="BodyText">If you have sufficient permissions, move a redaction 
+ as follows:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s the <span style="font-weight: bold;">Image</span> tab, locate a 
+ redaction to be moved.</p>
+                    </li>
+                    <li>
+                        <p>Place the mouse pointer in the center of the 
+ redaction and drag it to the required location, then release the mouse button.</p>
+                    </li>
+                    <li>
+                        <p>Repeat steps 1 and 2 to move additional redactions.</p>
+                    </li>
+                </ol>
+                <h3><a name="Delete_Redaction"></a>Delete a Redaction</h3>
+                <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: No warning message 
+		 or Undo function exists when deleting redactions. Be sure 
+		 the selection is what you want to make before deleting.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="BodyText">If you have sufficient permissions, delete redactions 
+ as follows:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s <span style="font-weight: bold;">Image</span> tab, locate a redaction 
+ to be to be deleted.</p>
+                    </li>
+                    <li>
+                        <p>On the <span style="font-weight: bold;">Image</span> 
+ tab toolbar, click <img src="../../../../Graphics/Eclipse Web Images/btn_image_move_markup.png" alt="" border="0" class="button_inline" />.</p>
+                    </li>
+                    <li>
+                        <p>Left-, then right-click the redaction and select 
+ <span style="font-weight: bold;">Delete</span>.</p>
+                    </li>
+                    <li>
+                        <p>When finished, click <img src="../../../../Graphics/Eclipse Web Images/btn_image_pointer.png" alt="" border="0" class="button_inline" /> 
+ or another button to stop the redaction activity.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <h2><a name="Check"></a>
+            <MadCap:toggler targets="Check In">4. Check In Batches</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Check In">
+            <p>Checking in a batch is available through the Review Grid layout. When entering the review pass for the first time, the Document Viewer window automatically opens in the foreground and displays the first document in the batch. The review grid remains in the background. The grid displays a highlight for the corresponding document shown in the Document Viewer window.</p>
+            <p>Proceed to review the documents in the batch. When ready, select the <b>Check In</b> button above the review grid. Once the batch is checked in, the next available batch then opens in the same review pass by default.</p>
+            <p>To check in a reviewed batch, perform the following steps:</p>
+            <ol>
+                <li>In the Document Viewer window,  review each document in the batch as described previously.</li>
+                <li>After the last document is reviewed for the batch, close the Document Viewer window.</li>
+                <li>
+                    <p>From the review grid, click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_CheckInBatch.png" style="width: 62px;height: 27px;" /> to display the Check In Batch dialog box shown as follows:</p>
+                    <p>
+                        <img src="../../../../Graphics/ADD_Review_Graphics/AR_CheckInBatchDialog_1.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>Select the option <b>Open next available batch</b> if you want to review the next available batch. </li>
+                <li>Click <b>Submit</b>. A prompt displays to indicate that the batch was checked in, and the Document Viewer window opens and displays the first document for the next batch provided the option, “Open next available batch” was selected.</li>
+            </ol>
+        </div>
+    </body>
+</html>

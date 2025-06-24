@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Additional Resources">
+    <TocEntry
+      Title="Import Third-Party Data">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Overview_Import_Third_Party_Data.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Create_the_Import_for_Third_Party_Data.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Production_History.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Text_Files.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Transfer Files">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Transfer Files Using Media Shuttle.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/Transfer Files Using CloudFiles.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

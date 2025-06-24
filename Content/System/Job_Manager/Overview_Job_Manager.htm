@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\Resources\MasterPages\Admin_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview: Job Manager</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Overview: Job Manager</h1>
+        <p>The <MadCap:variable name="Primary.Name First" /> Job Manager allows you to view, update, and manage jobs in the platform. The Job Manager provides an array of details about specific jobs that are processed, or scheduled for processing, in <MadCap:variable name="Primary.Name" />. Here you can view, filter, and sort jobs, access key information about job details, retry failed tasks, and download log files. </p>
+        <p>
+            <img src="../../Graphics/System_Graphics/JM_Scheduled_Jobs.png" class="Thumbnail" />
+        </p>
+        <p>The Job Manager is divided into the following tabs:</p>
+        <ul>
+            <li>
+                <p>In Progress</p>
+            </li>
+            <li>
+                <p>Completed</p>
+            </li>
+            <li>
+                <p>Scheduled</p>
+            </li>
+            <li>
+                <p>Agents</p>
+            </li>
+        </ul>
+        <p>The <b>In Progress</b> tab displays the full list of active and pending  jobs. When a job in <MadCap:variable name="Primary.Name" /> is currently processing, paused, or queued up to be processed, it appears in this tab.</p>
+        <p>The <b>Completed</b> tab shows the full list of jobs that have finished processing in <MadCap:variable name="Primary.Name" />, with or without errors. In addition to tracking  and reporting key details about completed jobs, this tab also provides you the ability to download PDF files (from Print to PDF jobs), as well as log files associated with each job.</p>
+        <p>The <b>Scheduled</b> tab displays jobs that are configured to run at some point in the future. These could be one-time jobs, or recurring jobs that are scheduled to run on a consistent basis. This tab also provides a button, <img src="../../Graphics/System_Graphics/btn_JM_Scheduled_Jobs_OpenSettings.png" />, that allows you to jump quickly to the location in <MadCap:variable name="Primary.Name" /> where each job is configured. </p>
+        <p>The <b>Agents</b> tab  provides details about the status of each Job Manager agent, and can be useful for troubleshooting any issues that may arise when processing tasks in the Job Manager.</p>
+        <h2><a name="Open2"></a>Open the Job Manager</h2>
+        <p>To access the Job Manager:</p>
+        <ol>
+            <li>Launch the <MadCap:variable name="Primary.Name"></MadCap:variable> application.</li>
+            <li>Sign in to your account using your username and password.</li>
+            <li>
+                <p>Click the <img src="../../Graphics/Icons/Job_Manager_icon.png"></img> icon in the top-right corner of your screen. The Job Manager opens.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="">
+                    </col>
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="">
+                    </col>
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png">
+                                    </img>
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: The Job Manager icon, <img src="../../Graphics/Icons/Job_Manager_icon.png"></img> , is accessible from all modules except the System Manager.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h2>Assign Permissions for the Job Manager</h2>
+        <p><MadCap:variable name="Primary.Name" /> allows administrators to set permissions that determine a user's access level within the Job Manager. To assign permissions for the Job Manager:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the name of the group you would like to edit. The group profile opens on the right side of the screen.</p>
+            </li>
+            <li>
+                <p>Click the <b>Edit</b> icon <img src="../../Resources/Images/Icons/Edit_Icon.png"></img>. You are now able to modify the users, permissions, and cases for the selected group.</p>
+            </li>
+            <li>On the <b>Permissions</b> tab, expand the <b>System</b> section, then assign the Job Manager permissions you would like to provide the group.   To learn more about the available permissions, see <MadCap:xref href="../Users and Groups/Permissions/Permissions_List.htm">Permissions List</MadCap:xref>.</li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p>Review the following topics to learn more about the procedures available to you when working in the Job Manager.</p>
+        <p>
+            <MadCap:xref href="Work_with_In_Progress_Jobs.htm">Work with In Progress Jobs</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Completed_Jobs.htm">Work with Completed Jobs</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Scheduled_Jobs.htm">Work with Scheduled Jobs</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Job_Manager_Agents.htm">Monitor Job Manager Agents</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.CSH">
+    <head><title>Create Output Native</title>
+        <link href="https://my.ipro.com/help/csh/content/Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="https://my.ipro.com/help/csh/content/Resources/Stylesheets/CSH.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 class="h1_CSH">Create Output Native</h1>
+        <p>To export native files, the files must exist in the case. Ensure they 
+ exist in the location(s) defined in the case before completing an export 
+ job. Complete the <span style="font-weight: bold;">Native</span> section 
+ of the export-set form as follows:</p>
+        <table cellspacing="0" style="mc-table-style: url('https://my.ipro.com/help/csh/content/Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 553px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Option</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Natives</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Select 
+			 this option to include native files in the export set. If you select this option and do not specify any file types or tags, all natives in the export set will be produced.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Reference 
+			 Existing Location</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">If 
+			 you do not want to copy native files to an export location, 
+			 but instead want to reference the existing file location in 
+			 your exported load files, select this 
+			 option.</p>
+                        <p class="TableText">When this option is selected, the existing 
+			 native file names will be maintained.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">File Naming</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">If 
+			 you did not select the <span style="font-weight: bold;">Reference 
+			 Existing Location</span> option, select a naming convention 
+			 for native files:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Use new number</span>: Name native 
+			 files based on selected document numbering. Example: ABC-0001.docx.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Append field or tag name</span>: 
+			 Name native files with the selected document number followed 
+			 by the value of a specific field or the name of a specific 
+			 tag group. After this option is selected, choose a delimiter 
+			 and the field/name from the lists that appear.</p>
+                            </li>
+                            <p class="TableText">Ineligible 
+			 characters will be omitted from the name and very long names 
+			 may be truncated.</p>
+                            <p class="TableText">Example: ABC-0001_Confidential.docx</p>
+                            <li>
+                                <p class="TableText"><span style="font-weight: bold;">Use field</span>: Name native files 
+			 with the value of a specific field (such as a field containing 
+			 the original file name). After this option is selected, choose 
+			 the needed field from the list that appears.</p>
+                            </li>
+                            <p class="TableText">Ineligible 
+			 characters will be omitted from names and very long names 
+			 may be truncated.</p>
+                            <p class="TableText">Example: Distribution 
+			 Report.docx</p>
+                            <li>
+                                <p class="TableText">If the selected 
+					 field contains the same value for different documents 
+					 and multiple documents with the same name end up in 
+					 the same output folder, then duplicate files will 
+					 be overwritten.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Exclude Native 
+			 if Redacted</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Select 
+			 this option to remove native files from the export set if 
+			 images have been redacted.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Specify by File Type or Tag</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Click 
+			 this button to limit production of native files to specific 
+			 file types or tags.</p>
+                        <p class="TableText">After clicking this option, click the drop down to select <b>Type</b>. To select<b> File Type</b> choose 
+			 a category (such as <span style="font-weight: bold;">Database</span>) 
+			 and/or individual software products. To select <b>Tag</b>, select from the list of available tags in your case. </p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">You must have created the Tag and applied it to your documents before using the Tag option.</p>
+                            </li>
+                        </ul>
+                        <p class="TableText">Click 
+			 <span style="font-weight: bold;">OK</span> when options have been selected. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

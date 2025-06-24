@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Manage Review Process</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage Review Process" />Manage Review Process</h1>
+        <p class="BodyText">In Eclipse, the review process for your case documents 
+ is managed through two mechanisms:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p><span style="font-weight: bold;">Review Passes</span> 
+ allow you to manage the review. For example, an initial review pass may 
+ be used to identify and tag all documents that are totally irrelevant 
+ to the case, such as spam email. Review passes are created and managed 
+ on a case-by-case basis in the Eclipse Web environment. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Individual 
+ batches</span> are assigned to individual reviewers. They allow you to 
+ efficiently divide the work, assign it to the correct individuals, and 
+ monitor progress. Individual batches are created as part of Review Pass 
+ creation.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Admin_Graphics/RevPassMgmt_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+        </ol>
+        <p class="BodyText"><span class="BoldItalic"><img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" /></span>
+        </p>
+        <p class="BodyText" style="font-family: Arial, sans-serif;">
+            <MadCap:toggler style="font-family: Arial, sans-serif;" targets="t1"><span style="font-family: Arial, sans-serif;">Click 
+ here to watch the </span><b style="font-family: Arial, sans-serif;"><span style="font-size: 11.0pt;font-family: Arial, sans-serif;">Review 
+ Pass Management</span></b><span style="font-family: Arial, sans-serif;"> 
+ video</span>
+            </MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://player.vimeo.com/video/223328791" style="width: 640px;height: 480px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#How_Documents_are_Organized_into_Batches">How 
+	 Documents are Organized into Batches</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Before_You_Begin">Before You Begin</a>
+                </p>
+            </li>
+        </ul>
+        <p class="BodyText"><span class="BoldItalic">Related pages:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="Create_Review_Passes_and_Batches.htm">Create 
+	 Review Passes and Batches</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="Manage_Review_Passes_and_Batches.htm">Manage 
+	 Review Passes and Batches</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="How_Documents_are_Organized_into_Batches"></a>How Documents 
+ are Organized into Batches</h2>
+        <h3>Basic Organization</h3>
+        <p class="BodyText">By default, documents in a review pass are separated 
+ into batches in numerical order by image key (BEGDOC field). If you define 
+ a batch size of 100 documents, the first batch will contain the first 
+ 100 documents in the review pass, in order by image key. </p>
+        <p class="BodyText">The options described in the following paragraphs allow 
+ other methods of organization.</p>
+        <h3>Category Grouping</h3>
+        <p class="BodyText">When a review pass is defined with the Batch by Category 
+ option, documents are grouped by a selected “category.” </p>
+        <p class="BodyText">For example, you might group documents based on a <span style="font-weight: bold;">DocType</span> &#160;field, in which case 
+ all like documents (.MSG, .DOC, .XLS, etc.) will be grouped into batches 
+ based on batch size. </p>
+        <p class="BodyText">Categories can be any of the following:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Category definitions 
+ of a specific field: group documents into batches according to a specific 
+ field’s category definition. See <span style="font-style: italic;">Field 
+ Options</span> in <a href="../Case_Setup/Step_3__Define_Database_Fields.htm">Step 
+ 3: Define Database Fields</a> for details on field categories.</p>
+            </li>
+            <li>
+                <p>Analytic Categories: 
+ If Eclipse Analytics has been installed and configured at your site, documents 
+ can be batched by:</p>
+                <ul>
+                    <li>
+                        <p>Analytics 
+ Categories</p>
+                    </li>
+                    <li>
+                        <p>Analytics 
+ Clusters</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="BodyTextIndent">See <MadCap:xref href="../Analytics/Ipro Analytics/Understand_AnalyticsIA.htm">Understand IPRO Analytics</MadCap:xref> for details.</p>
+        <h3>Include Family Documents</h3>
+        <p class="BodyText">Fields can be defined with the <span style="font-weight: bold;">Allow 
+ Group By</span> option set to <span style="font-weight: bold;">Yes</span>. 
+ By default, the BEGATTACH and MD5HASH fields are defined with this option.</p>
+        <p class="BodyText">When such fields exist, they can be selected as the 
+ <span style="font-weight: bold;">Family Field</span> during batch creation. 
+ The <span style="font-weight: bold;">Family Field</span> option ensures 
+ that all family documents are kept together in batches. </p>
+        <p class="BodyText">Typical uses include:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>BEGATTACH: Keep 
+ a document and all of its attachments together.</p>
+            </li>
+            <li>
+                <p>MD5HASH: Keep a 
+ document and all duplicates together.</p>
+            </li>
+            <li>
+                <p>Field indicating 
+ email threading: Keep all documents in a specific email thread together.</p>
+            </li>
+        </ul>
+        <p class="BodyText">When a family field is defined, Eclipse groups documents 
+ into batches sequentially by image key plus all family documents associated 
+ with the documents encountered as the batches are created. Thus batch 
+ sizes may vary quite a bit.</p>
+        <h3>Batching Order</h3>
+        <p class="BodyText">In addition to grouping by category and/or including 
+ family documents, documents can be sorted for batching by the content 
+ of up to three fields (<span style="font-weight: bold;">Batching Order 
+ 1, 2, and 3</span>). In this case, documents in the review pass are sorted 
+ by the selected field(s) and then organized into batches. </p>
+        <p class="BodyText">For example, you might sort by a date field, in which 
+ case, documents in the review pass will be sorted by date and batches 
+ created starting with the earliest date. </p>
+        <p class="BodyText">If you group documents by a category and also sort 
+ by date, batches will be based on the category field and organized secondarily 
+ by date. </p>
+        <p class="BodyText">If you want to include family documents and sort by 
+ a particular field, family documents must share the same sort-field value 
+ as their “parent” document. Otherwise, sorting will take precedence and 
+ family documents will not be kept together with their parent in a batch. 
+ </p>
+        <p class="BodyText">For example, if you include family documents and also 
+ sort by a date field, if document ABC-0001 has a date of 01/01/2014, then 
+ for its family documents to be included in its batch, all family documents 
+ must also have a date of 01/01/2014. If family documents do not all have 
+ the same date, then all documents will be organized into batches based 
+ on the date field. </p>
+        <h3>Configuration Task Order</h3>
+        <p class="BodyText">Before creating a review pass, fundamental Eclipse 
+ configuration must be completed (managing client, case, users and user 
+ groups).</p>
+        <h3>Permissions Required</h3>
+        <p class="BodyText">All members of the Super Admin group can manage review 
+ passes and batches. Others who have the Create and Manage Batches permission 
+ can also perform these tasks.</p>
+        <h2><a name="Before_You_Begin"></a>Before You Begin</h2>
+        <p class="BodyText">As with other administration activities, planning will 
+ help ensure the best outcome. The following steps will help you efficiently 
+ create review passes:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Identify 
+ the <span style="font-weight: bold;">managing client</span> and <span style="font-weight: bold;">case</span> for which review passes are 
+ being defined.</p>
+            </li>
+            <li>
+                <p>Determine the <span style="font-weight: bold;">purpose</span> 
+ and <span style="font-weight: bold;">scope</span> of each review pass. 
+ For example:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Is 
+ this an initial pass to identify irrelevant or illegible documents, or 
+ a more specific pass, such as to identify and tag all privileged information?</p>
+                    </li>
+                    <li>
+                        <p>Which 
+ documents should be included? (For example, a review pass might be based 
+ on a specific field category value.) </p>
+                    </li>
+                </ul>
+            </li>
+            <p class="BodyTextIndent">This information will allow you to identify and 
+ save the <span style="font-weight: bold;">search</span> to be used for 
+ the review pass. See <a href="../../Eclipse_web/Eclipse_Web_End_User.htm">Eclipse 
+ Web End User</a> for details on searching.</p>
+            <li>
+                <p>Give some consideration to <span style="font-weight: bold;">naming 
+ conventions</span> for review passes so that names are meaningful and 
+ consistent. </p>
+            </li>
+            <li>
+                <p>Identify the <span style="font-weight: bold;">user 
+ group(s)</span> who will work on each review pass. </p>
+            </li>
+            <li>
+                <p>Decide whether or not documents should be grouped 
+ by category and/or a family field as discussed in <a href="#How_Documents_are_Organized_into_Batches">How 
+ Documents are Organized into Batches</a>.</p>
+            </li>
+            <li>
+                <p>Optional: At any time, you can add instructions 
+ for the review in a separate file and add it to the case as explained 
+ in <a href="../Case_Setup/Add_Case_Instructions%2c_Documents%2c_and_Alerts.htm">Add 
+ Case Instructions, Documents, and Alerts</a>.</p>
+            </li>
+            <li>
+                <p>Continue with <a href="Create_Review_Passes_and_Batches.htm#Review_Pass_Basics">Review 
+ Pass Basics</a>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

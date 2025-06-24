@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <table cellspacing="0" style="mc-table-style: url('../Stylesheets/ADD_Help_Tables.css');width: 90%;" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 223px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 222px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 222px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 224px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Heading</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">heading</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">heading</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">heading</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Text Text Text 
+		 </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Text Text Text</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

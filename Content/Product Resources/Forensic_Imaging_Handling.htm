@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../Resources/MasterPages/Enterprise_and_Eclipse_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../eCapture/Content/Resources/TableStyles/CD360_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../eCapture/Content/Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Forensic Imaging Handling</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>&#160;</p>
+        <h1>Forensic Image Handling</h1>
+        <p>The <MadCap:variable name="Primary.eCapture" /> installation includes a File Mounting Service (FMS) to support forensic file image handling in <MadCap:variable name="Primary.Name" />. When a forensic disk image is encountered inside a discovered data set, 
+ the image is automatically mounted to allow for discovery and data extraction. 
+ Forensic image files may also be mounted and discovered directly from 
+ the <MadCap:variable name="Primary.eCapture" /> Controller automatically.</p>
+        <p>
+            <MadCap:keyword term="Mount Image Pro" />
+            <MadCap:keyword term="OSFMount" />Two third-party applications may be used for mounting forensic image 
+ types: OSFMount and Mount Image Pro. The FMS uses OSFMount by default. Mount Image Pro may also be used, but requires purchasing a license separately, as IPRO does not provide one. Only one third-party application may be used at 
+ a time.</p>
+        <h3>OSFMount</h3>
+        <p>OSFMount supports the mounting of the following Windows image file formats:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Raw Image (.IMG, .DD)</p>
+            </li>
+            <li>
+                <p>Raw CD Image (.ISO, .BIN)	</p>
+            </li>
+            <li>
+                <p>Split Raw Image (.00n)</p>
+            </li>
+            <li>
+                <p>Nero Burning ROM Image (.NRG)</p>
+            </li>
+            <li>
+                <p>System Deployment Image (.SDI)</p>
+            </li>
+            <li>
+                <p>Advanced Forensics Format Images* (AFF)	</p>
+            </li>
+            <li>
+                <p>Advanced Forensics Format Images w/ meta data* (AFM)</p>
+            </li>
+            <li>
+                <p>Advanced Forensics Format Directories* (AFD)</p>
+            </li>
+            <li>
+                <p>VMWare Image (.VMDK)	</p>
+            </li>
+            <li>
+                <p>EnCase EWF (.E01)</p>
+            </li>
+            <li>
+                <p>SMART EWF (.SO!)	</p>
+            </li>
+            <li>
+                <p>VHD image (.VHD)</p>
+            </li>
+        </ul>
+        <h4>Switching to OSFMount from Mount Image Pro</h4>
+        <p class="BodyText">If you are already on Mount Image Pro and would like to switch to OSFMount instead, it is necessary 
+ to manually update a property table in SQL.</p>
+        <ul>
+            <li>From SQL, access the <b>Enterprise.ApplicationEnvironmentProperty</b> table 
+ in the <MadCap:variable name="Primary.Name" /> database and update the <b>PropertyValue</b> to <b>2</b> in the row where <b>ApplicationEnvironmentPropertyNameId</b> 
+ is 4. The <b>PropertyValue</b> initially displays the Mount Image Pro default value 
+ of 1 (as shown in the following figure):</li>
+        </ul>
+        <p>
+            <img src="../../../eCapture/Content/Resources/Images/eCapture/OSFMountSQL.gif" alt="" style="border: none;" border="0" />
+        </p>
+        <table style="mc-table-style: url('../../../eCapture/Content/Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../eCapture/Content/Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Now the system is using OSFMount. To switch back 
+ to Mount Image Pro, PropertyValue must be changed from 2 back to 1.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <MadCap:keyword term="file types" />
+        </p>
+        <h3>Mount Image Pro</h3>
+        <p>To use Mount Image Pro, a license must be purchased separately, as IPRO does not provide one.  Mount Image Pro supports the following forensic file image types:</p>
+        <table style="mc-table-style: url('../../../eCapture/Content/Resources/TableStyles/CD360_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 219px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 162px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 143px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 227px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Forensic 
+		 Category</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Extension</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Detection 
+		 Method</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Access 
+		 Data</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Access Data</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.AD1</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Bytes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Apple</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Apple Disk Image</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.DMG</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Bytes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase File</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.E01</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Bytes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase File</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.EX01</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Extension</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase Logical File</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.L01</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Bytes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase Logical File</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.LX01</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Extension</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Encase</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">SMART</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.S01</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Bytes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Forensic 
+		 File Format</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Advanced 
+		 Forensic File</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.AFF</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Bytes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Raw 
+		 CD Image</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ISO Optical Image</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.ISO</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Bytes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Raw 
+		 CD Image</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Nero Burning ROM</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.NRG</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Extension</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">SafeBack</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">System Deployment Image</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">.SDI</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Extension</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

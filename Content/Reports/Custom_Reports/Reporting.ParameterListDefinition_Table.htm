@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports" style="mc-master-page: url('../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head>
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Reporting.ParameterListDefinition Table</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Reporting.ParameterListDefinition Table" />Reporting.ParameterListDefinition Table</h1>
+        <p class="BodyText">This table is 
+ linked to the ExecutionMetadata field of your ReportDefintion. It allows 
+ the execution of additional stored procedures in order to acquire a list 
+ of items to show the user, that is, when you want to allow user-input 
+ for your custom report, but want to restrict that input to a list of specific 
+ items. The schema is as follows:</p>
+        <p class="Image">
+            <img src="../../Graphics/Report_Graphics/CustomReports/ReportingParameterListDefinitionSchema.png" alt="" border="0" class="Thumbnail" />
+        </p>
+        <p class="BodyText">Examples of common 
+ list items include "Field Definitions" for <MadCap:variable name="Primary.Name" /> reports or "Discovery Job" for <MadCap:variable name="Primary.Name" /> Processing reports.</p>
+        <h2><a name="Pre-Defined__Default__Lists"></a>Pre-Defined 
+ (Default) Lists</h2>
+        <p class="BodyText">You can define 
+ your own custom lists, but the default set provided with <MadCap:variable name="Primary.Name" /> will 
+ meet your needs in most cases. Following are <MadCap:variable name="Primary.IPRO" />’s pre-defined lists 
+ and their definitions at the time of this topic’s publication:</p>
+        <p class="Image">
+            <img src="../../Graphics/Report_Graphics/CustomReports/PredefinedLists.png" alt="" border="0" class="Thumbnail" />
+        </p>
+        <h2><span>Table Details</span>
+        </h2>
+        <p class="BodyText"><span>Although 
+ inserting additional entries into the Reporting.ParameterListDefinition 
+ table is supported, it is unnecessary (and is discouraged) under most 
+ circumstances. The following details regarding this table are primarily 
+ for informational purposes, to allow you to better understand the ExecutionMetadata 
+ for creating Report Definitions.</span>
+        </p>
+        <p class="BodyText">The Reporting.ParameterListDefinition 
+ table works very similar to Report Definitions, but is less flexible and 
+ is not intended for extensive customization.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 550px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field 
+		 NAME</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">DATA 
+		 TYPE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 name of the parameter list. This is the field that you should 
+		 specify within your ExecutionMetadata.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">StoredProcedure</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 name of the stored procedure that returns the list of items.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">RequiresCpeId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Boolean</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Specifies 
+		 whether or not this stored procedure requires the CaseProductEnvironmentId 
+		 that the user selected in the user interface. This should be 0 
+		 (false) in most cases, and is typically only necessary for <MadCap:variable name="Primary.Name" /> 
+		 Processing reports.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ProductId</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Refers 
+		 to the product to which your report will be available. This <i>must</i> be a value from 
+		 the <MadCap:variable name="Primary.Name" /> Product table.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">DisplayColumn</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Contains 
+		 the name of the column in your dataset that contains the "Name<span style="font-style: italic;">"</span> value as described next.</p>
+                        <p class="TableText">The specified stored procedure should return 
+		 a dataset with two columns. The DisplayColumn field refers to 
+		 the column that contains the value to display to the user. This 
+		 is typically a name of some kind, such as "Field Definition" 
+		 or "Discovery Job".</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">ValueColumn</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Contains 
+		 the name of the column in your dataset that contains the ID value 
+		 as described next.</p>
+                        <p class="TableText">The specified stored procedure should return 
+		 a dataset with two columns. The ValueColumn field refers to the 
+		 column that contains the value sent to the custom report stored 
+		 procedure. This is typically just "ID", but could be 
+		 something more specific, such as "BatchID".</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span><span>Example</span></span>
+        </h3>
+        <p class="BodyText"><span>In the following 
+ example, a custom report that uses a </span><span style="font-style: italic;">list</span> 
+ DisplayType is defined. The user will be able to select a single item 
+ from a list of Data Extract Jobs and submit that item to the custom report. 
+ The pre-defined DataExtractJobs list is used; see <MadCap:xref href="#Pre-Defined__Default__Lists">Pre-Defined 
+ (Default) Lists</MadCap:xref> <span>above for 
+ more information.</span></p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';">{</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;</span>&#160;"StoredProcedure": 
+ "UserDefinedReports.MyCustomReport",</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;</span>&#160;"ParameterInfo": 
+ [</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;&#160;&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;"Name": 
+ "DataExtractJobId",</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;"DisplayName": 
+ "Data Extract Job",</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;"DisplayType": 
+ "list",</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;"ParameterListName": 
+ "DataExtractJobs",</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;"IsOptional": 
+ true</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;&#160;&#160;</span>&#160;}</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';"><span>&#160;</span>&#160;]</span>
+        </p>
+        <p class="Code"><span style="font-size: 10.0pt;line-height: 105%;font-family: 'Courier New';">}</span>
+        </p>
+    </body>
+</html>

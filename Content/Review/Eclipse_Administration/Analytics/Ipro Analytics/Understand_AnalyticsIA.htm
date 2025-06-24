@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');" MadCap:conditions="Primary.Eclipse">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Understand IPRO Analytics</title>
+        <link href="../../../../Resources/Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Understand IPRO Analytics</h1>
+        <p class="BodyText"><MadCap:variable name="Primary.IPRO" /> Analytics is an optional feature that helps you and your users search for and identify concepts and relationships within your case documents. It includes six functions:</p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/Admin_Graphics/Ipro_Analytics_Main_Menu.gif" class="Thumbnail_Popup" />
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">Analytics searching</p>
+            </li>
+            <li>
+                <p class="BodyText">Clustering</p>
+            </li>
+            <li>
+                <p class="BodyText">Categories</p>
+            </li>
+            <li>
+                <p class="BodyText">Email threading</p>
+            </li>
+            <li>
+                <p class="BodyText">Near-duplicates detection</p>
+            </li>
+            <li>
+                <p class="BodyText">Content Filters</p>
+            </li>
+        </ul>
+        <p class="BodyText"><MadCap:variable name="Primary.IPRO" /> Analytics actually learns concepts and category details; information about case content is expanded as <MadCap:variable name="Primary.IPRO" /> Analytics evaluates more and more relevant documents.</p>
+        <p class="BodyText"><MadCap:variable name="Primary.IPRO" /> Analytics can provide significant decreases in review times with minimal changes to your review processes. Using simple strategies such as clustering to create review sets and email threading to identify inclusive emails, will improve the efficiency of document reviews.</p>
+        <p class="BodyText">Clusters in <MadCap:variable name="Primary.IPRO" /> Analytics break down case content using “Latent Dirichlet Allocation” (LDA), an algorithm-based approach that identifies patterns and relationships between terms and concepts within each case. There are no dictionaries or word lists; <MadCap:variable name="Primary.IPRO" /> Analytics “learns” the content of the case database as needed for effective analysis.</p>
+        <p class="BodyText">&#160;</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Only a member of the Super Admin group can manage <MadCap:variable name="Primary.IPRO" /> Analytics functions in <MadCap:variable name="Primary.IPRO" /> Eclipse Administration.</p>
+                </td>
+            </tr>
+        </table>
+        <h2>IPRO Analytics Features</h2>
+        <p class="BodyText">This section explains how to create and manage clustering, categories and analytics search indexes.</p>
+        <h3>Clustering</h3>
+        <p class="BodyText">Clustering groups and sorts documents based on content that is conceptually similar. This example shows how clusters appear in <MadCap:variable name="Primary.IPRO" /> Eclipse.</p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/Admin_Graphics/Clustering-Ex_Web.gif" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">Clustering is based on an algorithm that finds the general major groupings and minor groupings of the data and presents cluster results in a balanced hierarchy. The number of cluster levels, size, and other settings can be adjusted before a cluster is created. You may choose to cluster the entire case or a selected saved search.</p>
+        <p class="BodyText">In <MadCap:variable name="Primary.IPRO" /> Eclipse, a Concept Wheel provides a visual representation of cluster details. A typical Concept Wheel is shown in the following figure.</p>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/Admin_Graphics/ConceptWheelEx_Web.png" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText"> For more information on clusters, watch the <MadCap:toggler targets="clusters">Clusters video</MadCap:toggler>.</p>
+        <div MadCap:targetName="clusters">
+            <p>
+                <object src="https://vimeo.com/273940026" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p>For more information about defining clusters, see <MadCap:xref href="Define_Analytic_Clusters_IA.htm">Define IPRO Analytics Clusters</MadCap:xref> and <MadCap:xref href="../../../Eclipse_web/Analytics/Use_the_Concept_Wheel.htm">Use the Concept Wheel</MadCap:xref>.</p>
+        <h3>Categories</h3>
+        <p class="BodyText">Categories identify specific types of documents based on the analytics index. This type of index can be used when you have very large amounts of data and you know the key issues or topics that need to be found. It relies on carefully selected training and example items that exemplify the categories of interest. This example shows how categories appear in <MadCap:variable name="Primary.IPRO" /> Eclipse.</p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/Admin_Graphics/CategoriesEx_Web.gif" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">The way in which a category index processes case data is more efficient from a processing standpoint—categorization can process very large quantities of data in a reasonable amount of time. For effective results, though, the training and example items must provide a good basis for the categories being defined. For more information on categories, watch the <MadCap:toggler targets="categories">Categories video</MadCap:toggler>.</p>
+        <div MadCap:targetName="categories">
+            <p>
+                <object src="https://vimeo.com/273940026" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p>For more information about defining categories, see <MadCap:xref href="Define_Analytic_CategoriesIA.htm">Define IPRO Analytics Categories</MadCap:xref>.</p>
+        <h3>Email threading</h3>
+        <p class="BodyText">All email users are familiar with email conversations that go back and forth among various contributors. The “conversation” is included in each email, and a final email contains the complete conversation, similar to the “John Smith” email in this figure.</p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/Eclipse Web Images/scr_emailthreading.png" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText"><MadCap:variable name="Primary.IPRO" /> Analytics can assist reviewers in locating the final email, thus allowing them to review only one document in an email conversation. For more information on email threading, watch the <MadCap:toggler targets="emailthreading">Email Threading video</MadCap:toggler>.</p>
+        <div MadCap:targetName="emailthreading">
+            <p>
+                <object src="https://vimeo.com/273777630" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p>For more information about configuring email threading, see <MadCap:xref href="Configure_Email_ThreadingIA.htm">Configure Email Threading in IPRO Analytics</MadCap:xref>. For information about working with email threading results and batches, see:</p>
+        <ul class="BulletListBody">
+            <li>
+                <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/SetUpRelPanel_to_DisplayEmThreadsIA.htm">Set Up the Relationship Panel to Display Email Threads ([%=Primary.Analytics%])</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/Create_FullEmThread_Batches_for_ReviewIA.htm">Create Full Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/Create_InclusiveEmailThread_Batches_for ReviewIA.htm">Create Inclusive Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/Create_EmailThrandND_Batches_for_ReviewIA.htm">Create Email Thread with Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+            </li>
+        </ul>
+        <h3>Near-duplicate detection</h3>
+        <p class="BodyText">This <MadCap:variable name="Primary.IPRO" /> Analytics function identifies textual near-duplicate groups in item text. Textual near-duplicates are items in which most of the text appears in other items in the group and in the same order.</p>
+        <p class="BodyText">The metadata of the items identified as part of a near-duplicate group will be updated with a group ID to identify the near-duplicate group to which the items belong. For more information on near duplicate detection, watch the <MadCap:toggler targets="nearduplicate">Near Duplicate Detection video</MadCap:toggler>.</p>
+        <div MadCap:targetName="nearduplicate">
+            <p>
+                <object src="https://vimeo.com/273940902" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p>For more information on configuring near duplicate detection, see <MadCap:xref href="Configure_Near-Duplicate_AnalyticsIA.htm">Configure Near-Duplicate Detection in IPRO Analytics</MadCap:xref>. For information about working with near duplicate detection results and batches, see:</p>
+        <ul class="BulletListBody">
+            <li>
+                <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/SetUpRelPanel_to_DisplayND_IA.htm">Set Up the Relationship Panel to Display Near-Duplicates ([%=Primary.Analytics%])</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/Create_NearDup_Batches_for_ReviewIA.htm">Create Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/Create_EmailThrandND_Batches_for_ReviewIA.htm">Create Email Thread with Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+            </li>
+        </ul>
+    </body>
+</html>

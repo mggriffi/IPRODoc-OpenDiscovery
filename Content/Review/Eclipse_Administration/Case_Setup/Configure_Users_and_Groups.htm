@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedList,Primary.Z_Excluded V1" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Users and Groups</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Understand Users and Groups;Configure Users and Groups" />Configure Users and Groups</h1>
+        <p class="BodyText">Adding and removing users and groups is a normal part 
+ of Eclipse<sup>®</sup> by <MadCap:variable name="Primary.IPRO" /> administration.</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p class="BodyText"><a href="#Users">Users</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="#User_Types">User Types</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="#Groups">Groups</a>
+                </p>
+            </li>
+        </ul>
+        <p class="BodyText"><span class="BoldItalic">Related pages:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p class="BodyText"><a href="Define_Users.htm"><span class="BoldItalic" style="font-weight: normal;font-style: normal;">D</span>efine 
+	 Users</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="Define_User_Types.htm">Define User 
+	 Types</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="Define_User_Groups.htm"><span class="BoldItalic" style="font-weight: normal;font-style: normal;">D</span>efine User 
+	 Groups</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="Import_Users_from_Active_Directory.htm">Import 
+	 Users from Active Directory</a>
+                </p>
+            </li>
+            <li>
+                <p class="BodyText"><a href="Import_Users_from_File.htm">Import 
+	 Users from File</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Users"></a>Users</h2>
+        <p class="BodyText">Users are individual members of your organization who 
+ will use Eclipse (for example, case reviewers, attorneys, or other specialists). 
+ </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Click 
+ here for Check License details</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p class="BodyText">Ensure that your <MadCap:variable name="Primary.IPRO" /> Eclipse license is sufficient 
+	 for the number of users you want to <MadCap:annotation MadCap:createDate="2024-04-09T14:04:18.9855149-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Check link" MadCap:editor="ddavidson" MadCap:editDate="2024-04-09T14:04:25.6864971-04:00">add.</MadCap:annotation> If you have any questions 
+	 about the number of seats available, contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank">IPRO Support</a>.
+	 </p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Starting with release 
+			 2015.2.0, Named User Tracking is available for Eclipse. The 
+			 “named user” model allows product billing to be based on the 
+			 number of users active during each month, rather than on a 
+			 maximum number of named users. </p>
+                    </td>
+                </tr>
+            </table>
+            <p class="BodyText">Contact your <MadCap:variable name="Primary.IPRO" /> Sales Representative to learn 
+	 the benefits of this capability or <MadCap:variable name="Primary.IPRO" /> Support for technical assistance.</p>
+        </div>
+        <p class="BodyText">User permissions are determined by group and case assignment. 
+ </p>
+        <p class="BodyText">Starting with release 2014.1.0, <MadCap:variable name="Primary.Name" /> (Services 
+ component) serves as a centralized database in which all <MadCap:variable name="Primary.Name" /> users, 
+ including Eclipse users, are managed. Users can be created in <MadCap:variable name="Primary.Name" /> System Administration or Eclipse and once enabled, they are available in all 
+ <MadCap:variable name="Primary.IPRO" /> applications.</p>
+        <h2><a name="User_Types"></a>User Types</h2>
+        <p class="BodyText">Eclipse users can be identified by type, such as “Billable” 
+ and “Non-billable.” You can create any user types needed to track activities 
+ at your company. </p>
+        <h2><a name="Groups"></a>Groups</h2>
+        <p class="BodyText">Users are combined into groups that are assigned to 
+ cases for review and management purposes. Permissions are assigned to 
+ groups in conjunction with case assignment, allowing secure case reviews 
+ and efficient case management. Each group can have up to 1,000 users. 
+ </p>
+        <p class="BodyText">Three default groups exist in Eclipse:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p class="BodyText"><span style="font-weight: bold;">SuperAdminGroup</span>: 
+	 This group is for administrators who govern all aspects of Eclipse 
+	 at their site. Members of this group can perform all actions for all 
+	 cases within Eclipse and Eclipse Administration, as well as all actions 
+	 in <MadCap:variable name="Primary.Name" />. Users in this group must be added in Eclipse.
+            </p>
+            </li>
+            <li>
+                <p class="BodyText"><span style="font-weight: bold;">MediaManager</span>: 
+	 Users in this group are equivalent to Eclipse Super Administrators, 
+	 plus they can access <MadCap:variable name="Primary.Name" /> and perform all <MadCap:variable name="Primary.Name" /> actions (Administration, 
+	 Media Management, and Self-Service).
+            </p>
+            </li>
+            <li>
+                <p class="BodyText"><span style="font-weight: bold;">MediaManagerSelfService</span>: 
+	 This group is intended for non-administrative users who will be uploading 
+	 files through Self-Service. Users in this group have access only to 
+	 the stand-alone <MadCap:variable name="Primary.Name" /> Self-Service page (unless the group is assigned 
+	 to one or more cases in Eclipse).
+            </p>
+            </li>
+        </ul>
+    </body>
+</html>

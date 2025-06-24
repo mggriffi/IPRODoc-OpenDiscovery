@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>Checking in a batch is available through the Review Grid layout. When entering the review pass for the first time, the Document Viewer window automatically opens in the foreground and displays the first document in the batch. The review grid remains in the background. The grid displays a highlight for the corresponding document shown in the Document Viewer window.</p>
+        <p>Proceed to review the documents in the batch. When ready, select the <b>Check In</b> button above the review grid. </p>
+        <p>To check in a reviewed batch, complete the following steps:</p>
+        <ol>
+            <li> From the Document Viewer window, follow <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Conduct_Review.htm" MadCap:conditions="Primary.Admin">Conduct Review</MadCap:xref><MadCap:conditionalText MadCap:conditions="Primary.LMS_v8_0"><a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Conduct_Review.htm%3FTocPath%3DReview|Complete%2520Case%2520Reviews|Review%2520Documents|_____1" target="_blank">Conduct Review</a></MadCap:conditionalText> for each document in the batch.</li>
+            <li>After the last document is reviewed for the batch, close the Document Viewer window.</li>
+            <li>
+                <p>From the review grid, click <img src="../../../Graphics/ADD_Review_Graphics/Visual Search/CheckInbut.png" class="ReduceButtonSize" />  to display the Check In Batch dialog box as shown here:</p>
+                <p>
+                    <img src="../../../Graphics/ADD_Review_Graphics/Visual Search/ConfirmBox.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>The option <b>Open next available batch</b> is checked by default. Uncheck the box if you do not want to review the next available batch. </li>
+            <li>
+                <p>Click <b>Submit</b>. A prompt displays to indicate that the batch was checked in, and the Document Viewer window opens displaying the first document for the next batch provided that the option, “Open next available batch”, was selected.</p>
+                <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: If the <b>Open next available batch</b> option was not selected, the main  Review home page appears.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+    </body>
+</html>

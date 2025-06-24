@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="LMS/Advanced_Search_1.flsnp" />
+        <h3><a name="Timeline_Searches"></a>
+        </h3>
+        <h4><a name="Create_Save_Advanced_Search"></a><b>Create and Save an Advanced Search</b>
+        </h4>
+        <MadCap:snippetBlock src="LMS/Advanced_Search_2.flsnp" />
+    </body>
+</html>

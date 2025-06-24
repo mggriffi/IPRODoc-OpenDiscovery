@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/Enterprise_and_Eclipse_MP.flmsp');" MadCap:conditions="Primary.Blocked">
+    <head>
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>9.0 System Requirements</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>System Requirements<br /></h1>
+        <h2><a name="General"></a>General Overview</h2>
+        <p class="BodyText">The <MadCap:variable name="Primary.Name First" /> Streaming workflow is a highly scalable solution that should be deployed in a multi-server environment for effective load balancing and optimal system performance. Component services may be installed on a shared resource as indicated within this help topic. Certain components such as SQL server, <MadCap:variable name="Primary.IPRO" /> Analytics, and Workers should be installed on separate and dedicated resources. Analysis of the amount of data processed and reviewed within your organization should be conducted by your IT Department and/or IT Vendor to help determine initial system requirements as the following recommendations may not meet your specific needs. Storage requirements are a function of the number of firm cases/matters, data processing and velocity. Ongoing monitoring and regular review of system performance metrics, in addition to routine SQL maintenance is highly recommended to ensure and maintain optimal system performance.</p>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../Graphics/Admin_Note.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: The following System Requirements pertain <u>only</u> to <MadCap:variable name="Primary.Name" /> 2021.9.0. This product version has not yet been released, but is currently being prepared for upcoming release.</p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="Ipro®"></a>
+            <MadCap:toggler targets="Div_90_Sys_Req">Enterprise 2021.9.0 System Requirements</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Div_90_Sys_Req">
+            <p class="BodyText">Click the following links to view each section</p>
+            <p>
+                <MadCap:xref href="#Ipro">Enterprise 2021.9.0 Review End User Minimum Requirements</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="#Ipro9">Enterprise 2021.9.0  Minimum and Recommended Hardware Requirements</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="#Ipro10">Enterprise 2021.9.0 Network Diagram</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="#Ipro5">Enterprise 2021.9.0 Software Prerequisites</MadCap:xref>
+            </p>
+            <p>
+                <MadCap:xref href="#Ipro11">Enterprise 2021.9.0 Network Ports Requirements</MadCap:xref>
+            </p>
+            <p>&#160;</p>
+            <p>This information in this section applies to the following <MadCap:variable name="Primary.Name" /> products and versions:</p>
+            <p> <MadCap:variable name="Primary.Name" /> 2021.9.0</p>
+            <p class="BodyText">The following specifications are a general outline for a typical environment that can be deployed in either a physical or virtual environment. Faster processors and larger amounts of physical memory (RAM) are always a benefit. Network connectivity, network traffic, database size, storage speed, and other factors may impact performance.</p>
+            <p class="BodyText"><MadCap:variable name="Primary.Name" /> 2021.9.0 uses the following technologies:</p>
+            <ul>
+                <li>
+                    <p>Microsoft Windows Server</p>
+                </li>
+                <li>
+                    <p>Microsoft SQL Server 2016 SP2, 2017, or 2019 (Standard or Enterprise). Make sure the latest CUs are installed.</p>
+                </li>
+                <li>
+                    <p>Microsoft IIS Server</p>
+                </li>
+                <li>
+                    <p>Microsoft .NET Core 3.1 or later</p>
+                </li>
+                <li>Microsoft .NET Framework 4.8 or later</li>
+                <li>
+                    <p>Microsoft Office Standard Edition</p>
+                </li>
+                <li>
+                    <p>IBM Notes</p>
+                </li>
+            </ul>
+            <h3><a name="Ipro"></a><b>Enterprise 2021.9.0 Review End User Minimum Requirements</b>
+            </h3>
+            <p>The following specifications are a general outline for a typical environment that can be deployed in either a physical or a virtual environment. Faster processors and larger amounts of physical memory (RAM) is always a benefit. Network connectivity, network traffic, database size, storage speed and other factors may affect performance.</p>
+            <ul class="BulletListBody">
+                <li>CPU 1 Core / 2.4 GHz or higher</li>
+                <li>RAM 2 GB or higher</li>
+                <li>OS Microsoft® Windows® 10 or Server 2016</li>
+                <li>Software .NET Framework 4.8</li>
+                <li>Browsers: Chrome,  Microsoft Edge (Chromium Release 79), Firefox, Safari</li>
+                <li>Monitor Minimum screen resolution should be set to minimum 1280x1024.</li>
+            </ul>
+            <h3><a name="Ipro9"></a><b>Enterprise 2021.9.0  Minimum and Recommended Hardware Requirements</b>
+            </h3>
+            <p>
+                <p>The following tables illustrate <MadCap:variable name="Primary.IPRO" />’s recommended deployment configuration (1-3 Streaming \ 25 users).  If you are deploying additional deployment licenses, please contact Support for a hardware consultation call to review additional requirements. This ensures that all components contact the proper resources, and that components will not conflict with each other.</p>
+                <table cellspacing="0" width="95%" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                    <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p>
+                                <img src="../Graphics/Admin_Note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: Each item listed under "Server Role" or "<MadCap:variable name="Primary.IPRO" /> Component" is intended to be a distinct machine. Modifications to this configuration are <u>not</u> recommended.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p>Please see the footnotes for additional information.  For more detailed hardware questions and customization, please contact <MadCap:variable name="Primary.IPRO" /> Support.</p>
+                <p>
+                    <h4>Administrative Core</h4>
+                    <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 265px;" MadCap:conditions="" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 72px;" MadCap:conditions="" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 69px;" MadCap:conditions="" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 71px;" MadCap:conditions="" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 71px;" MadCap:conditions="" />
+                        <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+                        <thead>
+                            <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">SERVER ROLE</th>
+                                <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">CPU<span style="font-size: 7pt;">(MIN)</span></th>
+                                <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">RAM<span style="font-size: 7pt;">(MIN)</span></th>
+                                <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">CPU<span style="font-size: 7pt;">(RECMD)</span></th>
+                                <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">RAM<span style="font-size: 7pt;">(RECMD)</span></th>
+                                <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">REQUIREMENTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" MadCap:conditions="Primary.Upcoming Release"><span style="font-size: 10pt;">SQL Server<sup style="font-size: 8pt;">1, 2</sup></span>
+                                </td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">8</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">32</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">12</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">32</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                    <p style="font-size: 10pt;">Microsoft Windows Server 2016 64-bit, Microsoft SQL Server 2016 SP 2, 2017, or 2019 (Standard or Enterprise)</p>
+                                    <p style="font-size: 10pt;">Total Combined Disk IOPS: Minimum 2000 / Recommended 3000</p>
+                                    <p style="font-size: 10pt;">Latency: 99.9% below 20ms or less</p>
+                                    <p style="font-size: 10pt;">OS – 100 GB</p>
+                                    <p style="font-size: 10pt;">Database – 500 GB or higher</p>
+                                    <p style="font-size: 10pt;">TempDB – 50 GB or higher</p>
+                                    <p style="font-size: 10pt;">Logs – 150 GB or higher</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">Web Server / File Upload Service/ <br />Authorization<sup style="font-size: 8pt;">3, 4</sup></td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">4</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">8</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">6</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">12</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                    <p style="font-size: 10pt;">Microsoft Windows Server 2016 64-bit, Microsoft IIS version 7.0, .NET Core 3.1 or later, and .NET Framework 4.8 or later<br /></p>
+                                    <p style="font-size: 10pt;">OS – 100 GB</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">Analytics &amp; dtSearch Server (50% capacity)</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">12</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">32</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">12</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">96</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                    <p style="font-size: 10pt;">Microsoft Windows Server 2016 64-bit,  .NET Core 3.1 or later, and .NET Framework 4.8 or later</p>
+                                    <p style="font-size: 10pt;">OS – 100 GB</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release"><MadCap:variable name="Primary.IPRO" /> Management Components<sup>5</sup> (Review Admin, Controller Queue Manager, Integration, Redis)</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">4</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">8</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">4</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">8</td>
+                                <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                                    <p style="font-size: 10pt;">Microsoft Windows Server 2016 64-bit,  .NET Core 3.1 or later, and .NET Framework 4.8 or later</p>
+                                    <p style="font-size: 10pt;">
+OS – 100 GB</p>
+                                    <p style="font-size: 10pt;">Windows Page File - Manually configure to 2x RAM total</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+                <table cellspacing="0" width="95%" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" MadCap:conditions="" />
+                    <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" MadCap:conditions="" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p>
+                                <img src="../Graphics/Admin_Note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: Storage/File Server: Processing data shares should be able to deliver at least 1000 IOPS for each streaming worker license. If not using streaming workflow, use the fastest possible storage for Processing data.</p>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <h4>Scalable Processing Pool</h4>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 265px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 72px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 69px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 71px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 71px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">IPRO COMPONENT</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">CPU<span style="font-size: 7pt;">(MIN)</span></th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">RAM<span style="font-size: 7pt;">(MIN)</span></th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">CPU<span style="font-size: 7pt;">(RECMD)</span></th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">RAM<span style="font-size: 7pt;">(RECMD)</span></th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">REQUIREMENTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" MadCap:conditions="Primary.Upcoming Release"><span style="font-size: 10pt;">Processing Worker(s)<sup>6</sup><span style="font-size: 8pt; vertical-align: super;">, </span><sup>7</sup></span>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">4</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">8</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">4</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">8</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                            <p style="font-size: 10pt;">Microsoft Windows Server 2016 64-bit,  .NET Core 3.1 or later, and .NET Framework 4.8 or later</p>
+                            <p style="font-size: 10pt;">Microsoft Office 2016 32-bit, IBM Notes 8.5.2 or 9.0.1 FP10</p>
+                            <p style="font-size: 10pt;">OS – 100 GB</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">QC<span style="font-size: 8pt; vertical-align: super;">8</span></td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">2</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">4</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">2</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">4</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                            <p style="font-size: 10pt;">Microsoft Windows Server 2016 64-bit,  .NET Core 3.1 or later, and .NET Framework 4.8 or later</p>
+                            <p style="font-size: 10pt;">Microsoft Office 2016 32-bit, IBM Notes 8.5.2 or 9.0.1 FP10</p>
+                            <p style="font-size: 10pt;">OS – 100 GB</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;">
+                            <p style="font-size: 10pt;">Job Manager Agent<span style="font-size: 8pt; vertical-align: super;">9</span></p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;">
+                            <p style="background-color: #fffacd;text-align: center;font-size: 10pt;">4</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #fffacd;text-align: center;font-size: 10pt;">
+                            <p style="background-color: #fffacd;text-align: center;font-size: 10pt;">8</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;">
+                            <p style="background-color: #afeeee;text-align: center;font-size: 10pt;">8</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;">
+                            <p style="background-color: #afeeee;text-align: center;font-size: 10pt;">16</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                            <p style="font-size: 10pt;">Microsoft Windows Server 2016 64-bit,  .NET Core 3.1 or later, and .NET Framework 4.8 or later</p>
+                            <p style="font-size: 10pt;">OS – 100 GB</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>LIVE EDA Core</h4>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../Graphics/Admin_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: For <MadCap:variable name="Primary.NetGovern" /> server requirements, see <a href="https://myipro.iprotech.com/help/NG/Master_Project/Deployment_VM/netgovern/archive_server.htm">Archive Server Requirements and Storage</a> and <a href="https://myipro.iprotech.com/help/NG/Master_Project/Deployment_VM/netgovern/index_server.htm">Index Server Requirements and Storage</a>.</p>
+                    </td>
+                </tr>
+            </table>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 265px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 69px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 39px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+                <col style="width: 53px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">SERVER ROLE</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" colspan="2" MadCap:conditions="Primary.Upcoming Release">CPU</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" colspan="2" MadCap:conditions="Primary.Upcoming Release">RAM</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">REQUIREMENTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" MadCap:conditions="Primary.Upcoming Release"><span style="font-size: 10pt;">Master and Worker Node</span>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="text-align: center;font-size: 10pt;background-color: #afeeee;padding-left: 2px;padding-right: 2px;border-right-style: solid;border-right-width: 1px;border-right-color: #898493;" colspan="2" MadCap:conditions="Primary.Upcoming Release">4</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" colspan="2" MadCap:conditions="Primary.Upcoming Release">8</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                            <p style="font-size: 10pt;">Microsoft Windows Server 2016 or 2019 64-bit. Pre-Installed on virtual machine (VM).</p>
+                            <p style="font-size: 10pt;">OS - 250 GB - For OS, Applications, Temp and Swap Space. VM is delivered with this volume, thin-provisioned.</p>
+                            <p style="font-size: 10pt;">See the following details for additional Storage Requirements for Archives, Attachments, and Audit files</p>
+                            <p style="font-size: 10pt;"><b>Virtual Machine Requirements</b>
+                            </p>
+                            <p style="font-size: 10pt;"><b>VMWare</b>
+                            </p>
+                            <p style="font-size: 10pt;">- ESX 5.5 or higher</p>
+                            <p style="font-size: 10pt;">- Vmotion supported</p>
+                            <p style="font-size: 10pt;">- VMFS (RDM not required, but suggested for better performance)</p>
+                            <p style="font-size: 10pt;">Disk caching on disk array</p>
+                            <p style="font-size: 10pt;">- Thin provisioning supported; thick is suggested on</p>
+                            <p style="font-size: 10pt;"><b>Hyper-V</b>
+                            </p>
+                            <p style="font-size: 10pt;">- Hyper-V Server 2016 or later</p>
+                            <p style="font-size: 10pt;">- Disk caching on disk array</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">Index Server<sup>10</sup></td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="text-align: center;font-size: 10pt;background-color: #afeeee;padding-left: 2px;padding-right: 2px;border-right-style: solid;border-right-width: 1px;border-right-color: #898493;" colspan="2" MadCap:conditions="Primary.Upcoming Release">8</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="background-color: #afeeee;text-align: center;font-size: 10pt;" colspan="2" MadCap:conditions="Primary.Upcoming Release">32</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                            <p style="font-size: 10pt;">Centos 7.6 or higher</p>
+                            <p style="font-size: 10pt;">OS - 250 on local disk for OS, Applications and Swap space (Must come already thin-provisioned with the VM)</p>
+                            <p style="font-size: 10pt;">Index storage - Adequate attached storage for indexes.</p>
+                            <p style="font-size: 10pt;">Fiber Channel (FC) connection to a SAN is recommended.</p>
+                            <p style="font-size: 10pt;">iSCSI connections are supported, but performance cannot be guaranteed.</p>
+                            <p style="font-size: 10pt;"><b>Virtual Machine Requirements</b>
+                            </p>
+                            <p style="font-size: 10pt;"><b>VMWare</b>
+                            </p>
+                            <p style="font-size: 10pt;">ESX 5.5 or higher</p>
+                            <p style="font-size: 10pt;">Vmotion supported</p>
+                            <p style="font-size: 10pt;">Thin provisioning supported; thick is suggested</p>
+                            <p style="font-size: 10pt;">VMFS (RDM not required, but suggested for better performance)</p>
+                            <p style="font-size: 10pt;">Disk caching on disk array</p>
+                            <p style="font-size: 10pt;"><b>Hyper-V</b>
+                            </p>
+                            <p style="font-size: 10pt;">Hyper-V Server 2012 or later(Hyper-V 2012 R2 recommended)</p>
+                            <p style="font-size: 10pt;">Thin provisioning supported; thick is suggested</p>
+                            <p style="font-size: 10pt;">Disk caching on disk array</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Footnotes:</h4>
+            <p><span style="font-size: 8pt; vertical-align: super;">1</span> Provision disks and configure OS &amp; SQL Server settings according to <a href="https://myipro.iprotech.com/help/Enterprise/#Product Resources/SQLBestPractices.pdf%3FTocPath%3DAdditional%2520Resources|_____5">SQL Server Best Practices</a>.  For additional details about SQL Server data disk performance, see the "Disk Performance" section of this document.</p>
+            <p><span style="font-size: 8pt; vertical-align: super;">2</span>  SQL Growth Factors - Environments will benefit from a SQL Server with more cores/RAM/faster storage (IOPS).  Processing and Review functions can be split with an additional SQL Server (separate Processing SQL Server and Review SQL Server).</p>
+            <p><span style="font-size: 8pt; vertical-align: super;">3</span>  .Wildcard SSL Certificate is preferred.</p>
+            <p><span style="font-size: 8pt; vertical-align: super;">4</span>    English (US) Regional Date format should be set as the machine default for this machine. Whenever possible, users should be restricted from changing this format.</p>
+            <p><sup>5</sup>Additional machines hosting Review Admin and/or Controller may be provisioned as desired. Each machine requires 4 CPU/8GB RAM.</p>
+            <p><span style="font-size: 8pt; vertical-align: super;">6</span> The number of <MadCap:variable name="Primary.eCapture" /> Worker machines is based on the licensing purchased. Additional worker machines beyond available licenses are beneficial during Review productions.</p>
+            <p><span style="font-size: 8pt; vertical-align: super;">7</span> All workers in the environment must be configured to prevent Remote Desktop printer redirection. The option <b>"Do not allow client printer redirection"</b> policy setting must be enabled.  This can be accomplished through the system’s registry or the group policy (GPO) settings for that environment. Additional information to configure printer redirection settings can be found on Microsoft’s website <a href="https://technet.microsoft.com/en-us/library">https://technet.microsoft.com/en-us/library</a>. Once changes have been applied, please reboot all workers. English (US) Regional Date format should be set as the machine default for this machine. Whenever possible, users should be restricted from changing this format.</p>
+            <p><span style="vertical-align: super; font-size: 8pt;">8</span> QC can be installed on as many machines as desired, as QC has no licensing cost associated with it. </p>
+            <p><span style="vertical-align: super; font-size: 8pt;">9</span> For busier environments, additional Job Manager Agents (JMAs) can be provisioned. Additional CPU/RAM may be added to JMAs; settings changes in SQL are required to make use of these increased resources. All JMAs should be configured with the same CPU/RAM total.</p>
+            <p><sup>10</sup> A single index is sufficient for deployments of 4,000 users or fewer. For larger deployments, please contact your NetGovern representative for sizing recommendations.</p>
+            <h3>LIVE EDA Storage Requirements </h3>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../Graphics/Admin_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: For <MadCap:variable name="Primary.NetGovern" /> storage requirements, see <a href="https://myipro.iprotech.com/help/NG/Master_Project/Deployment_VM/netgovern/archive_server.htm">Archive Server Requirements and Storage</a> and <a href="https://myipro.iprotech.com/help/NG/Master_Project/Deployment_VM/netgovern/index_server.htm">Index Server Requirements and Storage</a>.</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Archives</h4>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Adequate local or attached storage for archived messages is required.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Messages are stored in XML format, accounting for approximately 20% of the total mailbox size.</p>
+                </li>
+                <li>
+                    <p>Archives have a read/write profile of 5/95, an expected performance of 500 IOPS for both random read and write, with a recommend block size of 4K.</p>
+                </li>
+                <li>
+                    <p>Archives do not change once written, so they can be stored on read/write media or a WORM device.</p>
+                </li>
+            </ul>
+            <h4>Attachments</h4>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Adequate local or attached storage for archived attachments is required.</p>
+                </li>
+                <li>
+                    <p>Attachments are stored in their native format, accounting for approximately 80% of the total mailbox size.</p>
+                </li>
+                <li>
+                    <p>Attachments do not change once written, so they can be stored on read/write media or a WORM device.</p>
+                </li>
+            </ul>
+            <h4>Audit</h4>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Adequate local or attached storage for audit files is required.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Size of audit files requires approximately 15% the amount of archived data (e.g., 1 TB of archives would mean 150 GB of audit files).</p>
+                </li>
+                <li>
+                    <p>Audit files are very small in size. Recommended block size of storage device is 2K.</p>
+                </li>
+                <li>
+                    <p>Audit files track all operation on archive data and need to be updated, so they cannot be written to a WORM device.</p>
+                </li>
+            </ul>
+            <h3><b>Important Considerations for Virtual Machines</b>
+            </h3>
+            <p>The following important considerations for VMs are:</p>
+            <ul class="BulletListBody">
+                <li>Do not over-schedule CPU resources, as this can significantly degrade performance.</li>
+                <li>Always assign Workers RAM as static.</li>
+            </ul>
+            <table cellspacing="0" width="95%" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" MadCap:conditions="" />
+                <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" MadCap:conditions="" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p>
+                            <img src="../Graphics/Admin_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Dynamic RAM can be used on other VMs, but total usage on the VM host should be tracked closely.</p>
+                    </td>
+                </tr>
+            </table>
+            <h3><b>Important Considerations for SQL Collation</b>
+            </h3>
+            <ul>
+                <li>Our <MadCap:variable name="Primary.Name" /> applications are designed to work with a specific SQL collation "SQL_Latin1_General_CP1_CI_AS", which is the default value for the OS locale "English (United States)". For our clients outside of the US or who have datacenters outside of the US, this default collation may show as "Latin1_General_CI_AS". This difference in collation can result in misinterpretation and/or false conversion of the data written to SQL, with SQL errors that confirm an existing collation conflict.</li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>To avoid a conflict between the SQL collation being used for the OS locale "English (United States)" and the SQL collation being used for our clients outside the US or who have datacenters outside the US, we recommend that all SQL instances hosting our <MadCap:variable name="Primary.Name" /> databases are built using the OS locale "English (United States)" collation value “SQL_Latin1_General_CP1_CI_AS”.</li>
+                <li>For more information about SQL collation, see <a href="https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15" target="_blank">Microsoft's official webpage</a>.</li>
+            </ul>
+            <h3><b>Other Considerations</b>
+            </h3>
+            <ul class="BulletListBody">
+                <li>
+                    <p>If you plan to have reviewers connect from outside your private network (intranet, WAN, etc.), it is recommended that you install the IIS server on a separate machine in your DMZ so that you minimize the risk of exposing internal data.</p>
+                </li>
+                <li>Having Worker VMs in excess of worker licenses can be a benefit in high-throughput environments, especially when producing from Review. </li>
+            </ul>
+            <h3><b>Disk Performance</b>
+            </h3>
+            <ul class="BulletListBody">
+                <li>SQL requires high-performance storage:<ul><li>Any cited IOPS requirements indicates a combined total across all MDF, LDF, and TempDB disks when under high simultaneous load (such as heavy diskspd tests).</li><li>Use DAS or SAN for storage, depending on the environment. Target latency should be sub-20ms in the 3-nines category on diskspd tests.</li><li>When possible, use separate LUNs for MDF and LDF. Ideally, TempDB will also be on a separate LUN from these volumes. Minimize other high-demand applications using these same LUNs.</li><li>SSD is preferred over platter media.</li><li>NAS should always be avoided as this typically leads to unacceptable latency (typically 150ms+ at 3-nines) even with high performance disks.</li></ul></li>
+                <li>Project/Client/Case data storage is less demanding:<ul><li>Processing data shares should be able to deliver at least 1000 IOPS per streaming worker license. If not using streaming workflow, use the fastest possible storage for Processing data.</li><li>Review cases should be located on fast storage for large and/or priority cases, to ensure performance when retrieving images/natives (also see the <MadCap:variable name="Primary.Eclipse" /> Web server details that follow), performing <MadCap:variable name="Primary.IPRO" /> Analytics jobs, searching indexed data, or rebuilding indexes. Slower storage may be used for inactive and/or low-priority cases.</li></ul></li>
+                <li>
+                    <p>Most discrete components do not heavily use local storage and can function acceptably with slower-performing local storage. Components that benefit from faster local storage include:</p>
+                    <ul class="BulletListBody">
+                        <li> <MadCap:variable name="Primary.IPRO" /> Review (for rendering documents and images, executing large API tasks, and certain reporting operations). The lowest possible disk latency is preferred.</li>
+                        <li>Processing Workers, in some situations, will use local storage for archive extraction and some processing tasks. This typically occurs only in a fallback scenario. Faster processing data storage will show more performance improvement than faster local disks on Workers.</li>
+                        <li><MadCap:variable name="Primary.IPRO" /> Review Agents occasionally use local disk space, but primarily use the network share where case data is located. Faster case data storage will show more performance improvement than faster local disk on Agents.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3><a name="Ipro10"></a><b>Enterprise 2021.9.0 Network Diagram</b>
+            </h3>
+            <p>
+                <img src="../System/IproforEnt_NetworkDiagram_2020.8.0.png" class="Thumbnail" />
+            </p>
+            <h3><a name="Ipro5"></a><b>Enterprise</b><b> 2021.9.0 Software Prerequisites</b>
+            </h3>
+            <p>The following is the list of software that must be installed on the machine before <MadCap:variable name="Primary.Name" /> 2021.9.0 products are installed.</p>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 184px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 205px;" MadCap:conditions="" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">Product</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">Version</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 10pt;color: #ffffff;" MadCap:conditions="Primary.Upcoming Release">Prerequisite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">Installer Pro</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">1.2</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                            <ul>
+                                <li style="font-size: 10pt;">Ensure all users have modify access to <br />C:\ProgramData\IPRO Tech\logs
+</li>
+                                <li style="font-size: 10pt;">User running InstallerPro must have Local Windows Administrator (Run as Administrator) rights</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">EASE</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">2021.9.0</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">SQL Generator</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">6.0</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release"><MadCap:variable name="Primary.Name" />
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;" MadCap:conditions="Primary.Upcoming Release">2021.9.0</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                            <ul>
+                                <li style="font-size: 10pt;">Ensure SQL Server is available
+Ensure IIS is available
+</li>
+                                <li style="font-size: 10pt;">Ensure all users have modify access to C:\ProgramData\IPRO Tech\logs
+</li>
+                                <li style="font-size: 10pt;">ApplicationServices prerequisite in InstallerPro, which contains:
+<ul><li style="font-size: 10pt;">ASP .NET Core 3.1 is installed: Hosting Bundle
+</li><li style="font-size: 10pt;">Ensure .NET Framework 4.8 is installed: Runtime</li></ul></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;"><MadCap:variable name="Primary.IPRO" /> Processing</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">2021.9.0</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                            <ul>
+                                <li style="font-size: 10pt;">Ensure SQL Server is available
+</li>
+                                <li style="font-size: 10pt;">Ensure all users have modify access to C:\ProgramData\IPRO Tech\logs
+</li>
+                                <li style="font-size: 10pt;">MS Office 2016 32-bit
+</li>
+                                <li style="font-size: 10pt;">Lotus Notes
+</li>
+                                <li style="font-size: 10pt;">Lotus Notes 9.0.1 FP 10. (if processing Lotus Notes files)
+</li>
+                                <li style="font-size: 10pt;">Adobe PDF Reader
+</li>
+                            </ul>
+                            <p style="font-size: 10pt;">Recommended:
+</p>
+                            <ul>
+                                <li style="font-size: 10pt;">ApplicationServices prerequisite in InstallerPro, which contains:
+<ul><li style="font-size: 10pt;">ASP .NET Core 3.1 is installed: Hosting Bundle</li><li style="font-size: 10pt;">
+Ensure .NET Framework 4.8 is installed: Runtime</li></ul></li>
+                            </ul>
+                            <p style="font-size: 10pt;">
+Additional QC Machines:
+</p>
+                            <ul>
+                                <li style="font-size: 10pt;">Programs required to reprocess naively, example: CAD Software</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;">Other</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;">2021.9.0</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                            <p style="font-size: 10pt;">IIS Server Roles (Web Server ONLY):</p>
+                            <ul>
+                                <li style="font-size: 10pt;">Common HTTP Features:<ul><li style="font-size: 10pt;">Default Documents</li><li style="font-size: 10pt;">Directory Browsing - Iffy on if this is required</li><li style="font-size: 10pt;">HTTP Errors</li><li style="font-size: 10pt;">Static Content</li><li style="font-size: 10pt;">HTTP Redirection</li></ul></li>
+                                <li style="font-size: 10pt;">Health and Diagnostic:<ul><li style="font-size: 10pt;">HTTP Logging</li></ul></li>
+                                <li style="font-size: 10pt;">Performance:<ul><li style="font-size: 10pt;">Static Content Compression</li><li style="font-size: 10pt;"> Dynamic Content Compression <br />(<b>Important</b>: Highly NOT Recommended)</li></ul></li>
+                                <li style="font-size: 10pt;">Security:<ul><li style="font-size: 10pt;">Request Filtering</li></ul></li>
+                                <li style="font-size: 10pt;">Application Development:<ul><li style="font-size: 10pt;">.NET Extensibility 3.5</li><li style="font-size: 10pt;">.NET Extensibility 4.6</li><li style="font-size: 10pt;">Application initialization</li><li style="font-size: 10pt;">ASP .Net 3.5</li><li style="font-size: 10pt;">ASP .Net 4.6CGI</li><li style="font-size: 10pt;">ISAP Extensions</li><li style="font-size: 10pt;">ISAPI Filters</li></ul></li>
+                                <li style="font-size: 10pt;">IIS Management Tools:<ul><li style="font-size: 10pt;">IIS Management Console</li></ul></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a name="Ipro11"></a><b>Enterprise </b><b>2021.9.0 Network Ports Requirements</b>
+            </h3>
+            <p>The following is a list of the ports that must be open between components/machines to ensure that the <MadCap:variable name="Primary.Name" /> products  work properly.</p>
+            <h3>Authorization</h3>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 166px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 116px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 168px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 159px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 165px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Name</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Type</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Service Port</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Inbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Outbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Description/Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Auth Service *</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Service</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">9800</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">9800</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">443</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Authorization Server</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Auth Manager</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Application</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">9800</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Authorization Manager</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 8pt;" colspan="6">
+                            <p style="font-size: 8pt;">* Allow for configurable ports</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Platform</h3>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 178px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 100px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 172px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 159px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 165px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="color: #ffffff;font-size: 8pt;">Name</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="color: #ffffff;font-size: 8pt;">Type</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="color: #ffffff;font-size: 8pt;">Service Port</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="color: #ffffff;font-size: 8pt;">Inbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="color: #ffffff;font-size: 8pt;">Outbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="color: #ffffff;font-size: 8pt;">Description/Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Redis *</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Service</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">6379</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">6379</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">In-memory datastore</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Platform Web *</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Web Service</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Web</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Web</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Redis</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">sPlatform Web API *</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Web Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Identity, SQL, Redis</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">System Events *</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Web Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p><span style="font-size: 8pt;">Identity, SQL</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Identity *</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Web Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">SQL (Default 1433)</p>
+                            <p style="font-size: 8pt;">Internet 443 (SSO)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Job Manager Agent *</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">N/A</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service, Redis, Identity, <br />SQL (Default 1433)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 8pt;" colspan="6">
+                            <p style="font-size: 8pt;">* Allow for configurable ports</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Enterprise Admin</h3>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 171px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 111px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 205px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 122px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 187px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Name</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Type</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Service Port</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Inbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Outbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Description/Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Services *</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Web Service</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Usually 8443 for SSL or 1124
+for internal</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Web</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">9800, <br />SQL (Default
+1433)</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">ADD Service Site</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web *</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Web Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Usually 4443 for SSL or 1125 for internal</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service, <br />SQL (Default 1433),</p>
+                            <p style="font-size: 8pt;">9000</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Web Site</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">File Upload Server</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">9000</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> File Upload Service</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 8pt;" colspan="6">
+                            <p style="font-size: 8pt;">* Allow for configurable ports</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Enterprise Review</h3>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 180px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 102px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 168px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 159px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 224px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Name</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Type</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Service Port</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Inbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Outbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Description/Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Eclipse Service *</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Web Service</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Usually 443 or 80 for internal</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">1433, 50100, 51001,
+5150, 8080, 8732,
+10900, 50000</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">SQL (Default 1433),
+50100, 51001, 5150,
+8080, 8732, 10900,
+50000</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">Eclipse Web Site</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Eclipse Chart</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">App Pool</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Same as<br />Eclipse Web</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Eclipse Web Port</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">Binds to the same port as Eclipse Web</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Admin</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Application</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">8732</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">SQL (Default 1433),
+8080, ADD Service</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Eclipse Admin Application</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">dtSearch Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">50100</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">50100</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">&#160;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">dtService Service</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Scheduler Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">8732</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">8732</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service, <br />SQL (Default 1433)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Scheduler Service</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Eclipse Agent Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">8733</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">8733</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">SQL (Default 1433)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Eclipse Agent</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Content Analyst</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">8080</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">8080</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">SQL (Default 1433)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Content Analyst (CAAT)</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Analytics</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">10900</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">10900, 50000</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">SQL (Default 1433) 10900,50000</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Analytics Service</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 8pt;" colspan="6">
+                            <p style="font-size: 8pt;">* Allow for configurable ports</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Enterprise Processing</h3>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 180px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 102px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 168px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 163px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 246px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Name</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Type</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Service Port</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Inbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Outbound</th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1" style="font-size: 8pt;color: #ffffff;">Description/Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Controller*</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Application</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">51001, 5150, 5160,
+1443, 9800</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Service, 9800,
+1433, Identity</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">eCapture Controller</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Queue Manager</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">Application</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Service, 1443</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Service, <br />SQL
+(Default 1433), Identity</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">eCapture Queue Manager</td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Integration Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p><span style="font-size: 8pt;">5150, 5160, 51001</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service,1443,</p>
+                            <p style="font-size: 8pt;">5150, 5160, 51001</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">ADD Service, <br />SQL
+(Default 1433), Identity</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Integration Service</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">File Mounting Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">51205</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service,  Identity</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">File Mounting Service</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Worker</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Application</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service, <br />SQL
+(Default 1433), Identity</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">eCapture Worker Application</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">QC</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Application</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">&#160;</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">ADD Service, <br />SQL
+(Default 1433), Identity</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">eCapture QC Application</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Relativity (Optional)</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">Service</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 8pt;">40100</td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;">40100</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 8pt;">
+                            <p>&#160;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 8pt;">
+                            <p style="font-size: 8pt;"><MadCap:variable name="Primary.IPRO" /> Relativity Service</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Configuring Ports in the Firewall</h3>
+            <table cellspacing="0" width="95%" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p>
+                            <img src="../Graphics/Admin_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Configuring ports is generally outside scope of support and must be set up by the client.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h2><a name="Ipro12"></a>
+        </h2>
+        <div MadCap:targetName="Div_70_Sys_Req2">
+            <h2><a name="Ipro8"></a>
+            </h2>
+        </div>
+        <h2><a name="Eclipse"></a>
+        </h2>
+    </body>
+</html>

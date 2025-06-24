@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="System"
+    Link="/Content/System/Administration.htm">
+    <TocEntry
+      Title="Contacts">
+      <TocEntry
+        Title="Add New Contacts"
+        Link="/Content/System/Contacts/Define_New_Contacts.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Delete Contacts"
+        Link="/Content/System/Contacts/Delete_Contacts.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Manage Contacts"
+        Link="/Content/System/Contacts/Manage_Contacts.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Modify Contact Details"
+        Link="/Content/System/Contacts/Modify_Contact_Details.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Copy_Stations">
+      <TocEntry
+        Title="Create Copy Stations"
+        Link="/Content/System/Copy_Stations/Create_Copy_Stations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Delete Copy Stations"
+        Link="/Content/System/Copy_Stations/Delete_Copy_Stations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Manage Copy Stations"
+        Link="/Content/System/Copy_Stations/Manage_Copy_Stations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Modify Copy Stations"
+        Link="/Content/System/Copy_Stations/Modify_Copy_Stations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Ipro_(Cloud)_Settings">
+      <TocEntry
+        Title="Change Environment/Share Settings"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Change_Environment_Share_Settings.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Configure LIVE EDA Environment in System Manager"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Configure_LiveEDA_in_System_Manager.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Define Elasticsearch Endpoint"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Define Elastic Search Endpoint.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Define Barcodes"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Define_Barcodes.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Define Media Attachment File Path"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Define_Media_Attachment_File_Path.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Manage OPEN DISCOVERY Environment Settings"
+        Link="/Content/System/Ipro_(Cloud)_Settings/Manage_Ipro_(Cloud)_Settings.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Job_Manager">
+      <TocEntry
+        Title="Monitor Job Manager Agents"
+        Link="/Content/System/Job_Manager/Job_Manager_Agents.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Overview: Job Manager"
+        Link="/Content/System/Job_Manager/Overview_Job_Manager.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Work with Completed Jobs"
+        Link="/Content/System/Job_Manager/Work_with_Completed_Jobs.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Work with In Progress Jobs"
+        Link="/Content/System/Job_Manager/Work_with_In_Progress_Jobs.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Work with Scheduled Jobs"
+        Link="/Content/System/Job_Manager/Work_with_Scheduled_Jobs.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Public_API">
+      <TocEntry
+        Title="Add API Client"
+        Link="/Content/System/Public_API/Add_API_Client.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Overview: Public API"
+        Link="/Content/System/Public_API/Overview_Public_API.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Security_Settings">
+      <TocEntry
+        Title="Configure Activity Timeout"
+        Link="/Content/System/Security_Settings/Configure_Activity_Timeout.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Configure Single Sign On"
+        Link="/Content/System/Security_Settings/Configure_Single_Sign_On.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Configure Trusted IP Addresses"
+        Link="/Content/System/Security_Settings/Configure_Trusted_IPs.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Sign In With Multi-Factor Authentication"
+        Link="/Content/System/Security_Settings/Sign_In_Two_Factor_Authentication.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="FAQ: Single Sign On and Multi-Factor Authentication"
+        Link="/Content/System/Security_Settings/SSO_MFA_FAQ.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

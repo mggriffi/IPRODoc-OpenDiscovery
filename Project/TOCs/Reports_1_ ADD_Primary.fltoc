@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Reports"
+    Link="/Content/Reports/Reports.htm">
+    <TocEntry
+      Title="Custom_Reports">
+      <TocEntry
+        Title="Automatic Report Detection"
+        Link="/Content/Reports/Custom_Reports/Automatic_Report_Detection.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Create a Report Definition"
+        Link="/Content/Reports/Custom_Reports/Create_a_Report_Definition.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Create a Stored Procedure"
+        Link="/Content/Reports/Custom_Reports/Create_a_Stored_Procedure.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Create Custom Reports"
+        Link="/Content/Reports/Custom_Reports/Create_Custom_Reports.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Customize Grid Columns"
+        Link="/Content/Reports/Custom_Reports/Customize_Grid_Columns.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="DisplayMetadata Field"
+        Link="/Content/Reports/Custom_Reports/DisplayMetadata_Field.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="ExecutionMetadata Field"
+        Link="/Content/Reports/Custom_Reports/ExecutionMetadata_Field.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Reporting.ParameterListDefinition Table"
+        Link="/Content/Reports/Custom_Reports/Reporting.ParameterListDefinition_Table.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Processing_Reports">
+      <TocEntry
+        Title="Billing">
+        <TocEntry
+          Title="Processing Case Storage Report"
+          Link="/Content/Reports/Processing_Reports/Billing/Processing_Case_Storage_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Export_Reports">
+        <TocEntry
+          Title="Export Series Summary Report"
+          Link="/Content/Reports/Processing_Reports/Export_Reports/Export_Series_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Ingestion_Reports">
+        <TocEntry
+          Title="Data Extract Deduplication Summary Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Data_Extract_Deduplication_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Data Extract Detailed Error Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Data_Extract_Detailed_Error_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Data Extract Error Summary Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Data_Extract_Error_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Data Extract Filter Manager Summary Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Data_Extract_Filter_Manager_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Data Extract Item Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Data_Extract_Item_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Discovery Detailed Error Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Discovery_Detailed_Error_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Discovery Summary Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Discovery_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Source Container Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Source_Container_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Data Extract Detailed Error Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Streaming_Deduplication_Detailed_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Data Extract Detailed Error Report"
+          Link="/Content/Reports/Processing_Reports/Ingestion_Reports/Streaming_Deduplication_Overlay_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Media_Reports">
+        <TocEntry
+          Title="Language Summary Report"
+          Link="/Content/Reports/Processing_Reports/Media_Reports/Language_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="OPEN DISCOVERY Processing Reports"
+        Link="/Content/Reports/Processing_Reports/Processing_Reports.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Reports/Get_Started_with_Reports.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Get_Started_with_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Log_Into_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Customizing_the_Report_Preview_Image.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Generate Report"
+      Link="/Content/Reports/Run_Reports.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Run_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/View_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Export_Reports.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Reports/Print_Reports.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Reports/Report_FAQs.htm" />
+  </TocEntry>
+</CatapultToc>

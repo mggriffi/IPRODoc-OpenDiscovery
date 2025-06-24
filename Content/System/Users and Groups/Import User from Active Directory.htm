@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" MadCap:conditions="Primary.Blocked" MadCap:fileTags="FlareHelpStatus.Revisit">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import Users from Active Directory</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 MadCap:conditions="Primary.FutureDelete">Import Users from Active <MadCap:annotation MadCap:createDate="2022-10-11T16:31:52.5294925-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="This topic will be in the new Work with Users topic- to be deleted" MadCap:editor="ddavidson" MadCap:editDate="2023-02-08T09:10:18.1380109-05:00">Directory</MadCap:annotation></h1>
+        <p class="BodyText">Super Admin permissions are required to import users from Active Directory.</p>
+        <p>If your site uses Microsoft’s Active Directory® service to manage network access, <MadCap:variable name="Primary.Name First" /> users can be based on the Active Directory users. In this case, Active Directory names and passwords will be used for <MadCap:variable name="Primary.Name" /> access and can also be used for other <MadCap:variable name="Primary.Name" /> products. These names/passwords do not have to meet <MadCap:variable name="Primary.Name" /> user name and password requirements. Active Directory user credentials (first name, last name, username/email, and password) cannot be modified within <MadCap:variable name="Primary.Name" />. Pre-configuration is required before using this optional feature. Please contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank">IPRO Support</a> for additional information about configuration procedures. </p>
+        <p>Before you import users via Active Directory:</p>
+        <ol>
+            <li>
+                <p>Ensure 
+ that you have needed details for the users you will be creating:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Active 
+ Directory domains/groups to which these users belong.</p>
+                    </li>
+                    <li>
+                        <p>Managing 
+ client and user type needed for users (per Active Directory domain or 
+ group). Although user configuration, including these settings, can be 
+ completed later, doing so now allows you to apply settings to multiple 
+ new users at one time. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On 
+ your site’s website, log in as a user who is a member of the Super 
+ Admin group. </p>
+            </li>
+        </ol>
+        <h3>Import Users from Active Directory</h3>
+        <p class="BodyText">To create users based on Active Directory users: </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/System_Navigation.flsnp" MadCap:conditionTagExpression="include[System_Nav.Users] " />
+        <ol start="3">
+            <li>
+                <p>Click the <img src="../../Graphics/Icons/Vertical_dots.png" class="ReduceButtonSize" /> button at the top of the screen. From the menu that appears, select <b>Import Users from Active Directory</b>. The Import Users from Active Directory page appears.</p>
+            </li>
+            <li>
+                <p>On the Browse Directory step, locate the needed users by navigating to the appropriate directory. As you click through the various directories, a path displays above the list showing the chain of folders you have clicked to reach your current location. The path will display in the following format: </p>
+                <p class="Code">Directory / Sub-Directory / Sub-Directory / Sub-Directory / Sub-Directory</p>
+                <p>The number of sub-directories in the path will correspond to the number of folders you have clicked. To return to a previous folder, click on the name of that folder in the path. </p>
+            </li>
+            <li>
+                <p>Once you have located the needed users, click the <b>Add Users</b> button. The Manage Import page opens.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: You can only add one folder's worth of users at a time. If you need to import users located in numerous directories, you will have to proceed through these steps for each separate directory.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>On the Manage Import page, select the check box next to each user you would like to make active. If a user is not made active, they will not be able to access the application. Remove users from the import list by selecting the <b>X</b> associated with that user.</li>
+            <li>Once the user list on the Manage Import page looks correct, click <b>Save</b>.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic"><span class="BoldItalic">Related Topics</span></span>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>
+        </p>
+    </body>
+</html>

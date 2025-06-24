@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedList,Primary.Blocked" style="mc-master-page: url('../../../../../Resources/MasterPages/Review_MP.flmsp');">
+    <head>
+        <link href="../../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Define a Timeline Search</title>
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Define a Timeline <MadCap:annotation MadCap:createDate="2022-05-16T10:45:22.7899663-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="This topic will be detleted and will be in both Adv and Visual Search topice" MadCap:editor="ddavidson" MadCap:editDate="2022-05-16T10:45:52.4413510-04:00">Search</MadCap:annotation></h1>
+        <p class="BodyText">Users with appropriate 
+			permissions can view a Timeline showing dates for the documents in the 
+			case or selected set of documents (such as a batch, folder, or search 
+			results). The Timeline provides a simple way to filter the current document 
+		set based on a date range.</p>
+        <p>In <MadCap:variable name="Primary.ProdName_Review" />, the Timeline displays on the <b>Visual Search</b> dashboard and <b>Advanced Search</b>. On the dashboard, clicking <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Timeline.png" style="width: 72px; height: 32px;" class="Thumbnail" /> displays the Timeline across the top:</p>
+        <p>
+            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Scr_Visual_Search_TimelineDash2.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">The dates presented in the Timeline example are based on the 
+			DOCUMENTDATE field. This field is populated with the dates in your case, 
+			such as calendar/email dates (Appointment Start Time, Sent Date, Date 
+			Created, Date Modified fields) and/or document dates (Date Created, Date 
+		Modified fields). </p>
+        <p class="BodyText"><MadCap:variable name="Primary.ProdName_Review" /> looks for dates based on the fields 
+			selected by your administrator and in the order selected by your administrator. 
+			For each case document, the DOCUMENTDATE field is populated with the first 
+			date <MadCap:variable name="Primary.ProdName_Review" /> finds in the field set defined by your administrator, 
+		and this is the date used in the Timeline.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>The ability to view 
+					and use the Timeline is governed by a specific permission. In addition, 
+					field permissions are taken into account for Timeline display purposes, 
+					such that users who do not have access to a particular Date or DateTime 
+					field specified for the Timeline are unable to see the field's data in 
+					the Timeline. Contact your administrator if you have any questions about 
+				your ability to view and use the Timeline.</p>
+            </li>
+            <li>In <b>Advanced Search</b>, you can collapse or expand the Timeline according to your requirements or preferences. If the Timeline is collapsed, expand it by clicking <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" class="ReduceButtonSize" /> next to the word "Timeline." If expanded, and you would like to collapse it, click <img src="../../../../../Resources/Images/Icons/Timeline_Expanded_Arrow.png" class="ReduceButtonSize" />.</li>
+            <li>
+                <p>The Timeline initially 
+					depicts all dates found in the selected document set, from the earliest 
+				to the latest.</p>
+            </li>
+            <li>
+                <p>The graph is a general 
+					representation of the number of documents found for each date. If your 
+					case has a very large date span (for example, 10 years or more), the Timeline 
+					graph may not be visible initially. Use the procedures in this topic to 
+				change the date range for the Timeline.</p>
+            </li>
+            <li>
+                <p>The details provided 
+					along the X axis (bottom) of the Timeline vary depending on the size of 
+				the date range—from years for large ranges to hours for small ranges.</p>
+            </li>
+            <li>
+                <p>A Timeline can also 
+					be defined as part of an Advanced Search, as explained in <MadCap:xref href="AR_Define_an_Advanced_Search.htm">Define an Advanced Search</MadCap:xref>. In this case, search results and the corresponding 
+					Timeline are limited to those documents with dates in the range defined 
+				by the Advanced Search.</p>
+            </li>
+        </ul>
+        <h3><a name="Getting_started_with_the_timeline"></a>Getting Started with 
+		the Timeline</h3>
+        <p>In <MadCap:variable name="Primary.ProdName_Review" />, for users with the proper permission the Timeline 
+			displays on the <b>Visual Search </b>dashboard above the dashboard views when clicking <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Timeline.png" class="Thumbnail" />.</p>
+        <p>
+            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Scr_Visual_Search_TimelineDash2.png" class="Thumbnail" />
+        </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Check with your administrator if you do not see the 
+		Timeline and you feel you should be seeing/using it.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To work with the Timeline:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Open the required case. If required, open a batch, 
+				perform a search, or open a folder to list the documents of interest.</p>
+            </li>
+            <li>
+                <p>Expand the Timeline, if required, by clicking  <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_GreyArrowCollapsedSection.png" class="ReduceButtonSize" /> next to <b>Timeline</b>. </p>
+            </li>
+            <li>
+                <p>Determine the date range you need to view:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Review 
+							the Timeline, which initially shows the complete date range for the selected 
+						document set.</p>
+                    </li>
+                    <li>
+                        <p>Review 
+						the documents in the document set.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Continue with any of the following procedures 
+				to work with the Timeline.</p>
+            </li>
+        </ol>
+        <h3><a name="Enter_Select_Timeline_Dates"></a>Enter/Select Timeline Dates</h3>
+        <p>To change the date range by entering or selecting the dates of interest:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete 
+					<a href="#Getting_started_with_the_timeline"><MadCap:xref href="#Getting_started_with_the_timeline">Getting Started with 
+		the Timeline</MadCap:xref></a>.</p>
+            </li>
+            <li>
+                <p>The search <b>Field</b> drop-down menu and <b>Filter Dates</b> fields are at the top
+					of the Timeline. The left field is the starting 
+					date and the right field is the ending date. Either enter or select the 
+				required dates in these fields.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Scr_Visual_Search_TimelineDash2.png" class="Thumbnail" />
+                </p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>To 
+						enter dates, use the format MM-DD-YYYY.</p>
+                    </li>
+                    <li>
+                        <p>To 
+							select a date from a calendar, click the&#160;calendar icon and the date of interest. 
+							Use the arrow buttons in the calendar heading to scroll backward or forward 
+						one month at a time.</p>
+                    </li>
+                    <li>To reset the Timeline entries, click <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Reset2.png" class="ReduceButtonSize" />.</li>
+                </ul>
+                <p>In the previous example, 
+					the date range entered is for the years 2001 - 2008. Once a range is entered, 
+				it is indicated on the Timeline, as previously shown.</p>
+            </li>
+            <li>
+                <p><i>Optional</i>: 
+					Select the <span style="font-weight: bold;">Include Empty and Invalid dates</span> 
+					option to include into the document set documents that contain date problems. This 
+					option affects only the documents listed in the case table; it does not 
+				affect the Timeline.</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>The Timeline changes to show only the details in the selected range, 
+				and the case table lists only the documents that contain dates within the range.</p>
+                    </li>
+                    <li>
+                        <p>The Timeline’s start/end 
+					dates match the actual starting and ending dates of the range, if 
+					the dates differ from the dates you entered. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Review the Timeline and documents that correspond  to the date range.</p>
+            </li>
+        </ol>
+        <h3><a name="Select_Range_by_Dragging_in_the_Timeline"></a>Select Range 
+		by Dragging in the Timeline</h3>
+        <p class="BodyText">Instead of (or in addition to) entering/selecting dates, 
+		you can drag in the Timeline as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete <MadCap:xref href="#Getting_started_with_the_timeline">Getting Started with 
+		the Timeline</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>Point to the Timeline in the general area you 
+				want to select, and click and hold the left mouse button.</p>
+            </li>
+            <li>
+                <p>Drag right or left as required to define the 
+					range of interest. When you stop dragging (release the mouse button), 
+				the selected range will be shown as a bar in the Timeline, for example:</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Tab_Sec_TimelineSelectRange4.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>If the range is incorrect, you can change the start and end dates in the search <b>Field</b> drop-down menu and <b>Filter Dates</b> fields above the Timeline. Or, you can click and drag again to further narrow the date range.</p>
+            </li>
+            <li>
+                <p><i>Optional</i>: Select the <span style="font-weight: bold;">Include
+					Empty &amp; Invalid Dates</span> option to include into the document set documents that contain date 
+					problems. This option affects only the documents listed 
+				in the case table; it does not affect the Timeline.</p>
+            </li>
+            <p>The Timeline changes 
+				to show only the details in the selected range, and the case table 
+			lists only the documents that contain dates within the range.</p>
+            <li>
+                <p>Review the Timeline and documents that correspond 
+				to the date range.</p>
+            </li>
+        </ol>
+        <h3><a name="Reset_the_Timeline"></a>Reset the Timeline</h3>
+        <p class="BodyText">After the Timeline is modified, it can be reset to 
+		match the original (entire) document set—simply click <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Reset2.png" class="ReduceButtonSize" /> .</p>
+        <h3><a name="Define_the_Timeline_Search"></a>Define the Timeline Search</h3>
+        <table cellspacing="0" style="mc-table-style: url('../../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: A Timeline search can also be defined on the  <b>Advanced 
+ Search</b> tab. See <MadCap:xref href="AR_Define_an_Advanced_Search.htm">Perform an Advanced Search</MadCap:xref>.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To define a Timeline search:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Select the date field on which the search 
+ is to be based. All Date and DateTime fields are available for selection. 
+ In the previous figure, the Date field is selected.</p>
+            </li>
+            <li>
+                <p>Enter the starting and ending dates of interest 
+ or click <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Calendar.png" class="button_inline" /> to select the 
+ required dates.</p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: When you change dates 
+		 in the <span style="font-weight: bold;">Timeline</span> section 
+		 of the <b>Visual Search</b><b> </b>dashboard or <span style="font-weight: bold;">Advanced Search,</span>  all subsequent search criteria entered 
+		 in either the <span style="font-weight: bold;">Visual</span> <b>Search</b> dashboard or <span style="font-weight: bold;">Advanced Search</span> will pull only 		 documents from the selected date range. You may click <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Reset2.png" class="ReduceButtonSize" /> if you want to search outside of the specified date range.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>To include into the document set documents that contain date problems, select the <span style="font-weight: bold;">Include
+					Empty/Invalid Dates </span>option. This option affects only  the documents listed in the search results (case table); it does not affect 
+ the Timeline.</p>
+            </li>
+            <li>
+                <p>Complete your Advanced Search definition as 
+required. For more information on how to define and run an advanced search, go to <MadCap:xref href="AR_Define_an_Advanced_Search.htm">Perform an Advanced Search</MadCap:xref> .</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="AR_Define_an_Advanced_Search.htm">Define an Advanced Search</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="AR_Define_a_Visual_Search.htm">Define a Visual Search</MadCap:xref>
+        </p>
+    </body>
+</html>

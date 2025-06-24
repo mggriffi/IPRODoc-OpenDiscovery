@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Migrate a LOCAL DISCOVERY Case to OPEN DISCOVERY</title>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <map id="map1">
+            <area shape="rectangle" coords="52,139,166,247" dragDirection="0" href="#Export" />
+            <area shape="rectangle" coords="313,132,421,251" dragDirection="0" href="#Create" />
+            <area shape="rectangle" coords="456,133,565,248" dragDirection="0" href="#Import" />
+            <area shape="rectangle" coords="45,294,167,411" dragDirection="0" href="#Export2" />
+            <area shape="rectangle" coords="316,294,425,411" dragDirection="0" href="#Import2" />
+        </map>
+        <h1> Migrate a <MadCap:variable name="Primary.Local" />  Case to <MadCap:variable name="Primary.Name" /></h1>
+        <p>Migrating a case from <MadCap:variable name="Primary.Local" /> to <MadCap:variable name="Primary.Name" /> is a multi-step process because you want to migrate over both the case data and the production history.</p>
+        <ol class="NumbListBody">
+            <li>Export the case from <MadCap:variable name="Primary.Local" />.</li>
+            <li>Create a case in <MadCap:variable name="Primary.Name" />. This is the case into which you will be importing the <MadCap:variable name="Primary.Local" /> case data.</li>
+            <li>Import the <MadCap:variable name="Primary.Local" /> case data into <MadCap:variable name="Primary.Name" /> using the Eclipse Admin tool.</li>
+            <li>Export the case production history from <MadCap:variable name="Primary.Local" />.</li>
+            <li>Import the <MadCap:variable name="Primary.Local" /> production history into <MadCap:variable name="Primary.Name" /> using the Eclipse Admin tool.</li>
+        </ol>
+        <p>The below diagram shows the export and import process for a given case from <MadCap:variable name="Primary.Local" /> to <MadCap:variable name="Primary.Name" />.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/Workflows/Move LOCAL DISCOVERY_to OpenDiscovery_final.png" usemap="#map1" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 528px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Important: There are some case elements that do not transfer from the Eclipse SE case to the <MadCap:variable name="Primary.Name" /> case. These include:</p>
+                        <table style="width: 100%;margin-left: auto;margin-right: auto;">
+                            <col style="width: 242px;" />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Saved Searches</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">User Security</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Transcript Issues, Notes, Linked Documents</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Smart Folders</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Case Documents</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Page-Level Tags</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Product Shield</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Control/Pick Lists</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Production Settings</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="Note">Persistent Highlighting</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="BulletListTable">
+                                            <li>
+                                                <p class="TableText">Custom Layouts</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="BulletListTable">
+                                            <li>
+                                                <p class="TableText">Partial Dates-i.e.,01/00/2011</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="Note">After the import of case and production history information is complete, you can set up these items, with the exception of transcripts, in the newly created <MadCap:variable name="Primary.Name" /> case.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note:  Private tags also are not exported from <MadCap:variable name="Primary.Local" />. To Convert a Private Tag into a Public Tag: To do so:</p>
+                        <ol class="NumbListBody">
+                            <li>
+                                <p class="Note">Create a Public Tag Group - This can be completed in Case Management or Review, depending on permissions. </p>
+                            </li>
+                            <li>
+                                <p class="Note">Create a tag under a public tag group. </p>
+                            </li>
+                            <li>
+                                <p class="Note">Run a search on the private tag items - This can be accomplished by a right-click context menu action, or using quick search or advanced search. </p>
+                            </li>
+                            <li>
+                                <p class="Note">Finally, apply the newly created public tag to the search results - This can be accomplished by selecting all records in the search result and then the tag check box, or using the right click context menu to "apply to search results".</p>
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Export"></a>Export <MadCap:variable name="Primary.Local" /> Case</h2>
+        <ol class="NumbListBody">
+            <li>From <MadCap:variable name="Primary.Local" /> Administration, select <b>Import/Export</b> &gt; <b>Export Data</b>.</li>
+            <li>Select Case.</li>
+            <li>
+                <p>Select <b>Entire Case</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/DT_to_ENTSelCase.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the <b>Step 2. Select Output</b> tab:</p>
+                <ol>
+                    <li>
+                        <p>Under <b>Output Directory</b>:</p>
+                        <ul>
+                            <li>
+                                <p>Select Output Location.</p>
+                            </li>
+                            <li>Check <b>Copy Image files to output folder</b>.</li>
+                            <li>
+                                <p>Check <b>Copy Native files to output folder</b>.</p>
+                            </li>
+                            <li>
+                                <p>Check <b>Export Text as File</b>.</p>
+                            </li>
+                            <li>
+                                <p>Check <b>Export .CSE</b>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>	Select the following <b>Load Files</b>: <b>. DLF</b>, <b>.DAT</b>, <b>.OPT</b>, <b>.LFP</b>.</li>
+                    <li>Under <b>Items to Export</b> check: <b>Document Level Tags</b>, <b>Redactions</b>, <b>Production History</b>.</li>
+                    <li>
+                        <p>All Database Fields selected.</p>
+                        <p>
+                            <img src="../../Resources/Images/dt_to_ENTSettings.png" class="Thumbnail" />
+                        </p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/myipro_warn.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note"><b>Important</b>: For "Image/Native File Naming Options" select<b> Image Key</b>.</p>
+                                        <p>
+                                            <img src="../../Graphics/ADD_Review_Graphics/Workflows/EAdmStartExp.png" class="Thumbnail" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>On the <b>Step 3. Finish</b> tab, click <b>Start Export</b>..</p>
+                <p>
+                    <img src="../../Resources/Images/DTtoEntStartExp.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2><a name="Import"></a>Import Case Data Into <MadCap:variable name="Primary.Name" /></h2>
+        <p><a name="Create"></a>Create your case in <MadCap:variable name="Primary.Name" />. You can use the .cse file you exported or the default case template.  Make sure and add any additional fields needed before import. Copy the entire Export Volume to your <MadCap:variable name="Primary.Name" /> Case Data location.</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Import <MadCap:variable name="Primary.Local" /> Case Data into <MadCap:variable name="Primary.Name" /> using Eclipse Admin &gt; Import &gt; Import Data.</p>
+                <p>
+                    <img src="../../Resources/Images/EclipseAdm_ImportData.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li style="font-weight: normal;">
+                <p>On the tab <b>Step 1. Select Source</b>, in the Import file field use .DLF.</p>
+                <p>
+                    <img src="../../Resources/Images/importDLF.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>On the tab <b>Step 2. Map Fields</b>:<ol><li><p>	Select <b>Auto-Select by Field Name</b> and Map any other fields needed.</p></li><li><p>	Edit/Update paths for Text and Natives.</p><p><img src="../../Resources/Images/EclipseAdm_MapFieldstab.png" class="Thumbnail" /></p></li><li>After all fields are mapped select <b>Append all records</b> &gt; <b>Import</b></li></ol></li>
+            <li>Import image file.<ol><li>Select <b>Import</b> &gt; <b>Import Data</b>.</li><li>Select Source; <b>LFP</b> or <b>OPT</b> file.</li><li>Edit/Update paths for images.</li><li>Overlay only &gt; Import.</li></ol></li>
+        </ol>
+        <h2><a name="Export2"></a>Export Production History from <MadCap:variable name="Primary.Local" /></h2>
+        <p>There are two options for exporting the production history from your case. </p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Production included an Image File (LFP or OPT).</p>
+            </li>
+            <li>
+                <p>Production did not include an Image File.</p>
+            </li>
+        </ul>
+        <h3>Production With Image File</h3>
+        <ol class="NumbListBody">
+            <li>From <MadCap:variable name="Primary.Local" /> Administration, select <b>Import/Export</b> &gt; <b>Export Data</b>.</li>
+            <li>
+                <p>Select the case.</p>
+            </li>
+            <li>
+                <p>On the <b>Step 1:  Select Case</b> tab select <b>Production History</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/SE_ExpProdHistCase.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>On the <b>Step 2: Select Output</b> tab:<ol><li>Under <b>Output Directory</b>, select the Output location and check <b>Copy Image Files to Output folder</b>.</li><li><p>Under the <b>Other Load files</b> section, check <b>.LFP</b>.</p><p><img src="../../Resources/Images/se_SelOutputProd.png" class="Thumbnail" /></p></li></ol></li>
+            <li>
+                <p>On the <b>Step 3. Finish</b> tab, click <b>Start</b><b> Export</b>.</p>
+                <p>
+                    <img src="../../Resources/Images/SEStartExpProdH.png" />
+                </p>
+            </li>
+            <li>Copy your Production History to your Case Data folder in <MadCap:variable name="Primary.Name" />.</li>
+        </ol>
+        <h3>Production Without Image File</h3>
+        <h4>Option 1: Export Production History</h4>
+        <ol>
+            <li>
+                <p>From <MadCap:variable name="Primary.Local" /> Administration, select <b>Import/Export</b> &gt; <b>Export Data</b>.	</p>
+            </li>
+            <li>
+                <p>On the <b>Step 1:  Select Case</b> tab select <b>Production History</b>.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/Eclipse Admin/ExportProdHist.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the <b>Step 2: Select Output</b> tab:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Enter an <b>Output Directory</b>.</p>
+                    </li>
+                    <li>
+                        <p>Make sure that <b>Copy Image Files to Output Folder</b> is selected.</p>
+                    </li>
+                    <li>
+                        <p>Select<b> LFP</b> under Other Load Files.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Eclipse Admin/ExProdHistNoImage.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>On the <b>Step 3. Finish</b> tab, click <b>Start</b><b> Export</b>.</p>
+            </li>
+        </ol>
+        <h4>Option 2: Re-run the Production</h4>
+        <ol>
+            <li>
+                <p>Run each Production, selecting the Production Job name from  the Production History tab.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/Eclipse Admin/RERUN_exphistory.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click <b>Load Production Settings</b>.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Select/run the search originally used for the production.</p>
+                    </li>
+                    <li>
+                        <p>Click the <b>Use Range for Production</b> button.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Select Output Options.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Select <b>Images</b> for Output Type.</p>
+                    </li>
+                    <li>
+                        <p>Select<b> LFP</b> as a Load File.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Eclipse Admin/ExProdHistory.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Select Endorsement Options.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Select the Production Job name under Select Image Key &gt; <b>Use Produced Key</b>.</p>
+                        <p>This will export the documents with the correct production bates numbers.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Eclipse Admin/UseProdKey.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Uncheck the <b>Update Production History</b> box and run the production.</p>
+            </li>
+            <li>
+                <p>Copy your Production History to your Case Data folder in <MadCap:variable name="Primary.Name" />.</p>
+            </li>
+        </ol>
+        <h2>Create a Cross Reference File in  <MadCap:variable name="Primary.Name" /> Review</h2>
+        <ol class="NumbListBody">
+            <li> Create Cross-Reference File in <MadCap:variable name="Primary.Name" /> Review.<ol><li><p>Open the case in <MadCap:variable name="Primary.Name" />.</p></li><li><p>Run your Production Search.</p></li><li><p>Modify the Grid to show only BEGDOC and PRODBEGDOC fields.</p><p><img src="../../Resources/Images/ImportSEtoEnt_begdoc.png" class="Thumbnail" /></p></li><li><p>Select all documents, click <b>Actions</b> and then select <b>Export</b>.</p></li><li>Select <b>Output Type</b> &gt; <b>DAT File</b>.</li><li><p>Click <b>Export</b>..</p></li></ol><p>This is your Cross Reference File. Copy it to your Production History folder.</p></li>
+            <li>
+                <p> Edit the Production History .LFP.                       </p>
+                <ol>
+                    <li>
+                        <p>Use Find and Replace to replace the volume.</p>
+                        <p>
+                            <img src="../../Resources/Images/entfromse_replacevol.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Update the Path with the full UNC path.</p>
+                        <p>
+                            <img src="../../Resources/Images/ImportProd_fullunc.png" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h2><a name="Import2"></a>Import Production History into Your  <MadCap:variable name="Primary.Name" /> Case</h2>
+        <ol class="NumbListBody">
+            <li>
+                <p>In Eclipse Admin, select Import &gt; Import Production History.</p>
+                <p>
+                    <img src="../../Resources/Images/importprodhist_ecadm.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>In the <b>Cross Reference File</b> field, click on the folder button and navigate to the location where you stored the cross reference file you just created. Use the Cross Reference File you created.</li>
+            <li>In the <b>Image Load File</b> field, click on the folder button and navigate to the location where you stored the updated LFP file.</li>
+            <li>Check the <b>First Line is the header</b> check box.</li>
+            <li>
+                <p>Enter a Production Name.</p>
+                <p>
+                    <img src="../../Resources/Images/estoentimptprodhist.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click the <b>Import Production Job</b> button.</p>
+                <p>
+                    <img src="../../Resources/Images/se_ent_impprodjobbtn.png" />
+                </p>
+            </li>
+        </ol>
+        <p>When the import is finished, you have successfully completed the <MadCap:variable name="Primary.Local" /> to <MadCap:variable name="Primary.Name" /> case migration process for your case.</p>
+    </body>
+</html>

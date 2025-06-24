@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Record View Pane</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Record View Pane</h1>
+        <h2>About the Record View Pane</h2>
+        <p class="BodyText">The Record View pane in <MadCap:variable name="Primary.IPRO" /> Eclipse presents the field 
+ content for a single record. This view is typically used to for data review 
+ and editing fields (coding). </p>
+        <p class="BodyText">Your administrator will configure specific sets of 
+ fields (coding forms) to help ensure an efficient review cycle.</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: If Technology-Assisted 
+		 Review (TAR) projects are implemented at your site, TAR-specific 
+		 coding forms will be available. Use these coding forms as directed 
+		 by your administrator. For more information, see <a href="../Analytics/TAR.htm">"TAR."</a></p>
+                </td>
+            </tr>
+        </table>
+        <h3>Record View Pane Activities</h3>
+        <p class="BodyText">The following activities occur in the Record View pane:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Selecting the coding 
+ form needed for the activities to be performed. The coding form, which 
+ is configured by your administrator, determines which fields appear in 
+ the Record View pane, which tags are available in the <span style="font-weight: bold;">Tags</span> 
+ tab, and whether rules specific to fields or tags apply. </p>
+            </li>
+            <li>
+                <p>Viewing field content 
+ in the coding form.</p>
+            </li>
+            <li>
+                <p>Editing fields in 
+ the coding form (common editing functions for field-level data) and/or 
+ applying tags to the selected document. </p>
+            </li>
+        </ul>
+        <h3>Coding Form-based Rules</h3>
+        <p class="BodyText">Your administrator may define specific rules that will 
+ apply to your review procedures when you use a specific coding form. For 
+ example, a rule may be defined to require that a specific field cannot 
+ be empty.</p>
+        <p class="BodyText">Field-based rules such as this must be followed in 
+ order for changes in the Record View pane to be saved.</p>
+        <h3>Editing Limitations</h3>
+        <p class="BodyText">Several system fields cannot or should not be edited, 
+ for example, BEGDOC, BEGATT, the EXTRACTEDTEXT field (which will not appear 
+ in Record View pane), <MadCap:variable name="Primary.Name" /> Imaging-related fields, and others that 
+ are automatically identified or calculated (such as the HASIMAGE field). 
+ </p>
+        <p class="BodyText">Your administrator may also secure fields so that they 
+ cannot be edited.</p>
+        <p class="BodyText">Contact your administrator if you have questions about 
+ the fields in your database and the ones that you should edit. </p>
+        <p class="BodyText">If a change is made that conflicts with unique or defined 
+ information (for example, changing the value of a primary field to one 
+ that already exists), the change will not be saved. In this event, an 
+ error message will display.</p>
+        <h3>View Field Content</h3>
+        <p>To review field content in the Record View pane:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Log in to <MadCap:variable name="Primary.IPRO" /> Eclipse and open the needed 
+ case or batch. </p>
+            </li>
+            <li>
+                <p>In the Documents or related tab, select a record 
+ of interest.</p>
+            </li>
+            <li>
+                <p>If Record View is collapsed, expand it; resize 
+ if needed. </p>
+            </li>
+            <li>
+                <p>Select the coding form containing the field(s) 
+ to be reviewed from the coding forms list, as shown in the example on 
+ the right. </p>
+            </li>
+            <li>
+                <p>Evaluate field data. As needed:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Scroll 
+ to view all fields. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ some field content is truncated, point to the field to view the content 
+ in a tooltip.</p>
+                        <p class="Image">
+                            <img src="../../../Graphics/Eclipse Web Images/scr_record_coding_form_sel.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2><a name="Editing_a_Record"></a>Editing a Record</h2>
+        <p>If you have sufficient permissions, edit a case record as explained 
+ in the following procedure. This procedure is appropriate for miscellaneous 
+ changes to various records.</p>
+        <h3>Preparation</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p>Getting 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Review 
+ the case guidelines to be followed, including the coding form to use and 
+ associated rules (if they exist). For information, check the <span style="font-weight: bold;">Case 
+ Alerts</span> and <span style="font-weight: bold;">Instructions</span> 
+ folders. See <a href="../Review_Set_Up/Administrative_Alerts.htm">"Administrative 
+ Alerts"</a> and/or contact your administrator. </p>
+                    </li>
+                    <li>
+                        <p>Log 
+ in to <MadCap:variable name="Primary.IPRO" /> Eclipse and open the needed case or batch. </p>
+                    </li>
+                    <li>
+                        <p>Locate 
+ the needed record. If needed, perform a search, open a Public Folder, 
+ or select a cluster or category in <MadCap:variable name="Primary.IPRO" /> Eclipse Analytics to find the 
+ record. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Documents</span> 
+ or related tab, select the record of interest. </p>
+            </li>
+            <li>
+                <p>If the Record View pane is collapsed, expand 
+ it; resize if needed. </p>
+            </li>
+            <li>
+                <p>In Record View, select the coding form containing 
+ the field(s) to be edited from the <span style="font-weight: bold;">coding 
+ forms</span> list (see previous figure). </p>
+            </li>
+            <li>
+                <p>If auto-saving is configured for the form and 
+ you want to save changes automatically, click <span style="font-weight: bold;">actions</span> 
+ and select the <span style="font-weight: bold;">Auto Save</span> option. 
+ (Auto-saving applies to both field edits and tagging.)</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" style="width: 406px;" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: <span style="font-weight: bold;">Auto 
+		 Save</span> is not available for coding forms that include rules.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>If the coding form includes a large number 
+ of fields, limit the form to a specific field (or all fields with common 
+ content in their names):</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">actions</span> to access the field search 
+ function.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the search box, enter all or part of the field name.</p>
+                    </li>
+                    <li>
+                        <p>Batches 
+ only: If you are working in a batch, select the scope of the search in 
+ the <span style="font-weight: bold;">Documents from </span>list.</p>
+                    </li>
+                    <li>
+                        <p>If 
+				the search does not run/update automatically, click <img src="../../../Graphics/Eclipse Web Images/btn_refresh2.png" alt="" style="border: none;" border="0" />.</p>
+                        <p class="BodyTextIndent">Only fields with names matching the search criteria 
+					will display. In the following example, a reviewer has limited a coding 
+					form to fields with “notes” in the name so attorney and/or review notes 
+					can be added for reviewed documents in the opened batch. The coding form 
+					will remain this way for all records until the field search criterion 
+					is changed or cleared (by clicking <span style="font-weight: bold;">X</span> 
+				in the search field).</p>
+                        <p class="Image">
+                            <img src="../../../Graphics/Eclipse Web Images/scr_record_field_search_ex.png" alt="" border="0" class="Thumbnail_Popup" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h3>Editing</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the 
+ Record View toolbar, click the <span style="font-weight: bold;">edit</span> 
+ button or press Ctrl+F2.</p>
+            </li>
+            <li>
+                <p>Complete one or more of the following steps, 
+ depending on the types of changes required. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Text changes</span>: 
+ Double-click in the field to be edited and make required changes. Use 
+ keyboard commands or a context menu to work with text:</p>
+                <table cellspacing="0" width="55.601%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 29.849%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 70.151%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">to...</p>
+                            </td>
+                            <td style="border-top: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">do 
+		 this...</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Cut selected field text</p>
+                            </td>
+                            <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Select 
+		 text and either press Ctrl+X or right-click and select <span style="font-weight: bold;">Cut</span>.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Copy selected field text</p>
+                            </td>
+                            <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Select 
+		 text and either press Ctrl+C or right-click and select <span style="font-weight: bold;">Copy</span>.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Copy entire field</p>
+                            </td>
+                            <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Click 
+		 on the field, then right-click and select <span style="font-weight: bold;">Copy</span>.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Copy field name</p>
+                            </td>
+                            <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Click 
+		 on the field name, then right-click and select <span style="font-weight: bold;">Copy</span>.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Paste clipboard content (text from any source)</p>
+                            </td>
+                            <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Click 
+		 in field where text is to be pasted and either press Ctrl+V or 
+		 right-click and select <span style="font-weight: bold;">Paste</span>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <p>&#160;</p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Tip: 
+		 If a field contains a large amount of text that is truncated, 
+		 point to the field to view the content in a tooltip.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p><span style="font-weight: bold;">Hyperlinks</span>: 
+ If the field is defined as a hyperlink, enter or edit the linked file’s 
+ complete path. The entry should be a single file path in UNC format (for 
+ example, \\server001\files\smith01.msg). To view a linked file, click 
+ the link in Record View (whether in edit mode or not).</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Pick lists</span>: 
+ If the field is defined to use a “pick list,” take any of the following 
+ actions to use and/or edit the pick list. (Make sure you follow case review 
+ instructions.)</p>
+            </li>
+            <p class="BodyTextIndent">Pick list actions:<ul class="BulletListBody"><li><p>Select 
+ a pick-list item: double-click in the field, then click one or more items 
+ from the list of choices as shown here.</p></li><li><p>Enter 
+ an item: type a needed entry (that is not in the pick list) in the field. 
+ </p></li><li><p>Edit 
+ a selection/entry: remove or change an existing entry in the field.</p></li><li><p>Add 
+ pick-list items: if appropriate to the case review and you have the needed 
+ permission, add entries to the pick list by typing the new entry into 
+ the field at the top of the list and clicking <span style="font-weight: bold;">Add 
+ to list</span>.</p></li><li><p>Remove 
+ pick-list items: if appropriate to the case review and you have the needed 
+ permission, remove an item from the list by selecting it in the list and 
+ clicking <img src="../../../Graphics/Eclipse Web Images/btn_del_pick_item.png" alt="" border="0" class="button_inline" />.</p><p class="Image"><img src="../../../Graphics/Eclipse Web Images/scr_record_pick_list.png" alt="" border="0" class="Thumbnail_Popup" /></p></li></ul></p>
+            <li>
+                <p>Repeat these steps to edit other fields.</p>
+            </li>
+        </ol>
+        <h4>Completion</h4>
+        <ul>
+            <li>
+                <p>When finished, use the Record View tools as 
+ described in the following table.</p>
+            </li>
+            <table cellspacing="0" width="63%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 13.202%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 17.12%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 19.63%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 50.048%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">toolbar</p>
+                        </td>
+                        <td style="border-top: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">command 
+		 bar</p>
+                        </td>
+                        <td style="border-top: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">keyboard</p>
+                        </td>
+                        <td style="border-top: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">action</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;"><span style="font-weight: bold;">Cancel</span>
+                            </p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">
+                                <img src="../../../Graphics/Eclipse Web Images/btn_rec_view_edit_cancel.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Cancel 
+		 all changes and stop editing.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">
+                                <img src="../../../Graphics/Eclipse Web Images/btn_rec_view_edit_save.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">Ctrl+S</p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Save 
+		 all edits and remain on the selected record.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">
+                                <img src="../../../Graphics/Eclipse Web Images/btn_rec_view_edit_save-next.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">Ctrl+Enter</p>
+                        </td>
+                        <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Save 
+		 all edits and move to the next record in the set (as listed in 
+		 <span style="font-weight: bold;">Documents</span> or related tab).</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <li>
+                <p>If you saved the record, navigate to other 
+ records using the Record View pane navigation bar as shown in the following 
+ figure.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Eclipse Web Images/scr_nav_bar_rec_view.png" alt="" style="border: none;" border="0" />
+                </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

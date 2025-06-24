@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <p><MadCap:variable name="Primary.LIVE EDA" />&#160;will use the default environment unless otherwise specified. If your organization has multiple clients, you have the option to configure different environments for each client in <MadCap:annotation MadCap:createDate="2022-07-21T15:27:35.8049428-04:00" MadCap:creator="ltonak" MadCap:initials="LT" MadCap:comment="CURRENTLY NOT FOR LMS" MadCap:editor="ltonak" MadCap:editDate="2022-07-21T15:27:37.2917301-04:00">the</MadCap:annotation> <b> Case Management</b> module:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click <b>Case Management</b> 
+ on the <MadCap:variable name="Primary.Name"></MadCap:variable> Home page (or <b>Case Management</b> 
+ on the main menu located in the left pane).</p>
+                </li>
+                <li>
+                    <p>Take one of the following actions as needed:</p>
+                </li>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Click 
+ <img src="../../../Graphics/EditDelete3.png" alt="" border="0" class="button_inline"></img> corresponding 
+ to the needed managing client and click <b>Edit 
+ Managing Client</b>. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <img src="../../../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" /> corresponding 
+ to the needed client and click <b>Edit 
+ Client</b>. </p>
+                    </li>
+                    <li>
+                        <p>Under <b>Early Data Assessment Environment</b>, deselect <b>Use System Default</b>.</p>
+                        <p>
+                            <img src="../../../Graphics/LiveEDA_Graphics/use_system_default_option.png" class="Thumbnail" style="width: 181px;height: 164px;" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Enter the desired <b>Search Endpoint</b> and <b>API&#160;Endpoint</b> for that client. </p>
+                    </li>
+                    <li>
+                        <p>Click <b>Save</b>.</p>
+                    </li>
+                </ul>
+            </ol>
+            <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 490px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: You cannot configure the Early Data Assessment Search Endpoint when creating a new client, only by editing an existing client in the Case Manager.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

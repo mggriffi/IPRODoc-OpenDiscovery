@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Processing_MP.flmsp');" MadCap:conditions="Primary.Processing">
+    <head><title>Run Streaming Discovery De-dupliation Detailed Report</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Run Streaming Discovery De-duplication Detailed Report</h1>
+        <p class="BodyText">A new report for  <MadCap:xref href="#">Streaming Discovery </MadCap:xref> and Streaming Imaging jobs was added in version 2018.5.2 called De-duplication Detailed.</p>
+        <p class="BodyText">This report contains detailed de-duplication similar to the pre-existing reports for Data Extract and Processing jobs and indicates the original file a document was a duplicate of.</p>
+        <p class="BodyText">The De-duplication setting (Custodian, Project, or None) in the Streaming Discovery Options dialog determines the report output. .</p>
+        <p class="BodyText">The report, in the form of a .CSV file, contains the following information:</p>
+        <ul class="BulletListBody">
+            <li>Relationship (Original and its Duplicate)</li>
+            <li>ItemID</li>
+            <li>DiscoveryPath (original location where the file was located at time of discovery)</li>
+            <li>ItemFileName (original document filename and the duplicate copy of the original document)</li>
+            <li>FileSizeKB</li>
+            <li>FamilyHash (for Streaming, this accounts for the additional layer of de-duplication for identifying duplicate families)</li>
+            <li>ItemHashValue (this value is the equivalent of the MD5 Hash; however, Streaming uses SHA1 for de-duplication)</li>
+            <li>ProjectName</li>
+            <li>ProjectDescription</li>
+            <li>CustodianName</li>
+            <li>CustodianDescription</li>
+            <li>JobName</li>
+            <li>OriginalJobName</li>
+        </ul>
+        <p>&#160;</p>
+        <ol class="NumbListBody">
+            <li>To access the report for a Streaming Discovery job or a Streaming Imaging job, right click the desired <b>job</b> in the Client Management tree view to display the context menu.</li>
+            <li>	Choose <b>Reporting &gt; Deduplication Detailed</b>. The Windows Explorer appears and displays a named .CSV file containing the job type and job name.</li>
+            <li>	Accept or change the <b>directory</b> location.</li>
+            <li>	Click <b>Save</b>. The report generates, and Windows Explorer displays the saved .CSV file. (Note: If there is no data, a prompt appears stating: Report contains no data.</li>
+            <li>Click <b>OK</b> to close the prompt. No report generates.)</li>
+            <li>	Open the <b>.CSV file</b> to view the report data.</li>
+        </ol>
+        <p class="BodyText">.</p>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary._FixedMulti-Level,Primary.Review" style="mc-template-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Add API Client</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create New Contacts" />Add API Clients</h1>
+        <p class="BodyText">To add new API Clients:</p>
+        <table cellspacing="0" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Only users in the SuperAdmin group have permissions to add new API Clients.</p>
+                </td>
+            </tr>
+        </table>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Security,System_Nav.API">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Public API Clients</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_API.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol class="NumbListBody" start="3">
+            <li>
+                <p>Click the <b>Add API Client</b> button at the top of the screen to open the Add Public API Client dialog. </p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/API_Add_Client_Dialog.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>Enter a <b>Name</b> for the new API Client. 
+ </li>
+            <li>Provide a <b>Client ID</b>. The Client ID must start with "app_" and may contain letters, numbers, periods, dashes, and underscores.</li>
+            <li>Copy the <b>Client Secret</b> by selecting the <b>Copy to Clipboard</b> button. The Client Secret will not be shown again.</li>
+            <li>When the details have been defined for the API Client, click 
+ <b>Save</b>.</li>
+            <li>Repeat these steps to add other API Clients.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+            <p>
+                <MadCap:xref href="Overview_Public_API.htm">Overview: Public API</MadCap:xref>
+            </p>
+            <p MadCap:conditions="Primary.Blocked">
+                <MadCap:xref href="Deploy_Public_API.htm">Deploy Public API</MadCap:xref>
+            </p>
+        </p>
+    </body>
+</html>

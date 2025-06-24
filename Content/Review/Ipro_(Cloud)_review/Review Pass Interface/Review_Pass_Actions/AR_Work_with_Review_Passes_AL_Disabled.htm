@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Blocked">
+    <head>
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Work with Active Learning Disabled Review Passes</title>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Work with Active Learning Disabled Review Passes</h1>
+        <div>
+            <p>Active Learning (AL) disabled review passes, as the name suggests, are a type of review pass in which the Active Learning AI is turned off. This is a more traditional method of batching documents for review, in which all batches are created in advance, and are served up on a first come first serve basis. If you would rather use Active Learning for your review passes, see <MadCap:xref href="AR_Work_with_Review_Passes_AL_Enabled.htm">Work with Active Learning Enabled Review Passes</MadCap:xref>.</p>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Notes:</p>
+                        <ul>
+                            <li>
+                                <p><MadCap:variable name="Primary.Active Learning" style="font-style: italic;font-size: 10pt;" /><i style="font-size: 10pt;"> disabled review passes still run <MadCap:variable name="Primary.Active Learning" /> “in the background”, but it is transparent to reviewers.  At some point in the review, the setting could be <MadCap:variable name="Primary.Active Learning" /> enabled to start prioritizing predicted positive documents within the review pass. That would change the document order for reviewers.</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p><i style="font-size: 10pt;">If you prefer to turn off the <MadCap:variable name="Primary.Active Learning" /> functionality running “in the background” on <MadCap:variable name="Primary.Active Learning" /> disabled review passes, the functionality can be turned off across the environment through SQL. For more information, please contact <MadCap:variable name="Primary.IPRO" /> Support.</i>
+                                </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div MadCap:conditions="Primary.FutureDelete">
+            <p>The Active Learning (AL) disabled review pass is the standard way to run a review pass, which does not require use of the AL feature. If you would rather create your review pass by using the AL feature, go to <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref> and <MadCap:xref href="AR_Work_with_Review_Passes_AL_Enabled.htm"> Work with Active Learning Enabled Review Passes</MadCap:xref>.</p>
+            <h2>
+                <MadCap:toggler targets="Set_Up_AL_Disabled_RPs">Set Up Active Learning Disabled Review Passes</MadCap:toggler>
+            </h2>
+            <div MadCap:targetName="Set_Up_AL_Disabled_RPs">
+                <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Notes:</p>
+                            <ul>
+                                <li>
+                                    <p class="Note">Before continuing with this topic, make sure that in <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref> you have read and understand “What is <MadCap:variable name="Primary.Active Learning" />?” and have performed the relevant procedures in <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>. </p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p class="Note">In addition, we recommend that you see <MadCap:xref href="AR_Manage_Review_Passes.htm">Manage Review Passes</MadCap:xref> for a general understanding of the Review Pass process.</p>
+                                </li>
+                                <li>
+                                    <p> <MadCap:variable name="Primary.Active Learning" style="font-style: italic;font-size: 10pt;" /><i style="font-size: 10pt;"> disabled review passes still run <MadCap:variable name="Primary.Active Learning" /> “in the background”, but it is transparent to reviewers.  At some point in the review, the setting could be <MadCap:variable name="Primary.Active Learning" /> enabled to start prioritizing predicted positive documents within the review pass, and that would change the document order for reviewers.</i></p>
+                                </li>
+                                <li>
+                                    <p><i style="font-size: 10pt;">If you prefer to turn off the <MadCap:variable name="Primary.Active Learning" /> functionality running “in the background” on <MadCap:variable name="Primary.Active Learning" /> disabled review passes, the functionality can be turned off across the environment through SQL. For more information, please contact <MadCap:variable name="Primary.IPRO" /> Support.</i>
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Set Up the Review Pass</h3>
+                <ol>
+                    <li>
+                        <p>Make sure that you have performed the steps in “Create an <MadCap:variable name="Primary.Active Learning" /> Disabled Review Pass” in <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches.</MadCap:xref></p>
+                    </li>
+                    <li>
+                        <p>Open the respective case. In the left pane, click the <b>Review Pass Management</b> button <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_Review_Pass_Mgmt2.png" class="ReduceButtonSize" />. Click the <MadCap:variable name="Primary.Active Learning" /> disabled review pass you created in <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>. </p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_left_pane_disabled_listing4.png" class="Thumbnail" />
+                        </p>
+                        <p>The <b>Review Pass Details</b> screen appears.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_disabled_edit9.png" class="Thumbnail" />
+                            <br />
+                        </p>
+                    </li>
+                    <li>
+                        <p>In the top right corner of the <b>Review Pass Details</b> screen, click the edit icon <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_CAL_edit.png" class="ReduceButtonSize" />. The <b>Edit Review Pass Settings</b> screen appears. This screen contains the settings that display in the <b>Settings</b> tab of the <b>Review Pass Details</b> screen.</p>
+                        <p>
+                            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_AL_disabled_edit_1.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Update <b>Review Pass Name</b>, <b>General </b>settings, and <b>Permissions</b> settings. </p>
+                    </li>
+                    <p>For details about the  options you can edit on the  <b>Edit Review Pass Settings</b> screen see the Settings table in <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>.</p>
+                    <li>Click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_CAL_Save.png" class="ReduceButtonSize" />. In the left pane, the disabled review pass listing displays with a <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_CAL_disabled_icon.png" style="width: 42px; height: 43px;" class="ReduceButtonSize" />icon in its top-right corner.</li>
+                </ol>
+                <h4>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_left_pane_disabled_listing4.png" class="Thumbnail" />
+                </h4>
+                <h4><b>Settings Tab</b>
+                </h4>
+                <p>On the <b>Review Pass Details</b> screen, you can view the values that you set by clicking the <b>Settings</b> tab. See the previous table for a description of these settings.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_Settings tab7.png" class="Thumbnail" />
+                </p>
+                <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: If you want to change this review pass to <MadCap:variable name="Primary.Active Learning" /> enabled, click <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_CAL_turn_on_active_learning.png" />. Then go to <MadCap:xref href="AR_Work_with_Review_Passes_AL_Enabled.htm">Work with Active Learning Enabled Review Passes</MadCap:xref>.</p>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_AL_disabled_edit_1.png" class="Thumbnail" />
+                </p>
+                <p><b>Define AL Disabled Review Pass Settings</b>
+                </p>
+                <p>The following tables describe the definitions shown on the Settings tab and the Overview tab.</p>
+                <MadCap:snippetBlock src="../../../../Resources/Snippets/Settings_Tab_AL_Disabled.flsnp" />
+                <h4><b>Reports Tab</b>
+                </h4>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_Reports tab7.png" class="Thumbnail" />
+                </p>
+                <p>On the <b>Reports</b> tab is the <b>Relevancy Scores </b>bar graph, which shows the distribution of documents based on relevancy prediction. See the following example:</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_disabled_reports3.png" style="width: 84px; height: 54px;" class="Thumbnail" />
+                </p>
+                <p>Hovering over a bar shows the <b>Relevancy Index </b>for that score:<br /><img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_enabled_reports3.png" class="Thumbnail" /></p>
+                <p>When the <b>Relevancy Range</b> is set wide, say -30 to 30, then the <b>Relevancy Index Range Details </b>shows that the documents that fall into the range of being predicted as positive are the same or close to the entire set of review documents. The <b>Relevancy Range</b> can be adjusted as you desire. If you narrow the <b>Relevancy Range</b>, for example, to between 60 and 80, fewer documents will display within the <b>Relevancy Range Details</b>.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_disabled_reports4.png" class="Thumbnail" />
+                </p>
+                <p>Clicking a link will trigger a Visual Search for that particular document set.</p>
+                <h4><b>Overview Tab</b>
+                </h4>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_Overview tab7.png" class="Thumbnail" />
+                </p>
+                <p>For details about the  options you can edit on the  <b>Edit Review Pass Settings</b> screen see the Overview table in <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>.</p>
+                <p>In-app Information bubbles are available next to the Review Metrics for additional information.</p>
+                <p>
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_disabled_overview7.png" style="width: 57px; height: 126px;" class="Thumbnail" />
+                </p>
+                <p class="BodyText">Note that the <b>Insights</b> card now contains <b>Prevalence</b> and <b>Responsive Documents</b> values:</p>
+                <p class="BodyText">
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Review_Pass_Insights_Card_1.png" class="Thumbnail" />
+                </p>
+            </div>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><b style="font-style: italic;">Related Topics:</b>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="AR_Manage_Review_Passes.htm">Manage Review Passes</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="AR_Work_with_Review_Passes_AL_Enabled.htm">Work with Active Learning Enabled Review Passes</MadCap:xref>
+        </p>
+        <p class="BodyText"><a href="../../../../Product Resources/Unlocking the Benefits of Active Learning.pdf">Unlocking the Benefits of Active Learning.pdf</a>
+        </p>
+    </body>
+</html>

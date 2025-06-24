@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports" style="mc-master-page: url('../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>ExecutionMetadata Field</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="ExecutionMetadata Field" />ExecutionMetadata Field</h1>
+        <p class="BodyText">The ExecutionMetadata field is a string field comprised 
+ of one JSON <b><i style="font-style: normal;font-weight: normal;">object</i></b> 
+ with strict requirements.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: This 
+		 topic assumes that you understand the rules and structure of JSON. 
+		 It is strongly recommended that you use a JSON validator to ensure 
+		 that the system works without errors. If you are unfamiliar with 
+		 JSON, it is recommended that you learn about it elsewhere (for 
+		 example, see <a href="http://www.json.org/" target="_blank">http://www.json.org/</a> 
+		 before you continue. This topic is beyond the scope of this document.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note"> Important: All 
+		 of the following JSON details are <i>case-sensitive</i>. 
+		 To avoid errors, ensure that you provide both the field names, 
+		 as well as the field values, exactly as they are specified in 
+		 this document.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">The only required field in the ExecutionMetadata field 
+ is StoredProcedure. This must contain both the schema and stored procedure 
+ name of your report. For example:</p>
+        <p class="Code"><span class="Code">{</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;"StoredProcedure": 
+ "UserDefinedReports.MyCustomReport"</span>
+        </p>
+        <p class="Code"><span class="Code">}</span>
+        </p>
+        <h2>Parameters</h2>
+        <p class="BodyText">If your stored procedure does not have any parameters, 
+ this is the only necessary field within the JSON metadata field. However, 
+ if your report requires parameters, it will need additional configuration. 
+ Each parameter must be configured inside of a “ParameterInfo” Field. This 
+ field is an array of JSON objects. Each object must contain the fields 
+ listed in the following table.</p>
+        <h3>ParameterInfo JSON Field</h3>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 575px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field 
+		 Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">DATA 
+		 TYPE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Name<span style="color: #ff0000;">*</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 name of the parameter that is in your stored procedure.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">DisplayName<span style="color: #ff0000;">*</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 name that is displayed in the <MadCap:variable name="Primary.Name" /> Website Reports page.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">DisplayType<span style="color: #ff0000;">*</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This 
+		 fields determines how the <MadCap:variable name="Primary.Name" /> Website will control user input. 
+		 You must specify one of the following options:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">text</p>
+                            </li>
+                            <li>
+                                <p class="TableText">number</p>
+                            </li>
+                            <li>
+                                <p class="TableText">checkbox</p>
+                            </li>
+                            <li>
+                                <p class="TableText">date</p>
+                            </li>
+                            <li>
+                                <p class="TableText">list (*)</p>
+                            </li>
+                            <li>
+                                <p class="TableText">multi-select (*)</p>
+                            </li>
+                            <li>
+                                <p class="TableText">hidden (*)</p>
+                                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                    <tbody>
+                                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                <p class="TableText">
+                                                    <img src="../../Resources/Images/myipro_note.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                <p class="Note">Note: </p>
+                                                <ul class="BulletListTable">
+                                                    <li>
+                                                        <p class="Note" style="margin-left: 0px;">The <span style="font-style: italic;">list</span> and <span style="font-style: italic;">multi-select</span> DisplayTypes 
+					 require an additional field to be specified in order 
+					 to work.See&#160;<MadCap:xref href="Reporting.ParameterListDefinition_Table.htm">Reporting.ParameterListDefinition Table</MadCap:xref></p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="Note" style="margin-left: 0px;">The hidden 
+					 DisplayType is for a special case, and should be used 
+					 only for a report that requires a CaseProductEnvironmentId 
+					 (CpeId) parameter.</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ParameterListName</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 name of the parameter list used for reports that require a user 
+		 selection for the report (such as selecting from a drop-down or 
+		 multi-selection list).</p>
+                        <p class="TableText">This name has a direct correlation to the 
+		 name field of the Reporting.ParameterListDefinition table.</p>
+                        <p class="TableText">This name is:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">Required if using “list” or “multi-select” 
+			 DisplayType.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Ignored for all other DisplayTypes.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">IsOptional</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Boolean</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">A 
+		 true/false property. False by default; entry is not necessary 
+		 unless you want to explicitly state that the parameter as optional.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText"><span style="font-size: 11.0pt;line-height: 105%;font-family: Verdana, sans-serif;color: #ff0000;">*</span> Indicates 
+ a required field. </p>
+        <h3>Example</h3>
+        <p class="MsoNormal" style="margin-bottom: .0001pt;line-height: normal;font-size: 10.0pt;">Following is a basic 
+ example of ExecutionMetadata with two “date” parameters:</p>
+        <p class="Code"><span class="Code">{</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;"StoredProcedure": 
+ "UserDefinedReports.MyCustomReport",</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;"ParameterInfo": 
+ [</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;{</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"Name": 
+ "StartDate",</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"DisplayName": 
+ "Start Date",</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"DisplayType": 
+ "date"</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;},</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;{</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"Name": 
+ "EndDate",</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"DisplayName": 
+ "End Date",</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;"DisplayType": 
+ "date"</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;&#160;&#160;}</span>
+        </p>
+        <p class="Code"><span class="Code">&#160;&#160;]</span>
+        </p>
+        <p class="Code"><span class="Code">}</span>
+        </p>
+        <p class="Code">&#160;</p>
+        <p class="BodyText">Details regarding the more complex configurations, 
+ such as drop-down and multi-select list parameter types, are included 
+ in the <MadCap:xref href="Reporting.ParameterListDefinition_Table.htm">Reporting.ParameterListDefinition Table</MadCap:xref> topic.</p>
+    </body>
+</html>

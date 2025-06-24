@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Manage Relationships</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Manage Relationships</h1>
+        <p class="BodyText">“Relationships” are based on the content of a specific 
+ field. When users select a particular record and view relationship details 
+ in Eclipse, the Relationships list presents all documents with matching 
+ field content (as in a field-specific search). The following relationships 
+ are included with Eclipse by default:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Family:</span> 
+	 intended to show documents that are related to one another, as in 
+	 an email and its attachment. Family relationships are grouped by the 
+	 BEGATTACH field and sorted by the BEGDOC field; you can define the 
+	 details (fields and/or tag groups) to be included in the list.
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Duplicates:</span> 
+	 intended to show documents that are the same or nearly the same in 
+	 content. Duplicates are grouped by the MD5HASH field and sorted by 
+	 the BEGDOC field; you can define the details (fields and/or tag groups) 
+	 to be included in the list
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Document History:</span> 
+	 displays history of actions such as redactions and tags applied to 
+	 the selected document. Although not modifiable, this report can be 
+	 secured.
+            </p>
+            </li>
+        </ul>
+        <p class="BodyText">If Eclipse Analytics is installed at your site, then 
+ Email Threading and/or Near Duplicates relationships may be configured. 
+ </p>
+        <p class="BodyText">Other relationships can be defined to meet the needs 
+ of your case review. </p>
+        <p class="BodyText">
+            <img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Click 
+ here to watch the Creating Relationship Lists video</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://player.vimeo.com/video/225626173" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related pages:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li><a href="Create_a_Relationship_List.htm">Create 
+	 a Relationship List</a>
+            </li>
+            <li><a href="Modify_a_Relationships_List.htm">Modify 
+	 a Relationships List</a>
+            </li>
+        </ul>
+        <h3>Family Relationships Example</h3>
+        <p class="BodyText">This figure shows the <span style="font-weight: bold;">Family</span> 
+ relationship in Eclipse. </p>
+        <p class="Image">
+            <img src="../../../Graphics/Admin_Graphics/RelationshipEx_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">In addition to the BEGDOC field, two tag groups (Responsiveness 
+ and Privileged) have been added by the administrator. </p>
+        <h3>Duplicates Relationships Example</h3>
+        <p class="BodyText">Another default relationship is the duplicates relationship 
+ for cases using an MD5Hash field. The following figure shows this relationship 
+ in Eclipse. In addition to the BEGDOC field, two tag groups (Responsiveness 
+ and Confidentiality) have been added by the administrator. </p>
+        <p class="BodyText">In this example, the administrator has included the 
+ document compare tool (as indicated by the magnifying glass button). This 
+ tool allows users to compare a document selected in the <span style="font-weight: bold;">Documents</span> 
+ (or <span style="font-weight: bold;">Search Results</span>, etc.) tab 
+ to one in the <span style="font-weight: bold;">Relationships</span> list.</p>
+        <p class="Image">
+            <img src="../../../Graphics/Admin_Graphics/RelationshipEx2_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <h3>Planning</h3>
+        <p class="BodyText">Before defining a relationship, plan the type of information 
+ that will assist your users as they review case details, including the 
+ field upon which each relationship should be based, the field and tag 
+ details that should be displayed in the <span style="font-weight: bold;">Relationships</span> 
+ listing, and how the information should be sorted. </p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

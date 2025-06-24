@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/CaseMgmt_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.CaseMgmt">
+    <head>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create an Import Series</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create an Import Series</h1>
+        <p>To create a new import series in <MadCap:variable name="Primary.Name" />, complete the following steps:</p>
+        <ol>
+            <li>
+                <p>Open <b>Case Management</b> and locate the Processing case for which you would like to create an import series.</p>
+            </li>
+            <li>
+                <p>Click the hamburger icon corresponding to the required case.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Hamburger.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the menu that displays, select <b>Case Settings</b>. The work area opens. Select the <b>Load to Review</b> tab near the top.</p>
+            </li>
+            <li>
+                <p>On the Review Importing page, select <b>Create Import Series</b>. </p>
+            </li>
+            <li>
+                <p>Complete the first step of the  wizard by defining the import series details. </p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_Create_Step_1.png" class="Thumbnail" />
+                </p>
+                <h3>Step One Options</h3>
+                <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead">Option</p>
+                            </th>
+                            <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">Click the Name field and enter a name for the import series.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Review Case</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">From the drop-down menu, select the Review case into which you would like the documents to be imported.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Description</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">You can add an optional description to provide additional information or context to the import series. This may be helpful if you have multiple import series defined for a single Processing case and would like to further differentiate them.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Set as active Series</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">Select this checkbox to  set the import series as active. When active, the import series is able to promote ingested documents into the selected Review case. When inactive, the import series is "turned off" and no promotion can take place.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Index data after import</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">Select this checkbox to  index the imported data after processing completes. The indexed data becomes searchable in Review. If you leave this checkbox unselected, you can also manually index your data after the fact. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Index Management/Build_and_Monitor_Index.htm">Build and Monitor an Index</MadCap:xref> for more information.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>When finished, click <b>Next</b> to proceed to the next step in the wizard.</p>
+            </li>
+            <li>
+                <p>Complete the second step of the wizard to convert specific native file types to alternative file types during import.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_Create_Step_2.png" class="Thumbnail" />
+                </p>
+                <h3> Step Two Options</h3>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Select email type(s) for conversion. The selected email types are converted to the alternative file format you select in the next step.</p>
+                        <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <thead>
+                                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                        <p class="TableHead">Email</p>
+                                    </th>
+                                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                        <p class="TableHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">Outlook
+</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Select this option to import an alternate native file for Outlook 
+	 files. The default import format is MSG.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">Lotus 
+	 Notes/ IBM Notes/ HCL Notes</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Select this option to import an alternate native file for Lotus Notes/ IBM Notes/ HCL Notes files. The default import format is DXL.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">Outlook 
+	 Express, MBOX and other RFC 5322 formatted mail</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Select this option to import an alternate native file for 
+	 Outlook Express, MBOX, and other RFC 5322 formatted mail files. The default import format is EML or EMLX.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                        <p class="TableText">GroupWise</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Select this option to import an alternate native file for GroupWise 
+	 files. The default import format is XML.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p>Select one of the following formats. The email types selected in the previous step are converted to the selected file format during import:</p>
+                        <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <thead>
+                                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                        <p class="TableHead">Format</p>
+                                    </th>
+                                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                        <p class="TableHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">MHT
+</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">An MHT is an Archived Web Page file with 
+				 information in Multipurpose Internet Mail Extension HTML 
+				 [MHTML] format with an MHT extension. All relative 
+				 links in the Web page are remapped and the embedded content 
+				 is included in the MHT.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">RTF (Rich 
+				 Text Format)</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Uses Microsoft Word to open the MHT 
+				 and saves it in RTF; a more widely accepted format.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                        <p class="TableText">HTML</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">				 HTML documents can have inline images; the images themselves 
+				 are not included in the HTML. The images must be included 
+				 in the import in order to access the inline images.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>When finished, click <b>Next</b> to proceed to the next step in the wizard.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Complete the third step of the wizard to select fields for import and to map them to corresponding Review fields. </p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_Create_Step_3.png" class="Thumbnail" />
+                </p>
+                <h3>Step Three Options</h3>
+                <ul style="list-style-type: lower-alpha;" class="BulletListBody">
+                    <li>
+                        <p>Determine what fields to include in the import. Fields that display in the list box are included for import, while the fields that display in the Add Fields dialog are excluded.</p>
+                        <table cellspacing="0" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../Graphics/Review_Note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Note: You can select the checkboxes beside the fields and choose <b>Remove Selected</b> to remove the specified fields from the import.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>To select your import fields:</p>
+                        <ul>
+                            <li>
+                                <p>Select<b> Load Standard Fields</b> to use the default list of fields.</p>
+                                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                    <tbody>
+                                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                <p class="TableText">
+                                                    <img src="../../Resources/Images/myipro_note.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                <p class="Note">Note: When you select this option, a confirmation dialog appears. Select <b>Load Defaults</b> to proceed with the update. Any previous changes you made to the field list are erased. </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Select <b>Load INI File</b> to use a pre-generated list of fields saved to an INI file. Navigate to the file in the dialog box that displays and then select <b>Open</b>.</p>
+                            </li>
+                            <li>
+                                <p>Select individual fields by selecting the <b>Add Fields</b> button. You can add:</p>
+                                <p>System/Metadata/Flags</p>
+                                <p>To add System/Metadata fields or QC Flags to the import:</p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p>Select the <b>Add Fields</b> button, then choose <b>System/Metadata/Flags</b>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Select the fields you would like to include for import. Selected fields are highlighted.</p>
+                                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                            <tbody>
+                                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                        <p class="TableText">
+                                                            <img src="../../Resources/Images/myipro_note.png" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                        <p class="Note">Note: </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p class="Note">You can search for fields by typing into the search field.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="Note">Similarly you can filter fields based on type by selecting the <b>All Fields</b> drop-down menu and selecting the type you would like to see. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="Note">Click <b>Select All</b> to highlight the full list of fields.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <p>When all needed fields have been selected, click <b>OK</b>. The dialog closes and the selected fields are included in the import.</p>
+                                    </li>
+                                </ol>
+                                <h4>User fields</h4>
+                                <p>A <b>User</b> field is a static field created by the user with a specified name AND value. To insert a custom User field:</p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p>Select the <b>Add Fields</b> button, then choose <b>User Field</b>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Enter 
+	 a  <b>Field Name</b>. </p>
+                                    </li>
+                                    <li>
+                                        <p>Enter 
+	 an optional <b>Field Value</b>. This is a specified value that gets imported with every document. For instance, a custom User field might be "Case Number," with a Field Value as "123456."</p>
+                                    </li>
+                                    <li>
+                                        <p>Click <b>OK</b>.</p>
+                                    </li>
+                                </ol>
+                                <h4>Group fields</h4>
+                                <p>A <b>Group</b> field can be used to combine the values of multiple fields and force them into a single field on import.  To insert a custom Group field for import:</p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p>Select the <b>Add Fields</b> button, then choose <b>Group Field</b>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Enter 
+	 a  <b>Field Name</b>. </p>
+                                    </li>
+                                    <li>
+                                        <p>Select the fields you would like to combine into your group field. Selected fields are added to the <b>Field Name</b> list box on the right.</p>
+                                        <p>
+                                            <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_Group_Field.png" class="Thumbnail" />
+                                        </p>
+                                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                            <tbody>
+                                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                        <p class="TableText">
+                                                            <img src="../../Resources/Images/myipro_note.png" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                        <p class="Note">Note: </p>
+                                                        <ul>
+                                                            <li>
+                                                                <p class="Note">You can search for fields by typing into the search field.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="Note">Similarly you can filter fields based on type by selecting the <b>All Fields</b> drop-down menu and selecting the type you would like to see. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="Note">Click <b>Select All</b> to highlight the full list of fields.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="Note">Change the order of the fields by selecting the <img src="../../Graphics/Icons/Vertical_dots.png" class="Thumbnail" /> button and choosing one of the available re-ordering options.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <p>If you would like to include a custom User field as one of the Group fields, you can likewise do so on this page. </p>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p>Select <b>Add User Field</b>.</p>
+                                            </li>
+                                            <li>
+                                                <p>Enter 
+	 a <b>Field Value</b>. This is a specified value that gets imported with every document. For instance, a custom User field might be "Case Number," with a Field Value as "123456."</p>
+                                            </li>
+                                            <li>
+                                                <p>Click <b>OK</b>.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Determine your Group Output Value option:</p>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p><b>First non-blank value</b>: Select this option if you would like to present the first non-blank value of the selected fields, starting with the top field in the list and moving down.</p>
+                                            </li>
+                                            <li>
+                                                <p><b>Delimited list</b>: Select this option if you would like to present the values of the selected fields so that they are presented together, separated by a delimiter of your choice. Choose the needed delimiter from the drop-down option.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Enable the <b>Set as Sort Field</b> option if you would like to set the field as such. For more information about Sort Fields, click <MadCap:toggler targets="Sort Fields2">here</MadCap:toggler>.</p>
+                                        <p>When a field is marked as a <b>Sort</b> 
+			 field, it applies the value of the selected field to all family 
+			 members of a parent item. This allows sorting on the specified 
+			 field in an external application to represent a family. For 
+			 example, when the <b>Sent Date</b> field is made into 
+			 a <b>Sort</b> field, the value of the <b>Sent Date</b> field 
+			 for an email is used as the value of the same field in 
+			 the exported load file for all of the email’s attachments.</p>
+                                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                            <tbody>
+                                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                        <p class="TableText">
+                                                            <img src="../../Resources/Images/myipro_note.png" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                        <p class="Note">Note: The <b>Set as Sort Field</b> option only displays for 
+			 those fields that can be sorted, such as a metadata field.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p> Map the import fields   to those that will display in Review. </p>
+                        <ul style="list-style-type: lower-alpha;">
+                            <li>
+                                <p>Click the <b>Map Fields</b> button to automatically map fields by name. You can select either:</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p><b>All fields</b>: Maps every import field to its corresponding Review field for every instance in which the two names are the same. For instance, the "Email From" import field will automatically be mapped to the "Email From" Review field, as the two names are the same.</p>
+                                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                            <tbody>
+                                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                        <p class="TableText">
+                                                            <img src="../../Resources/Images/myipro_warn.png" />
+                                                        </p>
+                                                    </td>
+                                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                        <p class="Note">Note: This option updates the mapping for all import fields that have a corresponding review field with the same name. As such, this option overwrites mapped custom Review fields when standard Review fields exist that share the same name as the Import field. For example, if you mapped the "Email From" Import field to a custom "Sender" Review field, that mapping would be overwritten when you select the <b>All Fields</b> option. The "Email From" Import field would once again be mapped to the "Email From" Review field.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <p><b>Only unmapped</b>: For any unmapped fields, this option maps each import field to its corresponding Review field for every instance in which the two names are the same.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>For fields that are already mapped, inspect the <MadCap:conditionalText MadCap:conditions="">import </MadCap:conditionalText>fields on the left to ensure that the corresponding Review fields on the right are correct. Update any pairings as needed by clicking the Review field and selecting the correct field from the dropdown. </p>
+                                <p>
+                                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_Map_File_Date.png" class="Thumbnail" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Review fields that have not yet been mapped display in red. Click the Review field and select the correct field from the dropdown. </p>
+                                <p>
+                                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_MapReviewField.png" class="Thumbnail" />
+                                </p>
+                                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                    <tbody>
+                                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                <p class="TableText">
+                                                    <img src="../../Resources/Images/myipro_note.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                <p class="Note">Note: To map a custom Import field to a custom Review field, the Review field must already be created. However, if the Review field has not yet been created, you may select <b>Do Not Map</b> on this step. You could then finish creating the import series so that your changes are saved,  and then create the custom Review field after the fact. Once the custom Review field has been created, you could then return to edit the import series and map the field at that point. For instructions on how to create a custom Review field, see <a href="https://myipro.iprotech.com/help/Eclipse/Content/Review/Eclipse_Administration/Case_Setup/Step_3__Define_Database_Fields.htm" target="_blank">Define Database Fields</a>.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="p-FM_Body">
+                        <p class="FM_Body">Select <b>Populate Parent Documents with Child Field Values</b> if you would like to populate parent documents with field values that are normally only populated on child documents. For instance, the "Parent ID" field, which is usually only populated on child documents, would also be populated on the parent document itself when this option is selected.	</p>
+                    </li>
+                    <li class="p-FM_Body">
+                        <p class="FM_Body">Perform additional operations by selecting the <img src="../../Graphics/Icons/Vertical_dots.png" class="Thumbnail" />	button. Depending on the field selected, you can:</p>
+                        <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <thead>
+                                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                        <p class="TableHead">Option</p>
+                                    </th>
+                                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                        <p class="TableHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">Edit</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Applicable for User or Group fields. Update the field as needed.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">Set as Sort Field</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Applicable only for 
+			 those fields that can be sorted, such as a metadata field.</p>
+                                        <p class="TableText">When a field is marked as a <b>Sort</b> 
+			 field, it applies the value of the selected field to all family 
+			 members of a parent item. This allows sorting on the specified 
+			 field in an external application to represent a family. For 
+			 example, when the <b>Sent Date</b> field is made into 
+			 a <b>Sort</b> field, the value of the <b>Sent Date</b> field 
+			 for an email is used as the value of the same field in 
+			 the exported load file for all of the email’s attachments.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">Map by Name</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">				 Maps the import field to its corresponding Review field when the two names are the same. For instance, the "Email From" import field will automatically be mapped to the "Email From" Review field when this option is used.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                        <p class="TableText">Do Not Map</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">				  Sets the field to <b>Do Not Map</b>. This option can be helpful when you need to map the Import field to a custom Review field that you have not yet created. You may select <b>Do Not Map</b> on this step, then finish creating the import series so that your changes are saved. After saving the import series, you can then create the custom Review field after the fact. Once the custom Review field has been created, you could then return to edit the import series and map the field at that point. For instructions on how to create a custom Review field, see <a href="https://myipro.iprotech.com/help/Eclipse/Content/Review/Eclipse_Administration/Case_Setup/Step_3__Define_Database_Fields.htm" target="_blank">Define Database Fields</a>.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li MadCap:conditions="Primary.Blocked">
+                        <p>There are several field types that 
+			 can be imported. These field types are designated as follows:</p>
+                        <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <thead>
+                                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                        <p class="TableHead">TYPE</p>
+                                    </th>
+                                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                        <p class="TableHead">Description</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">S (System Fields)</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Standard system fields in <MadCap:variable name="Primary.Name" />.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">M (Metadata Fields)</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">Metadata fields are retrieved from documents during processing.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">F </p>
+                                        <p class="TableText">(QC Flags)</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">				 The QC flags that 
+			 display in the list are both system QC flags and any user defined 
+			 QC flags.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                        <p class="TableText">U and G</p>
+                                        <p class="TableText">(User and Group Fields)</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                        <p class="TableText" style="font-weight: normal;">				  These 
+			 comprise two types: <b>User [U]</b> and/or <b>Group [G]</b>. These fields 
+			 are created through the Insert Custom Fields function. When you create a custom User 
+			 field and add an optional field label, the field label you provide gets applied to every document during import. Otherwise, the value may be blank. The Group fields 
+			 are space-delimited combinations of System (S) and/or Metadata 
+			 (M) field types.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Complete the fourth step of the wizard to set additional directory and file options. </p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Import_Series/Import_Series_Create_Step_4_New.png" class="Thumbnail" />
+                </p>
+                <h3>Step Four Options</h3>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Define your <b>Output Directory</b>: indicate the directory where the imported data will be copied and saved. </p>
+                        <ul style="list-style-type: lower-alpha;" class="BulletListBody">
+                            <li>
+                                <p><b>Copy files to output directory</b> (Recommended): This option stores a copy of the imported files in the directory defined above. </p>
+                            </li>
+                            <li>
+                                <p><b>eCapture Storage</b>: When this option is selected, the files are stored in working directories created in eCapture during processing. </p>
+                                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                    <tbody>
+                                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                <p class="TableText">
+                                                    <img src="../../Resources/Images/myipro_note.png" />
+                                                </p>
+                                            </td>
+                                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                <p class="Note">Note: When eCapture storage is selected, if you archive or delete data from the client directory, documents may no longer display properly in Review, as they are referenced in this location.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Provide a <b>Volume</b> number.</p>
+                    </li>
+                    <li>
+                        <p>Define image key (BEGDOC) numbering:</p>
+                        <ul style="list-style-type: lower-alpha;" class="BulletListBody">
+                            <li>
+                                <p>User Defined (Recommended) </p>
+                                <ul style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p>(Optional) Provide a prefix for each imaged document. The prefix chosen will be appended to the beginning of each image key.</p>
+                                    </li>
+                                    <li>
+                                        <p>(Optional) If applying a prefix to each image key, choose a delimiter to separate the prefix from the image number. Options include:</p>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p>None</p>
+                                            </li>
+                                            <li>
+                                                <p> Decimal</p>
+                                            </li>
+                                            <li>
+                                                <p>Hyphen</p>
+                                            </li>
+                                            <li>
+                                                <p>Underscore</p>
+                                            </li>
+                                            <li>
+                                                <p>Space</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Provide an image number.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Use filename</p>
+                                <p>"Use filename" should only be used with previously processed and uniquely numbered documents, which are named with bates numbers (e.g., PDF files named with bates numbers). Using this option on documents with original filenames can potentially overwrite files.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>When all options have been defined, click <b>Finish</b> to create the Import Series.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b><i>Related Topics</i></b>
+        </p>
+        <p>
+            <MadCap:xref href="Overview_Import_Series.htm">Overview: Review Import Settings</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Import_Series.htm">Work with Import Series</MadCap:xref>
+        </p>
+    </body>
+</html>

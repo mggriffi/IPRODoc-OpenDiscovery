@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Review"
+    Link="/Content/Review/Review_ECAReview.htm">
+    <TocEntry
+      Title="Review_Documents">
+      <TocEntry
+        Title="Image Redactions"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Apply_Redactions.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Conduct Review"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Conduct_Review.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Persistent Highlighting"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Persistent_Highlighting.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Use Keyboard Shortcuts To Review Documents"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Use_Keyboard_Shortcuts.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Workflow: Review a Case Outside of a Review Pass"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Workflow_Review_Non_Review_Pass_Docs.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Workflow: Review a Case In a Review Pass"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Workflow_Review_Pass_Docs.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Work with Batches"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Work_With_Batches.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Conduct Your Review"
+      Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/ADD_Review_Passes.htm">
+      <TocEntry
+        Title="First Steps"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/First_Steps/Get_Started_Conducting_Review.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/First_Steps/Get_Started_Conducting_Review.htm"
+          MadCap:generatedToc="true" />
+      </TocEntry>
+      <TocEntry
+        Title="View Relationships"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Overview_Relationships.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Work_with_Relationships.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Manage_Mass_Actions_Relationships_Panel.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Understand_Email_Threading_Fields.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Understand_Near_Duplicate_Fields.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Understand the Document Viewer"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Overview_Document_Viewer.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Work_With_Document_Viewer_Tabs.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Understand_Document_Viewer_Options.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Right_Click_Tag_Options_in_the_Document_Viewer.htm" />
+        <TocEntry
+          Title="Import_Case_Data">
+          <TocEntry
+            Title="Create the Import for Third-Party Data"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Create_the_Import_for_Third_Party_Data.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Import Production History"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Production_History.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Import Text Files"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Import_Text_Files.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Overview: Import Third-Party Data"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Overview_Import_Third_Party_Data.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Understand Database Fields"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Understand_Database_Fields.htm"
+            MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review_FAQ.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

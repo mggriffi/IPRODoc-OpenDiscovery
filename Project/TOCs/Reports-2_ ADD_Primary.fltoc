@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Reports"
+    Link="/Content/Reports/Reports.htm">
+    <TocEntry
+      Title="Review_Reports">
+      <TocEntry
+        Title="Analytics">
+        <TocEntry
+          Title="Case Data Summary Report"
+          Link="/Content/Reports/Review_Reports/Analytics/Case_Data_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="TAR Project Certification Details Report"
+          Link="/Content/Reports/Review_Reports/Analytics/TAR_Project_Certification_Details_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="TAR Project Discrepancies Report"
+          Link="/Content/Reports/Review_Reports/Analytics/TAR_Project_Discrepancies.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="TAR Project Score Distribution Report"
+          Link="/Content/Reports/Review_Reports/Analytics/TAR_Project_Score_Distribution_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="TAR Project Summary Report"
+          Link="/Content/Reports/Review_Reports/Analytics/TAR_Project_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="TAR Validation Details Report"
+          Link="/Content/Reports/Review_Reports/Analytics/TAR_Validation_Details_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Billing">
+        <TocEntry
+          Title="Review Case Storage Report"
+          Link="/Content/Reports/Review_Reports/Billing/Review_Case_Storage_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Production">
+        <TocEntry
+          Title="Production Deliverable Report"
+          Link="/Content/Reports/Review_Reports/Production/Production_Deliverable_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Production Summary Report"
+          Link="/Content/Reports/Review_Reports/Production/Production_Summary_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Redacted Documents Report"
+          Link="/Content/Reports/Review_Reports/Production/Redacted_Documents_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Redaction Detail Report"
+          Link="/Content/Reports/Review_Reports/Production/Redaction_Detail_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Quality_Control">
+        <TocEntry
+          Title="Gap Report"
+          Link="/Content/Reports/Review_Reports/Quality_Control/Gap_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Reviewer_Metrics">
+        <TocEntry
+          Title="Reviewer Batch History Details Report"
+          Link="/Content/Reports/Review_Reports/Reviewer_Metrics/Reviewer_Batch_History_Details_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Reviewer Edits Per Day Report"
+          Link="/Content/Reports/Review_Reports/Reviewer_Metrics/Reviewer_Edits_Per_Day_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Reviewer History Details Report"
+          Link="/Content/Reports/Review_Reports/Reviewer_Metrics/Reviewer_History_Details_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Reviewer History Report"
+          Link="/Content/Reports/Review_Reports/Reviewer_Metrics/Reviewer_History_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Review Status by Reviewer Report"
+          Link="/Content/Reports/Review_Reports/Reviewer_Metrics/Review_Status_by_Reviewer_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Review_Status">
+        <TocEntry
+          Title="Privileged Report"
+          Link="/Content/Reports/Review_Reports/Review_Status/Privileged_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Review Status by Custodian Report"
+          Link="/Content/Reports/Review_Reports/Review_Status/Review_Status_by_Custodian.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Summary by Custodian Report"
+          Link="/Content/Reports/Review_Reports/Review_Status/Summary_by_Custodian_Report.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="OPEN DISCOVERY Review Reports"
+        Link="/Content/Reports/Review_Reports/Review_Reports.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="System_Reports">
+      <TocEntry
+        Title="File Type Report"
+        Link="/Content/Reports/System_Reports/File_Type_Report.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="IPRO Processing Storage Report"
+        Link="/Content/Reports/System_Reports/Ipro_Processing_Storage_Report.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="IPRO Review Storage Report"
+        Link="/Content/Reports/System_Reports/Ipro_Review_Storage_Report.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="System Reports"
+        Link="/Content/Reports/System_Reports/System_Reports.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="User Billing Report"
+        Link="/Content/Reports/System_Reports/User_Billing_Report.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Report Quick Reference"
+      Link="/Content/Reports/All_Reports.htm">
+      <TocEntry
+        Title="All Reports"
+        Link="/Content/Reports/All_Reports.htm" />
+      <TocEntry
+        Title="Reports by Type"
+        Link="/Content/Reports/Reports_by_Type.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>IPRO Virtual Appliance FAQ</h1>
+        <p><b>What is a virtual appliance, and how does it differ from traditional software installation?</b>
+        </p>
+        <p>A virtual appliance is a pre-configured virtual machine image that includes a software application and its dependencies, such as the operating system, libraries, and other components required to run the application. The virtual appliance is designed to run on a virtualization platform, such as VMware, Hyper-V, and can be deployed quickly and easily without the need for complex installation procedures.</p>
+        <p>Compared to traditional software installation, virtual appliances offer a more streamlined and efficient way of delivering our software applications, as they eliminate the need to manually install and configure software components on each individual machine. They significantly reduce the potential for human error. Additionally, virtual appliances are portable and can be easily migrated or replicated across different virtualization platforms or cloud environments.</p>
+        <p>Finally, IPRO has integrated a one click update mechanism. This is possible because the appliance delivers a known environment. This will allow you to stay on the current version and take advantage of new features much faster.</p>
+        <p><b>What are the hardware and software requirements for running the virtual appliance?</b>
+        </p>
+        <p>To run our virtual appliance, you'll need to have a hypervisor installed on your hardware. We offer virtual appliances for both VMware and Hyper-V environments. For specific hardware and software requirements, please refer to the minimum guidelines we provide in our documentation, as well as the performance question provided below, which will help you properly size your environment to ensure optimal performance.</p>
+        <p><b>How do I install the virtual appliance?</b>
+        </p>
+        <p>Please follow guidelines from your hypervisor vendor on how to load a virtual machine into the environment. You will find a link to them <a href="https://my.ipro.com/help/ig/leda/deployment_vm/docs/deploy_virtual_machine.htm?tocpath=Deployment%7C_____1">here</a>.</p>
+        <p>For detailed instructions on how to deploy the virtual appliance in OPEN DISCOVERY, click <a href="https://my.ipro.com/help/Enterprise/Content/Product Resources/VM_Deployment.htm?tocpath=Additional%20Resources%7COPEN%20DISCOVERY%20Resources%7C_____5">here</a>.</p>
+        <p><b>Can the VM join my AD domain?</b>
+        </p>
+        <p>Yes, your virtual appliance can join your Active Directory (AD) domain, which will enable you to deploy your organizational policies and manage access control through AD. When you join the virtual appliance to your AD domain, you can use existing user accounts and group policies to control access to the virtual appliance. This makes it easier to manage user access and permissions, as you can use your existing AD infrastructure to control access to the virtual appliance instead of creating separate user accounts and passwords for each user.</p>
+        <p><b>How do I configure the virtual appliance to meet my organization's specific security and compliance requirements?</b>
+        </p>
+        <p>Our virtual appliance is designed with security in mind. We scan it for vulnerabilities and malware. However, we recommend that you also install your own security tools and infrastructure and integrate the virtual appliance into your existing security environment to provide a comprehensive and robust security solution.</p>
+        <p><b>Can I customize the virtual appliance to meet my specific needs?</b>
+        </p>
+        <p>While we do encourage you to integrate our virtual appliance into your AD environment for better security and management, we recommend that you avoid making additional changes to the virtual appliance's underlying system. This is because our virtual appliance is designed to provide a consistent, reliable, and upgradable solution, and making changes to the underlying system may compromise its performance, reliability, and supportability. By maintaining the virtual appliance as it is, you can take advantage of its predictable performance, ease of support, and straightforward upgradability, ensuring that you can continue to receive the full benefits of our solution without any unwanted side effects.</p>
+        <p><b>How do I update the virtual appliance?</b>
+        </p>
+        <p>To update the virtual appliance, you will follow the specific update policies and procedures that your organization has established for managing change management. This may include testing the update in a staging environment before deploying it to production and ensuring that any potential impact on existing applications or systems is fully understood and mitigated. You can update the IPRO software with ease using a single button within the virtual appliance's web-based management interface. In some cases, you may need to work with our support team to ensure that the update process goes smoothly and any issues that arise are addressed quickly and effectively.</p>
+        <p><b>What happens if there is an issue with the virtual appliance? How do I troubleshoot it?</b>
+        </p>
+        <p>Once you receive the virtual appliance, you should be able to load it into your virtualization environment and connect to it remotely. Once you have successfully deployed the virtual appliance and connected to it remotely, please contact our support team with any questions or concerns you may have.</p>
+        <p><b>How do I back up and restore the data in the virtual appliance?</b>
+        </p>
+        <p>Just like you would any other virtual machines in your environment. We recommend taking a snapshot of the machine once it is deployed as well as once the configuration is complete. This will allow for restoring to a previous state during the deployment or operation stage. Data drives should be backed up according to your internal strategies.</p>
+        <p><b>What is the licensing model for the virtual appliance, and how does it work?</b>
+        </p>
+        <p>The licensing model for IPRO products has not changed. The same licenses will be applied to the software. As part of the deployment of Open Discovery, you will install an authorization server that is used for licensing and updates. This server will need to download licenses and updates from the internet. If required by your policies you can install it in your DMZ.</p>
+        <p><b>What kind of performance can I expect from the virtual appliance?</b>
+        </p>
+        <p>To ensure that you get the best performance out of our virtual appliance, we recommend sizing your environment with a similar footprint to your current deployment. This means that you should ensure that your virtualization environment has similar CPU, memory, storage, and networking resources as your existing deployment to achieve optimal performance. If you are unsure about how to size your environment or are new to Open Discovery, we recommend contacting our support team for assistance. Our team can help you evaluate your specific requirements and recommend the optimal configuration for your environment.</p>
+        <p><b>What software does the virtual appliance include?</b>
+        </p>
+        <p>Our virtual appliance is built on Windows Server 2019 Standard and undergoes a rigorous installation process that includes the installation of Windows updates, IPRO software prerequisites, and the IPRO software itself. To ensure optimal performance, we also defragment and zero-out free space on the hard disk, and run Sysprep to prepare the virtual appliance for deployment in your environment. This process helps to ensure that the virtual appliance is stable, secure, and ready to meet your business needs. In summary, we do the following:</p>
+        <ol>
+            <li>
+                <p>Start with Windows Server Standard</p>
+            </li>
+            <li>
+                <p>Install windows Updates</p>
+            </li>
+            <li>
+                <p>Install IPRO software prerequisites</p>
+            </li>
+            <li>
+                <p>Install IPRO software</p>
+            </li>
+            <li>
+                <p>Run SysPrep</p>
+            </li>
+        </ol>
+        <p>Prerequisites include,  but are not limited to: IIS, .NET, nuget, SQL client, Redis, ODBC drivers. To get a complete list of software installed for your version of IPRO software, please contact our support department.</p>
+    </body>
+</html>

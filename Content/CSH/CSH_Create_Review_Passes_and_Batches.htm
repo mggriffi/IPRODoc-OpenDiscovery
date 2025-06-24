@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.CSH">
+    <head>
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Review Passes and Batches</title>
+        <link href="../Resources/Stylesheets/CSH.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 class="h1_CSH"> Create Review Passes and Batches</h1>
+        <h2><a name="Review_Pass_Basics"></a>
+        </h2>
+        <p class="BodyText">
+            <MadCap:conditionalText MadCap:conditions="">There are two modes of review passes: <i><MadCap:variable name="Primary.Active Learning" /> disabled and <MadCap:variable name="Primary.Active Learning" /> enabled</i>. With <MadCap:variable name="Primary.Active Learning" /> disabled review passes, searches are planned and saved in <MadCap:variable name="Primary.ProdName_Review" /> before you create the review passes. With <MadCap:variable name="Primary.Active Learning" /> enabled review passes, you must scope the documents by using either Entire Case, Saved Search, or Custom Index.</MadCap:conditionalText> Coding forms are also required for a review pass. </p>
+        <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: <MadCap:variable name="Primary.Active Learning" /> disabled review passes still run <MadCap:variable name="Primary.Active Learning" /> “in the background”, but it is transparent to reviewers.  At some point in the review, the setting could be enabled (<MadCap:variable name="Primary.Active Learning" /> enabled), to start prioritizing predicted positive documents within the review pass, and that would change the document order for reviewers.</p>
+                    <p><i style="font-size: 10pt;">If you prefer to turn off the <MadCap:variable name="Primary.Active Learning" /> functionality running “in the background” on <MadCap:variable name="Primary.Active Learning" /> disabled review passes, the functionality can be turned off across the environment through SQL. For more information, please contact <MadCap:variable name="Primary.IPRO" /> Support.</i>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="Create_Review_Passes"></a>
+            <MadCap:toggler targets="Create_RevPasses">Create Review Passes</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Create_RevPasses">
+            <p MadCap:conditions="">You can create either an <MadCap:variable name="Primary.Active Learning" /> enabled review pass or an <MadCap:variable name="Primary.Active Learning" /> disabled review pass.</p>
+            <h3 MadCap:conditions="">What is Active Learning?</h3>
+            <p MadCap:conditions=""><i>Active learning </i>is the ability to have documents prioritized through the use of algorithms with no direction from the user beyond the coding supplied when they review the documents. With <MadCap:variable name="Primary.Active Learning" />, the prioritized documents are more likely to be relevant to the review purpose selected.</p>
+            <p MadCap:conditions="">The “continuous” facet of <MadCap:variable name="Primary.Active Learning" /> relates to the process of ranking and re-ranking documents for manual review based on the constant stream of incoming coding throughout the review lifecycle. That is, <MadCap:variable name="Primary.Active Learning" /> reflects not only an initial set of assessments to rank and prioritize documents, but continuously updates those rankings based on the most recent assessments.</p>
+            <p MadCap:conditions="">Review passes are designed for <MadCap:variable name="Primary.Active Learning" /> to be enabled or  disabled. When creating a review pass, <MadCap:variable name="Primary.Active Learning" />-enabled is the default.</p>
+            <h3 MadCap:conditions=""><a name="Create"></a>Create an Active Learning Enabled Review Pass</h3>
+            <p class="BodyText" MadCap:conditions="">To create an <MadCap:variable name="Primary.Active Learning" /> enabled review pass:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click  <img src="../Graphics/ADD_Review_Graphics/AR_Btn_Plus_Grey.png" MadCap:conditions="" class="ReduceButtonSize" />. <MadCap:conditionalText MadCap:conditions=""><MadCap:conditionalText MadCap:conditions="">In <b>Review Pass Details</b>, make sure the <b>Turn off Active Learning</b> switch remains in the “on” position as Active Learning is on by default<img src="../Graphics/ADD_Review_Graphics/AR_Switch_CAL-enabled.png" style="width: 47px; height: 32px;" MadCap:conditions="" class="ReduceButtonSize" />.</MadCap:conditionalText></MadCap:conditionalText></p>
+                    <p>
+                        <img src="../Graphics/ADD_Review_Graphics/AR_Review_Pass_AL_enabled.png" class="Thumbnail" MadCap:conditions="" />
+                    </p>
+                </li>
+                <li>
+                    <p>Enter a name for the review pass and complete 
+ other required entries. Continue setting up the AL enabled review pass by using the definitions in the tables accessed by clicking <MadCap:toggler targets="RevPassDefs_ALEnabled">Review Pass Definitions - AL Enabled</MadCap:toggler>.</p>
+                </li>
+            </ol>
+            <h4><a name="Review"></a>
+            </h4>
+            <div MadCap:targetName="RevPassDefs_ALEnabled">
+                <p>The following tables describe the definitions shown on the Settings tab and the Overview tab.</p>
+                <p><span style="font-size: 13; font-weight: normal;">Settings Tab (AL Enabled)</span>
+                </p>
+                <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 378px;" MadCap:conditions="" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead">SETTINGS</p>
+                            </th>
+                            <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead">DESCRIPTION</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                                <p><b>General</b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">Active Learning</td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Switch on - enabled</p>
+                                <p style="font-size: 10pt;">Switch off - disabled<br /></p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">Coding Form</td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">Coding form being used for the review pass</td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">Primary Review Purpose</td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">Allows <MadCap:variable name="Primary.IPRO" /> Analytics to learn from the work done by reviewers. If the Primary Review Purpose tag is applied to a document, then the system will learn from that document.</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p style="font-size: 10pt;">If the document is marked "Reviewed" and the Primary Review Purpose <u>is</u> applied, then that document is recorded as a "positive"</p>
+                                    </li>
+                                    <li>
+                                        <p style="font-size: 10pt;">If the document is marked "Reviewed" and the Primary Review Purpose is <u>not</u> applied, then that document is recorded as a "negative"</p>
+                                    </li>
+                                </ul>
+                                <p><span style="font-size: 10pt;">Reviewers should use the On Hold review status when reviewing documents if they are unsure whether the document is a positive or negative example.  This prevents the document from being added as an example until a review decision can be made.</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Recall</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">The estimate of the percentage of positive documents in the entire case. The desired recall for the review pass can be configured from 70% to 90% in increments of 10%.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Batch Size</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">The number of documents a reviewer will receive at a time</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Layout Style</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Determines the view when the review pass is opened</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Document Scope</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">The scope of documents that Active Learning will use train documents. Select from:</p>
+                                <ul>
+                                    <li>
+                                        <p style="font-size: 10pt;">Entire Case (recommended - <MadCap:variable name="Primary.Active Learning" /> works best when the entire case is used)</p>
+                                    </li>
+                                    <li>
+                                        <p style="font-size: 10pt;">Saved Search - (due to the nature of Active Learning, often it is best to not filter the content submitted to a project, but Saved Search can be used if necessary)</p>
+                                    </li>
+                                    <li>
+                                        <p style="font-size: 10pt;">Custom Index - (intended for advanced users. Allows the user to create an index in <MadCap:variable name="Primary.Name" /> ahead of time. This gives them additional options for configuration, and then the index can be selected for use in the Review Pass. <br /></p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;" colspan="2">
+                                <p style="font-size: 10pt;"><span style="font-size: 11pt; font-weight: bold;">Permissions</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Group(s)</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Contains Groups assigned to the normal batches in the review pass</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Review QC Groups(s)</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Controls the QC batch permissions. Contains Groups assigned to the QC batches within the review pass.</p>
+                                <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                                    <col class="TableStyle-Note_Table-Column-Column1" />
+                                    <col class="TableStyle-Note_Table-Column-Column2" />
+                                    <tr class="TableStyle-Note_Table-Body-Body1">
+                                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../Graphics/Review_Note.png" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                            <p class="Note">Note: Not selecting either of these group types allows access to both types of groups.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    <p><span style="font-size: 10pt;">If a Review QC Group is selected, users who are part of that group will always receive a QC Batch for the Review pass if one is available.  If a QC Batch is not available and the user is part of the regular review group, they will receive a normal batch.</span>
+                                    </p>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><span style="font-size: 13; font-weight: normal;">Overview Tab (AL Enabled)</span>
+                </p>
+                <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 394px;" MadCap:conditions="" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead">Sections</p>
+                            </th>
+                            <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead">DESCRIPTION</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">Review Metrics</td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">Breakdown of selected tags in checked-in documents<p><span style="font-size: 10pt;">Precision is the percent likelihood that you will hit a positive document as you continue reviewing. For example, if you review 100 documents and 90 of them are positive, then the Precision is 90%.</span></p><br /></td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">Review Progress</span>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">Manually reviewed checked-in documents by date</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">Documents Manually Reviewed</td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">Listing of manually reviewed documents</td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">Batch Information</span>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                                <p style="font-size: 10pt;">Batch details for the review pass</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3><a name="CAL-disa"></a>Create an Active Learning Disabled Review Pass</h3>
+            <p class="BodyText">To create a <MadCap:variable name="Primary.Active Learning" />-disabled review pass:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click <img src="../Graphics/ADD_Review_Graphics/AR_Btn_Plus_Grey.png" MadCap:conditions="" style="width: 39px; height: 35px;" class="ReduceButtonSize" />. <MadCap:conditionalText MadCap:conditions=""><MadCap:conditionalText MadCap:conditions="">In <b>Review Pass Details</b>, make sure <b>Turn off Active Learning</b> is switched to the “off” position as Active Learning is on by default<img src="../Graphics/ADD_Review_Graphics/AR_Switch_CAL-disabled.png" style="width: 50px; height: 34px;" MadCap:conditions="" class="ReduceButtonSize" />.</MadCap:conditionalText></MadCap:conditionalText></p>
+                </li>
+                <p>
+                    <img src="../Graphics/ADD_Review_Graphics/AR_Review_Pass_CAL_disabled.png" class="Thumbnail" />
+                </p>
+                <li>
+                    <p>Enter a name for the review pass and complete 
+ other required entries.</p>
+                </li>
+                <li>
+                    <p>As required, complete optional entries.</p>
+                </li>
+                <li>
+                    <p>After you have created the batches, continue setting up the AL disabled review pass as defined in the tables accessed by clicking this link: <MadCap:toggler targets="RevPassDefs_ALDisabled">Review Pass Definitions - AL Disabled</MadCap:toggler>.</p>
+                </li>
+            </ol>
+            <h4><a name="Review2"></a>
+            </h4>
+            <div MadCap:targetName="RevPassDefs_ALDisabled">
+                <p>The following tables describe the definitions shown on the Settings tab and the Overview tab.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Settings_Tab_AL_Disabled.flsnp" />
+            </div>
+        </div>
+        <h2><a name="Create Batches"></a>
+            <MadCap:toggler targets="Create_Batches">Create Batches</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Create_Batches">
+            <p class="BodyText">To create batches: </p>
+            <ol class="NumbListBody" start="1">
+                <li>
+                    <p>In the <b>Review Pass Management</b> panel, click the required review pass. If a large number 
+ of review passes exists, take any of the following actions to find the 
+ required one:</p>
+                    <ol>
+                        <li>
+                            <p>Scroll 
+ vertically to locate the review pass in the list.</p>
+                        </li>
+                        <li>
+                            <p>Sort 
+ the keyword list names by clicking the sort button, <img src="../Graphics/ADD_Review_Graphics/AR_Btn_RevPass_Sort.png" class="ReduceButtonSize" />, 
+ and selecting from the different options. Click a selected option again 
+ to reverse the sort order.</p>
+                            <p>
+                                <img src="../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_Sortpng.png" class="Thumbnail" MadCap:conditions="Primary.FutureDelete" />
+                            </p>
+                        </li>
+                        <li>
+                            <p>In 
+ the <b>Search</b> box ,  start typing any of the following 
+ items: the keyword list name, the name of the administrator who created/modified 
+ the group, or part of the created/modified date. This is a plain text 
+ search that searches these items in order.</p>
+                            <p>
+                                <img src="../Graphics/ADD_Review_Graphics/AR_Sec_RevPass_Search.png" class="Thumbnail" MadCap:conditions="Primary.FutureDelete" />
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        <MadCap:conditionalText MadCap:conditions="">Click <b>Update Documents and Create Batches</b> if it is required for unbatched documents to be batched. </MadCap:conditionalText>
+                    </p>
+                </li>
+                <li>
+                    <p>Review the number of unbatched documents in 
+ the review pass, then click <b>Create Batches</b>.</p>
+                </li>
+                <li>
+                    <p>Repeat the previous steps to create other review passes. </p>
+                </li>
+            </ol>
+            <h3><a name="Update"></a>Update Documents</h3>
+            <p>To batch unbatched documents for the selected review pass:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click <b>Update Documents and Create Batches</b>. The following dialog box appears:<br /><img src="../Graphics/ADD_Review_Graphics/Are you sure.png" class="Thumbnail" /><br />Click <b>Continue</b>. A message displays to let you know the updated batch is being built.</p>
+                </li>
+                <li>
+                    <p>View the <b>Batch Information</b> section to see the updated batch status.<br /><img src="../Graphics/ADD_Review_Graphics/AR_Batch_Information.png" class="Thumbnail" /></p>
+                </li>
+            </ol>
+        </div>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

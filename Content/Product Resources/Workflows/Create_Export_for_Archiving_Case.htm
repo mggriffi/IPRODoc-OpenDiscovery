@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Export for Archiving Case</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create Export for Archiving Case</h1>
+        <p>This workflow is used when a case within the multi-tenant environment is being removed/deleted from IPRO Services. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Data will be retained for 30 days, at no additional charge, before full deletion from IPRO’s environment.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Archive Definition</h3>
+        <p>All metadata, natives, text, and images are exported together with a CSE file.</p>
+        <h4>Includes:</h4>
+        <ul class="BulletListBody">
+            <li>
+                <p>CSE file (case template file) - may be used to recreate case in Ipro products, includes the following:</p>
+                <ul>
+                    <li>
+                        <p>Saved Searches</p>
+                    </li>
+                    <li>
+                        <p>	Database Fields</p>
+                    </li>
+                    <li>
+                        <p>Tag Palette</p>
+                    </li>
+                    <li>
+                        <p>Redaction Palette</p>
+                    </li>
+                    <li>
+                        <p>Noise Words</p>
+                    </li>
+                    <li>
+                        <p>Number of Indexes</p>
+                    </li>
+                    <li>
+                        <p>Coding Forms</p>
+                    </li>
+                    <li>
+                        <p>Relationships</p>
+                    </li>
+                    <li>
+                        <p>Date formatting options</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>DLF, DAT, LFP &amp; OPT files for importing the following:</p>
+                <ul>
+                    <li>
+                        <p>All fielded metadata, including coding work product and tags</p>
+                    </li>
+                    <li>
+                        <p>Images - single-page Tiff</p>
+                    </li>
+                    <li>
+                        <p>Native files</p>
+                    </li>
+                    <li>
+                        <p>Text files</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Data stored on FTP in the Productions folder.</p>
+            </li>
+        </ul>
+        <h4>Not Included:</h4>
+        <ul class="BulletListBody">
+            <li>
+                <p>Keyword Lists</p>
+            </li>
+            <li>
+                <p>Review Passes</p>
+            </li>
+            <li>
+                <p>TAR Projects</p>
+            </li>
+            <li>
+                <p>Production History</p>
+            </li>
+            <li>
+                <p>Document History</p>
+            </li>
+        </ul>
+        <h2>Export Case for Archival</h2>
+        <p>The following steps must be completed:</p>
+        <ol>
+            <li>
+                <p>Prepare export of case data. For detailed instructions, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Export_Checklist _For_Archives.htm">Export Checklist for Archives</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>Submit request to Cloud Services (<a href="mailto:services@ipro.com">services@ipro.com</a>) to provide CSE file and remove <MadCap:annotation MadCap:createDate="2024-04-09T13:36:53.2432696-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Check Links" MadCap:editor="ddavidson" MadCap:editDate="2024-04-09T13:36:58.3811300-04:00">case</MadCap:annotation>.</p>
+            </li>
+            <li>
+                <p>Download from FTP (Media Shuttle) Production data for case. </p>
+            </li>
+            <li>
+                <p>Save the CSE file, Export files (DLF, DAT, LFP, OPT) and Production data for case.</p>
+            </li>
+        </ol>
+        <h2>Bring Case Back Online</h2>
+        <p>Depending on the size of data, timing to bring case back online is 1-3 days. </p>
+        <ol>
+            <li>
+                <p>Request a new Case to be opened with Cloud Services. See <MadCap:xref href="../ExternalTools/Cloud_ Services_How_to_Request_a_New_Case.htm">Cloud Services: How to Request a New Case</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>Provide the following to the Cloud Services team:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Data load files: DAT, LFP, OPT, DLF</p>
+                    </li>
+                    <li>
+                        <p>CSE file</p>
+                    </li>
+                    <li>
+                        <p>Production Data downloaded from FTP (Media Shuttle)</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Deliver data to the Cloud Services team, using IPRO’s file transfer portal Media Shuttle.  See <MadCap:xref href="../ExternalTools/Using_Media Shuttle.htm">Using Media Shuttle to Transfer Files</MadCap:xref>.</p>
+            </li>
+        </ol>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note:  After you upload data to Media Shuttle, you <a href="https://iprotech.atlassian.net/servicedesk/customer/portal/4/group/9/create/115">must submit a ticket</a> or send an email to <b>services@ipro.com</b> letting them know that data has been uploaded to Media Shuttle for a specific project. No specific format is needed; simply include the project name and the file name in Media Shuttle.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

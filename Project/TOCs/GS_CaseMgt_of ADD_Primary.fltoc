@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Getting Started"
+    Link="/Content/Enterprise.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Workflow_Getting_Started_With_Enterprise.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Product Resources/Workflows/Quick_Start_Multi_Tenant.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Case Management"
+    Link="/Content/Case_Management/Case_Management.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Case_Management/First Steps/Overview_Case_Management.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/First Steps/Overview_Case_Management.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Clients"
+      Link="/Content/Case_Management/Clients/Create_New_Managing_Clients_and_Clients.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Clients/Create_New_Managing_Clients_and_Clients.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Clients/Modify_Managing_Client_or_Client.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Clients/Delete_Managing_Clients,_Clients,_or_Cases.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Cases"
+      Link="/Content/Case_Management/Cases/Create_A_New_Case.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Cases/Create_A_New_Case.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Cases/Modify_Case.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Case_Management/Cases/Workflow_ Create _Case_Template.htm" />
+      <TocEntry
+        Title="Manage Processing Case Settings"
+        Link="/Content/Case_Management/Processing_Case_Settings/Edit_Processing_Case_Settings.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Case_Detail_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Password_Handling.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Ingestion_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Filtering_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_General_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Word_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_PowerPoint_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Excel_Imaging_Settings.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Case_Management/Processing_Case_Settings/Manage_Placeholder_Settings.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Case_Management/Case Management FAQs/Case Management FAQs.htm" />
+    <TocEntry
+      Title="Import Series"
+      Link="/Content/Case_Management/Import_Series/Overview_Import_Series.htm">
+      <TocEntry
+        Title="Create Import Series"
+        Link="/Content/Case_Management/Import_Series/Create_Import_Series.htm" />
+      <TocEntry
+        Title="Work with Import Series"
+        Link="/Content/Case_Management/Import_Series/Work_with_Import_Series.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

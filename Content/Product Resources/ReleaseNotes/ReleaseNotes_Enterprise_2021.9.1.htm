@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head><title>discovery ][ Enterprise Release Notes 2021.9.1</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>discovery ][ Enterprise Release Notes 2021.9.1</h1>
+        <p><MadCap:variable name="Primary.IPRO" /> continues to progress <MadCap:variable name="Primary.New Name" /> with a new release that focuses on Active Learning, Batch Management, Job Manager enhancements, usability, and much more.</p>
+        <p>Schedule your upgrade today! Please contact <MadCap:variable name="Primary.IPRO" /> Support at <a href="mailto:Support@iprotech.com">Support@iprotech.<MadCap:annotation MadCap:createDate="2024-04-03T11:23:40.6009859-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="CHECK LINK" MadCap:editor="ddavidson" MadCap:editDate="2024-04-03T11:23:47.6287359-04:00">com</MadCap:annotation></a>.</p>
+        <h2><a name="New"></a>
+        </h2>
+        <h2>
+            <MadCap:toggler targets="new_features">New Features 2021.9.1</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="new_features">
+            <h3><b>Review</b>
+            </h3>
+            <h4><b style="font-size: 14pt; font-weight: normal;">Active learning Enhancements</b>
+            </h4>
+            <p><b>Recall Configurable Value </b>- The target recall for an Active Learning Review Pass can now be set during creation or after creation in the settings tab of Review Pass Management.</p>
+            <p><b>New Insight Cards</b> - Prevalence and Estimated Relevant Document Range has been added to the insights card in Review Pass Management.</p>
+            <p><b>New Chart</b> - A chart to display the number of documents required to be reviewed at different recall levels has been added.</p>
+            <p><b>New Graph</b> – A graph to show the estimated relevant documents in a review pass as the number of reviewed documents increases has been added.</p>
+            <p><b>Asynchronously Loading of Charts</b> - In Review Pass Management, all charts will load asynchronously. This allows the page to load before all the charts have finished loading.</p>
+            <h4 style="font-size: 14pt;">Batch Management</h4>
+            <p><b>Review Pass Name</b> - While in Batch Management, you can now see the Review Pass you are currently in.</p>
+            <p><b>Batch Order</b> - The option to change the batching order with <MadCap:variable name="Primary.Active Learning" /> enabled has been added to Review Pass Management. Using this option will allow moving between batching ordered example documents and ordered documents.</p>
+            <p><b>New Tracking</b> - When the method for batching documents is changed in Review Pass Management, the action will be recorded in SQL [Review],[ReviewPassHistory].</p>
+            <h4 style="font-size: 14pt;">End User Usability</h4>
+            <p><b>Copy Previous Tagging</b> - When tagging, you can now copy the tags from the previously viewed document.</p>
+            <p><b>Hotkey for Apply Previous</b> - The function of copying tags from previous documents is now tied to the hotkey "Alt+C".</p>
+            <p><b>Creation of Sub Tags by using Right Click</b>  - Sub tags can be created within the Document Viewer through a right&#8209;click context menu.</p>
+            <p><b>Redact Entire Page</b> - The option to redact an entire page with one click has been added.</p>
+            <p><b>Persistent Redaction Button</b> - After enabling the redaction tool, it will remain active when moving to the next document.</p>
+            <p><b>Redaction Navigation</b> - Reviewers can quickly navigate between individual redactions across pages within a document.</p>
+            <p><b>Export Tally Results</b> - An export option has been added when using the tally feature.</p>
+            <p><b>Tally Enhancement</b> - After tallying on a field and filtering the grid based on one of the tallied values, you can now change the value being filtered on by clicking the filter chip inside the grid.</p>
+            <p><b>Fit to Width Viewer</b> - Opening a document in the document viewer will now default the display to "Fit to Height" to better fit most documents.</p>
+            <p><b>Move Saved Searches</b> - Saved Search folders and their contents can be moved between Public and Private folders. Public Saved Search folders and their contents can now be moved/rearranged.</p>
+            <p><b>Long Search Names</b> - A horizontal scroll bar in the Saved Search area now displays when the search name is too long to view the entire name at once.</p>
+            <p><b>Search / Filter for Grid Display</b> - When adding fields to the grid, a search option can now be user to filter down to the field(s) you are looking for.</p>
+            <h4><span style="font-size: 14pt;">Job Manager Enhancements</span>
+            </h4>
+            <p><b>Task and Error Display</b> - Job Manager jobs now provide additional insight with added visibility into the Job Details by providing the name of the Job Manager Agent that performed a task or which encountered an error.</p>
+            <p><b>Updated Job Type</b> - “Case Update Index” job type naming has been normalized to “Index-Incremental Build” to match more closely with the task being completed.</p>
+            <p><b>Improved Status Reporting</b> - Mass Action OCR jobs in Job Manager now report status based on the number of documents submitted versus the number of tasks generated to complete the request. In addition, tasks which have encountered errors can now be retried using the “Retry All Failed Tasks” button found within the Tasks pane in the Job Details view of a job.</p>
+            <p><b>Saving Job Manager Filters Within Completed Tab</b> - Filters that have been applied within the Completed tab of Job Manager will be maintained when the user navigates into and back out of a job's details, when the page is refreshed, or when the user navigates away from and back to the Completed jobs tab. The user can use the Clear All button to remove filters after they are applied.</p>
+            <h3><b>Processing</b>
+            </h3>
+            <p><b>New Metadata Field</b> - A new metadata field named “Email Body Hash Source” will now be populated for Outlook and Outlook Express documents. This field indicates which body property was used when reading the email body used for hash calculation.</p>
+            <ul class="BulletListBody">
+                <li>
+                    <p>If the HTML body was used, the metadata value will be “HTML”.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p>If the RTF body was used, the metadata value will be “RTF”.</p>
+                </li>
+                <li>
+                    <p>If the plain-text body was used, the metadata value will be “Plain Text”.</p>
+                </li>
+            </ul>
+            <h3><b>Administration</b>
+            </h3>
+            <p><b>System Level Option to Convert Native Files to PDF Images</b> - You can now set the PDF-generation option at the system level. This means that you can globally configure cases to generate PDF images directly from native files when Mass Action Imaging is selected in Review. The generated PDF images will be loaded as document images, similar to TIFF, JPG, and other supported image types. When this feature is enabled, production exports that use the “Single page image” or “Multi-page image” setting may experience longer conversion times. Contact <MadCap:variable name="Primary.IPRO" /> Support for assistance enabling this feature.</p>
+            <p><b>Upgrade to Latest Version of OSFMount</b> – OSFMount used to mount image disk files for extraction has been updated to v3.0.1006, which incorporates many small fixes and improvements through several releases of the mounting software.</p>
+            <p><b>Enhanced Activity Timeout</b> - Administrators can modify the amount of time before a user's session expires within the security settings.</p>
+        </div>
+        <h2><a name="Resolved"></a>
+            <MadCap:toggler targets="resolved_issues">Resolved Issues</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="resolved_issues">
+            <div>
+                <h3><b>Review</b>
+                </h3>
+                <p><b>PS-5175</b> - Improved handling when deleting application users.</p>
+                <p><b>AR-10230</b> – Improved handling of “BatchID EQUAL” searches in Admin to load properly.</p>
+                <p><b>AR-7379</b> – Updated nested sub-tags within exclusive tag group to be tagged without error.</p>
+                <p><b>AR-7307</b> – Updated Persistent Highlighting counts to be unified across text and native view.</p>
+                <p><b>AR-6955</b> - Updated batches with family field or sort order setting to accurately create batches off the selected setting.</p>
+                <p><b>AR-7403</b> – Restored the ability to enter a batch when using UTC offset.</p>
+                <p><b>AR-7658</b> – Restored the ability to enter a batch when the incorrect date/time format is used.</p>
+                <p><b>AR-3528</b> - Viewing a document in the native viewer accurately displays the time based on time zone offset applied.</p>
+                <p><b>AR-9739</b> – Improved handling of near duplicate identification to accurately link emails based on the header information.</p>
+                <p><b>AR-2929</b> - Certain PDF native files could result in blank pages during Legacy Process jobs that use an image conversion rule. Additional checks have been implemented to verify whether the source page contains content and, if so, to confirm that conversion takes place.</p>
+                <p><b>AR-7922</b> – Invalid date error when Chrome is set to display in English (Australian) or English (UK)</p>
+                <p><b>AR-1934</b> - Aggregate field tables are now being updated during any import overlay that affects filter field data.</p>
+                <p><b>PS-5516</b> – Print to PDF using Production Image Priority  no longer generates an error message.</p>
+                <h3><b>Processing</b>
+                </h3>
+                <p><b>AP–2041</b> – Invalid Content ID information could be encountered during embedded file identification, which results in errors during processing. Identification procedures have been updated to account for these situations.</p>
+                <p><b>AP-2929</b> – Certain PDF native files could result in blank pages during Legacy Process jobs that use an image conversion rule. Additional checks have been implemented to verify whether the source page contains content and, if so, to confirm that conversion takes place.</p>
+                <p><b>AP-1371</b> – Emails with color found in embedded tables would not adhere to color imaging options, which leaves images black and white. To properly reflect this scenario, the color depth handling has been updated to accurately represent color in generated output.</p>
+                <p><b>AP-3048</b> - Certain Calendar items from Outlook can cause tasks to time out during Streaming Discovery, which results in task retries that also result in timeouts causing tasks to fail after extended periods of time. For these types of files, a health check has been implemented that will report status information and prevent timeouts. This will result in successful task completions.</p>
+                <p><b>AP-2367</b> - Handling of EMF files have been updated to suppress extraction to more closely match that of Legacy Discovery.</p>
+                <p><b>AP-1476</b> - Improved detection and support of Winmail.dat wrapped attachments has been implemented to properly read and extract from EMLs formatted this way.</p>
+                <p><b>AR-3097</b> – Improved handling of Outlook Appointment items to properly extract the “location” metadata field.</p>
+                <p><b>AP-2962</b> - Worker patch distribution was not working due to a change in build versioning that prevented distribution from recognizing the new upgrade to perform. The existing versioning will be cleared during database upgrades so that the new versioning scheme is accepted as an upgrade and allows Worker patch distribution to complete.</p>
+                <p>
+                    <br />
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

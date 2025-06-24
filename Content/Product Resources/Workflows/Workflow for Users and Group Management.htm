@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" MadCap:fileTags="FlareHelpStatus.In Progress">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Workflow for Users and Group Management</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Workflow for Users and Group Management</h1>
+        <p>This topic covers a standard workflow for user and group management in <MadCap:variable name="Primary.Name" />. User and group management takes place in the System Manager. </p>
+        <h2>Open the System Manager</h2>
+        <p>To open the System Manager and access the Users and/or Groups tabs, follow the steps below:</p>
+        <ol class="NumbListBody">
+            <li>Launch the <MadCap:variable name="Primary.Name" /> application and sign in.</li>
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that appears in every module of the <MadCap:variable name="Primary.Name" /> platform.  </li>
+            <li>
+                <p>The System Manager opens. In the left pane of the System Manager, the <b>Users</b> tab opens by default.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Users.png" class="Thumbnail" />
+                </p>
+                <p>Use this tab to create, modify, or delete users.</p>
+            </li>
+            <li>
+                <p>To manage groups, click the <b>Groups</b> tab in the left pane of the System Manager.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+                <p>From here you can create, modify, or delete groups, as well as assign users, permissions, and cases to groups.</p>
+            </li>
+        </ol>
+        <h2>User and Group Workflow</h2>
+        <p>Proceed with the following sections to walk through a standard workflow for user and group management.</p>
+        <h3>Create a User</h3>
+        <ul>
+            <li>Identify 
+ required users and gather/identify basic information (names, email addresses, 
+ passwords).</li>
+            <li>Add the new user by following the steps laid out in <MadCap:xref href="../../System/Users and Groups/Create_New_User.htm">Create New User</MadCap:xref>.</li>
+            <li>Set the user as Active (default setting) in order to allow the user access to <MadCap:variable name="Primary.Name" />.</li>
+        </ul>
+        <h3>Create a Group</h3>
+        <ul>
+            <li>Add a new group by following the steps laid out in <MadCap:xref href="../../System/Users and Groups/Create New Groups.htm">Create New Groups</MadCap:xref>.</li>
+            <li>Assign users to the new group.</li>
+            <li>
+                <p>Set permissions for the new group. A group's permissions filter down to the users assigned to it. </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Users cannot be assigned permissions directly. You must first assign permissions to a group, then assign users to that group, for those users to receive the specified permissions.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Assign the group to the appropriate cases.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="../../System/Users and Groups/Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>
+        </p>
+    </body>
+</html>

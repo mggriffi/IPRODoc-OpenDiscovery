@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports" style="mc-master-page: url('../../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head><title>Streaming Deduplication Overlay Report</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Data Extract Error Summary Report" />Streaming Deduplication Overlay Report</h1>
+        <p>The Streaming Deduplication Overlay report lists all the duplicates in a processing job.</p>
+        <p>The report queries all documents, including duplicates, in Process and Data Extract Jobs that are part of the Exports; not just processed documents in the Export Jobs. The report returns results for all original documents and duplicates for the selected Export Job(s). The fields are: Item ID, BEGDOC, Custodian, and Path. These fields are preceded by Original and Duplicate. The  fields are described as follows:</p>
+        <ul>
+            <li>
+                <p>Original ItemID</p>
+            </li>
+            <li>
+                <p>Original BegDoc</p>
+            </li>
+            <li>
+                <p>Original Custodian</p>
+            </li>
+            <li>
+                <p>Original Path</p>
+            </li>
+            <li>
+                <p>Duplicate ItemID</p>
+            </li>
+            <li>
+                <p>Duplicate BEGDOC</p>
+            </li>
+            <li>
+                <p>Duplicate Custodian</p>
+            </li>
+            <li>
+                <p>Duplicate Path</p>
+            </li>
+        </ul>
+        <p>The Duplicate fields will be in the same order for viewing/parsing. The values will then line up correctly for each document.</p>
+        <p>The duplicates are identified using de-duplication results from Processing or Data Extract Job(s) in the Export Job(s). </p>
+        <h2>Report Examples</h2>
+        <p>
+            <img src="../../../Graphics/Report_Graphics/ProcessingReports/ProcessingReportExamples/Streaming_Dedeplication_Detailed_Report_Overlay.png" class="Thumbnail" />
+        </p>
+    </body>
+</html>

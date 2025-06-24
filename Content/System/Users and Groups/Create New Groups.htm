@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin" style="mc-master-page: url('..\..\Resources\MasterPages\Admin_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create New Groups</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create New Groups</h1>
+        <p class="BodyText">Administrators have the ability to create groups, assign users to a group, grant permissions to a group, and assign groups to cases. These procedures can be completed in the System Manager.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Users are not assigned permissions directly. Rather, permissions are set at the group level and filter down to the users assigned to them. Similarly, users cannot be assigned to cases directly.  They must first be assigned to groups, and those groups assigned to cases. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">These procedures assume users were already created as explained in  <MadCap:xref href="Create_New_User.htm">Create New User</MadCap:xref>.</p>
+        <p class="BodyText">Complete the following steps to create a new group and add users:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>You have the option to create a new group from scratch,  from an existing group or from a security template. Expand the options below for details on each workflow. </p>
+                <h4><a name="Create"></a>Create A New Group From Scratch</h4>
+                <p> To create a new group from scratch:</p>
+                <ol>
+                    <li>
+                        <p> Click the <img src="../../Graphics/System_Graphics/System_Add_Icon.png" class="ReduceButtonSize" /> button at the top of the screen. The <b>Create New Group</b> page opens. </p>
+                    </li>
+                    <li>
+                        <p>Enter a name for the new group. When finished, click <b>Continue</b> to proceed to the next step.</p>
+                    </li>
+                    <li>
+                        <p>On the <b>Assign Users</b> step, select the users you would like to assign to the new group. Selected users are highlighted in blue. To assign all users to the group, click <b>Select All</b> in the top-right corner of the box. To search for individual users, type the name in the search bar. When all needed users have been selected, click <b>Continue</b>.</p>
+                    </li>
+                    <li>
+                        <p>When you create a group from scratch, you must assign all permissions manually. On the <b>Set Permissions</b> step, expand the needed section (Case Management, Media and Data, Search and Review, Reports, or System), then click the check box beside each permission you would like to provide the group. You can select all permissions in a given section by clicking <b>Select All</b> at the top right corner of the section. You can clear all permissions in a given section by clicking <b>Select All</b> again. In certain places, permissions can be selected from a drop-down menu. To learn more about the list of available permissions, see <MadCap:xref href="Permissions/Permissions_List.htm">Permissions List</MadCap:xref>. When finished assigning all permissions, click <b>Continue</b>.</p>
+                        <p>
+                            <img src="../../Graphics/System_Graphics/Set_permissions_new_group.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>On the <b>Assign Cases</b> step, select the cases that you would like to make accessible to the new group. Selected cases are highlighted in blue. To assign the group to all cases, click <b>Select All</b> in the top-right corner of the box. To search for specific cases,  type the name of the case in the search bar. When all needed cases have been selected, click <b>Save</b>.</p>
+                    </li>
+                </ol>
+                <h4><a name="Create2"></a>Create a New Group from an Existing Group</h4>
+                <p> To create a new group from an existing group: </p>
+                <ol>
+                    <li>
+                        <p> Click the<img src="../../Graphics/System_Graphics/Add_new_group_3_dots_icon.png" class="ReduceButtonSize" />  button at the top of the screen and select <b>Create New Group from Existing Group</b>. The <b>Select Group Template</b> page opens. </p>
+                    </li>
+                    <li>
+                        <p>Click the <b>Group Name</b> dropdown, then select the appropriate group from the list and click <b>Continue</b>.</p>
+                    </li>
+                    <li>
+                        <p>On the <b>Assign Users</b> step, select the users you would like to assign to the new group. Selected users are highlighted in blue. To assign all users to the group, click <b>Select All</b> in the top-right corner of the box. To search for individual users, type the name in the search bar. When all needed users have been selected, click <b>Continue</b>.</p>
+                    </li>
+                    <li>
+                        <p>When you  create a new group from an existing group, you use the permission set of an existing group  as a template for the group you're adding. All permissions assigned to the existing group will be applied to the new group. You can then tweak the permissions as needed to suit the new group. On the <b>Set Permissions</b> step, the permission set will update automatically to reflect the configuration of the chosen group. You can then tweak the permissions manually to suit the new group. Expand the needed sections (Case Management, Media and Data, Search and Review, Reports, or System), then click the check box beside each permission you would like to provide the group. You can also remove a permission from the group by clicking on a check box that has already been selected. When finished assigning all permissions, click <b>Continue</b>.</p>
+                        <p>
+                            <img src="../../Graphics/System_Graphics/set_permissions_existing_group.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>On the <b>Assign Cases</b> step, select the cases that you would like to make accessible to the new group. Selected cases are highlighted in blue. To assign the group to all cases, click <b>Select All</b> in the top-right corner of the box. To search for specific cases,  type the name of the case in the search bar. When all needed cases have been selected, click <b>Save</b>.</p>
+                    </li>
+                </ol>
+                <h4><a name="Create3"></a>Create a New Group from a Security Template</h4>
+                <p>To create a new group from a security template: </p>
+                <ol>
+                    <li>
+                        <p> Click the<img src="../../Graphics/System_Graphics/Add_new_group_3_dots_icon.png" class="ReduceButtonSize" style="width: 47px;height: 47px;" />  button at the top of the screen and select <b>Create New Group from Security Template</b>. The <b>Select Security Template</b><b>for Group Permissions</b> page opens. </p>
+                    </li>
+                    <li>
+                        <p>Choose the appropriate option from the <b>Security Template</b> dropdown. These templates, which must be created ahead of time, come with permissions already configured. For more information on security templates, see <MadCap:xref href="../Security_Templates/Overview_Security_Templates.htm">Overview: Security Templates</MadCap:xref>. </p>
+                        <p>
+                            <img src="../../Graphics/System_Graphics/security_template_dropdown.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>The <b>New Group Name</b> field will auto-populate based on the selected template. You can choose to edit the name or rename the new group. When finished, click <b>Continue</b> to proceed to the next step.</p>
+                        <p>
+                            <img src="../../Graphics/System_Graphics/security_template_new_group_name.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>On the <b>Assign Users</b> step, select the users you would like to assign to the new group. Selected users are highlighted in blue. To assign all users to the group, click <b>Select All</b> in the top-right corner of the box. To search for individual users, type the name in the search bar. When all needed users have been selected, click <b>Continue</b>.</p>
+                    </li>
+                    <li>
+                        <p>When you create a new group from a security template, you choose a pre-existing security template with group permissions already configured. On the <b>Set Permissions</b> step, the permission set will update automatically to reflect the configuration of the chosen security template. You can then tweak the permissions manually to suit the new group. Expand the needed sections (Case Management, Media and Data, Search and Review, Reports, or System), then click the check box beside each permission you would like to provide the group. You can also remove a permission from the group by clicking on a check box that has already been selected. When finished assigning all permissions, click <b>Continue</b>.</p>
+                        <p>
+                            <img src="../../Graphics/System_Graphics/set_permissions_security_template.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>On the <b>Assign Cases</b> step, select the cases that you would like to make accessible to the new group. Selected cases are highlighted in blue. To assign the group to all cases, click <b>Select All</b> in the top-right corner of the box. To search for specific cases,  type the name of the case in the search bar. When all needed cases have been selected, click <b>Save</b>.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Create_New_User.htm">Create New User</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Edit a Group.htm">Edit a Group</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Delete a Group.htm">Delete a Group</MadCap:xref>
+        </p>
+    </body>
+</html>

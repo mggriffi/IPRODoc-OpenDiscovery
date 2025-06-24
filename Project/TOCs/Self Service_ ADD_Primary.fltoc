@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Self Service"
+    Link="/Content/Self_Service/Self_Service.htm">
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/Self_Service/First Steps/Overview_Self-Service.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Self_Service/First Steps/Overview_Self-Service.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Self_Service/Upload_Data_via_Self-Service.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Self_Service/View_Upload_History_and_Status.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Self_Service/Self-Service_FAQs.htm" />
+  </TocEntry>
+</CatapultToc>

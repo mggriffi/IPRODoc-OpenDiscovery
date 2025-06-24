@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publish to LMS Enterprise folder on Beta "
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-betptl001\c$\Core\Help\FlareProjects\LMS\Enterprise"
+  Port=""
+  ViewUrl="https://myiprobeta.iprotech.com/LMS/Enterprise"
+  Type="file"
+  UploadLogFile="true"
+  ConnectionMode="Active"></CatapultDestination>

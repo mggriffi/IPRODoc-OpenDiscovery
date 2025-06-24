@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-template-page: url('..\..\Resources\MasterPages\Admin_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head>
+        <link rel="stylesheet" MadCap:stylesheetType="table" href="../../Resources/TableStyles/CD360_Basic_Table.css" />
+        <link rel="stylesheet" MadCap:stylesheetType="table" href="../../Resources/TableStyles/CD360_Basic_Table.css" />
+        <link rel="stylesheet" MadCap:stylesheetType="table" href="../../Resources/Stylesheets/ADD_Help_Tables.css" /><title>Workflow: Extract Text From Third Party Imports</title>
+        <link rel="stylesheet" type="text/css" href="../../Resources/Stylesheets/ADDReview.css" />
+    </head>
+    <body>
+        <map id="map1">
+            <area shape="rectangle" coords="145,-18,270,157" dragDirection="0" href="#Select" />
+            <area shape="rectangle" coords="286,-21,415,158" dragDirection="0" href="#Create2" />
+        </map>
+        <map id="map2">
+            <area shape="rectangle" coords="-2,-10,116,156" dragDirection="0" href="#Complete" />
+            <area shape="rectangle" coords="130,-19,261,154" dragDirection="0" href="#Select" />
+            <area shape="rectangle" coords="282,-22,409,154" dragDirection="0" href="#Create2" />
+            <area shape="rectangle" coords="417,-25,556,158" dragDirection="0" href="#Identify" />
+            <area shape="rectangle" coords="559,-25,693,159" dragDirection="0" href="#Identify2" />
+            <area shape="rectangle" coords="-7,171,122,329" dragDirection="0" href="#5." />
+            <area shape="rectangle" coords="139,175,263,337" dragDirection="0" href="#6." />
+        </map>
+        <h1>Workflow: Extract Text from Third Party  Imports</h1>
+        <p>When you receive third-party data that contains natives but no text, there are two different  workflows you can use to extract that text.  One option is to mass action image and mass action OCR the documents without text.  Another option is to utilize eCapture processing.  The following workflow will discuss the steps using eCapture.  You will need to work in <MadCap:variable name="Primary.Name" />, eCapture Controller, eCapture QC and Eclipse Admin to perform these tasks.</p>
+        <h2><a name="Complete"></a>Complete the Required Prerequisites</h2>
+        <table class="TableStyle-ADD_Help_Tables" cellspacing="0" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Notes</p>
+                    </th>
+                    <th style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Links</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Set up your review and processing case in <MadCap:variable name="Primary.Name" />.</p>
+                    </td>
+                    <td style="font-size: 10pt;text-align: left;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">
+                            <MadCap:xref href="../../Case_Management/Cases/Create_A_New_Case.htm">Create a New Case in [%=Primary.Name%]</MadCap:xref>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Import the native files that need text into your review case. Identify the files by custodian.</p>
+                    </td>
+                    <td style="font-size: 10pt;text-align: left;" class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">
+                            <MadCap:xref style="font-size: 10pt;" href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Create_the_Import_for_Third_Party_Data.htm">Create the Import for Third-Party Data</MadCap:xref>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Select"></a>
+        </h2>
+        <h2>Step 1: <MadCap:variable name="Primary.Name" /></h2>
+        <p>The following steps require you to work in Case Management, the Review module and Media Manager.</p>
+        <ol>
+            <li>
+                <p>Create an Export of the natives in your review case that need text extracted. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm#Export">Export Data for Multiple Records</MadCap:xref>.</p>
+                <table class="TableStyle-CD360_Basic_Table" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: If all natives already exist in the volume provided by the 3rd party, you can use that volume for processing. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Create a new processing case in <MadCap:variable name="Primary.Name" />. See <MadCap:xref href="../../Case_Management/Cases/Create_A_New_Case.htm">Create a New Case in [%=Primary.Name%]</MadCap:xref>. </p>
+                <table class="TableStyle-CD360_Basic_Table" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: This one case can be used for all similar jobs across all matters.  Jobs can be deleted after text is exported and imported to the review case.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Confirm that no Import Series has been created or linked to the new processing case. For more information on Import Series, see <MadCap:xref href="../../Case_Management/Import_Series/Overview_Import_Series.htm">Overview: Import Series</MadCap:xref></p>
+                <p>
+                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/Importseries.png" />
+                </p>
+            </li>
+            <li>
+                <p>Create a Media Manager Delivery, Media and Location based on the location of the natives. See <MadCap:xref href="../../Media_Manager/Media/Create_New_Media.htm">Create New Media</MadCap:xref>.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Process the Media (native documents). Use Streaming so that every document has extracted text or OCR. See <MadCap:xref href="../../Media_Manager/Data_Locations/Process_Data_Locations.htm">Process Data Locations</MadCap:xref>.</p>
+                        <table class="TableStyle-CD360_Basic_Table" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: Use Custodian to track sets of documents that need text.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h2>Step 2:  eCapture  QC</h2>
+        <p>The following steps must be completed in the eCapture QC module.</p>
+        <p><a name="Create"></a>
+        </p>
+        <ol>
+            <li>
+                <p>	In eCapture QC, open the Streaming Job you just processed.</p>
+            </li>
+            <li>
+                <p>Disable ‘View Families Separately’ to allow Export Set creation.</p>
+                <p>
+                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/QCsession.png" />
+                </p>
+            </li>
+            <li>
+                <p>Once the job is open, right-click the session tab and select <b>Search Through Current</b>.</p>
+                <p>
+                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/Searchcurrent.png" />
+                </p>
+            </li>
+            <li>
+                <p>Filter the Streaming Job for <b>AbsoluteParent = 0</b>.  This will return all top level items and should equal the same number of natives originally processed. Click <b>OK</b> when finished.</p>
+                <p>
+                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/Filteritems.png" />
+                </p>
+            </li>
+            <li>
+                <p>Right click the session tab and select <b>Create Export Set</b>.</p>
+                <p>
+                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/CreateExport Set.png" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>Create New</b> and enter a name.</p>
+                <p>
+                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/Create2.png" />
+                </p>
+            </li>
+        </ol>
+        <h2>Step 3: eCapture Controller</h2>
+        <p>The text export will be created from the eCapture Controller.</p>
+        <ol>
+            <li>
+                <p>Create an export job from the Export Set created.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Select your eCapture Project</p>
+                    </li>
+                    <li>
+                        <p>Right click on Data Extract Exports</p>
+                    </li>
+                    <li>
+                        <p>Select New Data Extract Export Job</p>
+                        <p>
+                            <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/NewDataExjb.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Specify the Export Parameters:</p>
+                        <ol style="list-style-type: lower-roman;">
+                            <li>
+                                <p>Select the Export Set you just created and select Direct to disk.</p>
+                                <p>
+                                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/Export3.png" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>Export Text and DAT. Include BEGDOC and TextPath.</p>
+                                <p>
+                                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/Export4.png" />
+                                </p>
+                            </li>
+                            <li>
+                                <p>	Choose ‘Export Directory Path’</p>
+                            </li>
+                            <li>
+                                <p>Update Image Key Numbering to ‘<b>Predefined</b>’ based on ‘<b>Use filename</b>’</p>
+                                <p>
+                                    <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/Export 5.png" />
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h2>Step 4: Eclipse Admin</h2>
+        <p><a name="6."></a>Once your text file is created, you can overlay that text into the Review case. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Import_Case_Data/Create_the_Import_for_Third_Party_Data.htm">Create the Import for Third-Party Data</MadCap:xref>.</p>
+        <p>Make sure you select <b>Overlay Only</b> and<b> Import Text from Path</b> before <MadCap:annotation MadCap:createDate="2022-07-28T16:52:59.6791235-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="We may want to create something like a workflow landing page of sorts that links to all of our workflow topics. We could then add this page as a Related Topic at the bottom of these workflows. What do you think?" MadCap:editor="mcohen" MadCap:editDate="2022-07-29T05:57:34.9469303-07:00">Importing.</MadCap:annotation></p>
+        <p>
+            <img class="Thumbnail" src="../../Graphics/ADD_Review_Graphics/Workflows/OverlayOnly.png" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

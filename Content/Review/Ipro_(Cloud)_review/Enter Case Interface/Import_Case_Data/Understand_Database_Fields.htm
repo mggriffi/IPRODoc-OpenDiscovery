@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary._FixedMulti-Level,Primary.Review" style="mc-template-page: url('..\..\..\..\Resources\MasterPages\Enterprise_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Understand Database Fields</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Understand Database Fields</h1>
+        <p class="BodyText">The following default fields are included in your 
+	 case. </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                    Administrators can change system field 
+		 names and add notes if needed.
+                </p>
+            </li>
+            <li>
+                <p>
+                    System fields cannot be deleted. Unused 
+		 fields can be hidden from view in <MadCap:variable name="Primary.Name" /> if desired.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The maximum size for all system fields 
+		 except for the EXTRACTEDTEXT field is 255 characters. The EXTRACTEDTEXT 
+		 field can contain up to 2 GB of data.
+                </p>
+            </li>
+        </ul>
+        <h3>System Fields</h3>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field 
+			 Type</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">BEGATTACH</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                Used for parent/child relationships. 
+				 For example, an email with attachment.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                BEGATTACH is linked to BEGDOC, 
+				 thus entries in this field should be image keys as defined 
+				 in the BEGDOC field.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                Each “child” document should include 
+				 its “parent” document's image key in the BEGATTACH field.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                Some load (or case definition) 
+				 files include a field to identify the final in member 
+				 of the set of related documents. Use the ENDATTACH field 
+				 type for such a field.
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">BEGDOC</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                Required, unique identifier for 
+				 image file. If not defined by user, field is created automatically 
+				 when case is created.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                               A document and its first page 
+				 will have the same image key value.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                A tilde (~) cannot be used in 
+				 this field.
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">CUSTODIAN</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Typically 
+			 used to identify document’s owner, for example, the person 
+			 responsible for the data collection containing the document.<span>&#160;&#160;</span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">DOCKEY</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                Required, unique document identifier. 
+				 If not defined by user, field is created automatically 
+				 when case is created.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                A tilde (~) cannot be used in 
+				 this field.
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">DOCUMENT DATE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                Required field used by <MadCap:variable name="Primary.Name" /> 
+				 to calculate and populate the timeline in the <MadCap:variable name="Primary.Review &amp; Transcripts" /> module.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                The dates presented in the timeline 
+				 are based on the DOCUMENTDATE field, which is populated 
+				 with the dates in your case.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                For each document, the value that 
+				 is used in the timeline is based on the date fields selected 
+				 in Eclipse Administration and in the order defined for 
+				 the field (such as Sent Date, Creation Date, etc.).
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ENDATTACH</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                Identifies the final member of 
+				 a set of related documents.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                A BEGATTACH field identifies the 
+				 first member and the document to which the set is related.
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ENDDOC</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                Identifies the final page of a 
+				 multi-page document.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                If the document is a single page, 
+				 the ENDDOC value will be the same as the BEGDOC value.
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">ENT IMGING fields</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">A 
+			 set of fields required for <MadCap:variable name="Primary.Name" /> Imaging. These include:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                ENT IMAGING ERRORS: Errors that 
+				 occur during imaging
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                ENT IMAGING FLAGS: QC 
+				 flags from eCapture
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                ENT IMAGING JOB: Name 
+				 of the imaging job
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                ENT IMAGING STATUS: Status 
+				 of the imaging job
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EXTRACTED TEXT</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                Document’s text. Content appears 
+				 in Extracted Text tab of <MadCap:variable name="Primary.Name" />.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                Text is typically part of imported 
+				 case (or it may be added later). If document was originally 
+				 electronic, text is “extracted” from original file. If 
+				 originally paper (or came in as an image), text is the 
+				 result of OCR'ing image. Other types of source documents 
+				 may/may not include extracted text when imported.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                Until case is produced, extracted 
+				 text resides in the database, not in separate 
+				 files.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                This field does not display in 
+				 the Results Grid.
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EXTRACTED TEXTSIZE<span style="font-size: 11.0pt;line-height: 107%;font-family: Calibri, sans-serif;">[1]</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Document’s 
+			 extracted text size (in KB); automatically computed for system 
+			 purposes.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">HASIMAGE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Indicates 
+			 whether or not an image file exists for the document.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">HASNATIVE FILE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Indicates 
+			 whether or not a native file exists for the document.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">MD5HASH</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">
+                                A unique value representing document 
+				 data.
+                            </p>
+                            </li>
+                            <li>
+                                <p class="TableText">
+                                MD5HASH values are created by 
+				 a 128-bit algorithm performed on a document during discovery.
+                            </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">NATIVE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Path 
+			 and filename of native file at time of import into Eclipse 		 Administration.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">NATIVEFILE EXTENSION</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Document’s 
+			 native file extension; automatically detected (for example, 
+			 .doc, .msg).</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">NATIVEFILE SIZE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Document’s 
+			 native file size (in KB); automatically computed.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">NATIVEFILE TYPE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">An 
+			 ID used by Oracle Outside-in Viewer technology for native 
+			 file determination and presentation; automatically identified.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">NATIVEFILE TYPEDESC</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Document’s 
+			 native file type; automatically identified (for example, Microsoft 
+			 Word 2000, Word Perfect 6.1).</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">NEARDUPLICATE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Identifies the proximity of the document to its duplicate document.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDACASE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The <MadCap:variable name="Primary.LIVE EDA"></MadCap:variable> case from which the item/document has been promoted.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDADOCID</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The ID of the item/document. Use this value to find the same document in&#160;<MadCap:variable name="Primary.LIVE EDA" />&#160;Search.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDAEXPORTID</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The ID of the promotion job.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDAPCI</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The Personal Credit Information score. Used by Machine Learning Classification for tagging items based on score.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDAPHI</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The Protected Health Information score. Used by Machine Learning Classification for tagging items based on score.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDAPII</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The Personal Identifiable Information score. Used by Machine Learning Classification for tagging items based on score.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDAPROMOTIONTIME</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The date and time of promotion.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDAPROMOTIONUSER</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The&#160;OPEN DISCOVERY&#160;admin user responsible for the promotion.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDAPROMOTIONNAME</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The user supplied name given to the data set at time of promotion.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDADOCTAGS</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Any document tags applied in Live EDA prior to promotion.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">EDACONNECTORNAME</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The source connector used to gather the data for promotion.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">EDAPROTECTIONLABEL</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Included for data using MIP (Microsoft Information Protection.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="footnote">[1]Do not match a load file field to this field. 
+		 Any data imported into this field will be overwritten when field 
+		 details are calculated or identified.</p>
+        <h3>User-Defined Fields</h3>
+        <p class="BodyText">The following fields can be defined as needed for 
+	 your case. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field Type</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Use For...</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Currency</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Any 
+			 type of monetary data.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Date</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Date 
+			 (true dates), for example, 09-30-2015. Note:</p>
+                        <ul style="list-style: square;" class="BulletListTable">
+                            <li>
+                                <p class="TableText">Data imported or entered in this 
+				 field must be true dates that match the format selected 
+				 during the import process, such as the day-month-year 
+				 (DD/MM/YY) format.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Dates are displayed in the format 
+				 selected during case creation (or per modification of 
+				 case details).</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">DateTime</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Date 
+			 and time (true date/time), for example, 09-30-2015 12:42 PM. 
+			 Note:</p>
+                        <ul style="list-style: square;" class="BulletListTable">
+                            <li>
+                                <p class="TableText">Data imported or entered in this 
+				 field must be true dates and times that match the format 
+				 selected during the import process, such as the day-month-year 
+				 (DD/MM/YY) date format and the 12-hour time format.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Dates/times are displayed in the 
+				 format selected during case creation (or per modification 
+				 of case details). </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Decimal</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Any 
+			 numerical data that includes decimal values.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">FixedLengthText</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Text 
+			 of a specified length, as defined by the user (up to 4,000 
+			 characters). The default setting is 255 characters.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">LongText</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Text 
+			 of a variable length, up to 2 GB in size.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">WholeNumber</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Any 
+			 integer data, with or without comma delimiters for numbers 
+			 over 999.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Feature-Specific Fields</h3>
+        <p class="BodyText">In addition to system and user-defined fields, 
+	 certain <MadCap:variable name="Primary.Name" /> features automatically create fields needed for the 
+	 feature. In most cases, these fields should not be modified or deleted 
+	 by administrators or users. Feature-specific fields are identified 
+	 by the following specific prefixes; do not use these prefixes with 
+	 other field names. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 380px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">feature Field </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">prefix</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Keyword Lists</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">KWL_FL; KWL_TG</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><MadCap:variable name="Primary.LIVE EDA" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">EDA</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IPRO Analytics</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">IA</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Media Manager</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">MM</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">System Fields</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">System; Sys</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Review Pass</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Tag Name_Prediction; TagName_Score</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText"> Technology-Assisted Review Project</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">TAR</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Creation of new fields and modification of existing fields must be performed in the <MadCap:variable name="Primary.Eclipse" /> Admin module.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p><span class="BoldItalic">Related Topics</span>
+        <p>
+            <MadCap:xref href="Overview_Import_Third_Party_Data.htm">Overview: Import Third-Party Data</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_the_Import_for_Third_Party_Data.htm">Create the Import for Third-Party Data</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Import_Text_Files.htm">Import Text Files</MadCap:xref>
+        </p>
+    </body>
+</html>

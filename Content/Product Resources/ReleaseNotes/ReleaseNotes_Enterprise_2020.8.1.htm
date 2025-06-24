@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head><title>discovery ][ Enterprise Release Notes 2020.8.1</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1> discovery ][ Enterprise Release Notes 2020.8.1</h1>
+        <p><MadCap:variable name="Primary.IPRO" /> is pleased to announce the 2020.8.1 maintenance release of <MadCap:variable name="Primary.Name First" />. <MadCap:variable name="Primary.Name" /> continues to evolve with this exciting update focused on performance increases, batch management and more. Updates include:</p>
+        <h2><a name="New"></a>
+        </h2>
+        <h2 MadCap:conditions="Primary.Blocked"><b>Review</b>
+        </h2>
+        <h3 MadCap:conditions="Primary.Blocked"><b>Batch Management</b>
+        </h3>
+        <ul class="BulletListBody">
+            <li MadCap:conditions="Primary.Blocked">New Batch Management features include a "Case Header" for Case actions:</li>
+        </ul>
+        <ul>
+            <p MadCap:conditions="Primary.Blocked">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_Header_Case.png" style="width: 891px;height: 35px;" />
+            </p>
+        </ul>
+        <ul class="BulletListBody">
+            <li MadCap:conditions="Primary.Blocked">Below the "Case Header" is a "Review Pass Header" for Review Pass actions:</li>
+        </ul>
+        <ul>
+            <p MadCap:conditions="Primary.Blocked">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_Header_Review_Pass.png" />
+            </p>
+        </ul>
+        <ul class="BulletListBody">
+            <li MadCap:conditions="Primary.Blocked">In the "Review Pass Header", there are two new settings tabs: <b>Batch Management</b> and <b>Review Pass Settings</b>. The <b>Batch Management</b> tab also includes a <b>Completed/Not Completed</b> batches toggle button (default is Not Completed).</li>
+            <li MadCap:conditions="Primary.Blocked">There is a right pane that shows Batch ID, status, and additional Review Pass information and actions:</li>
+        </ul>
+        <ul>
+            <p MadCap:conditions="Primary.Blocked">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_Rt_Pane_Rev_Pass_Actions.png" style="width: 186px;height: 355px;" />
+            </p>
+        </ul>
+        <ul class="BulletListBody">
+            <li MadCap:conditions="Primary.Blocked">In this pane, the UNASSIGN button allows you to unassign a checked-in document batch. The button is disabled after unassigning the batch or viewing completed batches.</li>
+            <li MadCap:conditions="Primary.Blocked">The "BatchIdentifierSearchItem" field is available for searching by a single Batch ID and for navigating to search with a single filtered batch.</li>
+        </ul>
+        <ul>
+            <p MadCap:conditions="Primary.Blocked">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_BatchIdentifierSearchItem_filter.png" class="Thumbnail" />
+            </p>
+        </ul>
+        <ul class="BulletListBody">
+            <li MadCap:conditions="Primary.Blocked">In the "Case Header", there is a <img src="../../Graphics/ADD_Review_Graphics/AR_Btn_Exp_Case_Batch_Rpt.png" /> button, when clicked will generate a downloadable CSV report (Reviewer Batch History Detail) that contains three new columns: Reviewed, Not Reviewed, and On Hold.</li>
+        </ul>
+        <ul>
+            <p MadCap:conditions="Primary.Blocked">See the following example:</p>
+            <p MadCap:conditions="Primary.Blocked">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_Reports1.png" />
+            </p>
+            <p MadCap:conditions="Primary.Blocked">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_Reports3.png" />
+            </p>
+        </ul>
+        <ul class="BulletListBody">
+            <li MadCap:conditions="Primary.Blocked">In the Batch Management tab, the <b>Batch ID</b> column IDs are hyperlinked. A clicked hyperlink allows the Review status of the documents within that batch to be viewed in Visual Search. A batch that contains no documents shows a document result of zero.</li>
+            <li MadCap:conditions="Primary.Blocked">The Batch Management tab automatically displays Not Complete batches by default.</li>
+            <li MadCap:conditions="Primary.Blocked">The batches list in the  <b>Batch Management</b> tab automatically updates when a new batch is created.</li>
+            <li MadCap:conditions="Primary.Blocked">Case Batch Timeout default is 1440 minutes (24 hours). The number of minutes is editable. The maximum allowed value is 43,200 minutes (30 days).</li>
+        </ul>
+        <ul>
+            <p MadCap:conditions="Primary.Blocked">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_Header_Case2.png" style="width: 1014px;height: 40px;" />
+            </p>
+            <p MadCap:conditions="Primary.Blocked">This will now allow the user to remain assigned to the batch when entering the case.</p>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p>Expanded user interface options to allow coding form and tag palette to be resized during review.</p>
+            </li>
+            <li>Batch Management: Gain visibility to manage review passes within an easy to use dashboard. Allows reviewer management to quickly filter down completed batches, perform validation, unassign batches, and more. See <a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/AR_Manage_Batches.htm"><MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm">Manage  Batches</MadCap:xref></a>.</li>
+            <li>
+                <p>Batch Timeout: Customize the amount of time a reviewer can keep the same batch, default 24 hours.</p>
+            </li>
+            <li>Tags: Added the ability to right click from tag palette to create and rename tags for easy, on-the-fly tag customization. See<a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/AR_Right_Click_Tag_Options.htm"><MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/Right_Click_Tag_Options_in_the_Document_Viewer.htm">
+            Right-Click Options in the Document Viewer Tag Pane</MadCap:xref></a>.</li>
+            <li>Performance Enhancements: Decreased loading time in the following areas up to 99%:<ul><li><p>Opening a case or review pass</p></li><li><p>Faster rendering of native files within a review pass. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Review_Pass_Doc_Load_Accel.htm">Review Pass Document Loading Acceleration</MadCap:xref>.</p></li><li><p>Creating, refresh, updating, and deletion of Smart Folders</p></li><li>Loading and search results returned in Visual Search</li><li><p>Tag filtering, tally, and sorting in the document grid</p></li><li><p>Saving Keyword List results to tags and fields.</p></li></ul></li>
+        </ul>
+        <h3 MadCap:conditions="Primary.Blocked"><b>Right-Click a Tag</b>
+        </h3>
+        <p MadCap:conditions="Primary.Blocked">Within the Document Viewer, right-clicking a tag group or tag allows for the following actions.</p>
+        <h4 MadCap:conditions="Primary.Blocked"><b>Right-click  to Add Tags </b>
+        </h4>
+        <p MadCap:conditions="Primary.Blocked">There is now the option in the Document Viewer to click a tag group and add a tag.</p>
+        <h4 MadCap:conditions="Primary.Blocked"><b>Right-click to Rename Tags </b>
+        </h4>
+        <p MadCap:conditions="Primary.Blocked">There is now the option in the Document Viewer to click a tag and rename it.</p>
+        <h2 MadCap:conditions="Primary.Blocked"><a name="Resolved"></a>
+            <MadCap:toggler targets="resolved_issues">Performance</MadCap:toggler>
+        </h2>
+        <h3 MadCap:conditions="Primary.Blocked"><b>Performance Increases</b>
+        </h3>
+        <p MadCap:conditions="Primary.Blocked">We have made performance increase in the following areas:</p>
+        <ul class="BulletListBody">
+            <li MadCap:conditions="Primary.Blocked">For both the Review and Process databases, data is now pulled every 10 seconds and saved to a table. The data is then analyzed to access concurrency issues affecting end-user experience in the UI.</li>
+            <li MadCap:conditions="Primary.Blocked">Smart Folder create, refresh, update, and delete (C.R.U.D.) time has decreased significantly.</li>
+            <li MadCap:conditions="Primary.Blocked">Tags loading time within the Visual Search grid has decreased significantly.</li>
+            <li MadCap:conditions="Primary.Blocked">Tag group filtering time has decreased significantly.</li>
+            <li MadCap:conditions="Primary.Blocked">Document generation within a case has improved by about 90%.</li>
+        </ul>
+        <h3><b>Resolved Issues</b>
+        </h3>
+        <p><b>AR-7856</b> – Active Directory group members and users are now displayed and available for import at the group level.</p>
+        <p><b>PS-4517</b> - Additional security measures to prohibit a user to bypass the login when entering Media Manager.</p>
+    </body>
+</html>

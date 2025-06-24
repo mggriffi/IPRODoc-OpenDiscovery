@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>System Administration</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Define the Eclipse Application Environment;System Administration" />System Administration</h1>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li><a href="#Define_the_Eclipse_Application_Environment">Define 
+	 the Eclipse Application Environment</a>
+            </li>
+            <li><a href="#Microsoft_SQL-Based_Activities">Microsoft 
+	 SQL-Based Activities</a>
+            </li>
+        </ul>
+        <p class="BodyText"><span class="BoldItalic">Related pages:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="../../../Reports/Create_Custom_Eclipse_Reports.htm">Create Custom 
+	 Eclipse Reports</a></span>
+            </li>
+        </ul>
+        <h2><a name="Define_the_Eclipse_Application_Environment"></a>Define the 
+ Eclipse Application Environment</h2>
+        <p class="BodyText">An application environment name is used for component 
+ registration in <MadCap:variable name="Primary.Name" /> Services, that is, to identify components as belonging 
+ to each <MadCap:variable name="Primary.Name" /> application (Eclipse, eCapture, and/or Allegro). By default, 
+ this is the configuration database name defined during installation of 
+ each <MadCap:variable name="Primary.Name" /> application (or the name defined during migration to version 
+ 2015.0.0 or later).</p>
+        <p class="BodyText">If you are an advanced administrator who will use SQL 
+ to view <MadCap:variable name="Primary.Name" /> data, you can change the Eclipse environment name(s) to make 
+ it easier to identify and/or remember when you are viewing <MadCap:variable name="Primary.Name" /> data in 
+ SQL. </p>
+        <p class="BodyText">To change the Eclipse application environment name:</p>
+        <p class="BodyText">Get started: </p>
+        <p class="BodyText">Consider naming conventions for environment names for 
+ all <MadCap:variable name="Primary.Name" /> applications, and/or if you have multiple instances of an application(s) 
+ installed at your site.</p>
+        <p class="BodyText">On your site’s Eclipse website, log in as a user who 
+ is a member of the Super Admin group. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Click the Eclipse button, <img src="../../../Graphics/Admin_Graphics/Btn_Eclipse-Web2.png" alt="" border="0" class="button_inline" />, 
+ and select <span style="font-weight: bold;">Administration</span>.</p>
+            </li>
+            <li>
+                <p>If the <span style="font-weight: bold;">System 
+ Administration</span> pane is collapsed, click the pane title to expand 
+ it. </p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Application 
+ Environment</span>, then click the Eclipse environment name. </p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/btn_pencil_Web.png" alt="" border="0" class="button_inline" />.</p>
+            </li>
+            <li>
+                <p>Enter the new name in the <span style="font-weight: bold;">Application 
+ Environment</span> field (128 Unicode characters maximum). </p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Save</span>. 
+ <MadCap:variable name="Primary.Name" /> will be automatically updated. </p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <h2><a name="Microsoft_SQL-Based_Activities"></a>
+            <MadCap:keyword term="Microsoft SQL-Based Activities" />Microsoft SQL-Based Activities</h2>
+        <h3>Logging SQL Commands</h3>
+        <p class="BodyText">If problems occur with the Eclipse database, it is 
+ possible to store SQL commands in a log file for troubleshooting purposes. 
+ </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Warning.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">IMPORTANT! 
+		 Because this log file may consume significant amounts of disk 
+		 space and impact system performance, do not log SQL commands unless 
+		 you have first contacted <MadCap:variable name="Primary.IPRO" /> Support and they 
+		 have instructed you to do so. Contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank" style="font-size: 10pt;">IPRO Support</a> for <MadCap:annotation MadCap:createDate="2024-04-09T14:23:17.6038235-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="CHECK LINKS" MadCap:editor="ddavidson" MadCap:editDate="2024-04-09T14:23:23.2835833-04:00">more</MadCap:annotation> 
+		 information. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To log SQL commands:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Log 
+ in to Eclipse Administration as an Eclipse administrator. </p>
+            </li>
+            <li>
+                <p>On the System Management ribbon, click <span style="font-weight: bold;">System Administration</span>. </p>
+            </li>
+            <li>
+                <p>Select the <span style="font-weight: bold;">Log 
+ SQL Commands</span> option. </p>
+            </li>
+            <li>
+                <p>If needed, change the location for the log 
+ file. </p>
+            </li>
+            <li>
+                <p>Follow instructions provided by <a href="https://iprotech.com/resources/ipro-support/" target="_blank">IPRO 
+ Support</a> regarding the use of this file and the amount of time commands 
+ should be logged. </p>
+            </li>
+            <li>
+                <p>After commands have begun to be logged, click 
+ <img src="../../../Graphics/Admin_Graphics/Btn_Import-MagGlas.png" alt="" border="0" class="button_inline" />&#160;to view the file.</p>
+            </li>
+        </ol>
+        <h3>Changing Maximum Native File Size</h3>
+        <p class="BodyText">To help ensure efficient operation of Eclipse, a maximum 
+ size is set for native files. If a native file exceeds this value, users 
+ must open it using the native application instead of viewing the file 
+ on the <span style="font-weight: bold;">Native Viewer</span> tab.</p>
+        <p class="BodyText">The default maximum file size is 12 MB; if necessary, 
+ this value can be changed in SQL. For information on changing the maximum 
+ native file size, contact <MadCap:variable name="Primary.IPRO" /> Support. </p>
+        <h3>Change Native File Loading Message Time</h3>
+        <p class="BodyText">When a large native file is loaded to the Native Viewer 
+ tab (after you have selected a document for viewing and clicked the View 
+ button on the tab), a progress message displays. The default time it takes 
+ before this message displays is 1 second (1000 ms). Thus, if it takes 
+ less than 1 second for a file to load, the message will not display.</p>
+        <p class="BodyText">You can change the time before the message displays 
+ in SQL by entering a different value (in milliseconds). For example, entering 
+ 2000 would cause the message to display only if it takes over 2 seconds 
+ for the file to load. To make this change, contact <MadCap:variable name="Primary.IPRO" /> Support. </p>
+        <h3>Archive/Restore the Eclipse Database</h3>
+        <p class="BodyText">Administrators who are proficient in SQL can archive 
+ an Eclipse database that is no longer needed or restore an archived database 
+ should it need to be brought back online. <MadCap:variable name="Primary.IPRO" /> Support can also assist 
+ you with these procedures. </p>
+        <h4>Items to Archive</h4>
+        <p class="BodyText">When archiving an Eclipse database, several data locations 
+ and files need to be considered. Regarding optional items, the speed with 
+ which a database might need to be restored can help determine which optional 
+ items are archived.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Required:</p>
+                <ul>
+                    <li>
+                        <p>SQL 
+ Case database files</p>
+                    </li>
+                    <li>
+                        <p>Data 
+ Directory location (Tiff on the Fly Images)</p>
+                    </li>
+                    <li>
+                        <p>Uploaded 
+ Exhibits Path (Transcripts)</p>
+                    </li>
+                    <li>
+                        <p>All 
+ files on data storage - Native/Image/Produced Image</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Optional:</p>
+                <ul>
+                    <li>
+                        <p>Index 
+ Location (can be rebuilt once the database is back online)</p>
+                    </li>
+                    <li>
+                        <p>Analytics 
+ index files and staging folders (can be rebuilt once the database is back 
+ online)</p>
+                    </li>
+                    <li>
+                        <p>Production 
+ database SQL files (The production database stores only the staging data 
+ for the production when it was run. It is not necessary for restoring 
+ a database.)</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="BodyText">For assistance in archiving or restoring an Eclipse 
+ database, contact <MadCap:variable name="Primary.IPRO" /> Support. </p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

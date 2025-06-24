@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4><b>Save a Visual Search</b>
+        </h4>
+        <p>To save a search configured on the Visual Search dashboard, perform the following steps:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In <MadCap:variable name="Primary.ProdName_Review"></MadCap:variable>, click  a case card.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/AR_Card_Case.png">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Click the <b>Enter Case</b> button at the bottom-right corner. The Visual Search dashboard appears. The full-screen icons allow you to see each dashboard area in full-screen view.</p>
+                <p> <img src="../../Graphics/ADD_Review_Graphics/Visual Search/NewVSDashboard_full.png" class="Thumbnail" style="width: 151px;height: 95px;" /></p>
+            </li>
+            <li>
+                <p>Define your visual search. For information about how to accomplish this on the Visual Search dashboard, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm" MadCap:conditions="Primary.Admin">Work With the Visual Search Dashboard</MadCap:xref> <a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm?tocpath=Review%7CAdminister%20Case%20Reviews%7CSearch%20the%20Database%7CVisual%20Search%7C_____1" target="_blank" MadCap:conditions="Primary.LMS_v8_0">Work with the Visual Search Dashboard</a>.</p>
+            </li>
+            <li>
+                <p>When your search definition is complete, click the <b>Save</b> button at the top-right corner of the screen. The Save Search dialog box appears.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/AR_Save_Search.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Enter a name for the search in the <b>Search Name</b> field.</p>
+                <table style="mc-table-style: url('../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Once you save a search, you have the option to rename it, or create a new search from the existing one.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Select the folder in which you want the search saved.  Folders are used to organize saved 
+		 searches and are created as described in <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Pub_Shared_Priv_Search_Folders.htm" MadCap:conditions="Primary.Admin">Work with Public, Shared, and Private Search Folders</MadCap:xref> <MadCap:conditionalText MadCap:conditions="Primary.LMS_v8_0"><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Pub_Shared_Priv_Search_Folders.htm?tocpath=Review%7CAdminister%20Case%20Reviews%7CSearch%20the%20Database%7CWork%20with%20Searches%7C_____4" target="_blank">Work with Public, Shared, and Private Search Folders</a></MadCap:conditionalText>. By default, saved searches are saved to <b>Public Folders</b>
+		 (available to all users with access to the case or batch). The saved searches can also be saved to <b>Private Folders</b> or <b>Shared Folders</b>. </li>
+            <li>When  you have completed the above steps, click <b>Save Only</b> to save the search to the specified folder.</li>
+        </ol>
+        <h4><b>Save an Advanced Search</b>
+        </h4>
+        <p>To save an Advanced Search, perform the following steps:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In <MadCap:variable name="Primary.ProdName_Review"></MadCap:variable>, click  a case card.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/AR_Card_Case.png">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Click the <b>Enter Case</b> button at the bottom-right corner. The Visual Search dashboard appears. The full-screen icons allow you to see each dashboard area in full-screen view.</p>
+            </li>
+            <li>
+                <p>In the dashboard, go to <b>Need to construct an Advanced Search?</b> at the upper right corner and click <b>Advanced Search</b>. The Advanced Search case view appears.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/Advanced Search/NewSave_3.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Define your Advanced Search. For information about how to accomplish this see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm" MadCap:conditions="Primary.Admin">Work With Advanced Search</MadCap:xref><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm" target="_blank" MadCap:conditions="Primary.LMS_v8_0">Work with Advanced Search</a>.</p>
+            </li>
+            <li>
+                <p>When your search definition is complete, click either the <b>Save</b> or <b>Save &amp; Search</b> button at the top-right corner of the screen.</p>
+                <ul class="BulletListBody">
+                    <li><b>Save</b> - Saves the search to a specified folder, but does not run the search.</li>
+                    <li><b>Save &amp; Search</b> - Saves the search to a specified folder and also runs the search.</li>
+                </ul>
+            </li>
+            <li>
+                <p> The Save Search dialog box appears. Enter a name for the search in the <b>Search Name</b> field.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/AR_Save_Search.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Once you save a search, you have the option to rename it, or create a new search from the existing one.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Select the folder in which you want the search saved.  Folders are used to organize saved 
+		 searches and are created as described in<MadCap:conditionalText MadCap:conditions="Primary.Admin"> <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Pub_Shared_Priv_Search_Folders.htm" MadCap:conditions="Primary.Admin">Work with Public, Shared, and Private Search Folders</MadCap:xref></MadCap:conditionalText> <a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Pub_Shared_Priv_Search_Folders.htm?tocpath=Review%7CAdminister%20Case%20Reviews%7CSearch%20the%20Database%7CWork%20with%20Searches%7C_____4" target="_blank" MadCap:conditions="Primary.LMS_v8_0">Work with Public, Shared, and Private Search Folders</a>. By default, saved searches are saved to <b>Public Folders</b>
+		 (available to all users with access to the case or batch). The saved searches can also be saved to <b>Private Folders</b> or <b>Shared Folders</b>. </li>
+            <li>When you have completed the above steps, click <b>Save Only</b> to save the search to the specified folder. If you are saving as well as running a search, click the <b>Save &amp; Search</b> button.</li>
+        </ol>
+    </body>
+</html>

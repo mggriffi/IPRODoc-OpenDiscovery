@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="Contacts"
+    BackgroundColor="#686898"
+    OriginalName="Contacts" />
+  <ConditionTag
+    Comment=""
+    Name="PrintOnly"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Users"
+    Comment=""
+    OriginalName="Users" />
+  <ConditionTag
+    BackgroundColor="#57f22b"
+    Name="Storage Locations"
+    Comment=""
+    OriginalName="Storage Locations" />
+  <ConditionTag
+    BackgroundColor="#aca209"
+    Name="Copy Stations"
+    Comment=""
+    OriginalName="Copy Stations" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="System Logs"
+    Comment=""
+    OriginalName="System Logs" />
+  <ConditionTag
+    BackgroundColor="#990e2a"
+    Name="Groups"
+    Comment=""
+    OriginalName="Groups" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="Security Templates"
+    Comment=""
+    OriginalName="Security" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Environment"
+    Comment=""
+    OriginalName="Environment" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Security Settings"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="API"
+    Comment="" />
+</CatapultConditionTagSet>

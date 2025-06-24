@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Blocked">
+    <head>
+        <link href="../../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Work with Cluster Sets - Analytics Screen</title>
+        <link href="../../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Work with Cluster <MadCap:annotation MadCap:createDate="2022-06-09T11:06:34.4619249-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="This topic will be deleted" MadCap:editor="ddavidson" MadCap:editDate="2022-06-09T11:06:43.1806345-04:00">Sets</MadCap:annotation></h1>
+        <h2>Clustering Overview</h2>
+        <p class="BodyText">A<i> cluster</i> is a group of conceptually similar documents existing together in a tree-type hierarchy. <MadCap:variable name="Primary.Name" /> automatically applies a descriptive title to each document cluster  without requiring user knowledge or input within the data set.</p>
+        <p class="BodyText"><i>Cluster sets</i> are groups of clusters that are  visually represented through color coding in the concept wheel shown in the Visual Search dashboard.</p>
+        <p class="BodyText">
+            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_ConceptWheel.png" class="Thumbnail_Popup" />
+        </p>
+        <p MadCap:conditions="Primary.Blocked">The following example shows how clusters display in <MadCap:variable name="Primary.IPRO" /> <MadCap:variable name="Primary.Eclipse" />.</p>
+        <p class="BodyText" MadCap:conditions="Primary.Blocked">
+            <img src="../../../../../Graphics/ADD_Review_Graphics/Clustering-Ex_Web.gif" class="Thumbnail" />
+        </p>
+        <p>Clustering is based on an algorithm that finds the general major groupings and minor groupings of the data and presents cluster results in a balanced hierarchy. The number of cluster levels, size, and other settings can be adjusted before a cluster is created. You may choose to cluster the entire case or a selected saved search.</p>
+        <p> For more information about the concept wheel, see <MadCap:xref href="AR_Define_a_Visual_Search.htm">Define a Visual Search.</MadCap:xref></p>
+        <h2>Before You Begin</h2>
+        <p class="BodyText">Planning will bring you the greatest success in defining <MadCap:variable name="Primary.IPRO" /> Analytics for each case. To familiarize yourself with required information and/or available options, “walk through” the <MadCap:variable name="Primary.IPRO" /> Analytics configuration function as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">You must understand your case data, case documents, and reviewer tasks. For example, review cases and discuss with reviewers the types of clusters and categories that will assist them as they do their jobs.</p>
+            </li>
+            <li>
+                <p class="BodyText">For categories: If an appropriate analytics index has not been created, complete <MadCap:xref href="../../../../Eclipse_Administration/Analytics/Ipro Analytics/Create_and_Manage_Search_IndexesIA.htm">Create and Manage Search Indexes</MadCap:xref>.</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Determine required <b>category sets</b>. Sets are distinguished by the number of allowed documents, similarity score, and/or which search is to be affiliated with the category set. For example, you may have the category set “Energy Issues.”</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Determine needed <b>categories</b>, that is, titles that represent the topics users must find in <MadCap:variable name="Primary.Name" />. Categories should be based on specific topics. For example, you may have categories of “Gas,” “Nuclear,” “Solar,” and so on.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Identify <b>examples</b> of content that exemplify the categories you create. Examples may be case documents, document text, and/or other content.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Start <MadCap:variable name="Primary.Name" /> and log in as a user who is a member of the Super Admin group, then select each command from the <MadCap:variable name="Primary.IPRO" /> Analytics menu that you will be using. Review the configuration screens and plan your approach.</p>
+            </li>
+        </ol>
+        <h2>Create a New Cluster Set</h2>
+        <p>Creating a cluster set in the <b>Analytics</b> screen is similar to how it was done in <MadCap:variable name="Primary.Eclipse" /> Administration. For more information, see <MadCap:xref href="../../../../Eclipse_Administration/Analytics/Ipro Analytics/Define_Analytic_Clusters_IA.htm">Define IPRO Analytics Clusters</MadCap:xref>.</p>
+        <p>The <b>Analytics Settings</b> screen allows you to manage cluster sets.</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>To create a cluster set, in the left bar click the <b>Analytics Settings</b> icon <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Analytics_Settings.png" style="vertical-align: sub;width: 42px;height: 42px;" /> .The <b>Analytics</b> screen appears.</p>
+            </li>
+            <p>
+                <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Cluster_Sets_.png" class="Thumbnail" />
+            </p>
+            <li>
+                <p>Click the <b>+</b> to the right of the <b>Cluster Sets</b> pane header. The Create New Cluster Set dialog box appears. </p>
+            </li>
+            <p>
+                <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Cluster_sets_plus_.png" class="Thumbnail" />
+            </p>
+            <p>
+                <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Create_New_Cluster_Set.png" class="Thumbnail" />
+            </p>
+            <li>
+                <p>Fill in the fields as appropriate.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../../Graphics/Review_Note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: To  apply content filters, you must first go into <MadCap:variable name="Primary.Eclipse" /> Administration and set up the option. This will create a check box that you can select in the Create New Cluster Set dialog box. For more information, see <MadCap:xref href="../../../../Eclipse_Administration/Analytics/Ipro Analytics/Create_and_Manage_FiltersIA.htm">Create and Manage Content Filters</MadCap:xref>.</p>
+                            <p class="Note">
+                                <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Create_New_Cluster_Set2.png" class="Thumbnail" />
+                                <br />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>Click <b>Create</b>. The Confirm Cluster Creation dialog box appears. The dialog box will inform you whether there are any documents that do not contain extracted text. Those documents will not be included in the cluster set. Click <b>Continue</b>.<br /><img src="../../../../../Graphics/ADD_Review_Graphics/AR_Confirm_Cluster_Creation.png" class="Thumbnail" style="font-weight: normal;" /><br /></p>
+            </li>
+            <li>
+                <p>Wait for the cluster set to generate. You can either watch the generation process in Job Manager or simply wait for it to finish through the <b>Analytics</b> screen. When it is complete, the cluster set details box will display <b>Complete</b>.</p>
+            </li>
+            <p>
+                <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Cluster Set_1_.png" class="Thumbnail" />
+            </p>
+            <li>
+                <p>If the cluster set fails to generate, the details box will display <b>Failed</b>. In addition, an error message will appear.<br /><img src="../../../../../Graphics/ADD_Review_Graphics/AR_Cluster_Set_2.png" class="Thumbnail" /></p>
+            </li>
+            <p>
+                <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Cluster_Set_Failed_.png" class="Thumbnail" />
+            </p>
+        </ol>
+        <h2>View the Cluster Set Tree</h2>
+        <p>The <b>Analytics Settings</b> screen, accessed by clicking the <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Analytics_Settings.png" style="vertical-align: sub;width: 44px;height: 44px;" /> icon in the left bar, allows you to view the cluster set tree.</p>
+        <p>
+            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Cluster_Sets_.png" class="Thumbnail" />
+        </p>
+        <p>To see the cluster set tree:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the left bar click the <b>Analytics Settings</b> icon <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Analytics_Settings.png" style="vertical-align: sub;width: 43px;height: 43px;" /> to create the Analytics for cluster sets. In the left pane, the list of cluster sets appears.</p>
+            </li>
+            <li>
+                <p>Select the appropriate cluster set and refresh the screen to show the cluster set tree.</p>
+            </li>
+            <p>
+                <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Cluster_Sets_.png" class="Thumbnail" />
+            </p>
+            <table cellspacing="0" style="mc-table-style: url('../../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../../Graphics/Review_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: If the cluster set does not contain a cluster tree or has failed to generate the cluster tree, a message similar to the following will pop up:</p>
+                        <p class="Note">
+                            <img src="../../../../../Graphics/ADD_Review_Graphics/AR_cluster_tree_error_msg.png" class="Thumbnail" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </ol>
+        <h2>Delete a Cluster Set</h2>
+        <ol>
+            <li>
+                <p>Click the <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Delete_icon.png" style="width: 32px; height: 37px; vertical-align: sub;" />icon at the top right of the cluster set details list. The Delete Cluster dialog box appears.<br /><img src="../../../../../Graphics/ADD_Review_Graphics/AR_Delete_Cluster_1.png" class="Thumbnail" /><br /></p>
+            </li>
+            <li>
+                <p>Click <b><img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Yes.png" style="vertical-align: sub;" /></b>.</p>
+            </li>
+            <li>
+                <p>If there are clusters within the set that contain dependencies, an error message dialog box will display to indicate that the cluster(s) cannot be deleted. The following shows one cluster contains dependencies:<br /><img src="../../../../../Graphics/ADD_Review_Graphics/AR_Delete_Cluster_Error_1.png" class="Thumbnail" /><br />Either click <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_OK_2.png" /> to close the dialog box, or to see what the dependency is, click <img src="../../../../../Graphics/ADD_Review_Graphics/AR_Btn_Copy_Dependencies.png" />. A screen displays that shows the code of the particular dependency. For example:<br /><img src="../../../../../Graphics/ADD_Review_Graphics/AR_Dependency_Code.png" /><br />In this case, the dependency is that the cluster is part of a saved search.</p>
+            </li>
+        </ol>
+        <h2>Manage Analytics Permissions</h2>
+        <p>Manage Analytics is the area in the System Manager where you govern how Analytics works. This is done through normal user permissions rather than Super Admin permissions.</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../../../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../../../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the name of the group you would like to edit. The group profile opens on the right side of the screen.</p>
+            </li>
+            <li>
+                <p>Click the <b>Edit</b> icon <img src="../../../../../Resources/Images/Icons/Edit_Icon.png"></img>. You are now able to modify the users, permissions, and cases for the selected group.</p>
+            </li>
+            <li>On the <b>Permissions</b> tab, expand the <b>Search and Review</b> section, then assign the Manage Analytics permission.   To learn more about the available permissions, see <MadCap:xref href="../../../../../System/Users and Groups/Permissions/Permissions_List.htm">Permissions List</MadCap:xref>.</li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><i style="font-weight: bold;">Related pages:</i>
+        </p>
+        <p>
+            <MadCap:xref href="../../../../Eclipse_Administration/Analytics/Ipro Analytics/Define_Analytic_Clusters_IA.htm">Define IPRO Analytics Clusters</MadCap:xref>
+        </p>
+    </body>
+</html>

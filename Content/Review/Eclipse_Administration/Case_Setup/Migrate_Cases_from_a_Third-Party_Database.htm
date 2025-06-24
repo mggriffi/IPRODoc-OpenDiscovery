@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Migrate Cases from a Third-Party Database</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Migrate Cases from a Third-Party Database" />Migrate Cases from a Third-Party Database</h1>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Eclipse Administration allows 
+		 you to migrate a case from Concordance® only if Concordance is 
+		 installed and you hold a valid license for it. </p>
+                    <p class="Note">The following procedures assume you are familiar 
+		 with Concordance and your existing cases.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">The following content can be migrated from Concordance 
+ .DCB files<span class="FootnoteSuperscript">[1]</span>:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>
+                Database fields
+            </p>
+            </li>
+            <li>
+                <p>
+                Tags
+            </p>
+            </li>
+            <li>
+                <p>
+                Redaction categories
+            </p>
+            </li>
+            <li>
+                <p>
+                Issue tags and/or notes
+            </p>
+            </li>
+            <li>
+                <p>Images: If using Concordance Image, the migration 
+	 will convert your image base, including annotations such as redactions. 
+	 The following annotations are not converted:</p>
+                <table cellspacing="0" width="40.612%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 49.61%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 50.39%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td style="padding-left: 3px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="BodyText">Hollow Box</p>
+                            <p class="BodyText">Hollow Ellipse</p>
+                        </td>
+                        <td style="padding-left: 3px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="BodyText">Solid Ellipse</p>
+                            <p class="BodyText">Line</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <p class="footnote"><span class="FootnoteSuperscript">[1]</span>If you 
+ have Concordance .DAT files, see <MadCap:xref href="../Import_Data/Import_Case_Data.htm">Import Case Data</MadCap:xref> for details on importing 
+ the data. If you have Concordance .CAT files, migrate each file comprising 
+ the .CAT file individually into the same Eclipse case. </p>
+        <p class="BodyText">In addition to migrating the case, Eclipse Administration 
+ makes it easy to evaluate and change the Concordance case definition as 
+ part of the case migration. Thus the efficiency of migration is combined 
+ with the ease of customizing the case to meet your needs.</p>
+        <p class="BodyText">Migrating a case includes six steps, as outlined in 
+ the Migrate from Concordance window and discussed in this section</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><a href="#Step_1:_Setting_Up_the_Migration">Step 
+	 1: Setting Up the Migration</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Step_2:_Mapping_Fields">Step 2: Mapping 
+	 Fields</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Step_3:_Viewing_Progress">Step 3: 
+	 Viewing Progress</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Step_4:_Viewing_Imported_Records">Step 
+	 4: Viewing Imported Records</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Step_5:_Viewing_Imported_Tags">Step 
+	 5: Viewing Imported Tags</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Step_6:_Viewing_Imported_Redaction_Categories">Step 
+	 6: Viewing Imported Redaction Categories</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Step_7:_Viewing_Errors">Step 7: Viewing 
+	 Errors</a>
+                </p>
+            </li>
+        </ul>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Warning.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Important: You 
+		 cannot save a portion of a case migration (such as your entries 
+		 for steps 1 and 2). If you exit Eclipse Administration before 
+		 completing all four steps, you will lose your work. </p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="Step_1:_Setting_Up_the_Migration"></a>Step 1: Setting Up the 
+ Migration</h2>
+        <h3>Preparation</h3>
+        <p class="BodyText">Familiarize yourself with the Concordance database 
+ and review the <span class="Bold">Migrate from Concordance</span> screens 
+ to determine how your Concordance data should be handled. If importing 
+ into an existing Eclipse case, review that case as well. </p>
+        <h3>Add Basic Information</h3>
+        <p class="BodyText">To start the migration process, add basic information 
+ for the case:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Start 
+ Eclipse Administration and log in as a user who is a member of the Super 
+ Admin group. </p>
+            </li>
+            <li>
+                <p>On the Case Management ribbon, select <span style="font-weight: bold;">Case Management</span> &gt; <span style="font-weight: bold;">Migrate 
+ Case</span> &gt; <span style="font-weight: bold;">Migrate from Concordance</span>.</p>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Step 
+ 1</span> tab. </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Select Concordance 
+ Database</span>: Click <img src="../../../Graphics/Admin_Graphics/Btn_Folder.png" alt="" border="0" class="button_inline" />, 
+ then navigate to and select the Concordance database (.DCB file). Click 
+ <span style="font-weight: bold;">OK</span>.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: Concatenated databases (.CAT 
+		 files) should not be migrated. However, you can migrate individual 
+		 .DCB files and/or import individual .DAT files for the databases 
+		 comprising a .CAT file into one Eclipse case. </p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>To import into a current case:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ the <span style="font-weight: bold;">Import into an Existing Case</span> 
+ option.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the needed managing client and case.</p>
+                    </li>
+                    <li>
+                        <p>Review 
+ field data on the right side of the tab. </p>
+                    </li>
+                    <li>
+                        <p>Skip 
+ to step 7.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To create a new case from the migrated data:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ the <span style="font-weight: bold;">Create a New Case</span> option.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the needed managing client.</p>
+                    </li>
+                    <li>
+                        <p>Complete 
+ the entries in the <span style="font-weight: bold;">Create a New Case</span> 
+ section. See the table in <a href="Step_1__Set_Up_a_Case.htm">Step 1: 
+ Setting Up a Case</a> for details.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Continue with one of the following procedures:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If 
+ you are creating a new Eclipse case: <a href="#Create_Map_Fields_for_a_New_Case">Create/Map 
+ Fields for a New Case</a>.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ you are migrating into an existing Eclipse case: <a href="#Step_2:_Mapping_Fields">Step 
+ 2: Mapping Fields</a>.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h3><a name="Create_Map_Fields_for_a_New_Case"></a>Create/Map Fields for 
+ a New Case</h3>
+        <p class="BodyText">If you are creating a new case, on the right side of 
+ the <span style="font-weight: bold;">Step 1</span> tab:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Review 
+ the Concordance fields. </p>
+            </li>
+            <li>
+                <p>For each field you want to map, click <img src="../../../Graphics/Admin_Graphics/Btn_RelationshipEdit_Web.gif" alt="" border="0" class="button_inline" />. </p>
+            </li>
+            <li>
+                <p>Complete the <span style="font-weight: bold;">Edit 
+ Field</span> dialog box to define the field. See <a href="Step_3__Define_Database_Fields.htm">Step 
+ 3: Defining Database Fields</a> for details on selections.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">OK</span>.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Tip:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="Note">Ignore Concordance fields that should not 
+			 be migrated. </p>
+                                </li>
+                                <li>
+                                    <p class="Note">To concatenate fields, ensure they are 
+			 all defined as the same field type.</p>
+                                </li>
+                                <li>
+                                    <p class="Note">Identify the fields to be system fields 
+			 and define them as FixedLengthText for now. (They will be 
+			 mapped to system field types in the next step.)</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>When fields are defined, ensure all system 
+ fields are mapped. If you skip this step, Eclipse will create the fields 
+ but they will not be mapped to any of the Concordance fields. See <a href="Step_3__Define_Database_Fields.htm" style="font-style: normal;">Step 3: Defining Database Fields</a> for 
+ details on system fields.</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Map System Fields</span>. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ the names of needed fields match those of system names but have not been 
+ mapped, click <span style="font-weight: bold;">Map by Field Name</span>. 
+ Any names that match (regardless of capitalization) will be mapped.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ map other fields, locate a system field that needs to be mapped in the 
+ <span style="font-weight: bold;">Eclipse Field</span> list, then double-click 
+ the corresponding <span style="font-weight: bold;">Load File Field</span> 
+ cell.</p>
+                    </li>
+                    <li>
+                        <p>From 
+ the field list, select the field that should be used as the system field.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps for all other system fields to be mapped.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">OK</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When finished, continue to <a href="#Step_2:_Mapping_Fields">Step 
+ 2: Mapping Fields</a>.</p>
+            </li>
+        </ol>
+        <h2><a name="Step_2:_Mapping_Fields"></a>Step 2: Mapping Fields</h2>
+        <h3>If creating a new case</h3>
+        <p class="BodyText">If you are creating a new case for the Concordance 
+ migration, use the <span style="font-weight: bold;">Step 2</span> tab 
+ to review the fields created in <span style="font-weight: bold;">Step 
+ 1</span> and complete migration choices: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p>If any 
+ field-mapping changes should be made, double-click the needed field in 
+ the <span style="font-weight: bold;">Eclipse Fields</span> column and 
+ select the correct field. </p>
+            </li>
+            <li>
+                <p>If any field(s) were defined in <span style="font-weight: bold;">step 
+ 1</span> that should not be migrated, clear the Include option for the 
+ field(s).</p>
+            </li>
+        </ul>
+        <h3>If importing into an existing case</h3>
+        <p class="BodyText">Complete one of the following methods (auto-select 
+ or manual) to map the fields in your Concordance case to the Eclipse case. 
+ Note: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p>
+                Some fields in the Concordance database can 
+	 be omitted (not mapped) if needed.
+            </p>
+            </li>
+            <li>
+                <p>
+                More than one field in the import file can 
+	 be mapped to a single field in the case (concatenated). For example, 
+	 the import file may have two fields to define an author’s name (First 
+	 Name, Last Name). In the Eclipse case, a single field may be used 
+	 for this information (Name).
+            </p>
+            </li>
+            <li>
+                <p>
+                If you will be concatenating fields, ensure 
+	 that those fields are of the same type.
+            </p>
+            </li>
+        </ul>
+        <h3 class="BodyText">Auto-select fields</h3>
+        <p class="BodyText">If you are importing into an existing case, Eclipse 
+ Administration can attempt to match the fields based on the field name. 
+ For example, if the Concordance case contains a field called IMGKEY and 
+ the case contains a field named IMGKEY, they will be automatically matched. 
+ </p>
+        <p class="BodyText">To auto-select fields: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>If you 
+ want to match by field name, ensure that your Concordance case includes 
+ field names in the header. In the Migrate from Concordance screen, click 
+ the <span style="font-weight: bold;">Step 2. Map Fields</span> tab.</p>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Auto-Select 
+ By Field Name</span> button.</p>
+            </li>
+            <li>
+                <p>Evaluate the matching to determine if:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>the 
+ auto-matching does not meet your needs, </p>
+                    </li>
+                    <li>
+                        <p>some 
+ fields cannot be matched (in which case, the word “Select” in the <span style="font-weight: bold;">Eclipse Field</span> column will be red), 
+ and/or some fields should not be included.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>For fields that should not be included, clear 
+ the <span style="font-weight: bold;">Include</span> option.</p>
+            </li>
+            <li>
+                <p>For other mapping problems, continue with <span style="font-style: italic;">Manually Match Fields</span> below.</p>
+            </li>
+            <li>
+                <p>When all fields to be included are mapped, 
+ continue with <a href="#Complete_Migration">Complete Migration</a>. </p>
+            </li>
+        </ol>
+        <h3><a name="Manually_Match_Fields"></a>Manually Match Fields</h3>
+        <p class="BodyText">To manually match the fields that have not been mapped 
+ or for which mapping needs to be corrected: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the 
+ Migrate from Concordance screen’s <span style="font-weight: bold;">Step 
+ 2</span> tab, evaluate the <span style="font-weight: bold;">Concordance 
+ Field</span> listing and sample data to determine which fields will be 
+ included in the import. </p>
+            </li>
+            <li>
+                <p>For each field to be migrated, ensure the <span style="font-weight: bold;">Include</span> option is selected. </p>
+            </li>
+            <li>
+                <p>For each included field, if the corresponding 
+ <span style="font-weight: bold;">Eclipse Field</span> listed is not correct, 
+ click the Eclipse field and choose the needed field type (new cases) or 
+ field name (existing cases). The list shows the case’s field names and 
+ types to assist you with matching.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" style="width: 496px;" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Tip: Selecting 
+		 a matching database field automatically selects the Include option 
+		 for you. </p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>You will be alerted if you concatenate fields 
+ (match two or more fields to a single Eclipse field); see the following 
+ figure. If it is correct to have the fields concatenated, select a <span style="font-weight: bold;">Merged Field Delimiter</span> if needed 
+ (bottom right section of the screen). If selected, the delimiter will 
+ be included in the merged data to identify the original field delineation(s).</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Admin_Graphics/ConcordMigration_MergedFieldEx.png" alt="" style="border: none;" border="0" />
+                </p>
+            </li>
+            <li>
+                <p>Repeat these steps for all fields to be included.</p>
+            </li>
+            <li>
+                <p>Continue with <span style="font-style: italic;">Complete 
+ Migration</span> below.</p>
+            </li>
+        </ol>
+        <h3><a name="Complete_Migration"></a>Complete Migration</h3>
+        <p class="BodyText">Complete the following steps to select additional options 
+ based on the content of the Concordance case being migrated and complete 
+ the migration:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Ensure 
+ that the <span style="font-weight: bold;">Step 2</span> tab is selected. 
+ The following options are at the bottom of this tab.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Tag Options</span>: 
+ If the Concordance file being migrated includes tag data, select from 
+ one of the following options:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Ignore Private Tags</span>: Select this 
+ option to not import any private tags in the Concordance case. If this 
+ option is not selected, Concordance private tags will become Eclipse public 
+ tags.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Make Root Level Tag Groups</span>: Select 
+ this option to import tags into a tag group named for the first level 
+ of a set of nested Concordance tags. If not selected, tags will be imported 
+ to the group “Imported Tags.”</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Issue Tags</span>: 
+ If the Concordance file being migrated includes issue tags and you want 
+ to import them, select the<span style="font-weight: bold;"> Include Issue
+ Tags</span> option. In addition, select one of the following options:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Include in Same Group as Doc Tags</span>: 
+ Select this option to include issue tags in tag groups defined for the 
+ case. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Create Issue Tag Group</span>: Select this 
+ option to create a new group specifically for issue tags. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Issue Notes</span>: 
+ If the Concordance file being migrated includes issue notes and you want 
+ to import them, select the <span style="font-weight: bold;">Include Issue 
+ Notes</span> option. In addition, select one of the following options:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Import into Field</span>: Select the field 
+ into which the notes will be imported.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Create New Field</span>: Enter a name for 
+ a new field into which the notes will be imported.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Options</span>: 
+ Choose the following options as needed:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Merged Field Delimite</span>r: If you have 
+ merged fields in <a href="#Manually_Match_Fields">Manually Match Fields</a>, 
+ ensure that the correct delimiter is selected. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Date Format</span>: Selected needed date 
+ option. If the Concordance date fields being migrated are true dates, 
+ they should be mapped to Eclipse DATE fields and the format should be 
+ Y/M/D. If dates are mapped to a text field, choose desired format.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Index after 
+ process completes</span>: Select this option to create the index used 
+ for text searching after the migration completes. To skip indexing now 
+ (for example, to save time), do not select the option. Indexes can be 
+ managed after data is imported as explained in <span style="font-style: italic;">Manage 
+ Case Search Indexes</span>. </p>
+            </li>
+            <li>
+                <p>When all options are selected, click<span style="font-weight: bold;"> 
+ Import Records</span>. Your Concordance database will be imported into 
+ Eclipse.</p>
+            </li>
+            <li>
+                <p>Continue with <span style="font-style: italic;">Step 
+ 3: Viewing Progress</span> below.</p>
+            </li>
+        </ol>
+        <h2><a name="Step_3:_Viewing_Progress"></a>Step 3: Viewing Progress</h2>
+        <p class="BodyText">To assess the migration from Concordance: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the 
+ Migrate from Concordance screen, click the <span style="font-weight: bold;">Step 
+ 3</span> tab. </p>
+            </li>
+            <li>
+                <p>Review import details as they are presented.</p>
+            </li>
+            <li>
+                <p>After the migration completes, click <span style="font-weight: bold;">View</span> to examine and/or save the 
+ import log. </p>
+            </li>
+            <li>
+                <p>Take any of the following actions to evaluate 
+ migration results:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><a href="#Step_4:_Viewing_Imported_Records" style="font-style: normal;">Step 4: Viewing Imported Records</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#Step_5:_Viewing_Imported_Tags">Step 5: Viewing Imported Tags</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#Step_6:_Viewing_Imported_Redaction_Categories">Step 6: Viewing 
+ Imported Redaction Categories</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><a href="#Step_7:_Viewing_Errors">Step 7: Viewing Errors</a><![CDATA[  ]]></p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2><a name="Step_4:_Viewing_Imported_Records"></a>Step 4: Viewing Imported 
+ Records</h2>
+        <p class="BodyText">Once data is migrated into Eclipse, complete these 
+ steps to view and verify record details: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the 
+ Migrate from Concordance screen, click the <span style="font-weight: bold;">Step 
+ 4</span> tab. </p>
+            </li>
+            <li>
+                <p>Possible activities include:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Reviewing 
+ the <span style="font-weight: bold;">Documents</span> list and document/page 
+ details</p>
+                    </li>
+                    <li>
+                        <p>Deleting 
+ a document or page</p>
+                    </li>
+                    <li>
+                        <p>Checking/changing 
+ image (or native) file path</p>
+                    </li>
+                    <li>
+                        <p>Viewing 
+ images</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2><a name="Step_5:_Viewing_Imported_Tags"></a>Step 5: Viewing Imported 
+ Tags</h2>
+        <p class="BodyText">Complete these steps to check tags in your migrated 
+ case: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the 
+ Migrate from Concordance screen, click the <span style="font-weight: bold;">Step 
+ 5</span> tab.</p>
+            </li>
+            <li>
+                <p>Review listed tags and make a note of any changes 
+ that might be required. </p>
+            </li>
+            <li>
+                <p>When finished, continue with <span style="font-weight: bold;">Steps</span><span style="font-weight: bold;">6</span> and/or<span style="font-weight: bold;"> 
+ 7</span> (below). </p>
+            </li>
+        </ol>
+        <h2><a name="Step_6:_Viewing_Imported_Redaction_Categories"></a>Step 6: 
+ Viewing Imported Redaction Categories</h2>
+        <p class="BodyText">Complete these steps to check redactions for your migrated 
+ case: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the 
+ Migrate from Concordance screen, click the <span style="font-weight: bold;">Step 
+ 6</span> tab.</p>
+            </li>
+            <li>
+                <p>Review listed redactions and make a note of 
+ any changes that might be required. </p>
+            </li>
+            <li>
+                <p>Continue with <span style="font-weight: bold;">Step 
+ 7</span> below.</p>
+            </li>
+        </ol>
+        <h2><a name="Step_7:_Viewing_Errors"></a>Step 7: Viewing Errors</h2>
+        <p class="BodyText">The Errors tab provides detailed information about 
+ migration errors. When errors exist, the tab name is red and the number 
+ of errors is indicated. To view errors: </p>
+        <ol class="NumblListBody">
+            <li>
+                <p>In the 
+ Migrate from Concordance screen, click the <span style="font-weight: bold;">Errors</span> 
+ tab. </p>
+            </li>
+            <li>
+                <p>To view the first 25 entries in the error log 
+ file, click <span style="font-weight: bold;">Display Errors</span>. One 
+ line for each of the errors displays, indicating the type of error.</p>
+            </li>
+            <li>
+                <p>To view specific errors relating to the load 
+ file, click <span style="font-weight: bold;">Create Loadfile View</span>. 
+ Records with errors will be listed with problem data listed in red. </p>
+            </li>
+            <li>
+                <p>To save the load file, click <span style="font-weight: bold;">Export</span> 
+ and specify a location for the file. This file is named “FieldErrors” 
+ and will be a .DAT or .LFP file, depending on the type of errors. Use 
+ this file to correct load file errors, then re-import and overlay problem 
+ records. </p>
+            </li>
+        </ol>
+    </body>
+</html>

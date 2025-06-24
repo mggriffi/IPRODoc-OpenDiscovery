@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports,Primary._FixedMulti-Level,Primary.Eclipse,Primary.Review" style="mc-master-page: url('../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Custom Eclipse Reports</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create Custom Eclipse Reports" />Create Custom Eclipse Reports</h1>
+        <p class="BodyText">Administrators who are proficient in SQL and have appropriate 
+ permissions for the Eclipse database can create custom reports in SQL 
+ that will be listed in the Eclipse Reports menu. In the following example, 
+ the company “MyCo” has added a custom report on tags:</p>
+        <p class="Image">
+            <img src="../Graphics/Admin_Graphics/Report-CustomEx.png" alt="" border="0" class="Thumbnail" />
+        </p>
+        <p class="BodyText">Notes regarding custom reports:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                Custom reports are created using SQL stored 
+	 procedures (SPROCs).
+            </p>
+            </li>
+            <li>
+                <p>
+                Custom reports are based on any data stored 
+	 in the case database in SQL.
+            </p>
+            </li>
+            <li>
+                <p>
+                Custom reports must run automatically when 
+	 they are selected—they cannot request any user input (for example, 
+	 a date range).
+            </p>
+            </li>
+            <li>
+                <p>
+                Custom reports are included alphabetically 
+	 in the Eclipse Reports menu.
+            </p>
+            </li>
+            <li>
+                <p>
+                Custom reports appear only in Eclipse Web, 
+	 not in Eclipse Administration.
+            </p>
+            </li>
+            <li>
+                <p>
+                The ability for users to see/run custom reports 
+	 is governed by same permission as standard reports (by the User Interface 
+	 Access &gt; Reports permission).
+            </p>
+            </li>
+        </ul>
+        <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../Graphics/Review_Warning.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">CAUTION! 
+		 Only administrators with a strong understanding of SQL and experience 
+		 working with SQL stored procedures should perform the following 
+		 procedure. Administrators without this background may unintentionally 
+		 corrupt the Eclipse case database.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">The following procedure does not include specific SQL 
+ steps. If you do require assistance in adding the custom report to Eclipse, 
+ please contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank">IPRO Support</a> for assistance. </p>
+        <p class="BodyText">To add a custom report:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Preparation:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Identify 
+ the details to be included in the report. Any case data (fields, etc.) 
+ can be included.</p>
+                    </li>
+                    <li>
+                        <p>Determine 
+ a name for the report. It is highly recommended that names for custom 
+ reports begin with your company’s name or follow some other convention 
+ that allows them to be easily distinguished from standard reports. </p>
+                    </li>
+                    <li>
+                        <p>Determine 
+ a unique report ID; all custom report IDs should be numbered 2000 or higher 
+ to avoid conflicts with standard reports. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the SQL Server Management Studio’s Object Explorer, locate the Eclipse 
+ case database. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Create a “UserDefinedReports” schema for the 
+ Eclipse database. </p>
+            </li>
+            <p class="Image">
+                <img src="../Graphics/Admin_Graphics/Report-Custom_NewSchema.png" alt="" border="0" class="Thumbnail" />
+            </p>
+            <li>
+                <p>Create a new stored procedure defining the 
+ needed report. The stored procedure name must match the report name.</p>
+            </li>
+            <p class="Image">
+                <img src="../Graphics/Admin_Graphics/Report-Custom_NewSProc.png" alt="" border="0" class="Thumbnail" />
+            </p>
+            <li>
+                <p>After the stored procedure has been created, 
+ references to it must be added to the FieldDisplayReports and FieldDisplays 
+ tables in the Eclipse case database. See the following examples. </p>
+            </li>
+            <p class="BodyTextIndent"><span style="font-weight: bold;">Example 1</span>: 
+ Adding to the FieldDisplayReports table</p>
+            <p class="BodyTextIndent"><span class="Code">IF NOT EXISTS(SELECT * FROM 
+ dbo.FieldDisplayReports WHERE ReportID = </span><span class="Code" style="font-style: italic;color: #ff0000;font-weight: bold;">2000</span><span class="Code">) INSERT INTO dbo.FieldDisplayReports (ReportID, ReportName) 
+ VALUES(</span><span class="Code" style="font-style: italic;color: #ff0000;font-weight: bold;">2000</span><span class="Code">, 
+ ‘</span><span class="Code" style="font-style: italic;color: #ff0000;font-weight: bold;">MyReport</span><span class="Code">’)</span>
+            </p>
+            <p class="BodyTextIndent">where</p>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 650px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="BodyText" style="text-align: right;font-style: italic;"><span style="color: #ff0000;font-weight: bold;">2000</span> = </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="BodyText">The report ID as defined in your stored 
+		 procedure. Review the guidelines in step 1 if needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="BodyText" style="text-align: right;font-style: italic;"><span style="color: #ff0000;font-weight: bold;">MyReport</span> =</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="BodyText">The name of the report as defined in your 
+		 stored procedure. Review the guidelines in step 1 if needed.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="BodyTextIndent"><span style="font-weight: bold;">Example 2</span>: 
+ Adding to the FieldDisplays table </p>
+            <p class="BodyTextIndent"><span class="Code">INSERT INTO dbo.FieldDisplays 
+ (DisplayName,DisplayTypeId,</span>
+            </p>
+            <p class="BodyTextIndent"><span class="Code">UserKey,DisplayOrder,GroupByFieldId,SortByFieldId,</span>
+            </p>
+            <p class="BodyTextIndent"><span class="Code">ReportId,CreatedByKey,CreatedDate,ModifiedByKey,</span>
+            </p>
+            <p class="BodyTextIndent"><span class="Code">ModifiedDate)SELECT reportname,5,0,ROW_NUMBER()</span>
+            </p>
+            <p class="BodyTextIndent"><span class="Code">OVER(ORDER BY ReportName ASC),0,0,r.ReportId,0,GETDATE(),0,GETDATE()FROM 
+ dbo.FieldDisplayReports r LEFT OUTER JOIN dbo.FieldDisplays d ON d.ReportId 
+ = r.ReportId WHERE d.DisplayId IS NULL</span>
+            </p>
+            <li>
+                <p>After all stored procedure tasks are complete 
+ in the SQL Server Management Studio, inform reviewers about the new report 
+ and its purpose.</p>
+            </li>
+        </ol>
+        <p class="BodyTextIndent">If reviewers are working in the case for which 
+ the report was created, they must re-open the case in order to see/run 
+ the new report.</p>
+    </body>
+</html>

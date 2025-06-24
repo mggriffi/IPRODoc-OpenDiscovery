@@ -1,0 +1,201 @@
+/*<meta sourceDocument="C:\Users\mcohen\Documents\IPRO Third-Party License Agreements.xlsx" />*/
+
+table
+{
+	padding: 0;
+	margin: 0;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+col
+{
+	width: 65px;
+	padding: 0;
+	margin: 0;
+}
+
+tr
+{
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+td
+{
+	font-family: Calibri;
+	font-size: 11px;
+	background: white;
+	color: black;
+	padding: 0px;
+	border: none;
+}
+
+.Default
+{
+	vertical-align: bottom;
+	font-family: "Calibri", "Swiss";
+	font-size: 11px;
+	color: #000000;
+}
+
+.s57
+{
+	font-family: "Calibri", "Swiss";
+	font-size: 11px;
+	color: #0563C1;
+	text-decoration: underline;
+}
+
+.s58
+{
+	font-family: "Calibri", "Swiss";
+	font-size: 11px;
+	color: #0563C1;
+	text-decoration: underline;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.s59
+{
+	text-align: left;
+	vertical-align: bottom;
+	font-family: "Roboto", "";
+	color: #000000;
+}
+
+.s60
+{
+	font-family: "Calibri", "Swiss";
+	font-size: 11px;
+	color: #0563C1;
+	text-decoration: underline;
+	text-align: left;
+	vertical-align: bottom;
+	font-family: "Roboto", "";
+	color: #0563C1;
+	text-decoration: underline;
+}
+
+.s61
+{
+	font-family: "Roboto", "";
+	color: #000000;
+}
+
+.s62
+{
+	text-align: left;
+	vertical-align: bottom;
+	font-family: "Roboto", "";
+}
+
+.s63
+{
+	font-family: "Roboto", "";
+	color: #24292F;
+}
+
+.s64
+{
+	font-family: "Roboto", "";
+	color: #333333;
+}
+
+.s65
+{
+	font-family: "Roboto", "";
+	color: #000000;
+}
+
+.s66
+{
+	font-family: "Calibri", "Swiss";
+	font-size: 11px;
+	color: #0563C1;
+	text-decoration: underline;
+	font-family: "Roboto", "";
+	color: #0563C1;
+	text-decoration: underline;
+}
+
+.s67
+{
+	font-family: "Calibri", "Swiss";
+	font-size: 11px;
+	color: #0563C1;
+	text-decoration: underline;
+}
+
+.s68
+{
+	vertical-align: bottom;
+	font-family: "Roboto", "";
+	color: #000000;
+}
+
+.s69
+{
+	font-family: "Calibri", "Swiss";
+	font-size: 11px;
+	color: #0563C1;
+	text-decoration: underline;
+	vertical-align: bottom;
+	font-family: "Roboto", "";
+	color: #0563C1;
+	text-decoration: underline;
+}
+
+.s70
+{
+	text-align: left;
+	vertical-align: bottom;
+	font-family: "Roboto", "";
+	color: #000000;
+}
+
+.s71
+{
+	vertical-align: top;
+	font-family: "Roboto", "";
+	color: #000000;
+}
+
+.s72
+{
+	vertical-align: middle;
+	font-family: "Roboto", "";
+	color: #333333;
+}
+
+.s73
+{
+	text-align: left;
+	vertical-align: bottom;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #CCCCCC;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #CCCCCC;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: #CCCCCC;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: #CCCCCC;
+	font-family: "Roboto", "";
+	color: #000000;
+}
+
+.s74
+{
+	text-align: left;
+	vertical-align: bottom;
+	font-family: "Roboto", "";
+	color: #FFFFFF;
+	background-color: #595959;
+}
+

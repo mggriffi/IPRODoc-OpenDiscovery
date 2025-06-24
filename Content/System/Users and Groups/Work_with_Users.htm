@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Work with Users</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Work with <MadCap:annotation MadCap:createDate="2023-02-21T08:20:14.7878859-05:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="When released. block Import users from Active Directory and import users from file." MadCap:editor="ddavidson" MadCap:editDate="2023-11-17T16:09:58.8164962-05:00">Users</MadCap:annotation></h1>
+        <p>Administrators have the option to create individual users, import users from a file or import from active directory. Administrators can also monitor current users in Review. To create individual users, see <MadCap:xref href="Create_New_User.htm">Create New User</MadCap:xref>. The other options are covered below.</p>
+        <h2>
+            <MadCap:toggler targets="ImportUsersFromFile">Import Users from a File</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="ImportUsersFromFile">
+            <p>Rather than creating users manually, you can import multiple users using a .CSV or .JSON file. A header row may be included in the file, but it is not necessary. Super Admin permissions are required to import users from a file.</p>
+            <h3>CSV Format</h3>
+            <p>The .CSV file must be in the following format prior to importing:</p>
+            <p class="Code">FirstName , LastName , UserName/Email , Managing Client , Password , true/false , true/false, true/false</p>
+            <p>The last three items in each row ('true" or "false") identify whether the user is Active, a Review User, and whether or not they need to change their password upon signing into the platform for the first time. Inactive users cannot log in.</p>
+            <p>For example:</p>
+            <p class="Code">Hubert, Quick , hquick@globex.com , Lawyers Inc , MyPassword@321 , True , True, False</p>
+            <p>If needed, these details can be changed after the users are imported.</p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" style="width: 61px;height: 61px;" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Important: When entering the managing client name, ensure it is entered exactly as it exists with proper spelling, spaces, and case. If the managing client name differs, the table will show a blank space in the Managing Client column. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>JSON Format</h3>
+            <p>The .JSON file must be in the following format prior to importing:</p>
+            <p class="Code">[</p>
+            <p class="Code">{</p>
+            <p class="Code">"FirstName": " ",</p>
+            <p class="Code">"LastName": " ",</p>
+            <p class="Code">"Username": " ",</p>
+            <p class="Code">"Password": " ",</p>
+            <p class="Code">"IsActive": true/false,</p>
+            <p class="Code">"ForceNewPassword": true/false</p>
+            <p class="Code">}</p>
+            <p class="Code">]</p>
+            <p>Separate users in the file by adding a comma between the ending } of one user and the starting { of the next. The example below demonstrates the formatting when adding two users.</p>
+            <p class="Code">[</p>
+            <p class="Code">{</p>
+            <p class="Code">"FirstName": "Hubert",</p>
+            <p class="Code">"LastName": "Quick",</p>
+            <p class="Code">"Username": "hquick@globex.com",</p>
+            <p class="Code">"Password": "MyPassword@321",</p>
+            <p class="Code">"IsActive": true,</p>
+            <p class="Code">"ForceNewPassword": false</p>
+            <p class="Code">},</p>
+            <p class="Code">{</p>
+            <p class="Code">"FirstName": "Ashley",</p>
+            <p class="Code">"LastName": "Gordon",</p>
+            <p class="Code">"Username": "agordon@globex.com",</p>
+            <p class="Code">"Password": "MyPassword@123",</p>
+            <p class="Code">"IsActive": false,</p>
+            <p class="Code">"ForceNewPassword": false</p>
+            <p class="Code">}</p>
+            <p class="Code">]</p>
+            <p>If needed, these details can be changed after the users are imported.</p>
+            <h3>Import File</h3>
+            <p>To import the users from a .CSV or .JSON file, do the following:</p>
+            <ol class="NumbListBody">
+                <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+                <li MadCap:conditions="System_Nav.Users">
+                    <p>The System Manager opens. In the left pane of the System Manager, the <b>Users</b> tab opens by default.</p>
+                    <p>
+                        <img src="../../Graphics/System_Graphics/Left_Nav_Users.png" class="Thumbnail" />
+                    </p>
+                </li>
+            </ol>
+            <ol start="3">
+                <li>
+                    <p>Click the <img src="../../Graphics/Icons/Vertical_dots.png" class="ReduceButtonSize" /> button at the top of the screen. From the menu that appears, select  <b>Import Users from File</b>. The <b>Imort Users from File</b> page appears.</p>
+                </li>
+                <li>Click <b>Browse</b>. A file explorer opens.</li>
+                <li>Browse to the .CSV or .JSON file and click <b>Open</b>. The File Name field populates automatically. Click <b>Next</b>.</li>
+                <li>The Manage Import page opens, displaying the list of users found in the file. Make any needed changes to the list. When finished, complete the import by selecting <b>Save</b>.</li>
+            </ol>
+        </div>
+        <h2>
+            <MadCap:toggler targets="ImportUsersAD">Import Users from Active Directory</MadCap:toggler>
+        </h2>
+        <p class="BodyText">Super Admin permissions are required to import users from Active Directory.</p>
+        <p>If your site uses Microsoft’s Active Directory® service to manage network access, <MadCap:variable name="Primary.Name First" /> users can be based on the Active Directory users. In this case, Active Directory names and passwords will be used for <MadCap:variable name="Primary.Name" /> access and can also be used for other <MadCap:variable name="Primary.Name" /> products. These names/passwords do not have to meet <MadCap:variable name="Primary.Name" /> user name and password requirements. Active Directory user credentials (first name, last name, username/email, and password) cannot be modified within <MadCap:variable name="Primary.Name" />. Pre-configuration is required before using this optional feature. Please contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank">IPRO Support</a> for additional information about configuration procedures. </p>
+        <p>Before you import users via Active Directory:</p>
+        <ol>
+            <li>
+                <p>Ensure 
+ that you have needed details for the users you will be creating:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Active 
+ Directory domains/groups to which these users belong.</p>
+                    </li>
+                    <li>
+                        <p>Managing 
+ client and user type needed for users (per Active Directory domain or 
+ group). Although user configuration, including these settings, can be 
+ completed later, doing so now allows you to apply settings to multiple 
+ new users at one time. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On 
+ your site’s website, log in as a user who is a member of the Super 
+ Admin group. </p>
+            </li>
+        </ol>
+        <h3>Active Directory</h3>
+        <p class="BodyText">To create users based on Active Directory users: </p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Users">
+                <p>The System Manager opens. In the left pane of the System Manager, the <b>Users</b> tab opens by default.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Users.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Click the <img src="../../Graphics/Icons/Vertical_dots.png" class="ReduceButtonSize" /> button at the top of the screen. From the menu that appears, select <b>Import Users from Active Directory</b>. The Import Users from Active Directory page appears.</p>
+            </li>
+            <li>
+                <p>On the Browse Directory step, locate the needed users by navigating to the appropriate directory. As you click through the various directories, a path displays above the list showing the chain of folders you have clicked to reach your current location. The path will display in the following format: </p>
+                <p class="Code">Directory / Sub-Directory / Sub-Directory / Sub-Directory / Sub-Directory</p>
+                <p>The number of sub-directories in the path will correspond to the number of folders you have clicked. To return to a previous folder, click on the name of that folder in the path. </p>
+            </li>
+            <li>
+                <p>Once you have located the needed users, click the <b>Add Users</b> button. The Manage Import page opens.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: You can only add one folder's worth of users at a time. If you need to import users located in numerous directories, you will have to proceed through these steps for each separate directory.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>On the Manage Import page, select the check box next to each user you would like to make active. If a user is not made active, they will not be able to access the application. Remove users from the import list by selecting the <b>X</b> associated with that user.</li>
+            <li>Once the user list on the Manage Import page looks correct, click <b>Save</b>.</li>
+        </ol>
+        <h2>Display Active Review Users</h2>
+        <p>Super Admin permissions are required to review active users. Current users will be displayed allowing administrators to see who is actively logged into Review.</p>
+        <ol>
+            <li>
+                <p>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform. </p>
+            </li>
+            <li MadCap:conditions="System_Nav.Users">
+                <p>The System Manager opens. In the left pane of the System Manager, the <b>Users</b> tab opens by default.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Users.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click the <img src="../../Graphics/Icons/Vertical_dots.png" class="ReduceButtonSize" /> button at the top of the screen. From the menu that appears, select <b>Display Active Review Users</b>.</p>
+                <p>
+                    <img src="User_ActiveReview.png" class="Thumbnail" />
+                </p>
+                <p>The <b>Active Review Users</b> page appears. Administrators are able to quickly search for users by name, and sort by the available column headings.</p>
+                <p>
+                    <img src="Users_page.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: The Report does not account for users idle, users who closed out of the browser or selected log out. This will refresh every 4 minutes for those users logging out in the two different ways.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Modify_User_Details.htm">Modify User Details</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Delete_Users.htm">Delete Users</MadCap:xref>
+        </p>
+    </body>
+</html>

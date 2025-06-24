@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Review" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Review_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create a TAR Project</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create a TAR Project" />Create a TAR Project</h1>
+        <h2>Preparation</h2>
+        <p class="BodyText">TAR success begins with planning. As an  administrator, 
+ consider the following items before implementing TAR: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">Identify 
+ the <span style="font-weight: bold;">goals</span> of the TAR review.</p>
+            </li>
+            <li>
+                <p class="BodyText">Prepare 
+ <span style="font-weight: bold;">guidelines</span> for reviewers who will participate in the TAR review. Guidelines should help reviewers understand their role and the tasks they must perform.
+ </p>
+            </li>
+        </ul>
+        <h2><a name="TAR_Project_Configuration"></a>TAR Project Configuration</h2>
+        <p class="BodyText">To configure a TAR project:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Get started:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Review 
+ <a href="AR_Manage_TAR_Projects.htm">Manage TAR Projects</a>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Start 
+ <MadCap:variable name="Primary.ProdName_Review" /> and log in as an administrator. </p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Open 
+ the case for which the TAR project is being created. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">In the <span style="font-weight: bold;">Enter Case</span> pane, click the <span style="font-weight: bold;">TAR Project Setup</span> tab, as shown in the following figure:</p>
+                <p class="BodyText">
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_TAR_Project_Setup.png" />
+                </p>
+            </li>
+            <li>
+                <p class="BodyText">Complete basic TAR Project Settings:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p class="BodyText"><span style="font-weight: bold;">Project Name</span>: enter a unique name 
+ of up to 50 characters for the TAR project. Alphanumeric characters and 
+ the underscore character are allowed.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText"><span style="font-weight: bold;">Project Prefix</span>: enter a unique prefix 
+ of up to 10 characters. Alphanumeric characters and the underscore character 
+ are allowed. This prefix helps administrators and reviewers 
+ identify TAR components within Eclipse, including coding forms, tags, 
+ review passes, and so on. </p>
+                    </li>
+                    <p class="BodyText">TAR components begin with 
+ a prefix of “TAR_,” to which this entry is appended. For example, if you 
+ enter a prefix of “ABC1,” the coding form created for this TAR project 
+ is then named “TAR_ABC1.”</p>
+                    <li>
+                        <p class="BodyText"><span style="font-weight: bold;">Analytic Index</span>: select the  
+ Analytics index required for this TAR project.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="BodyText">Scroll down in the TAR Project Settings form 
+ until the bottom of the form is visible. </p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: The Coding section of the 
+		 screen and review pass names is filled in automatically as 
+		 the project is defined. </p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p class="BodyText">Review the default <span style="font-weight: bold;">Training 
+ Set</span>, <span style="font-weight: bold;">Validation Rounds</span>, 
+ and <span style="font-weight: bold;">Certificate Set</span> configurations 
+ (see the following figure), then take one of the following actions:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p class="BodyText">Accept 
+ the default settings: skip to step 9.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Change 
+ the settings: continue to step 6 and/or step 7 as required.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="BodyText">To change the batch size for the training set, 
+ enter the desired number (number of documents) in the <span style="font-weight: bold;">Training 
+ Set Batch Size</span> field. </p>
+            </li>
+            <p class="Image">
+                <img src="../../../../Graphics/ADD_Review_Graphics/AR_Scr_TAR_Pass_Settings.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p class="BodyText">To change the sampling criteria for the <span style="font-weight: bold;">Validation Round</span>, select the sampling 
+ type (<span style="font-weight: bold;">Fixed Size</span> or <span style="font-weight: bold;">Statistical</span>) 
+ and associated options as described in the table on the next page. </p>
+            </li>
+            <li>
+                <p class="BodyText"><span style="font-weight: bold;">Permissions</span>: 
+ If the coding form and review passes is to be limited to certain user 
+ groups:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">In the <span style="font-weight: bold;">Permissions</span> 
+ area (on the right side of the window), click <span style="font-weight: bold;">Add/Remove 
+ Groups</span>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Select required groups and click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: To make a TAR project available 
+		 to all groups currently defined for the case, click <span style="font-weight: bold;">Select 
+		 All</span>. The project will be unavailable to groups added after 
+		 this selection (unless you add them). Do not apply security to individual TAR review 
+		 passes or coding forms; you can control access to these components through 	TAR project permissions.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p class="BodyText">When the project definition is complete, click 
+ <span style="font-weight: bold;">Save</span>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

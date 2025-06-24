@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedList,Primary.Admin" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>FAQ: Single Sign On and Multi-Factor Authentication</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage ADD Settings" />FAQ: Single Sign-on and Multi-Factor Authentication</h1>
+        <p>Below are some frequently asked questions related to Single Sign-on (SSO) and Multi-Factor Authentication (MFA). Note that Multi-Factor Authentication and Two-Factor Authentication are sometimes used interchangeably. For instructions on setting up SSO or MFA, see the related topics linked below.</p>
+        <h2>Single Sign-on</h2>
+        <p><b>Which 3rd party provider can I use for Single Sign-on?</b>
+        </p>
+        <p MadCap:targetName="3rd Party"> <MadCap:variable name="Primary.IPRO" /> supports any 3rd party identity provider that uses OpenID Connect.</p>
+        <p>&#160;</p>
+        <p><b>Can I enable Single Sign-on for just some of my end users?</b>
+        </p>
+        <p MadCap:targetName="Enable for some users">Yes, single sign-on can be enabled in the user page. There is also an option to “migrate” all users to log in through single sign-on; you can then go back to specific users and disable their use of an external identity provider.</p>
+        <p>&#160;</p>
+        <p><b>What are some common 3rd party Single Sign-on apps?</b>
+        </p>
+        <p MadCap:targetName="Common SSO apps"> Microsoft, Google, Apple, Okta, Ping</p>
+        <p>&#160;</p>
+        <p><b>Are there any major/common Single Sign-on technologies we won't support?</b>
+        </p>
+        <p MadCap:targetName="SSOs not supported">Assuming the Identity Provider supports OpenID Connect then there should not be any issue.</p>
+        <p>&#160;</p>
+        <p><b>How long will it take to set up Single Sign-on?</b>
+        </p>
+        <p MadCap:targetName="How long to set up"> If you have access to your identity provider’s admin console, then it should only take a few minutes to copy over the necessary info for establishing Single Sign-on.</p>
+        <p>&#160;</p>
+        <p><b> What is OpendID Connect?</b>
+        </p>
+        <p MadCap:targetName="OpenID"> OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner.  https://openid.net/connect/</p>
+        <p>&#160;</p>
+        <p><b>What is OAuth 2.0?</b>
+        </p>
+        <p MadCap:targetName="OAuth 2">OAuth 2.0, is a framework, specified by the IETF in RFCs 6749 and 6750 (published in 2012) designed to support the development of authentication and authorization protocols. It provides a variety of standardized message flows based on JSON and HTTP; OpenID Connect uses these to provide Identity services.  https://openid.net/connect/faq/</p>
+        <p>&#160;</p>
+        <p><b>Does Single Sign-on support SAML authentication?</b>
+        </p>
+        <p MadCap:targetName="SAML">No, SAML is not supported</p>
+        <p>&#160;</p>
+        <p><b>Can I use one provider for Single Sign-on and another provider for Multi-Factor Authentication?</b>
+        </p>
+        <p MadCap:targetName="SSO and MFA providers"> If you decide to enable single sign-on through a third-party identity provider, multi-factor authentication will be managed by the identity provider, if configured to do so. There is no “provider” for multi-factor authentication, so once it has been enabled, your users are free to use any authenticator app to generate a unique token.</p>
+        <p>&#160;</p>
+        <p><b>If I enable SSO do I also need to enable MFA?</b>
+        </p>
+        <p MadCap:targetName="Enable both SSO and MFA"> No, both are independent. In fact, single sign-on users will not have multi-factor authentication enforced upon them if it’s enabled. For these users, if multi-factor authentication is desired it needs to be enforced by the third-party identity provider itself.</p>
+        <p>&#160;</p>
+        <p><b>What happens if I'm interfacing with multiple companies using <MadCap:variable name="Primary.Name"></MadCap:variable>?  IE, I have a case on <MadCap:variable name="Primary.IPRO"></MadCap:variable>'s Services environment and am also doing contract work with another service provider using <MadCap:variable name="Primary.IPRO"></MadCap:variable>?</b>
+        </p>
+        <p MadCap:targetName="Multiple companies"> There can only be one identity provider configured per system. So, in this example, you might have the ability to log in via SSO, but the contractor from the service provider would need to be set up with a username and password.</p>
+        <p>&#160;</p>
+        <p><b>To bolster security, I'd like to disable all access to <MadCap:variable name="Primary.IPRO"></MadCap:variable>'s local login page once SSO is enabled. Is there a way to do this?</b>
+        </p>
+        <div MadCap:targetName="LocalLogin">
+            <p>Yes. Admins have the ability to disable all local logins from <MadCap:variable name="Primary.IPRO" />'s login page once SSO is enabled. This can be configured through a setting in the appsettings.json file called “AllowLocalLogin,” which is set to a default value of “True.” When set to “True,” the <MadCap:variable name="Primary.IPRO" /> login page can be accessed by an SSO user when they include the following parameter at the end of the URL:</p>
+            <p class="Code"> /account/login?disableAutomaticRedirect=true. </p>
+            <p>When the “AllowLocalLogin” setting is changed to “False,” the local login page becomes completely inaccessible, ignoring that parameter. This prevents anyone from accessing <MadCap:variable name="Primary.IPRO" />'s local login page.</p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" MadCap:conditions="" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" MadCap:conditions="" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: To automatically redirect users to the login screen of the external identity provider, ensure the <b>Default Identity Provider</b> option is set when you configure the identity provider in <MadCap:variable name="Primary.Name" />.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>Multi-Factor Authentication</h2>
+        <p><b>Which 3rd party applications can I use for multi-factor authentication?</b>
+        </p>
+        <p MadCap:targetName="3rd Party MFA">You can use any mobile or desktop authentication app that provides a time-based, one-time passcode (also called TOTP, or “soft token”).</p>
+        <p>&#160;</p>
+        <p><b>Can I enable Multi-Factor Authentication for just some of my end users?</b>
+        </p>
+        <p MadCap:targetName="MFA for some users"> No, if you enable Multi-Factor Authentication, then it will be enabled for everyone.</p>
+        <p>&#160;</p>
+        <p><b>What are some common 3rd party Multi-Factor Authentication apps?</b>
+        </p>
+        <p MadCap:targetName="MFA apps"> Duo, Google Authenticator, Microsoft Authenticator, FreeOTP, Authy, Protectimus Smart OTP</p>
+        <p>&#160;</p>
+        <p><b>Are there any major/common Multi-Factor Authentication apps we won't support?</b>
+        </p>
+        <p MadCap:targetName="MFA apps not supported">So long as the application is using a time-based, one-time passcode it should work. However, some applications may perform better than others, and some may not work at all. If your users experience issues setting up or using their authentication app, you can reset their MFA sync and have them try again. If you still experience issues, have the user try a different authentication app.</p>
+        <p>&#160;</p>
+        <p><b>How long does it take to enable Multi-factor Authentication for my end users?</b>
+        </p>
+        <p MadCap:targetName="How long to set up MFA"> Enabling multi-factor authentication system-wide can be done with the click of a single button. Once enabled, each user will need to synchronize their account with an authentication app the next time they log in. This synchronization process should only take a minute.</p>
+        <p>&#160;</p>
+        <p><b>If I enable multi-factor authentication, can I revert if I change my mind?</b>
+        </p>
+        <p MadCap:targetName="Disable MFA">Yes, multi-factor authentication can be disabled at any time.</p>
+        <p>&#160;</p>
+        <p><b>If I enable MFA, do I also need to enable SSO?</b>
+        </p>
+        <p MadCap:targetName="Enable both MFA and SSO"> No, both are independent. In fact, multi-factor authentication will not be enforced upon users who log in using single sign-on through a third-party identity provider. For these users, if multi-factor authentication is desired it needs to be enforced by the third-party identity provider itself.</p>
+        <p>&#160;</p>
+        <p class="BodyText"><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p> <MadCap:xref href="Configure_Single_Sign_On.htm">Configure Single Sign On (SSO)</MadCap:xref></p>
+        <p>
+            <MadCap:xref href="Sign_In_Two_Factor_Authentication.htm">Sign In With Two Factor Authentication</MadCap:xref>
+        </p>
+    </body>
+</html>

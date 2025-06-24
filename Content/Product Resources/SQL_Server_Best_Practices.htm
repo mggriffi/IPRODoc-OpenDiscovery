@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-template-page: url('..\Resources\MasterPages\Admin_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>SQL Server Best Practices</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>SQL Server Best Practices</h1>
+        <h2>Installation</h2>
+        <p>It is recommended that you use the most current:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Hardware drivers.</p>
+            </li>
+            <li>
+                <p><MadCap:variable name="Primary.IPRO" />-supported Operating System (OS) version and service pack.</p>
+            </li>
+            <li>
+                <p><MadCap:variable name="Primary.IPRO" />-supported SQL Server version with the latest service pack and hotfixes.</p>
+                <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Consult with <MadCap:variable name="Primary.IPRO" /> Support or review the System Requirements</p>
+                                <p class="Note">documentation for all components to be installed and to confirm</p>
+                                <p class="Note">supported OS and SQL Server versions. Please check with <MadCap:variable name="Primary.IPRO" /> Support</p>
+                                <p class="Note">if you wish to install additional components or other third-party</p>
+                                <p class="Note">applications.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <h2>Security</h2>
+        <p>In order for <MadCap:variable name="Primary.IPRO" /> products to be able to create and modify cases, a SQL authenticated account must be created with the following permissions:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>bulkadmin</p>
+            </li>
+            <li>
+                <p>dbcreator</p>
+            </li>
+            <li>
+                <p>public</p>
+            </li>
+        </ul>
+        <p>When using multiple SQL servers:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Linked Server objects must be created on each server and connected to each other server in the environment.</p>
+            </li>
+            <li>
+                <p>Use the same SQL username and password for all servers hosting the same instance.</p>
+                <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: To provide the greatest security for your environment, do not</p>
+                                <p class="Note">use the SA account for <MadCap:variable name="Primary.IPRO" />’s Software.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <h2>Server Configuration</h2>
+        <p>It is recommended that you:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Do not run any other software or applications on the SQL Server.</p>
+            </li>
+            <li>
+                <p>Do not run any Antivirus locally.</p>
+            </li>
+            <li>
+                <p>Use 64-bit hardware and software (OS and SQL).</p>
+            </li>
+            <li>
+                <p>Configure maximum server memory and leave 4GB for the OS.</p>
+            </li>
+        </ul>
+        <h2>Data and Log File Management</h2>
+        <p>Build partitions with Industry Best Practice settings:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Partition Offset – All partitions regardless of purpose should be checked for partition alignment. 1024kb is recommended for all partitions, and is the Windows default.</p>
+            </li>
+            <li>
+                <p>Partition Cluster Size – All disks holding SQL data files (MDF, LDF, and TempDB) should use 64KB clustersize, which is different than the Windows default of 4KB.</p>
+                <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Storage device selection may dictate alternate settings for</p>
+                                <p class="Note">Partition Offset and Cluster Size. Consult with your storage vendor for</p>
+                                <p class="Note">recommendations on your specific environment.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p>Specify a fixed size for log file growth, rather than percentage.</p>
+            </li>
+            <li>
+                <p>Pre-size data and log files to minimize autogrowth events.</p>
+            </li>
+            <li>
+                <p>Manage file growth manually (As a backup, leave autogrow on and set to a fixed size).</p>
+            </li>
+            <li>
+                <p>Enable instant file initialization.</p>
+            </li>
+            <li>
+                <p>Set MAXDOP accordingly.</p>
+                <ul>
+                    <li>
+                        <p>Max Degree of Parallelism – Typically set to the number of logical processors not to exceed 8. We recommend 4 for most environments.</p>
+                    </li>
+                    <li>
+                        <p>Increase the Cost Threshold of Parallelism to 25 - 50.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Avoid putting any database files on the OS drive.</p>
+            </li>
+            <li>
+                <p>MDF data files should be on their own dedicated disks/spindles.</p>
+                <ul>
+                    <li>
+                        <p>Store on fastest storage for read operations RAID 5-15K RPM.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>LDF log files should be on their own dedicated disks/spindles.</p>
+                <ul>
+                    <li>
+                        <p>Store on fastest storage for write operations RAID 10-15K RPM.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Tempdb system database should be on its own dedicated disks/spindles.</p>
+                <ul>
+                    <li>
+                        <p>Store on fastest storage available RAID 10-15K RPM, Solid State Disk (SSD) if possible.</p>
+                    </li>
+                    <li>
+                        <p>Set initial size to the file’s maximum size +10% under typical load.</p>
+                    </li>
+                    <li>
+                        <p>Add multiple tempdb files as needed. Use at least one file for every four processors and up to one file per processor.</p>
+                    </li>
+                    <li>
+                        <p>Keep the file size identical between eachfile.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>SQL system files (binaries) should be on their own dedicated disks/spindles.</p>
+                <ul>
+                    <li>
+                        <p>Store on fastest storage for read operations RAID 5-15K RPM.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Validate volume performance with diskspd prior to installing SQL.</p>
+            </li>
+            <li>
+                <p>Use full recovery mode on active review databases.</p>
+            </li>
+            <li>
+                <p> Do NOT shrink database files without consulting with <MadCap:variable name="Primary.IPRO" /> Support, as this is a very intensive resource-heavy process which can cause massive amounts of logical scan fragmentation and lead to poor performance.</p>
+            </li>
+            <li>
+                <p>Run sp_delete_backuphistory to maintain space and backup performance (MSDB grows over time).</p>
+            </li>
+        </ul>
+        <h2>Back Up/Restore Plan</h2>
+        <p>On a daily basis, run a full back up on all system and production user databases.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Back up transaction logs at least hourly (depending on activity and recovery point objective).</p>
+            </li>
+            <li>
+                <p>Periodically test backups to verify they can be restored.</p>
+            </li>
+            <li>
+                <p> Back up to a separate location from the data and log drives.</p>
+            </li>
+            <li>
+                <p> DO NOT store backups long-term on the SQL Server.</p>
+            </li>
+            <li>
+                <p>Maintain secure, off-site backups to mitigate physical threats.</p>
+            </li>
+            <li>
+                <p>Create a Disaster Recovery Plan (DRP) that outlines step-by-step procedures to recover SQL Servers. Practice the DRP to verify it is complete (System owner should be familiar with this process).</p>
+            </li>
+        </ul>
+        <h2>Maintenance</h2>
+        <p>It is recommended that you:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Rebuild indexes regularly and when index fragmentation is &gt;30%.</p>
+            </li>
+            <li>
+                <p>Reorganize indexes when fragmentation is 5%–30%.</p>
+            </li>
+            <li>
+                <p>Use sys.dm_db_index_phsical_stats to identify fragmentation.</p>
+            </li>
+            <li>
+                <p>Check OS, SQL Server, and error logs for any warnings, errors, or abnormal events.</p>
+            </li>
+            <li>
+                <p>Schedule integrity checks at least weekly.</p>
+            </li>
+            <li>
+                <p>Ensure you are keeping up with the latest service pack and hotfixes from Microsoft.</p>
+            </li>
+        </ul>
+        <h2>Alerts Monitoring</h2>
+        <p>It is recommended that you:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Create a SQL Server event alert for all events with a severity of 19 (fatal) or higher.</p>
+            </li>
+            <li>
+                <p>Create and configure Database Mail to ensure alerts are emailed to the party responsible for monitoring SQL Server health.</p>
+            </li>
+            <li>
+                <p>Consider using third party monitoring tools to provide real-time alerts of critical SQL Server resources, especially low disk space and low RAM (&lt;25% of Operating System reserved memory free).</p>
+            </li>
+        </ul>
+    </body>
+</html>

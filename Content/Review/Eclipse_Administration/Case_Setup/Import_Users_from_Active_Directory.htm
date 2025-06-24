@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import Users from Active Directory</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Import Users from Active Directory" />Import Users from Active Directory</h1>
+        <p class="BodyText">If your site uses Microsoft’s Active Directory® service 
+ to manage network access, Eclipse users can be based on your Active Directory 
+ users. In this case, Active Directory names and passwords will be used 
+ for Eclipse access and can also be used for other <MadCap:variable name="Primary.Name" /> products. These 
+ names/passwords do not have to meet <MadCap:variable name="Primary.Name" /> user name and password requirements. 
+ </p>
+        <p class="BodyText">To create Eclipse users based on Active Directory users: 
+ </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Ensure 
+ that you have needed details for the users you will be creating:</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p>Active 
+ Directory domains/groups to which these users belong.</p>
+                            </li>
+                            <li>
+                                <p>Managing 
+ client and user type needed for users (per Active Directory domain or 
+ group). Although user configuration, including these settings, can be 
+ completed later, doing so now allows you to apply settings to multiple 
+ new users at one time. </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>On 
+ your site’s Eclipse website, log in as a user who is a member of the Super 
+ Admin group. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the Eclipse button, <img src="../../../Graphics/Admin_Graphics/Btn_Eclipse-Web2.png" alt="" border="0" class="button_inline" />, 
+ and select <span style="font-weight: bold;">Administration</span>.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ the <span style="font-weight: bold;">System Administration</span> pane 
+ is collapsed, click the pane title to expand it. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Users</span>.</p>
+            </li>
+            <li>
+                <p>Above the <span style="font-weight: bold;">Assigned 
+ Groups</span> area on the right of the <span style="font-weight: bold;">Users</span> 
+ tab, select <span style="font-weight: bold;">From Active Directory</span>, 
+ as shown in this figure.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Admin_Graphics/ActiveDir_Web.png" alt="" border="0" class="Thumbnail_Popup" /> </p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Active 
+ Directory</span> section of resulting dialog box:</p>
+                <ol>
+                    <li>
+                        <p>For 
+ each domain/group containing users to be created in Eclipse, click <img src="../../../Graphics/Admin_Graphics/Btn_ArrowRight7_Web.png" alt="" border="0" class="button_inline" /> to expand the list until the <span style="font-weight: bold;">Members</span> option is visible. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the needed <span style="font-weight: bold;">Members</span> options to 
+ list those users in the center (<span style="font-weight: bold;">Members</span>) 
+ section of the Eclipse dialog box. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Members</span> 
+ section, select the users to be created in Eclipse.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">For 
+		 efficient configuration, select only users in a single group who 
+		 will be assigned the same Eclipse user type and managing client. 
+		 That is, if you are adding ten members of an Active Directory 
+		 group, and half of them will be Eclipse user type “Billable” and 
+		 managing client “NASA,” then select just those five users.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>Assign managing client and optionally user 
+ type as follows:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Members</span> area, click <img src="../../../Graphics/Admin_Graphics/Btn_Down-Web.png" alt="" border="0" class="button_inline" /> corresponding to the group 
+ containing the selected users:</p>
+                        <p class="Image">
+                            <img src="../../../Graphics/Admin_Graphics/ActiveDir2_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>From 
+ the drop-down lists, select the needed <span style="font-weight: bold;">Managing 
+ Client</span> and optionally <span style="font-weight: bold;">User Type</span>. 
+ These selections will be applied to all selected users in the group.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ addition to or instead of completing step b, you can change/choose a managing 
+ client for individual users. To do so, in the <span style="font-weight: bold;">Users 
+ to Create</span> list, double click the user’s <span style="font-weight: bold;">Managing 
+ Client</span> field and select the needed managing client. Optionally, 
+ double-click the corresponding <span style="font-weight: bold;">User Type</span> 
+ field and select the needed type.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Review the <span style="font-weight: bold;">Users 
+ to Create</span> list to ensure it is correct. </p>
+            </li>
+            <p class="BodyText">To remove someone from the 
+ list, clear the option in the <span style="font-weight: bold;">Members</span> 
+ section of the dialog box.</p>
+            <li>
+                <p>If any of the users should be disabled initially, 
+ <span style="font-style: italic;">clear</span> the <span style="font-weight: bold;">Enabled</span> 
+ option. Disabled users cannot log in to Eclipse.</p>
+            </li>
+            <p class="BodyText">To initially disable all 
+ of the users, clear the <span style="font-weight: bold;">Enabled</span> 
+ box at the top of the list, as shown in the following figure. </p>
+            <p class="BodyText">
+                <img src="../../../Graphics/Admin_Graphics/ActiveDir3_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">You 
+		 can filter the <span style="font-weight: bold;">Users to Create</span> 
+		 list by clicking <img src="../../../Graphics/Admin_Graphics/Btn_Filtering4.png" alt="" border="0" class="button_inline" /> 
+		 for the column you want to filter. Select existing column entries 
+		 or define more complex criteria in the filter dialog box. </p>
+                        <p class="Note">Filtering the list does not limit the import. If 
+		 you complete the import, all selected users will be imported, 
+		 not just those visible (based on a filter).</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>When all needed users have been added, click 
+ <span style="font-weight: bold;">Import Users</span>. </p>
+            </li>
+            <li>
+                <p>Repeat these steps to add other users from 
+ Active Directory. </p>
+            </li>
+            <li>
+                <p>Inform users of their Eclipse log-in names 
+ and passwords. </p>
+            </li>
+        </ol>
+    </body>
+</html>

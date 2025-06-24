@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');" MadCap:conditions="Primary.Review">
+    <head>
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Work with Relationships</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1><a name="top"></a>Work with Relationships</h1>
+        <p class="BodyText">Relationships are based on the content of a specific field. When users select a particular document and want to view relationship details in <MadCap:variable name="Primary.Name First" />, the Relationships panels present all documents with matching field content (as in a field-specific search). </p>
+        <h2>Open Relationships</h2>
+        <p class="BodyText">The Relationships panels are available at the left side of the <b>Document Viewer</b> that displays when you click a document listed in the <b>Results</b> grid view. </p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Panel_RelMenus_Updated_New.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">To view the relationship information for the currently displayed document, click the desired relationship tab. </p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p>
+                            <img src="../../../../Resources/Images/myipro_tip.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Tip: Click the pin icon <img src="../../../../Graphics/ECA_PinExpanderSidewaysIcon.png" class="ReduceButtonSize" />  in the top right corner of the relationships tab to keep it open. Click the pin icon <img src="../../../../Graphics/ECA_PinExpanderUprightIcon.png" style="width: 32px; height: 33px;" class="ReduceButtonSize" />  again to collapse the relationships tab.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Default Relationships</h3>
+        <p> There are six default panels that associate relationships with each new case. The following sections will discuss each one in detail.</p>
+        <p>In the <b>Family</b>, <b>Near Duplicates</b>, and <b>Similar Documents</b> panel, the <b>Score</b> column lists the confidence scores for those document relationships. The higher the score in a relationship, the more the document relates in that way to the one selected in the BEGDOC column of the Results grid.</p>
+        <h3>Family</h3>
+        <p class="BodyText">Intended to show documents that are related to one another, as in an email and its attachment. Family relationships are based on the content of the default BEGATT field and sorted by the BEGDOC field. These column fields display by default.</p>
+        <p class="BodyText">For a quick overview, click the video below.</p>
+        <p class="BodyText">
+            <object src="https://vimeo.com/811295626" style="width: 560px; height: 315px;" class="Border">
+            </object>
+        </p>
+        <p class="BodyText">The <b>Family</b> panel is created for each Case by default and displays the parent and its children in a list format. The current document being reviewed is highlighted in the list. The grid shows the file type represented by an icon.</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note:  If the file type cannot be determined through its metadata, a broken image icon appears.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Duplicates</h3>
+        <p class="BodyText">Intended to show documents that are the same or nearly the same in content. Duplicates are grouped by the MD5HASH field and sorted by the BEGDOC field; you can define the details (fields and/or tag groups) to be included in the list.</p>
+        <p class="BodyText">The <b>Duplicates</b> panel displays two default columns, a check box for selecting or clearing document(s) and the file type icon. The current document under review is highlighted in the list.</p>
+        <p class="BodyText">For a quick overview, click the video below.</p>
+        <p class="BodyText">
+            <object src="https://vimeo.com/810907153" style="width: 560px; height: 315px;" class="Border">
+            </object>
+        </p>
+        <p class="BodyText">Duplicate versions of the current document display in the list.</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note:  If the file type cannot be determined through its metadata, a broken image icon appears.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Near Duplicates</h3>
+        <p class="BodyText">This <MadCap:variable name="Primary.IPRO" /> Analytics function identifies textual near-duplicate groups in item text. Textual near-duplicates are items in which most of the text displays in other items in the group and in the same order.</p>
+        <p class="BodyText">For a quick overview, click the video below.</p>
+        <p>
+            <object src="https://vimeo.com/811274867" style="width: 560px; height: 315px;" class="Border">
+            </object>
+        </p>
+        <p class="BodyText">The metadata of the items identified as part of a near-duplicate group will be updated with a group ID to identify the near-duplicate group to which the items belong. For more information, see <MadCap:xref href="Understand_Near_Duplicate_Fields.htm">Understand Near-Duplicate Fields</MadCap:xref>. </p>
+        <h3><a name="Email"></a>Email Thread</h3>
+        <p class="BodyText"> Review can assist reviewers in locating the final email (in the email conversation thread), thus allowing them to review only one document in an email conversation.</p>
+        <p class="BodyText">For a quick overview, click the video below.</p>
+        <p class="BodyText">
+            <object src="https://vimeo.com/812886349" style="width: 560px; height: 315px;" class="Border">
+            </object>
+        </p>
+        <p class="BodyText">Using the <b>Email Thread</b> panel, email threading allows relationships among a family of emails to be identified based on its content. Email families are emails that share a common starting email; an email thread represents a single branch of an email family and determines email order within a family. Email threading can identify email families and inclusive emails for email threads. For more information, see <MadCap:xref href="Understand_Email_Threading_Fields.htm">Understand Email Threading Fields</MadCap:xref>.</p>
+        <p class="BodyText">A combination of email headers and email body content are used to determine when emails belong to the same thread. Generally, the algorithm allows for anomalies that may occur such as timestamp differences generated by different servers. The determination of inclusiveness follows thread identification and is more exacting.</p>
+        <h3>Document History
+</h3>
+        <p class="BodyText">The <b>Document History</b> panel (read only) displays a list of actions, such as redactions and tags, that were taken for a current document. You can search for documents, and sort the<b> Actions</b> and<b> Users</b> to find specific information quickly.</p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/ADD_Review_Graphics/Document Viewer/NewDocHistory.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">For each <b>Action</b> type, a <b>User</b> and <b>Date/Time</b> is displayed. Examples of Action types include but are not limited to: viewed, highlighted, redacted, tagged, field edits, produced, text embedded, imaged, document edits, mass edits.</p>
+        <p class="BodyText">Click an action item to display further details as shown in the following figure.</p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Panel_DocHistoryExpanded.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">If no changes were made to a document, a message displays stating that no history exists for the selected document.</p>
+        <h3>Similar Documents</h3>
+        <p>The Similar Documents panel displays a list of documents that contain elements similar to a selected document.</p>
+        <p class="BodyText">For a quick overview, click the video below.</p>
+        <p class="BodyText">
+            <object src="https://vimeo.com/812413519" style="width: 560px; height: 315px;" class="Border">
+            </object>
+        </p>
+        <p>Prior to using the Similar Documents feature, the Relationship must be modified within Case Settings to relate by Similar Documents and linked to an Analytics Index. </p>
+        <p>
+            <img src="../../../../Graphics/ADD_Review_Graphics/Visual Search/AnalyticSimDocs.png" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: If the Similar Documents feature does not appear to be working, check with the Administrator to confirm that the relationship has been linked to an analytic index.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="The"></a>The Document Comparison Tool</h3>
+        <p class="BodyText">Available within the Document Viewer is the Document Comparison tool, which allows you to compare the document selected in the <b>Results</b> grid to another document that displays in a Relationships panel. </p>
+        <p class="BodyText">For a short demo of the tool, click the video below:</p>
+        <p>
+            <object src="https://vimeo.com/845983521?share=copy" style="width: 560px;height: 315px;">
+            </object>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">To compare the document selected in the search <b>Results</b> grid with any of the other documents that display in a Relationships panel list, select the check box next to that document in the panel and click the  <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_Compare.png" style="width: 32px; height: 35px;" class="ReduceButtonSize" /> icon. The two documents then display side-by side in the Document Comparison tool of the Document Viewer:</p>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p>In the document on the left (the original document), anything that displays as missing or added is highlighted in red. In the document on the right (the compared document), anything that displays as new is highlighted in green.</p>
+            </li>
+            <li>
+                <p>Click <img src="../../../../Graphics/ADD_Review_Graphics/Visual Search/ComparisonClosebtn.png" class="ReduceButtonSize" /> to close the Document Comparison window.</p>
+            </li>
+        </ul>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Mass actions (coding and/or tagging) can be applied to selected items in a relationships panel. See <MadCap:xref href="Manage_Mass_Actions_Relationships_Panel.htm">Manage Mass Actions in the Relationship Panel</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Overview_Relationships.htm">Overview: Relationships</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Mass_Actions_Relationships_Panel.htm">Manage Mass Actions in the Relationship Panel</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../Understand_the_Document_Viewer/Overview_Document_Viewer.htm">Overview: Document Viewer</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../../Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Email_Full_Thread_Search.htm">Create Email Full Thread Search    </MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../../Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_InclusiveEmailThread_Search.htm">Create Inclusive Email Thread Search </MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../../Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Near_Duplicate_Not_Email_Thread_Search.htm">Create Near Duplicate Search Excluding Email Thread</MadCap:xref>
+        </p>
+    </body>
+</html>

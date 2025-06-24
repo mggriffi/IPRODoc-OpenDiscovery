@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Target for Salesforce Publishing"
+  Type="CleanXHTML"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  GlossaryTermConversion="marked"
+  OutputFolder="C:\Users\ddavidson\Documents\GIT\XHTML"
+  ConvertStylesheetStylesToInlineStyles="true"
+  ConditionTagExpression="exclude[Primary.Admin or Primary.Blank or Primary.Blocked or Primary.CaseMgmt or Primary.CSH or Primary.Eclipse or Primary.Enterprise_Only_FutureDelete or Primary.Find_Images or Primary.FutureDelete or Primary.Incomplete or Primary.LMS or Primary.LMS_v8_0 or Primary.Media_Manager or Primary.Print_Exclude or Primary.Processing or Primary.Reports or Primary.Review or Primary.SampleTopics or Primary.Self_Service or Primary.Shared_EclandCloud or Primary.Target_Online or Primary.Target_Print or Primary.UI_Linked or &quot;Primary.Upcoming Release&quot; or &quot;Primary.Z_Excluded V1&quot; or System_Nav.API or System_Nav.Contacts or &quot;System_Nav.Copy Stations&quot; or System_Nav.Environment or System_Nav.Groups or System_Nav.PrintOnly or &quot;System_Nav.Security Settings&quot; or &quot;System_Nav.Security Templates&quot; or &quot;System_Nav.Storage Locations&quot; or &quot;System_Nav.System Logs&quot; or System_Nav.Users]">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="docx" />
+  <PDF
+    Tagged="true"
+    TitleBar="DocumentTitle" />
+</CatapultTarget>

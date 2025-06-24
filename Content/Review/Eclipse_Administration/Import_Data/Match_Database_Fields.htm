@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Match Database Fields</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Match Database Fields" />Match Database Fields</h1>
+        <p class="BodyText">If you are importing document data, match (map) the 
+ data fields defined in the imported file to the fields defined for the 
+ case in Eclipse Administration. Note: </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p class="BodyText">A field must be mapped to the case BEGDOC field.</p>
+            </li>
+            <li>
+                <p class="BodyText">Some fields in the import file can be omitted 
+	 (not mapped) if needed. For example, the import file may include a 
+	 Word Count field that is not needed in the Eclipse case.</p>
+            </li>
+            <li>
+                <p class="BodyText">More than one field in the import file can 
+	 be mapped to a single field in the case. For example, the import file 
+	 may have two fields to define an author’s name (First Name, Last Name). 
+	 In the Eclipse case, a single field may be used for this information 
+	 (Name).</p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: If you are importing image 
+		 data (such as from an .LFP or .OPT file), matching of database 
+		 fields may not be required. See <a href="#Map_image_data_and_text_files">Map 
+		 image data and text files</a>.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>Several options 
+ relate to field mapping. For example, Eclipse allows you to correct the 
+ file path information in the import file so that the data will be correct 
+ in your Eclipse case. </p>
+            </li>
+            <li>
+                <p>The following procedures 
+ comprise this step of the import process:</p>
+                <ul style="list-style: square;">
+                    <li>
+                        <p>Create Fields on the Fly When Mapping</p>
+                    </li>
+                    <li>
+                        <p>Map fields Using Auto-Selection</p>
+                    </li>
+                    <li>
+                        <p>Map Fields Manually</p>
+                    </li>
+                    <li>
+                        <p>Map Fields Using a Field 
+ Template</p>
+                    </li>
+                    <li>
+                        <p>Map Image Data and Text Files</p>
+                    </li>
+                    <li>
+                        <p>Map fields Using Auto-Selection</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="Map_Fields_Using_Auto-Selection"></a>
+        </h2>
+        <h2><a name="Create"></a>Create Fields on the Fly When Mapping</h2>
+        <p>There are many ways to map fields, but the exact field needed may not be your case. You can quickly add the new field as you are mapping. </p>
+        <ol>
+            <li>
+                <p>In the 
+ Import Data screen, click the <span style="font-weight: bold;">Step 2. 
+ Map Fields</span> tab.</p>
+            </li>
+            <li>
+                <p>Evaluate the<span style="font-weight: bold;"> 
+ Import Field</span> listing to determine which fields will be included 
+ in the import. </p>
+            </li>
+            <li>
+                <p>If there are no matching fields, click in the 
+ <span style="font-weight: bold;">Eclipse Field</span> column, click the down arrow and select <b>Create New Field</b>.</p>
+                <p>
+                    <img src="../../../Graphics/ADD_Review_Graphics/Eclipse Admin/SelectNewField.png" class="Thumbnail" />
+                </p>
+                <p>The New Field creation window will open.</p>
+                <p>
+                    <img src="../../../Graphics/ADD_Review_Graphics/Eclipse Admin/NewFieldCreation.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Complete the definitions for the field. For details 
+ on field definition options, refer to <MadCap:xref href="../Case_Setup/Step_3__Define_Database_Fields.htm">Step 3: Define Database Fields</MadCap:xref>.</p>
+            </li>
+        </ol>
+        <h2>Map Fields Using Auto-Selection</h2>
+        <p class="BodyText">Eclipse Administration can attempt to match the fields 
+ based on the field name. For example, if the input data contains a column 
+ called IMGKEY and the case contains a field named IMGKEY, it will automatically 
+ line up the source and destination field. </p>
+        <p class="BodyText">To auto-select fields: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>After 
+ completing <a href="Select_the_Data_Source.htm">Select the Data Source</a>, 
+ click the <span style="font-weight: bold;">Step 2. Map Fields</span> tab.</p>
+            </li>
+            <li>
+                <p>To match by field name, ensure that your imported 
+ data includes field names in the header and that First line is header 
+ is selected in the Step 1 tab. In the Import Data screen, click the Step 
+ 2. Map Fields tab.</p>
+            </li>
+            <li>
+                <p>Click the Auto-Select By Field Name button.</p>
+            </li>
+            <li>
+                <p>Evaluate the matching to determine if:</p>
+            </li>
+            <li>
+                <p>the auto-matching does not meet your needs, 
+ and/or</p>
+            </li>
+            <li>
+                <p>Some fields cannot be matched (in which case, 
+ the word Select in the Eclipse Field column will be red). </p>
+            </li>
+            <li>
+                <p>NOTE: For auto-selected matching, make sure 
+ that one of the import fields is matched to the BEGDOC field defined for 
+ the case.</p>
+            </li>
+            <li>
+                <p>If importing from a Summation .DII file, make 
+ sure the Summation FULLTEXT field is matched to the Eclipse EXTRACTEDTEXT 
+ field. </p>
+            </li>
+            <li>
+                <p>If any problems exist, continue with "Map 
+ fields manually" next.</p>
+            </li>
+        </ol>
+        <h2><a name="Map_Fields_Manually"></a>Map Fields Manually</h2>
+        <p class="BodyText">To manually match the fields: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In the 
+ Import Data screen, click the <span style="font-weight: bold;">Step 2. 
+ Map Fields</span> tab.</p>
+            </li>
+            <li>
+                <p>Evaluate the<span style="font-weight: bold;"> 
+ Import Field</span> listing to determine which fields will be included 
+ in the import. </p>
+            </li>
+            <li>
+                <p>For each field to be imported, click in the 
+ <span style="font-weight: bold;">Eclipse Field</span> column and choose 
+ the database field you want to match to the import field. The list shows 
+ the field name and type to assist you with matching. </p>
+            </li>
+            <li>
+                <p>Repeat step 3 for all fields to be included.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');width: 698px;" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" style="width: 647px;" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: </p>
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p class="Note">Make sure 
+									that one of the import fields is matched to the BEGDOC field defined 
+							for the case. </p>
+                                </li>
+                                <li>
+                                    <p class="Note">Selecting 
+		 a matching database field automatically selects the <span style="font-weight: bold;">Include</span> 
+		 option for you. </p>
+                                </li>
+                                <li>
+                                    <p class="Note">You 
+		 will be alerted if you concatenate fields (match two or more fields 
+		 to a single Eclipse field; see the following example). Ensure 
+		 a delimiter is defined in <a href="Select_the_Data_Source.htm">Select 
+		 the Data Source</a>, step 10.</p>
+                                </li>
+                                <li>
+                                    <p class="Note">If 
+		 importing from a Summation .DII file, make sure the Summation 
+		 FULLTEXT field is matched to the Eclipse EXTRACTEDTEXT field. 
+		 </p>
+                                </li>
+                                <li>
+                                    <p class="Note">Tips 
+		 for manually selecting fields—To easily select needed fields, 
+		 click in the needed <span style="font-weight: bold;">Database 
+		 Field</span> and take any of the following actions:</p>
+                                    <ul>
+                                        <li>
+                                            <p class="Note">Use 
+		 the mouse scroll wheel to move through the field list.</p>
+                                        </li>
+                                        <li>
+                                            <p class="Note">Type 
+		 the first letter of the needed field name to jump to the first 
+		 field name starting with that letter</p>
+                                        </li>
+                                        <li>
+                                            <p class="Note">Press 
+		 Tab to move from field to field. </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <h2><a name="Map_Fields_Using_a_Field_Template"></a>Map Fields Using a 
+ Field <MadCap:annotation MadCap:createDate="2024-09-06T10:39:12.1099622-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Check here for CSV" MadCap:editor="ddavidson" MadCap:editDate="2024-09-06T10:39:23.7639401-04:00">Template</MadCap:annotation></h2>
+        <p class="BodyText">If you will be importing multiple load files separately 
+ (not as a batch), you can set up needed field mapping, save a template, 
+ then use the template to easily map fields for additional imports. </p>
+        <p class="BodyText" style="font-weight: bold;">Create field template</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the 
+ <span style="font-weight: bold;">Step 2</span> tab of the Import Data 
+ screen, map fields using one of the previously described procedures. </p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Save 
+ Field Template</span>.</p>
+            </li>
+            <li>
+                <p>In the Save Template File dialog box, navigate 
+ to an appropriate location for the template, enter a template file name, 
+ and click <span style="font-weight: bold;">Save</span>. An XML-based field 
+ template is created. Field mapping and path correction data are maintained 
+ in the template.</p>
+            </li>
+        </ol>
+        <p class="BodyText" style="font-weight: bold;">Use field template</p>
+        <p class="BodyText">After creating a field template as described in the 
+ previous procedure, use it as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the 
+ <span style="font-weight: bold;">Step 2</span> tab of the Import Data 
+ screen, click <span style="font-weight: bold;">Load Field Template</span>.</p>
+            </li>
+            <li>
+                <p>In the Load Template File dialog box, navigate 
+ to the needed template, select it, and click <span style="font-weight: bold;">Open</span>. 
+ Mapping selections and path corrections will be made according to the 
+ template.</p>
+            </li>
+            <li>
+                <p>Review mapping details and make changes if 
+ needed. </p>
+            </li>
+            <li>
+                <p>When finished, continue with <a href="Select_Mapping_Options.htm">Select 
+ Mapping Options</a>.</p>
+            </li>
+        </ol>
+        <h2><a name="Map_image_data_and_text_files"></a>Map Image Data and Text 
+ Files</h2>
+        <p class="BodyText">If you are using/importing any of the following items, 
+ matching of database fields will be as discussed in the following paragraphs. 
+ </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                Image data (such as from an .LFP or .OPT file) 
+            </p>
+            </li>
+            <li>
+                <p>
+                .LST file for text files
+            </p>
+            </li>
+            <li>
+                <p>
+                .DAT, .DLF, or .CSV file using a file path 
+	 in the EXTRACTED TEXT field (path pointing to the location of text 
+	 files)
+            </p>
+            </li>
+        </ul>
+        <p class="BodyText"><span style="font-weight: bold;">.LFP files</span>
+        </p>
+        <p class="BodyText">Eclipse Administration will automatically define the 
+ Image Path. This selection cannot be changed. The BEGDOC field must be 
+ mapped by the user. </p>
+        <p class="BodyText">Optionally, if applicable, two additional fields can 
+ be mapped: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">IM lines: If boundaries specified in IM (Load 
+	 Image Master Record) lines include a “C” as shown in the following 
+	 example, then a relationship will be created if you map a BEGATTACH 
+	 field (and that field references the BEGDOC of the parent document):</p>
+            </li>
+            <p class="BodyTextIndent">IM,000010,C,0,@001;IMG_0001;000010.tif;2,0</p>
+            <li>
+                <p class="BodyText">OF lines: Original File (OF) for EDD Image 
+	 lines correspond to NATIVE fields in Eclipse. If your .LFP file includes 
+	 OF lines, you must map a NATIVE field if you want to import that information. 
+	 </p>
+            </li>
+        </ul>
+        <p class="BodyText" style="font-weight: bold;">.LST and .OPT files</p>
+        <p class="BodyText">Eclipse Administration will automatically define the 
+ Image Path; the BEGDOC field (and others) must be mapped by the user. 
+ </p>
+        <p class="BodyText" style="font-weight: bold;">.DAT, .DLF, or .CSV files 
+ </p>
+        <p class="BodyText">Eclipse Administration will automatically define the 
+ Image Path; the BEGDOC field (and others) must be mapped by the user. 
+ </p>
+        <p class="BodyText">If a path is used to indicate the location of text 
+ files, the <span style="font-weight: bold;">Import Text from Path </span>option 
+ must be selected to indicate that a path is being used in place of the 
+ text itself. See the following figure.</p>
+        <p class="BodyText">
+            <img src="../../../Graphics/Admin_Graphics/Import_TextfromPath Option-Web.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+    </body>
+</html>

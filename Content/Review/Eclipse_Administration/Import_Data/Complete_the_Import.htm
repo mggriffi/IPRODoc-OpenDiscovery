@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Complete the Import</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Complete the Import" />Complete the Import</h1>
+        <p class="BodyText">Once all aspects of the import are defined, import 
+ the data as follows. Import settings can also be saved if desired. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the <span style="font-weight: bold;">Step 
+ 2</span> tab of the Import Data screen, in the <span style="font-weight: bold;">Action</span> 
+ area, select <span style="font-weight: bold;">Import</span>. </p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Submit</span>. 
+ </p>
+            </li>
+            <li>
+                <p>If you did not select Tag Import in the Select 
+ Mode section of the Step 2 tab, skip to step 4. If you are importing tags, 
+ the following message will display:</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Admin_Graphics/Import_TagImport.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+            <p class="BodyTextIndent">Select the needed options. If you are importing 
+ tag group names, ensure that <span style="font-weight: bold;">Make the 
+ Root Level the Group</span> is selected; otherwise, tags will be imported 
+ to the group “Imported Tags.” </p>
+            <li>
+                <p>Progress will display on the S<span style="font-weight: bold;">tep 
+ 3. View Progress</span> tab. Read the information as it is presented. 
+ </p>
+            </li>
+            <li>
+                <p>If needed, when the import is complete, take 
+ one or both of the following actions:</p>
+                <ol>
+                    <li>
+                        <p>If 
+ the status for a load file is shown as “Completed with errors,” right-click 
+ the load file and select <span style="font-weight: bold;">View Error File</span>. 
+ A text file containing error details will open. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the <span style="font-weight: bold;">View</span> button to see overall 
+ details about the import. The import log (text) file opens; this file 
+ lists the fields that were mapped, options, selected, and start/stop information 
+ for each load file.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Next, click the <span style="font-weight: bold;">Step 4. Verify</span> tab. </p>
+            </li>
+            <li>
+                <p>Evaluate records. Possible activities include:</p>
+                <ol>
+                    <li>
+                        <p>Reviewing the <span style="font-weight: bold;">Documents</span> list</p>
+                    </li>
+                    <li>
+                        <p>Reviewing document details</p>
+                    </li>
+                    <li>
+                        <p>Deleting a document or page</p>
+                    </li>
+                    <li>
+                        <p>Managing the volume used to define the image path</p>
+                    </li>
+                    <li>
+                        <p>Viewing images</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Eclipse validates the data being imported. 
+ For example, if a FixedLengthText field was set at five characters, data 
+ for the field exceeding that value would not be imported. If data problems 
+ are detected, the <span style="font-weight: bold;">Errors</span> tab will 
+ appear in red and the number of validation errors will be included. To 
+ evaluate validation errors:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ the <span style="font-weight: bold;">Errors</span> tab.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Display Errors</span> to view error details. 
+ The following figure shows a simple example:</p>
+                        <p class="Image">
+                            <img src="../../../Graphics/Admin_Graphics/Import-Validation_Web.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>To 
+ view errors in load-file format, click <span style="font-weight: bold;">Create 
+ Loadfile View</span>. </p>
+                    </li>
+                    <li>
+                        <p>As 
+ needed, export a load file that contains only the records with errors 
+ by clicking Export and completing the Export dialog box. For document-based 
+ errors, a .DAT file will be created; for page-based errors, an .LFP file 
+ will be created. Errors can be corrected in the exported load file, which 
+ can then be re-imported (overlaid) into the case. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When finished with the import, continue with 
+ other administrative activities. </p>
+            </li>
+        </ol>
+    </body>
+</html>

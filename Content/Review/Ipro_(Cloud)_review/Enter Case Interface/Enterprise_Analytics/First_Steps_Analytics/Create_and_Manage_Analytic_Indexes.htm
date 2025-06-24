@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Review" style="mc-template-page: url('../../../../../Resources/MasterPages/Enterprise_MP.flmsp');">
+    <head>
+        <link href="../../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create and Manage Analytics Indexes</title>
+        <link href="../../../../../Resources/Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create and Manage Analytic Indexes</h1>
+        <p>Prior to creating an Analytic Index, a Configuration must exist. There are two types of configurations available, TAR and <MadCap:variable name="Primary.Active Learning" /> (AL). The <MadCap:variable name="Primary.Active Learning" /> configuration is created automatically when an AL Review pass is created. You can also create a custom AL configuration if you do not want to use the default.  For more information on TAR or <MadCap:variable name="Primary.Active Learning" />, see <MadCap:xref href="../../Setup_TAR_Project/AR_Manage_TAR_Projects.htm">Manage TAR Projects</MadCap:xref> and <MadCap:xref href="../../../Review Pass Interface/Review_Pass_Actions/Manage_Review_Passes.htm">Manage Review Passes</MadCap:xref>.</p>
+        <p> In this topic we will discuss creating an Analytic Index based on a TAR configuration. This type of Index must be created prior to using the Similar Documents relationship option and the Concept Search option in Advanced Search. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">On the Case Management ribbon, select <b>Eclipse Analytics</b> &gt; <b>Manage Analytics Indexes</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Select the needed managing client and case.</p>
+                <p class="BodyText">
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/AnalyticIndexCaseSelection.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2><a name="Create"></a>Create a TAR Configuration</h2>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Click the <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/ManageConfbutton.png" class="Thumbnail" /> button to open the dialog window. </p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/ManageConfWindow.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>&lt;new&gt;</b> Configuration.</p>
+            </li>
+            <li>
+                <p class="BodyText">Enter the appropriate information in the following fields: </p>
+                <table style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 475px;" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Item</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Enter a name for the configuration profile.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p style="font-size: 10pt;"><b>Index Type</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">Select TAR Index (Active Learning is for Batch Reviews only)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p><span style="font-size: 10pt; font-weight: bold;">Similarity Function</span>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">This option is for Near-Duplicates only</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Text Assumption Level</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p class="TableText">Select one of the following options to determine how documents will be treated when analyzing for non-binary documents (i.e. documents that contain readable text as opposed to just numbers):</p>
+                                <ul class="BulletListTable">
+                                    <li>
+                                        <p class="TableText"><b>0</b>: Only treats documents as non-binary after the system has analyzed the text and identified the content as containing prose.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><b>5</b>: If the document was converted from a known format to plain text, it assumes that the result should be treated as non-binary.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><b>10</b>: In addition to the assumptions made at level 5, if the document is in a format that can’t be translated into text, it assumes that the document can be treated as non-binary without further translation of validation.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Similarity Cutoff</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p class="TableText">Enter the Similarity Cutoff value (from 1 to 100) to be used for determining the threshold for how similar two documents can be. The default value is 25.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Insignificant Words</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p class="TableText">Default list of stop words (commonly used words that should be ignored, such as in, or, of). Words may be added or removed from this list.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Significant Words</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                                <p class="TableText">Add words that you want to ensure the index pays attention to and are known to be important for determining relevance, or words that you might want to include in analytics searching.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2>Create an Analytics Index</h2>
+        <p> When choosing a subset of documents to be indexed, keep in mind that the indexing process has several criteria that are automatically applied. This helps to ensure that the documents submitted for indexing will provide the most valuable results:</p>
+        <ul class="BulletListBody">
+            <li>Content included in your content filters are automatically excluded from the index.</li>
+            <li>Documents automatically identified as Short or Binary during indexing will be listed as such in the IA Doc Treatment field and are automatically excluded from the index.</li>
+            <li>Extremely large text files (&gt; 4MB) are not automatically excluded, but if there is an abundance, it may result in the index building more slowly.  You might want to consider excluding these from your search criteria if they are in question.</li>
+        </ul>
+        <p>&#160;</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Click <b><img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/CreateAnalndex.png" class="Thumbnail" /></b>.</p>
+                <p>The Create New Analytics Index dialog window appears.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/NewIndex window.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter a<b> name</b> for the Index profile.</p>
+            </li>
+            <li>
+                <p>Select your documents to Index</p>
+                <ol>
+                    <li>
+                        <p>To index all documents in the case, select <b>&lt;Entire Case&gt;</b>.</p>
+                    </li>
+                    <li>
+                        <p class="TableText"><span style="font-size: 11pt;">To index a subset of documents based on a saved search,</span><span style="font-size: 11pt;"> select the search and click </span><b style="font-size: 11pt;">OK</b><span style="font-size: 11pt;">.</span>
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Select your <b>Configuration</b>.</p>
+                <table style="mc-table-style: url('../../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: The TAR configuration is used within Review to search for similar documents and concept searching. Active Learning configurations are for Review Passes only.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Click the  <b><img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/EAApplyContentFilters.png" class="Thumbnail" /></b> checkbox to apply content filters and click <b>OK</b>. See <MadCap:xref href="Create_and_Manage_Content_Filters.htm">Create and Manage Content Filters</MadCap:xref> for more information on content filters.</p>
+            </li>
+        </ol>
+        <h2>Manage Analytics Indexes</h2>
+        <h3>Edit or Delete an index</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">To edit an existing index, click <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/Editbutn.png" class="ReduceButtonSize" /> corresponding to the necessary index.</p>
+            </li>
+            <li>
+                <p class="BodyText">In the Edit Analytics Index dialog box, make any needed changes in the following fields:</p>
+                <table style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 475px;" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">item</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Index Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Edit the name of the index profile.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Documents to Add</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Documents can be added to an index by selecting one of the following options:</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p class="TableText">To add all documents in the case to the index, select <b>&lt;Entire Case&gt;</b>.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">To add a subset of documents based on a saved search (including private searches), select the search and click <b>OK</b>.</p>
+                                    </li>
+                                </ul>
+                                <table style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" width="100%" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 5.464%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 94.536%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="Note">Note: If there are no new documents to be processed in your selected search, you will be prompted to select one with unprocessed documents before you are allowed to proceed.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p class="BodyText">To delete an existing index, click<img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/deletebutn.png"></img>  corresponding to the index you wish to remove from your case.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../Create_Analytic_Searches/Understand_Analytics_Index_Fields.htm">Understand Analytics Index Fields </MadCap:xref>
+        </p>
+    </body>
+</html>

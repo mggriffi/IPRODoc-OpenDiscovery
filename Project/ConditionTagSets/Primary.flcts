@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Name="Admin"
+    BackgroundColor="#5a6771" />
+  <ConditionTag
+    Name="Media_Manager"
+    BackgroundColor="#d18901" />
+  <ConditionTag
+    Name="Target_Online"
+    BackgroundColor="#ffeb00" />
+  <ConditionTag
+    Name="Target_Print"
+    BackgroundColor="#00ffff" />
+  <ConditionTag
+    Name="Processing"
+    BackgroundColor="#a6261c" />
+  <ConditionTag
+    Name="Reports"
+    BackgroundColor="#635d9d" />
+  <ConditionTag
+    Name="Eclipse"
+    BackgroundColor="#408853" />
+  <ConditionTag
+    Name="Self_Service"
+    BackgroundColor="#ea7f1d" />
+  <ConditionTag
+    BackgroundColor="#8a2be2"
+    Name="Z_Excluded V1"
+    Comment="to be excluded for version 1" />
+  <ConditionTag
+    BackgroundColor="#dc1417"
+    Name="Blank"
+    Comment="topic has no content"
+    OriginalName="Blank" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Find_Images"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0047ff"
+    Name="CaseMgmt"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#34ff00"
+    Name="Review"
+    Comment="This is for the new ADD Review topics" />
+  <ConditionTag
+    BackgroundColor="#faebd7"
+    Name="SampleTopics"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#990000"
+    Name="Print_Exclude"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#1fcbcb"
+    Name="Shared_EclandCloud"
+    Comment=""
+    OriginalName="Shared_EclandCloud" />
+  <ConditionTag
+    BackgroundColor="#b9f41e"
+    Name="Upcoming Release"
+    Comment="For new features/screenshots not yet released to the public."
+    OriginalName="Upcoming Release" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="Blocked"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="FutureDelete"
+    Comment="For content that's accurate for current release, but will become outdated at next release. NOTE: content is not blocked. It only signifies content that will need to be deleted in the future."
+    OriginalName="FutureDelete" />
+  <ConditionTag
+    BackgroundColor="#ff00b8"
+    Name="Incomplete"
+    Comment=""
+    OriginalName="Incomplete" />
+  <ConditionTag
+    BackgroundColor="#1a271a"
+    Name="Enterprise_Only_FutureDelete"
+    Comment=""
+    OriginalName="Desktop_Only_FutureDelete" />
+  <ConditionTag
+    BackgroundColor="#7fffd4"
+    Name="LMS_v8_0"
+    Comment=""
+    OriginalName="LMS_v8_0" />
+  <ConditionTag
+    BackgroundColor="#00ffff"
+    Name="LMS"
+    Comment=""
+    OriginalName="LMS_" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="UI_Linked"
+    Comment=""
+    OriginalName="UI_Linked" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="CSH"
+    Comment=""
+    OriginalName="CSH" />
+</CatapultConditionTagSet>

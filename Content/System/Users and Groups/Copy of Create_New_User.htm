@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Blocked" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create New User</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create New User" />Create New User</h1>
+        <p class="BodyText">Super Admin permissions are required to create users.</p>
+        <p class="BodyText">Identify 
+ needed users and gather/identify basic information (names, email addresses, 
+ passwords), then complete the following steps to create new users: </p>
+        <MadCap:snippetBlock src="../../Resources/Snippets/System_Navigation.flsnp" MadCap:conditionTagExpression="include[System_Nav.Users] " />
+        <ol start="3">
+            <li>
+                <p>Click the <img src="../../Graphics/System_Graphics/System_Add_Icon.png" class="ReduceButtonSize" /> button at the top of the screen. The <b>Create New User</b> page appears.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 551px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: You also have the option to import users from  a .CSV or .JSON file and to import users from an active directory. See <MadCap:xref href="Import Users from a File.htm">Import Users from a File</MadCap:xref> and <MadCap:xref href="Import User from Active Directory.htm">Import Users from Active Directory</MadCap:xref> for details.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Enter 
+ all user details on the <b>Setup User Details</b> step
+                
+                (<span>asterisks</span><span> indicate required entries).</span></p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Wizard_Create_New_User.png" class="Thumbnail" />
+                </p>
+            </li>
+            <ul class="BulletListBody">
+                <li>User 
+ names must be email addresses.</li>
+                <li>Passwords 
+ must include at least:<ul><li>six 
+ characters,</li><li>one 
+ uppercase and one lowercase character,</li><li>one 
+ non-alphanumeric character.</li></ul></li>
+            </ul>
+            <li>Optional: In the Trusted IPs field, enter one or more <b>IP&#160;addresses</b> the user is limited to. Enter one IP address per line. The IP address should be in the universal IPv4 format (e.g. 192.126.80.243). Each segment in the IP address should be less than 256 and equal to or greater than 0. If access is attempted outside of the listed IP address or IP addresses, an invalid login message prompt appears. If this field is left blank, no restrictions exist.</li>
+            <li>
+                <p>The <b>Active</b> <b>User</b> option is selected by default. Otherwise, clear the option. If <b>Active</b> <b>User</b> is cleared, the user cannot log in to <MadCap:variable name="Primary.Name" /> products. If the user is part of a group that has Self-Service and/or Media Manager Access, the System user setting overrides access to <MadCap:variable name="Primary.Name" /> and its components.</p>
+            </li>
+            <li>The <b>Enable User for Review</b> option is cleared by default. Select this option to give the user access to <MadCap:variable name="Primary.Name" /> Review. The user must also have permissions to access cases in <MadCap:variable name="Primary.Name" /> Review.</li>
+            <li>The <b>User must change password on next login</b> option is cleared by default. When this option is selected for a newly created user, the first time that user logs in, they will be presented with a login screen that contains two fields: New Password and Confirm Password. The user will enter a new password and confirm the new password upon logging in. This new password will be entered by the user for each subsequent log in. </li>
+            <li>
+                <p>The <b>Use External Identity Provider</b> option is cleared by default. Select this option to enable the user to log in to <MadCap:variable name="Primary.Name" /> using Single Sign-on (SSO). For a user to sign in with SSO, an external identity provider must be configured in the System Manager, and the user must have an account set up with the provider in question. For more information on how to configure SSO in <MadCap:variable name="Primary.Name" />, see <MadCap:xref href="../Security_Settings/Configure_Single_Sign_On.htm">Configure Single Sign-on (SSO)</MadCap:xref>. When finished, click <b>Next</b>.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: When this option is selected, the user can no longer log in to <MadCap:variable name="Primary.Name" /> using their <MadCap:variable name="Primary.IPRO" /> username and password.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Optional: On the <b>Assign to Group</b> step, users may be assigned to one or more previously created groups. The groups are sorted alphabetically. To search for a group, click the magnifying glass icon and begin to fill in the search field to return those groups that most closely match. To assign the new user to groups, select the needed groups from the list. Groups that have been selected are highlighted in blue.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Users are not assigned permissions directly. Rather, permissions are set at the group level and filter down to the users assigned to them. Similarly, users cannot be assigned to cases directly.  They must first be assigned to groups, and those groups assigned to cases. To learn more about users and groups, see <MadCap:xref href="Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li><span>When 
+ details are completed, click <b>Save</b>.</span>
+            </li>
+            <li>
+                <p><span>Repeat 
+ this procedure for all <MadCap:variable name="Primary.Name" /> users.</span><span class="Footnote_Superscript"> </span>
+                </p>
+            </li>
+            <li>Inform 
+ users of the <MadCap:variable name="Primary.Name" /> URL, their login credentials, and their 
+ responsibilities.</li>
+        </ol>
+        <p class="Footnote">&#160;</p>
+        <p class="Footnote"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Create New Groups.htm">Create New Groups</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>
+        </p>
+    </body>
+</html>

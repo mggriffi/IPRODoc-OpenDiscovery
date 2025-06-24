@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/CaseMgmt_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.UI_Linked">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview: Import Series</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Overview: Import Series</h1>
+        <p>An Import Series is created in a Processing Case (a Review case also needs to be created) and contains the fields required for the metadata and the options for the BEGDOC number to be imported into a desired Review Case. The metadata and options include sequential image key numbers, volumes, and like export options (native files, fields, export formats, and so on). These settings are accessed from the processing Case Settings under the<b> Load to Review</b> tab.</p>
+        <p>For a quick overview of the Load to Review tab, see the below video.</p>
+        <p>
+            <object src="https://vimeo.com/851733368?share=copy" style="width: 560px; height: 315px;" class="Border">
+            </object>
+        </p>
+        <h2>Default Import Series</h2>
+        <p>When you create a Processing and Review case, a default import series is created automatically.  If you choose to use the default import series, you do not have to do anything special to be able to start ingesting data. The documents (aka a data set) are automatically added to this import series, and the numbering sequence continues where it left off. For example, if the import series numbering ends with 003000, the new added data set begins its numbering with 003001.</p>
+        <h2>Customized Import Series</h2>
+        <p>You can create a custom import series with its own unique parameters for ingesting data into your Review case. You must mark the customized import series as “active” for data to be ingested with that import series. </p>
+        <p>For a customized series, you can edit the BECDOC numbers to contain a prefix that might identify a specific data set in the case. As an example, let's say you create a specific prefix "CS" representing the plaintiff “Charles Smith.” The initial numbering sequence would look like CS_000001, CS_000002, and so on. As with the default import series, any new data set that gets added would continue the numbering sequence where it left off.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: As you create multiple import series, you can “activate” them in turn based on what data sets you need to import for the Review case. You can only have one active import series at a time.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For more information, see the following topics.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>
+                    <MadCap:xref href="Create_Import_Series.htm">Create an Import Series</MadCap:xref> - Details the process for creating a customized Import Series.</p>
+            </li>
+            <li>
+                <p>
+                    <MadCap:xref href="Work_with_Import_Series.htm">Work with Import Series</MadCap:xref> - After the Import Series is created, this topic describes the steps to load the Import Series into Review as well as how to edit the import settings.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p><i style="font-weight: bold;">Related Topics</i>
+        </p>
+        <p>
+            <MadCap:xref href="../Cases/Create_A_New_Case.htm">Create a New Case in [%=Primary.Name%]</MadCap:xref>
+        </p>
+    </body>
+</html>

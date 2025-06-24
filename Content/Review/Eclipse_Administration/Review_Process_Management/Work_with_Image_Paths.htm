@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Work with Image Paths</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Work with Image Paths" />Work with Image Paths</h1>
+        <p class="BodyText">The database records tabs described in <a href="Evaluate_Case_Records.htm">Evaluate Case Records</a> all allow you to review and change the paths for image files 
+ in your cases. This section describes how to use volumes and to evaluate 
+ and change the image path for one or more documents or pages within your 
+ cases. </p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#Check_the_Image_File_Path">Check 
+	 the Image File Path</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Change_Image_File_Paths_">Change 
+	 Image File Paths</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Check_the_Image_File_Path"></a>
+            <MadCap:keyword term="Check the Image File Path" />Check the Image File Path</h2>
+        <p class="BodyText">To evaluate the image path defined for a page, begin 
+ with the following steps: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Access one of the database records tabs in 
+ Eclipse Administration as described in <a href="Evaluate_Case_Records.htm#Get_Started">Evaluate Case Records</a>. </p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Documents</span> 
+ list, expand a document and click on the needed page. </p>
+            </li>
+            <li>
+                <p>If the image is found in the specified location, 
+ a message will display below the <span style="font-weight: bold;">Image 
+ File</span> field:</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Admin_Graphics/ValidImage.png" alt="" style="border: none;" border="0" />
+                </p>
+            </li>
+            <li>
+                <p>If volumes are being used, check the volume 
+ and path information in the center portion of the tab.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Admin_Graphics/VolPath3.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+            <li>
+                <p>If volumes are not being used, or to identify 
+ or document the complete path of the image file, right-click in the <span style="font-weight: bold;">Image File</span> field and select <span style="font-weight: bold;">Copy Path</span>, then paste the path in 
+ a text or other file. The complete path and filename are included.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Admin_Graphics/VolPaty_CopyPath.png" alt="" style="border: none;" border="0" />
+                </p>
+            </li>
+            <li>
+                <p>If the volume and/or path are not correct, 
+ either select a new volume or change it or the path as explained in the 
+ following procedure. </p>
+            </li>
+        </ol>
+        <h2><a name="Change_Image_File_Paths_"></a>
+            <MadCap:keyword term="Change Image File Paths" />Change Image File Paths </h2>
+        <p class="BodyText">Volumes are variables representing the paths where 
+ image files are located; use of volumes is one way to manage the location 
+ of case image files. The location of image paths can also be managed through 
+ the use of the global replace function.</p>
+        <p class="BodyText">Complete the following procedures to create and manage 
+ volumes. </p>
+        <p class="BodyText">To create or revise image paths, using volumes or the 
+ full paths themselves:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Access 
+ one of the database records tabs in Eclipse Administration as described 
+ in <a href="Evaluate_Case_Records.htm#Get_Started">Evaluate Case Records</a>. </p>
+                    </li>
+                    <li>
+                        <p>Identify 
+ the needed full UNC path(s). </p>
+                    </li>
+                    <li>
+                        <p>If 
+ you are using volumes, consider a naming convention for volume names. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Continue 
+ with one or more of the following steps as needed.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To<span style="font-weight: bold;"> create 
+ new volumes</span>:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ lower center area of the database records tab, click <span style="font-weight: bold;">Manage 
+ Volumes</span>. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Manage Volumes dialog box, click <span style="font-weight: bold;">New 
+ Volume</span>.</p>
+                    </li>
+                    <li>
+                        <p>Enter 
+ a volume name (for example, VOL1) and the path using UNC syntax (for example, 
+ \\SERVER001\CASES, not D:\CASES). </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps to create additional volumes. </p>
+                    </li>
+                    <li>
+                        <p>When 
+ all volumes are defined, click <span style="font-weight: bold;">OK</span> 
+ in the Manage Volumes dialog box.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To <span style="font-weight: bold;">change 
+ a selected document’s volume definition</span>:</p>
+                <ol>
+                    <li>
+                        <p>If 
+ another volume is defined that represents the needed path, select it from 
+ the <span style="font-weight: bold;">Volume</span> list in the <span style="font-weight: bold;">Volume 
+ Information</span> area. The image path changes for the selected document.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ the path of the selected volume needs to change for all documents using 
+ that volume, enter the correct path in the <span style="font-weight: bold;">Path</span> 
+ field in the <span style="font-weight: bold;">Volume Information</span> 
+ area and click <span style="font-weight: bold;">Set Volume</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To <span style="font-weight: bold;">change 
+ volume paths irrespective of the selected document</span>:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ lower center area of the database records tab, click Manage Volumes. </p>
+                    </li>
+                    <li>
+                        <p>For 
+ a volume whose path needs to be changed, click <img src="../../../Graphics/Admin_Graphics/Btn_RelationshipEdit_Web.gif" alt="" border="0" class="button_inline" />. </p>
+                    </li>
+                    <li>
+                        <p>Enter 
+ the needed path (UNC format) or click <img src="../../../Graphics/Admin_Graphics/Btn_Folder.png" alt="" border="0" class="button_inline" />&#160;and navigate 
+ to the needed location. When finished, click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps to change the paths of other volumes.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">OK</span> in the Manage 
+ Volumes dialog box.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To use the <span style="font-weight: bold;">global 
+ replace</span> function to change the path for multiple documents (but 
+ not <span style="font-style: italic;">all</span> of those using a particular 
+ volume), see <a href="../Case_Setup/Globally_Replace_Image_Paths.htm">Globally 
+ Replace Image Paths</a>. When you use this function, the replacement path 
+ may or may not include a volume. </p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

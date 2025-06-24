@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" MadCap:fileTags="RoboHelpCheckList.Ran Smart Index" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');">
+    <head><title>Build TAR Categories</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Concept Wheel;TAR Project Discrepancies report;Build TAR Categories" />Build TAR Categories (Content Analyst)</h1>
+        <p class="BodyText">The category set created as part of a TAR project is 
+ named TAR_ABC_CAT, where ABC is the prefix defined for the TAR project. 
+ Categories include: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText"><span style="font-weight: bold;">TAR_ABC_Responsive</span>: 
+ Documents identified as relevant to the issues/needs of the case by either 
+ Eclipse analysis or human review.</p>
+            </li>
+            <li>
+                <p class="BodyText"><span style="font-weight: bold;">TAR_ABC_Non 
+ Responsive</span>: Documents identified as not relevant to the issues/needs 
+ of the case by either Eclipse analysis or human review. </p>
+            </li>
+        </ul>
+        <p class="BodyText">Before each validation round, the TAR category set 
+ should be rebuilt. </p>
+        <p class="BodyText">To rebuild TAR categories: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Get started:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p class="BodyText">Open 
+ the case for which the TAR categories are being created/updated.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Start 
+ Eclipse and log in as an Eclipse administrator. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">In the Case View pane, click <span style="font-weight: bold;">Analytics</span>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Expand the <span style="font-weight: bold;">Categories</span> 
+ list and locate the needed TAR category set.</p>
+            </li>
+            <li>
+                <p class="BodyText">Right-click the category set and select <span style="font-weight: bold;">Build Category</span> as shown in this 
+ figure. Wait as documents are added to the categories. </p>
+            </li>
+            <li>
+                <p class="BodyText">As needed, review document details in the resulting 
+ <span style="font-weight: bold;">Search Results</span> tab or <span style="font-weight: bold;">Concept 
+ Wheel</span>. </p>
+            </li>
+            <li>
+                <p class="BodyText">If you will conduct a review of all documents 
+ (for example, a prioritization review) instead of a certification round 
+ after validation rounds are complete, use the <span style="font-weight: bold;">Responsive</span> 
+ and <span style="font-weight: bold;">Non Responsive</span> categories 
+ to create final review passes. 
+ </p>
+            </li>
+        </ol>
+        <p>For details on category management, see <MadCap:xref href="../Ipro Analytics/Define_Analytic_CategoriesIA.htm">Define IPRO Analytics Categories</MadCap:xref>. </p>
+        <h3>Notes on building categories</h3>
+        <p class="BodyText"><span class="Bold">Duplicate documents</span>
+        </p>
+        <p class="BodyText">Duplicate documents may be evaluated (by human reviewers) 
+ as part of the TAR process. TAR categorization impacts all reviewed documents, 
+ including duplicates. As part of the TAR process, all duplicate documents 
+ are categorized in the same way, based on the last duplicate document 
+ reviewed. Therefore, discrepancies between a document's tag and its category 
+ may result if reviewers tag duplicate documents differently.</p>
+        <p class="BodyText">For example, if a reviewer tags document A as Responsive, 
+ then tags duplicate document B as Non Responsive, the documents will have 
+ different tags. After TAR categories are built, however, both documents 
+ will be categorized as Non Responsive (based on the last document reviewed, 
+ document B). </p>
+        <p class="BodyText">Issues such as these are listed in the TAR Project 
+ Discrepancies report; discrepancies can be corrected by re-evaluating 
+ the discrepant documents, tagging them consistently, then rebuilding TAR 
+ categories.</p>
+        <p class="BodyText"><span class="Bold">Uncategorized documents</span>
+        </p>
+        <p class="BodyText">Documents with coherency scores below the selected 
+ maximum are not categorized. Documents with very little text, such as 
+ multimedia files or spreadsheets containing primarily numeric data, are 
+ the types of documents that often have a low coherency score. </p>
+        <p class="BodyText">To keep uncategorized documents to a minimum, ensure 
+ the Analytics index used for the TAR project is optimized to find only 
+ the documents containing the needed concepts. </p>
+        <p class="BodyText">To find and review all uncategorized documents, use 
+ Advanced Search to find all documents for which the project’s “TAR Score” 
+ field value is less than the category’s <b>Maximum Coherency Score</b> value.</p>
+    </body>
+</html>

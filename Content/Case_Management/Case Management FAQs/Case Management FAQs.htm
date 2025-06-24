@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.CaseMgmt" style="mc-master-page: url('../../Resources/MasterPages/CaseMgmt_MP.flmsp');">
+    <head><title>Case Management FAQs</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Case Management FAQs" />Case Management FAQs</h1>
+        <p class="BodyText">Expand the options below to find the answers to our most common questions about the Case Management module.</p>
+        <p class="FAQ">Do I need to create a Review Case and Processing Case at the same time? </p>
+        <p class="FAQ" MadCap:targetName="review and processing case">Although it's not mandatory to create a Review and Processing case at the same time, it is recommended. There are some instances where only one type of case is needed (e.g. some service providers will only create processing cases in order to generate load files), but the typical <MadCap:variable name="Primary.Name" /> workflow will use both a Review and a Processing case. Without a review case, there is nowhere for your processed data to stream to, and without a processing case, you can only load third party data (.dat files) into Review.  </p>
+        <h4><b>Where are <MadCap:variable name="Primary.Name"></MadCap:variable> users created?</b>
+        </h4>
+        <p class="FAQText">Users are created in the <MadCap:variable name="Primary.Name" /> System Manager. See <MadCap:xref href="../../System/Users and Groups/Create_New_User.htm">Create New User</MadCap:xref> for details.</p>
+        <h4><b>How do I&#160;assign  groups to a Case?</b>
+        </h4>
+        <p class="FAQText">Groups, which are created in the System Manager, are also assigned to cases in the System Manager. See <MadCap:xref href="../../System/Users and Groups/Create New Groups.htm">Create New Groups</MadCap:xref> for details.</p>
+        <h4 style="font-weight: bold;">How do I&#160;delete a Case, Client or Managing Client?</h4>
+        <p class="FAQ">Cases, cients, and managing clients can be managed, modified and deleted in Case Management. These items must be deleted right to left; cases first, then clients, then managing clients. See <MadCap:xref href="../Clients/Delete_Managing_Clients,_Clients,_or_Cases.htm">Delete Managing Clients, Clients, or Cases</MadCap:xref>,<MadCap:xref href="../Clients/Modify_Managing_Client_or_Client.htm">Modify Managing Client or Client</MadCap:xref> and <MadCap:xref href="../Cases/Modify_Case.htm">Modify Settings for a Case</MadCap:xref> for details. </p>
+        <p class="FAQ">To delete a <b>case, client or managing client</b>: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Click 
+ <img src="../../Graphics/CM_Hamburger_icon.png" alt="" border="0" class="button_inline" /> or <img src="../../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" style="width: 17px;height: 16px;" /> corresponding 
+ to the needed case, client or managing client and select <b>Delete</b>.</p>
+            </li>
+            <li>
+                <p>Click 
+ <b>OK</b> in response to the confirmation 
+ message.</p>
+            </li>
+        </ol>
+        <h4><b>How 
+ do I create a Security Template?</b>
+        </h4>
+        <p class="FAQText">Security Templates (which were formerly created in Case Management) are now created in the System Manager. 
+	 See <MadCap:xref href="../../System/Security_Templates/Overview_Security_Templates.htm">Overview: Security Templates</MadCap:xref> for details.</p>
+        <h4><b>Does <MadCap:variable name="Primary.Name"></MadCap:variable>come with default permission templates?</b>
+        </h4>
+        <p class="FAQText">Yes. The following default templates are provided to assist with setting permissions for common workflows: Case Admin, Review Manager, Internal Reviewer (review case only), External Reviewer (review case only), and External User (review case only).</p>
+        <h4><b>Can I use custom templates to create my cases? </b>
+        </h4>
+        <p>Yes. When creating a case in <MadCap:variable name="Primary.Name" />, you can either use the default template, or a custom template. See <MadCap:xref href="../Cases/Create_A_New_Case.htm">Create a New Case in <MadCap:variable name="Primary.Name" /></MadCap:xref>.</p>
+        <p class="TableText" style="font-size: 11pt;">To use a custom template(s): Expand the Advanced Options dropdown, then select 
+		 the required template(s), depending on which type of case is being 
+		 created:</p>
+        <ul class="BulletListTable">
+            <li>
+                <p class="TableText" style="font-size: 11pt;">For 
+		 a Processing case, click in the <b>Processing 
+		 Case Template</b> field. In the resulting dialog box, navigate 
+		 to and select the required .INI file, then click <b>Open</b>.</p>
+            </li>
+            <li>
+                <p class="TableText" style="font-size: 11pt;">For 
+		 a Review case, click in the <b>Review 
+		 Case Template</b> field. In the resulting dialog box, navigate 
+		 to and select the required .CSE file, and then click <b>Open</b>. See <MadCap:xref href="../Cases/Workflow_ Create _Case_Template.htm">Workflow: Create a Case Definition Template</MadCap:xref> for more information.</p>
+            </li>
+        </ul>
+        <p>When creating both a processing and review case simultaneously, you also have the option to use a custom Import Case Template. To use a custom Import Case Template(s): Expand the Advanced Options dropdown, then select 
+		 the required .INI file, then click <b>Open</b>. See <MadCap:xref href="../Import_Series/Create_Import_Series.htm">Create an Import Series</MadCap:xref> for details. </p>
+        <p>When working with custom templates, it is recommended to create a templates folder to store all your custom templates. </p>
+        <h4><b>What settings are controlled by the Processing Case Template?</b>
+        </h4>
+        <p class="TableText" MadCap:targetName="processing case template"><span style="font-size: 11pt;">The Processing Case Template controls settings for document ingestion, filtering, and imaging. </span>
+        </p>
+        <h4><b>How do I edit the Processing Case settings?</b>
+        </h4>
+        <p class="TableText" MadCap:targetName="edit processing case settings"><span style="font-size: 11pt;">You can modify and manage many of the most common processing settings  in </span><MadCap:variable name="Primary.Name" style="font-size: 11pt;" /><span style="font-size: 11pt;"> in the <b>Case&#160;Settings</b> work area.</span>
+        </p>
+        <ul class="BulletListTable">
+            <li>
+                <p>Open <b>Case Management</b> 
+ and locate the case whose settings you would like to modify. </p>
+            </li>
+            <li>
+                <p>Click the <img src="../../Graphics/CM_Hamburger_icon.png" alt="" border="0" class="button_inline" /> icon in the corner of the case.</p>
+            </li>
+            <li>
+                <p>In the menu that appears, select <b>Case Settings</b>.</p>
+            </li>
+        </ul>
+        <p class="TableText" MadCap:targetName="edit processing case settings"><span style="font-size: 11pt;">Additional settings are available in eCapture. See </span>
+            <MadCap:xref href="../Processing_Case_Settings/Edit_Processing_Case_Settings.htm" style="font-size: 11pt;">Manage Settings for a Processing Case</MadCap:xref><span style="font-size: 11pt;"> for details. </span>
+        </p>
+        <h4><b>What case settings are controlled by the Review Case Template?</b>
+        </h4>
+        <p MadCap:targetName="review case template">The Review Case Template controls settings for indexes, relationships, redaction categories, tag palettes, coding forms, and performance management. </p>
+        <h4><b>How do I edit the Review Case settings?</b>
+        </h4>
+        <p MadCap:targetName="edit review case settings">Administrators have the ability to view and modify settings for Review cases in <MadCap:variable name="Primary.Name" />. These settings are available in the Review module and are configured on a case-by-case basis. When you enter a case, you can use the navigation pane on the left to access your general case settings. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Manage_Review_Case_Settings.htm">Manage Review Case Settings</MadCap:xref> for details.</p>
+        <h4><b>What options are controlled by the Import Case Template? </b>
+        </h4>
+        <p MadCap:targetName="import case template">The Import Case Template contains the default settings for your Import Series and determines what your fields and BEGDOC numbers will look like (e.g. the default  BEGDOC number is 0000001). When you create a processing case using the Import Case Template, it generates a default Import Series. You are then able to edit or create custom Import Series in Case Settings to set your own prefixes and BEGDOC number ranges. See <MadCap:xref href="../Import_Series/Create_Import_Series.htm">Create an Import Series</MadCap:xref> for details. </p>
+        <h4><b>What is the Code Name, and is it mandatory?</b>
+        </h4>
+        <p MadCap:targetName="code name">A code name (also called <MadCap:variable name="Primary.Name" /> Code Name or ECN) 
+ serves as a primary organizer for one or more related cases, as a shortened 
+ version of a very long case name, or for any purpose that will help you 
+ organize and recognize cases across all <MadCap:variable name="Primary.Name" /> products. Code names are created 
+ in <MadCap:variable name="Primary.Name" />  in conjunction with case creation in the Case Management module and serve to link processing and review cases together. Code names are mandatory, but matter numbers are not. See <MadCap:xref href="../First Steps/Overview_Case_Management.htm">Overview: Case Management</MadCap:xref> and <MadCap:xref href="../Cases/Create_A_New_Case.htm">Create a New Case in <MadCap:variable name="Primary.Name" /></MadCap:xref> for more details. </p>
+        <p>&#160;</p>
+        <p style="font-style: italic;font-weight: bold;">Related Topics</p>
+        <p>
+            <MadCap:xref href="../First Steps/Overview_Case_Management.htm">Overview: Case Management </MadCap:xref>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

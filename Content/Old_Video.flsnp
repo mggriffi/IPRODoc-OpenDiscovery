@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="Resources/Stylesheets/Processing.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="Note">Note: The video above relates to a version of <MadCap:variable name="Primary.Name" /> that came out before the latest release. The functionality described in the video is accurate, but the UI may have since changed.</p>
+    </body>
+</html>

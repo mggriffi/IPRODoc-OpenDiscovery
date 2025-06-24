@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <script type="text/javascript" src="../../Resources/Scripts/print-css.js?ver=20191120">
+        </script>
+        <link href="" rel="stylesheet" type="text/css" />
+	
+    </head>
+    <body>
+        <MadCap:breadcrumbsProxy />
+        <MadCap:bodyProxy />
+        <p>&#160;</p>
+    </body>
+</html>

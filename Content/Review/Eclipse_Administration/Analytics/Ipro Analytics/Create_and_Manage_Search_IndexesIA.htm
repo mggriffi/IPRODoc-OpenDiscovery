@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create and Manage Analytics Indexes</title>
+        <link href="../../../../Resources/Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create and Manage Search Indexes</h1>
+        <p>This topic explains how to create and manage analytics indexes used in <MadCap:variable name="Primary.IPRO" /> Analytics. To learn more about Content Filters and Indexes, watch the Content Filters and Indexes video.</p>
+        <p><span class="BoldItalic"><img src="../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+        </p>
+        <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t1">Click 
+ here to watch the Content Filters and Indexes video</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://vimeo.com/273940466" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <h2>Before you begin</h2>
+        <p>Planning will bring you the greatest success with custom search indexes for each case. To familiarize yourself with needed information and available options, “walk through” the index management function as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">You need to understand your case data and reviewer tasks. Review cases and discuss with reviewers the types of searches that will assist them as they do their jobs.</p>
+            </li>
+            <li>
+                <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and log in as an <MadCap:variable name="Primary.IPRO" /> Eclipse administrator.</p>
+            </li>
+            <li>
+                <p>Before you begin, ensure any <a href="Create_and_Manage_FiltersIA.htm">IPRO Analytics Content Filters</a> have already been created.</p>
+            </li>
+            <li>
+                <p class="BodyText">On the Case Management ribbon, select <b>IPRO Eclipse Analytics</b> &gt; <b>Manage Analytics Indexes</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Select the needed managing client and case.</p>
+            </li>
+            <li>
+                <p class="BodyText">Continue with the procedures explained in this section.</p>
+            </li>
+        </ol>
+        <h2>Create an Analytics Index</h2>
+        <p>The Create New Analytics Index dialogue allows you to specify various options for building the index. To create a new Analytics Index:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Getting started:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and log in as an <MadCap:variable name="Primary.IPRO" /> Eclipse administrator.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">On the Case Management ribbon, select <b>IPRO Eclipse Analytics</b> &gt; <b>Manage Analytics Indexes</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">In the Manage Indexes screen, select the needed managing client and case.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Click <b>Create New Analytics Index</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Enter the following basic information in the top portion of the dialog box.</p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 475px;" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Item</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-weight: bold;">
+                                <p class="TableText" style="font-weight: bold;">Index Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Enter a name for the index profile.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-weight: bold;">
+                                <p class="TableText" style="font-weight: bold;">Documents to Index **</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <ul class="BulletListTable">
+                                    <li>
+                                        <p class="TableText">To index all documents in the case, select <b>&lt;Entire Case&gt;</b>.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">To index a subset of documents based on a search saved in <MadCap:variable name="Primary.IPRO" /> Eclipse, select the search and click <b>OK</b>.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-weight: bold;">
+                                <p class="TableText" style="font-weight: bold;">Configuration</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Select the configuration profile you would like to use. </p>
+                                <p><span class="BoldItalic"><img src="../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+                                </p>
+                                <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t2">For more information about Configurations, click 
+ here to watch the Configurations video</MadCap:toggler></span>
+                                </p>
+                                <div MadCap:targetName="t2">
+                                    <p>
+                                        <object src="https://vimeo.com/273775838" style="width: 640px;height: 360px;">
+                                        </object>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <p>** When choosing a subset of documents to be indexed, keep in mind that the indexing process for <MadCap:variable name="Primary.IPRO" /> Analytics has several criteria that are automatically applied. This helps to ensure that the documents submitted for indexing will provide the most valuable results:</p>
+        <ul class="BulletListBody">
+            <li>Content included in your <a href="Create_and_Manage_FiltersIA.htm">IPRO Analytics Content filters</a> are automatically excluded from the index.</li>
+            <li>Documents automatically identified as Short or Binary during indexing will be listed as such in the <a href="../../../Eclipse_web/Analytics/Ipro Analytics/Analytics_Index_FieldsIA.htm">IA Doc Treatment field</a> and are automatically excluded from the index.</li>
+            <li>Extremely large text files (&gt; 4MB) are not automatically excluded, but if there is an abundance, it may result in the index building more slowly.  You might want to consider excluding these from your search criteria if they are in question.</li>
+        </ul>
+        <h2>Create a New Configuration</h2>
+        <p class="BodyText">If you would like to create a new configuration profile, click <b>New Configuration</b> and enter the appropriate information in the following fields:</p>
+        <table style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 475px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Item</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Enter a name for the configuration profile.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Text Assumption Level</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Select one of the following options to determine how documents will be treated when analyzing for non-binary documents (i.e. documents that contain readable text as opposed to just numbers):</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText"><b>0</b>: Only treats documents as non-binary after the system has analyzed the text and identified the content as containing prose.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><b>5</b>: If the document was converted from a known format to plain text, it assumes that the result should be treated as non-binary.</p>
+                            </li>
+                            <li>
+                                <p class="TableText"><b>10</b>: In addition to the assumptions made at level 5, if the document is in a format that can’t be translated into text, it assumes that the document can be treated as non-binary without further translation of validation.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Similarity Cutoff</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Enter the Similarity Cutoff value (from 1 to 100) to be used for determining the threshold for how similar two documents can be. The default value is 25.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Insignificant Words</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Default list of stop words (commonly used words that should be ignored, such as in, or, of). Words may be added or removed from this list.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="font-weight: bold;">Significant Words</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Add words that you want to ensure the index pays attention to and are known to be important for determining relevance, or words that you might want to include in analytics searching.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Manage Analytics Indexes</h2>
+        <h3>Edit or Delete an index</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Getting started:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and log in as an <MadCap:variable name="Primary.IPRO" /> Eclipse administrator.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">On the Case Management ribbon, select <b>IPRO Eclipse Analytics</b> &gt; <b>Manage Analytics Indexes</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">In the Manage Indexes screen, select the needed managing client/case.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Edit an Index:</p>
+                <p class="BodyText">To edit an existing index, click  corresponding to the necessary index. In the Edit Analytics Index dialog, make any needed changes in the following fields:</p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 475px;" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">item</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">description</p>
+                            </td>
+                        </tr>
+                    </thead> <tbody><tr class="TableStyle-ADD_Help_Tables-Body-Body1"><td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1"><p class="TableText" style="font-weight: bold;">Index Name</p></td><td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1"><p class="TableText">Edit the name of the index profile.</p></td></tr><tr class="TableStyle-ADD_Help_Tables-Body-Body1"><td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1"><p class="TableText" style="font-weight: bold;">Documents to Add</p></td><td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1"><p class="TableText">Documents can be added to an index by selecting one of the following options:</p><ul class="BulletListBody"><li><p class="TableText">To add all documents in the case to the index, select <b>&lt;Entire Case&gt;</b>.</p></li><li><p class="TableText">To add a subset of documents based on a search saved in <MadCap:variable name="Primary.IPRO" /> Eclipse (including private searches), select the search and click <b>OK</b>.</p></li></ul><table style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" width="100%" class="TableStyle-ADD_Help_Tables"><col style="width: 5.464%;" class="TableStyle-ADD_Help_Tables-Column-Column1" /><col style="width: 94.536%;" class="TableStyle-ADD_Help_Tables-Column-Column1" /><tr class="TableStyle-ADD_Help_Tables-Body-Body1"><td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1"><p style="text-align: center;"><img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" /></p></td><td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1"><p class="Note">Note: If there are no new documents to be processed in your selected search, you will be prompted to select one with unprocessed documents before you are allowed to proceed.</p></td></tr></table></td></tr></tbody></table>
+            </li>
+            <li>
+                <p class="BodyText">Optional: To delete an existing index, click the  corresponding to the index you wish to remove from your case.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Eclipse_web/Analytics/Ipro Analytics/Analytics_Index_FieldsIA.htm">Analytics Index Fields in IPRO Analytics</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_and_Manage_FiltersIA.htm">Create and Manage Content Filters</MadCap:xref>
+        </p>
+    </body>
+</html>

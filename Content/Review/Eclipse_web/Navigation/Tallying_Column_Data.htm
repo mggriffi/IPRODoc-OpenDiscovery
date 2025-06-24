@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Tallying Column Data</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Tallying Column Data</h1>
+        <p><span class="BoldItalic">This page contains the following content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#About_the_Tally_Function">About the Tally Function</a></span>
+                </p>
+            </li>
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#Tallying_a_Column">Tallying a Column</a></span>
+                </p>
+            </li>
+            <li>
+                <p><span class="BoldItalic" style="font-weight: normal;font-style: normal;"><a href="#Exporting_Tally_Results">Exporting Tally Results</a></span>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="About_the_Tally_Function"></a>About the Tally Function</h2>
+        <p class="BodyText">Tallying a column displays the total number of instances 
+ of a value in a selected field. The following figure shows an portion 
+ of results in the Tally pane.</p>
+        <p class="Image">
+            <img src="../../../Graphics/Eclipse Web Images/scr_record_tally_ex.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">For the SQL Database, each field with unique results 
+ is counted separately. In the following example, even though “Bob Smith” 
+ appears multiple times, the field content does not match exactly for the 
+ two records.</p>
+        <table cellspacing="0" width="210px" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 110px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                <td style="border: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                    <p class="TableHead" style="text-align: center;">CC 
+		 Names</p>
+                </td>
+                <td style="border-top: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 4px;padding-right: 3px;" bgcolor="#898493" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                    <p class="TableHead" style="text-align: center;">Tally 
+		 Count</p>
+                </td>
+            </tr>
+            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                    <p class="TableText">Bob Smith</p>
+                </td>
+                <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                    <p class="TableText" style="text-align: center;">1</p>
+                </td>
+            </tr>
+            <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                <td style="border-left: Solid 1px #898493;border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                    <p class="TableText">Bob Smith, Alice Franklin, Bob Smith</p>
+                </td>
+                <td style="border-right: Solid 1px #898493;border-bottom: Solid 1px #898493;padding-left: 2px;padding-right: 2px;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                    <p class="TableText" style="text-align: center;">1</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">You can use the tally function in any tab in the case 
+ pane (such as <span style="font-weight: bold;">Documents</span> or <span style="font-weight: bold;">Search Results</span>).</p>
+        <h3>Permissions and Conditions Required</h3>
+        <p class="BodyText">Anyone assigned to a case or batch can tally case data 
+ for columns existing in their case.</p>
+        <p class="BodyText">Any visible column can be tallied. Fields in which 
+ values are unique or with a majority of unique entries should not be tallied, 
+ however. (For example, the BEGDOC field.) </p>
+        <p class="BodyText">Contact your administrator for details on which columns 
+ should be tallied.</p>
+        <h2><a name="Tallying_a_Column"></a>Tallying a Column</h2>
+        <p class="BodyText">To tally a column in the case table: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Getting 
+ started:</p>
+                <ol>
+                    <li>
+                        <p>Log 
+ in to <MadCap:variable name="Primary.IPRO" /> Eclipse and open the needed case. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Case View</span> pane, select the 
+ <span style="font-weight: bold;">Documents</span> (or <span style="font-weight: bold;">Search 
+ Results</span>, etc.) tab. </p>
+                    </li>
+                    <li>
+                        <p>Locate 
+ the column to be tallied. Resize components in the <MadCap:variable name="Primary.IPRO" /> Eclipse workspace 
+ and/or scroll horizontally in the case table if needed. </p>
+                    </li>
+                </ol>
+                <p class="Image">
+                    <img src="../../../Graphics/Eclipse Web Images/scr_record_tally_sort_menu.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+            <li>
+                <p>Right-click the column heading and select <span style="font-weight: bold;">Tally</span>. </p>
+            </li>
+            <li>
+                <p>If the field being tallied is in a DATE field, 
+ select how you want the data tallied, then click <span style="font-weight: bold;">OK</span>. 
+ In the following example, <span style="font-weight: bold;">Year</span> 
+ is being selected.</p>
+                <p class="Image">
+                    <img src="../../../Graphics/Eclipse Web Images/scr_record_tally_date_sel.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+            </li>
+            <li>
+                <p>After the Tally pane opens in the lower part 
+ of the case pane, evaluate the results. Counts for each unique result 
+ are displayed.</p>
+            </li>
+            <li>
+                <p>As needed:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Click 
+ one of the results to see all matching records in a <span style="font-weight: bold;">Search 
+ Results</span> tab. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Sort by Name</span> to sort the results 
+ by name. Click this button again to reverse the sort order.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Sort by Count</span> to sort the results 
+ by the number of results. Click this button again to reverse the sort 
+ order. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Clear</span> to remove results from the 
+ Tally pane.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2><a name="Exporting_Tally_Results"></a>Exporting Tally Results</h2>
+        <p class="BodyText">To export contents of the Tally pane to a .CSV file:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete 
+ <a href="#Tallying_a_Column">"Tallying a Column."</a></p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Export 
+ to CSV</span>.</p>
+            </li>
+            <li>
+                <p>Complete the Save As dialog box. </p>
+            </li>
+        </ol>
+    </body>
+</html>

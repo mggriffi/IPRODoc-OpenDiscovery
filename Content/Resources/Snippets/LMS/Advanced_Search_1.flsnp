@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="BodyText">In <MadCap:variable name="Primary.ProdName_Review" />,  <b>Advanced Search</b> allows 
+ you to easily construct complex search expressions or specialized searches 
+ and display results in the <span style="font-weight: bold;">Results</span> 
+ tab. Searches can also be saved for later use or for specific tasks. For 
+ example, batches must be based on a saved search.</p>
+        <p class="BodyText">On the <b>Advanced Search</b> tab, under <b>Search Criteria</b>, areas 
+ can be expanded as required to define the search and/or search options. For more information about these areas, see <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm">Work With Advanced Search</MadCap:xref><a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Defining_Searches/AR_Advanced_Search.htm" target="_blank"><MadCap:conditionalText MadCap:conditions="Primary.LMS_v8_0">Define an Advanced Search</MadCap:conditionalText></a>. The <span style="font-weight: bold;">Advanced 
+ Search</span> tab with the <span style="font-weight: bold;">Field Search</span> area expanded and the other areas collapsed is shown as follows:</p>
+        <p>
+            <img src="../../../Graphics/ADD_Review_Graphics/AR_Pg_AdvSearch_dash3.png" class="Thumbnail" />
+        </p>
+    </body>
+</html>

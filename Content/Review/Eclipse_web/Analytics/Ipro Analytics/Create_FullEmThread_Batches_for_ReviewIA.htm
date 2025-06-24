@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head><title>Create Full Email Thread Batches for Review (IPRO Analytics)</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create Full Email Thread Batches for Review (IPRO Analytics)</h1>
+        <p class="BodyText">For email threading, one way of build batches is using full thread batch review. In this scenario, you create batches such that a single reviewer can review all documents in every thread by grouping all 
+ emails of a thread into the same batch. Allowing for all documents in the same email thread to be reviewed by one reviewer, provides for faster, more consistent review decisions. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Create 
+ a new Advanced Search called <span style="font-weight: bold;">
+ Email Thread Batches</span>. Include Families on the search by ensuring the option to <span style="font-weight: bold;">Include Family</span> is selected from the drop-down.</p>
+            </li>
+            <p class="Image">
+                <img src="../../../../Graphics/Eclipse Web Images/IA_Email_Thread_Batch.png" alt="" style="border: none;" border="0" />
+            </p>
+            <li>
+                <p>The criteria of the search should identify 
+ all families that received an Email Thread value. This can be accomplished 
+ by searching for any documents where the <b>IA Email Set ID</b> 
+ field contains a value.</p>
+            </li>
+            <p class="Image">
+                <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_Full_Thread_Batch_Review.png" alt="" style="border: none;width: 648px;height: 93px;" border="0" />
+            </p>
+            <li>
+                <p>Create a new Review Pass and identify your 
+ Advanced Search for the documents to be batched:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Set Batching Order 1: in your Review Pass to BEGATT descending</p>
+                    </li>
+                    <li>
+                        <p>Choose 
+ a batch size to fit your needs.</p>
+                    </li>
+                    <li>
+                        <p>Identify 
+ a batch prefix.</p>
+                    </li>
+                    <li>
+                        <p>Set 
+ the family field to <b>IA Email Set ID</b>
+ to ensure all families and threads are kept together.</p>
+                    </li>
+                    <li>Sort the Review Pass by <b>IA Email Sort</b> descending.</li>
+                    <li>
+                        <p>Save 
+ and Create Batches.</p>
+                    </li>
+                    <p>
+                        <img src="../../../../Resources/Images/fullthreademailrevpass.png" class="Thumbnail_Popup" />
+                    </p>
+                </ul>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Create_EmailThrandND_Batches_for_ReviewIA.htm">Create Email Thread with Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_InclusiveEmailThread_Batches_for ReviewIA.htm">Create Inclusive Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="SetUpRelPanel_to_DisplayEmThreadsIA.htm">Set Up the Relationship Panel to Display Email Threads ([%=Primary.Analytics%])</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Email_Threading_FieldsIA.htm">Email Threading Fields in IPRO Analytics</MadCap:xref>
+        </p>
+    </body>
+</html>

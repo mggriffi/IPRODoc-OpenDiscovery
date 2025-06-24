@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Blocked" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>InstallerPro FAQ</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>InstallerPro FAQ</h1>
+        <p>
+            <MadCap:toggler targets="Login_Space">I'm unable to log in to InstallerPro, even though my username and password are both correct. What's happening?</MadCap:toggler>
+        </p>
+        <p MadCap:targetName="Login_Space">Double-check that your email and password have been typed out correctly. If you include any additional spaces after your email, the log in will fail. </p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:toggler targets="ADD_name_ISS">When configuring the IPRO components for installation, I noticed a field that asks for "The name of the ADD website in IIS." Is it necessary to list the name of the ADD website as it appears in IIS, or can I leave this field blank?</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="ADD_name_ISS">
+            <p>If ADD Web already exists on your machine and you are upgrading to the latest version, it's necessary to input a value for this field. Open the Internet Information Services Manager on your machine and locate the name of the ADD website as it appears there. </p>
+            <p>If you do not already have ADD (<MadCap:variable name="Primary.Name" />) installed on your machine, leave this field blank.</p>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <MadCap:toggler targets="Install_Order">Is it necessary to install the IPRO core components in a particular order, or can I install the components in any random order?</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="Install_Order">
+            <p>For the services to function properly, some components must be installed before others. Both Redis Server and Identity Server must be installed before <MadCap:variable name="Primary.Name" />. Furthermore, <MadCap:variable name="Primary.Name" /> must be installed before Platform Web, Platform Web API, and the Job Manager Agent. You may install Redis before Identity Server, or Identity Server before Redis. One possible installation order would be as follows:</p>
+            <ol>
+                <li>Install Redis Server</li>
+                <li>
+                    <p>Install Identity Server</p>
+                </li>
+                <li>Install <MadCap:variable name="Primary.Name" /> (<b>Note</b>: The application is not available for installation through InstallerPro. The latest version of <MadCap:variable name="Primary.Name" /> may be found and downloaded from <a href="https://myipro.iprotech.com/">https://myipro.iprotech.com</a>.)</li>
+                <li>
+                    <p>Install Platform Web</p>
+                </li>
+                <li>
+                    <p>	Install Platform Web API</p>
+                </li>
+                <li>
+                    <p>Install Job Manager Agent</p>
+                </li>
+            </ol>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <MadCap:toggler targets="Redis">When I attempt to install Redis, I get a message saying "That port is already in use on this machine." What do I do?</MadCap:toggler>
+        </p>
+        <p MadCap:targetName="Redis">Double-check that Redis has not already been installed on your machine. Open your control panel &gt; Programs &gt; Programs and Features to see if Redis server is listed there. If the port is in use, most likely Redis has already been installed on your machine and you can move on to the next component.</p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:toggler targets="Auth">I'm able to install Redis Server on my machine, but unable to install any of the other components. What's happening?</MadCap:toggler>
+        </p>
+        <p MadCap:targetName="Auth">There may be a number of reasons for why Identity Server and the other components are not installing properly. Ensure that all required fields have been configured with the proper values. Furthermore, verify that the <MadCap:variable name="Primary.IPRO" /> Authorization Service has been installed on the machine. If <MadCap:variable name="Primary.IPRO" /> Authorization has not been installed, you will not be able to install Identity Server.</p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:toggler targets="Install_Pipeline">While installing one of the IPRO components, a message appeared saying the "Install Pipeline Finished," however the progress bar still displays on the screen, along with the message, "Installing. Please wait..." Now, nothing's happening. What should I do?</MadCap:toggler>
+        </p>
+        <p MadCap:targetName="Install_Pipeline">An unexpected error likely occurred during the installation process.  Close the application and sign back in. Either the platform will show the component as having been installed, or you will have to run the installation a second time. </p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:toggler targets="Blank_URL_Fields">On the InstallShield Wizard, while configuring settings for <MadCap:variable name="Primary.Name" />, I'm asked to input a Redis, Identity, and Platform Web API URL. What happens if I leave this section blank? </MadCap:toggler>
+        </p>
+        <p MadCap:targetName="Blank_URL_Fields">If these fields are left blank or otherwise populated with the wrong values, the <MadCap:variable name="Primary.Name" /> application will not function properly when installed. Make sure to provide the correct values for these fields. The installer will not validate these values to confirm that they are correct prior to installation. Note that the application will still be installed successfully onto the machine, however it will not function correctly. Only by uninstalling the product, then reinstalling with the correct values will <MadCap:variable name="Primary.Name" /> work as intended.</p>
+        <p>&#160;</p>
+    </body>
+</html>

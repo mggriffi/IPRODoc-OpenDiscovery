@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary._FixedMulti-Level,Primary.Review" style="mc-template-page: url('../../Resources/MasterPages/LiveEDA_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure LIVE EDA Environment in System Manager</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <map id="map1">
+            <area shape="rectangle" coords="110,-3,217,155" dragDirection="0" href="#1." />
+            <area shape="rectangle" coords="235,-5,341,159" dragDirection="0" href="#2." />
+            <area shape="rectangle" coords="349,-5,446,187" dragDirection="0" href="#3." />
+            <area shape="rectangle" coords="466,-4,557,173" dragDirection="0" href="#4." />
+            <area shape="rectangle" coords="582,-2,680,169" dragDirection="0" href="#5." />
+            <area shape="rectangle" coords="699,0,799,153" dragDirection="0" href="#6." />
+            <area shape="rectangle" coords="809,-2,906,166" dragDirection="0" href="#7." />
+            <area shape="rectangle" coords="919,-1,1016,170" dragDirection="0" href="../../LiveEDA/Create_Case_LiveEDA.htm" />
+        </map>
+        <h1>
+            <MadCap:keyword term="Create Case" />Configure LIVE EDA <MadCap:annotation MadCap:createDate="2022-08-04T16:17:12.6855649-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Have some thoughts about this topic. Easier to discuss on a call " MadCap:editor="mcohen" MadCap:editDate="2022-08-04T16:17:27.2746556-07:00">Environment in System Manager</MadCap:annotation></h1>
+        <p>To successfully create and work in a <MadCap:variable name="Primary.LIVE EDA" /> case in <MadCap:variable name="Primary.Name" />, you must configure <MadCap:variable name="Primary.LIVE EDA" /> in both <MadCap:variable name="Primary.NetGovern" /> services and in the
+ <MadCap:variable name="Primary.Name" /> <MadCap:variable name="Primary.LIVE EDA" /> case. See <MadCap:xref href="../../LiveEDA/Configure_LiveEDA.htm">Configure LIVE EDA</MadCap:xref> for details.</p>
+        <p>You can configure the <MadCap:variable name="Primary.LIVE EDA" /> environment settings for <MadCap:variable name="Primary.Name" /> via the System <MadCap:annotation MadCap:createDate="2022-07-21T15:26:57.9760147-04:00" MadCap:creator="ltonak" MadCap:initials="LT" MadCap:comment="CURRENTLY NOT FOR LMS" MadCap:editor="ltonak" MadCap:editDate="2022-07-21T15:27:10.9282152-04:00">Manager.</MadCap:annotation></p>
+        <ol>
+            <li>
+                <p>Log in to <MadCap:variable name="Primary.Name" /> and navigate to the System Manager, accessed from the gear icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> at the top-right corner of the screen.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Cursor_over_Settings_Icon.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>In the left-hand panel of the System Manager, select <b>Environment Settings</b>.</p>
+            </li>
+            <li>
+                <p>Scroll down to <b>EDA&#160;Settings</b>. </p>
+            </li>
+            <li>
+                <p>In Early Data Assessment Search Endpoint, enter the correct <b>Search Endpoint</b>. This is the URL the user navigates to in order to view the <MadCap:variable name="Primary.LIVE EDA" /> case.</p>
+            </li>
+            <li>
+                <p>In Early Data Assessment Environment Endpoint, enter the correct <b>EDA API Endpoint</b>. This is the URL of <MadCap:variable name="Primary.NetGovern" />'s internal API.</p>
+            </li>
+            <li>
+                <p>In Early Data Assessment API&#160;Key, paste the <b>API Key</b>. </p>
+            </li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+                <p>
+                    <img src="../../Graphics/LiveEDA_Graphics/NG UI_Live EDA Configuration_EDA Settings_11.0.png" class="Thumbnail" style="width: 425px;height: 216px;" />
+                </p>
+            </li>
+        </ol>
+        <h4><a name="Manage"></a>Manage Environment Settings at the Client Level</h4>
+        <p><MadCap:variable name="Primary.LIVE EDA" />&#160;will use the default environment unless otherwise specified. If your organization has multiple clients, you have the option to configure different environments for each client in <MadCap:annotation MadCap:createDate="2022-07-21T15:27:35.8049428-04:00" MadCap:creator="ltonak" MadCap:initials="LT" MadCap:comment="CURRENTLY NOT FOR LMS" MadCap:editor="ltonak" MadCap:editDate="2022-07-21T15:27:37.2917301-04:00">the</MadCap:annotation><b> Case Management</b> module:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Click <b>Case Management</b> 
+ on the <MadCap:variable name="Primary.Name" /> Home page (or <b>Case Management</b> 
+ on the main menu located in the left pane).</p>
+            </li>
+            <li>
+                <p>Take one of the following actions as needed:</p>
+            </li>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Click 
+ <img src="../../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" /> corresponding 
+ to the needed managing client and click <b>Edit 
+ Managing Client</b>. </p>
+                </li>
+                <li>
+                    <p>Click 
+ <img src="../../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" /> corresponding 
+ to the needed client and click <b>Edit 
+ Client</b>. </p>
+                </li>
+                <li>
+                    <p>Under <b>Early Data Assessment Environment</b>, deselect <b>Use System Default</b>.</p>
+                    <p>
+                        <img src="../../Graphics/LiveEDA_Graphics/use_system_default_option.png" class="Thumbnail" style="width: 181px;height: 164px;" />
+                    </p>
+                </li>
+                <li>
+                    <p>Enter the desired <b>Search Endpoint</b> and <b>API&#160;Endpoint</b> for that client. </p>
+                </li>
+                <li>
+                    <p>Click <b>Save</b>.</p>
+                </li>
+            </ul>
+        </ol>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 490px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: You cannot configure the Early Data Assessment Search Endpoint when creating a new client, only by editing an existing client in the Case Manager.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="../../LiveEDA/Overview_LiveEDA.htm">Overview: LIVE EDA</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../../LiveEDA/Configure_LiveEDA.htm">Configure LIVE EDA</MadCap:xref>
+        </p>
+    </body>
+</html>

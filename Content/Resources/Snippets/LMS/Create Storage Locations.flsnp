@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <p class="BodyText">To define storage locations, proceed through the following steps. For 
+ best results, plan/use a consistent naming convention for presenting all 
+ aspects of a storage location (building, room, shelf, etc.).</p>
+            <MadCap:snippetBlock src="../System_Navigation.flsnp" MadCap:conditionTagExpression="include[&quot;System_Nav.Storage Locations&quot;]" />
+            <ol class="NumbListBody" start="3">
+                <li>Click <img src="../../../Graphics/System_Graphics/System_Add_Icon.png" class="ReduceButtonSize" />. The <b>Create New Storage Location</b> page opens. <span>&#160;</span></li>
+                <li>Enter the storage location name and click <b>Save</b>:</li>
+                <p class="Image">
+                    <img src="../../../Graphics/System_Graphics/Add_Storage_Location.png" class="Thumbnail" />
+                </p>
+                <li>Repeat these steps to create other storage 
+ locations.</li>
+                <li>Explain use of new storage locations to Media 
+ Manager users.</li>
+            </ol>
+            <p class="BodyText">&#160;</p>
+        </div>
+    </body>
+</html>

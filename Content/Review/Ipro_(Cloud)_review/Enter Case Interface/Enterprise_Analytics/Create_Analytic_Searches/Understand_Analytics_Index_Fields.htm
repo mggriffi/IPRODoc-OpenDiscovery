@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-template-page: url('../../../../../Resources/MasterPages/Review_MP.flmsp');" MadCap:conditions="Primary.Review">
+    <head><title>Understand Analytics Index Fields</title>
+        <link href="../../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Understand Analytics Index Fields </h1>
+        <p class="BodyText">Fields used for index analysis are listed 
+ in the following table. These fields can be created at the time you configure 
+ indexes. Fields are required unless otherwise noted.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 700px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">
+		 field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA Rep Doc</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">When an index is built, the system groups documents into “clusters.” These are separate from the clusters used by the concept wheel and exclusive to the index.  Each cluster is centered on a document that we call the <b>representative document</b>. All documents in the cluster are similar to the representative document to within the cutoff you specify.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA Doc Treatment</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">How the document was classified by the analytics engine. A document is classified as one of three types:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText"><b>Normal</b> – Most documents will be classified as Normal. This means the document was composed primarily of non-numeric text and was long enough to be clustered in the index.</p>
+                            </li>
+                        </ul>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="TableText"><b>Short</b> – Documents that do not contain enough significant words. </p>
+                            </li>
+                            <li>
+                                <p class="TableText"><b>Binary</b> – Documents containing an abundance of numbers, a shortage of white space, unusual punctuation, or some other criteria that identifies the document as something other than normal prose.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">IA Sig Words</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Each document treated as <b>Normal</b> will display the keywords for that document’s cluster. These are the words that contributed the most to making the documents in the cluster conceptually similar to the representative document. The output is ordered with the words that contributed the most coming first.</p>
+                        <p class="TableText">All keywords are contained in the representative document, but the keywords won't necessarily be contained in all documents in the cluster.</p>
+                    </td>
+                </tr>
+            </tbody> </table>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Create_Email_Full_Thread_Search.htm">Create Email Full Thread Search    </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_InclusiveEmailThread_Search.htm">Create Inclusive Email Thread Search  </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_Near_Duplicate_Not_Email_Thread_Search.htm">Create Near Duplicate Search Excluding Email Thread</MadCap:xref>
+        </p>
+    </body>
+</html>

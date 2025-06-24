@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head><title>OPEN DISCOVERY Release Notes 2022.11.1 and 11.2</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1><MadCap:variable name="Primary.Name" /> Release Notes 2022.11.1 and 2022.11.2</h1>
+        <p>The new release of OPEN DISCOVERY focuses on the features you have been asking for. IPRO is committed to an ongoing balance between innovation and meeting customer needs.</p>
+        <p>Schedule your upgrade with <a href="https://iprotech.atlassian.net/servicedesk/customer/portal/1/group/1/create/42">IPRO Support</a> today!</p>
+        <h2>New Features</h2>
+        <h3>Review</h3>
+        <p><b>Faster Document Review</b> – Improved performance on Document Viewer allowing documents to load, on average across all data types,<b> twice as fast</b>.<b> *</b>Upon upgrade completion, automation to re-optimize all cases will go through job manager. To avoid normal priority jobs from being delayed in job manager queue, please adjust agent priority to 50% until completion.</p>
+        <p><b>Print Directly from Image Viewer</b> – Save time with the new option available to print directly from the Image and Production Viewer tabs to PDF.</p>
+        <p><b>Improved Keyword List Management</b>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><b>Document Search Scope</b> can now be tailored down to a smaller set of documents by using a saved search to target specific document sets. This allows users to create custom keyword list and hit reports for custodian(s) and\or data set(s).</p>
+            </li>
+            <li>
+                <p><b>New Simplified and Modern Interface</b>, improved usability, and consistent interface experience with the rest of the application.</p>
+            </li>
+        </ul>
+        <p><b>Native File Download from Icon</b> - Users using the document grid can click on the file-type icons to directly download the file, avoiding extra and unnecessary clicks to review native files.</p>
+        <p><b>Hot Key Legend Update</b> - Updated hotkey legend to include the newly added "Ctrl + Backspace" to delete the selected redaction.</p>
+        <p><b>Document Grid Update</b> – “Select All” or "Clear Selected” ability added to the top of the document grid to make it easier for users to interact with. Users can now use these options when preparing documents for mass actions to quickly add all or remove document selection.</p>
+        <h2>Resolved Issues</h2>
+        <h3>Review</h3>
+        <p><b>AR-16592</b> – Improved the optimization process to account for instances when replacing native files that were previously optimized. This will trigger the ability to re-optimize the new documents overlaid.</p>
+        <p><b>AR-16994</b> – Improved performance when entering new case and initial loading of Cluster Wheel.</p>
+        <p><b>AR-16488</b> – Improved handling for redaction deletion when mouse activity is used simultaneously to avoid auto-selecting and resizing newly selected redaction.</p>
+        <h3>Processing</h3>
+        <p><b>AP-5485</b> – Updated intended workflow to rollback bates numbering for last deleted Data Extract Export job from the controller.</p>
+        <p><b>AP-5482</b> – Improved handling of page level OCR for duplicate files when the original file stored a value of incomplete OCR.</p>
+        <p><b>AP-5439</b> – Improved handling when creating a new Process Export Series from eCapture controller.</p>
+        <p><b>AP-5409</b> - The password protected file identification routine has been improved to ensure that the 'Password Applied' flag is only used when the password was successfully applied.</p>
+        <p><b>AP-5452</b>- Imaging process enhancement to better handle Office file types when using IPRO Q if they weren’t originally ingested with eCapture.</p>
+        <p><b>AP-1761</b> - The 'Streaming Detailed Dedupe Report' would throw a collation exception for SQL environments configured with a collation other than 'SQL_Latin1_General_CP1_CI_AS'. This has been enhanced to support any non-default collation setting.</p>
+        <p><b>AP-5562</b> – Improved process in recognizing attachments to EML email files during Legacy Discovery.<a name="New"></a></p>
+    </body>
+</html>

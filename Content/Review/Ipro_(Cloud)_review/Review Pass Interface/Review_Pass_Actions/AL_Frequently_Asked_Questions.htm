@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Review">
+    <head><title>Active Learning Frequently Asked Questions</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Active Learning Frequently Asked Questions</h1>
+        <h2><a name="Review_Pass_Basics"></a>
+        </h2>
+        <p>The following questions comprise a Frequently Asked Questions (FAQ) list related to <MadCap:variable name="Primary.Active Learning" />. For instructions about setting up <MadCap:variable name="Primary.Active Learning" />, see the Related pages links at the end of this topic.</p>
+        <p>&#160;</p>
+        <p><b>What should I know about the <MadCap:variable name="Primary.Active Learning" /> Index? Are there any preventative measures I should take to optimize my <MadCap:variable name="Primary.Active Learning" /> index?</b>
+        </p>
+        <p> The Index for an <MadCap:variable name="Primary.Active Learning" /> project is created by default at the time that the <MadCap:variable name="Primary.Active Learning" />-enabled review pass is saved.  It is recommended to validate that the records in your scope have all proper text, and/or OCR has been created and loaded before creating the review pass.  Removing documents that contain a large amount of text from your scope can also be beneficial, especially if it is common within the case but is not required.</p>
+        <p>&#160;</p>
+        <p><b>Why is the default Batch Size 10 and can it be modified?</b>
+        </p>
+        <p>A default batch size of 10 was selected in order to provide the <MadCap:variable name="Primary.Active Learning" /> system with as many example documents in as close to real-time as they are coded.  Every example provided helps to train the engine so that larger batches delay training of the system. This exponentially delays the prioritization of positive records into batches. Though the batch size can be modified, for the sake of optimization and giving the engine examples more quickly, smaller is better.  If the batch size must be modified, this can be done on the Settings tab of the review pass under the Batch Size option.</p>
+        <p>&#160;</p>
+        <p><b>Must review/training be done by subject matter experts?</b>
+        </p>
+        <p> No. Subject matter experts (SMEs) are not required for an <MadCap:variable name="Primary.Active Learning" /> project.  Documents are coded as part of batches in the review pass, and predictions are made immediately and throughout the course of the review pass.</p>
+        <p>&#160;</p>
+        <p><b>What if I added records to my case and must add them to my <MadCap:variable name="Primary.Active Learning" /> project on which I’ve already started review?</b>
+        </p>
+        <p>If new records are loaded to your case or the scope of criteria for your project changes, a banner then displays at the top of the Review pass screen. This allows the review pass index and predictions to be updated at the bottom of the Overview tab by clicking the Update Documents button. When this occurs, documents cannot be removed from the review pass scope or index. So if the active learning project no longer applies to some documents, the predictions can be ignored.</p>
+        <p>&#160;</p>
+        <p><b>On what is the prediction algorithm based?</b>
+        </p>
+        <p>The prediction algorithm uses the 40 k-nearest neighbors (k-NN).  This means that the 40 most similar manually coded documents are used to make the predictions for the records.</p>
+        <p>&#160;</p>
+        <p><b>When do predictions start?</b>
+        </p>
+        <p>Predictions start being applied as soon as a regular (non-QC) batch is checked in that contains a positive example.</p>
+        <p>&#160;</p>
+        <p><b>Does every document in the <MadCap:variable name="Primary.Active Learning" /> Review pass receive a prediction and relevancy score?</b>
+        </p>
+        <p> Documents in the Review Pass that have a “normal” document treatment receive a prediction and relevancy score.  Documents that have a “short” or “binary” document treatment do not receive a prediction or relevancy score and must be reviewed outside of <MadCap:variable name="Primary.Active Learning" />.</p>
+        <p>&#160;</p>
+        <p><b>I see the Omitted Records category in my Review Metrics – what should I be aware of with these documents?</b>
+        </p>
+        <p> Omitted records are documents that were part of your review pass scope, but a prediction could not be applied because the document was mostly binary data or contained little or no words.  Generally, omitted documents should be reviewed manually outside of the <MadCap:variable name="Primary.Active Learning" /> process and can be identified by clicking the hyperlinked Count on the Overview tab of the review pass to open the document set within Visual Search.</p>
+        <p>&#160;</p>
+        <p><b>Can I provide pre-coding document examples?</b>
+        </p>
+        <p> Pre-coded documents can be pulled into a QC batch and then reviewers would go through and tag them with the appropriate tag and “reviewed” status. See <MadCap:xref href="../../Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm#Create">Create a QC Batch</MadCap:xref>.</p>
+        <p>&#160;</p>
+        <p><b>If a document is manually tagged as a Positive example, how could the prediction be the opposite? Or vice versa?</b>
+        </p>
+        <p> A document’s prediction is not influenced by how you tag the document itself, but rather how manually tagged documents that are similar to it have been coded.  This helps prevent bias and is known as “leave-one-out cross validation”.  This is also the reason why you might have “conflicts” (the reviewer tagged it one way, but the system predicted it another).  It is usually a good idea to review conflicts, as there may have been some discrepancies when tagging other similar documents.</p>
+        <p>&#160;</p>
+        <p><b>Conflicts are a common part of <MadCap:variable name="Primary.Active Learning" />, but what should I know about conflicts and how to manage them?</b>
+        </p>
+        <p> Conflicts are records that were manually tagged, for which there is a disagreement between the reviewer and the prediction.  Often the earlier stages of an <MadCap:variable name="Primary.Active Learning" /> project can result in more conflicts, which may resolve themselves as more training is applied and the engine becomes more accurate.  Conflict records can be isolated and reviewed separately by submitting them into a QC Batch for your existing Review Pass.  This can be done by clicking on the hyperlinked Count on the Overview tab of the Review Pass, then choosing the Mass Action to Create QC Batch and selecting your <MadCap:variable name="Primary.Active Learning" />-enabled Review Pass from the selector. See QC Batches.</p>
+        <p>&#160;</p>
+        <p><b>What if my Primary Review Purpose tag is part of a multi-tag group?</b>
+        </p>
+        <p>If your Primary Review Purpose tag is part of a multi-tag tag group, (for example, the tag group has tags for Relevant, Not Relevant, and Technical Issue, and your Primary Review Purpose is set to Relevant), any tags other than the Relevant tag is recorded as a Negative example.</p>
+        <p>&#160;</p>
+        <p><b>What happens if a reviewer doesn’t know how to code a document?</b>
+        </p>
+        <p>Once a document is marked as Reviewed, if the Primary Review Purpose tag is selected, then the document is recorded as a “positive” example.  If the Primary Review Purpose tag is not selected, the document is recorded as a “negative” example.  Therefore, reviewers should be familiar with using the OnHold review status for a document if they are unsure whether the document is a Positive or Negative example.  This prevents the document from being added as an example until a review decision can be made.</p>
+        <p>&#160;</p>
+        <p><b>My Recall seems to stop around 70%.  Can I expect it to improve, or go above 70%?</b>
+        </p>
+        <p>The desired Recall level is set to 70% within the system.  This means documents above the 70% recall threshold (higher relevancy scores), will be predicted as relevant.  Documents below the 70% recall threshold (lower relevancy scores) will be predicted as non-relevant.  If you desired 100% Recall, you could simply review all documents in the case, and still receive the benefits of <MadCap:variable name="Primary.Active Learning" /> to prioritize the review.</p>
+        <p>&#160;</p>
+        <p><b>Does the “Poor”, “Mediocre”, “Good”, or “Excellent” <MadCap:variable name="Primary.Active Learning" /> status indicate a stopping point in the review?</b>
+        </p>
+        <p> The <MadCap:variable name="Primary.Active Learning" /> status is related to how well the engine is trained, and if it could benefit from seeing more training example documents.  The <MadCap:variable name="Primary.Active Learning" /> status should not be used to gauge when to stop review, as that is often based on other metrics (Recall, for example).</p>
+        <p>&#160;</p>
+        <p><b>I received an opposing party production and want to use <MadCap:variable name="Primary.Active Learning" /> to review it.  To use <MadCap:variable name="Primary.Active Learning" />, must the data be processed with IPRO?</b>
+        </p>
+        <p> As long as you have extracted text for your documents, you can generate an Analytics index and use <MadCap:variable name="Primary.Active Learning" />.  The data does not require processing with IPRO.</p>
+        <p>&#160;</p>
+        <p><b>Can I use <MadCap:variable name="Primary.Active Learning" /> on documents with OCR text?</b>
+        </p>
+        <p> Documents with OCR text may require review outside of <MadCap:variable name="Primary.Active Learning" />, because of the varying quality with OCR text. However, it  depends on the case and data.</p>
+        <p>&#160;</p>
+        <p><b>Can I use <MadCap:variable name="Primary.Active Learning" /> for privileged review, review for confidentiality, or other review workflows?</b>
+        </p>
+        <p> Most clients review documents for privilege outside of <MadCap:variable name="Primary.Active Learning" />, as there are often subtle distinctions that determine whether a document is privilege or not (that is, the recipient of a document may determine if it was privilege) and it can be difficult for <MadCap:variable name="Primary.Active Learning" /> to identify those distinctions.  Similarly, it can be difficult to use <MadCap:variable name="Primary.Active Learning" /> to distinguish different confidentiality levels.  <MadCap:variable name="Primary.Active Learning" /> is best used to prioritize and assist with identifying relevancy and/or specific issues, but you could combine <MadCap:variable name="Primary.Active Learning" /> as a QC step on most linear reviews.</p>
+        <p>&#160;</p>
+        <p><b>I tagged documents outside of the <MadCap:variable name="Primary.Active Learning" />-enabled review pass.  Will those be used by the engine to help train the system?</b>
+        </p>
+        <p> No. Documents must be part of the specific <MadCap:variable name="Primary.Active Learning" /> review pass to train the engine. Tagging a document outside of the review pass (even if it is the same tag used for <MadCap:variable name="Primary.Active Learning" />) will not train or influence the engine and associated reports or metrics.</p>
+        <p>&#160;</p>
+        <p><b>What if I normally review with the Tag Family option turned on?</b>
+        </p>
+        <p>The tag family rule can be used with <MadCap:variable name="Primary.Active Learning" />. However only the primary document, which is manually tagged, will be added as a training example to your <MadCap:variable name="Primary.Active Learning" /> project.  Family documents would be tagged, but they would not be included in the training unless they are later reviewed as part of an <MadCap:variable name="Primary.Active Learning" /> batch.  It is recommended to only consider the document you are reviewing when utilizing <MadCap:variable name="Primary.Active Learning" />; users should not consider documents within other relationships when they are making tagging decisions.  After the <MadCap:variable name="Primary.Active Learning" /> project is completed, a typical next step might be to resolve prediction discrepancies within a family before production.</p>
+        <p>&#160;</p>
+        <p><b>Can a tag be used more than one time as a “Review Purpose”? What other things should I think about concerning my Review Purpose tags?</b>
+        </p>
+        <p>A tag can be used only one time as the primary review purpose.  Once it is designated as the primary review purpose within a review pass, the tag can no longer be used across other review passes (this applies to both <MadCap:variable name="Primary.Active Learning" /> and non-<MadCap:variable name="Primary.Active Learning" /> review passes).  One way to manage this is to name tags by using part of the review pass name.  During a First Level Review for responsiveness, you may name the tag “FLR Responsive”.  During a later review pass for QC purposes, you could name the tag as “QC Responsive”.   Keep in mind that it may be easier to manage the review in a single review pass.  However, following a consistent tag-naming convention can also be useful when multiple review passes are used for similar purposes.</p>
+        <p>&#160;</p>
+        <p><b>Can reviewers apply other coding decisions to documents while reviewing for an <MadCap:variable name="Primary.Active Learning" /> review pass?</b>
+        </p>
+        <p>Yes. Other tags, tag groups, and fields can be applied or edited during review for an <MadCap:variable name="Primary.Active Learning" /> review pass.  They will not affect the prioritization of the primary review purpose.  Keep in mind only one tag can be designated as the primary review purpose for each review pass, which is considered the “positive” example, while any other tag that is part of that tag group, is considered a “negative” example.  The most common example would be a tag group called “Responsiveness” that has a tag named “Responsive” and another tag named “Non-Responsive”.  In this example, an optional step could be to tag for specific issues within another tag group, but there would be no <MadCap:variable name="Primary.Active Learning" /> or prioritization taking place when tagging the issues.</p>
+        <p>&#160;</p>
+        <p><b>What actually happens when I switch a review pass from </b><MadCap:variable name="Primary.Active Learning" style="font-weight: bold;" /><b>&#8209;disabled to </b><MadCap:variable name="Primary.Active Learning" style="font-weight: bold;" /><b>&#8209;enabled after documents have been reviewed?</b>
+        </p>
+        <p>Even in an <MadCap:variable name="Primary.Active Learning" />-disabled state, an Analytics index is created for the review pass and training will be happening based on the selected review purpose; however, documents will be batched out in the default sort order and prioritization will not occur.  If in the future you decide to enable <MadCap:variable name="Primary.Active Learning" /> on the review pass, the documents will start to be prioritized and batched out based on the highest likelihood of being positive.  When <MadCap:variable name="Primary.Active Learning" /> is enabled, batches will be created on demand when reviewers check out a batch.</p>
+        <p>&#160;</p>
+        <p><b>What benefit does Content Filtering have for <MadCap:variable name="Primary.Active Learning" />?</b>
+        </p>
+        <p>Content filtering allows common phrases, sentences, email disclaimers, and so on to be ignored by the Analytics index.  This leads to better clustering of documents based on the actual text.  Otherwise dissimilar documents could be considered conceptually similar if they share  a lengthy email disclaimer, footer, or so on.</p>
+        <p>&#160;</p>
+        <p><b>Are “short” cluster centers prioritized in the beginning (TAR 3.0), or are just the “normal” cluster centers prioritized?</b>
+        </p>
+        <p>No. All short documents are excluded entirely and must be reviewed outside of the <MadCap:variable name="Primary.Active Learning" /> review pass.</p>
+        <p>&#160;</p>
+        <p><b>Where can I get an estimate of the prevalence (estimated percentage of relevant docs in the review pass)?</b>
+        </p>
+        <p>In the review pass under the Insights area, there is a prevalence estimate as well as a range of estimated relevant documents.  This will fluctuate throughout the review, especially at the beginning of an <MadCap:variable name="Primary.Active Learning" /> project.</p>
+        <p>&#160;</p>
+        <p><span class="BoldItalic"><b style="font-style: italic;">Related Topics</b></span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Overview_Review_Passes.htm">Overview: Review Passes</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Manage_Review_Passes.htm">Manage Review Passes</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>
+        </p>
+    </body>
+</html>

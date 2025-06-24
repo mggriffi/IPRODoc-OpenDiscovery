@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.SampleTopics" style="mc-master-page: url('Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Setting up X: Essential Tasks</title>
+        <link href="Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Document Review Workflow</h1>
+        <p><b>Applies To:</b> <i><MadCap:variable name="Primary.Name" /> System Administration, Case Management, and Review Case Settings&gt;</i></p>
+        <h2>In this article</h2>
+        <p><a href="#Prereqs">Review the Prerequisites</a>
+        </p>
+        <p>1. <a href="#SelCase">Select a Case and Review Pass</a></p>
+        <p>3. <a href="#ApplyRedactions">Apply Redactions</a></p>
+        <p>4. <a href="#ViewPerHighKeyWords">View Persistent Highlighted Key Words</a></p>
+        <p>5. <a href="#ConductSearches">Conduct Searches</a></p>
+        <p>6. <a href="#PerformMassActions">Perform Mass Actions</a></p>
+        <p>7. <a href="#EditCodingForm">Edit the Coding Form</a></p>
+        <p>8. <a href="#ApplyTags">Apply Tags</a></p>
+        <p>9. <a href="#SetReviewStatus">Set Review Status</a></p>
+        <p>&#160;</p>
+        <p><a href="#SeeAlso">See Also</a>
+        </p>
+        <p>This topic contains high-level procedures to help you prepare for .<i>&lt;document review&gt;</i>.</p>
+        <p>Document review consists of selecting the case, opening the desired review pass, working with the different document view tabs (search, apply pre-defined redactions, highlight, add comments, view metadata, etc.), viewing relationships (family, email threads, etc.), populating/modifying coding forms, assigning tags, and setting the review status.</p>
+        <p>The following illustration shows the basic <i>review document</i>&#160;tasks. The numbers correspond to the procedures later in this topic.</p>
+        <p>&lt;INSERT WORKFLOW IMAGE</p>
+        <p class="Note">&lt;This is just a sample image. I&#160;have blocked it from publication in builds. Where possible, we will leave these images at regular size. If we must, we'll put them in a thumbnail. I'm displaying this image, in particular, because I'd like us to follow a standard workflow design. It would be something similar to this design.&gt;</p>
+        <p>
+            <img src="Graphics/workflow_sample.png" MadCap:conditions="Primary.SampleTopics" />
+        </p>
+        <p>&#160;</p>
+        <p>Basic steps for setting up and conducting <i>&lt;Document Review</i> for the first time.</p>
+        <p class="BodyText">This topic describes functionality that is available only if the tasks are completed as described in the <i>Review the Prerequisites</i> below. </p>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="Graphics/tip_sysadm.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Tip: To make it easier to find the procedures you need, the procedures are collapsed. If you want to expand a procedure, click the triangle next to the procedure title to open and close the detailed <MadCap:annotation MadCap:createDate="2018-11-14T10:31:48.3417081-07:00" MadCap:creator="jbadger" MadCap:initials="JB" MadCap:comment="always include this instruction" MadCap:editor="jbadger" MadCap:editDate="2018-11-14T10:32:22.8238295-07:00">information.</MadCap:annotation></p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="Prereqs"></a>
+            <MadCap:toggler targets="Prereqs">Review the Prerequisites</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Prereqs">
+            <p>The following table shows the prerequisites that must be in place before you start to review documents.</p>
+            <table style="width: 100%;mc-table-style: url('Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Task</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Notes</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead">Links</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Create Users</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="font-weight: bold;"><span style="font-weight: normal;">Under <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud System Administration, the <MadCap:variable name="Primary.IPRO" />&#160;eDiscovery Cloud administrator creates users who will require access to <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud and additionally enable those users who will Review documents using the Review component.</span>
+                            </p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="System/Users and Groups/Create_New_User.htm">Create New Users</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Create New Groups</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Under <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud System Administration, the <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator creates groups and subsequently assigns users to those groups. These groups will also appear under Case Management for the purpose of assigning access to Cases.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="System/Users and Groups/Create New Groups.htm">Create New Groups</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Create Managing Clients and Clients&gt;</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Under Case Management, the <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator creates Managing Clients and Clients in preparation for Case creation.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="Case_Management/Clients/Create_New_Managing_Clients_and_Clients.htm">Create New Managing Clients and Clients</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Create Cases</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Under Case Management, one or more cases may be added for a Client. Once the <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator adds the cases, then security groups are assigned for a case or cases.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="Case_Management/Cases/Create_A_New_Case.htm">Create Cases</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Assign Security Groups</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Under Case Management, the <MadCap:variable name="Primary.IPRO" />&#160;eDiscovery Cloud administrator creates security groups and assigns users for these security groups. Once the security group is created and assigned users, it is dragged and dropped on to a case where a permissions template is selected and saved for the Case.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="Case_Management/Create a New Security Group.htm">Create a New Security Group</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Create Permission Templates</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Under Case Management, the <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator creates permission templates. These templates control access to various components and functions in <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><a href="Case_Management/Create_Permissions_Template.htm">Create Permission Templates</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Create Review Passes and Batches</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">The <MadCap:variable name="Primary.IPRO" />&#160;eDiscovery Cloud administrator creates review passes and batches for the case. A review pass requires the selection of a previously saved search and previously configured coding form. The coding form contains names, fields, tags, rules, and permissions. (Note: To configure additional case settings, see <MadCap:xref href="Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Manage_Review_Case_Settings.htm">Manage Review Case Settings</MadCap:xref>.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText"><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2><a name="SelCase"></a> <MadCap:toggler targets="Process1">1. Select a Case and Review Pass</MadCap:toggler></h2>
+        <div MadCap:targetName="Process1">
+            <p>Before you use conduct a document review for the first time, certain tasks must already be done in <i><MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud System Administration</i>, <i><MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud Case Management</i>and <i>Review Case Settings</i>. After those tasks are completed, you can <i>review documents</i>.</p>
+            <p>&#160;</p>
+            <table cellspacing="0" width="95%" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p>
+                            <img src="Graphics/Admin_Note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Important: Reviewing documents is permission based. If you do not have permissions to review documents, see your <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator..</p>
+                    </td>
+                </tr>
+            </table>
+            <p>.</p>
+            <ol>
+                <li>
+                    <p>Click <span style="font-weight: bold;">ECA &amp; Review</span> 
+ on the <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud Home page to open the Review home page.</p>
+                </li>
+                <li>From the Review home page, do <b>one</b> of the following to select a case:</li>
+            </ol>
+            <ul style="text-align: left;margin-left: 0.15in;">
+                <li>
+                    <p class="BodyText">Click the <b>case’s card</b>. Cases are displayed alphabetically. Only those cases permissioned to a user are displayed. Inactive case cards are muted gray and are grouped alphabetically after the active case cards.</p>
+                </li>
+                <li>
+                    <p>Under Recent in the left pane, select the <b>case</b>. The Recent list displays the last 5 accessed cases. Note: If the status for a case is changed to inactive or user permissions for the case are removed, it is automatically removed from the Recent Case list.</p>
+                </li>
+                <li>
+                    <p>Under Favorites in the left pane, select the <b>case</b>. The list is sorted chronologically; displaying the most recently accessed cases at the beginning of the list.</p>
+                </li>
+                <li>
+                    <p>Enter the <b>case</b> or <b>client name</b> in the Search field. Cases under Favorites and Recent are not impacted by the search function to filter cases.</p>
+                </li>
+            </ul>
+            <p class="BodyText" style="text-align: left;margin-left: 0.55in;">The Funnel graph and Review Passes appear for the selected case.</p>
+            <p class="BodyText" style="text-align: left;margin-left: 0.55in;">
+                <img src="Graphics/ECA_FunnelGraphReviewPasses.png" class="Thumbnail_Popup">
+                </img>
+            </p>
+            <p class="BodyText" style="text-align: left;margin-left: 0.55in;">The Funnel graph depicts the number of case documents that are loaded, in review, and produced. Each Review Pass depicts the percentage of documents reviewed, a progress bar, the review pass name, and the total number of documents.</p>
+            <p class="BodyText" style="text-align: left;margin-left: 0.55in;"><b>Note</b>: To close the funnel graph, click   <img src="Graphics/ECA_FunnelGraphCloseIcon.png"></img> in the upper right corner. </p>
+            <ol start="3">
+                <li>Click the desired <b>review pass</b>. to enter the Review pane.</li>
+            </ol>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Process2">2. <a name="WorkWithDocViews"></a> Work with Document Views or Grid View</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process2">
+            <p class="BodyText">Each document view tab has an associated toolbar. Permissions control access to the document view tabs and specific functions in their respective toolbars. If permissions are not granted for a document view tab and/or a specific toolbar function that tab and/or toolbar function will not be visible. Click one of the following document views to perform actions with documents such as comments, highlights, searches, redactions, etc.:</p>
+            <ul style="list-style: square;" class="BulletListBody">
+                <li>
+                    <p><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/AR_Web Viewer.htm">Web Viewer</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/AR_Image View.htm">Image View</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/AR_Production View.htm">Production View</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/AR_Text View.htm">Text View</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/AR_Metadata View.htm">metadata View</a>
+                    </p>
+                </li>
+            </ul>
+            <p>&#160;</p>
+            <p>The <span style="font-weight: bold;">Review Grid</span> lists all documents meeting your search criteria in a grid format.</p>
+            <h2><a name="Viewing"></a>View Search Results</h2>
+            <h3>Results Tab</h3>
+            <p class="BodyText">On the <b>Results</b> tab, the number of documents meeting the search criteria appear in the <b>
+ Results</b> tab in <MadCap:annotation MadCap:createDate="2019-01-25T15:09:40.5575216-07:00" MadCap:creator="Despina" MadCap:initials="DR" MadCap:comment="Complete this" MadCap:editor="Despina" MadCap:editDate="2019-01-25T15:09:43.6878346-07:00">parenthesis.</MadCap:annotation></p>
+            <p class="BodyText">
+                <img src="Graphics/ADD_Review_Graphics/AR_Tab_Results.png">
+                </img>
+            </p>
+            <p class="BodyText">The number of items per page, and the total number of pages of search results, are shown above the grid on the right side of the pane.</p>
+            <p class="BodyText">
+                <img src="Graphics/ADD_Review_Graphics/AR_Tab_Results_CountPgandPerPg.png">
+                </img>
+            </p>
+            <p>Change the total number of rows displayed in the grid by selecting a different option from the drop down.</p>
+            <p>
+                <img src="Graphics/ADD_Review_Graphics/AR_DrpDwn_LinesPerPage.png">
+                </img>
+            </p>
+            <p>Use the left and right arrows to advance to additional pages of results.</p>
+            <p>
+                <img src="Graphics/ADD_Review_Graphics/AR_Btn_LRGridArrows.png">
+                </img>
+            </p>
+            <h3>Mass Actions</h3>
+            <p class="BodyText">You can perform mass actions on one, some, or all of the documents located in the grid by selecting the check box for each document. At least one document must be selected in order to perform a mass action. To select all documents in the grid, select the check box located in the grid's column field heading row. </p>
+            <p class="BodyText">From the <b>Actions</b> menu, select one of the following options:</p>
+            <ul class="BulletListBody">
+                <li>
+                    <MadCap:xref href="Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/AR_Tag_Multiple_Documents.htm"><a name="top"></a>Tag Multiple Documents</MadCap:xref>
+                </li>
+                <li>
+                    <MadCap:xref href="Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm#Edit">Edit Multiple Fields
+</MadCap:xref>
+                </li>
+            </ul>
+            <h2>Work in the Document Viewer</h2>
+            <p>The <b>Results</b> tab displays a list of all of the documents that meet the specified search criteria. If you want to view a specific document you can do so by clicking on the document link. The <b>Document Viewer</b> displays. The Document Viewer has several tabs.</p>
+            <h3><a name="Returning_to_the_Document_tab"></a>
+            </h3>
+            <h3>Web Viewer Tab</h3>
+            <p>Displays a Web-based rendering of the document. You can search the document for specific search terms, advance to additional pages, zoom in or out, print the document, etc. You can also view persistent highlight for the document.</p>
+            <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1">
+                </col>
+                <col class="TableStyle-Note_Table-Column-Column2">
+                </col>
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="Graphics/Review_Tip.png" alt="" style="border: none;" border="0">
+                            </img>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Tip: Your administrator may define one or more terms that are essential to your case. Persistently highlighted words can help you find needed information quickly.</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="Note">These terms highlight 
+ persistently within a case or batch, similar to “permanent” searches. 
+ </p>
+                            </li>
+                            <li>
+                                <p class="Note">Highlighting colors 
+ are defined by your administrator. </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <h3>Image Tab</h3>
+            <p>For a selected document in the <span style="font-weight: bold;">Results</span> tab, you can view an image of the document in the Document Viewer. On the <b>Image</b> tab, you can:</p>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Show/Hide Redactions as necessary using the <b>Show/Hide</b> tool.</p>
+                    <p>
+                        <img src="Graphics/ADD_Review_Graphics/AR_Btn_Show_Hide_Redac.png">
+                        </img>
+                    </p>
+                </li>
+                <li>
+                    <p>Apply Redactions using the <b>Redactions</b> tool.</p>
+                    <p>
+                        <img src="Graphics/ADD_Review_Graphics/AR_Btn_ImageRedaction.png">
+                        </img>
+                    </p>
+                </li>
+                <li>
+                    <p>Use the <b>Highlight</b> tool to highlight relevant areas of the image.</p>
+                    <p>
+                        <img src="Graphics/ADD_Review_Graphics/AR_Btn_ImageHighlight.png">
+                        </img>
+                    </p>
+                </li>
+                <li>
+                    <p>Use the <b>Comment</b> tool to add comments to the image.</p>
+                    <p>
+                        <img src="Graphics/ADD_Review_Graphics/AR_Btn_ImageComment.png">
+                        </img>
+                    </p>
+                </li>
+            </ul>
+            <h3>Production Tab</h3>
+            <p>Displays the production-version of the document, if one exists. You can navigate through the pages of the document, zoom in and out, fit height and width and rotate the document both right and left. You can also print the document.</p>
+            <h3>Text Viewer Tab</h3>
+            <p>Displays a text-only rendering of the document. You can search the document for specific search term. You can also view persistent highlight for the document and print the document.</p>
+            <table cellspacing="0" class="TableStyle-Note_Table" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');">
+                <col class="TableStyle-Note_Table-Column-Column1">
+                </col>
+                <col class="TableStyle-Note_Table-Column-Column2">
+                </col>
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="Graphics/Review_Tip.png" alt="" style="border: none;" border="0">
+                            </img>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Tip: Your administrator may define one or more terms that are essential to your case. Persistently highlighted words can help you find needed information quickly.</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p class="Note">These terms highlight persistently within a case or batch, similar to “permanent” searches.</p>
+                            </li>
+                            <li>
+                                <p class="Note">Highlighting colors are defined by your administrator.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <h3>Metadata Tab</h3>
+            <p>Displays the metadata for the document. You can print the document, export it, or search the document metadata for specific terms.</p>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Process3">3.<a name="ApplyRedactions"></a> &lt;Apply Redactions&gt; </MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process3">
+            <p class="BodyText">Redactions obscure the content of image files so that only appropriate 
+ information is visible in the files you prepare for discovery. In <MadCap:variable name="Primary.ProdName_Review"></MadCap:variable>, up to 99 redaction categories—with different colors and labels 
+ for each—may be used. Redactions are viewed in <MadCap:variable name="Primary.ProdName_Review"></MadCap:variable> as solid (if user has appropriate permissions.) </p>
+            <h3>Redact Image Content</h3>
+            <p class="BodyText">If you have sufficient permissions, redact information 
+ in an image as follows:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s <span style="font-weight: bold;">Image</span> tab, locate the information 
+ to be redacted.</p>
+                </li>
+                <li>
+                    <p>Click <img src="Graphics/Eclipse Web Images/btn_images_more_buttons.png" alt="" border="0" class="button_inline"></img> next to the Redaction button 
+ and select the needed redaction from the Redaction Category  menu, 
+ as shown in this figure.</p>
+                    <p>
+                        <img src="Graphics/ADD_Review_Graphics/AR_RedactionDropDownImageTab.png">
+                        </img>
+                    </p>
+                </li>
+                <li>
+                    <p>If needed, click the button again to activate 
+ the redaction action.</p>
+                </li>
+                <li>
+                    <p>Point, click, and drag across the text or image area that is 
+ to be redacted..</p>
+                </li>
+                <li>
+                    <p>When the selection is complete, release the 
+ mouse button. An example of redacted text is shown here:</p>
+                    <p>
+                        <img src="Graphics/ADD_Review_Graphics/AR_RedactedTextExampleImageTab.png" class="Thumbnail_Popup">
+                        </img>
+                    </p>
+                </li>
+                <li>
+                    <p>Repeat these steps to apply other redactions.</p>
+                </li>
+                <li>
+                    <p>When finished, click <img src="Graphics/Eclipse Web Images/btn_image_pointer.png" alt="" border="0" class="button_inline"></img> 
+ or another button to stop the redaction activity.</p>
+                </li>
+            </ol>
+            <h3>Show Text Behind Redactions</h3>
+            <p class="BodyText">For any or all redactions in the image, the text may be exposed by clicking <img src="Graphics/ADD_Review_Graphics/AR_ShowHideRedacIconDocViewTabs.png"></img>located to the right of the Redaction drop-down menu. When this icon is clicked, it changes to <img src="Graphics/ADD_Review_Graphics/AR_ShowRedactionIconImageTab.png"></img>, Click <img src="Graphics/ADD_Review_Graphics/AR_ShowRedactionIconImageTab.png"></img>again to hide the text. An example of exposed text behind a redaction is shown here: </p>
+            <p class="BodyText">
+                <img src="Graphics/ADD_Review_Graphics/AR_RedactedSeeThroughExampleImageTab.png" class="Thumbnail_Popup">
+                </img>
+            </p>
+            <h3>Resize a Redaction</h3>
+            <p class="BodyText">If you have sufficient permissions, change the size 
+ of a redaction as follows:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s <span style="font-weight: bold;">Image</span> tab, locate a redaction 
+ to be resized.</p>
+                </li>
+                <li>
+                    <p>Click the redaction to select it, then drag 
+ an edge or a corner to resize it.</p>
+                </li>
+                <li>
+                    <p>Repeat these steps to resize additional redactions..</p>
+                </li>
+            </ol>
+            <h3>Move a Redaction</h3>
+            <p class="BodyText">If you have sufficient permissions, move a redaction 
+ as follows:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s the <span style="font-weight: bold;">Image</span> tab, locate a 
+ redaction to be moved.</p>
+                </li>
+                <li>
+                    <p>Place the mouse pointer in the center of the 
+ redaction and drag it to the needed location, then release the mouse button.</p>
+                </li>
+                <li>
+                    <p>Repeat these steps to move additional redactions.</p>
+                </li>
+            </ol>
+            <h3>Delete a Redaction</h3>
+            <table cellspacing="0" style="mc-table-style: url('Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1">
+                </col>
+                <col class="TableStyle-Note_Table-Column-Column2">
+                </col>
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="Graphics/Review_Note.png" alt="" style="border: none;" border="0">
+                            </img>
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: No warning message 
+		 or Undo function exists when deleting redactions. Make sure of 
+		 the selection before deleting.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="BodyText">If you have sufficient permissions, delete redactions 
+ as follows:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>For 
+ a selected document, in the <span style="font-weight: bold;">Review</span> 
+ pane’s <span style="font-weight: bold;">Image</span> tab, locate a redaction 
+ to be to be deleted.</p>
+                </li>
+                <li>
+                    <p>On the <span style="font-weight: bold;">Image</span> 
+ tab toolbar, click <img src="Graphics/Eclipse Web Images/btn_image_move_markup.png" alt="" border="0" class="button_inline"></img>.</p>
+                </li>
+                <li>
+                    <p>Left-, then right-click the redaction and select 
+ <span style="font-weight: bold;">Delete</span>.</p>
+                </li>
+                <li>
+                    <p>When finished, click <img src="Graphics/Eclipse Web Images/btn_image_pointer.png" alt="" border="0" class="button_inline" /> 
+ or another button to stop the redaction activity.</p>
+                </li>
+            </ol>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Process4">4. <a name="ViewPerHighKeyWords"></a> View Persistent Highlighted Key Words</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process4">
+            <p>Your administrator may configure “persistent highlighting” 
+ to emphasize specific document content. Persistently highlighted key words 
+ can help you find needed information quickly. This highlighting appears 
+ in the <span style="font-weight: bold;">Text</span> and <span style="font-weight: bold;">Web Viewer</span> tabs.</p>
+            <p class="BodyText">. Note:</p>
+            <ul class="BulletListBody">
+                <li>
+                    <p>The group's related keywords highlight 
+ persistently within or batch.</p>
+                </li>
+                <li>
+                    <p>Highlighting colors (font and background)
+ are defined by your administrator.</p>
+                </li>
+                <li>
+                    <p>The following example 
+ shows the persistent highlighted groups menu.</p>
+                    <p>
+                        <img src="Graphics/ADD_Review_Graphics/AR_PersistHighlightDropDownList.png" class="Thumbnail_Popup">
+                        </img>
+                    </p>
+                </li>
+            </ul>
+            <p> For example the previous figure shows three persistent highlighted group terms. For each group term, the administrator added related key words. For example, related key words for financial may include: returns, deficits, profits, losses, etc. If any of these key words appear in the document, they will be highlighted with the same background color and text color as shown in the menu. The number in the parenthesis next to the group term indicates the number of times any of the key words associated with that group term appear in the document. To view the related key words in the form of a tool tip, hover over the desired persistent highlighted group term with the mouse pointer. By default all persistent highlighting group terms are selected in the menu.</p>
+            <h3>Locate Key Words in the Document</h3>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click the <span style="font-weight: bold;">Web Viewer</span> 
+tab or <span style="font-weight: bold;">Text</span> tab in the Review pane.</p>
+                </li>
+                <li>
+                    <p>Click <img src="Graphics/ADD_Review_Graphics/AR_HighlightsDropDownDocViewTabs.png"></img> to display the persistent highlighted groups menu. </p>
+                </li>
+                <li>
+                    <p>Click the arrows <span style="color: #008000;font-size: 14pt;font-weight: bold;font-style: normal;">&lt; &gt;</span> surrounding the Highlights menu to move backwards or forwards to locate each highlighted key word in the document. See <MadCap:xref href="Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Persistent_Highlighting.htm#top">Persistent Highlighting</MadCap:xref> for additional information. Note: The item [Search Terms] (<i>n</i>) only appears in the highlighted group list if an/a Advanced/Visual Search was conducted and contained a Text search. The entire search phrase is highlighted and considered one search hit.</p>
+                </li>
+            </ol>
+            <h3>Clear Key Words in the Document</h3>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Click the <span style="font-weight: bold;">Web Viewer</span> 
+tab or <span style="font-weight: bold;">Text</span> tab in the Review pane.</p>
+                </li>
+                <li>
+                    <p>Click <img src="Graphics/ADD_Review_Graphics/AR_HighlightsDropDownDocViewTabs.png"></img> to display the persistent highlighted groups menu. </p>
+                </li>
+                <li>
+                    <p>Clear the check box for one or more persistent highlighted groups. The related key words in the document are no longer highlighted.</p>
+                </li>
+            </ol>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Process5">5. <a name="ConductSearches"></a>Conduct Searches</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Process5">
+            <p>To quickly search for terms in both the Web Viewer tab and the Text tab, follow these steps:</p>
+            <h3>Web Viewer Tab</h3>
+            <ol class="NumbListBody">
+                <li>Click the <span style="font-weight: bold;">Web Viewer</span> 
+tab in the Review pane.</li>
+                <li>Enter a search term in the <img src="Graphics/ADD_Review_Graphics/AR_SearchFieldDocViewTabs.png" />field . All instances of the search term are highlighted in <span style="background-color: #ffff00;">yellow</span> throughout the document. Click the Search arrows <span style="color: #008000;font-size: 14pt;font-weight: bold;font-style: normal;">&lt; &gt;</span>to move backwards or forwards to locate each highlighted term in the document. Clear the search box to remove the highlighted terms in the document.</li>
+            </ol>
+            <h3>Text Tab</h3>
+            <ol class="NumbListBody">
+                <li>Click the <span style="font-weight: bold;">Text</span> 
+tab in the Review pane.</li>
+                <li>Enter a search term in the <img src="Graphics/ADD_Review_Graphics/AR_SearchFieldDocViewTabs.png" />field . All instances of the search term appear in <span style="color: #0000ff;">blue</span> text throughout the document. Click the Search arrows <span style="color: #008000;font-size: 14pt;font-weight: bold;font-style: normal;">&lt; &gt;</span>to move backwards or forwards to locate each term in the document. Clear the search box to remove the highlighted terms in the document.</li>
+            </ol>
+            <h2>
+                <MadCap:toggler targets="Process5">6. <a name="PerformMassActions"></a>Perform Mass Actions</MadCap:toggler>
+            </h2>
+            <div MadCap:targetName="Process5">
+                <p>Mass Actions are actions performed on multiple documents at one time such as populating coding fields and/or applying tags. Existing permissions apply for mass actions. Mass actions are performed from any relationship menu except for Document History. See <MadCap:xref href="Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Overview_Relationships.htm">About Relationships</MadCap:xref> for more information.</p>
+                <ol>
+                    <li>
+                        <p>From the <a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/AR_Document_Review_Pane.htm">Review</a> pane, expand the desired relationship menu and pin it in place by clicking  <img src="Graphics/ECA_PinExpanderSidewaysIcon.png"></img>.</p>
+                        <p>
+                            <img src="Graphics/ADD_Review_Graphics/AR_Panel_RelMenus.png" style="mc-thumbnail: popup;">
+                            </img>
+                        </p>
+                    </li>
+                    <li>Select the check box to the left of the field columns to display the <img src="Graphics/ADD_Review_Graphics/AR_Btn_MassAction.png"></img>  button as shown in the following figure. All items are selected.</li>
+                    <p class="BodyText">
+                        <img src="Graphics/ADD_Review_Graphics/AR_Panel_MassActionCheckboxes.png" style="mc-thumbnail: popup;">
+                        </img>
+                    </p>
+                    <li>Do any of the following:</li>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p class="BodyText">Clear items to be excluded for mass actions.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Clear the check box to the left of the field columns to clear all items in the menu.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Select individual items for mass actions.</p>
+                        </li>
+                    </ul>
+                    <li>Click <img src="Graphics/ADD_Review_Graphics/AR_Btn_MassAction.png"></img>  to display the coding form/tag palette dialog as shown in the following figure.</li>
+                    <p style="margin-left: 0.45in;">
+                        <img src="Graphics/ADD_Review_Graphics/AR_Dialog_MassAction.png" style="mc-thumbnail: popup;">
+                        </img>
+                    </p>
+                    <p style="margin-left: 0.35in;"><b>Note</b>: Coding form rules are not enforced when tags are applied in this manner.</p>
+                    <li>Do any of the following:</li>
+                    <ul class="BulletListBody">
+                        <li>
+                            <p class="BodyText">Modify the coding form fields as needed.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Select the applicable tag group.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Add individual tags by moving the slider over to the right as shown in here:<img src="Graphics/ECA_TagSliderGreenBar.png"></img></p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Remove tags by moving the slider to the left as shown in here: <img src="Graphics/ECA_TagSliderRedBar.png"></img></p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 0.35in;"><b>Note</b>: When the slider control is left in the center, the tag remains unchanged as shown here: <img src="Graphics/ECA_TagSliderMiddle.png"></img></p>
+                    <li>Click <img src="Graphics/ECA_ApplyButtonMassActions.png"></img>. The Mass Action dialog closes and applies the fields/tags to the selected documents. The previously selected documents in the selected Relationship menu revert to the default status; they are all cleared. The coding form/tag palette reflects the changes made in the Mass Actions dialog.</li>
+                    <p style="margin-left: 0.35in;"><b>Note</b>: A prompt may appear if invalid characters and/or formats are entered in the coding form or if the number of characters exceed the amount allowed for a field.</p>
+                    <li>Repeat the previous steps for other groups of documents needing to be tagged in the same way.</li>
+                </ol>
+                <h2>
+                    <MadCap:toggler targets="Process5">7. <a name="EditCodingForm"></a>Edit the Coding Form</MadCap:toggler>
+                </h2>
+                <div MadCap:targetName="Process5">
+                    <p>Your administrator may define specific rules that will apply to your review procedures when you use a specific coding form. For example, a rule may be defined to require that a specific field cannot be empty. Field based rules such as this must be followed in order for changed in the Review pane to be saved.</p>
+                    <p>In the <b>coding form</b> located on the right side above the tag palette, do any of the following:</p>
+                    <ol>
+                        <li>
+                            <p class="BodyText">Double-click in the <b>field</b> to be edited and make required changes. Messages will appear if validation fails for the field. Some fields may display gray text to assist with formatting entries, such as the Coding Date field.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">For Hyperlink fields, enter or edit the <b>linked file’s complete path</b>. The entry should be a single file path in UNC format (for example, \\server001\files\smith01.msg). To view a linked file, click <img src="Graphics/ECA_CodingFormHyperlinkIcon.png" />. </p>
+                        </li>
+                        <li>
+                            <p class="BodyText">For Pick Lists, click <img src="Graphics/ECA_CodingFormPickListIcon.png" />  to display the list. Click the desired <b>item</b>. To search for an item in the list, enter the <b>search term</b>. Values may be entered directly into the field that are not included in the pick list. However, these values will not be added to the pick list. The <MadCap:variable name="Primary.IPRO" /> Eclipse or <MadCap:variable name="Primary.IPRO" /> eDiscovery Cloud administrator may add/delete entire pick lists or modify the values of a pick list. Ensure you examine the pick list for any changes.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">Text may be selected from a field, copied and pasted into another field by using Ctrl+C to copy and Ctrl+V to paste.</p>
+                        </li>
+                        <li>
+                            <p class="BodyText">To delete text, select the <b>text</b> and press the Delete key on the keyboard.</p>
+                        </li>
+                    </ol>
+                    <h2>
+                        <MadCap:toggler targets="Process5">8. <a name="ApplyTags"></a>Apply Tags</MadCap:toggler>
+                    </h2>
+                    <div MadCap:targetName="Process5">
+                        <p>One of the primary activities when preparing documents for discovery is applying tags. A tag is a type of "marker" that allows you to categorize and identify specific document characteristics. Typically defined by your administrator, tags allow you and your organization to find and identify similar documents = for example, those that are privileged in some way, or those needing review by a topic expert.</p>
+                        <p>In the <b>tag palette</b>located on the right side below the coding form, do any of the following:</p>
+                        <ol>
+                            <li>
+                                <p class="BodyText">Select the applicable <b>tag</b> or <b>tags</b>. Multiple tags may be selected for a group that is not exclusive. Only one tag may be selected in an exclusive group.</p>
+                            </li>
+                            <li>
+                                <p>For tag groups, expand the tag group by clicking   <img src="Graphics/ECA_TagGroupExpander.png" />to see the tags. Select the applicable <b>tag</b> or <b>tags</b>. Click <img src="Graphics/ECA_TagGroupCollapse.png" /> to collapse the tag group.</p>
+                            </li>
+                            <li>
+                                <p>Select required <b>tag</b> or <b>tags</b> as defined by your administrator.</p>
+                            </li>
+                        </ol>
+                        <h2>
+                            <MadCap:toggler targets="Process5">9. <a name="SetReviewStatus"></a>Set Review Status</MadCap:toggler>
+                        </h2>
+                        <div MadCap:targetName="Process5">
+                            <p>The final step is to set the review status</p>
+                            <ol start="1">
+                                <li>
+                                    <p class="BodyText">Set a <b>Review Status</b> for the document: Not Reviewed (default), Reviewed, or On Hold. </p>
+                                </li>
+                                <li>When finished, do one of the following actions using the coding form/tag palette review pass toolbar as shown here <img src="Graphics/ECA_CodingFormFullToolbar.png"></img>:</li>
+                            </ol>
+                            <ol style="list-style-type: lower-alpha;margin-left: 0.35in;text-align: left;">
+                                <li>
+                                    <p class="BodyText"> Click <img src="Graphics/ECA_CodingFormUndoButton.png"></img>  to clear the changes.</p>
+                                </li>
+                                <li>
+                                    <p>Click <img src="Graphics/ECA_CodingFormSaveandGotoPreviousButton.png"></img>  to go to previous document and save the changes.</p>
+                                </li>
+                                <li>
+                                    <p>Click <img src="Graphics/ECA_CodingFormSaveandGotoNextButton.png"></img>  to go to next document and save the changes.</p>
+                                </li>
+                                <li>
+                                    <p>Click   <img src="Graphics/ECA_CodingFormSaveButton.png"></img> to save the changes and remain on the document.</p>
+                                </li>
+                            </ol>
+                            <p><b>Note</b>: To move to the first document in the batch, click .<img src="Graphics/ECA_CodingFormGotoFirstButton.png"></img>. To move to the last document in the batch click <img src="Graphics/ECA_CodingFormGotoLastButton.png"></img>.</p>
+                            <p>When a review pass/batch is completed, a prompt appears stating: Navigating to the next document will load a new set of documents and navigating back to this current set will no longer be available. Do you wish to continue? Click Yes to continue. or Cancel to remain with the current document set</p>
+                            <ol start="3">
+                                <li>Repeat the steps in this topic for the next document in the review pass/batch.</li>
+                            </ol>
+                        </div>
+                        <p>&#160;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>
+            <MadCap:toggler targets="SeeAlso"><a name="SeeAlso"></a>See Also</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="SeeAlso">
+            <p style="font-style: normal;"><a href="Case_Management/First Steps/Overview_Case_Management.htm">Understand Case Management</a>
+            </p>
+            <p style="font-style: normal;"><a href="Case_Management/Work with Permissions Templates.htm">Work with Permissions Templates</a>
+            </p>
+            <p style="font-style: normal;"><a href="Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Overview_Coding_Forms.htm">Build Coding Forms</a>
+            </p>
+            <p style="font-style: normal;"><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/View_Relationships/Overview_Relationships.htm">About Relationships</a>
+            </p>
+            <p style="font-style: normal;"><a href="Review/Ipro_(Cloud)_review/Review Pass Interface/Understand_the_Document_Viewer/AR_Open_Separate_Document_View.htm">Open Separate Windows in Review Pane</a>
+            </p>
+        </div>
+    </body>
+</html>

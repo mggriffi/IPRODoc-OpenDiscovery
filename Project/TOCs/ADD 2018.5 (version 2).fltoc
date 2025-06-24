@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Overview"
+    Link="/Content/Case_Management/Permissions Tables/Overview.htm" />
+  <TocEntry
+    Title="Case Admin"
+    Link="/Content/Case_Management/Permissions Tables/Case Admin.htm" />
+  <TocEntry
+    Title="Rev Mgr"
+    Link="/Content/Case_Management/Permissions Tables/Rev Mgr.htm" />
+  <TocEntry
+    Title="Int Rev"
+    Link="/Content/Case_Management/Permissions Tables/Int Rev.htm" />
+  <TocEntry
+    Title="Ext Rev"
+    Link="/Content/Case_Management/Permissions Tables/Ext Rev.htm" />
+  <TocEntry
+    Title="Ext Usr"
+    Link="/Content/Case_Management/Permissions Tables/Ext Usr.htm" />
+  <TocEntry
+    Title="Linked Permission"
+    Link="/Content/Case_Management/Permissions Tables/Linked Permission.htm" />
+  <TocEntry
+    Title="Eclipse-specific"
+    Link="/Content/Case_Management/Permissions Tables/Eclipse-specific.htm" />
+</CatapultToc>

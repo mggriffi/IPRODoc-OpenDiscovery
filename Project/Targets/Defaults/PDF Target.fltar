@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="PDF Topic Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterStylesheet="/Content/Resources/Stylesheets/Admin.css"
+  GetLatestBeforeCompile="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/PrintTestLayout.flpgl"
+  InjectEmptyPages="true"
+  PatchHeadingLevels="true"
+  MasterToc="/Project/TOCs/ADD_Primary.fltoc">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <PDF
+    PageLayout="SinglePage"
+    CollapsedBookmarks="false" />
+</CatapultTarget>

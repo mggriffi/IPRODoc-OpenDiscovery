@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/CaseMgmt_MP.flmsp');" MadCap:conditions="Primary.UI_Linked">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Placeholder Settings</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Manage  Placeholder Settings</h1>
+        <p>You can configure custom placeholders for documents that are being produced natively.This customization allows you to manage how placeholders are displayed, as well as what file types are automatically placeholdered during  imaging of documents. The sections in this article document the process of creating, editing, and removing custom placeholders.</p>
+        <h2>Create a Placeholder</h2>
+        <p>To create a custom placeholder, follow the steps below:</p>
+        <ol>
+            <li>
+                <p>Open <b>Case Management</b> and locate the Processing case whose settings you would like to view or modify.</p>
+            </li>
+            <li>
+                <p>Click the hamburger icon corresponding to the needed case.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Hamburger.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>From the menu that appears, select <b>Case Settings</b>.</p>
+            </li>
+            <li>
+                <p>Click the <b>Imaging</b> tab at the top of the Case Settings work area.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Processing_Settings/Case_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the Imaging page, scroll down to the Placeholder card. Click the <b>Manage Placeholders</b> button.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: You can access this button by scrolling down to the bottom of the <b>Placeholder</b> card, or by selecting the <b>Placeholder</b> link on the right side of the Imaging page.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>The Placeholder work area opens. Click <b>Create New Placeholder</b>.</p>
+            </li>
+            <li>
+                <p>On the first step of the Create New Placeholder wizard, define placeholder details.</p>
+                <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead">Option</p>
+                            </th>
+                            <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Placeholder Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">Provide a name for the placeholder. The placeholder name is the text that displays on the image indicating that the document has been placeholdered.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Font Family</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Select the desired font from the options available in the Font Family field. When you select the field, the full list of fonts appears in a dropdown. Scroll through the list of fonts, or search for the font in question by typing the name in the field. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Enable Max Page Threshold</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">Select the <b>Enable Max Page Threshold</b> slider and indicate a threshold value <MadCap:conditionalText MadCap:conditions="Primary.Blocked">(1 to 10000)</MadCap:conditionalText> to limit the number of pages produced by larger files. By default, this option is disabled. When set, all pages imaged up until the threshold is reached are included in the <MadCap:annotation MadCap:createDate="2021-02-17T17:26:57.1851714-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Double check" MadCap:editor="mcohen" MadCap:editDate="2021-02-17T17:26:59.7822280-07:00">document</MadCap:annotation>. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Predefined Placeholder Image</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">If you already have a placeholder image created, you can upload it on this step of the wizard. To use a predefined placeholder:</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p class="TableText"> Click <b>Upload Image</b> to display the <b>Open</b> dialog box. </p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Select a placeholder image. Images must be in .png, .jpg, or .jpeg format with a size of 8.5 x 11 inches or 2500 x 3300 pixels.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Click <b>Open</b>. The selected image displays in the preview box.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Placement Options</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">In the <b>Placement Options</b> box, select the placement settings for the placeholder.</p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p class="TableText">Set the <b>Alignment</b> positioning for the placeholder.</p>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="TableText">Vertical Alignment: Determines placement 
+	 along the vertical axis. Options include Top, Center, or Bottom. Center
+	 is the default.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">Horizontal Alignment: Determines 
+	 placement along the horizontal axis. Options include Left, Center, 
+	 or Right. Center is the default.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Set the left and right <b>Indentation</b> for the placeholder. This setting determines the horizontal spacing to the left 
+ or right of the page margins.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Set the <b>Truncation</b> for the placeholder. Truncation determines how many characters display in the placeholder name. For example, inputting a value of 10 displays only the first 10 characters of the placeholder name and omits the rest. The default value is 128 characters.</p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>When you have finished configuring options on the first step of the wizard, click <b>Next</b>.</p>
+            </li>
+            <li>
+                <p>On the second step of the wizard, select file types  you would like the placeholder applied to when encountered during imaging.  When the job runs, it creates placeholders for only those file types that are selected. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">By default, all file types are unselected. </MadCap:conditionalText></p>
+                <p>To select needed file types:</p>
+                <ul class="BulletListBody">
+                    <li MadCap:conditions="Primary.Blocked">Click <b>Clear all</b> to clear the selections and individually select the desired file types.</li>
+                    <li>
+                        <p>Expand the various categories to view the associated file types. To expand categories, select the <img src="../../Graphics/Case_Mgmt_Graphics/icon_Expand_Filter_File_Type.png" /> icon beside the category name. You can also use the search bar to filter the results.  By selecting the checkbox beside the category name, every file type within that category is also selected. </p>
+                    </li>
+                    <li>
+                        <p>Click <b>Select all</b>  to select all file types. </p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: If all items have been selected, a <b>Deselect All</b> button becomes available. Click this option to clear all selections.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li MadCap:conditions="Primary.Blocked">
+                        <p>Click <b>Load Defaults</b> to revert the selection back to the default file types. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To add specific file extensions to the placeholder definition, click the <b>Enter new file extension</b> field and type in the extension. Click the plus icon to add it to the list. The file extension you submitted appears in the <b>File extensions</b> box.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p>
+                                    <img src="../../Resources/Images/myipro_tip.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: You can type in the extension either with a period (".") or without one. <MadCap:variable name="Primary.Name" /> recognizes both as valid.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>To import a list of file extensions from a CSV file, click <span style="font-weight: bold;">Load from file</span>. Select the CSV file and click <span style="font-weight: bold;">Open</span>. The specified files appear in the File extensions box. The CSV file may contain extensions with or without a "<b>.</b>" (period). </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: If you want to remove a specific extension from the list, hover your mouse over the extension in the File extensions box and select the <b>X</b> button. To remove all file extensions, select the <b>Clear All</b> button.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>When all file types and extensions have been set, click <b>Save</b> to create the new placeholder.</p>
+            </li>
+        </ol>
+        <h2>Edit a Placeholder</h2>
+        <p>To edit an existing placeholder, proceed with the following steps:</p>
+        <ol>
+            <li>
+                <p>Open <b>Case Management</b> and locate the Processing case whose settings you would like to view or modify.</p>
+            </li>
+            <li>
+                <p>Click the hamburger icon corresponding to the needed case.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Hamburger.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>From the menu that appears, select <b>Case Settings</b>.</p>
+            </li>
+            <li>
+                <p>Click the <b>Imaging</b> tab at the top of the Case Settings work area.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Imaging_Tab.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the Imaging page, scroll down to the Placeholder card. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">A list of configured placeholders appears in this section</MadCap:conditionalText> Click the <b>Manage Placeholders</b> button.</p>
+            </li>
+            <li>
+                <p>The Placeholder work area opens. Locate the placeholder you would like to modify from the list. Select the Edit icon to the right of the placeholder name to open the Edit Placeholder wizard.</p>
+            </li>
+            <li>
+                <p>On the first step of the Edit Placeholder wizard, update placeholder details as needed.</p>
+                <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead">Option</p>
+                            </th>
+                            <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Placeholder Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">Provide a name for the placeholder. The placeholder name is the text that displays on the image indicating that the document has been placeholdered.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Font Family</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Select the desired font from the options available in the Font Family field. When you select the field, the full list of fonts appears in a dropdown. Scroll through the list of fonts, or search for the font in question by typing the name in the field. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Enable Max Page Threshold</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">Select the <b>Enable Max Page Threshold</b> slider and indicate a threshold value <MadCap:conditionalText MadCap:conditions="Primary.Blocked">(1 to 10000)</MadCap:conditionalText> to limit the number of pages produced by larger files. By default, this option is disabled. When set, all pages imaged up until the threshold is reached are included in the document. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Predefined Placeholder Image</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">If you already have a placeholder image created, you can upload it in on this step of the wizard. To use a predefined placeholder:</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p class="TableText"> Click <b>Upload Image</b> to display the <b>Open</b> dialog box. </p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Select a placeholder image. Images must be in .png, .jpg, or .jpeg format with a size of 8.5 x 11 inches or 2500 x 3300 pixels.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Click <b>Open</b>. The selected image displays in the preview box.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Placement Options</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText" style="font-weight: normal;">In the <b>Placement Options</b> box, select the placement settings for the placeholder.</p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>
+                                        <p class="TableText">Set the <b>Alignment</b> positioning for the placeholder.</p>
+                                        <ul class="BulletListBody">
+                                            <li>
+                                                <p class="TableText">Vertical Alignment: Determines placement 
+	 along the vertical axis. Options include Top, Center, or Bottom. Center
+	 is the default.</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">Horizontal Alignment: Determines 
+	 placement along the horizontal axis. Options include Left, Center, 
+	 or Right. Center is the default.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Set the left and right <b>Indentation</b> for the placeholder. This setting determines the horizontal spacing to the left 
+ or right of the page margins.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Set the <b>Truncation</b> for the placeholder. Truncation determines how many characters display in the placeholder name. For example, inputting a value of 10 displays only the first 10 characters of the placeholder name and omits the rest. The default value is 128 characters.</p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>When you have finished configuring options on the first step of the wizard, click <b>Next</b>.</p>
+            </li>
+            <li>
+                <p>On the second step of the wizard, select file types  you would like the placeholder applied to when encountered during imaging.  When the job runs, it creates placeholders for only those file types that are selected. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">By default, all file types are unselected. </MadCap:conditionalText></p>
+                <p>To select needed file types:</p>
+                <ul class="BulletListBody">
+                    <li MadCap:conditions="Primary.Blocked">Click <b>Clear all</b> to clear the selections and individually select the desired file types.</li>
+                    <li>
+                        <p>Expand the various categories to view the associated file types. To expand categories, select the <img src="../../Graphics/Case_Mgmt_Graphics/icon_Expand_Filter_File_Type.png" /> icon beside the category name. You can also use the search bar to filter the results.  By selecting the checkbox beside the category name, every file type within that category is also selected. </p>
+                    </li>
+                    <li>
+                        <p>Click <b>Select all</b>  to select all file types. </p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: If all items have been selected, a <b>Deselect All</b> button becomes available. Click this option to clear all selections.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li MadCap:conditions="Primary.Blocked">
+                        <p>Click <b>Load Defaults</b> to revert the selection back to the default file types. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To add specific file extensions to the placeholder definition, click the <b>Enter new file extension</b> field and type in the extension. Click the plus icon to add it to the list. The file extension you submitted appears in the <b>File extensions</b> box.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p>
+                                    <img src="../../Resources/Images/myipro_tip.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: You can type in the extension either with a period (".") or without one. <MadCap:variable name="Primary.Name" /> recognizes both as valid.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>To import a list of file extensions from a CSV file, click <span style="font-weight: bold;">Load from file</span>. Select the CSV file and click <span style="font-weight: bold;">Open</span>. The specified files appear in the File extensions box. The CSV file may contain extensions with or without a "<b>.</b>" (period). </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: If you want to remove a specific extension from the list, hover your mouse over the extension in the File extensions box and select the <b>X</b> button. To remove all file extensions, select the <b>Clear All</b> button.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>When all file types and extensions have been set, click <b>Save</b> to update the placeholder with your changes.</p>
+            </li>
+        </ol>
+        <h2>Delete a Placeholder</h2>
+        <p>To delete a placeholder, follow the steps below:</p>
+        <ol>
+            <li>
+                <p>Open <b>Case Management</b> and locate the Processing case whose settings you would like to view or modify.</p>
+            </li>
+            <li>
+                <p>Click the hamburger icon corresponding to the needed case.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Hamburger.png" class="Thumbnail">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>From the menu that appears, select <b>Case Settings</b>.</p>
+            </li>
+            <li>
+                <p>Click the <b>Imaging</b> tab at the top of the Case Settings work area.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/Proc_Settings_Imaging_Tab.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the Imaging page, scroll down to the Placeholder card. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">A list of configured placeholders appears in this section</MadCap:conditionalText> Click the <b>Manage Placeholders</b> button.</p>
+            </li>
+            <li>
+                <p>The Placeholder work area opens. Locate the placeholder you would like to delete from the list. Select the Delete icon to the right of the placeholder name.</p>
+            </li>
+            <li>
+                <p>A message displays asking if you would like to proceed with the removal. Click <b>Delete Placeholder</b>. The placeholder is permanently deleted.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Edit_Processing_Case_Settings.htm">Manage Settings for a Processing Case </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Password_Handling.htm">Manage  Password Handling Settings</MadCap:xref>
+        </p>
+    </body>
+</html>

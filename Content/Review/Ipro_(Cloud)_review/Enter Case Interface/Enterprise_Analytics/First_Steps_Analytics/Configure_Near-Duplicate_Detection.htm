@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-template-page: url('../../../../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Review">
+    <head>
+        <link href="../../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Near-Duplicate Detection</title>
+        <link href="../../../../../Resources/Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Configure Near-Duplicate Detection</h1>
+        <p class="BodyText">Near-Duplicate Detection, by definition, is the identification of groups of documents in which the majority of the text is the same and in the same order as the other items in the group, but with some minor additions or removals. </p>
+        <p class="BodyText">After the configuring and processing a near-duplicate set, in <MadCap:variable name="Primary.ProdName_Review" />, you can:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Near Duplicate Relationship Reference - View related near duplicates in the relationship pane  within the Document Viewer.</p>
+            </li>
+            <li>
+                <p>Near Duplicate Batch Review - Set up batch review by near duplicate group to allow for documents in the same ND group to be reviewed by multiple reviewers all at the same time.</p>
+            </li>
+            <li>
+                <p>Near Duplicate and Email Thread Batch Review - Use Email Threads to review emails and their attachments, and Near Duplicate technology to review the remaining loose documents. For more information, see <MadCap:xref href="../Create_Analytic_Searches/Create_Near_Duplicate_Not_Email_Thread_Search.htm">Create Near Duplicate Search Excluding Email Thread</MadCap:xref>.</p>
+            </li>
+        </ul>
+        <h2><a name="Near-dup"></a>Near-duplicate Fields</h2>
+        <p class="BodyText">Fields used for near-duplicates analysis are listed in the following table. These fields are created at the time you configure near-duplicates analytics. Fields are required unless otherwise noted.</p>
+        <table style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 425px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field Created in ipro eclipse</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;ND&#160;Family</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">A group identifier to identify all items in the same textual near duplicate group. This value will be the item ID of the principal item in the group, which is the item against which all other group members were compared with, and which has the most useful text of any item in the group. .</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA ND&#160;Score</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">
+                            <MadCap:annotation MadCap:createDate="2019-07-01T13:47:55.1984063-07:00" MadCap:creator="jbadger" MadCap:initials="JB" MadCap:comment="is this not a thing anymore?\r\n" MadCap:editor="jbadger" MadCap:editDate="2019-07-01T13:48:02.4701025-07:00">The </MadCap:annotation>similarity of this item to the principal item of a near-duplicate group.</p>
+                        <p class="TableText">This value is expressed as a decimal percent in the range of [0-100].</p>
+                        <p class="TableText">The principal item of the group and any exact duplicates of it will always have a value of 100.</p>
+                        <p class="TableText">No item will have a value less than the Minimum Similarity setting (expressed as a percentage) used when near-duplicate detection was performed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;ND Sort</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">A value for items that can be used to sort near-duplicates in a group so that the principal document is first and all other group members follow in order from the highest to the lowest similarity. </p>
+                        <p class="TableText">If multiple groups need to be sorted, the groups should first be sorted by their near dupe family value and then be sorted by this value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">IA&#160;ND Words</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">The number of duplicative words in the document compared to the principal item of the near-duplicate group.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Configure Near-duplicate Detection</h2>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Preparation:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Review details in <MadCap:xref href="#Near-dup">Near-duplicate Fields</MadCap:xref> to understand these fields and determine whether any existing fields in the case represent comparable data. If they do, make a note of the existing fields.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Evaluate case data and documents for spreadsheets and numeric data; determine whether or not these should be included in the near-duplicates analysis.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Determine the needed similarity cutoff, using a value from 1 to 100. The default level is 25. A higher number represents a greater minimum similarity.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Admin and log in.</p>
+            </li>
+            <li>
+                <p class="BodyText">On the Case Management ribbon, select <b>Eclipse Analytics</b> &gt; <b>Eclipse Analytics Near Duplicate Detection</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">On the left side of the screen, select the needed managing client and case.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/CaseSelectionND.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p class="BodyText">On the left side of the screen, map near-duplicates fields. Required fields are identified by <b>True</b> in the <b>Required</b> column.</p>
+                <p class="BodyText">
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/NearDupfields.png" class="Thumbnail" />
+                </p>
+                <p class="BodyText"> Either automatically or manually map needed fields as follows:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">To automatically map fields (and create if needed), click <b>Auto-Map Required Fields</b>. Newly created fields are marked with an asterisk, *.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">To manually map an <b>Analytics Field</b> to a field in the case, click in the <b>Database Field</b> cell and select the needed field from the list.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">If you are manually mapping fields, repeat step b until all needed fields are mapped.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText"><b>Near Dupe Set Name</b>: If you are creating a new Near Dupe set, select the <b>Create a new set</b> option and enter a unique name to identify it.</p>
+            </li>
+            <li>
+                <p class="BodyText"><b>Previously Processed Set</b>: Alternatively, if you would like to use a previously processed set, select the <b>Use previously processed set</b> option and select the Near Dupe set you would like to use.</p>
+            </li>
+            <li>
+                <p class="BodyText"><b>Documents to Compare</b>: Select one of the following options:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p class="BodyText">To analyze all documents in the case, select <b>Entire Case</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">To analyze a subset of documents based on a saved search, select the search, and click <b>OK</b>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="BodyText"><b>Configuration</b>: To use a previously created and saved configuration, click the  button and select the configuration you would like to use.</p>
+            </li>
+            <li>
+                <p class="BodyText">To set the options for a new configuration profile, click the <b><img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/ManageConfbutton.png" class="Thumbnail" /></b> button to open the dialogue window.</p>
+                <p>
+                    <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/ManageConf.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Select <b>&lt;new&gt;</b> Configuration.</p>
+            </li>
+            <li>
+                <p>Enter the appropriate information in the following fields: </p>
+                <table style="mc-table-style: url('../../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../../../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: The Index Type is automatically selected as "Near Dupe Index" . Insignificant and Significant Words are optional. For more information on this option, see <MadCap:xref href="Create_and_Manage_Analytic_Indexes.htm#Create">Create a TAR Configuration</MadCap:xref>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="mc-table-style: url('../../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 425pt;" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Item</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText"><b>Name</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Enter a name for the configuration profile.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText"><b>Similarity Function</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Select the function you would like to use for determining similarity between two documents. Literal Jaccard is the default value:</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p class="TableText"><b>Literal</b> does <b>NOT</b> take document length into account when determining similarity. This means that similarity between two documents is determined only by the number of words in common.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><b>Literal Jaccard</b> does take document length into account when determining similarity. This means that the similarity between two documents is determined by the number of words in common <b>AND</b> the differences in word count, typically resulting in a more accurate measurement of similarity:</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText"><b>Text Assumption Level</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Select one of the following options to determine how documents will be treated when analyzing for non-binary documents (i.e. documents that contain readable text as opposed to just numbers):</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p class="TableText"><b>0</b>: Only treats documents as non-binary after the system has analyzed the text and identified the content as containing prose.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><b>5</b>: If the document was converted from a known format to plain text, it assumes that the result should be treated as non-binary.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText"><b>10</b>: In addition to the assumptions made at level 5, if the document is in a format that can’t be translated into text, it assumes that the document can be treated as non-binary without further translation of validation.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText"><b>Similarity Cutoff</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Enter the Similarity Cutoff value (from 1 to 100) to be used for determining the threshold for how similar two documents can be. The default value is 25.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Click <img src="../../../../../Graphics/ADD_Review_Graphics/Eclipse Admin/EA_processbutton.png" class="Thumbnail" />.</p>
+                <p>The amount of time required for processing depends on the number of documents being analyzed and the near-duplicates configuration. When the analysis is complete, a success message displays. </p>
+            </li>
+            <li>
+                <p class="BodyText">Near-Duplicate detection is now available to use in your review case.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Review Pass Interface/View_Relationships/Overview_Relationships.htm">Overview: Relationships</MadCap:xref>
+        </p>
+    </body>
+</html>

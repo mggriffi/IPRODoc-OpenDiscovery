@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3><a name="Define"></a>
+        </h3>
+        <p>Visual Search enables you to perform and review searches by using one of three 2-dimensional charts as well as a Concept Wheel. This type of searching lets you view results in a manner that correlates between two or more data fields, or in relation to a data set as a whole.</p>
+        <p>With Visual Search, you can combine text-based and metadata-based criteria into a single search, with the options to specify a valid date range and to include document family members. </p>
+        <p>For more information, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm">Work With the Visual Search Dashboard</MadCap:xref>.</p>
+        <MadCap:snippetBlock src="LMS/Visual_Search.flsnp" />
+        <h4><b>Visual and Advanced Search Synchronization</b>
+        </h4>
+        <p class="BodyText">After you have built and saved a <b>Visual Search</b>, you can edit the search within the <span style="font-weight: bold;">Advanced Search</span> 
+ tab by clicking <b>Need to construct an Advanced Search?</b> at the top right of the dashboard.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/AR_Pg_VisualSearch_NeedtoConstructAdvSearch.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">To continue with an Advanced Search, see<MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Overview_Advanced_Search.htm"> Overview: Advanced Search</MadCap:xref>  and <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm">Work With Advanced Search</MadCap:xref>.</p>
+        <table style="mc-table-style: url('../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Once a Visual Search has been brought into 
+ the <span style="font-weight: bold;">Advanced Search</span> tab, it can 
+ no longer be edited in the <span style="font-weight: bold;">Visual Search</span> 
+ tab.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="Perform"></a>
+        </h3>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Review" style="mc-master-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview:  Relationships</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1><a name="top"></a>Overview: Relationships</h1>
+        <p class="BodyText">Relationships are based on the content of a specific field. When users select a particular document and want to view relationship details in <MadCap:variable name="Primary.Name First" />, the Relationships panels presents all documents with matching field content (as in a field-specific search).  There are six default panels that associate relationships with each new case: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Family:</span> 
+	 intended to show documents that are related to one another, as in 
+	 an email and its attachment. Family relationships are grouped by the 
+	 BEGATTACH field and sorted by the BEGDOC field; you can define the 
+	 details (fields and/or tag groups) to be included in the list.
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Duplicates:</span> 
+	 intended to show documents that are the same in 
+	 content. Duplicates are grouped by the MD5HASH field and sorted by 
+	 the BEGDOC field; you can define the details (fields and/or tag groups) 
+	 to be included in the list.
+            </p>
+            </li>
+            <li>
+                <p><b>Near Duplicates:</b> intended to show documents that are nearly the same in 
+					content. Duplicates are grouped by the MD5HASH field and sorted by 
+					the BEGDOC field; you can define the details (fields and/or tag groups) 
+					to be included in the list.
+                </p>
+            </li>
+            <li>
+                <p><b>Email Thread:</b> displays relationships among a family of email headers
+					to be identified, based on their content and associated metadata. A combination of email headers and email body content is used to determine when emails belong in the same thread.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Document History:</span> 
+	 displays history of actions such as redactions and tags applied to 
+	 the selected document. Although not modifiable, this report can be 
+	 secured.
+</p>
+            </li>
+            <li><b>Similar Documents:</b> displays a list of documents that contain elements similar to a selected document.</li>
+        </ul>
+        <p class="BodyText">The Relationships panels are available at the left side of the <b>Document Viewer</b> that displays when you click a document listed in the <b>Results</b> grid view. </p>
+        <p class="BodyText">
+            <img src="../../../../Graphics/ADD_Review_Graphics/AR_Panel_RelMenus_Updated_New.png" class="Thumbnail" />
+        </p>
+        <p class="BodyText">Any additional relationships created for a case can be added to the collapsed Relationships panels. To display any relationships that are not visible, click the <img src="../../../../Graphics/ADD_Review_Graphics/AR_BTN_RelMenuExpanderArrow.png" class="ReduceButtonSize" /> below the collapsed panels on the left side. Additional custom relationships may be created through <MadCap:variable name="Primary.Name" /> Case Administration. Existing case group permissions can be assigned for each relationship.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">To view the relationship information for the currently displayed document, click the desired relationship tab. Click the pin icon <img src="../../../../Graphics/ECA_PinExpanderSidewaysIcon.png" class="ReduceButtonSize" />  in the top right corner of the relationships tab to keep it open. Click it again to unpin it.</p>
+            </li>
+            <li>
+                <p>The Relationship panel can be resized when it is pinned. Point the cursor to the right side of the pane and you will see the horizontal arrow. Click and drag to resize.</p>
+            </li>
+            <li>
+                <p>The viewer will remember the width of the panel as it was last set. </p>
+            </li>
+            <li>
+                <p>When the panel is resized, and when it is pinned or unpinned, if fit to height is enabled, the image/native viewers will fit to height; otherwise they will fit to width.</p>
+            </li>
+        </ul>
+        <h3 MadCap:conditions="Primary.Blocked">Family Relationships Example</h3>
+        <p class="BodyText" MadCap:conditions="Primary.Blocked">This figure shows the <span style="font-weight: bold;">Family</span> 
+ relationship in <MadCap:variable name="Primary.ProdName_Review" />. </p>
+        <p class="BodyText" MadCap:conditions="Primary.Blocked">
+            <img src="../../../../Graphics/ADD_Review_Graphics/Visual Search/Relationshippanel.png" class="Thumbnail" />
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">The document outlined in green indicates what document is being viewed. The BEGDOC hyperlinks display in all Relationships panels. Click the BEGDOC hyperlinks to display that document in the Document Viewer window. </p>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p class="BodyText">Return to the original document by clicking <b>Back to original document</b>.</p>
+            </li>
+            <li>
+                <p>Click the pin icon <img src="../../../../Graphics/ECA_PinExpanderUprightIcon.png" style="width: 32px; height: 33px;" class="ReduceButtonSize" />  again to collapse the relationships tab.</p>
+            </li>
+        </ul>
+        <p class="BodyText" MadCap:conditions="Primary.Blocked">Return to the original document by clicking <b>Back to original document</b> as shown in the following:</p>
+        <p class="BodyText" MadCap:conditions="Primary.Blocked">
+            <img src="../../../../Graphics/ADD_Review_Graphics/Visual Search/RelationshipOriginal.png" class="Thumbnail" />
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p MadCap:conditions="Primary.Blocked">The BEGDOC hyperlinks also display in other Relationships panels, such as <b>Email Thread</b>, <b>Duplicates</b>, <b>Near Duplicates</b>, <b>Document History</b>, and <b>Similar Documents</b>.</p>
+            </li>
+            <li>
+                <p MadCap:conditions="Primary.Blocked">Clicking outside of the open relationship tab automatically collapses it.</p>
+            </li>
+        </ul>
+        <p MadCap:conditions="Primary.Blocked">Click the pin icon <img src="../../../../Graphics/ECA_PinExpanderUprightIcon.png" style="width: 32px; height: 33px;" class="ReduceButtonSize" />  again to collapse the relationships tab.</p>
+        <h3 MadCap:conditions="Primary.Blocked">Duplicates Relationships Example</h3>
+        <p class="BodyText" MadCap:conditions="Primary.Blocked">Another default relationship is the duplicates relationship 
+ for cases using an MD5Hash field. The following figure shows this relationship 
+ in <MadCap:variable name="Primary.ProdName_Review" />. </p>
+        <p MadCap:conditions="Primary.Blocked">
+            <img src="../../../../Graphics/ADD_Review_Graphics/Visual Search/Duplicates.png" class="Thumbnail" />
+        </p>
+        <h3>Document Comparison Tool</h3>
+        <p>Available within the Relationship panel is the <b>Document Comparison tool</b>, which allows you to compare the document selected in the Results grid to another document that displays in a Relationships panel.</p>
+        <p>To compare the document selected in the search <b>Results</b> tab with any of the other documents that display in a Relationships panel list, select the check box next to that document in the panel and click the  <img src="../../../../Graphics/ADD_Review_Graphics/AR_Btn_Compare.png" style="width: 31px; height: 33px;" class="ReduceButtonSize" /> icon. The two documents then display side-by side in the Document Comparison tool of the Document Viewer. For more information, see <MadCap:xref href="Work_with_Relationships.htm#The">The Document Comparison Tool</MadCap:xref>.</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Mass actions (coding and/or tagging) can be applied to selected items in a relationships panel. See <MadCap:xref href="Manage_Mass_Actions_Relationships_Panel.htm">Manage Mass Actions in the Relationship Panel</MadCap:xref>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Work_with_Relationships.htm">Work with Relationships</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Understand_the_Document_Viewer/Overview_Document_Viewer.htm">Overview: Document Viewer</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Understand_the_Document_Viewer/Understand_Document_Viewer_Options.htm">Understand Document Viewer Options</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Understand_the_Document_Viewer/Work_With_Document_Viewer_Tabs.htm">Work with Document Viewer Tabs</MadCap:xref>
+        </p>
+    </body>
+</html>

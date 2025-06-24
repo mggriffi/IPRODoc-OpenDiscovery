@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Select Mapping Options</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Select Mapping Options" />Select Mapping Options</h1>
+        <p class="BodyText">After completing field mapping discussed in the previous 
+ procedures, complete the following procedures as they apply to your data. 
+ </p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li><a href="#Check_Correct_Path_Information">Check/Correct 
+	 Path Information</a>
+            </li>
+            <li><a href="#Select_Import_Mode_for_Data">Select 
+	 Import Mode for Data</a>
+            </li>
+            <li><a href="#Select_Image_File_Options">Select 
+	 Image File Options</a>
+            </li>
+            <li><a href="#Select_Text_Options">Select Text 
+	 Options</a>
+            </li>
+            <li><a href="#Correct_Native_File_Paths">Correct 
+	 Native File Paths</a>
+            </li>
+            <li><a href="#Choose_Index_Option">Choose Index 
+	 Option</a>
+            </li>
+        </ul>
+        <h2><a name="Check_Correct_Path_Information"></a>
+            <MadCap:keyword term="Check/Correct Path Information" />Check/Correct Path Information</h2>
+        <p class="BodyText">You can easily check any file path information (for 
+ images, native files, and/or text) contained in the load file and change 
+ it to “point to” the correct location for the files being added to the 
+ Eclipse case. </p>
+        <p class="BodyText">To change path information for files used in Eclipse 
+ case: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>If you are working with a .DAT, .DLF, or .CSV 
+ file that includes a file path in the EXTRACTED TEXT field instead of 
+ the text itself, ensure that the <span style="font-weight: bold;">Import 
+ Text from Path</span> option is selected. </p>
+            </li>
+            <li>
+                <p>On the <span style="font-weight: bold;">Step 
+ 2</span> tab of the Import Data screen, locate a mapped field that includes 
+ a file path/file name (image or native path, or extracted-text file path), 
+ click <img src="../../../Graphics/Admin_Graphics/Btn_Import-MagGlas.png" alt="" border="0" class="button_inline" />&#160;next to the mapped details. Eclipse will check the path and file name.</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If 
+ the specified file exists at the specified location, a success message 
+ will display. Click <span style="font-weight: bold;">OK</span> and skip 
+ to step 4. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ the specified file does not exist at the specified location, an error 
+ message will display. Complete step 3. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To correct file paths, click <span style="font-weight: bold;">OK</span> 
+ in the error message and complete the Edit Path dialog box as follows:</p>
+                <ol>
+                    <li>
+                        <p><span style="font-weight: bold;">Load File Path</span>: Review the path 
+ information to determine the part of the path that is incorrect and needs 
+ to be replaced. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Replace Text</span>: Enter the incorrect 
+ portion of the load file that you identified in step a. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">With</span>: Enter the correct file path 
+ information. (For images, this can be the path itself or a volume name 
+ that represents the correct path details. If entering a volume name, precede 
+ and follow the volume name with the “at” sign, @, as in @VOL1@.) </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Imported Path</span>: Review the corrected 
+ path for accuracy. </p>
+                    </li>
+                </ol>
+                <p class="BodyTextIndent">If needed, click <img src="../../../Graphics/Admin_Graphics/Btn_Import-Refresh.png" alt="" border="0" class="button_inline" />&#160;to 
+ update the path in the<span style="font-weight: bold;"> Imported Path</span> 
+ field. </p>
+                <p class="BodyTextIndent">For volumes (image path only), the complete path 
+ represented by the volume (and the portion of the load file path that 
+ you are not replacing) displays beneath the <span style="font-weight: bold;">Imported 
+ Path</span> field.</p>
+                <ol MadCap:continue="true">
+                    <li>
+                        <p>To 
+ verify that the path is correct, click . If the file is not found, check 
+ your work and make corrections as needed. </p>
+                    </li>
+                    <li>
+                        <p>When 
+ the validation message states <span style="font-weight: bold;">File found!</span>, 
+ click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Tip: You 
+		 can copy path details from the path in the <span style="font-weight: bold;">Load 
+		 File Path</span> field and paste it in the <span style="font-weight: bold;">Replace 
+		 Text</span> field. </p>
+                        <p class="Note">If the path you enter is not valid, check your 
+		 entries carefully. For example, look for missing or extra backslashes. 
+		 </p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>Repeat these steps for each type of path in 
+ the load file.</p>
+            </li>
+            <li>
+                <p>As needed, continue with another procedure 
+ described in this section. If no additional options on the <span style="font-weight: bold;">Step 
+ 2</span> tab need to be set, go to Pre-Processing. </p>
+            </li>
+        </ol>
+        <h2><a name="Select_Import_Mode_for_Data"></a>
+            <MadCap:keyword term="Select Import Mode for Data" />Select Import Mode for Data</h2>
+        <p class="BodyText">Complete the following steps to define how data will 
+ be added to a case. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the<span style="font-weight: bold;"> Step 2 </span>tab of the Import Data window, 
+ in the <span style="font-weight: bold;">Select Mode</span> section, select 
+ the way in which data is imported into the Eclipse case. </p>
+            </li>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t1">Import 
+ Options</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t1">
+                <table class="TableStyle-ADD_Help_Tables" style="border-collapse: collapse;mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 125px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 100px;" />
+                    <col width="100px" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 42px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td colspan="4" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Import Option
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 29px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: left;">Option</p>
+                            </td>
+                            <td colspan="3" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: left;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 162px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Append 
+			 All Records</p>
+                            </td>
+                            <td colspan="3" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Use 
+			 this option to add new records to a new or existing database. 
+			 </p>
+                                <ul class="BulletListTable">
+                                    <li>
+                                        <p class="TableText">For 
+			 a new case, all records in the load file will be added to 
+			 the database. </p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">For 
+			 an existing case:</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Records 
+			 in the load file that do not currently exist in the case will 
+			 be added to the database. </p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Records 
+			 in the load file that are also in the existing case are ignored. 
+			 </p>
+                                    </li>
+                                </ul>
+                                <p class="TableText">The 
+			 load file must contain a BEGDOC, DOCID, or IMAGEKEY field.
+                            </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 45px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td rowspan="6" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Overlay/Append
+                            </p>
+                            </td>
+                            <td rowspan="2" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Load 
+			 File “Pet” Field</p>
+                            </td>
+                            <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Eclipse 
+			 Case “Pet Field”</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 44px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">(Before 
+			 Import)</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">(After 
+			 Import)</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 40px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td rowspan="3" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">dog</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">(blank)</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">dog</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 40px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">cat</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">dog</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 39px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">dog</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">dog</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 40px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">(blank)</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">dog</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">(blank)</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 86px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Overlay Only</p>
+                            </td>
+                            <td colspan="3" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Use 
+			 this option to update existing records. Selected records can 
+			 be updated as described in step 2.</p>
+                                <ul style="list-style: square;" class="BulletListTable">
+                                    <li>
+                                        <p class="TableText">
+                                    Records in the load file that 
+				 do not currently exist in the case will be ignored.
+                                </p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">
+                                    Records in the load file that 
+				 are also in the existing case will be overwritten (see 
+				 the previous example).
+                                </p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="height: 61px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Tag Import</p>
+                            </td>
+                            <td colspan="3" class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Use 
+			 this option to import tags and apply them to records in the 
+			 Eclipse case as described in <a href="#Tag_import_details_">Tag 
+			 import details</a>.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <li>
+                <p><span style="font-weight: bold;">Overlay Field 
+ to Match</span>: If you select either of the Overlay options in step 1, 
+ select the field (BEGDOC) to be used for matching the load file records 
+ to the case records field. </p>
+            </li>
+            <li>
+                <p>&#160;As needed, continue with another procedure 
+ described in this section. If no additional options on the <span style="font-weight: bold;">Step 
+ 2</span> tab need to be set, go to Pre-Processing. </p>
+            </li>
+        </ol>
+        <h3><a name="Tag_import_details_"></a>Tag import details </h3>
+        <p class="BodyText">This information supplements <a href="#Select_Import_Mode_for_Data">Select 
+ Import Mode for Data</a>. Tag details can be imported using a plain text 
+ file (such as a .CSV or .TXT file) containing image keys and tag information 
+ for each record for which tags are to be applied. The following figure 
+ shows the content of a typical text tag-import file.</p>
+        <p class="Image">
+            <img src="../../../Graphics/Admin_Graphics/Import_TagExample.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">Tags defined in the import file will be created in 
+ the Eclipse case if they are not already defined for the case.</p>
+        <p class="BodyText">To import tags successfully, the issues in the following 
+ table must be addressed. </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t2">Tag 
+ Import Issues</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t2">
+            <table style="margin-left: 20px;mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Issue</p>
+                        </td>
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td rowspan="3" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">File 
+			 Format</p>
+                        </td>
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul style="list-style: square;" class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Make sure the First line is header 
+				 option is not selected when you complete <a href="Select_the_Data_Source.htm">Select 
+				 the Data Source</a>.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Make sure the import file does 
+				 not contain a header line.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Ensure each line of the file contains 
+				 no more than one tag definition (either a tag, a tag group»tag, 
+				 or tag»nested tag).
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">If tag groups are to be imported, 
+				 every line of the file must include a tag group»tag entry. 
+				 For example:</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: right;">Wrong:</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">ECL00001|CONFIDENTIAL»CONF1</p>
+                            <p class="TableText">ECL00001|CONF2</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText" style="text-align: right;">Right:</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">ECL00001|CONFIDENTIAL»CONF1</p>
+                            <p class="TableText">ECL00001|CONFIDENTIAL»CONF2</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Delimiters<span class="FootnoteSuperscript">[1]</span></p>
+                        </td>
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">When 
+			 you complete <a href="Select_the_Data_Source.htm">Select the 
+			 Data Source</a>:</p>
+                            <ul style="list-style: square;" class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Make sure the correct Field delimiter 
+				 is defined.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                If the import file includes tag 
+				 groups and/or nested tags, make sure the correct Nested 
+				 Field delimiter is defined.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Overlay field</p>
+                        </td>
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">When 
+			 you complete Select import mode for data, make sure the Overlay 
+			 Field to Match is set to the BEGDOC field.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Import options</p>
+                        </td>
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Before 
+			 performing the import, address the following:</p>
+                            <ul style="list-style: square;" class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Page tags: determine whether tags 
+				 should be applied to documents or individual pages.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Private tags: determine whether 
+				 private tags should be imported.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Tag groups: determine whether 
+				 the import file includes tag groups or nested tags. See 
+				 the previous figure for details.
+                            </p>
+                                </li>
+                            </ul>
+                            <p class="TableText">These options are selected during Complete 
+			 the Import.</p>
+                            <p class="TableText">Undefined tag groups are placed in an 
+			 “Imported Tags” group. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <hr size="1" width="33%" align="left" />
+                <div id="ftn1">
+                    <p class="footnote"><sup><span class="FootnoteSuperscript">[1]</span></sup><span style="font-family: Verdana, sans-serif;">The delimiters used in the examples 
+			 in this topic are common but not required. Delimiters in your 
+			 file may be different.</span>
+                    </p>
+                </div>
+            </div>
+            <p>&#160;</p>
+        </div>
+        <h2><a name="Select_Image_File_Options"></a>
+            <MadCap:keyword term="Select Image File Options" />Select Image File Options</h2>
+        <p class="BodyText">Complete the following steps to select image handling 
+ options and correct the image path if needed.</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Ensure 
+ that the<span style="font-weight: bold;"> Step 2</span> tab is selected 
+ on the Import Data screen.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Image Options</span>: 
+ If you are importing data into a new case that contains no data, leave 
+ the default selection and go to step 3. </p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Warning.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Important: If you 
+		 are importing an .LFP file that does not include IM lines, these 
+		 options do not apply. (That is, the file contains OT, OI, and/or 
+		 FT, lines only.) In this case, leave the default selection and 
+		 go to step 3.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>For other types of load files, select one of 
+ the following options:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Create error if image exists</span>: If 
+ the image key specified in the import file exists in the case, an error 
+ is logged and the image record is not created. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Overwrite and remove existing annotations</span>: 
+ If the image key specified in the import file exists in the case, overwrite 
+ the record and eliminate any annotations (highlighting, mark-ups, and/or 
+ redactions) that were specified for the image. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Overwrite but retain existing annotations</span>: 
+ If the image key specified in the import file exists in the case, overwrite 
+ the record and keep any existing annotations (such as highlighting, mark-ups, 
+ and/or redactions) that were specified for the image. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Skip existing images</span>: If the image 
+ key specified in the import file exists in the case, leave the record 
+ for that image unchanged. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Image file 
+ path</span>: If the path defined in the load file for image files in the 
+ load file is incorrect and you did not make corrections during field mapping, 
+ click <span style="font-weight: bold;">Edit File Path</span> in the <span style="font-weight: bold;">Image Options</span> area and complete 
+ the Edit Image Path dialog box:</p>
+                <ol>
+                    <li>
+                        <p><span style="font-weight: bold;">Load File Path</span>: Review the path 
+ information to determine the part of the path that is incorrect and needs 
+ to be replaced. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Replace Text</span>: Enter the incorrect 
+ path details identified in step a. For example, if the server name in 
+ the load file path is wrong, enter the incorrect server name. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">With</span>: Enter the correct file path 
+ information, either the path itself or a volume name that represents the 
+ correct path details. If entering a volume name, precede and follow the 
+ volume name with the “at” sign, @, as in @VOL1@. For details on volumes, 
+ see <a href="../Review_Process_Management/Work_with_Image_Paths.htm">Work 
+ with Image Paths</a>.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Imported Path</span>: Review the corrected 
+ path for accuracy. If needed, click <img src="../../../Graphics/Admin_Graphics/Btn_Import-Refresh.png" alt="" border="0" class="button_inline" /> to update the path in the 
+ Imported Path field. </p>
+                    </li>
+                    <li>
+                        <p>For 
+ volumes, the complete path represented by the volume (and the portion 
+ of the load file path that you are not replacing) displays beneath the 
+ Imported Path field.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ verify that the path is correct, click <img src="../../../Graphics/Admin_Graphics/Btn_Import-Validate.png" alt="" border="0" class="button_inline" />. If the file 
+ is not found, check your work and make corrections as needed. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When the validation message states File found!, 
+ click <span style="font-weight: bold;">OK</span>.</p>
+            </li>
+            <li>
+                <p>As needed, continue with another procedure 
+ described in this section. If no additional options on the Step 2 tab 
+ need to be set, go to <a href="Pre-Processing.htm">Pre-Processing</a>. 
+ </p>
+            </li>
+        </ol>
+        <h2><a name="Select_Text_Options"></a>
+            <MadCap:keyword term="Select Text Options" />Select Text Options</h2>
+        <p class="BodyText">If text files are being imported as part of the load 
+ file, complete the following steps. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Ensure 
+ that the <span style="font-weight: bold;">Step 2</span> tab is selected 
+ on the Import Data window.</p>
+            </li>
+            <li>
+                <p>If you are working with a .DAT, .DLF, or .CSV 
+ file that includes a file path in the EXTRACTED TEXT field instead of 
+ the text itself, ensure that the <span style="font-weight: bold;">Import 
+ Text from Path</span> option is selected. </p>
+            </li>
+            <li>
+                <p>If the path defined in the load file for text 
+ files is incorrect and you did not make corrections during field mapping, 
+ click <span style="font-weight: bold;">Edit File Path</span> in the <span style="font-weight: bold;">Text Options</span> area and complete the 
+ Edit Text Path dialog box:</p>
+                <ol>
+                    <li>
+                        <p><span style="font-weight: bold;">Load File Path</span>: Review the path 
+ information to determine the part of the path that is incorrect and needs 
+ to be replaced. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Replace Text</span>: Enter the incorrect 
+ path details identified in step a. For example, if the server name in 
+ the load file path is wrong, enter the incorrect server name.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">With</span>: Enter the correct file path 
+ information. For example, if the server name in the path is wrong, enter 
+ the correct server name.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Imported Path</span>: Review the corrected 
+ path for accuracy. If needed, click <img src="../../../Graphics/Admin_Graphics/Btn_Import-Refresh.png" alt="" border="0" class="button_inline" />&#160;to update the path in the 
+ <span style="font-weight: bold;">Imported Path</span> field.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ verify that the path is correct, click <img src="../../../Graphics/Admin_Graphics/Btn_Import-Validate.png" alt="" border="0" class="button_inline" />. If the file 
+ is not found, check your work and make corrections as needed. </p>
+                    </li>
+                    <li>
+                        <p>When 
+ the validation message states <span style="font-weight: bold;">File found!</span>, 
+ click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>As needed, continue with another procedure 
+ described in this section. If no additional options on the <span style="font-weight: bold;">Step 
+ 2</span> tab need to be set, go to <a href="Pre-Processing.htm">Pre-Processing</a>. 
+ </p>
+            </li>
+        </ol>
+        <h2><a name="Correct_Native_File_Paths"></a>
+            <MadCap:keyword term="Correct Native File Paths" />Correct Native File Paths</h2>
+        <p class="BodyText">If the path defined in the load file for native files 
+ is incorrect and you did not make corrections during field mapping, complete 
+ the following steps. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Ensure 
+ that the <span style="font-weight: bold;">Step 2</span> tab is selected 
+ on the Import Data window.</p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Native 
+ Options</span> area, click <span style="font-weight: bold;">Edit Native 
+ File Path</span> and complete the Edit Native Path dialog box as follows:</p>
+                <ol>
+                    <li>
+                        <p><span style="font-weight: bold;">Load File Path</span>: Review the path 
+ information to determine the part of the path that is incorrect and needs 
+ to be replaced. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Replace Text</span>: Enter the incorrect 
+ path details that you identified in step a. For example, if the server 
+ name in the load file path is wrong, enter the incorrect server name.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">With</span>: Enter the correct file path 
+ information. For example, if the server name in the path is wrong, enter 
+ the correct server name.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Imported Path</span>: Review the corrected 
+ path for accuracy. If needed, click <img src="../../../Graphics/Admin_Graphics/Btn_Import-Refresh.png" alt="" border="0" class="button_inline" />&#160;to update the path in the 
+ <span style="font-weight: bold;">Imported Path</span> field.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ verify that the path is correct, click <img src="../../../Graphics/Admin_Graphics/Btn_Import-Validate.png" alt="" border="0" class="button_inline" />. If the file 
+ is not found, check your work and make corrections as needed. </p>
+                    </li>
+                    <li>
+                        <p>When 
+ the validation message states <span style="font-weight: bold;">File found!</span>, 
+ click <span style="font-weight: bold;">OK</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>As needed, continue with another procedure 
+ described in this section. If no additional options on the <span style="font-weight: bold;">Step 
+ 2</span> tab need to be set, go to <a href="Pre-Processing.htm">Pre-Processing</a>. 
+ </p>
+            </li>
+        </ol>
+        <h2><a name="Choose_Index_Option"></a>Choose Index Option</h2>
+        <p class="BodyText">Select the <span style="font-weight: bold;">Index after 
+ process completes</span> option to create the index used for text searching 
+ after the import process completes. </p>
+        <p class="BodyText">To skip indexing now (for example, to save time), do 
+ not select the option. Indexes can be managed after data is imported as 
+ explained in <a href="../Review_Process_Management/Manage_Indexes.htm">Manage 
+ Indexes</a>. </p>
+    </body>
+</html>

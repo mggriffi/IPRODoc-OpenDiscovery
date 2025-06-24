@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head><title>discovery ][ Enterprise Release Notes 2020.8.0</title>
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p> </p>
+        <h1>discovery ][ Enterprise Release Notes 2020.8.0</h1>
+        <p>&#160;</p>
+        <p><MadCap:variable name="Primary.IPRO" /> is pleased to announce the 2020.8.0 release of <MadCap:variable name="Primary.Name First" />.</p>
+        <p><MadCap:variable name="Primary.Name" /> continues to evolve with this exciting new release focused on security, productivity, reporting, and much more.</p>
+        <ul class="BulletListBody">
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note"><b>Note 1</b>: <MadCap:variable name="Primary.Name" /> 2020.8.0 requires SQL Server 2016 or later, .NET Core 3.1 or later, and .NET Framework 4.8 or later. In addition, the updated version of Auth is required for this release.<br /></p>
+                            <p class="Note"><b>Note 2</b>: Using Single Sign-on (SSO) requires enabling TLS 1.2 with an outbound HTTP connection to the identity provider. For more information about SSO and TLS, see the Security section that follows.</p>
+                            <p class="Note">For more overall information, see the <MadCap:xref href="../System Requirements.htm">System Requirements</MadCap:xref> document.</p>
+                            <p class="Note"><b>Note 3</b>: Eclipse web has been removed and replaced with our new, modern document review interface.  See <MadCap:xref href="#Resolved">Resolved Issues</MadCap:xref> in this document for more information.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ul>
+        <h2><a name="New"></a>
+        </h2>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" MadCap:conditions="" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" MadCap:conditions="" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/tip_sysadm.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">To view the <MadCap:variable name="Primary.Name" /> 2020.8.0 new features video, click</p>
+                    <p class="Note">
+                        <MadCap:toggler targets="new_features_video">here</MadCap:toggler>.</p>
+                    <p class="Note" MadCap:targetName="new_features_video">
+                        <object src="https://vimeo.com/412907334" style="width: 560px;height: 315px;">
+                        </object>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+        <h2><b>New Features</b>
+        </h2>
+        <h3><b>Reinforced Security</b>
+        </h3>
+        <h4><b>Federated Identity Single Sign-On (SSO)</b>
+        </h4>
+        <p>Access case documents even faster and more securely with single sign-on (SSO) support. SSO logs you into <MadCap:variable name="Primary.Name" /> through your organization's existing identity provider or directory service.  Increase organizational security and decrease administrative overhead with our integrated SSO support.  One less username and password to maintain! Federated Identity supports the ability to set up one identity provider for each system environment by using the OpenID Connect standard. Third party providers that can authenticate through the OpenID standard include Google, Microsoft, Okta, Apple, and PingID.</p>
+        <h4><b>TLS 1.2 Compliancy</b>
+        </h4>
+        <p><MadCap:variable name="Primary.Name First" /> Release 2020.8.0 is TLS 1.2 compliant.</p>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/Admin_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note"><b>Note:</b> Using Single Sign-on (SSO) requires enabling TLS 1.2 with an outbound HTTP connection to the identity provider.</p>
+                </td>
+            </tr>
+        </table>
+        <h4><b>Multi-factor Authentication (MFA) </b>
+        </h4>
+        <p>MFA, also known as Two-factor Authentication (2FA), enables you to strengthen security by requiring a time-based one-time passcode (TOTP).  sent to a user's device, such as a mobile phone.</p>
+        <ul class="BulletListBody">
+            <li>Enable/ or disable 2FA</li>
+            <li>Administrators can reset a user's 2FA if the user's phone is lost, stolen, or replaced.<ul><li>The user may be required to re-authenticate their device and no longer have the 2FA backup key.</li></ul></li>
+            <li>MFA status is displayed on the user’s profile.</li>
+        </ul>
+        <h3><b>Review</b>
+        </h3>
+        <h4><b>Visual Search Modernization </b>
+        </h4>
+        <p>New Visual Search provides an approachable and interactive search experience letting you uncover critical evidence faster and in ways that you couldn't with traditional search capabilities. Interactable charts work the way you do, giving clarity to case evidence without requiring additional costly training.</p>
+        <ul class="BulletListBody">
+            <li>Searches are now transferable between Visual Search and Advanced Search</li>
+            <li>Interactable charts offer a new level of depth to the searching experience without requiring additional training.</li>
+        </ul>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/Admin_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note"><b>Note</b>: No new charts have been added in this release.</p>
+                </td>
+            </tr>
+        </table>
+        <h4><b>Similar Documents</b>
+        </h4>
+        <p>The Similar Documents Relationship has been updated to display documents with a Similarity Score of 70 or greater.  The previous Minimum Similarity Score display was 10, which typically returned a higher number of similar documents.</p>
+        <h4><b>Hot Keys </b>
+        </h4>
+        <p>Spending too much time in review? Scale up through Hot Keys and reduce the times your hands need to leave the keyboard with efficient hot-keys mapped to the most important document review functions. Hot-keys help you  increase efficiency without losing quality.</p>
+        <ul class="BulletListBody">
+            <li>Tags can be assigned keyboard shortcuts in the tag palette screen.</li>
+            <li>A hot key can be assigned only once, then it is grayed out.</li>
+            <li>Numbers 0-9 can be used. Letters A-Z can be used. No more than 36 tags can get assigned shortcuts.</li>
+            <li>Tool tips are added for any hot key that has a keyboard shortcut in the review pass pop-out and the search pop-out.</li>
+        </ul>
+        <p><MadCap:variable name="Primary.Name" /> includes default keyboard shortcuts:</p>
+        <table style="width: 50%;border-top-left-radius: 1px;border-top-right-radius: 1px;border-bottom-right-radius: 1px;border-bottom-left-radius: 1px;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col style="width: 323px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 537px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th style="font-size: 11pt;color: #ffffff;" class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1"><span style="font-size: 10pt;">Shortcut Keys</span>
+                    </th>
+                    <th style="font-size: 11pt;color: #ffffff;" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1"><span style="font-size: 10pt;">Description</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">PgDn</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">Next page (Only in the Image and Production tabs)</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">PgUp</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">Previous page (Only in the Image and Production tabs)</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">Alt + PgDn</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">Save and go to the Next Document</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">Alt + PgUp</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">Save and go to the Previous Document</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">Ctrl + Enter</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">Save</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">Ctrl + I</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">Navigate to the Image tab</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">Ctrl + P</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">Navigate to the Production tab</td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">Up and Down Arrows</td>
+                    <td style="font-size: 10pt;" class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">Scroll Up and Down on a page</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><b>Reporting</b>
+        </h3>
+        <h4><b>Streaming Discovery Detailed and Storage Reports now available from within <MadCap:variable name="Primary.Name" /> </b>
+        </h4>
+        <p>Two system level reports have been added to assist with billing.</p>
+        <ul class="BulletListBody">
+            <li><b><MadCap:variable name="Primary.IPRO" /> Processing Storage Report</b>: System Level results of processed data per date range are reported as well as current database sizes. All parameters are optional. Columns may be sorted. All sizes are exported in GB. Default granularity is set to Managing Client / Client Level.</li>
+            <li><b><MadCap:variable name="Primary.IPRO" /> Review Storage Report</b>: Reports the total size of all records recorded in the selected Managing Client's case database(s) that were loaded within the selected date range. End Date will represent the most recent date that terminates the desired date range. Default aggregation is by Case, Client, and Managing Client. All parameters are optional.</li>
+        </ul>
+        <p>When processing data, three frequently needed reports are now  available through <MadCap:variable name="Primary.Name" /> Reports library.</p>
+        <ul class="BulletListBody">
+            <li><b>Discovery Detailed Error</b> <b>Report</b>: This report originates from <MadCap:variable name="Primary.eCapture" /> and has been added to Reports.  List of errors, status messages, and password-protected documents encountered during discovery. The end of the report displays a list of password-protected files that includes the Item ID, Location, item type, file, and physical location for each file.</li>
+            <li><b>Data Extract Detailed Error Report</b>: This report originates from <MadCap:variable name="Primary.eCapture" /> and has been added to Reports.  List of extraction and OCR errors and status messages encountered during data extraction. The end of the report displays a list of password-protected files that includes the Item ID, Location, item type, file, and physical location for each file.</li>
+            <li><b>Processing Storage Report</b>: This report returns the size of all records in the associated project (case).  Results calculated per date range are reported per custodian, Job type, and individual Job level. Date range is optional. Columns may be sorted. All sizes are exported in GB.</li>
+        </ul>
+        <p>When reviewing data, an additional report is now available through <MadCap:variable name="Primary.Name" /> Reports library.</p>
+        <ul class="BulletListBody">
+            <li><b>Review Storage Reports</b>:  This report returns the size of all records in the associated case database that were imported within the selected date range. End Date will represent the most recent date that terminates the desired date range. All parameters are optional.</li>
+        </ul>
+        <h2><a name="Resolved"></a>
+            <MadCap:toggler targets="resolved_issues">Resolved Issues</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="resolved_issues">
+            <h3><b>Review</b>
+            </h3>
+            <p><b>AR-4790</b> –Eclipse (XBAP) is removed and replaced with our new, modern document review interface.</p>
+            <p><b>AR-4793</b> - Content Analyst (CAAT) removed from <MadCap:variable name="Primary.Name" /> solution.</p>
+            <p><b>AR-5996</b> – Improved handling to force automatic rebuild of full index when modifying index settings.</p>
+            <p><b>AR-6537</b> – Bulk uploading of users can now be added using either a CSV or JSON file.</p>
+            <p><b>AR-5999</b> – Updated Help &amp; Support links from menu option to direct users to the new Help Center or easily be able to contact <MadCap:variable name="Primary.IPRO" /> Support.</p>
+            <p>
+                <img src="../../Graphics/Help&amp;Support_Link2.png" />
+            </p>
+            <p><b>PS-2286</b> - Updated Active Directory authentication domain property to be configurable within WindowsDomainName setting. This allows Active Directory to work with Web Servers that are not joined to a web domain.</p>
+            <p><b>AP-1758</b> – Improved handling for documents being accessed by review and production export at the same time.  If a document lock is now encountered, a copy of the file is utilized to prevent errors on production export.</p>
+            <p><b>AR-7047</b> - Updated the completed batches total in Review Pass Management to show the total number of completed batches in the review pass.</p>
+            <p><b>AR-6830</b> – Re-established CSE compatibility between Desktop Review and <MadCap:variable name="Primary.IPRO" /> Review.</p>
+            <p><b>AR-7179</b> - Updated inactivity timeout to be configurable; the default is 10 minutes. This can now be customized by updating the InactivityTimeoutMinutes setting.</p>
+            <p><b>AR-6395</b> - Restored the ability to use a direct link to a Review case to get directly into a case or review pass.</p>
+            <p><b>AR-6165</b> – Updated Persistent Highlighting term to highlight when performing the Quick Search with the same term.</p>
+            <p><b>AP-1463</b> – Improved handling to prevent output of duplicate native files in production exports.</p>
+            <p><b>AR-3675</b> – Updated “Locked Rule” to adhere to the tags within the group.</p>
+            <p><b>AR-0403</b> – Improved performance when using combination text searches in Advanced Search.</p>
+            <p><b>AP-0751</b> – Improved handling of image to PDF conversion during production if file names exceed 215 characters.</p>
+            <h3><b>Processing</b>
+            </h3>
+            <p><b>AP-0795</b> – Improved monitoring of memory consumption, error handling and reporting when using streaming ingestion of PST files with large excel attachments.</p>
+            <p><b>PS-2508</b> – Updated mass action OCR jobs to clean up session buildup which caused slowness and, in some cases, prevented users from logging in.</p>
+            <p><b>AP-1491</b> - The methodology for gathering email body information has been revised to handle extracting complete body content from digitally signed emails.</p>
+            <p><b>AP-1481</b> – Email sent identification has been improved to utilize the population of "Sent Date" as criteria to determine if the email was sent.</p>
+            <p><b>AP-1433</b> - Values are properly populated in Review from the associated Media when items are processed\reprocessed through QC.</p>
+            <p><b>AP-1381</b> - Additional checks have been implemented to ensure count mismatches are prevented during streaming discovery export set creation process.</p>
+            <p><b>AP-1115</b> - One or more errors could be encountered when an existing Export Series is edited and saved more than once.</p>
+            <p><b>AP-0914</b> - Handling has been improved to better identify the presence of delimiters within DLF load files to prevent improper loading of field values.</p>
+            <p><b>AP-1567</b> - The field values for "Norwegian Bokmål" have been updated to display properly.</p>
+            <p>&#160;</p>
+            <p>
+                <br />
+            </p>
+        </div>
+    </body>
+</html>

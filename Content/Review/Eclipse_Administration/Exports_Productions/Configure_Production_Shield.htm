@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Production Shield</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Configure Production Shield" />Configure Production Shield</h1>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: These procedures apply for versions prior to 2018.6.0. See <MadCap:xref href="../../Eclipse_web/Exports_and_Productions/Set the Production Shield.htm">Set the Production Shield</MadCap:xref> for version 2018.6.0 and later..</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">After you have prepared for export/production security, 
+ complete the following steps: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse and log in as an Eclipse administrator.</p>
+                    </li>
+                    <li>
+                        <p>Open 
+ the needed case. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Case 
+ View</span> pane, click <span style="font-weight: bold;">Case Administration</span>, 
+ and then <span style="font-weight: bold;">Production Shield</span>. </p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Plus_Web.png" alt="" border="0" class="button_inline" />, 
+ then enter a name for the security configuration.</p>
+            </li>
+            <li>
+                <p>To include family documents as part of the 
+ configuration, select <span style="font-weight: bold;">Include (</span><span style="font-weight: bold;font-style: italic;">field</span><span style="font-weight: bold;">)</span>. 
+ The field named here is the BEGATTACH field for your case. If this option 
+ is selected, all documents related to those matching your security criteria 
+ will be flagged as protected.</p>
+            </li>
+            <p class="BodyTextIndent">The following steps are very similar to those 
+ used to define an advanced search in Eclipse. </p>
+            <li>
+                <p>From the <span style="font-weight: bold;">Search 
+ Type</span> list, select the first type of security criteria:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Fields 
+ within the case</p>
+                    </li>
+                    <li>
+                        <p>Analytics 
+ (if installed at your site) - Category or Clusters</p>
+                    </li>
+                    <li>
+                        <p>Batch 
+ - Assigned To, ID, Review Status, or Set</p>
+                    </li>
+                    <li>
+                        <p>Doc 
+ Tags</p>
+                    </li>
+                    <li>
+                        <p>Redaction 
+ Categories</p>
+                    </li>
+                    <li>
+                        <p>Review 
+ Status </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Complete the security criteria statement by 
+ selecting the needed <span style="font-weight: bold;">Operator</span> 
+ and selecting or entering the needed value below the statement.</p>
+            </li>
+            <li>
+                <p>Optional: Add another statement(s) by selecting 
+ the needed <span style="font-weight: bold;">Connector</span>, clicking 
+ +, and repeating step 5 and step 6 for the new statement.</p>
+            </li>
+            <li>
+                <p>Optional: Group two or more statements by using 
+ the parentheses buttons. </p>
+            </li>
+            <li>
+                <p>When finished, review the complete security 
+ expression and make changes to individual statements if needed. </p>
+            </li>
+            <p class="BodyTextIndent">To make changes before the configuration is saved, 
+ simply change any aspect of a security statement (search type, operator, 
+ value, connector), or delete a statement by clicking - for the line. </p>
+            <li>
+                <p>When the expression is correct, click <span style="font-weight: bold;">Save</span>. </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="false"
+  ProjectName="ADD_Help"
+  ProjectFolder="C:\Users\jbadger\Documents\NewTFS\EnterpriseHelp\"
+  AutoSync="false"
+  SourceFolders="file:///C:/Users/jbadger/Desktop/Schemas Enterprise"
+  ImportResources="false"
+  ImportResourcesLocation="NoImport"
+  ImportTopics="specific"
+  ImportLinkedHtmlFiles="false"
+  LastImport="2019-08-08T07:31:21.4886311-07:00"
+  ImportTopicsLocation="Content/Product Resources/">
+  <Files>
+    <Url
+      Source="../../../../../Desktop/Schemas Enterprise"
+      AbsoluteSource="file:///C:/Users/jbadger/Desktop/Schemas Enterprise" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Enterprise.html"
+      TimeStamp="8/8/2019 7:31:07 AM" />
+    <Url
+      Source="../../Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Membership.html"
+      TimeStamp="8/8/2019 7:31:08 AM" />
+    <Url
+      Source="../../Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Permissions.html"
+      TimeStamp="8/8/2019 7:31:08 AM" />
+    <Url
+      Source="../../Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Reporting.html"
+      TimeStamp="8/8/2019 7:31:08 AM" />
+    <Url
+      Source="../../Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Diagnostic.html"
+      TimeStamp="8/8/2019 7:31:08 AM" />
+    <Url
+      Source="../../Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Media Manager.html"
+      TimeStamp="8/8/2019 7:31:09 AM" />
+    <Url
+      Source="../TOCs/Schemas Enterprise.fltoc"
+      TimeStamp="8/8/2019 7:31:18 AM" />
+  </GeneratedFiles>
+</HtmlImport>

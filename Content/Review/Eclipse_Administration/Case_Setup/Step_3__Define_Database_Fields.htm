@@ -1,0 +1,1091 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Step 3: Define Database Fields</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Step 3: Define Database Fields</h1>
+        <p class="BodyText">Create new fields or change imported or created fields 
+ on the <span style="font-weight: bold;">Step 3</span> tab. </p>
+        <p class="FAQ">
+            <MadCap:toggler targets="t1">Eclipse 
+ System Fields</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p class="BodyText">The following default fields are included in your 
+	 case. Note:</p>
+            <ul style="list-style: square;" class="BulletListBody">
+                <li>
+                    <p>
+                    Administrators can change system field 
+		 names and add notes if needed.
+                </p>
+                </li>
+                <li>
+                    <p>
+                    System fields cannot be deleted. Unused 
+		 fields can be hidden from view in Eclipse if desired.
+                </p>
+                </li>
+                <li>
+                    <p>
+                    The maximum size for all system fields 
+		 except for the EXTRACTEDTEXT field is 255 characters. The EXTRACTEDTEXT 
+		 field can contain up to 2 GB of data.
+                </p>
+                </li>
+            </ul>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Eclipse 
+			 System Fields</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Field 
+			 Type</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">BEGATTACH</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Used for parent/child relationships. 
+				 For example, an email with attachment.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                BEGATTACH is linked to BEGDOC, 
+				 thus entries in this field should be image keys as defined 
+				 in the BEGDOC field.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Each “child” document should include 
+				 its “parent” document's image key in the BEGATTACH field.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Some load (or case definition) 
+				 files include a field to identify the final in member 
+				 of the set of related documents. Use the ENDATTACH field 
+				 type for such a field.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">BEGDOC</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Required, unique identifier for 
+				 image file. If not defined by user, field is created automatically 
+				 when case is created.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                               A document and its first page 
+				 will have the same image key value.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                A tilde (~) cannot be used in 
+				 this field.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">CUSTODIAN</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Typically 
+			 used to identify document’s owner, for example, the person 
+			 responsible for the data collection containing the document.<span>&#160;&#160;</span></p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">DOCKEY</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Required, unique document identifier. 
+				 If not defined by user, field is created automatically 
+				 when case is created.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                A tilde (~) cannot be used in 
+				 this field.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">DOCUMENT DATE</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Required field used by Eclipse 
+				 to calculate and populate the timeline in Eclipse (Web).
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                The dates presented in the timeline 
+				 are based on the DOCUMENTDATE field, which is populated 
+				 with the dates in your case.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                For each document, the value that 
+				 is used in the timeline is based on the date fields selected 
+				 in Eclipse Administration and in the order defined for 
+				 the field (such as Sent Date, Creation Date, etc.).
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ENDATTACH</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Identifies the final member of 
+				 a set of related documents.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                A BEGATTACH field identifies the 
+				 first member and the document to which the set is related.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ENDDOC</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Identifies the final page of a 
+				 multi-page document.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                If the document is a single page, 
+				 the ENDDOC value will be the same as the BEGDOC value.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ENT IMGING fields</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">A 
+			 set of fields required for <MadCap:variable name="Primary.Name" /> Imaging. These include:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                ENT IMAGING ERRORS: Errors that 
+				 occur during imaging
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                ENT IMAGING FLAGS: QC 
+				 flags from eCapture
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                ENT IMAGING JOB: Name 
+				 of the imaging job
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                ENT IMAGING STATUS: Status 
+				 of the imaging job
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">EXTRACTED TEXT</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                Document’s text. Content appears 
+				 in Extracted Text tab of Eclipse.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Text is typically part of imported 
+				 case (or it may be added later). If document was originally 
+				 electronic, text is “extracted” from original file. If 
+				 originally paper (or came in as an image), text is the 
+				 result of OCR'ing image. Other types of source documents 
+				 may/may not include extracted text when imported.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                Until case is produced, extracted 
+				 text resides in the Eclipse database, not in separate 
+				 files.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                This field does not display in 
+				 the Record pane in Eclipse.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">EXTRACTED TEXTSIZE<span style="font-size: 11.0pt;line-height: 107%;font-family: Calibri, sans-serif;">[1]</span></p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Document’s 
+			 extracted text size (in KB); automatically computed for system 
+			 purposes.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">HASIMAGE</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Indicates 
+			 whether or not an image file exists for the document.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">HASNATIVE FILEa</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Indicates 
+			 whether or not a native file exists for the document.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">MD5HASH</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">
+                                A unique value representing document 
+				 data.
+                            </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">
+                                MD5HASH values are created by 
+				 a 128-bit algorithm performed on a document during discovery.
+                            </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">NATIVE</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Path 
+			 and filename of native file at time of import into Eclipse 
+			 Administration.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">NATIVEFILE EXTENSION</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Document’s 
+			 native file extension; automatically detected (for example, 
+			 .doc, .msg).</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">NATIVEFILE SIZEa</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Document’s 
+			 native file size (in KB); automatically computed.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">NATIVEFILE TYPE</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">An 
+			 ID used by Oracle Outside-in Viewer technology for native 
+			 file determination and presentation; automatically identified.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">NATIVEFILE TYPEDESC</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Document’s 
+			 native file type; automatically identified (for example, Microsoft 
+			 Word 2000, Word Perfect 6.1).</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="ftn111">
+                <p class="footnote">[1]Do not match a load file field to this field. 
+		 Any data imported into this field will be overwritten when field 
+		 details are calculated or identified.</p>
+            </div>
+        </div>
+        <p class="FAQ">
+            <MadCap:toggler targets="t2">User-Defined 
+ Fields</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t2">
+            <p class="BodyText">The following fields can be defined as needed for 
+	 your case. </p>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 200px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Field Type</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Use For...</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Currency</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Any 
+			 type of monetary data.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Date</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Date 
+			 (true dates), for example, 09-30-2015. Note:</p>
+                            <ul style="list-style: square;" class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Data imported or entered in this 
+				 field must be true dates that match the format selected 
+				 during the import process, such as the day-month-year 
+				 (DD/MM/YY) format.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Dates are displayed in the format 
+				 selected during case creation (or per modification of 
+				 case details). See <a href="Step_4__Select_Case_Options.htm">Step 
+				 4: Select Case Options</a> for details on date options.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">DateTime</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Date 
+			 and time (true date/time), for example, 09-30-2015 12:42 PM. 
+			 Note:</p>
+                            <ul style="list-style: square;" class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Data imported or entered in this 
+				 field must be true dates and times that match the format 
+				 selected during the import process, such as the day-month-year 
+				 (DD/MM/YY) date format and the 12-hour time format.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Dates/times are displayed in the 
+				 format selected during case creation (or per modification 
+				 of case details). See <a href="Step_4__Select_Case_Options.htm">Step 
+				 4: Select Case Options</a> for details.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Decimal</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Any 
+			 numerical data that includes decimal values.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">FixedLengthText</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Text 
+			 of a specified length, as defined by the user (up to 4,000 
+			 characters). The default setting is 255 characters.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">LongText</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Text 
+			 of a variable length, up to 2 GB in size.</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">WholeNumber</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Any 
+			 integer data, with or without comma delimiters for numbers 
+			 over 999.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="BodyText">&#160;</p>
+            <h3 class="BodyText">Field Options</h3>
+            <p class="BodyText">Field options are available as described in the 
+	 <a href="#Create_Define_Fields">Create/Define Fields</a>. </p>
+        </div>
+        <p class="FAQ">
+            <MadCap:toggler targets="t3">Feature-Specific 
+ Fields</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t3">
+            <p class="BodyText">In addition to system and user-defined fields, 
+	 certain Eclipse features automatically create fields needed for the 
+	 feature. In most cases, these fields should not be modified or deleted 
+	 by administrators or users. Feature-specific fields are identified 
+	 by the following specific prefixes; do not use these prefixes with 
+	 other field names. </p>
+            <ul style="list-style: square;" class="BulletListBody">
+                <li>
+                    <p>
+                    CAAT: Eclipse Analytics
+                </p>
+                </li>
+                <li>
+                    <p>
+                    KWL_FL_: Keyword List
+                </p>
+                </li>
+                <li>
+                    <p>
+                    TAR: Technology-Assisted Review Project
+                </p>
+                </li>
+            </ul>
+        </div>
+        <h2><a name="Create_Define_Fields"></a>Create/Define Fields</h2>
+        <p class="BodyText">Complete the following steps to create new user-defined 
+ fields and/or configure system fields: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>After <![CDATA[
+ ]]>completing <a href="Step_2__Load_a_Case_Definition.htm">Step 2: Load a 
+ Case Definition</a>, click the <span style="font-weight: bold;">Step 3. 
+ Define Database Fields</span> tab. </p>
+            </li>
+            <li>
+                <p>Continue with the following steps:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>For 
+ new fields, start with step 3.</p>
+                    </li>
+                    <li>
+                        <p>For 
+ system fields, start with step 6.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On the <span style="font-weight: bold;">Step 
+ 3</span> tab, click <span style="font-weight: bold;">New Field</span>. 
+ </p>
+            </li>
+            <li>
+                <p>Complete the New Field dialog box as shown 
+ in the following figure and explained in the following table. Note that 
+ not all options apply to (are available for) all fields. </p>
+            </li>
+            <li>
+                <p>When the field definition is complete, click 
+ one of the following buttons:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Save and New</span>: Save the current definition 
+ and continue defining fields. The maximum number of fields that can be 
+ defined depends on the capacity of the SQL Server (but is essentially 
+ unlimited). Fields are listed in alphabetical order. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Save</span>: Save your current definition 
+ and close the <span style="font-weight: bold;">New Field</span> dialog 
+ box. </p>
+                    </li>
+                </ul>
+            </li>
+            <p class="BodyTextIndent">
+                <MadCap:toggler targets="t4">New Field dialog 
+ box options</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t4">
+                <table style="margin-left: 50px;mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 550px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Field 
+			 Type</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Enter 
+			 a name for the field.</p>
+                                <table style="margin-bottom: 10px;mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" width="98%" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 5.464%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 94.536%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="Note">Note: Field names 
+					 must be unique.</p>
+                                            <p class="Note">Do not begin and end a field name with 
+					 parentheses. For example, do not enter a field name 
+					 of<span class="Code"> (AUTHOR)</span>.</p>
+                                            <p class="Note">Parentheses within a field name, such 
+					 as <span class="Code">AUTHOR(S)</span>, can be used, 
+					 however.</p>
+                                            <p class="Note">Do not name any field DocID (DOCID, 
+					 etc.)—this name is reserved for system purposes.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Field Type</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Select 
+			 the field type based on the data that will populate this field. 
+			 </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Length</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">FixedLengthText 
+			 fields only: enter the maximum number of characters to be 
+			 allowed (up to 4,000). The default setting is 255 characters.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Format</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">FixedLengthText 
+			 or LongText fields only: select the type of text encoding, 
+			 <span style="font-weight: bold;">ASCII</span> or <span style="font-weight: bold;">Unicode</span>.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Pick List</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">A 
+			 pick list is a defined set of entries for a field. Reviewers 
+			 who are editing records in Eclipse will select from the list 
+			 of entries. The following figure shows a typical pick list 
+			 in Eclipse.</p>
+                                <p class="TableText">
+                                    <img src="../../../Graphics/Admin_Graphics/PickList_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+                                </p>
+                                <p class="TableText">If you have already defined pick lists 
+			 (which is done in Eclipse), then select a needed list. If 
+			 pick lists have not yet been defined, this option can be changed 
+			 after initial case creation.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Group by</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Allows 
+			 review batches to be grouped according to family relationships.</p>
+                                <p class="TableText">By default, the BEGATTACH and MD5HASH 
+			 fields have this option set.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Category</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Allows 
+			 review batches to be grouped by the contents of the field. 
+			 For example, if this option is set to <span style="font-weight: bold;">Yes</span> 
+			 for the NATIVEFILETYPE field, batches can be created that 
+			 group documents based on file type. This option is not available 
+			 for Date or DateTime fields.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Hyperlink</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">FixedLengthText 
+			 fields only: select <span style="font-weight: bold;">Yes</span> 
+			 to define a field as a hyperlink (to a file).</p>
+                                <table style="margin-bottom: 10px;mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" width="98%" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 5.464%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 94.536%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="Note">Note: The web service 
+					 must have access to the file location.</p>
+                                            <p class="Note">With this option set to <span style="font-weight: bold;">Yes</span>, 
+					 reviewers can click the link in a coding form and 
+					 open the linked file (as long as they have the needed 
+					 program and they can access the file location).</p>
+                                            <p class="Note">The field should contain a single file 
+					 path in UNC format (for example, \\server001\files\smith01.msg).</p>
+                                            <p class="Note">If this option is selected, the <span style="font-weight: bold;">Length</span> specified 
+					 for the field will be ignored if the path length exceeds 
+					 the specified length.</p>
+                                            <p class="Note">Links can be imported or entered in 
+					 a coding form (if user has field editing permissions).</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Include in 
+			 Text Index</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Allows 
+			 searching of field content. By default, fields are not included 
+			 in searches users conduct in Eclipse.</p>
+                                <p class="TableText">Select <span style="font-weight: bold;">Yes</span> 
+			 to include field data in the dtSearch full text index. Select 
+			 <span style="font-weight: bold;">No</span> to exclude the 
+			 field from indexing.</p>
+                                <table style="margin-bottom: 10px;mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" width="98%" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 5.464%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 94.536%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="Note">Note: Fields not relevant 
+					 to full-text keyword searching can be excluded from 
+					 indexing to improve case maintenance (index rebuilding) 
+					 and search efficiency.</p>
+                                            <p class="Note">All fields (indexed and non-indexed) 
+					 are still searchable using the advanced search field 
+					 section.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Filter Field</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Allows 
+			 the field to be enabled as a filter field, so long as it is 
+			 either a date or non-integer field. If necessary, select a 
+			 delimiter and separator in order to define the boundaries 
+			 between separate values. A Hot Button for Visual Search can 
+			 also be selected in order to make searching certain fields 
+			 more easily.</p>
+                                <table style="margin-bottom: 10px;mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0" width="98%" class="TableStyle-ADD_Help_Tables">
+                                    <col style="width: 5.464%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <col style="width: 94.536%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p style="text-align: center;">
+                                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="Note">Note: A delimiter 
+					 cannot be selected until a separator has been selected 
+					 first.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Notes</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">As 
+			 needed, enter details about the field. These notes appear 
+			 only in <MadCap:variable name="Primary.IPRO" /> Eclipse Administration.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <li>
+                <p>For system fields:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <img src="../../../Graphics/Admin_Graphics/Btn_RelationshipEdit_Web.gif" alt="" border="0" class="button_inline" />&#160;corresponding 
+ to the system field to be configured. Change the field name and other 
+ options as needed. Available options vary by field type. </p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">Save</span>.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps to configure other system fields.</p>
+                    </li>
+                    <li>
+                        <p>See 
+ the next step for the DOCUMENTDATE field.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>For the DOCUMENTDATE field:</p>
+                <ol>
+                    <li>
+                        <p>First 
+ make sure all needed date fields (Date or DateTime fields) have been defined 
+ (such as Sent Date, Creation Date, etc.), and that you know the order 
+ in which you want Eclipse to look for dates. The first date found is used 
+ in the timeline.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <img src="../../../Graphics/Admin_Graphics/Btn_RelationshipEdit_Web.gif" alt="" border="0" class="button_inline" />&#160;corresponding 
+ to DOCUMENTDATE.</p>
+                    </li>
+                    <li>
+                        <p>Change 
+ the field name and options as needed. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ the <span style="font-weight: bold;">Timeline</span> tab. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Add Field</span>, then click <img src="../../../Graphics/Admin_Graphics/Btn_DnArrow7.png" alt="" border="0" class="button_inline" />&#160;and select the first 
+ date field. Repeat to add other date fields.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ all date fields have been added, review the order of fields. Eclipse will 
+ use the first date found in the list (from top to bottom) for the timeline.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ change the order, click a field name in the list and click the up or down 
+ arrows until the field is in the desired location.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ delete a field from the list, click <img src="../../../Graphics/Admin_Graphics/Btn_DelBatch.png" alt="" border="0" class="button_inline" />. </p>
+                    </li>
+                    <li>
+                        <p>To 
+ change the valid date range from the default of 1/1/1970 - 12/31/2025, 
+ enter the needed date(s) or click <img src="../../../Graphics/Admin_Graphics/Btn_Calendar3.png" alt="" border="0" class="button_inline" />&#160;and 
+ select dates from the calendar.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ assess dates based on parent documents alone, select the <span style="font-weight: bold;">Use 
+ Parent DATE field for Child documents</span> option.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ the list is as desired, click <span style="font-weight: bold;">Save</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When you are finished, review the field definitions 
+ on the Step 3 tab and continue with one of the following steps:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If 
+ all system fields have not been identified/defined, go to<span style="font-style: italic;"> 
+ Map System Fields</span> below. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ changes are needed, see <a href="#Modify_or_Delete_Fields">Modify or Delete 
+ Fields</a>. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ all field definitions are complete, continue with <a href="Step_4__Select_Case_Options.htm">Step 
+ 4: Select Case Options</a>.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Map System Fields</h2>
+        <p class="BodyText">Complete the following procedures to ensure that system 
+ fields are defined as needed. System fields that are not mapped will be 
+ automatically created. </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the 
+ <span style="font-weight: bold;">Create Case</span> window, click the 
+ <span style="font-weight: bold;">Step 3. Define Database Fields</span> 
+ tab. </p>
+            </li>
+            <li>
+                <p>Review the system fields listed in the <span style="font-weight: bold;">Step 3</span> tab. Note:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>If 
+ you are using a blank template to create the case, all system fields will 
+ be included/listed. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ you have many fields, click the <span style="font-weight: bold;">Field 
+ Description</span> column heading to group all system fields together.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ you are creating a case based on an existing case, .CSE or load file, 
+ Eclipse attempts to match fields in the source to system fields. These 
+ will be listed in the <span style="font-weight: bold;">Step 3</span> tab. 
+ Any system fields that Eclipse cannot match will be added when the case 
+ is created if you do not map them to other fields as explained in this 
+ procedure.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To use default fields or the mapping defined 
+ by Eclipse, skip to step 5.</p>
+            </li>
+            <li>
+                <p>To map system fields, complete the following 
+ steps:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>Ensure 
+ that all needed fields are defined. If not, complete Create/Define Fields 
+ for fields you need, then return to this procedure.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Map System Fields</span>. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ the names of needed fields match those of system names but have not been 
+ mapped, click <span style="font-weight: bold;">Map by Field Name</span>. 
+ Any names that match (regardless of capitalization) will be mapped.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ map other fields, locate a system field that needs to be mapped in the 
+ <span style="font-weight: bold;">Eclipse Field</span> list, then double-click 
+ the corresponding <span style="font-weight: bold;">Load File Field</span> 
+ cell.</p>
+                    </li>
+                </ul>
+                <ol>
+                    <li>
+                        <p>From 
+ the field list, select the field that should be used as the system field.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps for all other system fields to be mapped.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">OK</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To modify the names of or add notes for existing 
+ system fields, see <a href="#Modify_or_Delete_Fields">Modify or Delete 
+ Fields</a> below. </p>
+            </li>
+            <li>
+                <p>When field mapping is complete, continue with 
+ other field definition activities or go to <a href="Step_4__Select_Case_Options.htm">Step 
+ 4: Select Case Options</a>.</p>
+            </li>
+        </ol>
+        <h2><a name="Modify_or_Delete_Fields"></a>Modify or Delete Fields</h2>
+        <p class="BodyText">To change field definitions or delete fields during 
+ the case creation process, complete the following steps:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>On the 
+ <span style="font-weight: bold;">Create Case</span> window, click the 
+ <span style="font-weight: bold;">Step 3. Define Database Fields</span> 
+ tab. </p>
+            </li>
+            <li>
+                <p>Review the fields listed in the Step 3 tab, 
+ then complete step 3 and/or 4 as needed. </p>
+            </li>
+            <li>
+                <p>Revise: To change a field definition:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ the field’s corresponding <img src="../../../Graphics/Admin_Graphics/Btn_RelationshipEdit_Web.gif" alt="" border="0" class="button_inline" />&#160;button. 
+ </p>
+                    </li>
+                    <li>
+                        <p>Make 
+ required changes in the <span style="font-weight: bold;">Edit Field</span> 
+ dialog box. For details on field definitions, see <a href="#Create_Define_Fields">Create/Define 
+ Fields</a>.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ changes are complete, click <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Delete</span>: 
+ To delete a user-defined field, click <img src="../../../Graphics/Admin_Graphics/Btn_DelBatch.png" alt="" border="0" class="button_inline" />&#160;and then 
+ <span style="font-weight: bold;">Yes</span> in response to the confirmation 
+ message. (System fields cannot be deleted.)</p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Next Steps:</span><a href="Step_4__Select_Case_Options.htm"> Step 
+ 4: Select Case Options</a>
+        </p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

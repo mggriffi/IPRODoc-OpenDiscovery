@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedList" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Multi-Part Search Expressions</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Multi-Part Search Expressions</h1>
+        <h2>About Multi-part Searches</h2>
+        <p class="BodyText">Search expressions can include several parts. This 
+ topic explains how to combine search criteria in the main Search bar. 
+ (To combine search types in the Advanced Search, see <a href="Advanced_Search.htm#Before_you_begin">"Before 
+ you Begin"</a>).</p>
+        <p class="BodyText">Notes:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>If you use more 
+ than one connector (and, or, not, etc.), use parentheses to precisely 
+ indicate the search criteria. For example, <span style="font-family: 'Courier New', monospace;">annual 
+ and profit or deficit could mean (annual and profit) or deficit, or it 
+ could mean annual and (profit or deficit).</span></p>
+            </li>
+            <li>
+                <p>If you combine a 
+ field search with another search, use parentheses in the following format 
+ to clearly define the field search: <span style="font-family: 'Courier New', monospace;">(fieldname 
+ contains (content)).</span></p>
+                <p class="BodyText">Parentheses 
+ can similarly be used to help distinguish other search phrases within 
+ a multi-part expression. See examples in the table in the section titled <a href="#Multi-pa">"Multi-part Search Examples"</a></p>
+            </li>
+        </ul>
+        <h3>How Multi-part Search Expressions are Processed</h3>
+        <p class="BodyText">Search operations are performed in sequence from <span style="font-weight: bold;">left to right</span>. For example, if you 
+ perform the following search, Eclipse will first find all documents created 
+ on the specified date, and then the documents in that set that contain 
+ either of the search terms indicated:</p>
+        <p class="BodyText" style="font-family: 'Courier New', monospace;">(Create 
+ Date contains (19811015)) and (silver or gold)</p>
+        <h3><a name="Multi-pa"></a>Multi-part Search Examples</h3>
+        <p class="BodyText">The following examples will help you understand how 
+ you can construct multi-part search expressions. Another option is to 
+ use Advanced Search, which can help you organize your search criteria.</p>
+        <table cellspacing="0" width="100%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 6.364%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 93.636%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">no.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">search expression / results</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">1</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">(annual 
+		 or profit) and deficit</p>
+                        <p class="TableText">This search first creates a set of documents 
+		 containing either annual OR profit (in any indexed field) and 
+		 then reduces that subset to only those documents that ALSO contain 
+		 the word deficit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">2</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">annual 
+		 or (profit and deficit)</p>
+                        <p class="TableText">This search first creates a set of documents 
+		 containing annual and then adds to that set any documents containing 
+		 both profit AND deficit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">3</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">(jones 
+		 or (smith and hall)) and not (carpenter or blakely)</p>
+                        <p class="TableText">This search first creates a set of documents 
+		 containing jones and then adds to that set any documents containing 
+		 both smith AND hall. It then removes from the set any records 
+		 containing either carpenter OR blakely.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">4</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">jsmith@myco.com 
+		 and (create date contains (20010101~~20011231))</p>
+                        <p class="TableText">This search finds documents containing the 
+		 email address shown that also have a creation date ranging from 
+		 January 1, 2001 to December 31, 2001.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">5</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText" style="font-family: 'Courier New', monospace;">(//text 
+		 contains (aggregate payments)) and (sent date contains (20130127))</p>
+                        <p class="TableText">This search finds documents where “aggregate 
+		 payments” is in the documents’ text files that also have a Sent 
+		 Date of 1/27/2013.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Optimizing Searches</h3>
+        <p class="BodyText">Some types of complex expressions using the W/ connector 
+ will produce ambiguous results and should not be used. The following are 
+ examples of ambiguous search requests: </p>
+        <p class="BodyText" style="font-family: 'Courier New', monospace;">(profit 
+ and deficit) w/10 (smith and jones) </p>
+        <p class="BodyText" style="font-family: 'Courier New', monospace;">(profit 
+ w/10 deficit) w/10 (smith and jones)</p>
+        <p class="BodyText" style="font-family: Arial, sans-serif;">In general, 
+ at least one of the two expressions connected by W/ must be a single word 
+ or phrase or a group of words and phrases connected by OR. For example:</p>
+        <p class="BodyText" style="font-family: 'Courier New', monospace;"><span style="font-family: 'Courier New', monospace;">(profit and deficit) 
+ w/10 (smith or jones) </span>
+        </p>
+        <p class="BodyText" style="font-family: 'Courier New', monospace;">(profit 
+ and deficit) w/10 (john smith)</p>
+        <h2>Troubleshooting Search Problems</h2>
+        <p class="BodyText">If a search does not yield the results you expect, 
+ consider the possibilities listed in this <MadCap:toggler targets="t1">table.</MadCap:toggler></p>
+        <div MadCap:targetName="t1">
+            <table cellspacing="0" width="74.395%" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 20.868%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 79.132%;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Issues</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Typographical 
+			 errors</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">You wanted to search for “smith” but 
+			 you entered smth. </p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <p class="TableText">Check/correct your entry.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Syntax 
+			 errors</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Incorrect syntax is used. For example:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">For 
+			 a field search for a date, you entered DateField contains 
+			 <span style="font-family: 'Courier New', monospace;">(06/01/2007) 
+			 instead of DateField contains (20070601).</span></p>
+                                </li>
+                                <li>
+                                    <p class="TableText">For 
+			 a date search, you used auto-recognition syntax such as <span style="font-family: 'Courier New', monospace;">date(6/1/2007)</span>, 
+			 however the search index is not configured for auto-recognition.</p>
+                                </li>
+                            </ul>
+                            <p class="TableText">Considerations/solutions:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText"><span style="font-weight: bold;">C</span>heck/correct your entry; 
+			 refer to this section for syntax details.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Discuss 
+			 auto-recognition with your administrator.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Field 
+			 searches</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">A field search does not return expected 
+			 results.</p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">The 
+			 field is not indexed.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Changes 
+			 (edits) made for a field do not appear in search results.</p>
+                                </li>
+                            </ul>
+                            <p class="TableText">Check with your administrator to find 
+			 out if a field is indexed and/or if the search index is current 
+			 (has been rebuilt recently).</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Content 
+			 errors</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">You searched for “smith,” but not all 
+			 documents are found. </p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <p class="TableText">Some documents or fields include misspellings 
+			 such as “smmth” or “smitth.”</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">For 
+			 document content, use a wildcard or fuzzy search (and/or an 
+			 OR search) to account for variations in spelling. For example:</p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText">Wildcard: 
+			 <span style="font-family: 'Courier New', monospace;">sm*th</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Fuzzy: 
+			 <span style="font-family: 'Courier New', monospace;">sm%%h</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">OR: 
+			 <span style="font-family: 'Courier New', monospace;">smith 
+			 or smmth or smitth</span></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="TableText">For 
+			 field content:</p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText">Enter 
+			 a field search using wildcard, fuzzy, or OR searches described 
+			 above.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">If 
+			 appropriate and you have the needed permission, search for 
+			 the incorrect spelling for the field and use the mass edit 
+			 function to correct the spelling (then perform your search).</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">If 
+			 you do not have needed permission, alert your administrator 
+			 so that the field can be corrected.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">See <a href="../Review_Set_Up/Globally_Replace_Field_Content.htm">"Globally Replacing Field Content"</a> for details on mass editing.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Special 
+			 character issues</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">You need to find documents containing 
+			 the name “Smith+Hall” (including plus sign), but results include 
+			 all documents containing “Smith” and “Hall.”</p>
+                            <p class="TableText">Or, you need to find “Brown&amp;Jones,” 
+			 but no results are found.</p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">By 
+			 default, most special characters (such as punctuation marks) 
+			 are treated as spaces unless your administrator configures 
+			 the search index to treat them as searchable characters.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Some 
+			 special characters may be configured to be ignored, for example 
+			 the ampersand (&amp;). If this is the case, searching for 
+			 “Brown&amp;Jones” equates to searching for “BrownJones.”</p>
+                                </li>
+                            </ul>
+                            <p class="TableText">Ask your administrator to make needed 
+			 special characters searchable.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><span style="font-weight: bold;">Highlighting issues: </span><span>Following 
+			 are various possibilities if you are having trouble viewing 
+			 search result highlights (hits) in the </span><span style="font-weight: bold;">Document 
+			 Details </span><span>pane.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">All 
+			 tabs</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">No search hits are found on any tab 
+			 in the <span style="font-weight: bold;">Document Details</span> 
+			 pane. </p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <p class="TableText">The search results exist only in fields, 
+			 and not in any other content (image word coordinates, extracted 
+			 text, or native files).</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span style="font-weight: bold;">Image</span> tabs</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Search hits are not highlighted in an 
+			 image.</p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <p class="TableText">The image has no corresponding OCR text; 
+			 contact your administrator so that OCR can be imported or 
+			 created.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><span style="font-weight: bold;">Native Viewer</span> tab</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">You cannot find search hits in the <span style="font-weight: bold;">Native Viewer</span> tab.</p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">The 
+			 native file is an image file or contains an image with no 
+			 searchable text. For example, the file may be a .docx file 
+			 with only an image embedded in it.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">The 
+			 file is multiple pages/all content is not visible and the 
+			 search term is beyond the visible area.</p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText">Scroll 
+			 down and/or across pages.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Change 
+			 the zoom level and/or enlarge the <span style="font-weight: bold;">Document 
+			 Details</span> pane to make more text visible.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Use 
+			 the Highlights navigator to find search hits as described 
+			 below.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="TableText">Key 
+			 word highlighting is interfering with your ability to see 
+			 the highlights. Use the Highlight navigator as follows.</p>
+                                </li>
+                            </ul>
+                            <p class="TableText">Using the Highlights navigator:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Click 
+			 <span style="font-weight: bold;">Highlights</span> and make 
+			 sure <span style="font-weight: bold;">Search Hits </span>is 
+			 selected. If key words are interfering with your ability to 
+			 see the search hits, clear any key word options as shown in 
+			 this example.</p>
+                                    <p class="Image">
+                                        <img src="../../../Graphics/Eclipse Web Images/mnu_highlights_nav.gif" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Use 
+			 the arrow buttons to navigate from one search hit to the next:</p>
+                                    <p class="Image">
+                                        <img src="../../../Graphics/Eclipse Web Images/mnu_highlights_nav2.gif" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText"><span style="font-weight: bold;">Extracted Text</span> tab</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">You cannot find search hits in the <span style="font-weight: bold;">Extracted Text</span> tab.</p>
+                            <p class="TableText" style="font-weight: bold;">Considerations/solutions:</p>
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">The 
+			 file is multiple pages/all content is not visible and the 
+			 search term is beyond the visible area.</p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText">Scroll 
+			 down and/or across pages.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Change 
+			 the zoom level and/or enlarge the <span style="font-weight: bold;">Document 
+			 Details</span> pane to make more text visible.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Use 
+			 the Highlights navigator to find search hits as described 
+			 for the <span style="font-weight: bold;">Native Viewer</span> 
+			 tab.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="TableText">Key 
+			 word highlighting is interfering with your ability to see 
+			 the highlights. Use the Highlight navigator as described for 
+			 the <span style="font-weight: bold;">Native Viewer</span> 
+			 tab. </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

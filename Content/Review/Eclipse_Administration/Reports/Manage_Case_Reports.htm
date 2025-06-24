@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Case Reports</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Configure Standard Case Reports;Manage Case Reports;Case Reports" />Manage Case Reports</h1>
+        <p class="BodyText">Eclipse includes a variety of reports to assist with 
+ review tasks, administrative duties, and case oversight. Reports are presented 
+ in an easy-to-use table format. </p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#Case_Reports">Case Reports</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Configure_Standard_Case_Reports">Configure 
+	 Standard Case Reports</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Secure_Standard_Case_Reports">Secure 
+	 Standard Case Reports</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Case_Reports"></a>Case Reports</h2>
+        <p class="BodyText">The following table lists case reports—note that some 
+ reports can be configured in Eclipse Administration. (Security can be 
+ set for any/all of the reports.):</p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Standard 
+ Eclipse Reports</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 500px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Report</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Description</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Administrator 
+			 Configuration</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Case Data Summary</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Summarizes 
+			 case size details such as number and total size (in GB) of 
+			 files (image, native, and text files).</p>
+                            <p class="TableText">Users have the option to generate the 
+			 report based on any field for which the <span style="font-weight: bold;">Allow 
+			 Group By</span> option is set to <span style="font-weight: bold;">Yes</span>.</p>
+                            <p class="TableText">For example, if the BEGATTACH field is 
+			 defined with Allow Group By, a report could be generated to 
+			 summarize size details for all documents with attachments.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">X<span class="FootnoteSuperscript">[1]</span></p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Gap Report</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identifies 
+			 missing pages, that is, breaks in the numbering sequence of 
+			 image keys (case, production, or other document numbers) for 
+			 a particular case. For example, if ECL000009 is a single-page 
+			 document and the next document number in the case is ECL000012, 
+			 a gap exists and will be included in the report.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Privileged Report</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identifies 
+			 documents that have been tagged as defined for the report. 
+			 Included are document totals, the applied tag(s), and other 
+			 items if defined.</p>
+                            <p class="TableText">Fields, tag groups, and/or tags can be 
+			 added to the report if needed.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">X</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Production Deliverable</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Presents 
+			 detailed information on production jobs completed in Eclipse 
+			 Administration.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Production Summary</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Summarizes 
+			 production jobs completed in Eclipse Administration.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Redacted Documents</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Summarizes 
+			 redaction activity for a selected case.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Redaction Detail</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Includes 
+			 detailed information on redacted documents and other items 
+			 if defined.</p>
+                            <p class="TableText">Fields, tag groups, and/or tags can be 
+			 added to the report if needed.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">X</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Review Audit</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identifies 
+			 inconsistencies in the tagging of related documents (as identified 
+			 by a field defined with the Allow Group By option).</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Review Status by Custodian</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Presents 
+			 review status of documents in a particular review pass, sorted 
+			 by a field that contains custodian details. Tag details may 
+			 also be included if configured.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">X</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Review Status by Reviewer</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Includes 
+			 review status of documents in a particular batch, sorted by 
+			 assigned reviewers and tags if defined.</p>
+                            <p class="TableText">Tags can be added to the report if needed.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">X</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Reviewer Edits per Day</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">For 
+			 a specific date range, lists all reviewers by user name and 
+			 the number of distinct actions (field editing and/or tagging) 
+			 each reviewer has made on each day of the date range. Can 
+			 be useful in evaluating review efficiency.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Reviewer History</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Summarizes 
+			 reviewer activities for a selected period of time, including 
+			 total hours spent by each reviewer, number of edits, and edits 
+			 per hour and day.<span class="FootnoteSuperscript">[2]</span></p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Reviewer History Detail</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Provides 
+			 detailed information on reviewer activities for a selected 
+			 period of time, including day-by-day summary of time spent 
+			 and editing details.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Summary by Custodian</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Summarizes 
+			 review activities (number of documents reviewed, not reviewed, 
+			 etc.) sorted by a field selected by your administrator that 
+			 contains custodian details.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">TAR Reports</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">If 
+			 you have implemented Technology-Assisted Reviews (TAR) at 
+			 your site, associated reports are created as part of the TAR 
+			 process. See <a href="../Analytics/TAR/Evaluate_TAR_Reports.htm">Evaluate 
+			 TAR Reports</a> for TAR report details.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Transcript Reports</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Generate 
+			 reports on transcript annotations or searches.</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText" style="text-align: center;">&#160;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footnote"><span class="FootnoteSuperscript">[1]</span>Configuration 
+	 is regarding which fields have the <b>Allow Group By</b> option set 
+	 to <b>Yes</b>.</p>
+            <p class="footnote"><span class="FootnoteSuperscript">[2]</span>Editing 
+	 includes tagging and field entries or changes.</p>
+        </div>
+        <h2><a name="Configure_Standard_Case_Reports"></a>Configure Standard Case 
+ Reports</h2>
+        <p class="BodyText">Define or modify the content of eligible reports (listed 
+ in the previous table) as follows. If desired, open Eclipse and review 
+ the default contents of the reports before you modify them.</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Get started:</p>
+                <ol>
+                    <li>
+                        <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+                    </li>
+                    <li>
+                        <p>On 
+ the Case Management ribbon, select <span style="font-weight: bold;">Case 
+ Management</span> &gt; <span style="font-weight: bold;">Case Management</span>. 
+ </p>
+                    </li>
+                    <li>
+                        <p>In 
+ the Case Management screen, select the needed managing client and case. 
+ </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Click the <span style="font-weight: bold;">Reports</span> 
+ tab. (If it is not visible, click <img src="../../../Graphics/Admin_Graphics/Btn_Forward.gif" alt="" border="0" class="button_inline" />&#160;on 
+ the right side of the window’s tabs.) </p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Btn_RelationshipEdit_Web.gif" alt="" border="0" class="button_inline" />&#160;next 
+ to a report to be edited and continue with the following steps. </p>
+            </li>
+            <li>
+                <p>To add content to the report:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ the Edit Report dialog box, locate and select a needed item(s) (field, 
+ tag, and/or tag group as applicable) in the <span style="font-weight: bold;">Available</span> 
+ (left) list. Tips:</p>
+                        <ul class="BulletListBody">
+                            <li>
+                                <p>Scroll 
+ to see all available items.</p>
+                            </li>
+                            <li>
+                                <p>To 
+ select multiple items, click an item name, then Shift+click or Ctrl+click 
+ additional items to choose a contiguous or non-contiguous set, respectively. 
+ </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>When 
+ items have been selected, click <img src="../../../Graphics/Admin_Graphics/Btn_ArrowRight5.png" alt="" border="0" class="button_inline" />.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps if needed to add other items. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To remove content from a report:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ the Edit Report dialog box, locate and select an item to be removed (field, 
+ tag, and/or tag group as applicable) in the Selected (right) list.</p>
+                        <p class="BodyTextIndent">Scroll to see all 
+ selected items.</p>
+                        <p class="BodyTextIndent">To select multiple 
+ items, click an item name, then Shift+click or Ctrl+click additional items 
+ to choose a contiguous or non-contiguous set, respectively. </p>
+                    </li>
+                    <li>
+                        <p>When 
+ items have been selected, click .</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps if needed to remove other items. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When items to appear in the report have been 
+ finalized in the <span style="font-weight: bold;">Selected</span> column, 
+ organize them in a way to best meet the needs of your users. Items will 
+ be displayed left to right in Eclipse based on the top-to-bottom order 
+ specified here. To change the order:</p>
+                <ol>
+                    <li>
+                        <p>In 
+ the <span style="font-weight: bold;">Selected</span> list, click an item 
+ to be reordered.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Up</span> or <span style="font-weight: bold;">Down</span> 
+ until the item is in the desired location.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps to reorder other items.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When finished, click <span style="font-weight: bold;">OK</span>. 
+ </p>
+            </li>
+            <li>
+                <p>Repeat these steps for other reports to be 
+ configured.</p>
+            </li>
+            <li>
+                <p>Optional: Continue with report security (next 
+ procedure).</p>
+            </li>
+        </ol>
+        <h2><a name="Secure_Standard_Case_Reports"></a>
+            <MadCap:keyword term="Secure Standard Case Reports" />Secure Standard Case Reports</h2>
+        <p class="BodyText">Reports will be available to all users assigned to 
+ the case, as indicated by the open locks, <img src="../../../Graphics/Admin_Graphics/Btn_CodingFormSec.gif" alt="" border="0" class="button_inline" />, on the 
+ Eclipse Administration Reports tab.</p>
+        <p class="BodyText">To restrict a report to certain review groups:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Click 
+ the needed <img src="../../../Graphics/Admin_Graphics/Btn_CodingFormSec.gif" alt="" border="0" class="button_inline" />&#160;button.</p>
+            </li>
+            <li>
+                <p>Select the groups that should view the report, 
+ then click <span style="font-weight: bold;">OK</span>.</p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Tip.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Tip: 
+		 To make a reports available to all groups that are currently defined 
+		 for the case, click <span style="font-weight: bold;">Select All</span>. 
+		 The form will be unavailable for groups added after this selection 
+		 (unless you add them).</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>Repeat these steps to restrict other reports.</p>
+            </li>
+            <li>
+                <p>Explain reports to users and/or add applicable 
+ case instructions.</p>
+            </li>
+        </ol>
+    </body>
+</html>

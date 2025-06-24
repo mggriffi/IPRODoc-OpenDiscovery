@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../../Resources/MasterPages/Review_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.LMS,Primary.LMS_v8_0">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Batches</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <h1>
+                <MadCap:keyword term="Manage Review Passes and Batches;Manage Review Passes" />Manage  Batches</h1>
+            <p class="BodyText">Batches are created and managed in the <MadCap:variable name="Primary.Review &amp; Transcripts" /> module of <MadCap:variable name="Primary.Name First" />. After batches have been created, you can monitor their progress, view batch assignments, manually assign and unassign batches, set a batch timeout value and more. For information about how to create batches, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm"><MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm"><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm" target="_blank">Create Review Passes and Batches</a></MadCap:xref></MadCap:xref>  . All batches  created in a review pass display on the Batch Management window associated with that review pass. This topic covers tasks that you can complete to manage batches in <MadCap:variable name="Primary.Name" />. </p>
+            <h2>How Batches are Assigned </h2>
+            <p><MadCap:variable name="Primary.Name" /> assigns batches on a first-come, first-serve basis. This provides for a more fluid review experience.  When a reviewer signs in to <MadCap:variable name="Primary.Name" /> and opens a review pass, they are automatically assigned the next available batch in the pool. </p>
+            <p>In the following image, the next available batch in the list is batch 1. A reviewer  not currently working in a batch  would get assigned batch 1 as a result. Batches are assigned in the order that corresponds to their Batch ID, with lower Batch IDs assigned first.</p>
+            <p>
+                <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/BatchManagement.png" class="Thumbnail" />
+            </p>
+            <h2><a name="Open"></a>Open Batch Management</h2>
+            <p>To navigate to the Batch Management window, perform the following instructions:</p>
+            <ol>
+                <li>
+                    <p>Open the <MadCap:variable name="Primary.Review &amp; Transcripts" /> module from the home screen.</p>
+                </li>
+                <li>
+                    <p>Select the card associated with the required case. The Funnel graph and Review Passes display for the selected case.</p>
+                    <p>
+                        <img src="../../Graphics/ECA_FunnelGraphReviewPasses2.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>Click the <img src="../../Graphics/ADD_Review_Graphics/AR_Btn_EnterCase2.png" class="ReduceButtonSize" /> button beneath the list of review passes  to the right side of the funnel graph.</li>
+                <li>
+                    <p>The Visual Search dashboard opens. In the left navigation panel, select the <b>Review Pass Management</b> icon.</p>
+                    <p>
+                        <img src="../../Graphics/ADD_Review_Graphics/AR_Scr_RevPassMgmt_Left_Nav2.png" class="Thumbnail" />
+                    </p>
+                    <p>The Review Pass Management area opens. </p>
+                </li>
+                <li>
+                    <p>AL-disabled and AL-enabled review passes are shown in the left pane. Select your review pass.</p>
+                    <p>
+                        <img src="../../Graphics/ADD_Review_Graphics/AR_Review_Pass_Example.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>From the Batch Information window, click the <b>Manage Batches</b> button to see the list of batches associated with the review pass.</p>
+                    <p>
+                        <img src="../../Graphics/ADD_Review_Graphics/Case_Settings/Exports/BatchManagementButton.png" class="Thumbnail" />
+                    </p>
+                    <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../Resources/Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note: The above image represents an Active Learning Disabled review pass. An Active Learning Enabled review pass does not have the option to Re-batch Unreviewed Docs.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p> You can filter the batch table to display all completed batches or all non-completed batches by clicking the toggler above the table.</p>
+                    <p>
+                        <img src="../../Graphics/ADD_Review_Graphics/AR_BatchManagement_Completed_Batches_Toggle.png" class="Thumbnail" />
+                    </p>
+                    <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                        <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                        <tbody>
+                            <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                    <p class="TableText">
+                                        <img src="../../Resources/Images/myipro_note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                    <p class="Note">Note: For instructions on how to create a review pass or batches, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm"><MadCap:xref href="../../Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm"><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm" target="_blank">Create Review Passes and Batches</a></MadCap:xref></MadCap:xref>.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ol>
+            <h2><a name="Set"></a>Set Case Batch Timeout</h2>
+            <p>Case Batch Timeout specifies how many minutes can elapse with no reviewer activity before an assigned batch becomes unassigned and released back into the pool of available batches. For example, if the batch timeout value is set for 30 minutes, any assigned batch that goes 30 minutes without reviewer activity becomes unassigned and available for another reviewer to check out. The batch timeout setting applies to all batches in a case.</p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note: Documents that have already been reviewed in the batch retain their "Reviewed" status. If a batch of 10 documents times out, and five of those documents have already been reviewed, the next reviewer to access that batch will see that those five documents have already been reviewed.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>To set the Batch Timeout value:</p>
+            <ol>
+                <li>Navigate to the <b>Batch Management</b> window. See <a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm" target="_blank">Open Batch Management</a>.</li>
+                <li>
+                    <p>Select the pencil icon beside the <b>Case Batch Timeout</b> value, above the table of batches.</p>
+                    <p>
+                        <img src="../../Graphics/ADD_Review_Graphics/AR_BatchManagement_Timeout.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>The Case Batch Timeout dialog box appears. Input the number of minutes that can elapse with no reviewer activity before an assigned batch becomes unassigned and released back into the pool of available batches.</p>
+                    <p>
+                        <img src="../../Graphics/ADD_Review_Graphics/AR_Scr_RevPassMgmt_Batches_Timeout_dialog.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>Click <b>OK</b>. The Case Batch Timeout value is set for all batches in the case.</li>
+            </ol>
+            <div>
+                <h2><a name="Unassign"></a>Assign Batches</h2>
+                <p>Batches can be manually assigned in the Batch Management window. </p>
+                <p>To assign a batch:</p>
+                <ol>
+                    <li>
+                        <p>Navigate to the <b>Batch Management</b> window. See <a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm" target="_blank">Open Batch Management</a>.</p>
+                    </li>
+                    <li>
+                        <p>In the batches table, select the batch you would like to assign.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/UnassignedBatch.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>With the batch selected, click the <b>Assign</b> button to the right of the table.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/AssignButton.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Select the user from the list and click <b>Assign</b>.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/AssignList.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>A message appears confirming the assignment.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/Assignmentconf.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2>Unassign Batches</h2>
+                <p>Batches can be manually unassigned in the Batch Management window. </p>
+                <p>To unassign a batch:</p>
+                <ol>
+                    <li>
+                        <p>Navigate to the <b>Batch Management</b> window. See <a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm" target="_blank">Open Batch Management</a>.</p>
+                    </li>
+                    <li>
+                        <p>In the batches table, select the batch you would like to unassign.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/AssignedBatch.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>With the batch selected, click the <b>Unassign</b> button to the right of the table.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/UnassignButton.png" class="Thumbnail" />
+                        </p>
+                        <p>The batch status changes from In Progress to Not Assigned and the batch becomes available for another reviewer to check out.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/NotAssigned.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <h2><a name="Open2"></a>Open a Batch in Visual Search</h2>
+            <p>Let's say you would like to inspect the documents contained in a specific batch. <MadCap:variable name="Primary.Name" /> provides a simple and easy method for opening a batch in the Visual Search dashboard. Doing so allows you to see the batch represented visually in a number of graphs, as well as to open and inspect the documents as required.</p>
+            <p>To open a batch in Visual Search:</p>
+            <ol>
+                <li>Navigate to the <b>Batch Management</b> window. See <MadCap:xref href="#Open"><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm" target="_blank">Open Batch Management</a>.</MadCap:xref></li>
+                <li>In the batches table, locate the batch you would like to open in Visual Search.</li>
+                <li>
+                    <p>Select the hyperlinked number in the <b>Batch ID</b> column.</p>
+                    <p>
+                        <img src="../../Graphics/ADD_Review_Graphics/Review_Passes/BatchID.png" class="Thumbnail" style="width: 215px;height: 95px;" />
+                    </p>
+                </li>
+                <li>The batch opens in Visual Search. From here, you can use the tools available in the Visual Search dashboard to further inspect the documents in the batch. For more information about how to use the Visual Search dashboard, see <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Overview_Visual_Search.htm"><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Overview_Visual_Search.htm" target="_blank">Overview: Visual Search</a>.</MadCap:xref> and <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm"><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm" target="_blank">Work With the Visual Search Dashboard</a> </MadCap:xref>.</li>
+            </ol>
+            <h2><a name="Export"></a>Export Case Batch Report</h2>
+            <div>
+                <p> You can download  a report that details the progress reviewers are making on batches in a case. The <b>Export Case Batch Report</b> button, located in the top of the Batch Management window, downloads the report as a CSV file to your local machine. This report includes information about every batch that has been checked out and checked back in throughout the case. The following is an example of a case batch report:</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/AR_Scr_RevpassMgmt_Batches_Export_Report_Example.png" class="Thumbnail" />
+                </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: The case batch report, which you can export from the Batch Management window, can also be found in the Reports module as the Reviewer Batch History Details Report. See<a href="https://my.ipro.com/help/Enterprise/Content/Reports/Review_Reports/Reviewer_Metrics/Reviewer_Batch_History_Details_Report.htm" target="_blank"> Reviewer Batch History Details Report</a>  for more information.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>To download a case batch report, complete the following steps:</p>
+                <ol>
+                    <li>Navigate to the <b>Batch Management</b> window. See <MadCap:xref href="#Open"><a href="https://my.ipro.com/help/Enterprise/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm" target="_blank">Open Batch Management</a>.</MadCap:xref></li>
+                    <li>
+                        <p>Click the <b>Export Case Batch Report</b> button.</p>
+                        <p>
+                            <img src="../../Graphics/ADD_Review_Graphics/AR_BatchManagement_Export_Batch_Report.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>The report downloads to your machine. Open the report by selecting the downloaded file at the bottom of your browser window, or by navigating to the Downloads folder of your local file explorer.</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Additional Resources">
+    <TocEntry
+      Title="ReleaseNotes">
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2020.8.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2020.8.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2020.8.1"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2020.8.1.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2021.9.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2021.9.1"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.1.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2021.9.2"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2021.9.2.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="discovery ][ Enterprise Release Notes 2022.10.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_Enterprise_2022.10.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2022.11.0"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2022.11.0.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2022.11.1 and 11.2"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2022.11.1_11.2.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2023.11.3"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2023.11.3.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2023.11.5"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2023.11.5.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="OPEN DISCOVERY Release Notes 2024.11.6"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2024.11.6.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Product Resources/ReleaseNotes/ReleaseNotes_OPEN_DISCOVERY_2024.11.7.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

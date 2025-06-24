@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsExcelImport
+  SaveWorkbookToFolder="false"
+  WorksheetImportType="topic"
+  PersistFirstRowAsHeader="false"
+  LimitRows="false"
+  LimitRowsCount="30"
+  SaveChartsAs="true"
+  SaveChartsAsType="Png"
+  ConvertEquations="true"
+  ExclusionFilters=""
+  CreateMasterTopic="false"
+  IncludeWorksheetTitlesAsHeadings="false"
+  ImportHiddenRowsColumns="false"
+  KeepSourceLinks="true"
+  Stylesheet=""
+  PreserveSourceStyles="true"
+  LastImport="2021-10-14T12:27:04.7524333-07:00">
+  <Files>
+    <Url
+      Source="../../../../IPRO Third-Party License Agreements.xlsx"
+      AbsoluteSource="file:///C:/Users/mcohen/Documents/IPRO Third-Party License Agreements.xlsx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Stylesheets/IPRO Third-Party License Agreements.css"
+      TimeStamp="10/14/2021 12:24:05 PM" />
+    <Url
+      Source="../../Content/IPRO Third-Party License Agreements/Final List Sept 2021.htm"
+      TimeStamp="10/14/2021 12:24:06 PM" />
+    <Url
+      Source="../TOCs/IPRO Third-Party License Agreements.fltoc"
+      TimeStamp="10/14/2021 12:24:06 PM" />
+  </GeneratedFiles>
+</MsExcelImport>

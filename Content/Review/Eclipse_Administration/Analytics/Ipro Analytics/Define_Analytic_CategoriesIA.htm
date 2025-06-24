@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');" MadCap:conditions="Primary.Eclipse">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Define IPRO Analytics Categories</title>
+        <link href="../../../../Resources/Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Define IPRO Analytics Categories</h1>
+        <p>Categorization refers to the identification of conceptually relevant documents by using a small subset of documents as examples for each user-defined category.  Once examples are identified, the system will analyze all other documents and group them into one or more categories based on conceptual similarity.</p>
+        <p>Categorization will increase document review efficiency by identifying and grouping documents into relevant user-defined categories.</p>
+        <p>&#160;</p>
+        <p><span class="BoldItalic"><img src="../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+        </p>
+        <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t1">Click 
+ here to watch the Categories video</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://vimeo.com/273940026" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <h2><a name="Before_You_Begin_IA"></a>Before You Begin</h2>
+        <p class="BodyText">Planning will bring you the greatest success in defining <MadCap:variable name="Primary.IPRO" /> Analytics for each case. To familiarize yourself with needed information and/or available options, “walk through” the <MadCap:variable name="Primary.IPRO" /> Analytics configuration function as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">You need to understand your case data, case documents, and reviewer tasks. For example, review cases and discuss with reviewers the types of clusters and categories that will assist them as they do their jobs.</p>
+            </li>
+            <li>
+                <p class="BodyText">For categories: If an appropriate analytics index has not been created, complete <MadCap:xref href="Create_and_Manage_Search_IndexesIA.htm">Create and Manage Search Indexes</MadCap:xref>.</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Determine needed <b>category sets</b>. Sets are distinguished by the number of allowed documents, similarity score, and/or which search is to be affiliated with the category set. For example, you may have the category set “Energy Issues.”</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Determine needed <b>categories</b>, that is, titles that represent the topics users will need to find in <MadCap:variable name="Primary.IPRO" /> Eclipse. Categories should be based on specific topics. For example, you may have categories of “Gas,” “Nuclear,” “Solar,” and so on.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Identify <b>examples</b> of content that exemplify the categories you create. Examples may be case documents, document text, and/or other content.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and log in as a user who is a member of the Super Admin group, then select each command from the <MadCap:variable name="Primary.IPRO" /> Analytics menu that you will be using. Review the configuration screens and plan your approach.</p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" cellspacing="0" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: Some procedures require that you work in both <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and <MadCap:variable name="Primary.IPRO" /> Eclipse (web).</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+        <h2>Define Analytic Categories</h2>
+        <p class="BodyText">To define categories:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Complete "<MadCap:xref href="#Before_You_Begin_IA">Before You Begin</MadCap:xref></p>
+            </li>
+            <li>
+                <p class="BodyText">On the Case Management ribbon, select <b>IPRO Eclipse Analytics</b> &gt; <b>Manage IPRO Eclipse Analytics Categories</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Select the needed managing client and case.</p>
+            </li>
+            <li>
+                <p class="BodyText">Create a <b>Category Set</b>:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p class="BodyText">Click <b>New Analytic Category Set</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Complete the resulting dialog box with the following details and click <b>OK</b>.</p>
+                        <table style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 100px;" />
+                            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 400px;" />
+                            <thead>
+                                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                        <p class="TableHead" style="text-align: center;">Item</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                        <p class="TableHead" style="text-align: center;">description</p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-weight: bold;">
+                                        <p class="TableText" style="font-weight: bold;">Set Name</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">Enter a name for the category set.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-weight: bold;">
+                                        <p class="TableText" style="font-weight: bold;">Analytics Index</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">Selecting the analytics index for which the categories are being created.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-weight: bold;">
+                                        <p class="TableText" style="font-weight: bold;">Minimum Similarity</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">Enter the similarity score (1 to 100).</p>
+                                        <p class="TableText">This score expands or narrows the evaluation for matching similar documents. A higher number represents higher precision but less recall; a lower number represents lower precision but higher recall.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-weight: bold;">
+                                        <p class="TableText" style="font-weight: bold;">Maximum Documents</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <p class="TableText">Enter the maximum number of documents to be added to the Category Set.</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-weight: bold;">
+                                        <p class="TableText" style="font-weight: bold;">Search Index</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                        <p class="TableText">Select the analytics search index for which the categories are being created.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Create a <b>Category</b>:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p class="BodyText">Click <b>New Analytic Category</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Enter a <b>Category</b> name and click <b>OK</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Repeat these steps to create additional categories.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Provide <b>examples</b> for a category—complete step 7 and/or 8 to add examples that exemplify the category.</p>
+            </li>
+            <li>
+                <p class="BodyText">To add examples in <MadCap:variable name="Primary.IPRO" /> Eclipse Administration:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">If example content is in a source document, open the document and copy the needed text.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">For the category for which examples are being added, click the corresponding.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">In the <b>Analytic Example</b> dialog box, type or paste (Ctrl+V) the example content. NOTE: If you type the example, do so as a single paragraph. Do not press the ENTER key.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Click <b>OK</b>.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">To add examples in <MadCap:variable name="Primary.IPRO" /> Eclipse:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Log in to <MadCap:variable name="Primary.IPRO" /> Eclipse and open the needed case.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">From the <b>Case View</b> pane, select <b>Documents</b>, a Private or Smart Folder, a specific batch, or <b>Analytics</b>. Or, conduct a search such that search results display in the case pane area.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Select the record for the document that contains the example text.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Open the <b>Extracted Text</b> or <b>Native Viewer</b> tab; if the document is not visible, click <b>View</b> on the tab.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">To add the entire document as a category example, right-click in the <b>Extracted Text</b> or <b>Native Viewer</b> tab and select <b>Add Doc to Category</b>.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">To add selected text as a category example, select the text in the tab, then right-click and select <b>Add Text to Category</b>.</p>
+                        <p class="BodyText">
+                            <img src="../../../../Graphics/Eclipse Web Images/catexamples_rtclick.png" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Repeat these steps to add other category examples; when finished, go to the next step.</p>
+            </li>
+            <li>
+                <p class="BodyText">Build the categorization index:</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Log in to <MadCap:variable name="Primary.IPRO" /> Eclipse (web) and open the needed case.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Click <b>Analytics</b> in the Case View pane.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Expand the <b>Categories</b> list and locate the applicable category group.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Right-click the category set and select <b>Build Category</b> as shown in this figure.</p>
+                        <p class="BodyText">
+                            <img src="../../../../Graphics/Admin_Graphics/TAR Categories-Build_Web.png" class="Thumbnail_Popup" />
+                        </p>
+                        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../../Graphics/Review_Note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Note: The progress will be displayed as (Building) to the right of the category set name until it is completed. </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">After the categories are built, alert your users to the availability of the new or re-built categories. Explain how they can use categories as they review documents.</p>
+                <ul class="BulletListBody">
+                    <li>Viewing Category Results - Once the Build is complete, the results can be viewed by clicking on each category name within the category set on the <b>Analytics</b> menu.</li>
+                    <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                        <col class="TableStyle-Note_Table-Column-Column1" />
+                        <col class="TableStyle-Note_Table-Column-Column2" />
+                        <tr class="TableStyle-Note_Table-Body-Body1">
+                            <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                <p style="text-align: center;">
+                                    <img src="../../../../Graphics/Review_Note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                <p class="Note">Note: Additional examples can be added at any point in the process by following the steps above and rebuilding the category set.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <li>Searching for Category Results - Within <b>Advanced Search</b>, under the <b>Search Type</b> dropdown, select (<i>Analytics Category</i>), choose an operator and select the category set(s) and categories to be searched for.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Eclipse_web/Analytics/Eval_and_Refine_Document_Categories.htm">Evaluate and Refine Document Categories</MadCap:xref>
+        </p>
+    </body>
+</html>

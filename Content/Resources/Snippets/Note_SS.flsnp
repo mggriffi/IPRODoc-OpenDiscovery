@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/SelfService.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <table class="TableStyle-Note_Table" style="mc-table-style: url('../Stylesheets/Note_Table.css');" cellspacing="0">
+            <col class="TableStyle-Note_Table-Column-Column1" style="width: 50px;" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/Note.png" />
+                    </p>
+                    <p>
+                        <img src="../Images/tip_ss.png" />
+                    </p>
+                    <p>
+                        <img src="../Images/warn_ss.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Text Text Text</p>
+                    <p class="Note">Tip: Text Text Text</p>
+                    <p class="Note">Warning: Text Text Text</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

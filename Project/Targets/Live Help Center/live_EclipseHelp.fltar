@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Eclipse Help Target for Live Help Center"
+  Type="WebHelp2"
+  Destinations=""
+  DisableAutoSync="false"
+  SearchEngine="MadCapSearch"
+  ConditionTagExpression="include[Primary.Eclipse or Primary.FutureDelete or Primary.Incomplete or Primary.Shared_EclandCloud or Primary.Target_Online], exclude[Primary.Admin or Primary.Blank or Primary.Blocked or Primary.CaseMgmt or Primary.CSH or Primary.Enterprise_Only_FutureDelete or Primary.Find_Images or Primary.LMS or Primary.LMS_v8_0 or Primary.Media_Manager or Primary.Print_Exclude or Primary.Processing or Primary.Reports or Primary.Review or Primary.SampleTopics or Primary.Self_Service or Primary.Target_Print or Primary.UI_Linked or &quot;Primary.Upcoming Release&quot; or &quot;Primary.Z_Excluded V1&quot; or Primary.eCap_editdone or Primary.eCap_partial]"
+  RemoveMadCapStyles="true"
+  Skin="/Project/Skins/live_myIPRO_Side Nav.flskn"
+  MasterToc="/Project/TOCs/Eclipse.fltoc"
+  conditions=""
+  GetLatestBeforeCompile="true"
+  TopNavTocPath="true"
+  EnableSitemap="true"
+  SitemapWebUrl="https://my.ipro.com/help/Eclipse/"
+  FaviconSkin="/Project/Skins/IPRO_Favicon.flskn"
+  IncludeGlossarySearchResults="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="doc" />
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/ADD_Help.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Admin.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/MediaManager.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Processing.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Reports.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Review.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/SelfService.flglo" />
+  </Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/liveHelpCenter_Eclipse.fldes"
+      Publish="true" />
+  </Destinations>
+</CatapultTarget>

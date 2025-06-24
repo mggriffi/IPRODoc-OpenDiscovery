@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../../Resources/MasterPages/Enterprise_and_Eclipse_MP.flmsp');" MadCap:conditions="Primary.Review">
+    <head><title>Active Learning with OPEN DISCOVERY</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Active Learning with <br /><MadCap:variable name="Primary.Name" /><br /></h1>
+        <h2>Summary</h2>
+        <p><MadCap:variable name="Primary.IPRO" />’s <MadCap:variable name="Primary.Name" /> application offers an Active Learning solution that quickly and accurately prioritizes documents based on relevancy.  As documents are reviewed, relevant documents are front-loaded to be prioritized into review, and are constantly re-prioritized based on the continuous review of documents by the review team.  The flexibility of <MadCap:variable name="Primary.IPRO" />’s Active Learning system allows review teams to decide whether they will use the results of the Active Learning algorithm to prioritize documents into a full eyes-on review or to use a more advanced approach of suspending review when statistical metrics reach a reasonable level. When the Active Learning workflow is enabled so that it can make predictions for a document population, it is referred to as an Active Learning-Enabled review pass.</p>
+        <p>When documents are loaded in a case, text from the documents is first analyzed to identify the documents that have enough good quality, text to allow the algorithm to extract significant words.  These significant words then allow the algorithm to group documents together into potentially hundreds or thousands of very small “clusters” of conceptually similar documents.</p>
+        <p>After the creation of the review pass, the Active Learning process begins. Documents are strategically pulled from the clusters and presented in batches for reviewers to tag.</p>
+        <p>As more and more examples are tagged, the system continues to build and refine its algorithm.  Reviewers are initially presented with documents predicted as relevant, allowing for a faster review and tagging process.  As the review continues, relevant documents are front loaded and ordered by the highest relevancy ranking.</p>
+        <p>Once the point of exhausting the cluster examples is reached, the algorithm will shift and start presenting any document that is predicted as relevant.  Over time, this continues until relevant documents start tapering off and start to be replaced by non-relevant documents.  Eventually, reviewers will encounter mostly non-relevant documents.</p>
+        <p>At this point, the cost to identify relevant documents increases as more and more non-relevant documents are reviewed and review teams can determine when human review is deemed no longer beneficial.</p>
+        <h2>Relevancy Ranking</h2>
+        <p><MadCap:variable name="Primary.IPRO" />’s Active Learning algorithm applies a Relevancy Ranking to every document within the Active Learning project that has good quality text.  The Relevancy Ranking is calculated, and predictions are applied by using the 40 k-nearest neighbors (k-NN).  This means that the 40 most similar manually coded documents are used to make the predictions for the records.</p>
+        <p>Relevancy rankings are applied to the documents in a range from +100 (predicted likely relevant) to a score of –100 (predicted likely non-relevant).   The closer to 100 on either side of the range, the more confident is the algorithm. The closer to 0 the score, the less confident.  Documents can be sorted by the score to allow for prioritization of the results.</p>
+        <h2><a name="General"></a>
+        </h2>
+        <h2><a name="Ipro12"></a>
+        </h2>
+        <div MadCap:targetName="Div_70_Sys_Req2">
+            <h2><a name="Ipro8"></a>
+            </h2>
+        </div>
+        <h2><a name="Eclipse"></a>
+        </h2>
+    </body>
+</html>

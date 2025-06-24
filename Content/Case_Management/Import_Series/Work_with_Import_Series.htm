@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/CaseMgmt_MP.flmsp');" MadCap:conditions="Primary.CaseMgmt" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview: Review Import Settings</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Work with Import Series</h1>
+        <p>After you’ve created an import series in your Processing case, the next step is to load the import series into your Review case.</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>In <b>Case Management</b>, click the three vertical lines (hamburger) in the Processing case and choose <b>Case Settings</b>.<br /><img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Case_Settings.png" class="Thumbnail" /><br />The <b>CASE DETAILS</b> screen appears.<br /><img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Case_Details.png" class="Thumbnail" /><br /></p>
+            </li>
+            <li>
+                <p>Click the <b>LOAD TO REVIEW</b> tab. The <b>Review Importing</b> screen appears. This screen contains two buttons:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>A button (<img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Edit_import_settings_icon_2.png" style="vertical-align: baseline;width: 139px;height: 24px;" />) that lets you edit import settings (not to be confused with editing an import series, discussed later in this step). See <MadCap:xref href="#Edit">Edit Import Settings</MadCap:xref>.</p>
+                    </li>
+                    <li>
+                        <p> A button (<img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Create_import_series_icon2.png" style="vertical-align: baseline;width: 136px;height: 26px;" />) that lets you create an import series. See <MadCap:xref href="Create_Import_Series.htm">Create an Import Series</MadCap:xref>.<br /><img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Review_Importing.png" class="Thumbnail" /><br />In this example, there are two import series  created. The first one is the active series, as indicated by the status <b>Active</b>. Expanding it shows the Review Case destination and the next available batch number. As this is the active import series, when documents are exported they will use this series’ group of settings.<br /><img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Active.png" class="Thumbnail" /><br />Clicking the vertical ellipsis next to the Active indicator of an import series displays a list allows for additional options:<br /><img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Series_options_Active.png" class="Thumbnail" /><br />Clicking the vertical ellipsis next to an inactive import series displays the same list plus an additional option to set the series as Active.<br /><img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Series_options_Inactive.png" class="Thumbnail" /></p>
+                    </li>
+                </ul>
+                <p>The list of options is as follows:<br /></p>
+                <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 282px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 767px;" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead">option</p>
+                            </th>
+                            <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;"><b>Edit import series</b>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                                <p><span style="font-size: 10pt;">Edit the Import Series parameters that were set up when the import series was created. See <MadCap:xref href="Create_Import_Series.htm">Create an Import Series</MadCap:xref>.</span>
+                                    <br />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;"><b>Duplicate import series</b>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">Create another import series with the same parameters.</td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;"><b>Export settings as an INI file</b>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">Create an INI file that contains the series’ settings.  When creating a new import series, this file can be uploaded to apply the field list settings. See <MadCap:xref href="Create_Import_Series.htm">Create an Import Series</MadCap:xref>. The INI file is stored on the ADD Web server at  <i>c:\program files\Ipro Tech\ADDServices\App_Data\DefaultExportSettings.ini</i></td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;"><b>Delete the import series</b>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">Deletes the import series.</td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;"><b>Set as active Series</b>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">Only in an inactive import series list - lets you make the import series Active.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <br />
+                </p>
+            </li>
+        </ol>
+        <h2>
+           Edit Import Settings
+        </h2>
+        <p style="vertical-align: baseline;">When you click the <img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Edit_import_settings_icon_2.png" style="width: 126px; height: 22px; vertical-align: baseline;" /> button, the Edit Import Settings dialog box displays and allows you to determine the export interval in minutes and also gives you the option to publish errors automatically.<br /><img src="../../Graphics/ADD_Review_Graphics/AR_ImportSeries_Edit_import_settings.png" class="Thumbnail" /></p>
+        <p>The options are described as follows:</p>
+        <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 330px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 767px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">edit import settings options</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;"><b>Import Interval (minutes)</b>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">This value can be set at one-minute intervals to determine how often the import process is to take place</span>.</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: The upper limit for this setting is <br />60 minutes.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1" style="font-size: 10pt;"><b>Auto Publish Errors</b>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1" style="font-size: 10pt;">
+                        <p><span style="font-size: 10pt;">Select this option to automatically publish Streaming Discovery node or item level errors (if any) so they may be moved forward to Review without having to modify the Streaming Discovery Job and visually inspect the errors. Once it is completed, all remaining failures are published.</span>
+                        </p>
+                        <p style="font-size: 10pt;">Selecting the checkbox allows any errors to be set up as placeholders to be imported in real time  into the Review case. <br />Clearing the checkbox allows any errors to be held back and not imported into the Review case. These errors would then be dealt with after the import is complete.</p>
+                        <p style="font-size: 10pt;">As an example, a password-protected document would generate an error (for example, “password protected file - unable to process”). This also applies to an entire document family, such as an email message and its attachments. Erroneous attachments would generate errors.</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                            <tbody>
+                                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                        <p class="TableText">
+                                            <img src="../../Resources/Images/myipro_note.png" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                        <p class="Note">Note: It is the administrator’s responsibility to resolve the errors.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><i style="font-weight: bold;">Related Topics</i>
+        </p>
+        <p>
+            <MadCap:xref href="Overview_Import_Series.htm">Import Series Overview</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_Import_Series.htm">Create an Import Series</MadCap:xref>
+        </p>
+    </body>
+</html>

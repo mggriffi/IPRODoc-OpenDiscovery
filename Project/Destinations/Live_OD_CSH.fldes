@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publish Live CSH output"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-itsptl002\c$\Core\Help\FlareProjects\CSH"
+  Port=""
+  ViewUrl="https://myipro.iprotech.com/help/CSH"
+  Type="file"
+  ChangedOnly="true"></CatapultDestination>

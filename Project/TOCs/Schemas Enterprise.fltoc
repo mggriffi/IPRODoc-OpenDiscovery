@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="ADD 2017.4.0-Enterprise" Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Enterprise.html" />
+    <TocEntry Title="ADD 2017.4.0-Membership" Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Membership.html" />
+    <TocEntry Title="ADD 2017.4.0-Permissions" Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Permissions.html" />
+    <TocEntry Title="ADD 2017.4.0-Reporting" Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Reporting.html" />
+    <TocEntry Title="ADD 2017.4.0-Diagnostic" Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Diagnostic.html" />
+    <TocEntry Title="ADD 2017.4.0-Media Manager" Link="/Content/Product Resources/Schemas Enterprise/ADD 2017.4.0-Media Manager.html" />
+</CatapultToc>

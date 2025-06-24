@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.LMS_v8_0,Primary.LMS">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/LMS.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Delete a Delivery" />Define Coding Form Rules</h1>
+        <p class="BodyText">Basic “if-then” rules can be defined regarding tags, 
+ tag groups, fields, and/or review status to enforce record editing and/or 
+ tagging requirements. </p>
+        <p class="BodyText">For example:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                If a particular tag is set, then a particular 
+	 field (such as a Comments field) cannot be empty.
+            </p>
+            </li>
+            <li>
+                <p>
+                If tags from all required tag groups have been 
+	 applied, then the status of a review pass will be automatically changed 
+	 from <span style="font-weight: bold;">Not Reviewed</span> to <span style="font-weight: bold;">Reviewed</span></p>
+            </li>
+        </ul>
+        <p class="BodyText">Before you add rules to a coding form, plan the rules 
+ and rule sequence to ensure that they will correctly enforce the needed 
+ review activities and be conducted in the correct order. </p>
+        <p class="BodyText">To define a coding form rule:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete the needed steps in <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Manage_Coding_Forms.htm">Manage Coding Forms</MadCap:xref> to access Coding Forms configuration and define fields 
+ and/or tags for the coding form.</p>
+            </li>
+            <li>
+                <p>Expand the <span style="font-weight: bold;">Rules</span> 
+ section of the <span style="font-weight: bold;">Coding Form</span> configuration 
+ area, then click <span style="font-weight: bold;">Add</span>. Complete 
+ the Edit Coding Form Rule dialog box as described in the following steps.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Name:</span> 
+ Enter a name that describes the rule’s purpose. Complete step 4 or 5, 
+ depending on the type of rule being defined.</p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Review Rule:</span> 
+ This rule automates changing the review status of documents when all required 
+ tags have been applied. To define this type of rule:</p>
+                <ol>
+                    <li>
+                        <p>For 
+ <span style="font-weight: bold;">Type</span>, select <span style="font-weight: bold;">Review 
+ Rule</span>.</p>
+                    </li>
+                    <li>
+                        <p>In 
+ the review pass list, select the review pass to which the rule will apply.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">OK</span>.</p>
+                    </li>
+                </ol>
+            </li>
+            <p class="Image">
+                <img src="../../Graphics/ADD_Review_Graphics/AR_Dialog_Edit_Coding_Form_Rule.png" alt="" border="0" class="Thumbnail" />
+            </p>
+            <li>
+                <p><span style="font-weight: bold;">Form Rule:</span> 
+ Form rules are enforced when a user edits fields in Record View or applies 
+ tags. A user cannot select a new document for editing/tagging until all 
+ rules are met. Form rules help enforce needed review actions and promote 
+ consistency amongst users.</p>
+                <p>For 
+ the <span style="font-weight: bold;">Type</span>, select <span style="font-weight: bold;">Form 
+ Rule</span>. Create the rule statement by completing the following steps 
+ from left to right in the dialog box. </p>
+                <p class="BodyTextIndent" style="font-weight: bold;">IF statement:</p>
+                <ol>
+                    <li>
+                        <p>Select 
+ the item type—<span style="font-weight: bold;">Field</span>, <span style="font-weight: bold;">Tag</span>, 
+ or <span style="font-weight: bold;">Tag Group</span> that is the subject 
+ of the “if” portion of the rule.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the specific field, tag(s), or tag group(s). Note: Only the fields and 
+ tag groups/tags that have been added to the form will be available. </p>
+                    </li>
+                    <li>
+                        <p>If 
+ multiple tags or tag groups are selected, choose the way in which they 
+ should be considered: <span style="font-weight: bold;">All of these</span> 
+ must match the condition or <span style="font-weight: bold;">Any of these</span> 
+ must match the condition.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the needed condition. For example, for tags or tag groups, the conditions 
+ are <span style="font-weight: bold;">Tagged</span> or <span style="font-weight: bold;">Not 
+ Tagged</span>. </p>
+                    </li>
+                </ol>
+                <p class="BodyTextIndent" style="font-weight: bold;">THEN statement: </p>
+                <ol>
+                    <li>
+                        <p>Select 
+ the item type—<span style="font-weight: bold;">Field</span>, <span style="font-weight: bold;">Tag</span>, 
+ or <span style="font-weight: bold;">Tag Group</span> to which the “then” 
+ portion of the rule applies.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the specific field, tag(s), or tag group(s). </p>
+                    </li>
+                    <li>
+                        <p>If 
+ multiple tags or tag groups are selected, choose the way in which they 
+ should be considered: <span style="font-weight: bold;">All of these</span> 
+ must match the condition or <span style="font-weight: bold;">Any of these</span> 
+ must match the condition.</p>
+                    </li>
+                    <li>
+                        <p>Select 
+ the required condition. For example, for fields, the conditions are must 
+ <span style="font-weight: bold;">Be Empty</span> or <span style="font-weight: bold;">Not 
+ Be Empty</span>. </p>
+                    </li>
+                    <li>
+                        <p>Read 
+ the rule statement to ensure it is as intended; make changes if needed.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ the rule should not yet be active, clear the <span style="font-weight: bold;">Enable</span> 
+ option.</p>
+                    </li>
+                    <li>
+                        <p>When 
+ finished, click <span style="font-weight: bold;">OK</span>. </p>
+                    </li>
+                </ol>
+            </li>
+            <p class="BodyTextIndent">The following example shows a rule in the Rules 
+ area of the Coding Form configuration area. In this example, if the Date 
+ field is empty, then the Yes tag in the Date Confirm. Needed tag group 
+ must be applied.</p>
+            <p class="Image">
+                <img src="../../Graphics/Admin_Graphics/Coding Form Rule Ex_Web.png" alt="" border="0" class="Thumbnail" />
+            </p>
+            <li>
+                <p>Repeat these steps to create other rules.</p>
+            </li>
+            <li>
+                <p>When all rules are defined, review the order 
+ of rules in the <span style="font-weight: bold;">Rules</span> tab of the 
+ Coding Form dialog box. Rules are enforced in order from top to bottom.</p>
+            </li>
+            <li>
+                <p>If the order of rules should be changed:</p>
+                <ol>
+                    <li>
+                        <p>Select 
+ a rule to be reordered.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Up</span> or <span style="font-weight: bold;">Down</span> 
+ until the rule is in the desired location.</p>
+                    </li>
+                    <li>
+                        <p>Repeat 
+ these steps to reorder other rules.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Complete any other aspects of <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Manage_Coding_Forms.htm">Manage Coding Forms</MadCap:xref>. </p>
+            </li>
+            <li>
+                <p>When the coding form definition is complete, 
+ click <span style="font-weight: bold;">Save</span>.</p>
+            </li>
+        </ol>
+    </body>
+</html>

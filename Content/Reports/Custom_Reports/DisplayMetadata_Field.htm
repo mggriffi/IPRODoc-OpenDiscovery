@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports" style="mc-master-page: url('../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>DisplayMetadata Field</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Display Metadata Field;DisplayMetadata Field" />DisplayMetadata Field</h1>
+        <p class="BodyText">The DisplayMetadata Field is a string field comprised 
+ of one JSON <b><i style="font-style: normal;font-weight: normal;">array</i></b> 
+ with strict requirements.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note:  This 
+		 topic assumes that you understand the rules and structure of JSON. 
+		 It is strongly recommended that you use a JSON validator to ensure 
+		 that the system works without errors. If you are unfamiliar with 
+		 JSON, it is recommended that you learn about it elsewhere (for 
+		 example, see <a href="http://www.json.org/" target="_blank">http://www.json.org/</a> 
+		 before you continue. This topic is beyond the scope of this document.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Important: All 
+		 of the following JSON details are <i>case-sensitive</i>. 
+		 To avoid errors, ensure that you provide both the field names, 
+		 as well as the field values, exactly as they are specified in 
+		 this document.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>DisplayMetadata JSON Objects</h2>
+        <p class="BodyText">The DisplayMetadata is a JSON Array comprised of one 
+ object for each data set that is returned by your custom report stored 
+ procedure. The following table describes the schema for each configuration 
+ object.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 650px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field 
+		 NAME</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">DATA 
+		 TYPE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Header</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">By 
+		 default, the header for your dataset will simply be "Dataset 
+		 X", where X is the numbered ordering of your datasets.</p>
+                        <p class="TableText">To override this behavior, use this field 
+		 to add a custom header to your dataset, such as "Archives" 
+		 or "Total Counts".</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">AutoAggregate</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Boolean</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This 
+		 is a true/false field that determines whether or not <MadCap:variable name="Primary.Name" /> <b style="font-weight: normal;">Reports </b>will try to automatically aggregate 
+		 any numerical fields within this dataset.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Charts</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><i>JSON</i><i>Array</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This 
+		 additional JSON field allows the creation of charts for this dataset. 
+		 Because it is an array, you can provide multiple charts for a 
+		 single dataset.</p>
+                        <p class="TableText">This field is completely optional; additional 
+		 details are provided in <span style="font-style: italic;">JSON 
+		 Chart Objects</span> below.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText"><span style="line-height: 105%;">CustomColumns</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText"><i>JSON</i><i>Array</i>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">This 
+		 additional JSON field allows the manipulation of individual columns 
+		 for this dataset. Because it is an array, you can provide multiple 
+		 columns for a single dataset.</p>
+                        <p class="TableText">This field is completely optional; see <MadCap:xref href="Customize_Grid_Columns.htm"> Customize Grid Columns</MadCap:xref>  for 
+		 more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="JSON_Chart_Objects"></a>JSON 
+ Chart Objects</h2>
+        <p class="BodyText"><span>M</span>ultiple 
+ chart types are available, as described in the following table; the configuration 
+ for all of them is similar. Hints for handling different chart types are 
+ also presented in the following table. See the <MadCap:xref href="#Example">Example</MadCap:xref>
+ below for a description of how to define a single chart and how it fits 
+ in the DisplayMetadata JSON.</p>
+        <p class="BodyText">You can combine any number of charts and custom columns 
+ (see <MadCap:xref href="Customize_Grid_Columns.htm">Customize Grid Columns</MadCap:xref>) 
+ with as many datasets as your report returns.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 650px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field 
+		 NAME</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">DATA 
+		 TYPE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Type</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Specify 
+		 the type of chart. The following chart types are available. A 
+		 Bar Chart is used if this value is omitted.</p>
+                        <ul style="list-style: square;" class="BulletListTable">
+                            <li>
+                                <p class="TableText">pie</p>
+                            </li>
+                            <li>
+                                <p class="TableText">doughnut</p>
+                            </li>
+                            <li>
+                                <p class="TableText">bar</p>
+                            </li>
+                            <li>
+                                <p class="TableText">horizontal Bar</p>
+                            </li>
+                            <li>
+                                <p class="TableText">line</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">XAxisField<span style="color: #ff0000;">*</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Specify 
+		 the field that contains the names of items being reported on. 
+		 The values of this field are used on the X Axis of a bar chart, 
+		 or the sections of a pie or doughnut chart.</p>
+                        <p class="TableText">This field is typically the field used in 
+		 the “group by” clause of the SQL statement used to generate the 
+		 report data.</p>
+                        <p class="TableText">For example, specify “ProductionName” for 
+		 following SQL statement:<span>&#160;</span></p>
+                        <p class="Code"><span class="DataEntry">SELECT ProductionName, 
+		 sum(DocumentCount) as DocumentCount, sum(Pages) as PageCount, 
+		 sum(NativeCount) as NativeCount FROM DocumentList GROUP BY ProductionName.</span>
+                        </p>
+                        <p class="Code">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">YAxisFields<span style="color: #ff0000;">*</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Array 
+		 of strings</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Specify 
+		 the field(s) used as data points in the chart. For bar, horizontal Bar, 
+		 or line charts, multiple datapoints can be displayed; however 
+		 pie or doughnut charts display best with only one value specified 
+		 here.</p>
+                        <p class="TableText">For example, specify <span class="CodeCharacter">[</span><span class="DataEntry">“</span><span class="CodeCharacter">PageCount</span><span class="DataEntry">”]</span> or <span class="DataEntry">[“</span><span class="CodeCharacter">PageCount</span><span class="DataEntry">”, 
+		 “</span><span class="CodeCharacter">NativeCount</span><span class="DataEntry">”, 
+		 “</span><span class="CodeCharacter">DocumentCount</span><span class="DataEntry">”]</span> for the SQL statement above.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Caption</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">This 
+		 value is included above the chart when it is displayed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText"><span style="color: #ff0000;">*</span>&#160;Indicates 
+ a required field.</p>
+        <h3><a name="Example"></a>Example</h3>
+        <p class="BodyText">The following example presents a DisplayMetadata field 
+ that contains two pie charts for the first dataset.</p>
+        <p class="Code"><span class="DataEntry">[</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;</span>&#160;"Header": 
+ "File Type",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;</span>&#160;"AutoAggregate": 
+ false,</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;</span>&#160;"Charts": 
+ [</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"Type": 
+ "pie",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"Caption": 
+ "File Count by File Type",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"XAxisField": 
+ "ItemType",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"YAxisFields": 
+ [</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"FileCount"</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;]</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;},</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"Type": 
+ "pie",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"Caption": 
+ "Total Size by File Type",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"XAxisField": 
+ "ItemType",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"YAxisFields": 
+ [</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"TotalSize"</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;]</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;}</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;</span>&#160;]</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;</span>&#160;}</span>
+        </p>
+        <p class="Code"><span class="DataEntry">]</span>
+        </p>
+        <p class="Code">&#160;</p>
+    </body>
+</html>

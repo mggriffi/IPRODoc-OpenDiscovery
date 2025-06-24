@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Review" style="mc-template-page: url('../../../../Resources/MasterPages/Enterprise_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview: Import Third-Party Data</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Import Case Data" />Overview: Import Third-Party Data</h1>
+        <p class="BodyText">You can import data into your <MadCap:variable name="Primary.Name" /> case using the <b>Eclipse Admin</b> module. This allows you to import data from a variety of 
+ load files and sources. You can import:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                Case (field) data plus image and/or native 
+	 files
+            </p>
+            </li>
+            <li>
+                <p>
+                Text (plain text files containing image OCR)
+            </p>
+            </li>
+            <li>
+                <p>              Images produced in an application other than <MadCap:variable name="Primary.Name" />, which can be imported to make them available in the <span style="font-weight: bold;">Production 
+	 History</span> tab
+            </p>
+            </li>
+        </ul>
+        <h3>Case Data (Load) Files</h3>
+        <p class="BodyText">Administration makes it easy to import case data—both 
+ document (field) data and page (image) data—from/to a variety of file 
+ types, as listed in the following table. </p>
+        <p class="BodyText">For files that contain both document and page data, 
+ both types of data are imported at the same time (or they can be imported 
+ separately). Performing overlays is also possible to allow for easy updating 
+ of records. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 75px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 325px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 75px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 75px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" rowspan="2">
+                        <p class="TableHead" style="text-align: center;">File 
+			 Type</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1" rowspan="2">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Use 
+			 to Import this Data...</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Doc</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Page</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.CSV</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">A 
+			 delimited ASCII text file with a delimiter format of quote-comma-quote 
+			 or plain commas.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.DAT</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">A 
+			 delimited ASCII text file containing field data and metadata.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.DII</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">A 
+			 Summation Document Image Information load file. ASCII text 
+			 file formatted using a non-delimited, multiple line format.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X<span class="FootnoteSuperscript">[1]</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X*</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.DLF</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">An 
+			 <MadCap:variable name="Primary.IPRO" /> load file. The .DLF file contains all document- 
+			 and page-level information for case data. </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.LFP</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">An 
+			 <MadCap:variable name="Primary.IPRO" />  load file provided by scanning software or conversion 
+			 programs.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">&#160;</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.LST</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">A 
+			 Summation file used for import/export of extracted text (document-level 
+			 OCR) from/to text files.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">.OPT</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Opticon 
+			 load file for image data.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">&#160;</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">.TXT</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">An 
+			 ASCII text file treated the same as a .CSV file.</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">X</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText" style="text-align: center;">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="footnote"><span class="FootnoteSuperscript">[1]</span><span style="font-family: Verdana, sans-serif;">Currently, .DII files can only be exported 
+		 (not imported).</span>
+        </p>
+        <h3>Case Definition Files</h3>
+        <p class="BodyText">In addition to case data, you can import case definition 
+ details, which can serve as a “template” for cases. The case definition 
+ file is an XML file with a file extension of .CSE. It includes the case 
+ details, but not data. </p>
+        <h3>Text Files</h3>
+        <p class="BodyText">If extracted text was not part of the initial data 
+ import, text files (plain text files containing image OCR) can be imported 
+ to populate the EXTRACTEDTEXT field and<span style="font-weight: bold;"> 
+ Extracted Tex</span>t tab in the Document Details pane. See <MadCap:xref href="Import_Text_Files.htm">Import Text Files</MadCap:xref>.</p>
+        <h3>Production Files</h3>
+        <p class="BodyText">Image files from a production job created in an application 
+ other than <MadCap:variable name="Primary.Name" /> can be imported and will display in <MadCap:variable name="Primary.Name" />
+ Review in the <span style="font-weight: bold;">Production History</span> 
+ tab. For details, see <MadCap:xref href="Import_Production_History.htm">Import Production History</MadCap:xref>. </p>
+        <h2><a name="Configuration_Task_Order"></a>Configuration Task Order</h2>
+        <h3>Importing Case Data and/or Files</h3>
+        <p class="BodyText">Case data and/or files can be imported after a new 
+ case has been created, or when data needs to be added to an existing case. </p>
+        <h2><a name="Permissions_Required"></a>Permissions Required</h2>
+        <p class="BodyText">All members of the Super Admin group can import case 
+ data and/or files. Others who have the Import Case Data permissions can 
+ also perform these tasks. </p>
+        <h2><a name="Before_You_Begin"></a>Before You Begin</h2>
+        <p class="BodyText">Before you import case data from within the Eclipse Admin module, you may want to “walk 
+ through” the four distinct steps. This will 
+ allow you to familiarize yourself with the information you will need and 
+ the options you will have.</p>
+        <p class="BodyText">To “walk through” the steps: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Open the Eclipse Admin module and log in as an administrator.</p>
+            </li>
+            <li>
+                <p>On the 
+ Case Management ribbon, select <span style="font-weight: bold;">Import</span> 
+ &gt; <span style="font-weight: bold;">Import Data</span>.</p>
+            </li>
+            <li>
+                <p>Beginning 
+ with the first tab (<span style="font-weight: bold;">Step 1</span>), review 
+ and make a note of the information you will need for each step. </p>
+            </li>
+            <li>
+                <p>You 
+ need to understand the data you are importing so that imported fields 
+ can be correctly matched to the fields defined for the case. If needed, 
+ review the data you will be importing so you will know which fields and 
+ data types are being imported.</p>
+                <p class="BodyText">If for some reason, your 
+ case fields do not quite match the imported data, make changes to the 
+ case before you import the data. See  <MadCap:xref href="Create_the_Import_for_Third_Party_Data.htm#Map">Map Database Fields</MadCap:xref>.</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Warning.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Important: Selecting 
+		 options incorrectly during the import procedure (if the data does 
+		 not match an option) will result in errors. Make sure you know 
+		 the content of your import file and select these options only 
+		 if they apply. </p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>Consider 
+ the path information in your load file for image and/or native files (and 
+ extracted text, if a path is used to indicate the location of text files). 
+ In Eclipse Admin, you can edit the path as part of the import. 
+ For images, you can also use a “volume” to make it easy to define the 
+ location of such files during import and to manage image file locations 
+ after import. A volume is a variable used to represent all or part of 
+ the path for image and/or native files for a specific case. </p>
+            </li>
+            <li>
+                <p>If you 
+ are importing data into an existing case (as opposed to a new case), consider 
+ when you will do so. Depending on the size of the database, system capabilities, 
+ and other factors, importing data may interrupt reviewer actions and consume 
+ significant system resources and time. </p>
+            </li>
+            <li>
+                <p>If you 
+ are importing large amounts of data, it is recommended that you do so 
+ during “off hours” to minimize the impact to the system and your users, 
+ for example, at the end of the work day or on the weekend. Notify users 
+ who may work at these times of possible interruptions. </p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" cellspacing="0" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Warning.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Important: You 
+		 cannot save a portion of a data import (such as your entries for 
+		 steps 1 and 2). If you exit Eclipse Admin before completing 
+		 all steps, you will lose your work. </p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+        <p>&#160;</p><span class="BoldItalic">Related Topics</span>
+        <p>
+            <MadCap:xref href="Create_the_Import_for_Third_Party_Data.htm">Create the Import </MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Import_Production_History.htm">Import Production History</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Import_Text_Files.htm">Import Text Files</MadCap:xref>
+        </p>
+    </body>
+</html>

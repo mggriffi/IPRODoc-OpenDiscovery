@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../../../Resources/MasterPages/Eclipse_MP.flmsp');" MadCap:conditions="Primary.Blocked">
+    <head><title>Configure the Relationship Panel to Display Near Duplicates (IPRO Analytics)</title>
+        <link href="../../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Set Up the Relationship Panel to Display Near-Duplicates (<MadCap:variable name="Primary.Analytics" />)</h1>
+        <p class="BodyText">The <MadCap:variable name="Primary.IPRO" /> Eclipse near-duplicates component, based on 
+ <MadCap:variable name="Primary.IPRO" /> Analytics textual processing, identifies textual near-duplicate 
+ groups in item text. Textual near-duplicates are items in which most of 
+ the text appears in other items in the group and in the same order. </p>
+        <p class="BodyText">The metadata of the items identified as part of a near-duplicate 
+ group will be updated with a group ID to identify the near-duplicate group 
+ to which the items belong.</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Near-duplicate detection will typically be configured by you case administrator. 
+ For more information, contact your case administrator or see <MadCap:xref href="../../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Near-Duplicate_AnalyticsIA.htm">Configure Near-Duplicate Detection in IPRO Analytics</MadCap:xref> in the Eclipse Administration section.</p>
+                </td>
+            </tr>
+        </table>
+        <p>To learn more about near-duplicate detection, watch the Near Duplicates video.</p>
+        <p><span class="BoldItalic"><img src="../../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+        </p>
+        <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t1">Click 
+ here to watch the Near Duplicates video</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://vimeo.com/273940902" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+            <h2>Set Up the Relationship Panel to Display Near-Duplicates</h2>
+            <p>In order to see near-duplicates during your review process, you must first set up the Relationship panel, in Eclipse Web, to display near duplicates. .To do so:</p>
+            <ol class="NumbListBody">
+                <li>In <b>Eclipse Web</b>, navigate to <b>Case Administration</b> and then <b>Relationships</b>.</li>
+                <li>Review the list for the <b>Near Duplicates</b> panel. If it does not exist, create one by clicking on the Plus (<b>+</b>) button and entering <b>Near Duplicates</b> in the name field. If the panel does exist, ensure the panel is set up as described below.</li>
+                <li>Under <b>Group By</b>, select the <b>IA ND Family</b> field or the equivalent field you created.</li>
+                <li>Under <b>Sort By</b>, select <b>IA ND Sort</b> field, or the equivalent field you created.</li>
+                <li>
+                    <p>Be sure to check the box to <b>Show document compare tool</b> so that comparing the text in the Near Duplicate documents is easier.</p>
+                    <p>
+                        <img src="../../../../../Graphics/Eclipse Web Images/panel_neardups_relref.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>In the <b>Selected Fields</b> section, add the following fields, at a minimum, to be displayed in your view and select <b>Save</b>.</p>
+                    <p>
+                        <img src="../../../../../Graphics/Eclipse Web Images/panel_neardups_relref_fields.png" />
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <p>After you have configured near duplicate detection in Eclipse Administration and you have set up the relationship panel to view near duplicates, you can:</p>
+        <ul class="BulletListBody">
+            <li>Set 
+		 up batch review by near duplicate group to allow for documents 
+		 in the same ND group to be reviewed by one reviewer all at the 
+		 same time, providing for faster, more consistent review decisions. For more information, see <MadCap:xref href="../../../../Eclipse_web/Analytics/Ipro Analytics/Create_NearDup_Batches_for_ReviewIA.htm">Create Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>.</li>
+            <li>Use 
+		 Email Threads to review emails and their attachments, and Near 
+		 Duplicate technology to review the remaining loose documents. For more information, see <MadCap:xref href="../../../../Eclipse_web/Analytics/Ipro Analytics/Create_EmailThrandND_Batches_for_ReviewIA.htm">Create Email Thread with Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref></li>
+        </ul>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../../Eclipse_Administration/Analytics/Ipro Analytics/Configure_Near-Duplicate_AnalyticsIA.htm">Configure Near-Duplicate Detection in IPRO Analytics</MadCap:xref>
+        </p>
+    </body>
+</html>

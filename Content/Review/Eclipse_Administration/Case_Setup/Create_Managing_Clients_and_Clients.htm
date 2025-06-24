@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Managing Clients and Clients</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Create Managing Clients and Clients" />Create Managing Clients and Clients</h1>
+        <p class="BodyText">All <MadCap:variable name="Primary.Name" /> products, including Eclipse<sup>®</sup> by <MadCap:variable name="Primary.IPRO" />, use two levels 
+ of client to help you identify and manage cases, “managing clients” and 
+ “clients.”</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Managing 
+ Clients</span> - Managing clients provide the basis of the relationship 
+ between cases and reviewers (groups and users). </p>
+            </li>
+            <p class="Image">
+                <img src="../../../Graphics/Admin_Graphics/MasterClients.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <p class="BodyText">For service providers, managing 
+ clients are the companies and firms the provider does business with. For 
+ law firms, the firm itself is the managing client (a secondary client 
+ can be defined as part of case configuration.) Consider the comparison 
+ in the following figure.</p>
+            <p class="Image">
+                <img src="../../../Graphics/Admin_Graphics/MasterClientComparison.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p><span style="font-weight: bold;">Clients</span> 
+ - A secondary or subordinate client provides a further level of identification. 
+ For law firms this may be the same as the managing client, but for service 
+ providers, different secondary clients may be appropriate. Apply these 
+ client concepts to your company’s business configuration. </p>
+            </li>
+        </ul>
+        <p class="BodyText">
+            <img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Click 
+ here to watch the Creating Managing Clients and Clients video</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://player.vimeo.com/video/223189591" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p><a href="#Ipro_Cloud"><MadCap:variable name="Primary.Name" /></a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Adding_Managing_Clients_Clients_in_Ipro_Eclipse">Add Managing 
+ Clients/Clients in Eclipse</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Work_with_Managing_Clients_Clients">Work with Managing Clients/Clients</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Ipro_Cloud"></a><MadCap:variable name="Primary.Name" />
+        </h2>
+        <p class="BodyText">Starting with release 2015.0.0, <MadCap:variable name="Primary.Name" /> Services provides 
+ a centralized database in which all <MadCap:variable name="Primary.Name" /> managing clients and clients are 
+ managed. </p>
+        <p class="BodyText">A managing client or client can be created in <MadCap:variable name="Primary.Name" />, 
+ Eclipse, or eCapture<sup>®</sup> by <MadCap:variable name="Primary.IPRO" />, and it will be available in all of the products. 
+ Eclipse and eCapture allow you to include product-specific details. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Prior to Eclipse 2015.0.0, 
+		 “managing” clients were referred to “master” clients.</p>
+                </td>
+            </tr>
+        </table>
+        <h3>Configuration Task Order</h3>
+        <p class="BodyText">A managing client is required for several Eclipse administrative 
+ tasks, such as user, group, and case creation. The secondary client is 
+ required for case creation. Therefore, needed managing clients and clients 
+ must be defined early in the configuration process. </p>
+        <p class="BodyText">These clients can be added or removed at any time as 
+ a normal part of administration.</p>
+        <h3>Permissions Required</h3>
+        <p class="BodyText">Only members of the Super Admin group can create and 
+ manage managing clients/clients. </p>
+        <p class="BodyText">&#160;</p>
+        <h2><a name="Adding_Managing_Clients_Clients_in_Ipro_Eclipse"></a>Add Managing 
+ Clients/Clients in Eclipse</h2>
+        <p><span class="BoldItalic">Before You Begin</span>
+        </p>
+        <p class="BodyText">Having a basic client data policy will help ensure 
+ that you have consistent and needed information for managing clients and 
+ clients. For greatest efficiency, determine needed information as follows:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Managing clients:</span> 
+	 Review the table in <span style="font-style: italic;">Add New Managing 
+	 Clients</span> below.
+            </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Clients:</span> 
+	 Determine conventions for client names.
+            </p>
+            </li>
+        </ul>
+        <h3>Add New Managing Clients</h3>
+        <p class="BodyText">To add managing clients to <MadCap:variable name="Primary.Name" /> Services through Eclipse:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Log 
+ in as a user who is a member of Super Admin group.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Eclipse</span> 
+ in the upper-left corner of the site and select <span style="font-weight: bold;">Administration</span>, 
+ as shown in this figure.</p>
+            </li>
+            <p class="Image">
+                <img src="../../../Graphics/Admin_Graphics/EclipseWebButton_Admin.png" alt="" border="0" class="Thumbnail_Popup" />
+            </p>
+            <li>
+                <p>In the System Administration list, click <span style="font-weight: bold;">Managing Clients</span>.</p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Plus_Web.png" alt="" border="0" class="button_inline" />.</p>
+            </li>
+            <li>
+                <p>Complete the needed entries.</p>
+            </li>
+            <p class="BodyText">
+                <MadCap:toggler targets="t2">Click 
+ here for field descriptions</MadCap:toggler>
+            </p>
+            <div MadCap:targetName="t2">
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                    <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <col style="width: 450px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                    <thead>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Field</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">Entperise 
+			 Details</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Managing Client Name</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Required. 
+			 Enter a name (maximum of 256 Unicode characters). Use a naming 
+			 approach that is consistent with <MadCap:variable name="Primary.Name" /> managing 
+			 clients and will help users work with cases/projects across 
+			 all <MadCap:variable name="Primary.Name" /> products. </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText" style="font-weight: bold;">IPRO Eclipse 
+			 Details</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Contact </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Optional. 
+			 Person to be contacted regarding the managing client.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText">Client Number </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Optional. 
+			 Typically a billing reference number. </p>
+                                <p class="TableText">Size limit: 100 characters—use only numbers, 
+			 letters, and/or dashes.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <ul style="list-style: square;" class="BulletListTable">
+                                    <li>
+                                        <p class="TableText">Address/</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Address2</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Website</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Contact</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Telephone </p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Email</p>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">Optional. 
+			 Basic managing client information.</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText">Notes </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">Optional. 
+			 Any additional details regarding the managing client (up to 
+			 1024 Unicode characters). These notes are searchable in the 
+			 managing client list, which can be useful.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>
+            <li>Click <span style="font-weight: bold;">Save</span>. 
+ The managing client will be available in Eclipse and other <MadCap:variable name="Primary.Name" /> products.</li>
+            <li>Repeat these steps to create additional managing 
+ clients.</li>
+        </ol>
+        <h3>Add New Clients</h3>
+        <p class="BodyText">To add clients to <MadCap:variable name="Primary.Name" /> through Eclipse:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Log 
+ in as a user who is a member of Super Admin group.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Eclipse</span> 
+ in the upper-left corner of the site and select <span style="font-weight: bold;">Administration</span>.</p>
+            </li>
+            <li>
+                <p>In the System Administration list, click <span style="font-weight: bold;">Clients</span>.</p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Plus_Web.png" alt="" border="0" class="button_inline" />.</p>
+            </li>
+            <li>
+                <p>In the <span style="font-weight: bold;">Client 
+ Name</span> field, enter a name (maximum of 256 Unicode characters). Use 
+ a naming approach that will help users work with cases/projects across 
+ all <MadCap:variable name="Primary.Name" /> products. </p>
+            </li>
+            <li>
+                <p>Select the <span style="font-weight: bold;">Managing 
+ Client</span> with which this client is associated.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Save</span>.</p>
+            </li>
+            <li>
+                <p>Repeat these steps to create additional clients. 
+ </p>
+            </li>
+        </ol>
+        <h2><a name="Work_with_Managing_Clients_Clients"></a>Work with Managing 
+ Clients/Clients</h2>
+        <p class="BodyText">Once managing clients and clients have been defined, 
+ anyone who is a member of the Super Admin group can manage the client 
+ details as explained below.</p>
+        <h3><a name="Find_and_View_Managing_Client_or_Client_Information"></a>Find 
+ and View Managing Client or Client Information</h3>
+        <p class="BodyText">To find and view the details for a managing client 
+ or client:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Log 
+ in as a user who is a member of Super Admin group.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Eclipse</span> 
+ in the upper-left corner of the site and select <span style="font-weight: bold;">Administration</span>.</p>
+            </li>
+            <li>
+                <p>In the System Administration list, click <span style="font-weight: bold;">Managing Clients</span> or <span style="font-weight: bold;">Clients</span>.</p>
+            </li>
+            <li>
+                <p class="BodyText">Review the list in the <span style="font-weight: bold;">Managing 
+ Clients</span> or <span style="font-weight: bold;">Clients</span> tab. 
+ Take any of the following actions to find the needed managing client or 
+ client:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p class="BodyText">Scroll 
+ vertically and/or horizontally. </p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Click 
+ the right border and drag to make it wider.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Sort 
+ the list by clicking the sort button, , and choosing from available options.</p>
+                    </li>
+                    <li>
+                        <p>To 
+ find a specific managing client or client in a long list, start typing 
+ any of the following items, then press Enter. This is a plain text search 
+ that searches these items in order.</p>
+                        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                            <col style="width: 120px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <col style="width: 380px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                            <thead>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                        <p class="TableHead" style="text-align: center;">List</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                        <p class="TableHead" style="text-align: center;">Search 
+		 For</p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                        <p class="TableText">Managing Client</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                        <ul style="list-style: square;" class="BulletListTable">
+                                            <li>
+                                                <p class="TableText">Name </p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">Administrator’s name (person who created/modified 
+			 the managing client)</p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">Part of the created/modified date 
+			 </p>
+                                            </li>
+                                            <li>
+                                                <p class="TableText">Content in the notes</p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                        <p class="TableText">Client</p>
+                                    </td>
+                                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                        <p class="TableText">Name 
+		 of the client or associated managing client</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>When a needed managing client/client is found, 
+ click the name to view details in the right side of the tab. </p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h3>Change Managing Client or Client Details</h3>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Before editing a managing 
+		 client or client, remember that <MadCap:variable name="Primary.Name" /> Services manages all data, 
+		 and an "Eclipse” managing client/client may also be used 
+		 by <MadCap:variable name="Primary.Name" /> or eCapture. Before making changes, make sure 
+		 they are appropriate across <MadCap:variable name="Primary.Name" /> products. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To change managing any client/client details:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete 
+ <a href="#Find_and_View_Managing_Client_or_Client_Information">Find and 
+ View Managing Client or Client Information</a> to select the needed managing 
+ client. </p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/btn_pencil_Web.png" alt="" border="0" class="button_inline" /> 
+ above the managing client/client details.</p>
+            </li>
+            <li>
+                <p>Make needed changes, then click <span style="font-weight: bold;">Save</span>. </p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h3>Delete Managing Clients or Clients</h3>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Managing clients and clients 
+		 can only be deleted if they are not assigned to any aspect of 
+		 any <MadCap:variable name="Primary.Name" /> product. (For example, a managing client can be deleted 
+		 only if it has not been selected in the definition of users, groups, 
+		 clients, or cases.)</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">To delete a managing client/client:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete 
+ <a href="#Find_and_View_Managing_Client_or_Client_Information">Find and 
+ View Managing Client or Client Information</a> to select the needed managing 
+ client/client. </p>
+            </li>
+            <li>
+                <p>Click <img src="../../../Graphics/Admin_Graphics/Btn_Del_Web.png" alt="" border="0" class="button_inline" /> 
+ above the managing client/client details.</p>
+            </li>
+            <li>
+                <p>In response to the confirmation message, click 
+ <span style="font-weight: bold;">OK</span>. </p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h3>Export Managing Client or Client Details</h3>
+        <p class="BodyText">The list of managing clients or clients, including 
+ all client details, can be exported to a comma-separated values (.CSV) 
+ file for documentation purposes. To the list of managing clients: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Log 
+ in as a user who is a member of Super Admin group.</p>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Eclipse</span> 
+ in the upper-left corner of the site and select <span style="font-weight: bold;">Administration</span>.</p>
+            </li>
+            <li>
+                <p>In the System Administration list, click <span style="font-weight: bold;">Managing Clients</span> or <span style="font-weight: bold;">Clients</span>.</p>
+            </li>
+            <li>
+                <p>In the lower left corner of the tab, click 
+ <span style="font-weight: bold;">Export to CSV</span>.</p>
+            </li>
+            <li>
+                <p>Complete the <span style="font-weight: bold;">Save 
+ As</span> dialog box, then click <span style="font-weight: bold;">Save</span>.</p>
+            </li>
+            <li>
+                <p>Open the .CSV file in a spreadsheet or other 
+ appropriate application.</p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

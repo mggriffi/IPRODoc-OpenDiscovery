@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Email Thread with Near Duplicate Batches for Review (Analytics)</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create Email Thread with Near Duplicate Batches for Review (<MadCap:variable name="Primary.Analytics" />)</h1>
+        <p class="BodyText">You can combine Email Threading and Near Duplicate technology to create Batches for Review. This allows you to use Email Threads to review emails and their attachments, 
+ and Near Duplicate technology to review the remaining loose documents.</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Follow 
+ the process for setup of Full Thread or Inclusive Email Batch Review. For more information, see <MadCap:xref href="Create_FullEmThread_Batches_for_ReviewIA.htm">Create Full Email Thread Batches for Review (IPRO Analytics)</MadCap:xref> or <MadCap:xref href="Create_InclusiveEmailThread_Batches_for ReviewIA.htm">Create Inclusive Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>.</p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Email Thread batches 
+		 must be created prior to creating the Near Duplicate batches for 
+		 the criteria to work properly.</p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>Two Advanced Searches will be required for 
+ creating Near Duplicate batches. </p>
+                <ol>
+                    <li>
+                        <p>First Search: Create 
+ a new Advanced Search entitled <span style="font-weight: bold;">Email 
+ Thread Batches</span>.</p>
+                        <p class="Image">
+                            <img src="../../../../Graphics/Eclipse Web Images/scr_near_dup_search_type_no_familyIA.png" alt="" style="border: none;" border="0" />
+                        </p>
+                        <p class="BodyText">The criteria of the search 
+ should identify all documents that are part of the Email Thread review 
+ pass. </p>
+                        <p class="BodyText">This can be accomplished 
+ by searching for any documents where the (<span style="font-weight: bold;">Batch 
+ Set</span>) is not the <span style="font-weight: bold;">Email Threading</span> 
+ review pass previously created. </p>
+                        <p class="Image">
+                            <img src="../../../../Graphics/Eclipse Web Images/scr_near_dup_batch_set.png" alt="" border="0" class="Thumbnail_Popup" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>Second Search: Create a new Advanced Search 
+				entitled <span style="font-weight: bold;">Near Duplicate Batches</span>.</p>
+                        <p>
+                            <img src="../../../../Graphics/Eclipse Web Images/scr_near_dup_search_type2IA.png" alt="" style="border: none;" border="0" />
+                        </p>
+                        <p class="BodyText">The criteria of the second 
+					search should identify all documents that received a Near Duplicate value, 
+					that are not part of the <span style="font-weight: bold;">Email Thread 
+				Batches</span> search created above. &#160;</p>
+                        <p class="BodyText">This can be accomplished 
+					by searching for any documents where the <span style="font-weight: bold;">IA ND Family</span> 
+					field contains a value AND the <span style="font-weight: bold;">(Saved 
+				Searches) Is NOT In [Email Thread Batches]</span>.</p>
+                        <p class="Image">
+                            <img src="../../../../Graphics/Eclipse Web Images/scr_near_dup_search_typeIA.png" alt="" border="0" class="Thumbnail_Popup" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Create a new Review Pass and identify your 
+ Advanced Search for the documents to be batched.</p>
+                <p class="Image">
+                    <img src="../../../../Graphics/ADD_Review_Graphics/AR_Sec_Near_Dup_Email_Thread_Batch_Review_Pass.png" alt="" border="0" class="Thumbnail_Popup" />
+                </p>
+                <ol>
+                    <li style="font-weight: normal;">
+                        <p>Enter 
+ a Batch Prefix</p>
+                    </li>
+                    <li style="font-weight: normal;">
+                        <p>Enter 
+ the Batch Size of your choice</p>
+                    </li>
+                    <li style="font-weight: normal;">
+                        <p>Set 
+ the Family Field to <span style="font-weight: bold;">IA ND Family</span> 
+ to ensure all Near Duplicates are kept together</p>
+                    </li>
+                    <li style="font-weight: normal;">
+                        <p>Choose 
+ the Saved Search entitled <span style="font-weight: bold;">Near Duplicate 
+ Batches</span></p>
+                    </li>
+                    <li style="font-weight: normal;">
+                        <p>Sort 
+ your Review Pass by <span style="font-weight: bold;">IA ND Sort</span> 
+ ascending</p>
+                    </li>
+                    <li style="font-weight: normal;">
+                        <p>Select 
+ <span style="font-weight: bold;">Save</span></p>
+                    </li>
+                    <li>
+                        <p>Select <span style="font-weight: bold;">Create 
+ Batches</span> in the bottom right corner</p>
+                        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col class="TableStyle-Note_Table-Column-Column1" />
+                            <col class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p style="text-align: center;">
+                                        <img src="../../../../Graphics/Review_Warning.png" alt="" style="border: none;" border="0" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Important: 
+		 Using these techniques together will still not cover the entire 
+		 review set. &#160;Documents that are not part of email threads 
+		 and are not part of near duplicate groups will still need to be 
+		 batched. </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Create_FullEmThread_Batches_for_ReviewIA.htm">Create Full Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_InclusiveEmailThread_Batches_for ReviewIA.htm">Create Inclusive Email Thread Batches for Review (IPRO Analytics)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Email_Threading_FieldsIA.htm">Email Threading Fields in IPRO Analytics</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_NearDup_Batches_for_ReviewIA.htm">Create Near Duplicate Batches for Review ([%=Primary.Analytics%])</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Near-Duplicate_FieldsIA.htm">Near-Duplicate Fields in IPRO Analytics</MadCap:xref>
+        </p>
+    </body>
+</html>

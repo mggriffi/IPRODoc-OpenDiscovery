@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>QC Batches can be created as a part of an <MadCap:variable name="Primary.Active Learning"></MadCap:variable> enabled review pass.  Only records that are part of the original review pass can be added to a QC batch. They can be used for almost any purpose, but most often are used for:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Reviewing Conflicts</p>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p>Coding Quality Review</p>
+            </li>
+            <li>
+                <p>Relevancy Score QC</p>
+            </li>
+            <li>
+                <p>Late stage elusion testing</p>
+            </li>
+        </ul>
+        <p>Coding decisions made outside of the <MadCap:variable name="Primary.Active Learning" /> enabled review pass will not modify the Positive or Negative status of the example, so it is important to use the QC Batch option if the coding change is intended to apply to the <MadCap:variable name="Primary.Active Learning" /> project.</p>
+        <p>Using Mass Action, one QC Batch is created for all records submitted with the mass action process. The default batch size selected for the review pass does not apply.</p>
+        <h3>Creating an Active Learning Enabled Review Pass QC Batch</h3>
+        <ol class="NumbListBody">
+            <li>
+                <p>Filter down to the records in your grid view.</p>
+            </li>
+            <li>
+                <p>Using the Mass Action option, select <b>Create QC Batch</b>.</p>
+            </li>
+            <li>
+                <p>Select your <MadCap:variable name="Primary.Active Learning" /> enabled review pass from the selector.</p>
+            </li>
+        </ol>
+    </body>
+</html>

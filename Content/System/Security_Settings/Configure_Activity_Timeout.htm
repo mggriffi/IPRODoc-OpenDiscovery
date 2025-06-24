@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedList,Primary.Admin" style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Activity Timeout</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage ADD Settings" />Configure Activity Timeout</h1>
+        <p class="BodyText">Administrators have the ability to adjust the Activity Timeout setting in <MadCap:variable name="Primary.Name" />, which determines how long the system waits before signing out a user due to inactivity. If the system detects no mouse movements, keyboard clicks, or other activity for that span of time, the user will be automatically logged off.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: One minute prior to signing the user out, a dialog window appears indicating that the user will be logged off within one minute. If the user would like to remain signed in, they can select the <b>I'm Still Here</b> button in the dialog. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">Follow the instructions below  to configure the Activity Timeout setting in the System Manager:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Security Settings">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p> Select the <b>Activity Timeout</b> dropdown.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Activity_Timeout.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>In the menu that expands, select the duration. Each option in the dropdown represents the number of minutes a user can remain idle before the system automatically signs them out.</p>
+            </li>
+            <li>
+                <p>Once you have selected the appropriate duration, click <b>Save</b>. </p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: For any users currently signed in to <MadCap:variable name="Primary.Name" />, the updated Activity Timeout setting takes effect the next time they log in.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p> <b style="font-style: italic;">Related Topics</b></p>
+        <p>
+            <MadCap:xref href="Configure_Single_Sign_On.htm">Configure Single Sign-on (SSO)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Sign_In_Two_Factor_Authentication.htm">Sign In With Multi-Factor Authentication (MFA)</MadCap:xref>
+        </p>
+    </body>
+</html>

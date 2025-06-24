@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <h2><a name="Plan_Tag_Definition"></a>Plan Tag Definitions</h2>
+            <p class="BodyText">As with many <MadCap:variable name="Primary.ProdName_Review" /> tasks, proper planning helps ensure that the tags and tag groups you define match required case 
+ review activities. </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><span style="font-weight: bold;">Groups</span>: 
+ Consider the groups that you require, naming conventions, and group rules. 
+ See the table in <MadCap:xref href="#Create_New_Public_Tag_Groups_and_Tags">Create New Tag Groups and Tags</MadCap:xref> for details about rules. </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Tags</span>: 
+ Give some thought to the tags to be included in each group and naming 
+ conventions. </p>
+                </li>
+                <li>
+                    <p><span style="font-weight: bold;">Nested 
+ tags</span>: Understand the behavior of nested tags so that tags are organized as intended. </p>
+                </li>
+            </ul>
+            <p class="BodyText">Also consider the information users will require 
+ to properly apply tags and create appropriate case instructions.</p>
+            <h3>Nested Tags</h3>
+            <p class="BodyText">Nested tags include primary (parent) tags and one or 
+ more subordinate (child) tags, as in the following example. Multiple levels 
+ of tags can exist, creating a tree of related tags. Only the most subordinate member(s) of a nested tag 
+ group can be applied, and when such a tag is applied, its parents are 
+ also applied. In the following example, if the <b>Copyrights</b> tag is applied, the <span style="font-weight: bold;">Intellectual Property</span> and <span style="font-weight: bold;">Agreements</span> 
+ tags are also applied. </p>
+            <p class="BodyText">
+                <img src="../../../Graphics/ADD_Review_Graphics/AR_Tab_TagPalette_NestedTags.png" class="Thumbnail" />
+            </p>
+            <h2><a name="Create_New_Public_Tag_Groups_and_Tags"></a>Create New Tag Groups and Tags</h2>
+            <p class="BodyText">To create tag groups and tags for a case: </p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>Getting 
+ started:</p>
+                    <ol class="NumbListBody">
+                        <li>
+                            <p>In <MadCap:variable name="Primary.ProdName_Review" />, click a case card.</p>
+                            <p>
+                                <img src="../../../Graphics/ADD_Review_Graphics/AR_Card_Case.png" />
+                            </p>
+                            <li>
+                                <p>Click the <b>Enter Case</b> <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_EnterCase2.png" class="ReduceButtonSize" /> button.</p>
+                                <p> The <b>Visual Search</b> dashboard appears.</p>
+                            </li>
+                            <p> <img src="../../../Graphics/ADD_Review_Graphics/Visual Search/VisualSearchDashboard_newSave.png" class="Thumbnail" /></p>
+                        </li>
+                        <li>
+                            <p>Click the <b>Case Settings</b> <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_CaseSettings.png" style="width: 41px; height: 31px;" class="ReduceButtonSize" /> icon.</p>
+                            <p>The case setting tabs display in a ribbon bar at the top of the screen.</p>
+                        </li>
+                        <li>
+                            <p>Click the <b>Tag Palette</b> tab. The Tag Palette screen displays.</p>
+                        </li>
+                        <li>
+                            <p>The left panel displays the list of tag groups already created. To create a new tag group, select the plus icon <img src="../../../Graphics/ADD_Review_Graphics/AR_Btn_Add2.png" class="ReduceButtonSize" /> at the top of the list, beside the search bar.</p>
+                        </li>
+                        <li>Enter the tag group name (up to 100 characters), and 
+ then click <span style="font-weight: bold;">Save</span>. </li>
+                        <li>
+                            <p>Select required tag group rules:</p>
+                            <table cellspacing="0" style="mc-table-style: url('../../Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                                <col style="width: 150px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                <col style="width: 550px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                                <thead>
+                                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                            <p class="TableHead" style="text-align: center;">Rule</p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                            <p class="TableHead" style="text-align: center;">If 
+		 this rule is set, then...</p>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p class="TableText">Exclusive</p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="TableText">Only 
+		 one tag in the group can be applied to a document.</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p class="TableText">Required</p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="TableText">At 
+		 least one tag in the group must be applied to all documents in 
+		 a batch before a batch can be marked complete.</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p class="TableText">Locked</p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="TableText">Maintain 
+		 the current state of tags in the group. That is, if a tag in the 
+		 group has been applied to documents, it remains in this state. 
+		 If a tag has not been applied to documents, it cannot be applied. 
+		 </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                            <p class="TableText">Tag Entire Family<br /></p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                            <p class="TableText">When 
+		 a tag in the group is applied to a document, the tag will be applied 
+		 to the selected document and its relatives (all generations of 
+		 parents, children, siblings). </p>
+                                            <table style="mc-table-style: url('../../TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                                                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                                                <tbody>
+                                                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                                                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                                            <p class="TableText">
+                                                                <img src="../../Images/myipro_note.png" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                                            <p class="Note">Note: Document relationships are based on the use of a BEGATTACH field in the 
+ case.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1" MadCap:conditions="">
+                                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                            <p class="TableText"><span style="font-size: 10pt;">Enabled for Transcripts</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                            <p class="TableText"><span style="font-size: 10pt;">Selecting this rule allows the tag group to be used within the Transcripts feature. See <MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Work with Transcripts.htm">Work with Transcripts</MadCap:xref>.</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>Create the group's tags as follows:</p>
+                    <ol>
+                        <li>Click <b>Create Tags</b>.</li>
+                        <li>
+                            <p>In 
+ the <span style="font-weight: bold;">Tag Group</span> area, enter the group’s 
+ tags (up to 250 characters for each name). Enter one tag name on each line 
+ as shown in the following figure and ensure each name is unique.</p>
+                            <p class="Image">
+                                <img src="../../../Graphics/ADD_Review_Graphics/AR_TagPalette_Tag_Group_Create.png" class="Thumbnail" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="BodyText">When 
+ all tags have been entered, click <span style="font-weight: bold;">Add</span>.</p>
+                            <p class="Image">
+                                <img src="../../../Graphics/ADD_Review_Graphics/AR_TagPalette_Tag_Group_Create_children.png" class="Thumbnail" />
+                            </p>
+                        </li>
+                        <li class="BodyText">If 
+ nested tags are required for a newly created tag, click that tag in the 
+ list and repeat steps a through c for the nested tags.</li>
+                    </ol>
+                </li>
+                <li>
+                    <p class="BodyText">When all details for the new tag group are 
+ complete, click <span style="font-weight: bold;">Save</span>. The new 
+ tag group is now available to be added to a coding form for the case. 
+ </p>
+                </li>
+                <li>
+                    <p class="BodyText">Repeat the above steps to create all required tag 
+ groups/tags. If you enabled tags for transcripts, each one will be associated with a default color, which you can change.<br /><img src="../../../Graphics/ADD_Review_Graphics/AR_Transcript_Issue_tags.png" class="Thumbnail" /><br /></p>
+                </li>
+                <li>After the tags have been created, you can associate them with shortcut keys to allow for faster review. For more information, see <MadCap:conditionalText MadCap:conditions="Primary.Admin"><MadCap:xref href="../../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Working_With_Tag_Options.htm">Work with Tag Options</MadCap:xref></MadCap:conditionalText> <a href="https://myipro.iprotech.com/help/Enterprise/#Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/AR_Apply_Hot_Keys_to_Tags.htm" target="_blank"><MadCap:conditionalText MadCap:conditions="Primary.LMS_v8_0"> Assign Keyboard Shortcuts to Tags</MadCap:conditionalText></a>.</li>
+            </ol>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="ADD Help Target for Beta Help Center"
+  Type="WebHelp2"
+  Destinations=""
+  DisableAutoSync="false"
+  SearchEngine="MadCapSearch"
+  ConditionTagExpression="include[Primary.Admin or Primary.CaseMgmt or Primary.Incomplete or Primary.Media_Manager or Primary.Reports or Primary.Review or Primary.Self_Service or Primary.Shared_EclandCloud or Primary.UI_Linked or &quot;Primary.Upcoming Release&quot;], exclude[Primary.Blank or Primary.Blocked or Primary.CSH or Primary.Eclipse or Primary.Enterprise_Only_FutureDelete or Primary.FutureDelete or Primary.LMS_v8_0 or Primary.Processing or Primary.SampleTopics or Primary.Target_Online or Primary.Target_Print or &quot;Primary.Z_Excluded V1&quot;]"
+  RemoveMadCapStyles="true"
+  Skin="/Project/Skins/beta_myIPRO_Side Nav.flskn"
+  MasterToc="/Project/TOCs/ADD_Primary.fltoc"
+  conditions=""
+  GetLatestBeforeCompile="true"
+  TopNavTocPath="true"
+  DefaultUrl="/Content/Enterprise.htm"
+  EnableSitemap="true"
+  SitemapWebUrl="https://mybeta.ipro.com/help/Enterprise/"
+  ResolveCssVariables="false"
+  FaviconSkin="/Project/Skins/IPRO_Favicon.flskn"
+  TabletBreakpoint="1293"
+  IncludeGlossarySearchResults="false"
+  MoveOutputContentToRoot="false"
+  GlossaryTermConversion="marked">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/New.flglo" />
+  </Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/betaHelpCenter_ADDHelp.fldes"
+      Publish="true" />
+  </Destinations>
+</CatapultTarget>

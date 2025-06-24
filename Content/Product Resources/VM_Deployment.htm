@@ -1,0 +1,1005 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>VM&#160;Deployment </h1>
+        <h2><a name="Step"></a>
+        </h2>
+        <p><MadCap:variable name="Primary.IPRO" /> Virtual Machine packaging and deployment represents <MadCap:variable name="Primary.IPRO" />'s continued commitment to improving customer experience.  VM packaging and deployment aims to minimize  deployment time, improve the upgrade process, reduce human error, and ensure a consistent operating environment for all users. VM packaging and deployment methodology encapsulates pre-installed <MadCap:variable name="Primary.IPRO" /> components within a VM template image that can be cloned to scale and configured with the appropriate <MadCap:variable name="Primary.IPRO" /> components based on the designated node type. The steps below outline the basic workflow for the VM deployment process. </p>
+        <h2>Step 1. System Prep </h2>
+        <ol>
+            <li>
+                <p>VM packaging and deployment introduces new changes to firewall rules to support the new deployment methodology. As of <MadCap:variable name="Primary.Name" /> version 2022.11+ there are notable changes to the Windows Firewall configuration to allow communication between <MadCap:variable name="Primary.IPRO" /> nodes. Please see the changes noted in the diagram below. The following ports will need to be allowed through local, virtual, and public firewalls as noted.</p>
+                <p>
+                    <img src="../Graphics/VM_Graphics/system_prep_firewall_ports.png" style="width: 109px;height: 60px;" class="Thumbnail" />
+                </p>
+                <p>Private firewall rules represent the rules between the internal servers themselves, and also between the internal servers and the IIS server in the DMZ. The ports that must be allowed are as follows.</p>
+                <p style="font-weight: bold;">Private Firewall Rules:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>TCP <b>5985/5986</b> In/Out (Powershell, WinRMhttp/s)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>8300</b> In/Out (Consul Server ie. EAS, AUTH, ECS)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>8301</b> In/Out (Consul Server and Client)</p>
+                    </li>
+                    <li>
+                        <p>UDP <b>8301</b> In/Out (Consul Server and Client)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>40</b>  In/Out (CFS - node detection)</p>
+                    </li>
+                    <li>
+                        <p>UDP <b>40</b> In/Out (CFS - node detection) (local firewall) (*clients will broadcast on UDP 40 and Server will communicate on TCP 40)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>5443</b> In/Out (Warp)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>444</b> In/Out (Netmail APID)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>1433</b> In/Out (SQL)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>6379</b> In/Out (Redis)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>9000</b> In (IPRO File Upload Service)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>9200</b> In/Out (Elastic Search)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>9800</b> In/Out (IPRO Auth service)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>5101/5160/5150</b> In/Out (IPRO eCapture Integration Service)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>10900</b> In/Out (IPRO Analytics)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>17243</b> In/Out (IPRO User Notification Webhook Service)</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>5100</b> In/Out (dtSearch (existing customers may use 50100 for dtSearch new customers may use 5100 to tighten the port range if not  in use))</p>
+                    </li>
+                    <li>
+                        <p>TCP <b>51206</b> In (IPRO File Mounting Service)</p>
+                    </li>
+                </ol>
+                <p> A Powershell script to remotely create the windows firewalls rules using a list of machine names is available from <MadCap:variable name="Primary.IPRO" /> Support upon request.</p>
+            </li>
+            <li>
+                <p>Manage GPO Settings for Domain Service Account:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Grant the domain account running the <MadCap:variable name="Primary.IPRO" /> services the 'log on as a service' permission. See <a href="https://docs.microsoft.com/en-us/system-center/scsm/enable-service-log-on-sm?view=sc-sm-2019">Enable Service Log On</a> for details.</p>
+                    </li>
+                    <li>
+                        <p>Grant the domain account running the ecapture workers the ability to log on automatically after an automatic restart. See <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-">Winlogon Automatic Restart Sign-On (ARSO)</a> for details.</p>
+                    </li>
+                    <li>
+                        <p>Ensure the domain username running each <MadCap:variable name="Primary.IPRO" /> service is a member of the local administrators group on each <MadCap:variable name="Primary.IPRO" /> Node. (From elevated command line: <span class="Code_1">net localgroup [group] [domainname\username] /add</span>) (ie. <span class="Code_1">net localgroup administrators domain.local\john /</span><span class="Code_1">add</span>)</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h2><a name="Step2"></a>Step 2. VM&#160;Prep (Before Cloning)</h2>
+        <ol>
+            <li>
+                <p>Receive delivery of <MadCap:variable name="Primary.IPRO" /> VM Image from <MadCap:variable name="Primary.IPRO" />.</p>
+            </li>
+            <li>
+                <p>Copy VM image to VM image library or location of choice accessible and operable by Virtual Machine Manager or Hyper V Manager.</p>
+            </li>
+            <li>
+                <p>Import VM into Hypervisor (register in place) for the purpose of creating a VM template that can be cloned.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>*Hyper V –  create a VM with virtual hard disk. <i>\Virtual Hard Disks\Win-Gen-2019-Base-R11.vhdx</i></p>
+                        <ol style="list-style-type: lower-roman;">
+                            <li>
+                                <p>{OPTIONAL- Create hardware profiles for each component to assign during clone creation}.</p>
+                                <ol>
+                                    <li>
+                                        <p>Production Spec Reference: <MadCap:xref href="System Requirements.htm">System Requirements</MadCap:xref>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Minimum testing specs: 6CPU 8 GB RAM for single node/ 4CPU 8 GB RAM multi-node.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>{Create with Static IP and Static Mac}  (static MAC with DHCP reservation will suffice).</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li> After the VM has been created, start the VM.</li>
+            <li>*Connect to the VM, create a new local administrator password, and install third-party prerequisites:</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>
+                    <p>Uninstall MAPIExchange.  This may be done by running the following command in a command prompt <span class="Code_1">choco uninstall exchangemapicdo -y</span>” <br />This step may be necessary as a prerequisite for installing Office 2016 32-bit.</p>
+                </li>
+                <li>
+                    <p>Install IBM Notes 9.0.1 Basic + FP 10.</p>
+                </li>
+                <li>
+                    <p>Install Office 2016 32 bit.</p>
+                </li>
+                <li>
+                    <p>*(Customers are responsible for installing IBM Notes where applicable and MS Office supported versions. Licensing does not allow <MadCap:variable name="Primary.IPRO" /> to ship pre-installed third party, licensed, applications.)</p>
+                </li>
+            </ol>
+            <li>Install SSL certificate to IIS Or copy .PFX formatted SSL certificate to desktop and import during installation.</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>
+                    <p>Certificate Requirements:</p>
+                    <ol style="list-style-type: lower-roman;">
+                        <li>
+                            <p>WildCard Certificate issued to *.[domain].com from trusted certificate authority (ie. GoDaddy, Verisign).</p>
+                        </li>
+                        <li>
+                            <p>Certificate FriendlyName ( <i>*.mydomain.com</i> ie: *<i>.iprotech.com</i> ) is required by <MadCap:variable name="Primary.IPRO" /> Web Components.</p>
+                        </li>
+                        <li>
+                            <p>Certificate Subject (ie: *<i>.iprotech.com</i>) is required by UserNotificationWebhookService.</p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <li>OPTIONAL - Apply any Organizational System Prep such (anti-virus, monitoring, etc.).</li>
+            <li>Create internal firewall “allow” rules for ports listed in <MadCap:xref href="#Step">Step 1. System Prep</MadCap:xref>. </li>
+            <li>Set Chrome as default browser:</li>
+            <ol>
+                <li>
+                    <p>Right click the “<b>setup</b>” shortcut on the desktop. </p>
+                </li>
+                <li>
+                    <p>Select “<b>open with</b>” and select “<b>Chrome</b>” </p>
+                </li>
+                <li>
+                    <p>Select the “<b>always use this app</b>” option and click “<b>OK</b>”.  </p>
+                </li>
+                <li>
+                    <p>Close the browser. Do not proceed in the browser at this time.</p>
+                </li>
+            </ol>
+            <li>*Set Outlook as default mail client in registry if Lotus or other Groupwise clients are installed after Office. If Outlook is not detected as the default mail client, the Worker will throw an error on startup. (Setting the default mail client in the Windows UI will only set for 64 bit mail client not the 32 bit outlook mail client).</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>
+                    <p>Path: <i>HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Clients\Mail</i></p>
+                </li>
+                <li>
+                    <p>Key Name: (Default)</p>
+                </li>
+                <li>
+                    <p>Type: REG_SZ</p>
+                </li>
+                <li>
+                    <p>String Value: Microsoft Outlook</p>
+                </li>
+            </ol>
+            <li>Create template from VM.</li>
+            <li>Clone VM template as a new VM as many times as required for infrastructure (one VM for each existing VM).</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>
+                    <p>Minimum <MadCap:variable name="Primary.IPRO" /> for <MadCap:variable name="Primary.Name" /> node requirements (in order of configuration): </p>
+                    <ol style="list-style-type: lower-roman;">
+                        <li>
+                            <p>1 - IIS (may include Auth)</p>
+                        </li>
+                        <li>
+                            <p>1 - ECS</p>
+                        </li>
+                        <li>
+                            <p>1 - EAS</p>
+                        </li>
+                        <li>
+                            <p>1 - EWK</p>
+                        </li>
+                        <li>
+                            <p>1 - JMA</p>
+                        </li>
+                        <li>
+                            <p>1 - IAS</p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <li>Start and log into VMs with Domain account and Join VM to Domain and apply any remaining organizational System Prep.</li>
+            <li>Add Domain Service Account to Local Admin group; RDP group if applicable.</li>
+        </ol>
+        <h2>Step 3. Installation Prep (Upgrade/Migration Only)</h2>
+        <h3>Installation Prep</h3>
+        <ol>
+            <li>
+                <p><b>Ensure all jobs are in a complete status.</b> Jobs must be complete and not paused as they will not be migrated to the new redis database.</p>
+            </li>
+            <li>
+                <p><b>Create VM Checkpoints now.</b>
+                </p>
+            </li>
+            <li>
+                <p><b>Create SQL Database Backups now.</b>
+                </p>
+            </li>
+            <li>
+                <p><b>Upgrade <MadCap:variable name="Primary.IPRO" /> Config Databases</b> using latest available <MadCap:variable name="Primary.IPRO" /> Ease and SQL Generator (available on <a href="https://my.ipro.com/client/products/versions?pId=11&amp;p=IPRO%20E.A.S.E.">my.ipro.com</a>) on <b>pre-existing Web server</b>. Case databases may be upgraded at this time but take longer to upgrade and may be done in parallel with the installation once the new version of <MadCap:variable name="Primary.Name" />web has been installed. The application must be authorized in order to upgrade review databases. <i>Ease will throw an error when loading the environment and will fail to display the review databases if the system is not authorized.</i></p>
+            </li>
+            <li>
+                <p>If setting up a new Auth server - launch the existing Authorization Manager and copy Client ID and Serial Number for use in a later step. Deactivate current <MadCap:variable name="Primary.IPRO" /> Authorization in Authorization Manager and disable the <MadCap:variable name="Primary.IPRO" /> Auth Service in Windows Services. (<i>C:\Program Files\Ipro Tech\IPRO Auth Server\IproAuthManager.exe</i>)</p>
+            </li>
+            <li>
+                <p><b>Application Cutover</b> - Stop all <MadCap:variable name="Primary.IPRO" /> websites in IIS. Close Admin, Controller, Queue Manager and all Worker apps. Stop and disable Windows services on respective component machines in the environment. This will prevent any component on the old system from connecting to the existing databases. If possible, leave the VMs running to maintain access for backing up configuration files (see below). </p>
+            </li>
+            <li>
+                <p>OPTIONAL - Obtain Mount Image Pro activation key that is currently in use. This will be required to re activate Mount Image Pro on a new machine. Deactivate Mount Image Pro license on virtual dongle from "C:\Program Files\GetData\Mount Image Pro v6\LicenseManager.exe" on current Mount image pro machine(File Mounting Server). Use the same key during installation of new mount image pro instance on ECS template. Not supplying a Mount Image Pro key will default to OSFMount as forensic file mounting software. MIP is most commonly enabled for processing .AD1 file types. </p>
+            </li>
+            <li>
+                <p><b>Database cleanup</b> - Using SQL Management Studio or DBquery.exe, make the following updates to the eCapture Config database:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Deactivate current QueueManager, remove current workers, remove references to existing hostnames and remove current component references:</p>
+                        <div class="Code_1">
+                            <p class="Code_1">UPDATE [eCapConfig].[dbo].[QueueManagerRegistry] SET [Active] = 0</p>
+                            <p class="Code_1">DELETE [eCapConfig].[dbo].[WorkerRegistry]</p>
+                            <p class="Code_1">DELETE [eCapConfig].[dbo].[SystemProperties] WHERE FieldName LIKE '%address%'</p>
+                            <p class="Code_1">DELETE&#160;[ADD_DB].[Enterprise].[InstalledComponent]</p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Update DNS/Firewall with new IP address of IIS Host for <MadCap:variable name="Primary.IPRO" /> URL. </p>
+            </li>
+        </ol>
+        <h3>Gather Existing Configuration Values</h3>
+        <p>OPTIONAL - Gather existing configuration values in one place.</p>
+        <ol>
+            <li>
+                <p>The following steps are optional and for convenience. They will not affect the upgrade. The purpose of this step is to organize pertinent information describing the current environment configuration that may be used as reference during setup of the new configuration.</p>
+            </li>
+            <li>
+                <p>Prepare to run BackupExistingConfiguration.ps1 scripts:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>The three scripts below should be copied to each existing machine, either manually or using step “c” below.</p>
+                    </li>
+                    <li>
+                        <p>They are located on the new VM base image at this path - <i>C:\Program Files (x86)\Messaging Architects\Netmail WebAdmin\etc\scripts\setup\Migration\</i></p>
+                        <ol style="list-style-type: lower-roman;">
+                            <li>
+                                <p><b>BackupExistingConfiguration.ps1</b>
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>ConfigBackupUtilities.ps1</b>
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>ConsolidatePertinentBackupData.ps1</b>
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>The Powershell <b>CopyConfigBackupsToOldVMs.ps1</b> can be used to copy the three files to a list a VMs. The script has a “source” parameter that is hardcoded to the Netmail path on the base image, but can be altered to any location by editing the script via Notepad or Powershell ISE.</p>
+                        <ol style="list-style-type: lower-roman;">
+                            <li>
+                                <p>Copy the script to the Web-Auth Node. Navigate to the file’s properties and Unlock the file to prevent permissions issues.</p>
+                            </li>
+                            <li>
+                                <p>Run the script in PowerShell as Administrator.</p>
+                            </li>
+                            <li>
+                                <p>Enter the Windows user (without a domain) and password.</p>
+                            </li>
+                            <li>
+                                <p>Enter the old VM names into the VM list, one at a time, hitting the Enter button each time. When no more VMs are to be entered, do not provide any input and just hit Enter.</p>
+                            </li>
+                            <li>
+                                <p>The files will be copied to the user's \<b>Downloads</b> folder on each of the old machines.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Log in to each of the old machines and execute the <b>BackupExistingConfiguration.ps1</b>.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p style="font-weight: bold;">This step will build a text file in one centralized location that can be used to copy and paste some input values in to the configuration screen during application configuration.</p>
+                    </li>
+                    <li>
+                        <p>Verify the backups exist at the UNC location. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>On one of the old existing VMs, from the Downloads folder where the three .ps1 scripts are located, launch <b>Powershell</b> (in order to view any errors that may be encountered) as Administrator.</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>Execute the <b>ConsolidatePertinentBackupData.ps1</b> using the UNC location of the backup files as the input path.</p>
+                        <ol style="list-style-type: lower-roman;">
+                            <li>
+                                <p>It may be required to install PSini module for Powershell in order for ConsolidatePertinentBackupData.ps1 to succeed. To install PSini run this command in the Powershell console:</p>
+                                <div class="Code_1">
+                                    <p class="Code_1">[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12</p>
+                                    <p class="Code_1">Install-Module PsIni</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>If the old VM environment had more than 1 worker, there may be multiple copies of service_account.txt file - find them and delete all but one.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>This will generate a <b>ConsolidatedBackupData.txt</b> in the UNC path containing relevant configuration data for the environment to be decommissioned.</p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <p><span class="Code_1">#CopyConfigBackupsToOldVMs.ps1</span>
+        </p>
+        <p><span class="Code_1">#Copies scripts from new Vms to Old Vms that will backup pertinent environment values.</span>
+        </p>
+        <p><span class="Code_1">#The old VM environment must be online.</span>
+        </p>
+        <p class="Code_1">#Copy script text below to a .ps1 file and execute in powershell as an administrator on a new VM. This will copy the files from the source VM (where the backup scripts exist and the copy script is executed) to the old VMs (where the backup scripts can be executed from.)</p>
+        <p class="Code_1">&#160;</p>
+        <p class="Code_1"> param (</p>
+        <p class="Code_1">[Parameter(Mandatory = $true)][string]$WindowsUserName,</p>
+        <p class="Code_1">[Parameter(Mandatory = $true)][string]$Password,</p>
+        <p class="Code_1">[Parameter(Mandatory = $true)][string[]]$VMCollection,</p>
+        <p class="Code_1">[Parameter(Mandatory = $false)][string]$SrcFile = "C:\Program Files (x86)\Messaging Architects\Netmail WebAdmin\etc\scripts\setup\Migration\2021.9.2\*"</p>
+        <p class="Code_1">)</p>
+        <p class="Code_1">&#160;</p>
+        <p class="Code_1">&#160;</p>
+        <p class="Code_1">$UserName=$WindowsUserName</p>
+        <p class="Code_1">$secureDomainPassword = ConvertTo-SecureString -String $Password -AsPlainText -Force</p>
+        <p class="Code_1">$domainCreds = New-Object System.Management.Automation.PSCredential($UserName, $<MadCap:annotation MadCap:createDate="2022-07-29T13:36:01.6454520-04:00" MadCap:creator="ltonak" MadCap:initials="LT" MadCap:comment="these 3 lines should be indented - second div style?" MadCap:editor="ltonak" MadCap:editDate="2022-07-29T13:36:16.0952962-04:00">secureDomainPassword)</MadCap:annotation></p>
+        <p class="Code_1">&#160;</p>
+        <p class="Code_1">$Destination = "C:\Users\$UserName\Downloads"</p>
+        <p class="Code_1">&#160;</p>
+        <p class="Code_1">ForEach ($VM in $VMCollection){</p>
+        <p class="Code_1">Write-Host $VM</p>
+        <p class="Code_1"> $Session = New-PSSession -ComputerName $VM -Credential $domainCreds</p>
+        <p class="Code_1">Copy-Item $SrcFile -Destination $Destination -ToSession $Session -force -recurse</p>
+        <p class="Code_1">&#160;</p>
+        <p class="Code_1">}</p>
+        <p class="Code_1">&#160;</p>
+        <h2>Step 4. Application Configuration</h2>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col style="width: 828px;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 15px;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 250px;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 273px;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: -305px;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1" style="color: #ffffff;">Package(s)</th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1" style="color: #ffffff;">Possible number of Node(s)</th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1" style="color: #ffffff;">eCapture only</th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1" style="color: #ffffff;">Review Only</th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1" style="color: #ffffff;"><MadCap:variable name="Primary.Name" />
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">EAS - QC/Controller [<b>eCapture Only</b>]<br /><br /></td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">1..n</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">IIS - Web Server (<MadCap:variable name="Primary.IPRO" /> Authorization + Eclipse Service + <MadCap:variable name="Primary.Name" /> Service + <MadCap:variable name="Primary.Name" /> Web) * ++<br /><br /></td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">1</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">ECS - QM/<MadCap:variable name="Primary.Name" />/FileMounting/Relativity Import/Ease + Redis<br /><br /></td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">1</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">EWK - eCapture Worker<br /><br /></td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">1..n</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">EAS - QC/Controller + Eclipse Admin [Review Only or <MadCap:variable name="Primary.Name" />]]<br /><br /></td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">1..n</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">JMA - Platform Agent (worker)<br /><br /></td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">1..n</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">IAS - Analytics Service + dtSearch [Review Only or <MadCap:variable name="Primary.Name" />]]<br /><br /></td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1" style="text-align: center;">1</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Multi Node Configuration</h3>
+        <p style="font-weight: bold;">Order of Configuration: </p>
+        <ol>
+            <li>
+                <p style="font-weight: bold;">WEB-AUTH</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">ECS</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;"> EAS</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">EWK ( EWK, JMA, and IAS can be configured in parallel. JMA and IAS not required for eCapture-only installations)</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;"> JMA</p>
+            </li>
+            <li>
+                <p style="font-weight: bold;">IAS</p>
+            </li>
+        </ol>
+        <h4>1. Web-Auth Node</h4>
+        <p style="font-weight: bold;">Please do not proceed unless a current checkpoint exists for all virtual machines.</p>
+        <p style="font-weight: bold;">All machines in the new environment will need to be reverted to this checkpoint should any errors be encountered during initial configuration.</p>
+        <p><MadCap:variable name="Primary.IPRO" /> Identity Server, <MadCap:variable name="Primary.IPRO" /> Enterprise Web, <MadCap:variable name="Primary.IPRO" /> Enterpise Service, <MadCap:variable name="Primary.IPRO" /> Permissions service, <MadCap:variable name="Primary.IPRO" /> Configuration Service, <MadCap:variable name="Primary.IPRO" /> Logging Service, <MadCap:variable name="Primary.IPRO" /> AUTH Service*, <MadCap:variable name="Primary.IPRO" /> Platform API, <MadCap:variable name="Primary.IPRO" /> Platform Web, System Events and Commands, User Notifications Webhook Service Configuration:</p>
+        <p>The <MadCap:variable name="Primary.IPRO" /> Web and Auth node can be configured one time within an <MadCap:variable name="Primary.IPRO" /> environment for purposes of hosting the <MadCap:variable name="Primary.IPRO" /> Website, Authorization Service(*optional) and supporting web components.</p>
+        <p>To Start Configuration:</p>
+        <ol>
+            <li>
+                <p>While logged into Windows as the designated service account, click on the “<b>Setup</b>” shortcut on the Desktop to launch the Configuration Wizard.</p>
+            </li>
+            <li>
+                <p>If prompted with a security error, proceed to the webpage anyway: </p>
+                <p>
+                    <img src="../Graphics/VM_Graphics/security_error.png" style="width: 108px;height: 81px;" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the drop down list and select <MadCap:variable name="Primary.IPRO" /> WEB AUTH. click “<b>Start Setup</b>” when ready to proceed.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-212120.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Agree to the End-User License Agreement and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-212244.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the domain service account username and password that is also a member of the local Administrators group. Validate the password by clicking "<b>Verify</b>", then click "<b>Next</b>".</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-212942.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>CFS cluster creation. The <MadCap:variable name="Primary.IPRO" /> WEB AUTH Node will establish a cluster for which other subsequent components will join during configuration to read and pre-populate configuration input data, reducing manual input. The detected IP address will be used as input to join the cluster in subsequent configurations.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220824-002223.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Input the <MadCap:variable name="Primary.IPRO" /> Authorization Client ID and Serial Number for new license activation. To forgo Auth service installation and connect to an existing Authorization server, select “Connect to existing authorization service” and input the IP address of the Auth server node.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-213650.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Configure the <MadCap:variable name="Primary.IPRO" /> Web URL and port, domain service account, <MadCap:variable name="Primary.IPRO" /> administrator account credentials, SSL certificate and Netgovern Web URL (aka Search URL, aka the 8443 one). For new installations this will set the administrator@iprotech.com password to the password entered. For migrations, select “Yes. This is a Migration of an existing installation” and use the current <MadCap:variable name="Primary.IPRO" /> administrator username and password. If an SSL certificate has not been preloaded in IIS on the machine and available by Friendly name, then choose a .pfx file to be loaded and enter the certificate password and friendly name.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220823-221422.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>  Configure the <MadCap:variable name="Primary.IPRO" /><MadCap:variable name="Primary.Name" />  Service (formerly ADD Service, formerly Nucleus) with SSL and active directory domain.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-222541.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Configure Review Web with SSL, Analytics Service and dtSearch Service located on what will be the IAS node. Click "<b>Next</b>."</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-223439.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>For new installations, input the SQL Server name, SQL Administrator username and password. This can be different from the SQL account the application uses. If it is the same account as the application SQL account then the SQL application user and password fields can remain empty. Populate a database prefix value. New databases will be created using the prefix and hard coded suffix values such as Prefix-val_ENT for Enterprise Database, Prefix-val_ECC for eCapture Config database, etc. For Migrations, or pointing to existing databases, select “Advanced DB Mode” and populate the SQL server and database names for each respective database. (These will be written to Consul to be read from later automatically so it only needs to be done once.)</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-224924.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Input the Redis server (ECS Node) host name, and create a new Redis password. Input the three nodes as follows:</p>
+                <ul>
+                    <li>
+                        <p><b>Controller and Eclipse Admin</b> = EAS node hostname</p>
+                    </li>
+                    <li>
+                        <p><b>Queue Manager</b> = ECS Node hostname</p>
+                    </li>
+                    <li>
+                        <p><b>Analytics and dtSearch</b> = IAS Node hostname</p>
+                    </li>
+                    <li>
+                        <p><b>Datacenter</b> will be the name of the Consul Cluster. Consul service and Consul template service are preinstalled on the base image. These services are used to store and write key/value pair data within application config files on servers running Consul service and Consul Template service respectively. The EAS, IAS, and ECS nodes will become a “highly available” server Consul cluster that will be joined by the remaining nodes as clients upon configuration.</p>
+                        <p>
+                            <img src="../Resources/Images/image-20220824-033158.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On the final screen, review all field inputs. Go back and make changes where necessary.</p>
+                <p style="font-weight: bold;">Please do not proceed unless a current checkpoint exists for all virtual machines.</p>
+                <p style="font-weight: bold;">All machines in the new environment will need to be reverted to this checkpoint should any errors be encountered during initial configuration.</p>
+                <p>IF the configuration fails for any reason after the cluster creation step has completed, there is no way to undo the cluster creation without rolling back all machines in the cluster.</p>
+            </li>
+            <li>
+                <p>Click “<b>Proceed</b>” when ready to begin the automated configuration.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220824-033518.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h4>2. ECS&#160;Node</h4>
+        <p><MadCap:variable name="Primary.IPRO" /> eCapture Queue Manager, Integration Service, Redis, File Mounting service , File Upload service Node Configuration:</p>
+        <p>The ECS Node can be configured one time within an <MadCap:variable name="Primary.IPRO" /> environment.</p>
+        <p>To Start Configuration:</p>
+        <ol>
+            <li>
+                <p>While logged into Windows as the designated service account, click on the “<b>Setup</b>” shortcut on the Desktop to launch the Configuration Wizard.</p>
+            </li>
+            <li>
+                <p>Click on the drop down list and select <MadCap:variable name="Primary.IPRO" /> ECS. click “<b>Start Setup</b>” when ready to proceed.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220815-233958.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Agree to the End-User License Agreement and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/image-20220823-223251.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the domain service account username and password that is also a member of the local Administrators group. The domain name is inferred here and does not need to be entered. All other domain account input fields will require the domain (ie. domain\serviceaccount).</p>
+                <p>
+                    <img src="../Resources/Images/image-20220824-005116.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Validate the password by clicking “<b>Verify</b>,” then click “<b>Next</b>.”</p>
+            </li>
+            <li>
+                <p>Connect the ECS node instance to the CFS cluster. Select or enter  the IP address of the machine hosting the CFS cluster (WEB-AUTH)   then click "<b>Next</b>".</p>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p>The ip address of the current node is detected and displayed in the IP Address field.</p>
+                        <p>
+                            <img src="../Resources/Images/image-20220823-225633.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>          Click “<b>Detect</b>” to automatically detect the cluster server node (<MadCap:variable name="Primary.IPRO" />-WEB-AUTH). Select the detected IP address and continue.</p>
+                        <p>
+                            <img src="../Resources/Images/image-20220823-230113.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>If detection fails, manually enter the IP address of the <MadCap:variable name="Primary.IPRO" />-WEB-AUTH node and click “<b>Verify</b>.” When auto detection fails this usually means that the CFS server is in the DMZ and the current node will need to use port 5443 to join the cluster. After the IP Address is entered, once the field loses focus or when the verify button is clicked, the port will be automatically added to the end of the ip address and then the connection validated.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>The Auth service IP and port should populate automatically. This value, like others to follow, will be pulled from the Consul cluster key/value store. Click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/image-20220823-230944.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The Redis connection information should populate automatically. Click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/image-20220823-233315.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The File upload service host name will be auto-detected and the default port can be used.  Enter the Windows Domain account username and password that will be used to run the <MadCap:variable name="Primary.IPRO" /> File Upload Service. Click “<b>Verify</b>” to validate the password, then click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/image-20220823-233607.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p> Input the <MadCap:variable name="Primary.IPRO" /> Administrator username and password. This value is not stored in Consul for security purposes. Click “<b>Next</b>.”( A Mount Image Pro Key may be entered in order to activate MIP for processing .AD1 forensic image files.  OSF mount will be the default forensic file mounting tool if MIP is not activated. Relativity import service is an optional service that is used to push direct exports from <MadCap:variable name="Primary.IPRO" /> Processing to Relativity. The <MadCap:variable name="Primary.IPRO" /> Relativity Import Service (available on my<MadCap:variable name="Primary.IPRO" />) should be installed on the same machine as the Relativity Desktop Client application.)</p>
+                <p>
+                    <img src="../Resources/Images/image-20220823-234755.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Input the eCapture integration directory path. Click “<b>Test</b>” to validate the directory exists. Click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/image-20220823-235838.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Review the summary page for any mistakes and then click “<b>Proceed</b>” when ready to begin the automated configuration.</p>
+                <p>
+                    <img src="../Resources/Images/image-20220824-024356.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h4>3. EAS&#160;Node</h4>
+        <p><MadCap:variable name="Primary.IPRO" /> eCapture Controller and Eclipse Admin Node Configuration:</p>
+        <p>The <MadCap:variable name="Primary.IPRO" /> eCapture Controller and Eclipse Admin node can be configured multiple times within an <MadCap:variable name="Primary.IPRO" /> environment for purposes of managing the eCapture processing queue and administrative <MadCap:variable name="Primary.IPRO" /> Review features.</p>
+        <p>To Start Configuration:</p>
+        <ol>
+            <li>
+                <p>While logged into Windows as the designated service account, click on the “<b>Setup</b>” shortcut on the Desktop to launch the Configuration Wizard.</p>
+            </li>
+            <li>
+                <p>Click on the drop down list and select <MadCap:variable name="Primary.IPRO" /> EAS. click “<b>Start Setup</b>” when ready to proceed.</p>
+                <p>
+                    <img src="../Resources/Images/2.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Agree to the End-User License Agreement and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/3.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the domain service account username and password that is also a member of the local Administrators group. The domain name is inferred here and does not need to be entered. All other domain account input fields will require the domain (ie. domain\serviceaccount).</p>
+                <p>
+                    <img src="../Resources/Images/4.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Validate the password by clicking “<b>Verify</b>,” then click “<b>Next</b>.”</p>
+            </li>
+            <li>
+                <p>Connect the EAS node instance to the CFS cluster. Select or enter  the IP address of the machine hosting the CFS cluster (WEB-AUTH)   then click “<b>Next</b>".</p>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p>The ip address of the current node is detected and displayed in the IP Address field.</p>
+                        <p>
+                            <img src="../Resources/Images/6I.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>          Click “<b>Detect</b>” to automatically detect the cluster server node (<MadCap:variable name="Primary.IPRO" />-WEB-AUTH). Select the detected IP address and continue.</p>
+                        <p>
+                            <img src="../Resources/Images/6II.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>If detection fails, manually enter the IP address of the <MadCap:variable name="Primary.IPRO" />-WEB-AUTH node and click “<b>Verify</b>.” When auto detection fails this usually means that the CFS server is in the DMZ and the current node will need to use port 5443 to join the cluster. One the IP Address is     entered when the field loses focus or when the verify button is clicked, the port will be added to the end of the ip address and then the connection validated.</p>
+                        <p>
+                            <img src="../Resources/Images/6III.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Choose Full or limited Controller Input the Windows Domain account under which the Ecapture Controller will run. During the configuration a new console session will be started under the account that is designated in this field to run the eCapture worker. Database information will populate automatically.</p>
+                <p>
+                    <img src="../Resources/Images/7.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>If installing Review Admin, Click “<b>Install Review Admin</b>” and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/8.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Review the input summary page and correct any mistakes. Click “<b>Proceed</b>” when ready to begin the automated configuration.</p>
+            </li>
+        </ol>
+        <h4>4. IAS&#160;Node</h4>
+        <p><MadCap:variable name="Primary.IPRO" /> Analyitcs and dtSearch service configuration:</p>
+        <p>The <MadCap:variable name="Primary.IPRO" /> Analyitcs and dtSearch service node can be configured one time within an <MadCap:variable name="Primary.IPRO" /> environment for purposes of <MadCap:variable name="Primary.IPRO" /> analytics and review searching capabilities.</p>
+        <p>To Start Configuration:</p>
+        <ol>
+            <li>
+                <p>While logged into Windows as the designated service account, click on the “<b>Setup</b>” shortcut on the Desktop to launch the Configuration Wizard.</p>
+            </li>
+            <li>
+                <p>Click on the drop down list and select <MadCap:variable name="Primary.IPRO" /> IAS. click “<b>Start Setup</b>” when ready to proceed.</p>
+                <p>
+                    <img src="../Resources/Images/5.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Agree to the End-User License Agreement and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/6.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the domain service account username and password that is also a member of the local Administrators group. The domain name is inferred here and does not need to be entered. All other domain account input fields will require the domain (ie. domain\serviceaccount).</p>
+                <p>
+                    <img src="../Resources/Images/9.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Validate the password by clicking “<b>Verify</b>,” then click “<b>Next</b>.”</p>
+            </li>
+            <li>
+                <p>Connect the IAS node instance to the CFS cluster. Select or enter  the IP address of the machine hosting the CFS cluster (WEB-AUTH)   then click “<b>Next</b>".</p>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p>The ip address of the current node is detected and displayed in the IP Address field.</p>
+                        <p>
+                            <img src="../Resources/Images/6I1.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>       Click “<b>Detect</b>” to automatically detect the cluster server node (<MadCap:variable name="Primary.IPRO" />-WEB-AUTH). Select the detected IP address and continue.</p>
+                        <p>
+                            <img src="../Resources/Images/6II1.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>If detection fails, manually enter the IP address of the <MadCap:variable name="Primary.IPRO" />-WEB-AUTH node and click “<b>Verify</b>.” When auto detection fails this usually means that the CFS server is in the DMZ and the current node will need to use port 5443 to join the cluster. After the IP Address is entered, once the field loses focus or when the verify button is clicked, the port will be added to the end of the ip address and then the connection validated.</p>
+                        <p>
+                            <img src="../Resources/Images/6III1.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>The dtSearch connection information will populate automatically. Click “<b>Verify</b>” to validate the service account password. Click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/10.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The Analytics service connection information will populate automatically. Click “<b>Verify</b>” to validate the service account password. Enter the <MadCap:variable name="Primary.IPRO" /> Administrator username and password. This information is not stored in Consul. Click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/11.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Review the input summary page. Go back and correct any mistakes. Click “<b>Proceed</b>” when ready to continue to the automated configuration.</p>
+                <p>
+                    <img src="../Resources/Images/12.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h4>5. JMA Node</h4>
+        <p>Job Manager Agent Configuration:</p>
+        <p>The <MadCap:variable name="Primary.IPRO" /> Platform Job Manager Agent node can be configured multiple times within an <MadCap:variable name="Primary.IPRO" /> environment for scaling purposes. Job Manager agent performs work for Review and Batch Review related tasks.</p>
+        <p>To Start Configuration:</p>
+        <ol>
+            <li>
+                <p>While logged into Windows as the designated service account, click on the “<b>Setup</b>” shortcut on the Desktop to launch the Configuration Wizard.</p>
+            </li>
+            <li>
+                <p>Click on the drop down list and select <MadCap:variable name="Primary.IPRO" /> JMA. click “<b>Start Setup</b>” when ready to proceed.</p>
+                <p>
+                    <img src="../Resources/Images/13.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Agree to the End-User License Agreement and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/14.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the domain service account username and password that is also a member of the local Administrators group. The domain name is inferred here and does not need to be entered. All other domain account input fields will require the domain (ie. domain\serviceaccount).</p>
+                <p>
+                    <img src="../Resources/Images/15.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Validate the password by clicking “<b>Verify</b>,” then click “<b>Next</b>.”</p>
+            </li>
+            <li>
+                <p>Connect the JMA node instance to the CFS cluster. Select or enter  the IP address of the machine hosting the CFS cluster (WEB-AUTH)   then click “<b>Next</b>".</p>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p>The ip address of the current node is detected and displayed in the IP Address field.</p>
+                        <p>
+                            <img src="../Resources/Images/6I2.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p> Click “<b>Detect</b>” to automatically detect the cluster server node (<MadCap:variable name="Primary.IPRO" />-WEB-AUTH). Select the detected IP address and continue.</p>
+                        <p>
+                            <img src="../Resources/Images/6II2.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>If detection fails, manually enter the IP address of the <MadCap:variable name="Primary.IPRO" />-WEB-AUTH node and click “<b>Verify</b>.” When auto detection fails this usually means that the CFS server is in the DMZ and the current node will need to use port 5443 to join the cluster. After the IP Address is entered, once the field loses focus or when the verify button is clicked, the port will be added to the end of the ip address and then the connection validated.</p>
+                        <p>
+                            <img src="../Resources/Images/6III2.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Enter the Windows Domain account username and password. Click “<b>Verify</b>” to validate the domain account. Enter the <MadCap:variable name="Primary.IPRO" /> Administrator username and password (administrator@iprotech.com). Click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/6III3.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Review the input summary page. Go back and correct any mistakes if necessary. Click “<b>Proceed</b>” when ready to begin the automated configuration.</p>
+                <p>
+                    <img src="../Resources/Images/16.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h4>6. Worker Node</h4>
+        <p>Worker Configuration:</p>
+        <p>The <MadCap:variable name="Primary.IPRO" /> eCapture worker node can be configured multiple times within an <MadCap:variable name="Primary.IPRO" /> environment. Queue Manager can delegate processing and <MadCap:variable name="Primary.Name" /> tasks to all workers configured within the environment, scaling processing capability.</p>
+        <p>To Start Confiuration:</p>
+        <ol>
+            <li>
+                <p>While logged into Windows as the designated service account, click on the “<b>Setup</b>” shortcut on the Desktop to launch the Configuration Wizard.</p>
+            </li>
+            <li>
+                <p>Click on the drop down list and select <MadCap:variable name="Primary.IPRO" /> EWK. click “<b>Start Setup</b>” when ready to proceed.</p>
+                <p>
+                    <img src="../Resources/Images/17.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Agree to the End-User License Agreement and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/18.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the domain service account username and password that is also a member of the local Administrators group. The domain name is inferred here and does not need to be entered. All other domain account input fields will require the domain (ie. domain\serviceaccount).</p>
+                <p>
+                    <img src="../Resources/Images/19.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Validate the password by clicking “<b>Verify</b>,” then click “<b>Next</b>.”</p>
+            </li>
+            <li>
+                <p>Connect the EWK node instance to the CFS cluster. Select or enter  the IP address of the machine hosting the CFS cluster (WEB-AUTH)   then click “<b>Next</b>.”</p>
+                <ol style="list-style-type: lower-roman;">
+                    <li>
+                        <p>The ip address of the current (<MadCap:variable name="Primary.IPRO" />-EWK) worker node is detected and displayed in the IP Address field.</p>
+                        <p>
+                            <img src="../Resources/Images/6I3.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>  Click “<b>Detect</b>” to automatically detect the cluster server node (<MadCap:variable name="Primary.IPRO" />-WEB-AUTH). Select the detected IP address and continue.</p>
+                        <p>
+                            <img src="../Resources/Images/6II3.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>If detection fails, manually enter the IP address of the <MadCap:variable name="Primary.IPRO" />-WEB-AUTH node and click “<b>Verify</b>.” When auto detection fails this usually means that the CFS server is in the DMZ and will need to use port 5443 to join the cluster. After the IP Address is entered, once the field loses focus or when the verify button is clicked, the port will be added to the end of the ip address and then the connection validated.</p>
+                        <p>
+                            <img src="../Resources/Images/6III4.png" class="Thumbnail" />
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Once cluster connection has been established, the SQL database connection information will be loaded  from the cluster instance. Click “<b>Next</b>.”  Once the fields have finished populating.</p>
+                <p>
+                    <img src="../Resources/Images/20.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Review the Configuration Summary. Find and fix any mistakes that are visible on the summary page. Click “<b>Proceed</b>” to begin the application configuration.</p>
+                <p>
+                    <img src="../Resources/Images/21.png" class="Thumbnail" />
+                </p>
+                <p>** If inputs are not detected in the Consul template it will need to be entered manually. A problem may be present if the inputs cannot be retrieved from Consul.</p>
+            </li>
+        </ol>
+        <h4>StandAlone AUTH&#160;Server Configuration (<MadCap:variable name="Primary.IPRO" />&#160;AUTH&#160;ONLY)</h4>
+        <p>To Start Configuration:</p>
+        <ol>
+            <li>
+                <p>While logged into Windows as the designated service account, click on the “<b>Setup</b>” shortcut on the Desktop to launch the Configuration Wizard. Click on the drop down list and select <MadCap:variable name="Primary.IPRO" /> AUTH ONLY. Click “<b>Start Setup</b>” when ready to proceed.</p>
+                <p>
+                    <img src="../Resources/Images/1.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Agree to the End-User License Agreement and click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/22.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the domain service account username and password that is also a member of the local Administrators group.Validate the password by clicking “<b>Verify</b>,” then click “<b>Next</b>.”</p>
+                <p>
+                    <img src="../Resources/Images/23.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click “<b>Next</b>” on Cluster Creation page</p>
+                <p>
+                    <img src="../Resources/Images/24.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Enter Client ID and Serial Number for Auth Server. Enter Consul Template Service Account  and Password. Click “<b>Verify</b>” to validate password and click “<b>Next</b>”</p>
+                <p>
+                    <img src="../Resources/Images/25.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Review the Configuration Summary. Find and fix any mistakes that are visible on the summary page. Click “<b>Proceed</b>” to begin the application configuration.</p>
+            </li>
+            <li>
+                <p>Configuration completes successfully.</p>
+                <p>
+                    <img src="../Resources/Images/26.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2>Step 5. Upgrade/Migration - Post-Installation Manual Steps</h2>
+        <h3>SQL Scripts</h3>
+        <ol>
+            <li>
+                <p>After all applications are configured, execute the following script against the PLAT database:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p>This will update any existing links on the Job Manager UI to point to the new hostnames.</p>
+                    </li>
+                    <li>
+                        <p>&#160;</p>
+                        <div class="Code_1">
+                            <p class="Code_1"><span style="font-family: Arial; font-weight: bold; color: #000000;">UPDATE</span> [&lt;database_name&gt;].[JobManager].[ScheduledJob]</p>
+                            <p class="Code_1"><span style="font-family: Arial; font-weight: bold; color: #000000;">SET</span> ScheduleConfigUri = <span style="font-family: Arial; font-weight: bold; color: #000000;">REPLACE</span>(ScheduleConfigUri, <span style="color: #006400;">'<span style="color: #000000;">&lt;orig_host_name_and_port&gt;'</span></span><span style="color: #000000;">, </span><span style="color: #006400;"><span style="color: #000000;">'&lt;new_host_name_and_port&gt;'</span></span>)</p>
+                            <p class="Code_1"><span style="font-family: Arial; font-weight: bold; color: #000000;">WHERE</span> ScheduleConfigUri IS NOT <span style="font-family: Arial; color: #000000;">NULL</span></p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h3>Old VM&#160;Maintenance</h3>
+        <ol>
+            <li>
+                <p>If the old VMs were left online, they may be shut down to free up resources for the new VMs.</p>
+            </li>
+            <li>
+                <p>Furthermore, after validating the new environment is working successfully, the old VMs may be decommissioned.</p>
+            </li>
+        </ol>
+    </body>
+</html>

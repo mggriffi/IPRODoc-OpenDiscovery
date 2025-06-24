@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>OPEN DISCOVERY Release Notes 2023.11.5</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>OPEN DISCOVERY Release Notes 2023.11.5</h1>
+        <p>The new release of OPEN DISCOVERY focuses on the features you have been asking for. IPRO is committed to an ongoing balance between innovation and meeting customer needs.</p>
+        <p>Schedule your upgrade with <a href="https://iprotech.atlassian.net/servicedesk/customer/portal/1/group/1/create/42">IPRO Support</a> today!</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0" MadCap:conditions="Primary.Blocked">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: This release is currently only available for IPRO Cloud. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>New Features</h2>
+        <p><b>Chat Help</b> –Introducing our new in-app assistance tool to OPEN DISCOVERY! Now users can get help right from within the application. With this new feature, you can easily get access to our help documentation and create a support request without leaving the application.</p>
+        <p>
+            <img src="InappTool.png" class="Thumbnail" />
+        </p>
+        <h3>Review</h3>
+        <p><b>New LIVE EDA Promotion Fields</b> - We’ve added new promotion fields for Document Tags, Promotion Name, Protected Label and Connector Name to improve when promoting data from LIVE EDA. This new feature provides a streamlined workflow to make it easier for users to find and\or reconcile documents in Review. The following new fields will be available when using LIVE EDA v. 6.6.3 Release and can be added and mapped manually for existing cases.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>EDAPROMOTIONNAME (the user supplied name given to the data set at time of promotion)</p>
+            </li>
+            <li>
+                <p>	EDADOCTAGS (any document tags applied in Live EDA prior to promotion)</p>
+            </li>
+            <li>
+                <p>EDACONNECTORNAME (the source connector used to gather the data for promotion)</p>
+            </li>
+            <li>
+                <p>EDAPROTECTIONLABEL (included for data using MIP (Microsoft Information Protection)</p>
+            </li>
+        </ul>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/Product Resources/LEDALabels.png" class="Thumbnail" />
+        </p>
+        <p><b>New Page Count Field</b> – “System Page Count” is now available to apply to your document grid or coding form. This new field provides the user with the ability to see the total number of pages for document images created from mass imaging, tiff on the fly or through importing.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/Product Resources/SystemPageCount.png" class="Thumbnail" />
+        </p>
+        <p><b>Analytics Clustering Improvement</b> – Clustering updated to improve performance and to enable the support of larger data sets. Updates also include data handling and optimization designs to reduce processing failures. Support for larger volumes and sets over 100,000 documents.</p>
+        <h3>Processing</h3>
+        <p><b>Job Manager Improvements</b> - Job Manager now offers an improved user experience with the introduction of two new features in the Job Details view.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>	A new ‘Overall Progress’ report has been added to the bottom left of the window, providing an up-to-date view of the number of tasks in each status.</p>
+            </li>
+            <li>
+                <p>Task Filter has been added in the top right of the window, enabling users to quickly filter tasks based on their status.</p>
+                <p>
+                    <img src="../../Graphics/ADD_Review_Graphics/Product Resources/TaskDetails.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <p><b>IPRO-Q Compatibility</b> - IPRO-Q is now updated and fully compatible with Relativity Server 2022 Patch 3.</p>
+        <h2>Change Request</h2>
+        <p><b>Case Creation Template Update – Optimization Scope Saved Search</b>
+        </p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Added “File Extension” contains xls to be automatically pre-rendered to increase review speed and hit highlighting experience for users viewing excel type documents.</p>
+                <p>
+                    <img src="../../Graphics/New Releases/FileOptimization.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <h2>Resolved Issues</h2>
+        <h3>Review</h3>
+        <p><b>AR-14327</b> – Improved the look of large redactions when printing to PDF to have the redaction text adjust to the size of the redaction.</p>
+        <p><b>AR-181745</b>- Addressed a display issue for PDF files containing charts to allow for the text labels to be readable. *PDF files will need to be cleaned up and re-optimized to properly render.</p>
+        <p><b>AR-18174</b> – Addressed a rendering issue for PDF files containing underlying text layers to display on top of the web viewer causing overlapping text. *PDF files will need to be cleaned up and re-optimized to properly render.</p>
+        <p><b>AR-18714</b> – Fixed an issue with Document Tag Groups not sorting properly within the document grid.</p>
+        <p><b>AR-13378</b> – Fixed an issue viewing multi-page images in the image viewer when imported from .OPT load file.</p>
+        <p><b>AR-17597</b> – Improvements to Near-Duplicate comparison tool were added to ignore special inline and carrot characters for comparing text.</p>
+        <p><b>AR-17585</b> – Improved performance and handling of persistent hit highlighting for excel and word documents within the native viewer.</p>
+        <p><b>AR-19178</b> – Fixed an issue displaying JPG and TFF images within Image Viewer for users using Firefox.</p>
+        <p><b>AR-11165</b> – Performance improvements to “Batch Check In” when a batch contains many documents (500+).</p>
+        <p><b>AR-19342</b>– Emails would display in Web Viewer in UTC time not adhering to the time zone offset value. This has been corrected to display times appropriately as configured. (Note: This is only applied to documents optimized post upgrade. If you want to have the proper timezone offset applied to existing documents, you will need to re-optimize them.)</p>
+        <h3>Search</h3>
+        <p><b>AR-9539</b> – Using Advanced or Visual Search to search for “Batch Assigned To” will now return search results.</p>
+        <p><b>AR-15461</b> – Updated //TEXT contains search type to longer cause the review application to crash while navigating through documents. This fix is available in 2023.11.3 and up.</p>
+        <p><b>AR-18307 </b>– Improved Advanced Search to error when incorrect search syntax is used instead of causing the application to become unresponsive.</p>
+        <h3>Import</h3>
+        <p><b>AR-474</b> – Improved importing of redactions to allow two redaction categories with the same name \ different category IDs to be used when importing data to avoid import failure. The first redaction category ID will now be imported, while a new error message will alert the user to the duplicate redaction category existence after data has completed uploading.</p>
+        <p><b>AR-18229</b> – Updated redaction imports from DLF file to look at existing redaction name instead of ID to allow for correct import.</p>
+        <p><b>AR-18266</b> – Updated redaction imports to import if the redaction category or ID does not exist in the case.</p>
+        <p><b>AR-8633</b> – New error messaging included when importing redactions using a DLF that have invalid image coordinates. The import will continue to load, fail import, but now provide an error message to the user in dlf.err file.</p>
+        <h3>Export</h3>
+        <p><b>AR-5781</b> - 8-bit color images imported into Review would be handled as grayscale when exported to PDF. Logic has been added to determine the source and handle correctly.</p>
+        <p><b>AR-17928 </b>- Improved performance when validating a large set of documents for Export/Production.</p>
+        <h3>Processing</h3>
+        <p><b>AP-5733</b> – File type filter settings could display unselected types when an .INI was used during case creation. This has been resolved to properly display the selected file types and provide better feedback reporting of file types selected in summary view.</p>
+        <p><b>AP-5682</b> – In some instances, an error could be encountered with long file paths. Additional logic has been added to handle this scenario.</p>
+        <p><b>AP-5903</b> - In certain rare scenarios long file path handling could be unsuccessful and not provide detail that file extract was not successful. Improvements have been made to account for more situations where the case directory and\or data file paths were exceedingly long. In addition jobs will not be able to start if pathing exceeds these limitations.</p>
+        <h3>Reporting</h3>
+        <p><b>AR-16908 &amp;</b> <b>AR-16269</b> – Case Data Summary report is updated to dispense reporting results to grid and graph chart.</p>
+        <p><b>AR-17592</b> – Processing Case Storage Report &amp; Review Case Storage Report is updated to dispense reporting results to grid and graph chart.</p>
+        <h3>Administration</h3>
+        <p><b>AR-3476</b> – Additional clean-up was added for empty temporary folders created when viewing PNG files.</p>
+        <p><b>AR–17197 &amp; AR-11219</b> – Updated Permissions Group to allow more than 200+ cases to be assigned to a group.</p>
+        <p><b>AR-13658 </b>- Improved handling for Analytics Clustering when large files would cause the job to fail.</p>
+        <p><b>AR-13261</b> – Updated System Has Native field to populate accurately when importing documents from Admin Desktop.</p>
+        <p><b>AR-18159</b> – Job Manager updated to cancel Analytics Clusters properly when a user selects to cancel job.</p>
+        <p><b>AR-10791</b> – Updated Job Manager Agent to properly handle importing large amount of text into a case.</p>
+    </body>
+</html>

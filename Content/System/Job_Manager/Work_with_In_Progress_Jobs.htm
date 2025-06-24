@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('..\..\Resources\MasterPages\Admin_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Work with In Progress Jobs</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Work with In Progress Jobs</h1>
+        <p>When a job in <MadCap:variable name="Primary.Name" /> is currently processing, paused, or queued up to be processed, it appears in the <b>In Progress</b> tab in the Job Manager. To view active or queued jobs, navigate to the Job Manager by proceeding through the steps described in <a href="Overview_Job_Manager.htm#Open2">Open the Job Manager</a>.</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/JM_In_Progress_Jobs_1.png" class="Thumbnail" />
+        </p>
+        <p>With the Job Manager open, ensure  the <b>In Progress</b> tab is selected in the top-left corner of the page. All active jobs that are currently processing appear in the Active Jobs section. All pending jobs  appear in the Up Next section, within a grid. The Up Next grid displays information about each pending job, including:</p>
+        <ul class="BulletListBody">
+            <li>Type </li>
+            <li>Case Name</li>
+            <li>Date Submitted</li>
+            <li>Submitted By</li>
+            <li>Status </li>
+            <li>Progress</li>
+            <li>Priority</li>
+        </ul>
+        <h3>Rearrange Job Priority</h3>
+        <p> If you would like to rearrange the order in which pending jobs are processed, you can do so in a number of ways. The <b>Priority</b> column in the job grid indicates the order in which each job will be picked up by the Job Manager agents. To rearrange the job order, do one of the following:</p>
+        <ul>
+            <li>
+                <p>To  move a job to a specific location in the priority list, click the job and drag it up or down to reorder it in the list.</p>
+            </li>
+            <li>
+                <p>To move a specific job to the bottom of the priority list, select the <img src="../../Graphics/System_Graphics/btn_kabob_icon.png" /> icon and click <b>Move to Bottom</b>. The job appears at the bottom of the list and is processed last.</p>
+            </li>
+            <li>
+                <p>To move a specific job to the top of the priority list, select the <img src="../../Graphics/System_Graphics/btn_kabob_icon.png" /> icon and click <b>Process Next</b>. The job appears at the top of the list and is processed as soon as the next Job Manager agent becomes available.</p>
+            </li>
+            <li>
+                <p>To remove a specific job from the priority list, select the icon <img src="../../Graphics/System_Graphics/btn_kabob_icon.png" /> and click <b>Cancel Job</b>. Then confirm you would like to cancel the job by selecting <b>Yes</b> in the confirmation dialog box that opens.</p>
+            </li>
+        </ul>
+        <h3>Sort the Jobs Grid</h3>
+        <p>Additionally you can sort the list of queued jobs alphanumerically by selecting the column head in the grid whose contents you would like to sort. Clicking the   Submitted By column, for instance, will show all queued jobs in alphabetical order based on the names of the users who submitted the jobs.</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/btn_Submitted_By_Up_1.png" class="Thumbnail" />
+        </p>
+        <p> If you click the column head once more, all jobs display in reverse-alphabetical order.</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/btn_Submitted_By_Down.png" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p>
+                            <img src="../../Resources/Images/myipro_tip.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Tip: If you would like to rearrange the order in which pending jobs are processed, you can do so by selecting the <b>Priority</b> column head, which sorts jobs based on their priority order. You can then click on a job and drag it up or down to reorder it in the list.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Pause and Resume Jobs</h3>
+        <p>If need be, you can pause an active job and return to it later. Doing so transfers the job from the Active Jobs list to the Up Next section of the Job Manager. The job remains paused indefinitely, and will not complete until you manually resume it. When resumed, the job continues where it left off.</p>
+        <ul class="BulletListBody">
+            <li>To pause an active job, click the <img src="../../Resources/Images/Icons/Pause_Job.png" class="ReduceButtonSize" /> icon on the right side of the job entry. The job moves from the Active Jobs list to the Up Next section. </li>
+            <li>To resume a paused job, click the <img src="../../Resources/Images/Icons/Resume_Job_Play_Icon.png" class="ReduceButtonSize" /> icon on the right side of the job entry. The job moves from the Up Next list to the Active Jobs section and continues processing where it left off.</li>
+        </ul>
+        <h3>Filter the Jobs Grid</h3>
+        <p>The Job Manager provides filtering capabilities to help you locate the specific jobs you need. Review the information below to learn more about working with filters.</p>
+        <ul>
+            <li>
+                <p>When you apply a filter, the chip associated with the filter turns blue to indicate that it has been applied. Additionally, a number displays on the chip that represents the number of parameters configured within that filter. In the example below, two job types have been selected and applied. As such, the <b>Job Type</b> filter card has turned blue and displays +2 beside the name.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/JM_Filter_JobType_2_Items.png" />
+                </p>
+            </li>
+            <li>
+                <p>You can apply more than one filter at a time. For instance, you can use the Job Type filter to search exclusively for Print to PDF jobs, while using the Case filter to locate these jobs within a specific case. The combination of filters provides you with a more fine-grained search experience. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">This is particularly helpful when working with hundreds or thousands of jobs.</MadCap:conditionalText></p>
+            </li>
+            <li>
+                <p>For most filter options, a <b>Select All</b> button is available that allows you to select every parameter with a single click.  Once all items are selected, you can then deselect any unneeded items. For instance, if you would like to include most job types in your filter, you can save time by clicking the checkbox for <b>Select All</b>, then unchecking any of the job types you would like to exclude.</p>
+            </li>
+            <li>
+                <p>You can set how many jobs you would like displayed in the grid by using the <b>Show Jobs</b> dropdown. Options include showing 5, 10, 20, 50, and 100 jobs.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/JM_Filter_ShowJobs_Dropdown_InProgress.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ul>
+        <p>The table below describes the filtering options available on the <b>In Progress</b> tab of the Job Manager.</p>
+        <table MadCap:targetName="SD_FilteringOptions" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 659px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Option</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Job Type</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Use this filter to specify which job types to include in the Jobs grid. Select the checkbox beside a job type to include all jobs of that type in the grid. For instance, if you select the checkbox beside Import and Keyword List, only Import and Keyword List jobs will appear in the grid.</p>
+                        <p class="TableText">Click the <b>Apply</b> button to apply the filter options you selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Case</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">You can use this filter to specify which cases to include in the Jobs grid. Select the checkbox beside a case to include jobs associated with that case in the grid. For instance, if there are five cases available, and you select the checkbox beside Case 1, only jobs associated with Case 1 will display in the grid.</p>
+                        <p class="TableText">Click the <b>Apply</b> button to apply the filter options you selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText" style="font-weight: normal;">Date Submitted</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This filter displays jobs that were submitted on a specific date or within a specific date range. Choose from the options below:</p>
+                        <ul>
+                            <li>
+                                <p class="TableText">By Date: If you would like to show jobs submitted on a specific date, use the <b>By Date</b> option. On the calendar popup that appears, select the date needed. Any jobs submitted on a different date are excluded from the grid.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">By Date Range:  If you would like to show jobs submitted within a specific date range, use the <b>By Date Range</b> option. On the calendar popup that appears, select the start date needed. A blue circle highlights the selected day. Next, choose an end date for the range. The calendar popup closes and the range is applied. Any jobs submitted outside of that date range are excluded from the grid.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Submitted By</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> You can use this filter to display jobs submitted by specific users. Select the checkbox beside a user to include jobs submitted by that user in the grid. Any jobs submitted by other users are excluded. </p>
+                        <p class="TableText">Click the <b>Apply</b> button to apply the filter options you selected.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="View"></a>View Job Details</h3>
+        <p>You can learn more about a job by clicking on it from the grid. The <b>Job Details</b> page opens, displaying information about the selected job. </p>
+        <p> <img src="../../Graphics/ADD_Review_Graphics/Product Resources/JobDetails.png" class="Thumbnail" /></p>
+        <p>The Job Details page provides overview information about the job, as well as submission details, a list of tasks completed, and any errors that may have been encountered. Review the items below to learn more about the information included on the Job Details page:</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: You can click the <b>Refresh Job</b> button, located in the top-right corner, to update the details page so that it displays the latest information about the job.</p>
+                        <p class="Note">
+                            <img src="../../Graphics/System_Graphics/btn_Refresh_Job.png" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Job Overview</p>
+        <p>The Job Overview section provides high-level details about certain key components of the job, including job status, progress, and the number of completed pages <MadCap:annotation MadCap:createDate="2021-03-14T20:41:35.9803923-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Double check" MadCap:editor="mcohen" MadCap:editDate="2021-03-14T20:41:46.9341837-07:00">(if running a Print to PDF job).</MadCap:annotation></p>
+        <table class="TableStyle-ADD_Help_Tables" style="margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Detail</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Job Status </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> Indicates whether the job is active, pending, paused, or completed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Progress </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> Shows the number of documents processed out of the full set.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Completed Pages</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> Indicates the number of pages that have been completed when running <MadCap:annotation MadCap:createDate="2021-03-03T19:28:42.1331892-07:00" MadCap:creator="mcohen" MadCap:initials="MC" MadCap:comment="Note about this?" MadCap:editor="mcohen" MadCap:editDate="2021-03-03T19:28:46.7435978-07:00">Print to PDF jobs</MadCap:annotation>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Submission Details</p>
+        <p>In the Submission Details section, you can view information about who submitted the job, the date it was submitted for processing, the date when it finished processing, and the amount of time taken for the job to complete.</p>
+        <table class="TableStyle-ADD_Help_Tables" style="margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" MadCap:conditions="" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Detail</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Date Submitted </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> The date the job was created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Date Completed</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> The date the job finished processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Submitted By </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> The name of the user who created the job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Time Elapsed </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> The amount of time taken for the job to process.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Tasks</p>
+        <p>The <b>Tasks</b> section details the various steps taken to complete the job. For each task associated with a particular job, this tab reports the task description, status, progress, Agent, the number of retries, and the time elapsed. </p>
+        <ul class="BulletListBody">
+            <li>
+                <p>	A ‘Overall Progress’ report is located at the bottom left of the window, providing an up-to-date view of the number of tasks in each status.</p>
+            </li>
+            <li>
+                <p>Tasks can be quickly filtered based on their status from the top right of the window.</p>
+            </li>
+        </ul>
+        <p>If a task fails for any reason, an indication of this failure appears in the Status column. The <b>Retry All Failed Tasks</b> button becomes enabled. Click this button to rerun all failed tasks. The Retries column records the number of times tasks have been retried.</p>
+        <p>Errors</p>
+        <p>The <b>Errors</b> section displays any errors associated with the job. The Errors grid details the Task ID associated with the error, the error type, and the error message. Hover your mouse over the error message to view a tooltip that displays more information about the error. </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p>
+                            <img src="../../Resources/Images/myipro_tip.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Tip: To view all information about the error, download the job's log file.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>  If no errors are registered during the processing of the job, this tab remains empty.</p>
+        <p>To download a log file associated with the job, click the <b>Download Log</b> button in the top-right corner of the details page.</p>
+        <p>
+            <img src="../../Graphics/System_Graphics/btn_Download_Log.png" class="Thumbnail" />
+        </p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: To download the log file, ensure that you have a text editor installed on your machine that can open .json files.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Overview_Job_Manager.htm">Overview: Job Manager</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Completed_Jobs.htm">Work with Completed Jobs</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Work_with_Scheduled_Jobs.htm">Work with Scheduled Jobs</MadCap:xref>
+        </p>
+    </body>
+</html>

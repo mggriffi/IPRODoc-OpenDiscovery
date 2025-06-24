@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\..\..\Resources\MasterPages\Eclipse_MP.flmsp');" MadCap:conditions="Primary.Eclipse">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Define IPRO Analytics Clusters</title>
+        <link href="../../../../Resources/Stylesheets/Admin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Define IPRO Analytics Clusters</h1>
+        <p>Clustering is a means of grouping conceptually similar documents together in a tree-type hierarchy. Eclipse automatically applies a descriptive title to each cluster of documents without requiring user knowledge or input within the data set. </p>
+        <ul class="BulletListBody">
+            <li>	Review Prioritization by Topics - You can use the Concept Wheel or Concept tree to identify and tag high and low priority concepts within the data set.  This can then be used when batching documents for review.</li>
+            <li>	Batch by Topic Review - You can set up batch review that is organized by conceptual topics to allow for documents containing conceptually similar text to be reviewed by one reviewer all at the same time, providing for faster, more consistent review decisions. For more information on creating review passes and batches, see <MadCap:xref href="../../Review_Process_Management/Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>.</li>
+        </ul>
+        <p><span class="BoldItalic"><img src="../../../../Resources/Images/RevSmallVideo1.png" alt="" style="border: none;" border="0"></img></span>
+        </p>
+        <p class="BodyText"><span class="BoldItalic"><MadCap:toggler targets="t1">Click 
+ here to watch the Clusters video</MadCap:toggler></span>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://vimeo.com/273772205" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <h2><a name="Before_You_Begin_IA"></a>Before You Begin</h2>
+        <p class="BodyText">Planning will bring you the greatest success in defining <MadCap:variable name="Primary.IPRO" /> Analytics for each case. To familiarize yourself with needed information and/or available options, “walk through” the <MadCap:variable name="Primary.IPRO" /> Analytics configuration function as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">You need to understand your case data, case documents, and reviewer tasks. For example, review cases and discuss with reviewers the types of clusters and categories that will assist them as they do their jobs.</p>
+            </li>
+            <li>
+                <p class="BodyText">For categories: If an appropriate analytics index has not been created, complete <MadCap:xref href="Create_and_Manage_Search_IndexesIA.htm">Create and Manage Search Indexes</MadCap:xref>.</p>
+                <ol>
+                    <li>
+                        <p class="BodyText">Determine needed <b>category sets</b>. Sets are distinguished by the number of allowed documents, similarity score, and/or which search is to be affiliated with the category set. For example, you may have the category set “Energy Issues.”</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Determine needed <b>categories</b>, that is, titles that represent the topics users will need to find in <MadCap:variable name="Primary.IPRO" /> Eclipse. Categories should be based on specific topics. For example, you may have categories of “Gas,” “Nuclear,” “Solar,” and so on.</p>
+                    </li>
+                    <li>
+                        <p class="BodyText">Identify <b>examples</b> of content that exemplify the categories you create. Examples may be case documents, document text, and/or other content.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and log in as a user who is a member of the Super Admin group, then select each command from the <MadCap:variable name="Primary.IPRO" /> Analytics menu that you will be using. Review the configuration screens and plan your approach.</p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" cellspacing="0" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: Some procedures require that you work in both <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and <MadCap:variable name="Primary.IPRO" /> Eclipse (web).</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+        <h2>Define Analytic Clusters</h2>
+        <p>After completing preparation as described in <MadCap:xref href="#Before_You_Begin_IA">Before You Begin</MadCap:xref> define clusters as follows:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p class="BodyText">Start <MadCap:variable name="Primary.IPRO" /> Eclipse Administration and log in as a user who is a member of the Super Admin group.</p>
+            </li>
+            <li>
+                <p class="BodyText">On the Case Management ribbon, select <b>IPRO Eclipse Analytics</b> &gt; <b>Manage IPRO Eclipse Analytics Clusters</b>.</p>
+            </li>
+            <li>
+                <p class="BodyText">On the left side of the screen, select the needed managing client and case.</p>
+            </li>
+            <li>
+                <p class="BodyText">Click <b>Create New Cluster</b> and complete the Cluster dialog box as described in the following steps.</p>
+            </li>
+            <li>
+                <p class="BodyText"><b>Cluster Name</b>: Enter a unique name that describes the conceptual similarity to be reflected in the cluster.</p>
+            </li>
+            <li>
+                <p class="BodyText"><b>Documents to Cluster</b>: Select either the entire case or a saved search (results of a search saved in <MadCap:variable name="Primary.IPRO" /> Eclipse).</p>
+            </li>
+            <li>
+                <p class="BodyText"><b>Settings</b>: Complete this section as needed. Default values exist for all items.</p>
+                <table style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 100px;" />
+                    <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 550px;" />
+                    <thead>
+                        <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                            <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">Item</p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                                <p class="TableHead" style="text-align: center;">description</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText"><b>Cluster Levels</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">The number of levels (rings) the documents will be clustered into. Select a cluster depth value from 1 to 7. The default value is 4.</p>
+                                <p class="TableText">This value defines the maximum hierarchy depth for clusters when they are created. It is used to determine if subclusters will be generated on any computed cluster.</p>
+                                <p class="TableText">No subclustering will be done if the computed cluster is already small, (usually less than 10 items).</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                                <p class="TableText"><b>Root Clusters</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                                <p class="TableText">If needed, enter or select the number of root clusters from 15 to 30. The default value is 16.</p>
+                                <ul class="BulletListBody">
+                                    <li>
+                                        <p class="TableText">Lower settings: generate clusters based on a relatively low level of conceptual similarity.</p>
+                                    </li>
+                                    <li>
+                                        <p class="TableText">Higher settings: generate clusters based in a relatively high level of conceptual similarity.</p>
+                                    </li>
+                                </ul>
+                                <p class="TableText">If your case is small or contains few identifiable topics, the number of root clusters may be lower than 15.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                            <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                                <p class="TableText"><b>Normalize Docs</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                                <p class="TableText">If needed, select if word normalization/lemmatization will be used on your cluster set. This box is selected by default.</p>
+                                <p class="TableText">Word normalization should improve the accuracy of clustering by determining the lemma (headword relative to the definition) of a word based on its intended meaning. This helps improve the handling of words which have multiple meanings.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p class="BodyText">When selections are completed, click <b>OK</b>. Clusters are created and will be available in <MadCap:variable name="Primary.IPRO" /> Eclipse.</p>
+            </li>
+            <li>
+                <p class="BodyText">Repeat this procedure as needed to create other clusters with different configuration settings.</p>
+            </li>
+            <li>
+                <p class="BodyText">Alert your users to the availability of the new clusters. Explain how the clusters can help them locate needed information as they review documents.</p>
+            </li>
+        </ol>
+        <p style="font-style: italic;">&#160;</p>
+        <p style="font-style: italic;"><b>Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Eclipse_web/Analytics/Evaluate_Document_Clusters.htm">Evaluate Document Clusters</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Eclipse_web/Analytics/Eval_and_Refine_Document_Categories.htm">Evaluate and Refine Document Categories</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../../../Eclipse_web/Analytics/Use_the_Concept_Wheel.htm">Use the Concept Wheel</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_and_Manage_Search_IndexesIA.htm">Create and Manage Search Indexes</MadCap:xref>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Blocked">
+    <head><title>NetGovern Release Notes Version 6.5</title>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1> NetGovern Release Notes Version 6.5</h1>
+        <p><MadCap:variable name="Primary.IPRO" /> is pleased to announce the 6.5 release of <MadCap:variable name="Primary.NetGovern" />.</p>
+        <p><MadCap:variable name="Primary.NetGovern" /> continues to evolve with this exciting release that contains new features as well as a myriad of other enhancements in information governance.</p>
+        <ul class="BulletListBody">
+            <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1" MadCap:conditions="Primary.Blocked">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note"><b>Note 1</b>: <MadCap:variable name="Primary.Name" /> 2020.8.0 requires SQL Server 2016 or later, .NET Core 3.1 or later, and .NET Framework 4.8 or later. In addition, the updated version of Auth is required for this release.<br /></p>
+                            <p class="Note"><b>Note 2</b>: Using Single Sign-on (SSO) requires enabling TLS 1.2 with an outbound HTTP connection to the identity provider. For more information about SSO and TLS, see the Security section that follows.</p>
+                            <p class="Note">For more overall information, see the <MadCap:xref href="../System Requirements.htm">System Requirements</MadCap:xref> document.</p>
+                            <p class="Note"><b>Note 3</b>: Eclipse web has been removed and replaced with our new, modern document review interface.  See <MadCap:xref href="#Resolved">Resolved Issues</MadCap:xref> in this document for more information.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ul>
+        <h2><a name="New"></a>
+        </h2>
+        <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" MadCap:conditions="Primary.Blocked" />
+            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" MadCap:conditions="Primary.Blocked" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p>
+                        <img src="../../Graphics/tip_sysadm.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note" MadCap:conditions="Primary.Blocked">To view the <MadCap:variable name="Primary.Name" /> 2020.8.0 new features video, click</p>
+                    <p class="Note" MadCap:conditions="Primary.Blocked">
+                        <MadCap:toggler targets="new_features_video">here</MadCap:toggler>.</p>
+                    <p class="Note" MadCap:targetName="new_features_video" MadCap:conditions="Primary.Blocked">
+                        <object src="https://vimeo.com/412907334" style="width: 560px;height: 315px;" MadCap:conditions="Primary.Blocked">
+                        </object>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+        <h2><b>New Features</b>
+        </h2>
+        <h3>Audit Templates</h3>
+        <p>In <MadCap:variable name="Primary.NetGovern" /> Search, Audit Managers can save audits to be used as templates. This can save time when the Audit Manager must create several audits. An Audit Manager can import search criteria, tabs, custom tags, and other parameters, and save a template for any other Audit Manager to us. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/case_template.htm">Create an Audit Template</a>.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/NG_Save_Case_As_Template.png" />
+        </p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/NG_Select_Template.png" />
+        </p>
+        <h3>Search Templates</h3>
+        <p>In <MadCap:variable name="Primary.NetGovern" /> Search, you can save the search criteria in a search tab as a template. This can simplify things if you are required to replicate the search in another tab or in another audit. You can also make your search template accessible for others to use in their own searches. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/search_template.htm">Create a Search Template</a>.</p>
+        <h3>File Archiving</h3>
+        <p>In <MadCap:variable name="Primary.NetGovern" />, you can archive numerous file types in various online and offline repositories, including Microsoft OneDrive and SharePoint, and proprietary file systems for strict Retention Compliance. Select which versions of the archived files to search and export. File Archiving complements <MadCap:variable name="Primary.NetGovern" />’s existing file crawling capabilities for in-place eDiscovery. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/file_archive.htm">Configure File Archive Jobs</a>.</p>
+        <p>In the File Archiving configuration, you can access directly the new Advanced Search query builder that was introduced in <MadCap:variable name="Primary.NetGovern" /> 6.4.2 See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/advanced_search.htm">Advanced Search</a>.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/NG_Advanced_Search.png" />
+        </p>
+        <h3>Legal Hold for Live Content</h3>
+        <p>This feature places live email, file, Teams, SharePoint or Slack content—that has not been archived yet—on Legal Hold. In <MadCap:variable name="Primary.NetGovern" />, Legal Hold is a way of preserving the data to create an immutable record. Regulations or court proceedings might require you to show chain of custody, that records are intact, and that there has been no spoliation. This feature complements <MadCap:variable name="Primary.NetGovern" />’s existing Legal Hold capabilities for archived email. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/legal_hold.htm">Applying Legal Hold</a>.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/NG_Edit_Case.png" />
+        </p>
+        <h3>Indexing and Archiving for Teams, Slack and Gmail</h3>
+        <p>In <MadCap:variable name="Primary.NetGovern" /> Search, the IM Index feature is used to index messages, posts, files, and reactions in Teams and Slack. You must perform this step in order to search live Teams and Slack content. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/im_index.htm">Configure IM Indexing</a>.</p>
+        <p>Teams and Slack content can also be archived for compliance purposes and to search it. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/im_archive.htm">Archiving for Teams and Slack</a>.</p>
+        <p>For both indexing and archiving of Teams and Slack content, you must first set up related locations and perform UPN-based user mapping. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/configure_locations.htm">Configuring Storage Locations</a>.</p>
+        <p>For support for Gmail, see <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/configure_gmail.htm">Configuring Indexing and Archiving for Gmail</a>.</p>
+        <h3>Search for Teams, Slack, and Gmail</h3>
+        <p>Use the IM (Instant Message) Search tab to search for messages, posts, files, reactions, and other content in Teams, Slack, and Gmail. See <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/im_search.htm">IM Search</a>.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/NG_Search_User.png" />
+        </p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/NG_Search.png" />
+        </p>
+        <h3>LIVE EDA</h3>
+        <p>When you open a <MadCap:variable name="Primary.LIVE EDA" /> (Early Data Assessment) case in <MadCap:variable name="Primary.Name" />, you are directed to <MadCap:variable name="Primary.NetGovern" /> Search where you can perform searches on live content across multiple repositories—see <a href="https://myipro.iprotech.com/help/NG/Master_Project/Audit_Admin/netgovern/live_eda.htm">Configure LIVE EDA</a>.</p>
+        <p>
+            <img src="../../Graphics/ADD_Review_Graphics/NG_Create_Case.png" />
+        </p>
+        <h2>
+            <MadCap:toggler targets="Other_Enhancements_65">Other Enhancements</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Other_Enhancements_65">
+            <ul class="BulletListBody">
+                <li>
+                    <p>Updates to Public APIs</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Updates to Search</p>
+                </li>
+                <li>
+                    <p>Ability to ignore User Mapping in Microsoft environments</p>
+                </li>
+                <li>
+                    <p>UPN-based user selection</p>
+                </li>
+                <li>
+                    <p>UPN-based custodian selection</p>
+                </li>
+                <li>
+                    <p>Ability to include and exclude folders when indexing</p>
+                </li>
+                <li>
+                    <p>Ability to search audit records</p>
+                </li>
+                <li>
+                    <p>When items are deleted from Teams/Slack, index records are now also deleted</p>
+                </li>
+                <li>
+                    <p>NQL-based policies</p>
+                </li>
+                <li>
+                    <p>Ingestion Microservice Infrastructure allows for easier connection to various data sources</p>
+                </li>
+                <li>
+                    <p>GraphAPI-based authorization allows for tenant-based access.</p>
+                </li>
+                <li>
+                    <p>Location Type grouping by External or Local types</p>
+                </li>
+                <li>
+                    <p>NIPE Error reporting improvements.</p>
+                </li>
+                <li>
+                    <p>Upgrade to Solr 8.</p>
+                </li>
+                <li>
+                    <p>Indexing Job split into Email Index and Archive Index</p>
+                </li>
+                <li>
+                    <p>LocationID requirement removed from CSV map file, enabling the use of a single mapping across all data sources</p>
+                </li>
+                <li>
+                    <p>Disabled the use of the same paths for different location types</p>
+                </li>
+                <li>
+                    <p>More items in the UI can be customized</p>
+                </li>
+                <li>
+                    <p>Legal Hold locations now support Dual Authorization</p>
+                </li>
+            </ul>
+        </div>
+        <h2><a name="Resolved"></a>
+            <MadCap:toggler targets="resolved_issues">Resolved Issues</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="resolved_issues">
+            <h3><b>Review</b>
+            </h3>
+            <h3><b>Processing</b>
+            </h3>
+            <p>&#160;</p>
+            <p>
+                <br />
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Understand Export and Production</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Preparation for Loading to kCura’s Relativity;Understand Export and Production" />Understand Export and Production</h1>
+        <h2>Eclipse<sup>®</sup> by IPRO Export and Production Processes</h2>
+        <p class="BodyText">Eclipse provides a variety of options for exporting 
+ and producing data and/or files from your Eclipse cases. In Eclipse Web, 
+ the following data and files can be exported or produced:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                Field/case data (load files)
+            </p>
+            </li>
+            <li>
+                <p>
+                Image files (with or without redactions)
+            </p>
+            </li>
+            <li>
+                <p>
+                Text files
+            </p>
+            </li>
+            <li>
+                <p>
+                Native files
+            </p>
+            </li>
+        </ul>
+        <p class="BodyText">Starting with Eclipse 2016.3.0, it is also possible 
+ to load Eclipse data and files directly into Relativity®, should Relativity be required instead of Eclipse for document review. </p>
+        <p class="BodyText">
+            <img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Click 
+ here to view the Production video</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://player.vimeo.com/video/226824203" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><a href="#Permissions_Required">Permissions 
+	 Required</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Working_in_Eclipse">Working in Eclipse</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Before_You_Begin">Before You Begin</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Export_Process_Introduction">Export 
+	 Process Overview</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Preparation_for_Loading_to_kCura_s_Relativity">Preparation 
+	 for Loading to  Relativity</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Permissions_Required"></a>Permissions Required</h2>
+        <p class="BodyText">All members of the Super Admin group can define and 
+ run export jobs Eclipse. Others who have appropriate permissions can also 
+ perform export (or production) tasks. </p>
+        <h2><a name="Working_in_Eclipse"></a>Working in Eclipse</h2>
+        <h3>About Export Sets</h3>
+        <p class="BodyText">Eclipse (web environment) provides a single, straightforward 
+ way for you to create an export data set from selected case documents. 
+ Optionally, this data set can be configured for production. It can also 
+ be used to load data directly into Relativity.</p>
+        <p class="BodyText">An export set is a group of documents and/or case data 
+ typically intended to be imported into another application (for example, 
+ printed for deposition preparation), while a production set is a group 
+ of documents to be provided to opposing counsel. </p>
+        <p class="BodyText">From a configuration standpoint, the only difference 
+ between an export and production set is production numbering, which identifies 
+ produced documents as such, writes them back to the database, and allows 
+ them to be included in the case (on the Production tab of the Document 
+ Details pane). </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: In this section, the term 
+		 “export” is often used to refer to either export or production 
+		 sets. Details specific to productions are clearly identified.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">A variety of options exists for export sets, including 
+ file type, numbering, and endorsement choices. Output options are based 
+ on the files defined in your database (that is, if you do not have native 
+ files in your case, none can be exported). </p>
+        <p class="BodyText">For production sets, detailed summary and history records 
+ are maintained for administrative purposes. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Beginning with Eclipse 2013, 
+		 <MadCap:variable name="Primary.Name" /> Worker(s) are required for running export/production jobs. 
+		 <MadCap:variable name="Primary.Name" /> Workers allow distributed processing of these jobs and are 
+		 installed with Eclipse. If you have any export/production problems 
+		 or <MadCap:annotation MadCap:createDate="2024-04-09T14:20:11.9296071-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="CHECK LINKS" MadCap:editor="ddavidson" MadCap:editDate="2024-04-09T14:20:17.1073579-04:00">questions</MadCap:annotation>, contact the administrator who installed or upgraded 
+		 Eclipse, or contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank" style="font-size: 10pt;">IPRO Support</a>.</p>
+                </td>
+            </tr>
+        </table>
+        <h3>About Production Shield</h3>
+        <p class="BodyText">Production Shield allows administrators to add another 
+ layer of protection for documents that should not be exported (or produced). 
+ When using Production Shield, such documents are identified during the 
+ validation phase of the export process, giving administrators the opportunity 
+ to correct conflicts and ensure only appropriate documents are produced.</p>
+        <p class="BodyText">Production Shield allows you to define rules for identifying 
+ documents based on any of the following criteria:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Fields within the 
+ case</p>
+            </li>
+            <li>
+                <p>Analytics (if installed 
+ at your site)</p>
+                <ul>
+                    <li>
+                        <p>Category</p>
+                    </li>
+                    <li>
+                        <p>Clusters</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Batch</p>
+                <ul>
+                    <li>
+                        <p>Assigned 
+ To</p>
+                    </li>
+                    <li>
+                        <p>ID</p>
+                    </li>
+                    <li>
+                        <p>Review 
+ Status</p>
+                    </li>
+                    <li>
+                        <p>Set</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Doc Tags</p>
+            </li>
+            <li>
+                <p>Redaction Categories</p>
+            </li>
+            <li>
+                <p>Review Status </p>
+            </li>
+        </ul>
+        <h2><a name="Before_You_Begin"></a>Before You Begin</h2>
+        <h3>License Requirements</h3>
+        <p class="BodyText">If you want to export more than one set of documents 
+ at a time (create and run multiple or concurrent export jobs), your Eclipse 
+ license must be appropriate. If you have any questions about multiple 
+ exports, contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank">IPRO Support</a>.</p>
+        <h3>Basic Preparation</h3>
+        <p class="BodyText">Prepare for export with the following actions:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Case validation:</span> Beginning with 
+ Eclipse 2013, file locations must be validated in Eclipse Administration 
+ after product upgrades, and this validation is required before an export 
+ job can be completed. See <a href="../Case_Setup/Validate_File_Paths.htm">Validate 
+ File Paths</a> for details. </p>
+            </li>
+            <li>
+                <p><b>Document 
+ identification:</b>
+                </p>
+                <ul>
+                    <li>
+                        <p>Identify 
+ which documents are to be exported, then create and save a search in Eclipse 
+ that will represent these documents. </p>
+                    </li>
+                    <li>
+                        <p>In 
+ addition, determine what types of files should be exported. Eclipse offers 
+ several options, which you can learn about by completing <span style="font-style: italic;">Export 
+ Process Introduction</span> below. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Review completion</span>: For production 
+ jobs, the document review process is normally completed before you perform 
+ the production. Documents should be tagged, redacted, and annotated so 
+ that you will be able to create appropriate production set(s) as required 
+ by the requesting organization (such as an internal department, opposing 
+ counsel, or a government agency). </p>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Optional security criteria</span>: If needed, 
+ configure the Production Shield to define the documents that should not 
+ be exported (or produced). </p>
+            </li>
+        </ul>
+        <h2><a name="Export_Process_Introduction"></a>
+            <MadCap:keyword term="Export Process Overview" />Export Process Overview</h2>
+        <p class="BodyText">As with other Eclipse activities, planning for export 
+ jobs will allow you to export needed document sets as efficiently and 
+ accurately as possible. It may be useful to “walk through” the steps involved 
+ to familiarize yourself with the options available. To do so:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Start Eclipse and log in as an Eclipse administrator. 
+ </p>
+            </li>
+            <li>
+                <p>Open the case for which the export (or production) 
+ job is to be run. </p>
+            </li>
+            <li>
+                <p>In the Case View pane, click <span style="font-weight: bold;">Case 
+ Administration</span>.</p>
+            </li>
+            <li>
+                <p>Review Production Shield options:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Production Shield</span>. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <img src="../../../Graphics/Admin_Graphics/Plus_Web.png" alt="" border="0" class="button_inline" />.</p>
+                    </li>
+                    <li>
+                        <p>Note 
+ that production security is defined in way that is similar to the <span style="font-weight: bold;">Fields to Search</span> section of an advanced 
+ search in Eclipse. </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>When you are finished reviewing the Production 
+ Shield, review export options:</p>
+                <ol>
+                    <li>
+                        <p>Click 
+ <span style="font-weight: bold;">Export Sets</span>. </p>
+                    </li>
+                    <li>
+                        <p>Click 
+ <img src="../../../Graphics/Admin_Graphics/Plus_Web.png" alt="" border="0" class="button_inline" />.</p>
+                    </li>
+                    <li>
+                        <p>Note 
+ the basic details required at the top center of the tab, then click each 
+ section—<span style="font-weight: bold;">Numbering</span>, <span style="font-weight: bold;">Output 
+ Locations</span>, and<span style="font-weight: bold;"> Image Options</span>—and 
+ review the settings and options available.</p>
+                    </li>
+                    <li>
+                        <p>If 
+ you are producing documents, note the <span style="font-weight: bold;">Production 
+ Numbering Fields</span> details in the <span style="font-weight: bold;">Numbering 
+ Options</span> section.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>If you will be loading directly to 
+ Relativity, read the information in <span style="font-style: italic;">Preparation 
+ for Loading to Relativity</span> below.</p>
+            </li>
+            <li>
+                <p>When you have finished reviewing the settings 
+ and options available for exporting a case, gather information you need 
+ and proceed with the procedures in this section. </p>
+            </li>
+        </ol>
+        <h2><a name="Preparation_for_Loading_to_kCura_s_Relativity"></a>Preparation 
+ for Loading to  Relativity</h2>
+        <h3>Requirements</h3>
+        <p class="BodyText">If you will be loading data/files to Relativity 
+ directly from an Eclipse case, the following requirements must be met: 
+ </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                In addition to Eclipse 2016.3.0 or later, version 
+	 2016.3.0 or later is required for <MadCap:variable name="Primary.Name" />, eCapture, and <MadCap:variable name="Primary.Name" /> Workers. 
+            </p>
+            </li>
+            <li>
+                <p>
+                The Integration Service must be installed and 
+	 the service running.
+            </p>
+            </li>
+            <li>
+                <p>
+                The Eclipse Scheduler Service and Agent(s) 
+	 must be installed and the service running.
+            </p>
+            </li>
+            <li>
+                <p>
+                The Relativity Import Service must be installed 
+	 on the same computer on which the RDC is installed and must be running. 
+            </p>
+            </li>
+            <li>
+                <p>
+               Relativity version 9.0–9.3 must be 
+	 installed, including the Relativity Desktop Client (RDC).
+            </p>
+            </li>
+            <li>
+                <p>
+                The Relativity workspace into which Eclipse 
+	 data is to be imported must exist.
+            </p>
+            </li>
+            <li>
+                <p>
+                A Relativity .KWE file is required to define 
+	 the import settings for Relativity (field mapping, overwrite setting, 
+	 etc.). You can create this based on a sample load file created when 
+	 you are defining the export set, if desired.
+            </p>
+            </li>
+        </ul>
+        <p class="BodyText">Refer to eCapture and Relativity documentation 
+ for assistance.</p>
+        <h3>Process Overview</h3>
+        <p class="BodyText">If you will be loading case data/files directly into 
+  Relativity, review the following process diagram, which provides 
+ a general overview of steps. </p>
+        <p>
+            <img src="../../../Graphics/Admin_Graphics/LoadToRelativityProcess.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+    </body>
+</html>

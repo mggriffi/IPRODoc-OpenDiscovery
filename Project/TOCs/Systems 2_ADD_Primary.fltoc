@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="System"
+    Link="/Content/System/Administration.htm">
+    <TocEntry
+      Title="Security_Templates">
+      <TocEntry
+        Title="Create a Security Template"
+        Link="/Content/System/Security_Templates/Create_Security_Template.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Delete a Security Template"
+        Link="/Content/System/Security_Templates/Delete_Security_Template.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Modify a Security Template"
+        Link="/Content/System/Security_Templates/Modify_Security_Template.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Overview: Security Templates"
+        Link="/Content/System/Security_Templates/Overview_Security_Templates.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Storage_Locations">
+      <TocEntry
+        Title="Create Storage Locations"
+        Link="/Content/System/Storage_Locations/Create_Storage_Locations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Delete Storage Locations"
+        Link="/Content/System/Storage_Locations/Delete_Storage_Locations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Manage Storage Locations"
+        Link="/Content/System/Storage_Locations/Manage_Storage_Locations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Modify Storage Locations"
+        Link="/Content/System/Storage_Locations/Modify_Storage_Locations.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="System Monitoring">
+      <TocEntry
+        Title="About System Monitoring"
+        Link="/Content/System/System Monitoring/About System Monitoring.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="View Log Information"
+        Link="/Content/System/System Monitoring/View Log Information.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Users and Groups">
+      <TocEntry
+        Title="Permissions">
+        <TocEntry
+          Title="Assign Permissions"
+          Link="/Content/System/Users and Groups/Permissions/Assign_Permissions.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Permissions List"
+          Link="/Content/System/Users and Groups/Permissions/Permissions_List.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Permission Comparison: Case Admin vs. Reviewer"
+          Link="/Content/System/Users and Groups/Permissions/User_Group_Comparison.htm"
+          MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Create New Groups"
+        Link="/Content/System/Users and Groups/Create New Groups.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Create New User"
+        Link="/Content/System/Users and Groups/Create_New_User.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Delete a Group"
+        Link="/Content/System/Users and Groups/Delete a Group.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Delete Users"
+        Link="/Content/System/Users and Groups/Delete_Users.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Edit a Group"
+        Link="/Content/System/Users and Groups/Edit a Group.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Manage Users and Groups"
+        Link="/Content/System/Users and Groups/Manage_Users_and_Groups.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Modify User Details"
+        Link="/Content/System/Users and Groups/Modify_User_Details.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Work with Users"
+        Link="/Content/System/Users and Groups/Work_with_Users.htm"
+        MadCap:generatedToc="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="First Steps"
+      Link="/Content/System/Get_Started_with_System_Administration.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Get_Started_with_System_Administration.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/System_Administration_FAQs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Workflow_Getting_Started_With_Enterprise.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/User Access.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Link="/Content/Product Resources/Workflows/Workflow for Users and Group Management.htm"
+        Title="[%=System.LinkedTitle%]" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/System/Log_into_Administration.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

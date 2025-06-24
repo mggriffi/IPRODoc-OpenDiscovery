@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import Transcript Files</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Import Transcript Files" />Import Transcript Files</h1>
+        <p class="BodyText">Eclipse allows you to include transcripts with your 
+ cases. In addition to including transcripts, Eclipse Administration provides 
+ options for managing transcripts and identifying transcript issues. </p>
+        <p class="BodyText">
+            <img src="../../../Graphics/Admin_Graphics/Btn_TranscrAdmin_Web.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">
+            <img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Click 
+ here to watch the Transcript Management video</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://player.vimeo.com/video/229290365" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><a href="#Permissions_Required">Permissions 
+	 Required</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Before_You_Begin">Before You Begin</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Get_Started">Get Started</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Import_Transcript_Files">Import Transcript 
+	 Files</a>
+                </p>
+            </li>
+        </ul>
+        <p class="BodyText"><span class="BoldItalic">Related pages:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><a href="Export_Transcript_Files.htm">Export 
+	 Transcript Files</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="Manage_Transcripts.htm">Manage Transcripts</a>
+                </p>
+            </li>
+        </ul>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">The following transcript file types can be imported 
+ into Eclipse: </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                .PCF (LiveNote)
+            </p>
+            </li>
+            <li>
+                <p>
+                .PTF (LiveNote)
+            </p>
+            </li>
+            <li>
+                <p>
+                .TRN (Summation)
+            </p>
+            </li>
+            <li>
+                <p>
+                .TXT (standard ASCII - see the following note) 
+            </p>
+            </li>
+            <li>
+                <p>
+                .XML (generic XML - see the following note) 
+            </p>
+            </li>
+        </ul>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: In order for .XML transcript 
+		 files to be imported, both the .XML file and its .DTD “binder” 
+		 file must be present in the same folder. See .XML file requirements 
+		 below for details.</p>
+                    <p class="Note">.TXT transcript files must follow a standard format. 
+		 See .TXT file requirements below for details.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">Once imported, transcripts appear in Eclipse as shown 
+ in the following figure. Note that the <span style="font-weight: bold;">Transcripts</span> 
+ tab is part of the Document Details pane. </p>
+        <p class="Image">
+            <img src="../../../Graphics/Admin_Graphics/TranscrTab_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <h2><a name="Permissions_Required"></a>Permissions Required</h2>
+        <p class="BodyText">Members of the Super Admin group and those with the 
+ Import Case Data permission can import and manage transcripts in Eclipse 
+ Administration. In this section, "Eclipse administrator” refers to 
+ either type of user. </p>
+        <h2><a name="Before_You_Begin"></a>Before You Begin</h2>
+        <p class="BodyText">The following actions will help you import and manage 
+ transcripts efficiently:</p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p>
+                For a specific case, identify the transcript 
+	 files to be imported.
+            </p>
+            </li>
+            <li>
+                <p>
+                Determine whether the transcripts include annotations 
+	 (issues, notes, highlights) and whether you want to include those 
+	 annotations in the import.
+            </p>
+            </li>
+            <li>
+                <p>
+                Consider a consistent naming and organizational 
+	 (grouping) approach for transcripts so that users can efficiently 
+	 find needed transcripts and transcript content.
+            </p>
+            </li>
+            <li>
+                <p>
+                Likewise, give some thought to the naming and 
+	 color scheme for transcript issues.
+            </p>
+            </li>
+            <li>
+                <p>
+                .TXT or .XML files: See the following requirements.
+            </p>
+            </li>
+        </ul>
+        <h3>.TXT file requirements</h3>
+        <p class="BodyText">For successful import of .TXT transcript files, ensure 
+ that the files meet the requirements shown in the following figure and 
+ listed in the following table.</p>
+        <p class="Image">
+            <img src="../../../Graphics/Admin_Graphics/Transcripts_text files.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t2">Guidelines 
+ for Text Transcript Files</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t2">
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+                <col style="width: 100px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col style="width: 550px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <thead>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Item</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead" style="text-align: center;">Requirement</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">File size</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">&lt;1 
+			 MB</p>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Headers and footers</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p class="TableText">Do 
+			 not include headers, unless they include only page numbers.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Do 
+			 not include footers.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Lines</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Line 
+			 numbers:</p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText">All 
+			 lines are numbered.</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">Line 
+			 numbers must be in columns 2 and 3.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="TableText">Line 
+			 length:≤78 characters (including spaces)</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Page breaks</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Preferred: 
+			 No page breaks.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">If 
+			 used, page breaks must be on the line prior to the page number.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">If 
+			 page breaks are not used, include a consistent number of lines 
+			 per page.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Page numbers</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <ul class="BulletListBody">
+                                <li>
+                                    <p class="TableText">All 
+			 transcript pages must be numbered.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Page 
+			 numbers must be</p>
+                                    <ul>
+                                        <li>
+                                            <p class="TableText">aligned 
+			 to the left margin. The first digit of the page number must 
+			 be in column 1 </p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">at 
+			 the top of each page;</p>
+                                        </li>
+                                        <li>
+                                            <p class="TableText">at 
+			 least four digits long. Use leading zeroes if needed, such 
+			 as 0012 for page 12.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="TableText">The 
+			 starting page number of the volume must be the very first 
+			 line of the transcript (title page line 1). If the volume 
+			 starts on page 10, then 0010 (or 00010) would be the first 
+			 line of the transcript.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Text</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <ul class="BulletListTable">
+                                <li>
+                                    <p class="TableText">Text 
+			 must begin at least one space after the line number.</p>
+                                </li>
+                                <li>
+                                    <p class="TableText">Recommended: 
+			 Start text in column 7.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+        </div>
+        <h3>.XML file requirements</h3>
+        <p class="BodyText">If you will be importing .XML files, ensure that each 
+ .XML file and its .DTD “binder” file are present in the same folder. </p>
+        <p class="BodyText">If needed, complete the following steps to verify that 
+ you have the correct .DTD file(s):</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Open 
+ the .XML file in a text editor such as Notepad.</p>
+            </li>
+            <li>
+                <p>Locate the .DTD file name; it will be in a 
+ statement similar to the following. In this example, the .DTD filename 
+ is shown in bold.</p>
+                <p class="BodyTextIndent">&lt;!DOCTYPE BinderTranscriptInfo SYSTEM <span style="font-weight: bold;">"bndr2001_02_12.dtd</span>"&gt;</p>
+            </li>
+            <li>
+                <p>Close the .XML file and ensure that the .DTD 
+ file identified in step b is in the same folder as the .XML file. </p>
+            </li>
+            <li>
+                <p>Repeat for other .XML files to be imported.</p>
+            </li>
+        </ol>
+        <h2 class="BodyText"><a name="Get_Started"></a>Get Started</h2>
+        <p class="BodyText">To work with transcripts in Eclipse Administration:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Start 
+ Eclipse Administration and log in as an Eclipse administrator. </p>
+            </li>
+            <li>
+                <p>On the Case Management ribbon, click <span style="font-weight: bold;">Transcripts</span>. </p>
+            </li>
+            <li>
+                <p>In the Manage Transcripts screen, select the 
+ needed managing client and case. </p>
+            </li>
+            <li>
+                <p>Import transcripts as described next..</p>
+            </li>
+        </ol>
+        <h2><a name="Import_Transcript_Files"></a>Import Transcript Files</h2>
+        <p class="BodyText">To import transcript files:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Complete <a href="Import_Transcript_Files.htm#Get_Started">Get 
+ Started</a> above</p>
+            </li>
+            <li>
+                <p>Select <span style="font-weight: bold;">Transcript 
+ File to Import</span>: on the right side of the screen, click &#160;and 
+ navigate to the transcript file location.</p>
+            </li>
+            <li>
+                <p>Select a needed file and click <span style="font-weight: bold;">Open</span>. 
+ To select multiple files, click the first file, then Shift+click or Ctrl+click 
+ additional files to choose a contiguous or non-contiguous set of files, 
+ respectively. </p>
+            </li>
+            <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                <col class="TableStyle-Note_Table-Column-Column1" />
+                <col class="TableStyle-Note_Table-Column-Column2" />
+                <tr class="TableStyle-Note_Table-Body-Body1">
+                    <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                        <p style="text-align: center;">
+                            <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                        <p class="Note">Note: Select transcripts for which 
+		 the annotation option (the next step) should be the same. </p>
+                    </td>
+                </tr>
+            </table>
+            <li>
+                <p>Except for .TXT files, choose the way in which 
+ annotations in the transcript file(s) will be handled from the <span style="font-weight: bold;">Select 
+ Import Option</span> list:</p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p><span style="font-weight: bold;">Create New Issues</span>: Import all issues, 
+ highlights, and notes defined in the transcript files. Create new issues 
+ in Eclipse if not already defined. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Import Existing Issues Only</span>: Import 
+ issues only if they are already defined in Eclipse. Import highlights 
+ and notes also. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Ignore All Issues</span>: Import highlights 
+ and notes, but not issues. </p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Ignore All Annotations</span>: Do not import 
+ any issues, highlights, or notes. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <span style="font-weight: bold;">Import 
+ Transcripts</span>. Details of the action display in the bottom right 
+ corner of the screen. </p>
+            </li>
+            <li>
+                <p>When the import is complete, review import 
+ details. If errors exist, click <span style="font-weight: bold;">View 
+ Log File</span> for additional information. </p>
+            </li>
+            <li>
+                <p>Continue with needed procedures in <a href="Manage_Transcripts.htm#Define_Path_for_Linked_Documents">Define 
+ Path for Linked Documents</a>. </p>
+            </li>
+        </ol>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">&#160;</p>
+    </body>
+</html>

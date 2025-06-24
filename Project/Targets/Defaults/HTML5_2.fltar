@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="first"
+  DisableAutoSync="false"
+  SearchEngine="MadCapSearch"
+  ConditionTagExpression="include[Primary.Admin or Primary.CaseMgmt or Primary.Eclipse or Primary.Find_Images or Primary.Media_Manager or Primary.Processing or Primary.Reports or Primary.Self_Service]exclude[Primary.Blank or Primary.eCap_editdone or Primary.eCap_partial or Primary.Review or Primary.SampleTopics or Primary.Target_Online or Primary.Target_Print or &quot;Primary.Z_Excluded V1&quot;]"
+  RemoveMadCapStyles="true"
+  Skin="/Project/Skins/Defaults/Ipro Custom.flskn"
+  conditions=""
+  GetLatestBeforeCompile="true"
+  TopNavTocPath="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/ADD_Help.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Admin.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/MediaManager.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Processing.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Reports.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/Review.flglo" />
+    <Glossary
+      Link="/Project/Glossaries/SelfService.flglo" />
+  </Glossaries>
+  <Destinations></Destinations>
+</CatapultTarget>

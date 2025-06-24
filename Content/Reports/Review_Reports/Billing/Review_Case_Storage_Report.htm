@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../../Resources/MasterPages/Reports_MP.flmsp');" MadCap:conditions="Primary.Reports">
+    <head>
+        <link href="../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Review Case Storage Report</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Case Data Summary Report" />Review Case Storage Report</h1>
+        <p>This report returns the size of all records in the associated case database that were imported within the selected date range. End Date represents the most recent date that terminates the desired date range. All parameters are optional. For details about the various components displayed in the report, see <MadCap:xref href="#Report">Report Details</MadCap:xref> below.</p>
+        <p class="BodyText">Complete the following selections:</p>
+        <p class="BodyText"><span style="font-weight: bold;">Report Title</span>: 
+ A report title is selected by default; change the title if needed. </p>
+        <p class="BodyText"><span style="font-weight: bold;">Start/End Dates</span>: 
+ Select the starting and ending dates for the time period of interest by 
+ clicking in each field and selecting dates from the resulting calendars.</p>
+        <p class="BodyText">When ready, click <b>Run Report</b>.</p>
+        <h3>Report Example</h3>
+        <p>
+            <img src="../../../Graphics/Report_Graphics/ReviewReports/Review_Case_Storage.png" class="Thumbnail" />
+        </p>
+        <h3><a name="Report"></a>Report Details</h3>
+        <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../../Resources/TableStyles/CD360_Basic_Table.css'); margin-left: 0; margin-right: auto;" cellspacing="0">
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">Component</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Current Database Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The current size of the case SQL database. This value is not date range dependent.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Current Search Index Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The current size of the case dtsearch index. This value is not date range dependent.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Date Range</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> If no date range is specified, the default date range becomes the dates of the first and last case imports.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Docs With Images</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The count of documents that have associated images.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Image File Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The sum of file sizes of images associated with case documents.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Image Page Count</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The count of images associated with case documents.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Native Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The sum of all of the native sizes reported in the case database.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Natives</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The count of documents that have an associated native file.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Prod Image Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The sum of file sizes of produced images.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Prod Page Count</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The count of pages produced.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">System Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The sum of Native Size, Image File Size, Prod Image Size, Current Search Index Size, and Current Database Size</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Text Count</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The count of documents whose text field is not null</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">Text Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText"> Sum of text size stored in the case database for all documents.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../../Get_Started_with_Reports.htm">Get Started with Reports</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../../Run_Reports.htm">Run Reports</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../../Reports_by_Type.htm">Reports by Type</MadCap:xref>
+        </p>
+    </body>
+</html>

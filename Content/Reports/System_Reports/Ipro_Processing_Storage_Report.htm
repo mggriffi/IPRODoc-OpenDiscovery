@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../../Resources/MasterPages/Reports_MP.flmsp');" MadCap:conditions="Primary.Reports">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>IPRO Processing Storage Report</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Case Data Summary Report" />IPRO Processing Storage Report</h1>
+        <p>Reports system-level aggregations of processed data over a specified date range, as well as current database sizes. All parameters are optional. Columns may be sorted. All sizes are exported in GB. Default granularity is set to Managing Client / Client Level. For details about the various components displayed in the report, see <MadCap:xref href="#Report">Report Details</MadCap:xref> below.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 405px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: To access this report, select <b>System Reports</b> from the Select Case drop-down menu:</p>
+                        <p class="Note">
+                            <img src="../../Graphics/Report_Graphics/SystemReports/System_Reports_Dropdown_Option.png" class="Thumbnail" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="BodyText">Complete the following selections:</p>
+        <p class="BodyText"><span style="font-weight: bold;">Report Title</span>: 
+ A report title is selected by default; change the title if needed. </p>
+        <p class="BodyText"><b>Managing Client</b>: To view processing data for a specified Managing Client, select a name from the dropdown.</p>
+        <p class="BodyText"><span style="font-weight: bold;">Start/End Dates</span>: 
+ Select the starting and ending dates for the time period of interest by 
+ clicking in each field and selecting dates from the resulting calendars.</p>
+        <p class="BodyText"><b>Code Name Level Granularity</b>: Select this option to view processing data organized at the code name level.</p>
+        <p class="BodyText"><b>Project Level Granularity</b>: Select this option to view processing data organized at the case level.</p>
+        <p class="BodyText"><b>Custodian Level Granularity</b>: Select this option to view processing data organized at the custodian level.</p>
+        <p class="BodyText"><b>Job Level Granularity</b>: Select this option to view processing data organized at the job level.</p>
+        <p class="BodyText">When ready, click <b>Run Report</b>.</p>
+        <h3>Report Example</h3>
+        <p>
+            <img src="../../Graphics/Report_Graphics/SystemReports/Ipro_Processing_Storage_1.png" class="Thumbnail" />
+        </p>
+        <h3><a name="Report"></a>Report Details</h3>
+        <table class="TableStyle-CD360_Basic_Table" style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css'); margin-left: 0; margin-right: auto;" cellspacing="0">
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col style="width: 50%;" class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-CD360_Basic_Table-Head-Header1">
+                    <th class="TableStyle-CD360_Basic_Table-HeadE-Column1-Header1">
+                        <p class="TableHead">Component</p>
+                    </th>
+                    <th class="TableStyle-CD360_Basic_Table-HeadD-Column1-Header1">
+                        <p class="TableHead">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Date Range</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> If no date range is specified, the default date range becomes the first and last Launch Date of any job type performed in the processing case.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Discovered Items Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The sum of all item file sizes after expansion.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Expansion Rate</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The Discovered Items Size divided by the Source Data Size.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Exported Record Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The sum of the exported records disk size. This includes text, images, and metadata written to disk on export for each document.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Pages</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> This value represents sum of the count of all images generated during streaming imaging, processing, and export.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Processed Items Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The sum of the file sizes of the items selected for legacy processing jobs or data extract jobs.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Processing Overhead Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The size of all intermediate supporting files generated by the application during streaming discovery, processing, and data extraction. This includes but is not limited to text written to disk during data extraction as well as images created during processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Source Data Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> For discovery jobs, the size of the original source directory or archive.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyE-Column1-Body1">
+                        <p class="TableText">Total Items</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyD-Column1-Body1">
+                        <p class="TableText"> The total number of items discovered after expansion.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">Total Size</p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="TableText"> The sum of Discovered Items Size, Processing Overhead Size, and Exported Record Size.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../Get_Started_with_Reports.htm">Get Started with Reports</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../Run_Reports.htm">Run Reports</MadCap:xref>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="../Reports_by_Type.htm">Reports by Type</MadCap:xref>
+        </p>
+    </body>
+</html>

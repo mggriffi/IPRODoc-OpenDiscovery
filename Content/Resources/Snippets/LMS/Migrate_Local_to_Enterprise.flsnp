@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Migrating a case from <MadCap:variable name="Primary.Local"></MadCap:variable> to <MadCap:variable name="Primary.Name"></MadCap:variable> is a multi-step process because you want to migrate over both the case data and the production history.</p>
+        <ol class="NumbListBody">
+            <li>Export the case from <MadCap:variable name="Primary.Local" />.</li>
+            <li>Create a case in <MadCap:variable name="Primary.Name" />. This is the case into which you will be importing the <MadCap:variable name="Primary.Local" /> case data.</li>
+            <li>Import the <MadCap:variable name="Primary.Local" /> case data into <MadCap:variable name="Primary.Name" /> using the Eclipse Admin tool.</li>
+            <li>Export the case production history from <MadCap:variable name="Primary.Local" />.</li>
+            <li>Import the <MadCap:variable name="Primary.Local" /> production history into <MadCap:variable name="Primary.Name" /> using the Eclipse Admin tool.</li>
+        </ol>
+        <p>The below diagram shows the export and import process for a given case from <MadCap:variable name="Primary.Local" /> to <MadCap:variable name="Primary.Name" />.</p>
+        <p>
+            <img src="../../Images/DTtoEntCase_Workflow_1.png" class="Thumbnail" />
+        </p>
+    </body>
+</html>

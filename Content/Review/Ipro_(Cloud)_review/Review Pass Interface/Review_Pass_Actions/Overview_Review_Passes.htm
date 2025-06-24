@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.UI_Linked" style="mc-template-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');">
+    <head>
+        <link href="../../../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Overview: Review Passes</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1><a name="Manage"></a>
+            <MadCap:keyword term="Manage Review Process" />Overview: Review <MadCap:annotation MadCap:createDate="2022-09-22T14:54:19.3151599-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="Linked to Active Learning Banner Pendo guide." MadCap:editor="ddavidson" MadCap:editDate="2022-09-22T14:54:34.6071241-04:00">Passes</MadCap:annotation></h1>
+        <p class="BodyText">In <MadCap:variable name="Primary.Name First" />, the review process for your case 
+ is managed through the following mechanisms:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Review passes</span> 
+ allow you to manage the review. For example, a first pass review may be used to quickly identify documents as responsive versus non-responsive, while a privilege review pass would be used to identify documents for privilege and the specific privilege reason. Review passes are created and managed 
+ case by case in the <MadCap:variable name="Primary.ProdName_Review" /> environment. </p>
+            </li>
+        </ul>
+        <ul class="BulletListBody">
+            <li>
+                <p><span style="font-weight: bold;">Individual 
+ batches</span> are assigned to individual reviewers. They allow you to 
+ efficiently divide the work, assign it to the correct individuals, and 
+ monitor progress. Individual batches are created as part of Review Pass 
+ creation.</p>
+            </li>
+        </ul>
+        <h2>Active Learning Enabled vs Disabled Review Passes</h2>
+        <p>There are two different types of review passes you can use: an Active Learning enabled review pass and an Active Learning disabled review pass. The difference between the two are how batches are created, organized, and prioritized for your reviewers.</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>For <b>Active Learning enabled</b> review passes, documents are batched and prioritized based on their relevancy, with documents predicted to have the highest  relevancy scores batched higher in the queue than those predicted with lower relevancy scores. This ranking system can help accelerate your review.</p>
+            </li>
+            <li>
+                <p style="font-weight: normal;">For <b>Active Learning disabled</b> review passes, all documents are batched in advance. These documents are organized into batches not based on their predicted relevance, but through another method, such as by BEGDOC number or field value. Unlike with AL enabled review passes, these batches are not prioritized as reviewers proceed through the review pass.</p>
+            </li>
+        </ul>
+        <h3>Which Review Pass Type Should You Choose?</h3>
+        <p MadCap:conditions="">Review passes are designed for <MadCap:variable name="Primary.Active Learning" /> to be enabled or  disabled. When creating a review pass, <MadCap:variable name="Primary.Active Learning" /> enabled is the default. Expand the sections below to learn more about the differences between <MadCap:variable name="Primary.Active Learning" /> enabled and disabled review passes.</p>
+        <h3>Active Learning Enabled</h3>
+        <p>Active Learning (AL) enabled review passes are designed to streamline case review by predicting document relevancy as you review. In an AL enabled review pass, the documents predicted to have the highest  relevancy scores are batched higher in the queue than those predicted with lower relevancy scores. As more and more documents are reviewed, the AL algorithm learns how to better assess the likely relevancy of all documents in the case, improving its predictive capabilities. </p>
+        <p>
+            <img src="../../../../Graphics/ADD_Review_Graphics/Review_Passes/AL_OverviewTab.png" class="Thumbnail" />
+        </p>
+        <h3>How Documents 
+ are Organized into Batches within an AL Enabled Review Pass</h3>
+        <p>With <MadCap:variable name="Primary.Active Learning" /> enabled review passes, documents are prioritized and batched out based on their predicted relevance (i.e. those with the highest likelihood of being positive are batched together and served up first).  When <MadCap:variable name="Primary.Active Learning" /> is enabled, batches are created on demand when reviewers check out a batch. As such, most documents will remain unbatched in the early stages of review.</p>
+        <p>
+            <img src="../../../../Graphics/ADD_Review_Graphics/Review_Passes/Batch_Information.png" class="Thumbnail" />
+        </p>
+        <h3>Active Learning Fields in Review</h3>
+        <p>The followings fields will be populated in your review case with an <MadCap:variable name="Primary.Active Learning" /> review pass. See <MadCap:xref href="../../Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Understand_Analytics_Index_Fields.htm">Understand Analytics Index Fields </MadCap:xref>for more information on the IA fields.</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 177px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 609px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;"> 
+		 field</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA&#160;Significant Words</p>
+                        <p class="TableText">(Review Pass/Tag Name)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">What the index gleaned from the documents. This will only populate on<b> Normal</b> documents.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA Rep Doc</p>
+                        <p class="TableText">(Review Pass/Tag Name)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This represents the cluster center.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">IA Doc Treatment</p>
+                        <p class="TableText">(Review Pass/Tag Name)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Normal, Short, Binary</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Prediction</p>
+                        <p class="TableText">(Tag Name_Prediction)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"><span style="font-size: 10pt;"> This is the predicted range of positive documents in the review pass.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Score</p>
+                        <p class="TableText">(Tag Name_Score)</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText"> <span style="font-size: 10pt;">Between -100 - +100. The AL system's prediction for how relevant the document is, with a higher number indicating that the system more confidently predicts the document to be positive.</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The following is an example of fields created for a Review Pass named: <b>20230630</b>, and the Review Purpose tag named: <b>20230623 Yes</b>.</p>
+        <p>
+            <img src="../../../../Graphics/ADD_Review_Graphics/Review_Passes/IACreatedFields.png" class="Thumbnail" />
+        </p>
+        <h3>Active Learning Disabled</h3>
+        <p>Active Learning (AL) disabled review passes are a more traditional method of batching documents for review, in which  documents are batched out in the default sort order, and prioritization of batches, based on predicted relevancy, does not occur. All batches are created in advance.</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: Even in an <MadCap:variable name="Primary.Active Learning" /> disabled state, an Analytics index is created for the review pass and training still happens based on the selected review purpose. Because of this, you can enable <MadCap:variable name="Primary.Active Learning" /> at any time.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="How_Documents_are_Organized_into_Batches"></a>How Documents 
+ are Organized into Batches within an AL Disabled Review Pass</h3>
+        <p class="BodyText">By default, documents in an AL disabled review pass are separated 
+ into batches in numerical order by image key (BEGDOC field). If you define 
+ a batch size of 100 documents, the first batch will contain the first 
+ 100 documents in the review pass, in order by image key. </p>
+        <p class="BodyText">The options described in the following paragraphs allow 
+ other methods of organization.</p>
+        <p class="BodyText">Field and Analytics Category</p>
+        <p class="BodyText">When a review pass is defined with the <b>Batch by</b>
+ option, documents can be grouped by a selected field or analytics category. </p>
+        <p>For example, you might group documents based on the File Type field, in which case all like documents (.MSG, .DOC, .XLS, etc.) will be grouped into batches based on batch size.</p>
+        <p>Family Documents</p>
+        <p class="BodyText">
+ The <span style="font-weight: bold;">Family Field</span> option, during review pass creation, ensures 
+ that all family documents are kept together in batches. </p>
+        <p class="BodyText">Typical fields include:</p>
+        <ul class="BulletListBody">
+            <li>
+                <p>BEGATTACH: Keep 
+ a document and all of its attachments together.</p>
+            </li>
+            <li>
+                <p>MD5HASH: Keep a 
+ document and all duplicates together.</p>
+            </li>
+            <li>
+                <p>Field indicating 
+ email threading: Keep all documents in a specific email thread together.</p>
+            </li>
+        </ul>
+        <p class="BodyText">When a family field is defined, <MadCap:variable name="Primary.ProdName_Review" /> groups documents 
+ into batches sequentially by image key plus all family documents associated 
+ with the documents encountered as the batches are created. Thus batch 
+ sizes may vary quite a bit.</p>
+        <p>Batching Order</p>
+        <p class="BodyText">In addition to grouping by category and/or including 
+ family documents, documents can be sorted for batching by the content 
+ of up to three fields (<span style="font-weight: bold;">Batching Order 
+ 1, 2, and 3</span>). In this case, documents in the review pass are sorted 
+ by the selected field(s) and then organized into batches. </p>
+        <p class="BodyText">For example, you might sort by a date field, in which 
+ case, documents in the review pass will be sorted by date and batches 
+ created starting with the earliest date. </p>
+        <p class="BodyText">If you group documents by a category and also sort 
+ by date, batches will be based on the category field and organized secondarily 
+ by date. </p>
+        <p class="BodyText">If you want to include family documents and sort by 
+ a particular field, family documents must share the same sort-field value 
+ as their “parent” document. Otherwise, sorting will take precedence and 
+ family documents will not be kept together with their parent in a batch. 
+ </p>
+        <p class="BodyText">For example, if you include family documents and also 
+ sort by a date field, if document ABC-0001 has a date of 01/01/2014, then 
+ for its family documents to be included in its batch, all family documents 
+ must also have a date of 01/01/2014. If family documents do not all have 
+ the same date, then all documents will be organized into batches based 
+ on the date field. </p>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Review_Passes.htm">Manage Review Passes</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Edit_and_Delete_Review_Passes.htm">Edit and Delete Review Passes</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="AL_Frequently_Asked_Questions.htm">Active Learning Frequently Asked Questions</MadCap:xref>
+        </p>
+    </body>
+</html>

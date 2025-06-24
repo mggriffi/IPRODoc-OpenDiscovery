@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Reports" style="mc-master-page: url('../../Resources/MasterPages/Reports_MP.flmsp');">
+    <head>
+        <link href="../../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Customize Grid Columns</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Customize Grid Columns" />Customize Grid Columns</h1>
+        <p class="BodyText">Custom columns are display customizations that can 
+ be made to each column of data returned in any given dataset. You can 
+ combine any number of charts (see <span><a href="DisplayMetadata_Field.htm#JSON_Chart_Objects">JSON Chart Objects</a></span>) 
+ and custom columns with as many datasets as your report returns.</p>
+        <h2>JSON CustomColumn 
+ Objects
+        </h2>
+        <p class="BodyText">The following table describes the fields used for custom 
+ columns:</p>
+        <table cellspacing="0" width="auto" style="mc-table-style: url('../../Resources/Stylesheets/ADD_Help_Tables.css');" class="TableStyle-ADD_Help_Tables">
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 125px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <col style="width: 650px;" class="TableStyle-ADD_Help_Tables-Column-Column1" />
+            <thead>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Field 
+		 Name</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">DATA 
+		 TYPE</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead" style="text-align: center;">Description</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">FieldName<span style="color: #ff0000;">*</span></p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">The 
+		 name of the field as returned in the dataset. In order to apply 
+		 any customization, this value must match a field from the dataset.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Caption</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Specify 
+		 a column heading to use instead of the field name.</p>
+                        <p class="TableText">If this is not specified, the field name will 
+		 be used with spaces added between camel-cased words.</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Aggregate</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">All 
+		 numerical fields in your dataset default to using a summation 
+		 aggregate.</p>
+                        <p class="TableText">To add aggregation to additional fields or 
+		 modify the way the aggregation occurs, you can use this setting 
+		 to alter the default behavior.</p>
+                        <p class="TableText">Available values are:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">count</p>
+                            </li>
+                            <li>
+                                <p class="TableText">sum</p>
+                            </li>
+                            <li>
+                                <p class="TableText">min</p>
+                            </li>
+                            <li>
+                                <p class="TableText">max</p>
+                            </li>
+                            <li>
+                                <p class="TableText">none – disables aggregation for this 
+			 field.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">other – anything specified here will 
+			 appear in the aggregate row for this column. For example, 
+			 <span>&#160;</span>“<span class="DataEntry">Total</span>” 
+			 or “<span class="DataEntry">Most Recent Date.</span>”</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">FormatType</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">This field allows 
+		 the default display behavior of the specified field to be overridden. 
+		 Available options are:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">string</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Number</p>
+                            </li>
+                            <li>
+                                <p class="TableText">FileSize – See the following paragraph 
+			 and field for details.</p>
+                            </li>
+                            <li>
+                                <p class="TableText">Date</p>
+                            </li>
+                        </ul>
+                        <p class="TableText">The FileSize type instructs the report interface 
+		 to try and add the unit of the file size to the end of the text, 
+		 such as 500 kb or 20.3 mb. It always rounds to the highest unit 
+		 possible without dropping below 1. Thus, if your field returns 
+		 1600000 bytes, it will appear as “1.52 mb.”</p>
+                    </td>
+                </tr>
+                <tr style="height: 25px;" class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">FileSizeBaseUnit</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">String</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">The FileSizeBaseUnit 
+		 field is only used if you have specified a FormatType of FileSize. 
+		 By default, the report interface assumes that the field is a number 
+		 in bytes. To change this if the unit from your report differs, 
+		 use one of the following options:</p>
+                        <ul class="BulletListTable">
+                            <li>
+                                <p class="TableText">b</p>
+                            </li>
+                            <li>
+                                <p class="TableText">kb</p>
+                            </li>
+                            <li>
+                                <p class="TableText">mb</p>
+                            </li>
+                            <li>
+                                <p class="TableText">gb</p>
+                            </li>
+                            <li>
+                                <p class="TableText">tb</p>
+                            </li>
+                            <li>
+                                <p class="TableText">pb</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="MsoNormal" style="margin: 0in;margin-bottom: .0001pt;line-height: normal;text-autospace: ideograph-numeric ideograph-other;"><span style="font-size: 11.0pt;line-height: 105%;font-family: Verdana, sans-serif;color: #ff0000;">*</span> Indicates a required field. </p>
+        <h3>Example</h3>
+        <p class="MsoNormal" style="margin-bottom: .0001pt;">The following example 
+ presents a DisplayMetadata field that modifies the behavior of three columns:</p>
+        <p class="Code"><span class="DataEntry">[</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;</span>&#160;"CustomColumns":</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"FieldName": "ProductionName",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"Caption": "Name of Production",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"Aggregate": "Last Production:"</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;},</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"FieldName": "FileSize",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"FormatType": "fileSize",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"FileSizeBaseUnit": "b"</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;}</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;{</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"FieldName": "ProductionDate",</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>&#160;"Aggregate": "max"</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;}</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;&#160;&#160;</span>&#160;]</span>
+        </p>
+        <p class="Code"><span class="DataEntry"><span>&#160;</span>&#160;}</span>
+        </p>
+        <p class="Code"><span class="DataEntry">]</span>
+        </p>
+    </body>
+</html>

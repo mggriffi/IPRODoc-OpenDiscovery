@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Eclipse,Primary._FixedMulti-Level" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Import Text Files</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Import Text Files" />Import Text Files</h1>
+        <p class="BodyText">Once a case is defined and case data is imported using 
+ one of the previous procedures, text files (plain text files containing 
+ image OCR) can be imported from a local or network folder. Note: </p>
+        <ul class="BulletListBody">
+            <li>
+                <p>Files 
+ will be imported if:</p>
+                <ul>
+                    <li>
+                        <p>Files 
+ are named with image keys that correspond to image keys existing in your 
+ case.</p>
+                    </li>
+                    <li>
+                        <p>The 
+ first line in each file contains the image key, in the format &lt;&lt;IMAGE_KEY&gt;&gt;. 
+ </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>For 
+ document-level text files, files named with the image key of the first 
+ page of document will be imported. </p>
+            </li>
+            <li>
+                <p>If 
+ the files contain document-level text, an EXTRACTEDTEXT field must be 
+ defined for the case.</p>
+            </li>
+        </ul>
+        <h2>Import Procedure</h2>
+        <p class="BodyText">To import document- or page-text from files:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Start Eclipse Administration and log in as 
+ an Eclipse administrator.</p>
+            </li>
+            <li>
+                <p>On the Case Management ribbon, select <span style="font-weight: bold;">Import</span> &gt;<span style="font-weight: bold;"> 
+ Import OCR</span>.</p>
+            </li>
+            <li>
+                <p>Select the needed managing client and case. 
+ </p>
+            </li>
+            <li>
+                <p>Select the<span style="font-weight: bold;"> 
+ Page Based</span> or <span style="font-weight: bold;">Document Based</span> 
+ option, depending on the contents of your text files:</p>
+                <ol>
+                    <li>
+                        <p><span style="font-weight: bold;">Page-based</span>: Select this option if 
+ one text file exists for each page. For each page, text will be appended 
+ and added to the document's EXTRACTEDTEXT field. The system checks the 
+ text files to determine which files goes with which document based on 
+ the image key. As soon as all text is found for the document, the system 
+ applies the text to the EXTRACTEDTEXT field and saves it to the database. 
+ The system then looks for text files for the next document.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Document-based</span>: Select this option 
+ if one text file exists for each document. The system “bulk inserts” text 
+ for all documents at one time.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Index After 
+ Import</span>: If you selected <span style="font-weight: bold;">Document-based</span>, 
+ select this option if you do not want to index the text files for search 
+ purposes at this time. (This option does not apply to the <span style="font-weight: bold;">Page-based</span> 
+ option because indexing occurs “on the fly” with that option.)</p>
+                <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col class="TableStyle-Note_Table-Column-Column1" />
+                    <col class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p style="text-align: center;">
+                                <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: If text files are not indexed 
+		 when they are first imported (for example, to save time), you 
+		 can build the text index later. See <a href="../Case_Setup/Manage_Case_Search_Indexes.htm">Manage 
+		 Case Search Indexes</a>.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p><span style="font-weight: bold;">Image Key 
+ Option</span>: Select the method of image key identification, <span style="font-weight: bold;">File 
+ Name</span> or <span style="font-weight: bold;">First Line in File</span>.</p>
+            </li>
+            <li>
+                <p>Enter a full path to the folder containing 
+ the text files or click <img src="../../../Graphics/Admin_Graphics/Btn_Ellipsis.png" alt="" border="0" class="button_inline" />&#160;and 
+ navigate to the needed folder. </p>
+            </li>
+            <li>
+                <p>If the files are contained in multiple folders 
+ in the location specified in step 7, click the <span style="font-weight: bold;">Include 
+ Subdirectories</span> option.</p>
+            </li>
+            <li>
+                <p>To save the import settings (for example, for 
+ future import jobs or to complete this import at a later time), click 
+ <span style="font-weight: bold;">Save Import Settings</span>. When the 
+ save is complete, a message displays in the Eclipse Administration status 
+ bar.</p>
+            </li>
+            <li>
+                <p>When you are ready to import the file(s), click 
+ <span style="font-weight: bold;">Import</span>. </p>
+            </li>
+            <li>
+                <p>When the import is complete, note important 
+ information in the status bar. As needed, click <span style="font-weight: bold;">View 
+ Log File</span> to evaluate the error log.</p>
+            </li>
+            <li>
+                <p>Verify the import by reviewing case details.</p>
+            </li>
+        </ol>
+    </body>
+</html>

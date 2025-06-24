@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-template-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>discovery ][ Enterprise Release Notes 2022.10.0</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>discovery ][ Enterprise Release Notes 2022.10.0</h1>
+        <p>IPRO continues to progress discovery ][ Enterprise with a new release that focuses on Transcript Management, Public API access, Export, and Performance enhancements, compliance, and much more.</p>
+        <p>Please contact IPRO <a href="mailto:Support@iprotech.com">Support</a> to schedule your upgrade today!</p>
+        <h2>New Features</h2>
+        <h3>System Management</h3>
+        <p><b>Public API</b> - Leverage the IPRO API for powerful and secure automation and integration into your customized workflows. This release includes the <MadCap:variable name="Primary.IPRO" /> Enterprise Public API, which secures and centralizes access to the available API and allows a host of capabilities from Case Management to Ingestion, Exporting, Users, Groups and Permission, and others that allow integration with Enterprise. See <MadCap:xref href="../../System/Public_API/Overview_Public_API.htm">Overview: Public API</MadCap:xref>.</p>
+        <p><b>FIPS Compliance</b> - FIPS are standards and guidelines for federal computer systems that are developed by the National Institute of Standards and Technology (NIST) and approved by the US Secretary of Commerce. <MadCap:variable name="Primary.IPRO" /> Enterprise is now FIPS compliant when enabled.</p>
+        <h3>Review</h3>
+        <p><b>Transcripts</b> - The new transcript viewer allows reviewers to import, view, and annotate transcript files.  Easily tag elements of a transcript with issue codes from your existing review case or create new issues for use on transcripts. A word index provides visibility into frequency and location of words or topics. Once annotated, a report on the elements that contain issues in a variety of output formats is created. A new security permission (View Transcripts) allows SuperAdmins to control group permission to view and administer transcripts. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Transcripts_Overview.htm">Overview: Transcripts</MadCap:xref>.</p>
+        <p><b>Export and Production Enhancements</b> - Export set configuration has been updated in Review to allow enhanced configuration of Native and Image output. Users can identify specific documents that will receive Native and\or Image output based on a document tag. Pre-existing functionality to identify based on file type is still in place, while providing another export preference to allow for customized exports. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Workflow_ Create _a _Production.htm">Workflow: Create a Production</MadCap:xref>.</p>
+        <div>
+            <p><b>Change Request: Review Template</b> - The following updates to the review template were added to help implement best practices when upgrading to the latest release. Template changes will only apply to new cases.</p>
+            <ul>
+                <li>
+                    <p>	New Tags created for Export and Production Enhancements – “Output Native” and “Output Image” tags were added to existing Production Tag Group to identify output type for documents being exported or produced from a tag.</p>
+                </li>
+                <li>
+                    <p>New Saved Search folder “Production” with saved search “Output Native” and Output Image” were created to help identify documents tagged with “Output Native” and Output Image”.</p>
+                </li>
+            </ul>
+        </div>
+        <p><b>Performance Enhancements</b> – Documents display faster and enable case admins with a more granular level of control in how they optimize or pre-render documents that get displayed within the web and image viewers. See <MadCap:xref href="../../Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Performance/Manage_Performance.htm">Manage Performance</MadCap:xref>.</p>
+        <div>
+            <p><b>Change Request: Review Template</b> - The following updates to the review template were added to help implement best practices when upgrading to the latest release. Template changes will only apply to new cases.</p>
+            <ul>
+                <li>
+                    <p>New Saved Search “Optimization Scope” under existing Admin folder created to identify documents that need performance optimized. File Extension equals PDF, PNG, JPEG, JPG, TIFF and TIF, when File Size is greater than 1000 KB.</p>
+                </li>
+                <li>
+                    <p>	Performance Management is now defaulted to ON, and scope includes new saved search “Optimization Scope” and Image Settings set to First Page Only.</p>
+                </li>
+            </ul>
+        </div>
+        <h3>Processing</h3>
+        <p><b>Review Import Settings</b> – Import into review settings has been implemented to streamline and support Ingestion of documents to IPRO Review from the new web interface. Import Series configuration allows field mapping, numbering, and other settings relevant to getting documents into Review. See <MadCap:xref href="../../Case_Management/Import_Series/Overview_Import_Series.htm">Overview: Import Series</MadCap:xref>.</p>
+        <h2>Resolved Issues</h2>
+        <h3>Review</h3>
+        <p><b>AR-12818</b> – Keyword List searches being modified on search edit now retain previous tags selected.</p>
+        <p><b>AR-13103</b> - Tag group sort order has been restored back to the order determined within the coding form.</p>
+        <p><b>AR-13012 </b>– Optimized cluster processing queries to improve performance when building new clusters.</p>
+        <p><b>AR-12746</b> – Updated viewing of documents from batch or pre-generated HTML files from prior application versions to now be viewable without throwing an error.</p>
+        <p><b>AR-11851</b> – Updated Active Learning-disabled review passes to be available right away for checking out on case enter screen.</p>
+        <p><b>AR-12669</b> - Using an Active Learning-disabled review pass no longer prevents users from checking out a batch right away while the index is still building.</p>
+        <p><b>AR-11753</b> – Updated saved search sub-folders sort in alphanumerical order like searches in top level folders.</p>
+        <p><b>AR-11017</b> - Fixed an issue where long and narrow redactions would not have their redaction text re-sized to fit the resulting redaction.</p>
+        <p><b>AR-13283 </b>– Reduce the size of the saved search query to eliminate browser crashing.</p>
+        <p><b>AR-14098</b> - Updated Review Pass Management to properly identify new documents to be added during "Create Batch" so they are added to the existing review pass.</p>
+        <h3>Processing</h3>
+        <p><b>AP-4917</b> - In some situations an OCR Confidence value previously could exist when OCR is being performed resulting in the Worker looping on the task. Handling has been implemented to prevent looping to complete the task and avoid delay in job completion.</p>
+        <p><b>AP-4781</b> - Emails containing Arabic text using the internet code page 'windows-1256' rather than Unicode previously could result in missing extracted text. Handling has been implemented for this very specific scenario to ensure the proper text is extracted.</p>
+        <h2><a name="New"></a>
+        </h2>
+    </body>
+</html>

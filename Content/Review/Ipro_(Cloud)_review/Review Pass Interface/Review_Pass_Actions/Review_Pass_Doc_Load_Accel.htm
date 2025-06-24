@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary.Review" style="mc-master-page: url('../../../../Resources/MasterPages/Review_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create/Remove Native HTML Documents</title>
+        <link href="../../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage Review Passes and Batches;Manage Review Passes" />Review Pass Document Loading Acceleration</h1>
+        <h2>Introduction</h2>
+        <p>Loading documents in a review pass is much faster now that the near native HTML files can be rendered during batch creation rather than only on the fly as the native documents are being reviewed. </p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: These HTML files are called "near native" as they contain the native document content, but in HTML format. A near native HTML file is generally smaller than its corresponding native document because the HTML file contains only code and not the embedded textual and/or graphic elements of the native document. </p>
+                </td>
+            </tr>
+        </table>
+        <h2>Render Near Native HTML Files Through Batch Creation</h2>
+        <p>To increase user performance by not having to render all near native HTML files at the same time, and also to reduce the amount of storage space, the number of batches created at one time defaults to 20. This means, for example, that once a batch in that group of 20 is entered, a "batch 21" will be created to keep the number of batches in the queue at 20.</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../../Graphics/Review_Note.png" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: The number of batches created at a time can be configured through SQL. And this number determines how many batches can be available at one time to render near native HTML files through batch creation. </p>
+                    <p class="Note">Also note that if you want to render the HTML files on the fly as was previously done, you can set the batch creation value to zero. <br />Reviewing documents outside of the batch will still create the HTML files on the fly as before.</p>
+                </td>
+            </tr>
+        </table>
+        <p>The HTML files are stored within the case directory. When you create a batch, the following occurs:</p>
+        <ol class="NumbListBody">
+            <li>A folder named <i>NativeHTML</i> is created in the case directory.</li>
+            <li>The near native HTML files are being rendered and placed in the <i>NativeHTML</i> folder. </li>
+        </ol>
+        <p>As the batch is created, the jobs that create the HTML files show up in the Job Manager queue. As the HTML file jobs are created, they are placed into temporary folders. As soon as each job completes, the HTML files are loaded into the <i>NativeHTML</i> folder.</p>
+        <h2>Delete Near Native HTML Files</h2>
+        <p>Near native HTML files are deleted when:</p>
+        <ul class="BulletListBody">
+            <li>(a) The review pass is deleted <br />-and-</li>
+            <p>(b) Those files do not exist in any other review passes in which the respective native document is not marked as complete. (That is, if a near native HTML file still exists in a review pass that has not yet completed, it will <u>not</u> be deleted.)</p>
+            <li>The batch that contains them is checked in.</li>
+            <li>The case that contains them is deleted.</li>
+            <li>The respective native documents are deleted.</li>
+        </ul>
+        <h2>Manage Performance</h2>
+        <p>The Performance Management tool lets you pre-render (optimize) documents so that the processing time to convert to HTML does not delay the ability to view documents in near-native formats. For more information, see <MadCap:xref href="../../Enter Case Interface/Manage_Case_Settings/Performance/Manage_Performance.htm">Manage Performance</MadCap:xref>.</p>
+        <h3><a name="Get"></a>
+        </h3>
+        <p><span class="BoldItalic"><b style="font-style: italic;">Related Topics</b></span>
+        </p>
+        <p class="BodyText">
+            <MadCap:xref href="Create_Review_Passes_and_Batches.htm">Create Review Passes and Batches</MadCap:xref>
+        </p>
+    </body>
+</html>

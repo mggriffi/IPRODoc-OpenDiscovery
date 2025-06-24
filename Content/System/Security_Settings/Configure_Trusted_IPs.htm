@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary._FixedList,Primary.Admin" style="mc-template-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Configure Trusted IP Addresses</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage ADD Settings" />Configure Trusted IP Addresses</h1>
+        <p class="BodyText">Administrators have the ability to whitelist specific IP addresses in <MadCap:variable name="Primary.Name" />. Users with whitelisted IPs are granted an unlimited number of login attempts, without being locked out from their account if they input the wrong credentials a set number of times. </p>
+        <p class="BodyText">Typically, if a user attempts to log in to <MadCap:variable name="Primary.Name" /> with invalid credentials, that user has 5 attempts to successfully log in before the system locks them out for 5 minutes. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">Once that 5 minute duration expires, the user can  attempt to sign in again. </MadCap:conditionalText>However, to bypass this added security measure, <MadCap:variable name="Primary.Name" /> provides the option for administrators to configure trusted IP addresses in the System Manager. A user whose IP address has been whitelisted in this way has unlimited attempts to sign in without the risk of their account being locked out.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_note.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note" MadCap:conditions="Primary.Blocked">Note: An IP address may be whitelisted to prevent lockouts from repeated login attempts from multiple users/computers under the same IP.</p>
+                        <p class="Note" MadCap:conditions="Primary.Blocked">&#160;</p>
+                        <p class="Note">Multiple users/computers may be under the same IP address. When that IP is whitelisted to prevent lockouts from repeated login attempts, this functionality extends to all users/computers under that IP.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">Follow the instructions below  to configure trusted IP addresses:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Security Settings">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Settings</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Settings.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p> Scroll down to the <b>Trusted IP Addresses</b> section.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Trusted_IP_Addresses.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>In the <b>Trusted IP Addresses</b> box, input each IP address that you would like whitelisted.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: IP addresses must be in proper IPv4 or CIDR format and must be separated by a new line.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>Once you have input the valid IP addresses, click <b>Save</b>. </p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p> <b style="font-style: italic;">Related Topics</b></p>
+        <p>
+            <MadCap:xref href="Configure_Activity_Timeout.htm">Configure Activity Timeout</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Configure_Single_Sign_On.htm">Configure Single Sign-on (SSO)</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Sign_In_Two_Factor_Authentication.htm">Sign In With Multi-Factor Authentication (MFA)</MadCap:xref>
+        </p>
+    </body>
+</html>

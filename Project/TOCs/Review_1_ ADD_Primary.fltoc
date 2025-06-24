@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="Review"
+    Link="/Content/Review/Review_ECAReview.htm">
+    <TocEntry
+      Title="Manage Your Review"
+      Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Ipro_(Cloud)_Review_Enter_Case.htm">
+      <TocEntry
+        Title="Manage Case Settings"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Manage_Review_Case_Settings.htm">
+        <TocEntry
+          Title="Index Management"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Index Management/Build_and_Monitor_Index.htm">
+          <TocEntry
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Index Management/Manage_a_Search_Index.htm"
+            MadCap:generatedToc="true"
+            Title="[%=System.LinkedTitle%]" />
+        </TocEntry>
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/First_Steps/Get_Started_Managing_Review.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Relationships"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Relationships/Manage_Relationships.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Relationships/Manage_Relationships.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Redactions"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Redactions/Manage_Redaction_Categories.htm">
+          <TocEntry
+            Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/Apply_Redactions.htm"
+            Title="[%=System.LinkedTitle%]"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Tag Palette"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Overview_Tags.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Overview_Tags.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Manage_Tag_Palettes.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Tag Palette/Working_With_Tag_Options.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Persistent Highlighting"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Documents/AR_Persistent_Highlighting.htm">
+          <TocEntry
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Persistent Highlighting/Manage_Persistent_Highlighting.htm"
+            Title="[%=System.LinkedTitle%]"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Pick Lists"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Pick Lists/Manage_Pick_Lists.htm"></TocEntry>
+        <TocEntry
+          Title="Coding Forms"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Overview_Coding_Forms.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Overview_Coding_Forms.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Coding Forms/Manage_Coding_Forms.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Performance"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Performance/Manage_Performance.htm">
+          <TocEntry
+            Title="Performance Management"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Case_Settings/Performance/Manage_Performance.htm" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Manage Keyword Lists"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Manage_Keyword_Lists.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Overview_Keyword_Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Create_and_Schedule_Keyword_Lists.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Manage_Keyword_Lists/Keyword_List_Activities.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Manage Review Passes"
+        Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Overview_Review_Passes.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Review_Passes.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Create_Review_Passes_and_Batches.htm"
+          MadCap:generatedToc="true" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Manage_Batches.htm" />
+        <TocEntry
+          Title="Active Learning with OPEN DISCOVERY"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Active_Learning_Summary.htm" />
+        <TocEntry
+          Title="Active Learning: Frequently Asked Questions"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/AL_Frequently_Asked_Questions.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/AR_Insights_Review_Pass_Management.htm" />
+        <TocEntry
+          Title="Review Pass Acceleration"
+          Link="/Content/Review/Ipro_(Cloud)_review/Review Pass Interface/Review_Pass_Actions/Review_Pass_Doc_Load_Accel.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Search the Database"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Overview_Searching.htm">
+        <TocEntry
+          Title="Search Basics ">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Search_Syntax.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Default_Search_Assumptions.htm"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Work with Searches">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Saved_Searches.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Smart_Folders.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Pub_Shared_Priv_Search_Folders.htm"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Visual Search"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Overview_Visual_Search.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Work_With_the_Visual_Search_Dashboard.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Visual_Search/Understand_Cluster_Sets.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Advanced Search"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Overview_Advanced_Search.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Advanced_Search/Work_With_Advanced_Search.htm" />
+          <TocEntry
+            Title="Create Analytic Search">
+            <TocEntry
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Understand_Analytics_Index_Fields.htm"
+              Title="[%=System.LinkedTitle%]" />
+            <TocEntry
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Email_Full_Thread_Search.htm"
+              Title="[%=System.LinkedTitle%]" />
+            <TocEntry
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_InclusiveEmailThread_Search.htm"
+              Title="[%=System.LinkedTitle%]" />
+            <TocEntry
+              Title="[%=System.LinkedTitle%]"
+              Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Near_Duplicate_Not_Email_Thread_Search.htm" />
+          </TocEntry>
+        </TocEntry>
+        <TocEntry
+          Title="Search Results"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_Search_Results.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Mass_Actions/Work_with_Mass_Actions.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Work_with_the_Results_Grid_Columns.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Search_the_Database/Work_with_Searches/Filter Search Results.htm" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Analytics">
+        <TocEntry
+          Title="First Steps in Analytics">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Create_and_Manage_Content_Filters.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Create_and_Manage_Analytic_Indexes.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Configure_Near-Duplicate_Detection.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/First_Steps_Analytics/Configure_Email_Threading.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Set Up TAR Project"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Manage_the_TAR_Review_Process.htm">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Create_a_TAR_Project.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Create_Batches_for_TAR_Review_Passes.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Manage_TAR_Projects.htm"
+            MadCap:generatedToc="true" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Setup_TAR_Project/AR_Manage_the_TAR_Project_when_the_Case_Changes.htm"
+            MadCap:generatedToc="true" />
+        </TocEntry>
+        <TocEntry
+          Title="Create Analytic Searches">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Understand_Analytics_Index_Fields.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Email_Full_Thread_Search.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_InclusiveEmailThread_Search.htm" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Enterprise_Analytics/Create_Analytic_Searches/Create_Near_Duplicate_Not_Email_Thread_Search.htm" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Transcripts"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Transcripts_Overview.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Work with Transcripts.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Transcripts/AR_Run Transcript Reports.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Work with Export Sets and Productions"
+        Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Overview_Export_and_Production.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Create_Export_and_Production_Sets.htm"
+          MadCap:generatedToc="true" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Workflow_ Create _a _Production.htm" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/About_the_Production_Shield.htm"
+          MadCap:generatedToc="true" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Review/Ipro_(Cloud)_review/Enter Case Interface/Work_With_Export_Sets/Export_Checklist _For_Archives.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

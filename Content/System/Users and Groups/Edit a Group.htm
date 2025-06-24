@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\..\Resources\MasterPages\Admin_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Edit a Group</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Edit a Group</h1>
+        <p class="BodyText">Complete the following steps to modify the users, permissions, or case assignments of a group:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Click on the name of the group you would like to edit. The group profile opens on the right side of the screen.</p>
+            </li>
+            <li>
+                <p>Click the <b>Edit</b> icon <img src="../../Resources/Images/Icons/Edit_Icon.png" class="ReduceButtonSize" />. You are now able to modify the users, permissions, and cases for the selected group.</p>
+            </li>
+            <li>
+                <p> On the <b>Users</b> tab, select the users you would like to add to the group by clicking on the name of each user. Selected users are highlighted in blue. To remove a user from the group, click on a highlighted name so that it no longer appears highlighted. To assign all users to the group, click <b>Select All</b> in the top-right corner of the box. To search for individual users, click the <img src="../../Resources/Images/Icons/Search_Icon.png" class="ReduceButtonSize" /> icon, then type the name in the search bar.</p>
+            </li>
+            <li>
+                <p>On the <b>Permissions</b> tab, expand the needed section (Case Management, Media and Data, Search and Review, Reports, or System), then click the check box beside each permission you would like to provide the group.  You can also remove a permission from the group by clicking on a check box that has already been selected. To learn more about the list of available permissions, see <MadCap:xref href="Permissions/Permissions_List.htm">Permissions List</MadCap:xref>.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Security templates cannot be applied to existing groups. If modifying the permissions for an existing group, you will have to update them manually. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">Alternatively, you could create a new group, use the existing group as a template, and apply the needed security template at that time. For more information on what options are available on the <b>Create New Groups</b> page, see <MadCap:xref href="Create New Groups.htm">Create New Groups</MadCap:xref>.</MadCap:conditionalText></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>On the <b>Cases</b> tab, select the cases that you would like to make accessible to the new group. Selected cases are highlighted in blue. To assign the group to all cases, click <b>Select All</b> in the top-right corner of the box. To search for specific cases, click the <img src="../../Resources/Images/Icons/Search_Icon.png" class="ReduceButtonSize" /> icon, then type the name of the case in the search bar. To remove the group from a particular case, click on a highlighted name so that it no longer appears highlighted.</li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+            </li>
+            <li>Repeat these steps for all groups needing to be edited.</li>
+            <li>Inform users of changes and explain their new responsibilities.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Manage_Users_and_Groups.htm">Manage Users and Groups</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Create New Groups.htm">Create New Groups</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Delete a Group.htm">Delete a Group</MadCap:xref>
+        </p>
+    </body>
+</html>

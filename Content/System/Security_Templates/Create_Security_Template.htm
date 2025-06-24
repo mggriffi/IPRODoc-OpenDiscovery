@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../../Resources/MasterPages/Admin_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create a Security Template</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Create a Security Template</h1>
+        <p class="BodyText">Administrators have the ability to create security templates in the System Manager. Security templates allow you to apply a pre-configured set of permissions to a group, or multiple groups, which you can then tweak as needed. The templates allow easy assignment of specific permissions. Permission changes made in <MadCap:variable name="Primary.Name" /> are reflected in Eclipse. For more information about the permissions available for selection, see <MadCap:xref href="../Users and Groups/Permissions/Permissions_List.htm">Permissions List</MadCap:xref>. </p>
+        <p class="BodyText">Complete the following steps to create a new security template:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Security Templates">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Security Templates</b>.</p>
+                <p>
+                    <img src="../../Graphics/System_Graphics/Left_Nav_Security_Temps.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Click the <img src="../../Graphics/System_Graphics/System_Add_Icon.png" class="ReduceButtonSize" /> button at the top of the screen. The <b>Create New Security Template</b> page opens.</p>
+            </li>
+            <li>
+                <p>You have the option to create a new security template (from scratch), or to copy the pre-defined configuration from an existing security template. Choose one of the following options:</p>
+                <ul class="BulletListBody">
+                    <li><b>Create New Template</b> - Select this option to create a new template from scratch. All permissions must be assigned manually.</li>
+                    <li><b>Copy Existing Template </b>- Select this option to use the configuration of an existing security template for the new template you're adding. All permissions assigned to the existing security template will be applied to the new one. During the next steps of the wizard, you can tweak these permissions  as needed. This option makes it faster and easier to create a new template, when the  permissions for the new one overlap with those already assigned to another.</li>
+                </ul>
+            </li>
+            <li>
+                <p>If you selected the first option, <b>Create New Template</b>, provide a name for the template in the Template Name field. If you selected the second option, <b>Copy Existing Template</b>, select the security template you wish to copy from the drop-down field. Then provide a template name. Click <b>Next</b>.</p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 308px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../../Resources/Images/myipro_note.png" style="width: 51px;height: 51px;" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Template names must be unique. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Proceed through each step of the wizard, selecting all needed permissions for the security template. To apply a permission, click on the check box beside its name. The check box turns blue and a check mark appears inside. If a permission has been selected and you would like to remove it, click on the check box again. You can select all permissions in a given section by clicking the slide bar to the right of the section name. Additionally, you can clear all permissions in a given section by clicking the slider once again. In certain places, permissions can be selected from a drop-down menu. When finished with each step, click <b>Next</b> to proceed to the next step. For more information about the permissions available for selection, see <MadCap:xref href="../Users and Groups/Permissions/Permissions_List.htm">Permissions List</MadCap:xref>. </li>
+            <li>The <b>Review Template</b> step of the wizard displays a list of all permissions, including those which have not been selected. Review the list and make any necessary changes. When finished, click <b>Save</b>.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Overview_Security_Templates.htm">Overview: Security Templates</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Modify_Security_Template.htm">Modify a Security Template</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Delete_Security_Template.htm">Delete a Security Template</MadCap:xref>
+        </p>
+    </body>
+</html>

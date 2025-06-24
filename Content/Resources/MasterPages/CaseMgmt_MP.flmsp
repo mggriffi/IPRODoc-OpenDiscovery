@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <script src="../scripts/myipro-addons.js">
+        </script>
+        <meta class="swiftype" name="search_filter_term" data-type="string" content="ipro-for-enterprise" />
+        <meta class="swiftype" name="ipro_index_source" data-type="string" content="Help Center" />
+        <meta class="swiftype" name="ipro_product_title" data-type="string" content="OPEN DISCOVERY" />
+    </head>
+    <body>
+        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: Print ExpandAll CollapseAll RemoveHighlight Separator;" />
+        <p>&#160;</p>
+        <div type="header" style="width: 100%;position: relative;">
+            <p><a href="../../Case_Management/Case_Management.htm"><img src="../../Graphics/hex-icon-case-management_69x79.png" alt="" title="Return to Case Management Home Page" style="border: none;margin-left: 0px;margin-right: 0px;margin-top: 35px;margin-bottom: 0px;" align="right" border="0" /></a>
+            </p>
+        </div>
+        <MadCap:breadcrumbsProxy />
+        <MadCap:bodyProxy />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../Snippets/Versions/ADD_Version_Num.flsnp" />
+        <MadCap:snippetBlock src="../Snippets/Revision_Date_Footer.flsnp" />
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+    </body>
+</html>

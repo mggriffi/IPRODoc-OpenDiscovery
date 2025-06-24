@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publish Cloud Help (w/Review) on myiproLIVE-new myipro path"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\cld-itsptl002\c$\Core\Help\FlareProjects\Enterprise"
+  Port=""
+  ViewUrl="https://myipro.iprotech.com/help/Enterprise"
+  Type="file"
+  ChangedOnly="true"></CatapultDestination>

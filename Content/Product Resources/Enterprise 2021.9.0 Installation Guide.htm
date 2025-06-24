@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:conditions="Primary.Blocked" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>discovery ][ Enterprise 2021.9.0 Installation Guide</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>discovery ][ Enterprise 2021.9.0 Installation Guide</h1>
+        <h2>
+            <MadCap:toggler targets="Install_Review">Install Enterprise 2021.9.0 Review Components</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Install_Review">
+            <p>The following sections contain the steps to install the <MadCap:variable name="Primary.ProdName_Review" /> components.</p>
+            <p>Install Eclipse (listed as Review in InstallerPro ) in the following order:</p>
+            <ol>
+                <li>
+                    <p>Eclipse Service (on IIS/web server)</p>
+                </li>
+                <li>
+                    <p>Admin</p>
+                </li>
+                <li>
+                    <p>dtSearch Service</p>
+                </li>
+                <li>
+                    <p>Analytics</p>
+                </li>
+            </ol>
+            <h3>Install InstallerPro</h3>
+            <ol>
+                <li>
+                    <p>Install InstallerPro  on a computer that can access myIPRO (myipro.iprotech.com), or if it’s already installed, launch InstallerPro.</p>
+                </li>
+                <li>
+                    <p>Use your myIPRO account to log in to InstallerPro. You should see the following:</p>
+                </li>
+                <p>
+                    <img src="../Graphics/Admin_Graphics/InstallGuide_Product_Selection.png" class="Thumbnail" />
+                </p>
+                <li>
+                    <p>Select the <b>IPRO Add</b> package you want to install and click Next.</p>
+                </li>
+                <ul>
+                    <li>
+                        <p>If you have to make a package installer, select the check box at the bottom left.</p>
+                    </li>
+                </ul>
+                <li>
+                    <p>For each component, fill out the configuration information as requested (see the following for details)</p>
+                </li>
+                <li>
+                    <p>Once the criteria is validated, the component should install or generate the package. To execute a packaged installer, run its PowerShell file on the appropriate computer.</p>
+                </li>
+                <ul>
+                    <li>
+                        <p>The packaged installer is saved to <i style="font-weight: bold;"><br /></i><i>C:\Users\[USER]\AppData\Roaming\InstallerPro</i>&#160;by default.</p>
+                    </li>
+                </ul>
+            </ol>
+            <h4><b style="font-family: Arial;">Eclipse Service</b>
+            </h4>
+            <p><i style="font-weight: bold;">SERVICE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>The Eclipse Service in IIS</b>: The Name of the Eclipse website in IIS, for example, <i>EclipseWeb</i>.</p>
+                </li>
+                <li>
+                    <p><b>Eclipse Host Name</b>:&#160;The Eclipse Web IIS binding hostname, for example, <i>eclipse.iprotech.com</i>.</p>
+                </li>
+                <li>
+                    <p><b>Eclipse Service Port</b>:&#160;The port used by the Eclipse Service.</p>
+                </li>
+                <li>
+                    <p><b>Service Account Domain and User</b>: The user name and domain for the account that runs the service once it is installed. This account should be a domain account that has local administrator privileges.</p>
+                </li>
+                <li>
+                    <p><b>Service Account Password</b>: The password for the domain account that runs the service.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Eclipse_Service.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">GENERAL Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>ADD Web API URL</b>: The ADD Services URL (not the ADD Web URL).&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>IPRO Identity Server URL</b>: The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>Platform Web API URL</b>:&#160;The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>ElasticSearch URL</b>: If the client has Elastic Search setup, you would put the URL for Elastic Search here.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>dtSearch Host Name</b>:&#160;Host name of the server to which dtSearch is installed, for example, <i>tst-suptrk054</i></p>
+                </li>
+                <li>
+                    <p><b>dtSearch Service Port</b>: The port used by dtSearch (5100 is the default).</p>
+                </li>
+                <li>
+                    <p><b>Analytics Host Name</b>:&#160;Host name of the server to which the Analytics service is installed, for example, <i>tst-suptrk054</i></p>
+                </li>
+                <li>
+                    <p><b>Analytics Service Port</b>:&#160;The port used by the Scheduler service (10900 is the default).</p>
+                </li>
+                <li>
+                    <p><b>System Events Command Server URL</b>:&#160;The same as your complete ADD Web URL, <i>for example,&#160;https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>IPRO SuperAdmin Username</b>: This should always be <i>administrator@iprotech.com</i>.</p>
+                </li>
+                <li>
+                    <p><b>IPRO SuperAdmin&#160;Password</b>: The password for the&#160;<i>administrator@iprotech.com</i>&#160;account.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Eclipse_Service_General.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">IIS Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Certificate Path</b>: The path to the certificate on disk. This is required only if the certificate does not have a friendly name.</p>
+                </li>
+                <li>
+                    <p><b>The Certificate's Friendly Name</b>:&#160;The Friendly Name of the certificate used by ADD Web in IIS.</p>
+                </li>
+                <li>
+                    <p><b>The Certificate's Password</b>: If the certificate is password protected, here is where you can type the password.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Eclipse_Service_IIS.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.IPRO" /> Eclipse database is.</p>
+                </li>
+                <li>
+                    <p><b>Database Name</b>: The name of the <MadCap:variable name="Primary.IPRO" /> Eclipse database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>Create new Eclipse Database (Yes/No)</b>: <u>For new installs</u>, choose Yes. <u>For upgrades</u>, you must be able to install with InstallerPro OR build/install packages before performing step 5, choose No (use the existing database).</p>
+                </li>
+                <li>
+                    <p><b>SQL Server</b>:&#160;The SQL instance that hosts or is hosting the ADD Configuration database.</p>
+                </li>
+                <li>
+                    <p><b>Database Name</b>:&#160;The name of the ADD/<MadCap:variable name="Primary.Name" /> Configuration database. For new installs, use <i>IPRO_EnterpriseConfig</i>.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>:&#160;The SQL account user name that ADD uses to communicate with SQL. We recommend that this NOT be the <u style="font-weight: bold; text-decoration: none;">sa</u> account.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>:&#160;The password for the SQL account that ADD uses to communicate with SQL.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Eclipse_Service_Database.png" class="Thumbnail" />
+            </p>
+            <h4 style="font-family: Arial;font-weight: bold;">Admin</h4>
+            <p><i style="font-weight: bold;">GENERAL Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Eclipse Host Name</b>:&#160;The Eclipse Web IIS binding hostname, for example, <i>eclipse.iprotech.com</i>.</p>
+                </li>
+                <li>
+                    <p><b>Eclipse Service Port</b>: The port number used by Eclipse Web.</p>
+                </li>
+                <li>
+                    <p><b>ADD Web API URL</b>: The ADD Services URL (not the ADD Web URL).</p>
+                </li>
+                <li>
+                    <p><b>IPRO Identity Server URL</b>: The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>The Certificate's&#160;Friendly Name</b>:&#160;The Friendly Name of the certificate used by ADD Web in IIS.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Admin_General.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.IPRO" /> Eclipse database is.</p>
+                </li>
+                <li>
+                    <p><b>Database Name</b>: The name of the <MadCap:variable name="Primary.IPRO" /> Eclipse database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Admin_Database.png" class="Thumbnail" />
+            </p>
+            <h4><span style="font-family: Arial; font-weight: bold;">dtSearch Service</span>
+            </h4>
+            <p><i style="font-weight: bold;">SERVICE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li><b>dtSearch Host Name</b>:&#160;Host name of the server on which dtSearch is installed.</li>
+                <li><b>dtSearch Service Port</b>:&#160;The port number used by dtSearch. Default is 5100.&#160;You must manually set the port; InstallerPro will not carry this setting from previous items (like Eclipse Web).</li>
+                <li><b>Service Account Domain and User</b>: The user name and domain for the account that runs the service once it is installed. This account should be a domain account that has local administrator privileges.</li>
+                <li><b>Service Account Password</b>: The password for the domain account that runs the service.</li>
+            </ul>
+            <p>
+                <img src="../Graphics/InstallerPro/dtSearch_Service_Service.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">GENERAL Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>ADD Web API URL</b>:&#160;The same as your complete ADD Services URL, for example, <i>https://addweb.company.com:1124</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>IPRO Identity Server URL</b>: The same as your complete ADD Web URL, for example:&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/dtSearch_General.png" class="Thumbnail" />
+            </p>
+            <h4 style="font-family: Arial;"><span style="font-family: Arial; font-weight: bold;">Analytics Service</span>
+            </h4>
+            <p><i style="font-weight: bold;">SERVICE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Analytics Service URL</b>:&#160;The name of the server Analytics is installed to, with http:// and port number. This URL should always be http, never https. For example, <i>http://IPROAnalytics:10900</i></p>
+                </li>
+                <li>
+                    <p><b>Auth Server IP and Port</b>:&#160;The IP address of the server on which Auth is installed plus the port number (port should be 9800).&#160;You must manually set the port; InstallerPro will not carry this setting from previous items (such as Eclipse Web).</p>
+                </li>
+                <li>
+                    <p><b>Service Account Domain and User</b>: The user name and domain for the account that runs the service once it is installed. This account should be a domain account that has local administrator privileges.</p>
+                </li>
+                <li>
+                    <p><b>Service Account Password</b>: The password for the domain account that runs the service.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/InstallerPro/Analytics_Service_Service.png" class="Thumbnail" />
+            </p>
+            <p><b style="font-style: italic;">GENERAL Fields</b>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>IPRO Identity Server URL</b>:&#160;The same as your complete ADD Web URL, For example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>IPRO SuperAdmin Username</b>: This should always be <i>administrator@iprotech.com</i>.</p>
+                </li>
+                <li>
+                    <p><b>IPRO SuperAdmin&#160;Password</b>: The password for the&#160;<i>administrator@iprotech.com</i>&#160;account.</p>
+                </li>
+                <li>
+                    <p><b>System Events command Server URL</b>: The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>Platform Web API URL</b>:&#160;The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Analytics_General.png" class="Thumbnail" />
+            </p>
+        </div>
+        <h2>
+            <MadCap:toggler targets="Install_eCapture">Install Enterprise 2021.9.0 Processing (eCapture) Components</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="Install_eCapture">
+            <p>The following sections contain the steps to install the Processing (<MadCap:variable name="Primary.eCapture" />) components:</p>
+            <p><MadCap:variable name="Primary.eCapture" /> components should typically be installed in the following order:</p>
+            <ol class="NumbListBody">
+                <li>
+                    <p>eCapture Controller</p>
+                </li>
+                <li>
+                    <p>Queue Manager</p>
+                </li>
+                <li>
+                    <p><MadCap:variable name="Primary.Name" /> Services</p>
+                </li>
+                <li>
+                    <p>Limited Controller</p>
+                </li>
+                <li>
+                    <p>Relativity Import Service</p>
+                </li>
+                <li>
+                    <p>File Mounting Service</p>
+                </li>
+                <li>
+                    <p>QC/Worker</p>
+                </li>
+            </ol>
+            <h3>Install Installer Pro</h3>
+            <ol>
+                <li>
+                    <p>Install InstallerPro  on a computer that can access myIPRO (myipro.iprotech.com), or if it’s already installed, launch InstallerPro.</p>
+                </li>
+                <li>
+                    <p>Use your myIPRO account to log in to InstallerPro. You should see the following:</p>
+                </li>
+                <p>
+                    <img src="../Graphics/Admin_Graphics/InstallGuide_Product_Selection_Processing.png" class="Thumbnail" />
+                </p>
+                <li>
+                    <p>Select the <b>IPRO Add</b> package you want to install and click Next.</p>
+                </li>
+                <ul>
+                    <li>
+                        <p>If you have to make a package installer, select the check box at the bottom left.</p>
+                    </li>
+                </ul>
+                <li>
+                    <p>For each component, fill out the configuration information as requested (see the following for details).</p>
+                </li>
+                <li>
+                    <p>Once the criteria is validated, the component should install or generate the package. To execute a packaged installer, run its PowerShell file on the appropriate computer.</p>
+                </li>
+                <ul>
+                    <li>
+                        <p>The packaged installer is saved to <i style="font-weight: bold;"><br /></i><i>C:\Users\[USER]\AppData\Roaming\InstallerPro</i>&#160;by default.</p>
+                    </li>
+                </ul>
+            </ol>
+            <h4 style="font-family: Arial;"><b style="font-family: Arial;">eCapture Controller</b>
+            </h4>
+            <p><i style="font-weight: bold;">GENERAL Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>ADD Services URL</b>:&#160;Your complete ADD Services URL, for example,&#160;<i>https://addweb.company.com:1124</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>IPRO Identity Server URL</b>:&#160;The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>Integration Path</b>: The Integration Directory. It must be a UNC path.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/eCapture_Controller_General.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Create configuration database (Yes/No</b>): The <MadCap:variable name="Primary.eCapture" /> Configuration database. For new installs, select Yes, for upgrades, select No.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.IPRO" /> <MadCap:variable name="Primary.eCapture" /> database is.</p>
+                </li>
+                <li>
+                    <p><b>Database Name</b>: The name of the Ecapture database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/eCapture_Controller_Database.png" class="Thumbnail" />
+            </p>
+            <h4><span style="font-family: Arial; font-weight: bold;">Queue Manager</span>
+            </h4>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.eCapture" /> database is.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Database Name</b>: The name of the <MadCap:variable name="Primary.eCapture" /> database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Queue_Manager_Database.png" class="Thumbnail" />
+            </p>
+            <h4 style="font-family: Arial;font-weight: bold;">Enterprise Services</h4>
+            <p><i style="font-weight: bold;">SERVICE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Service Account Domain and User</b>: The user name and domain for the account that runs the service once it is installed. This account should be a domain account that has local administrator privileges.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Service Account Password</b>: The password for the domain account that runs the service.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Enterprise_Services_Service.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.eCapture" /> database is.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Database Name</b>: The name of the <MadCap:variable name="Primary.eCapture" /> database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Enterprise_Services_Database.png" class="Thumbnail" />
+            </p>
+            <h4><b>Limited Controller</b>
+            </h4>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.eCapture" /> database is.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Database Name</b>: The name of the <MadCap:variable name="Primary.eCapture" /> database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Limited Controller_Database.png" class="Thumbnail" />
+            </p>
+            <h4><b>File Mounting Service</b>
+            </h4>
+            <p><i style="font-weight: bold;">GENERAL Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>MIP Key</b>: The Mount Image Pro license key if it is installed. This should be in PAM under their <MadCap:variable name="Primary.IPRO" />Serial.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>File Mounting Service Port</b>: The port to be used by the File Mounting Service.&#160;The standard is&#160;51205.</p>
+                </li>
+                <li>
+                    <p><b>ADD Web API URL</b>:&#160;The same as your complete ADD Services URL, for example,&#160;<i>https://addweb.company.com:1124</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>IPRO Identity Server URL</b>: The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/File Mounting Service_General.png" class="Thumbnail" />
+            </p>
+            <p><b style="font-style: italic;">SERVICE Fields</b>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Service Account Domain and User</b>: The user name and domain for the account that runs the service once it is installed. This account should be a domain account that has local administrator privileges.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Service Account Password</b>: The password for the domain account that runs the service.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/File Mounting Service_Service.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.eCapture" /> database is.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Database Name</b>: This is the name of the <MadCap:variable name="Primary.eCapture" /> database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/File Mounting Service_Database.png" class="Thumbnail" />
+            </p>
+            <h4><b>Relativity Import Service</b>
+            </h4>
+            <p><i style="font-weight: bold;">GENERAL Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>ADD Services URL</b>:&#160;The same as your complete ADD Services URL, for example,&#160;<i>https://addweb.company.com:1124</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>IPRO Identity Server URL</b>: The same as your complete ADD Web URL, for example,&#160;<i>https://addweb.company.com:1125</i>.&#160;You are not required to include the port if the port is 443 or 80.</p>
+                </li>
+                <li>
+                    <p><b>Relativity API URL</b>:&#160;The URL for the Relativity API.&#160;The client should have this information.</p>
+                </li>
+                <li>
+                    <p><b>Relativity API Port</b>: The port used for the Relativity Import Service API.&#160;The default is 40100.</p>
+                </li>
+                <li>
+                    <p><b>Relativity Maximum Workspaces</b>: The maximum number of simultaneous imports allowed in a workspace (Relativity case) at any given time. The client should have this information.</p>
+                </li>
+                <li>
+                    <p><b>Relativity Max System</b>: The maximum number of simultaneous imports allowed by <MadCap:variable name="Primary.IPRO" /> Q across all workspaces at any given time.&#160;The client should have this information.</p>
+                </li>
+                <li>
+                    <p><b>Relativity Directory</b>: The path to the Relativity Desktop Application directory,&#160;usually<br /><i>C:\Program Files\kCura Corporation\Relativity Desktop Application</i>.&#160;The client should have this information.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Relativity Import Service_General.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">SERVICE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Service Account Domain and User ID</b>: The user name and domain for the account that runs the service once it is installed. This account should be a domain account that has local administrator privileges.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Service Account Password</b>: The password for the domain account that runs the service.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Relativity Import Service_Service.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">DATABASE Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.eCapture" /> database is.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Database Name</b>: The name of the <MadCap:variable name="Primary.eCapture" /> database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <h4><b>Enterprise QC Worker</b>
+            </h4>
+            <p><b style="font-style: italic;">DATABASE Fields</b>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>SQL Server</b>: The full SQL Instance name where the <MadCap:variable name="Primary.eCapture" /> database is.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Database Name</b>: The name of the <MadCap:variable name="Primary.eCapture" /> database.</p>
+                </li>
+                <li>
+                    <p><b>SQL Username</b>: The user name of the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+                <li>
+                    <p><b>SQL Password</b>: The password for the SQL account made for the <MadCap:variable name="Primary.IPRO" /> environment.</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Enterprise QC Worker_Database.png" class="Thumbnail" />
+            </p>
+            <p><i style="font-weight: bold;">GENERAL Fields</i>
+            </p>
+            <ul class="BulletListBody">
+                <li>
+                    <p><b>Feature install selection</b>: Type <b>QC</b> to install QC only or <b>Worker</b> to install a Worker only. You can install both by inserting a comma between as shown in the following image:</p>
+                </li>
+            </ul>
+            <p>
+                <img src="../Graphics/Admin_Graphics/Enterprise QC Worker_General.png" class="Thumbnail" />
+            </p>
+        </div>
+    </body>
+</html>

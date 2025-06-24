@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-template-page: url('../../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Admin">
+    <head>
+        <link href="../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>discovery ][ Enterprise Release Notes 2021.9.2</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>discovery ][ Enterprise Release Notes 2021.9.2</h1>
+        <p><MadCap:variable name="Primary.IPRO" /> continues to progress <MadCap:variable name="Primary.New Name" /> with a new release that focuses on Job Manager enhancements, Analytics, usability, and much more.</p>
+        <p>Schedule your upgrade today! Please contact <MadCap:variable name="Primary.IPRO" /> Support at <a href="mailto:Support@iprotech.com">Support@iprotech.com</a>.</p>
+        <h2><a name="New"></a>
+        </h2>
+        <h2>
+            <MadCap:toggler targets="new_features">New Features 2021.9.2</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="new_features">
+            <h3><b>Review</b>
+            </h3>
+            <h4><b style="font-size: 14pt; font-weight: normal;">Analytic Clustering</b>
+            </h4>
+            <p>Access and manage Analytic Clusters within the web interface. You can now:</p>
+            <ul class="BulletListBody">
+                <li>
+                    <p>New tree view of clusters.</p>
+                </li>
+                <li>
+                    <p>Removed old interface within desktop administration.</p>
+                </li>
+                <li>
+                    <p>New permission added to the Review Management section of permissions. This does not affect permissions in <MadCap:variable name="Primary.Eclipse" /> Administration.</p>
+                </li>
+                <li>
+                    <p>Text verification - When clustering on a set of documents, a warning alerts the user that one or more documents in the set do not have text.</p>
+                </li>
+            </ul>
+            <h4 style="font-size: 14pt;">Job Manager Enhancements</h4>
+            <p>Job Manager improvements increase usability and control over jobs managed and include:</p>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Publish Errors has been disabled for incomplete Streaming Discovery jobs to prevent activating inadvertently. This applies to the button within the details of an individual job as well as the menu to select multiple jobs at the case level. When attempting to select an incomplete job, a warning message is displayed to the inform the user that the job is unable to be selected until it is complete.</p>
+                </li>
+            </ul>
+            <ul class="BulletListBody">
+                <li>
+                    <p>A new permission that allows users to pause, resume, and cancel jobs; This permission is independent of the user’s ability to view jobs. Previously to perform these functions, it required that a user have permission to see all jobs.</p>
+                </li>
+                <li>
+                    <p>The Agent Priority slider now allows System Administrators to reserve a percentage of system resources, so that normal priority jobs aren’t blocked behind high and critical job types. The default percentage is 20% with the ability to reserve up to 50%.</p>
+                </li>
+                <table cellspacing="0" width="95%" style="mc-table-style: url('../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                    <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                    <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                    <tr class="TableStyle-Note_Table-Body-Body1">
+                        <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                            <p>
+                                <img src="../../Graphics/Admin_Note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                            <p class="Note">Note: These resources will be used on high or critical jobs unless a normal job is active.</p>
+                        </td>
+                    </tr>
+                </table>
+                <li>
+                    <p>Improved messaging that a job is “Pausing” when a pause command is initiated. Any tasks already being worked on will continue through completion, but no additional tasks will be distributed. Once those in-progress tasks complete, the job will transition into the “Paused” state and drop into the Up Next queue.</p>
+                </li>
+            </ul>
+            <h4 style="font-size: 14pt;">End User Enhancements</h4>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Adding a tag with the context menu (right-click) option in the document viewer now correctly adds the tags in alphabetical order.</p>
+                </li>
+                <li>
+                    <p>Using the scroll wheel in the document viewer now controls movement up and down the document rather than zooming in and out. Zoom controls still exist in the top bar of the viewer.</p>
+                </li>
+            </ul>
+            <h4><span style="font-size: 14pt;">Security</span>
+            </h4>
+            <ul class="BulletListBody">
+                <li>
+                    <p>Login attempts are tracked based on IP address in addition to the user credentials to further prevent access from bad actors. When a customer is behind a firewall reporting one IP, it may be whitelisted to prevent lockouts from repeated login attempts shown under the same IP address.</p>
+                </li>
+            </ul>
+        </div>
+        <h2><a name="Resolved"></a>
+            <MadCap:toggler targets="resolved_issues">Resolved Issues</MadCap:toggler>
+        </h2>
+        <div MadCap:targetName="resolved_issues">
+            <div>
+                <h3><b>Review</b>
+                </h3>
+                <p><b>AP-4010</b> – Improved identification of multi-page images sources with redactions to ensure the output matches the original image source with redactions.</p>
+                <p><b>AR-11017</b> – Updated long and narrow redactions to contain the redaction text size properly.</p>
+                <p><b>AR-11801</b> – Improved handling to allow Active Learning review passes to be deleted after documents are checked in.</p>
+                <p><b>AR-11807</b> – Removed the ability to delete Active Learning system fields without first deleting the associated review pass.</p>
+                <p><b>AR-11772</b> – Removed the ability for users to add the current saved search to search criteria to prevent search from continuous looping.</p>
+                <p><b>AR-11194</b> – Optimized loading cluster sets queries to improve performance when entering a case that has a large document cluster set.</p>
+                <p><b>AR-11146</b> - Resolved an uncommon issue that would result in pages displaying in the incorrect order when viewing them in the document viewer.</p>
+                <p><b>AR-11073</b> – Updated case override permissions to display properly when editing permissions.</p>
+                <h3><b>Processing</b>
+                </h3>
+                <p><b>AP-4114</b> – Improved handling to prevent duplicate email attachments from being extracted twice on parent EML emails.</p>
+                <p><b>AP-3155</b> – Improved processing of ICS files extracted from PST to capture the correct metadata date value.</p>
+                <p><b>AP-3244</b> – Updated import wizard from <MadCap:variable name="Primary.eCapture" /> Controller to  add a discovery job successfully.</p>
+                <p><b>AP-3917</b> – Improved processing of contact card and task data processing when using Streaming Discovery with StellentPSTDiscovery to keep native intact. For more information or more assistance in evaluating your system to understand the impact, please contact support.</p>
+                <p><b>AP-3123</b> - Improved detection of the “Domain Names” field to be pulled from additional properties if the field is not found.</p>
+                <p><b>AP-2176</b> –  Enterprise 2019.7.x upgraded databases for FlagIDs 110-113 settings are now incremented to the user’s expectation.</p>
+                <p><b>AP-2041</b>- Improved error handling for invalid Content ID during embedded file identification to avoid errors while processing images.</p>
+                <h3><b>IPRO Q</b>
+                </h3>
+                <p><b>IQ-41</b> - Updated compatibility with Relativity v11.1.582.3.</p>
+                <p>
+                    <br />
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

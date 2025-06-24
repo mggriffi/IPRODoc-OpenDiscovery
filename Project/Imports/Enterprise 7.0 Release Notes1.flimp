@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2019-11-11T14:16:41.6647847-07:00"
+  ProjectName="ADD_Help"
+  ProjectFolder="C:\Users\dmondrow\Documents\CleanTFS\ADD_Help\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../Content/Resources/Stylesheets/ADDReview.css"
+  LastImport="2019-11-11T14:20:40.3006269-07:00">
+  <Files>
+    <Url
+      Source="../../../../Enterprise 7.0 Release Notes.docx"
+      AbsoluteSource="file:///C:/Users/dmondrow/Documents/Enterprise 7.0 Release Notes.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Enterprise 7.0 Release Notes1/Issue.htm"
+      TimeStamp="11/11/2019 2:20:32 PM" />
+    <Url
+      Source="../TOCs/Enterprise 7.0 Release Notes1.fltoc"
+      TimeStamp="11/11/2019 2:20:32 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/Enterprise 7.0 Release Notes1.flmsp"
+      TimeStamp="11/11/2019 2:20:32 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/ADDReview_1.css"
+      TimeStamp="11/11/2019 2:20:32 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles />
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles />
+  <UsedCharacterStyles />
+</MsWordImport>

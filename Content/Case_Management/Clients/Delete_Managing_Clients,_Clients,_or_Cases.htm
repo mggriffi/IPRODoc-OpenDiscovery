@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.CaseMgmt" style="mc-master-page: url('../../Resources/MasterPages/CaseMgmt_MP.flmsp');">
+    <head>
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Delete Managing Clients, Clients, or Cases</title>
+        <link href="../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Delete Managing Clients, Clients, or Cases" />Delete Managing Clients, Clients, or Cases</h1>
+        <p class="BodyText">Components in the <MadCap:variable name="Primary.Name" /> Case Management page must 
+			be deleted from right to left—that is, cases first, then clients, then 
+		managing clients. There are also prerequisite actions that must be taken outside of the Case Management module in Media Manager and <MadCap:variable name="Primary.eCapture" /> before deleting these items in Case Management. This topic discusses that workflow.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 676px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../../Resources/Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Warning: Before these items can be deleted in Case Management, you must delete any associated media in Media Manager and the associated export jobs in <MadCap:variable name="Primary.eCapture" />.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Step 1. Delete Associated Media in Media Manager</h2>
+        <p class="BodyText">Before deleting a case or client,  check whether there is any media in <b>Media Manager</b> associated with it, as this will also need to be deleted:</p>
+        <ol>
+            <li>
+                <p class="BodyText">From the home page, click on Media Manager. Then click on the Media tab.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/delete_media_ID_1.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the Filter button to the right of Clients. Enter in the name of the client you wish to delete.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/delete_media_ID_2.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>All media associated with your client will be shown. Click on the box with an arrow to the left of the screen to go to the details page for that media entry.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/delete_media_ID_3.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the red trash can icon in order to delete the media.</p>
+                <p>
+                    <img src="../../Graphics/Case_Mgmt_Graphics/delete_media_ID_4.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <h2>Step 2. Delete Associated Export Jobs in <MadCap:variable name="Primary.eCapture" /></h2>
+        <p>Before deleting a case or client,  check whether there are any export jobs in <MadCap:variable name="Primary.eCapture" style="font-weight: bold;" /> associated with it, as these will also need to be deleted:</p>
+        <ol>
+            <li>
+                <p>Launch <MadCap:variable name="Primary.eCapture" /> Controller and locate the desired case.</p>
+            </li>
+            <li>
+                <p>Expand the desired case folder. </p>
+            </li>
+            <li>
+                <p>Expand the export jobs subfolder. </p>
+            </li>
+            <li>
+                <p>Expand the desired export series. </p>
+            </li>
+            <li>
+                <p>Delete any existing export jobs one by one.</p>
+            </li>
+        </ol>
+        <h2>Step 3. Delete Items in Case Management</h2>
+        <p class="BodyText">To delete items from the <b>Case Management</b> page: </p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Click <b>Case Management</b> 
+						on the <MadCap:variable name="Primary.Name" /> Home page (or <b>Case Management</b> 
+					on the main menu located in the left pane).</p>
+            </li>
+            <li>
+                <p>Continue with the following steps as needed.</p>
+            </li>
+            <li>
+                <p>To delete a <b>case</b>:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Click 
+								<img src="../../Graphics/CM_Hamburger_icon.png" alt="" border="0" class="button_inline" /> corresponding 
+								to the needed case and select <b>Delete 
+							Case</b>.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+								<b>OK</b> in response to the confirmation 
+							message.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To delete a <b>client</b>:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Make 
+							sure all cases associated with the client have been deleted.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+								<img src="../../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" style="width: 17px;height: 16px;" /> corresponding 
+								to the needed client and click <b>Delete 
+							Client</b>.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+								<b>OK</b> in response to the confirmation 
+							message.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>To delete a <b>managing 
+					client</b>:</p>
+                <ol class="NumbListBody">
+                    <li>
+                        <p>Make 
+							sure all clients associated with the managing client have been deleted.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+								<img src="../../Graphics/EditDelete3.png" alt="" border="0" class="button_inline" /> corresponding 
+								to the needed managing client and click <b>Delete 
+							Managing Client</b>.</p>
+                    </li>
+                    <li>
+                        <p>Click 
+								<b>OK</b> in response to the confirmation 
+							message.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Notify other administrators and users of the 
+					changes.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><b style="font-style: italic;">Related Topics</b>
+        </p>
+        <p>
+            <MadCap:xref href="Create_New_Managing_Clients_and_Clients.htm">Create New Managing Clients and Clients</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="Modify_Managing_Client_or_Client.htm">Modify Managing Client or Client</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../First Steps/Overview_Case_Management.htm">Overview: Case Management</MadCap:xref>
+        </p>
+    </body>
+</html>

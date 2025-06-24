@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <script src="../scripts/myipro-addons.js">
+        </script>
+        <meta class="swiftype" name="search_filter_term" data-type="string" content="ipro-for-enterprise" />
+        <meta class="swiftype" name="ipro_index_source" data-type="string" content="Help Center" />
+        <meta class="swiftype" name="ipro_product_title" data-type="string" content="OPEN DISCOVERY" />
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: Print ExpandAll CollapseAll RemoveHighlight Separator;" />
+        <p>&#160;</p>
+        <MadCap:breadcrumbsProxy />
+        <MadCap:bodyProxy />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../Snippets/Versions/Eclipse_Rev_Version_Num.flsnp" />
+        <MadCap:snippetBlock src="../Snippets/Revision_Date_Footer.flsnp" />
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+    </body>
+</html>

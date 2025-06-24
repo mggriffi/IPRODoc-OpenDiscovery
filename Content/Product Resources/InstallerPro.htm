@@ -1,0 +1,1118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../Resources/MasterPages/Enterprise_MP.flmsp');" MadCap:conditions="Primary.Blocked" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/ADD_Help_Tables.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CD360_Basic_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>InstallerPro Installation Guide</title>
+        <link href="../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>InstallerPro Installation Guide</h1>
+        <p>InstallerPro  is an <MadCap:variable name="Primary.IPRO" /> product used to install the <MadCap:variable name="Primary.IPRO" /> core platform components. These components are required for the proper use of the <MadCap:variable name="Primary.Name First" /> application. InstallerPro may be downloaded and installed from <a href="https://myipro.iprotech.com/">https://myipro.iprotech.com</a>. Through InstallerPro, you can:</p>
+        <ul class="BulletListBody">
+            <li>Install core components onto a local computer</li>
+            <li>Create installation packages to be run on other computers</li>
+            <li>Upgrade installed components</li>
+            <li>Patch installed components</li>
+        </ul>
+        <h2><a name="Components_for_Install"></a>
+        </h2>
+        <h2><a name="Install"></a>Install Prerequisites for Platform</h2>
+        <p>Before you download the InstallerPro platform, ensure that your machine is configured with the necessary software. If your machine is not properly configured, you will not be able to install the needed <MadCap:variable name="Primary.IPRO" /> components from the platform. </p>
+        <ul class="BulletListBody">
+            <li>Ensure SQL Server is installed and available</li>
+            <li>Ensure Internet Information Services (IIS) Manager is available</li>
+            <li>Ensure ASP .NET Core 2.1 is installed</li>
+            <li>Ensure ASP.NET Core/.NET Core Runtime &amp; Hosting Bundle is installed, and ensure that it has been installed after IIS has been installed, or the required features will not be installed.</li>
+            <li>Ensure that <MadCap:variable name="Primary.IPRO" /> Authorization 2017.3.4 is installed. The <MadCap:variable name="Primary.IPRO" /> Authorization Service can be found and downloaded from <a href="https://myipro.iprotech.com/">https://myipro.iprotech.com</a>. </li>
+            <li>Ensure all users have modify access to C:\ProgramData\IPRO Tech\logs</li>
+        </ul>
+        <h2>Install Prerequisites for InstallerPro</h2>
+        <ul class="BulletListBody">
+            <li>Ensure all users have modify access to C:\ProgramData\IPRO Tech\logs</li>
+            <li>User running InstallerPro must have Local Windows Administrator (Run as Administrator) rights</li>
+        </ul>
+        <h2><a name="Choose"></a>Choose a Save Location</h2>
+        <p>The Save Location is the place on your machine or network where InstallerPro settings and data will be stored, and where packaged installers will be placed. </p>
+        <ol>
+            <li>Open InstallerPro and log in with myIPRO credentials.</li>
+            <li>
+                <p>The Installation / Product Selection page opens by default. Open the Settings page by hovering over the gear icon in the left navigation panel.</p>
+                <p>
+                    <img src="../Graphics/InstallerPro/Cursor_over_Gear_Icon.png" class="Thumbnail" />
+                </p>
+                <p>The left pane expands to show the Installation and Settings tabs. Click <b>Settings</b>.</p>
+                <p>
+                    <img src="../Graphics/InstallerPro/Settings_tab_left_navigation.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>The Save Location field displays the default path where InstallerPro settings and data will be stored, and where packaged installers will be placed. </p>
+                <p>
+                    <img src="../Graphics/InstallerPro/Save_Location_Path.png" class="Thumbnail" />
+                </p>
+                <p>To change the path from the default location, click <b>Browse</b> and navigate to the new location you would like to use instead. When you have selected the appropriate location, click <b>Select Folder</b> to populate the field with the new path.</p>
+            </li>
+            <li>
+                <p>If you have changed the path from the default location, select <b>Save</b> in the bottom-right corner to save the new location. If, prior to saving, you wish to revert the new path back to the original, click <b>Revert</b> in the bottom-left corner.</p>
+                <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: Once you have saved a new path, you will not be able to revert back to the default location by means of the Revert button. To use the default path as your Save Location, you will need to manually browse out to it. </p>
+                                <p class="Note">&#160;</p>
+                                <p class="Note">If you have logged in already before changing the Save Location, you will have to re-open the app to see new Save Location config values shown.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <h2>Install Components</h2>
+        <p>With InstallerPro, you can install components locally to your machine, or create packages to install on machines with no internet access. The sections below detail the workflows for both procedures. Note that components must be installed individually and in the proper order. The correct installation order is shown from top to bottom in the following <MadCap:xref href="#Install2">Components available for installation</MadCap:xref> table.</p>
+        <h3><a name="Install2"></a>Components available for installation</h3>
+        <table style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-ADD_Help_Tables" cellspacing="0">
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 205px;" />
+            <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 391px;" />
+            <thead>
+                <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                    <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                        <p class="TableHead">Component</p>
+                    </th>
+                    <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                        <p class="TableHead">Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Redis Server </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> A remote dictionary service for <MadCap:variable name="Primary.IPRO" /> platform components.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">	Identity Server </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> The central Identity server for <MadCap:variable name="Primary.Name" /> components.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><MadCap:variable name="Primary.Name" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"><span style="font-size: 10pt;">Platform component</span>
+                        </p>
+                        <table cellspacing="0" width="95%" style="mc-table-style: url('../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+                            <col style="width: 5.464%;" class="TableStyle-Note_Table-Column-Column1" />
+                            <col style="width: 94.536%;" class="TableStyle-Note_Table-Column-Column2" />
+                            <tr class="TableStyle-Note_Table-Body-Body1">
+                                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                                    <p>
+                                        <img src="../Graphics/Admin_Note.png" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                                    <p class="Note">Note: <MadCap:variable name="Primary.Name" /> is not currently available for installation through InstallerPro. The latest version of <MadCap:variable name="Primary.Name" /> may be found and downloaded from <a href="https://myipro.iprotech.com/">https://myipro.iprotech.com</a>.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 11pt;">
+                        <p class="TableText"><span style="font-size: 10pt;"><MadCap:variable name="Primary.IPRO" /> Web</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"><span style="font-size: 10pt;">The website for Identity Server.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 11pt;">
+                        <p class="TableText"><span style="font-size: 10pt;"><MadCap:variable name="Primary.IPRO" /> API</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">A programming interface that defines the kinds of calls or requests that can be made.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p class="TableText"><span style="font-size: 10pt;"><MadCap:variable name="Primary.IPRO" /> Permissions Service</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p class="TableText"><span style="font-size: 10pt;">Central Permissions web service for <MadCap:variable name="Primary.Name" /> components.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 10pt;">
+                        <p class="TableText"><span style="font-size: 10pt;"><MadCap:variable name="Primary.IPRO" /> ADD Log Service</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" style="font-size: 10pt;">
+                        <p class="TableText">Central Logging web service for <MadCap:variable name="Primary.Name" /> components</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 11pt;">
+                        <p class="TableText"><span style="font-size: 10pt;"><MadCap:variable name="Primary.IPRO" /> Configuration Service</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Web Service to store processing configuration settings.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1" style="font-size: 11pt;">
+                        <p class="TableText"><span style="font-size: 10pt;"><MadCap:variable name="Primary.IPRO" /> File Upload Service</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Windows Service for uploading zip files for <MadCap:variable name="Primary.Name" /> self service.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Platform Web </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> A website component that contains the Job Manager.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Platform Web API </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> An API website component for managing the Job Manager.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">System Events Commands</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Events and information about those event generated by the system.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">System Events Queries</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">A search performed against the Events generated by a System Event Command to return filtered results that can be used in various ways.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Job Manager Agent </p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText"> An Agent service that acts as a processing worker for Print to PDF, and Mass Action OCR.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Eclipse Service</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Web Service for review portion of <MadCap:variable name="Primary.Name" />.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Admin</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Windows application for review portion of <MadCap:variable name="Primary.Name" />.  Used for administering cases.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Agent Service</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Windows task distribution service for Review jobs for <MadCap:variable name="Primary.Name" />.  Will no longer ship starting in the 9.0 Data Visibility release (2021) as it is replaced by <MadCap:variable name="Primary.IPRO" /> platform.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">eCapture Controller</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Windows application for ingesting data and processing output back to Review.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText">Queue Manager</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Windows application connected to the <MadCap:variable name="Primary.eCapture" /> Controller that distributes job tasks to <MadCap:variable name="Primary.eCapture" />\Streaming Workers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                        <p class="TableText"><MadCap:variable name="Primary.Name" /> Services</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                        <p class="TableText">Web Service that allows communications between Nucleus, Review, and <MadCap:variable name="Primary.eCapture" /> to perform jobs that use <MadCap:variable name="Primary.eCapture" /> Workers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                    <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                        <p class="TableText">Limited Controller</p>
+                    </td>
+                    <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                        <p class="TableText">Windows application for ingesting data and processing output back to Review (slightly reduced functionality to <MadCap:variable name="Primary.eCapture" /> Controller).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Install Components on Your Computer</h3>
+        <p>Perform the following steps to install the core platform components onto your computer. For information on setting up the installation of each component, see <MadCap:xref href="#Configur">Configure Platform Components</MadCap:xref>, further down in this topic.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+            <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+            <tbody>
+                <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                    <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                        <p class="TableText">
+                            <img src="../Resources/Images/myipro_warn.png" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                        <p class="Note">Note: To install the required features from InstallerPro, ensure that your computer is configured with the proper software. See <MadCap:xref href="#Install">Install Prerequisites for Platform</MadCap:xref> to verify that your computer is properly configured.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>Open InstallerPro and log in with myIPRO credentials.</li>
+            <li>
+                <p>The Installation / Product Selection page opens by default.</p>
+                <p>
+                    <img src="../Graphics/InstallerPro/Platform_Components_Unchecked.png" class="Thumbnail" />
+                </p>
+                <p>Select required components for installation by selecting the check box next to each name.</p>
+                <p MadCap:conditions="Primary.Blocked"> <MadCap:conditionalText MadCap:conditions="Primary.Blocked">The components available for installation include:</MadCap:conditionalText></p>
+                <ol style="list-style-type: lower-alpha;" MadCap:conditions="Primary.Blocked">
+                    <li MadCap:conditions="Primary.Blocked">Redis Server - a remote dictionary service for <MadCap:variable name="Primary.IPRO" /> platform components.</li>
+                    <li MadCap:conditions="Primary.Blocked">	Identity Server - central Identity server for <MadCap:variable name="Primary.Name" /> components.</li>
+                    <li MadCap:conditions="Primary.Blocked">Platform Web API - an API website component for managing the Job Manager.</li>
+                    <li MadCap:conditions="Primary.Blocked">Platform Web - a website component that contains the Job Manager.</li>
+                    <li MadCap:conditions="Primary.Blocked">Job Manager Agent - an Agent service that acts as a processing worker for Mass Action Print, Mass Action OCR, and Imaging jobs.</li>
+                </ol>
+                <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                    <col class="TableStyle-CD360_Basic_Table-Column-Column1" style="width: 450px;" />
+                    <tbody>
+                        <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                            <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                                <p class="TableText">
+                                    <img src="../Resources/Images/myipro_note.png" />
+                                </p>
+                            </td>
+                            <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                                <p class="Note">Note: By clicking the <img src="../Graphics/Icons/right_arrow.png" /> icon beside a component, a pane opens on the right side of the screen with additional information about the component and its installation status.</p>
+                                <p class="Note">&#160;</p>
+                                <p class="Note">If there are no components listed, this means that you are not licensed for the missing components and that your myIPRO account does not have <MadCap:variable name="Primary.Name" /> licenses.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>When all required components have been selected, click <b>Next</b> in the bottom-right corner of the screen. See <MadCap:xref href="#Configur">Configure Platform Components</MadCap:xref> for information on how to configure the components properly prior to installing them.</li>
+            <li>Select <b>View EULA</b> to open and review the End User License Agreement. To accept the EULA and move to the next page, click <b>Accept</b> in the bottom-right corner of the screen.</li>
+            <li>Provide configuration values for the components being installed. Fields that require a value are indicated by an asterisk. Once required values have been added, click <b>Next</b> to proceed through each configuration screen. Configuration values are validated to determine if they meet requirements.</li>
+            <li>
+                <p>Once all configuration values have been added and you've clicked <b>Next</b>, the installation process begins. During installation, progress is reported<MadCap:conditionalText MadCap:conditions="Primary.Blocked"> to the user</MadCap:conditionalText>.</p>
+            </li>
+            <li>	After installation, results are provided<MadCap:conditionalText MadCap:conditions="Primary.Blocked"> to the user</MadCap:conditionalText> (Complete or Failed with error).</li>
+        </ol>
+        <h3><a name="Create"></a>Create Packages to be Installed on Other Computers</h3>
+        <p>If you are required to install components on computers with no internet access, you can create packages that get stored in your Save Location. To learn how to create these packages, review the following steps:</p>
+        <ol>
+            <li>Open InstallerPro and log in with myIPRO credentials. </li>
+            <li>
+                <p>Select <b>Build install as a shared package?</b> at the bottom of the page. </p>
+                <p>
+                    <img src="../Graphics/InstallerPro/Build_Install_as_Shared_Package.png" class="Thumbnail" />
+                </p>
+                <p>Before proceeding with the next steps, ensure the path for your Save Location is correct. When the packages are created, they'll be saved to this location. See <MadCap:xref href="#Choose">Choose a Save Location</MadCap:xref> for instructions on filling in this path.</p>
+            </li>
+            <li>
+                <p>Select components for packaging. <MadCap:conditionalText MadCap:conditions="Primary.Blocked">Examples:</MadCap:conditionalText></p>
+                <ul class="BulletListBody" MadCap:conditions="Primary.Blocked">
+                    <li>Redis Server - a remote dictionary service for <MadCap:variable name="Primary.IPRO" /> platform components.</li>
+                    <li>Identity Server - central Identity server for <MadCap:variable name="Primary.Name" /> components.</li>
+                    <li>Platform Web API - new API website component for managing Job Manager.</li>
+                    <li>Platform Web - new website component that contains Job Manager.</li>
+                    <li>Job Manager Agent - new Agent service that acts as a processing worker for Mass Action Print, Mass Action OCR, and Imaging jobs.</li>
+                </ul>
+            </li>
+            <li>
+                <p>When all required components have been selected, click <b>Next</b> in the bottom-right corner of the screen. See <MadCap:xref href="#Configur">Configure Platform Components</MadCap:xref> for information on how to configure the components properly prior to installing them.</p>
+            </li>
+            <li>Select <b>View EULA</b> to open and review the End User License Agreement. To accept the EULA and move to the next page, click <b>Accept</b> in the bottom-right corner of the screen.</li>
+            <li>Provide configuration values for the components being installed. Fields that require a value are indicated by an asterisk. Once required values have been added, click <b>Next</b> to proceed through each configuration screen. Configuration values are validated to determine if they meet requirements.</li>
+            <li>Once all configuration values have been added and you've clicked <b>Next</b>, the packaging process begins. Packages are placed into the Save Location &gt; Packages folder, by component.</li>
+            <li>Copy the package ZIP file(s) to the machine where they will be run.</li>
+            <li>UnZIP contents from ZIP file(s).</li>
+            <li>Open a Windows PowerShell Window as Administrator.</li>
+            <li>
+                <p>Use the cd "FilePath" command, then run the install.ps1 by using   .\install.ps1"install.ps1" file for each package into the PowerShell window</p>
+            </li>
+        </ol>
+        <div>
+            <h3><a name="Generate"></a>Generate PFX Files for Certificate Fields</h3>
+            <p>For HTTPS installations, a server certificate must be generated and present on disk before installation. The following steps describe the process of generating the certificate--the path, friendly name, and password of which will be used when configuring components for installation.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/CD360_Basic_Table.css');" class="TableStyle-CD360_Basic_Table" cellspacing="0">
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <col class="TableStyle-CD360_Basic_Table-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-CD360_Basic_Table-Body-Body1">
+                        <td class="TableStyle-CD360_Basic_Table-BodyB-Column1-Body1">
+                            <p class="TableText">
+                                <img src="../Resources/Images/myipro_note.png" />
+                            </p>
+                        </td>
+                        <td class="TableStyle-CD360_Basic_Table-BodyA-Column1-Body1">
+                            <p class="Note">Note:	While the following instructions explain how to generate a PFX file, you could obtain one from your domain authority, such as GoDaddy. Or, you could export an existing cert. </p>
+                            <p class="Note">&#160;</p>
+                            <p class="Note">InstallerPro also supports using an existing SSL certificate by simply typing the friendly name into the "Certificate Friendly Name" field. This will look up your installed certificate.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ol>
+                <li>On a Windows machine with Internet Information Services (IIS) installed, access the IIS Manager (can be typed in search bar).</li>
+                <li>In IIS Manager, click the server in the left-hand tree.</li>
+                <li>
+                    <p>Double-click <b>Server Certificates</b> in the tile view.</p>
+                    <p>
+                        <img src="../Graphics/InstallerPro/Server_Cert_IIS.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>
+                    <p>On the right side, click <b>Create Self-Signed Certificate</b>.</p>
+                    <p>
+                        <img src="../Graphics/InstallerPro/Create_Self_Signed_Cert.png" class="Thumbnail" />
+                    </p>
+                </li>
+                <li>Input a friendly name for the certificate and choose <b>Personal</b> for the certificate store. </li>
+                <li>Click <b>OK</b>.</li>
+                <li>Select the new self-signed certificate in the Server Certificates list.</li>
+                <li>Click <b>Export</b> on the right-hand side.</li>
+                <li>Complete the Export Certificate dialog box. Select an export location, enter a password and confirm the password.</li>
+                <li>Click <b>OK</b>.</li>
+            </ol>
+        </div>
+        <h2><a name="Configur"></a>Configure Platform Components</h2>
+        <p>Click the following sections to learn more about the fields that can be configured for installing that component. Fields that contain an asterisk are required.</p>
+        <div MadCap:targetName="Configure_Components">
+            <h3>
+                <MadCap:toggler targets="Redis">Redis</MadCap:toggler>
+            </h3>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');caption-side: top;" class="TableStyle-ADD_Help_Tables" MadCap:targetName="Redis">
+                <caption>Redis</caption>
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 131px;" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 404px;" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Field</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead">Definition</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">Redis Port*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Port in which the Redis Server service will listen on.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>
+                <MadCap:toggler targets="IdentityServer">Identity Server</MadCap:toggler>
+            </h3>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');caption-side: top;" class="TableStyle-ADD_Help_Tables" MadCap:targetName="IdentityServer">
+                <caption>Identity Server</caption>
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 404px;" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Field</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead">Definition</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>General</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The name of the ADD website in IIS*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">If ADD (<MadCap:variable name="Primary.Name" />) has already been installed on the machine, input the name of the ADD website exactly as it appears in the Internet Information Services (IIS) Manager, keeping the spacing and capitalization consistent. For example, if the site name is "IproADDWeb" then you must input "IproADDWeb" in this field.</p>
+                            <p class="TableText"> Note: If <MadCap:variable name="Primary.Name" /> has not been installed on the machine, populate the field with the name that will be used by ADD. For example, name it "IproADDWeb". This is a required field.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><MadCap:variable name="Primary.IPRO" /> Identity Server URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the URL that will be used for the Identity Server.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ElasticSearch URL</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">(Optional): Provide the URL that will be used for ElasticSearch. If not using ElasticSearch, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>Service</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The ADD Web Port (10~65535)*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"> Provide the port number used by Identity Server. This is the same as the port for ADD Web.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>IIS</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identity Server Hostname*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"> Input the name of the server in which Identity is being installed on.</p>
+                            <p class="TableText">This is the hostname that will be used for the Identity Server. If hosting an external website, an example would be "website.com". If hosting an internal site, it could be the machine name.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Certificate Path</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p>&#160;</p>
+                            <p class="TableText"><b>For HTTPS installation:</b> Path to .PFX certificate file, which must be generated and present on disk. See <MadCap:xref href="#Generate">Generate PFX Files for Certificate Fields</MadCap:xref> for more information. Or, if you are populating an existing certificate into the "Certificate Friendly Name", then Certificate Path is not needed.</p>
+                            <p class="TableText"><b>For HTTP installation:</b> leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The Certificate's Friendly Name</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><b>Required for HTTPS installation.</b> The Friendly name value assigned to the PFX file upon creation or the Friendly Name of an existing installed certificate.</p>
+                            <p class="TableText">For HTTP installs, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The Certificate's Password</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><b>Optional for HTTPS installation.</b> If using a .PFX certification file, this is the password to the .PFX certificate file.</p>
+                            <p class="TableText">For HTTP installs, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>Database</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">SQL Server*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the SQL server instance to use.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Database Name*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the database to be created or used.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">SQL Username*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the SQL server user.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">SQL Password*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Provide the password for the SQL server.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>
+                <MadCap:toggler targets="PlatformWebAPI">Platform Web API</MadCap:toggler>
+            </h3>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');caption-side: top;" class="TableStyle-ADD_Help_Tables" MadCap:targetName="PlatformWebAPI">
+                <caption>Platform Web API</caption>
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 408px;" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Field</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead">Definition</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>Service</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The ADD Web Port (10~65535)*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the port number used by Platform Web API.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>General</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Redis URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the URL  used for the Redis Server installation.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><MadCap:variable name="Primary.IPRO" /> Identity Server URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the URL that will be used for the Identity Server installation. Note: this field may already be populated with the value provided  during the prior Identity Server installation.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identity Username*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Username of Identity Server Super Admin account. This is used for registering with Identity Server.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identity Password*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Password of Identity Server Super Admin account. This is used for registering with Identity Server.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ElasticSearch URL</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">(Optional): Provide the URL that will be used for ElasticSearch. If not using ElasticSearch, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Permissions Service URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Location of ADD permissions service (ADD Services).</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The name of the ADD website in IIS*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">If ADD (<MadCap:variable name="Primary.Name"></MadCap:variable>) has already been installed on the machine, input the name of the ADD website exactly as it appears in the Internet Information Services (IIS) Manager, keeping the spacing and capitalization consistent. For example, if the site name is "IproADDWeb" then you must input "IproADDWeb" in this field.</p>
+                            <p class="TableText"> Note: If <MadCap:variable name="Primary.Name" /> has not been installed on the machine, populate the field with the name that will be used by ADD. For example, name it "IproADDWeb". This is a required field.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Platform Web API URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the endpoint that Platform Web API will be configured to use.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>IIS</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Platform Web API Hostname*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the name of the server on which Platform Web API is being installed.</p>
+                            <p class="TableText">This is the hostname that will be used for the Platform Web API. If hosting an external website, an example would be "website.com". If hosting an internal site, it could be the machine name.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Certificate Path</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p>&#160;</p>
+                            <p class="TableText"><b>For HTTPS installation:</b> Path to .PFX certificate file, which must be generated and present on disk. See <MadCap:xref href="#Generate">Generate PFX Files for Certificate Fields</MadCap:xref> for more information. Or, if you are populating an existing certificate into the "Certificate Friendly Name", then Certificate Path is not needed.</p>
+                            <p class="TableText"><b>For HTTP installation:</b> leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The Certificate's Friendly Name</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><b>Required for HTTPS installation.</b> The Friendly name value assigned to the PFX file upon creation or the Friendly Name of an existing installed certificate.</p>
+                            <p class="TableText">For HTTP installs, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The Certificate's Password</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><b>Optional for HTTPS installation.</b> If using a .PFX certification file, this is the password to the .PFX certificate file.</p>
+                            <p class="TableText">For HTTP installs, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>Database</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">SQL Server*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the SQL server instance to use.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Database Name*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the database to be created or used.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">SQL Username*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the SQL server user.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">SQL Password*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Provide the password for the SQL server.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>
+                <MadCap:toggler targets="PlatformWeb">Platform Web</MadCap:toggler>
+            </h3>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');caption-side: top;" class="TableStyle-ADD_Help_Tables" MadCap:targetName="PlatformWeb">
+                <caption>Platform Web</caption>
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 408px;" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Field</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead">Definition</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>Service</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The ADD Web Port (10~65535)*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the port number used by Platform Web.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>General</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Redis URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the URL  used for the Redis Server installation.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><MadCap:variable name="Primary.IPRO" /> Identity Server URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the URL that will be used for the Identity Server installation. Note: this field may already be populated with the value provided  during the prior Identity Server installation.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identity Username*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Username of Identity Server Super Admin account. This is used for registering with Identity Server.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identity Password*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Password of Identity Server Super Admin account. This is used for registering with Identity Server.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ElasticSearch URL</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">(Optional): Provide the URL that will be used for ElasticSearch. If not using ElasticSearch, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The name of the ADD website in IIS*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">If ADD (<MadCap:variable name="Primary.Name"></MadCap:variable>) has already been installed on the machine, input the name of the ADD website exactly as it appears in the Internet Information Services (IIS) Manager, keeping the spacing and capitalization consistent. For example, if the site name is "IproADDWeb" then you must input "IproADDWeb" in this field.</p>
+                            <p class="TableText"> Note: If <MadCap:variable name="Primary.Name" /> has not been installed on the machine, populate the field with the name that will be used by ADD. For example, name it "IproADDWeb". This is a required field.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ADD Services URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the endpoint for where ADD Services is installed.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ADD Web URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the endpoint for where ADD Web is installed.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Eclipse URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the endpoint for where Eclipse Web is installed.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Platform Web API URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the endpoint for where Platform Web API is installed.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Platform Web URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the endpoint for where Platform Web is installed.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>IIS</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Platform Web Hostname*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the name of the server on which Platform Web API is being installed.</p>
+                            <p class="TableText">This is the hostname that will be used for the Platform Web API. If hosting an external website, an example would be "website.com". If hosting an internal site, it could be the machine name.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Certificate Path</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p>&#160;</p>
+                            <p class="TableText"><b>For HTTPS installation:</b> Path to .PFX certificate file, which must be generated and present on disk. See <MadCap:xref href="#Generate">Generate PFX Files for Certificate Fields</MadCap:xref> for more information. Or, if you are populating an existing certificate into the "Certificate Friendly Name", then Certificate Path is not needed.</p>
+                            <p class="TableText"><b>For HTTP installation:</b> leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">The Certificate's Friendly Name</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><b>Required for HTTPS installation.</b> The Friendly name value assigned to the PFX file upon creation or the Friendly Name of an existing installed certificate.</p>
+                            <p class="TableText">For HTTP installs, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">The Certificate's Password</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText"><b>Optional for HTTPS installation.</b> If using a .PFX certification file, this is the password to the .PFX certificate file.</p>
+                            <p class="TableText">For HTTP installs, leave this field blank.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>
+                <MadCap:toggler targets="JobManagerComponent">Job Manager Component</MadCap:toggler>
+            </h3>
+            <table cellspacing="0" style="mc-table-style: url('../Resources/Stylesheets/ADD_Help_Tables.css');caption-side: top;" class="TableStyle-ADD_Help_Tables" MadCap:targetName="JobManagerComponent">
+                <caption>Job Manager Component</caption>
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" />
+                <col class="TableStyle-ADD_Help_Tables-Column-Column1" style="width: 408px;" />
+                <thead>
+                    <tr class="TableStyle-ADD_Help_Tables-Head-Header1">
+                        <th class="TableStyle-ADD_Help_Tables-HeadE-Column1-Header1">
+                            <p class="TableHead">Field</p>
+                        </th>
+                        <th class="TableStyle-ADD_Help_Tables-HeadD-Column1-Header1">
+                            <p class="TableHead">Definition</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>General</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Redis URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the URL  used for the Redis Server installation.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText"><MadCap:variable name="Primary.IPRO" /> Identity Server URL*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Provide the URL that will be used for the Identity Server installation. Note: this field may already be populated with the value provided  during the prior Identity Server installation.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">ElasticSearch URL</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">(Optional): Provide the URL that will be used for ElasticSearch. If not using ElasticSearch, leave this field blank.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Auth Server IP and Port *</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The IP and port number to the <MadCap:variable name="Primary.IPRO" /> Authorization Manager.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identity Username*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Username of Identity Server Super Admin account. This is used for registering with Identity Server.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Identity Password*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">Password of Identity Server Super Admin account. This is used for registering with Identity Server.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td colspan="2" class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText"><b>Service</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Service Account Domain and User*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The username of the Windows user that will run the service (<MadCap:variable name="Primary.IPRO" /> Service Account) using domain\user. Note: Must be a domain user.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Service Account Password*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The password of the Windows user populated in the "Service Account Domain and User" field above.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1" colspan="2">
+                            <p class="TableText"><b>Database</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">SQL Server*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the SQL server instance to use.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">Database Name*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the database to be created or used.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyE-Column1-Body1">
+                            <p class="TableText">SQL Username*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyD-Column1-Body1">
+                            <p class="TableText">The name of the SQL server user.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-ADD_Help_Tables-Body-Body1">
+                        <td class="TableStyle-ADD_Help_Tables-BodyB-Column1-Body1">
+                            <p class="TableText">SQL Password*</p>
+                        </td>
+                        <td class="TableStyle-ADD_Help_Tables-BodyA-Column1-Body1">
+                            <p class="TableText">Provide the password for the SQL server.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2>How to Fully Uninstall InstallerPro</h2>
+        <ol>
+            <li>Open the Control Manager on your machine and go to Programs &amp; Features (or Apps &amp; Features).</li>
+            <li>Find InstallerPro, right-click, and select <b>Uninstall</b>.</li>
+            <li>Follow prompts to uninstall.</li>
+            <li MadCap:conditions="Primary.Blocked">Go to the Save Location specified above, in the section <MadCap:xref href="#Choose">Choose a Save Location</MadCap:xref>.</li>
+            <li MadCap:conditions="Primary.Blocked">Delete contents of the folder (InstallerPro.db, ZIPs, Packages).</li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="InstallerPro_FAQ.htm">InstallerPro FAQ</MadCap:xref>
+        </p>
+    </body>
+</html>

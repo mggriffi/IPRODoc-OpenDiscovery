@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary._FixedMulti-Level,Primary.Z_Excluded V1" style="mc-master-page: url('../../../Resources/MasterPages/Eclipse_MP.flmsp');">
+    <head>
+        <link href="../../../Resources/Stylesheets/Note_Table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Manage Eclipse Security</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Manage Eclipse Security" />Manage Eclipse Security</h1>
+        <p class="BodyText">Eclipse combines comprehensive user management with 
+ flexibility that allows you to meet your organization’s security needs. 
+ Eclipse security is managed primarily in the Eclipse Web environment.</p>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText">
+            <img src="../../../Resources/Images/RevSmallVideo.png" alt="" style="border: none;" border="0" />
+        </p>
+        <p class="BodyText">
+            <MadCap:toggler targets="t1">Click 
+ here to view the New Case Security video</MadCap:toggler>
+        </p>
+        <div MadCap:targetName="t1">
+            <p>
+                <object src="https://player.vimeo.com/video/217028234" style="width: 640px;height: 360px;">
+                </object>
+            </p>
+        </div>
+        <p class="BodyText">&#160;</p>
+        <p class="BodyText"><span class="BoldItalic">This page contains the following 
+ content:</span>
+        </p>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><a href="#Eclipse_Security_Model">Eclipse Security 
+	 Model</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Permissions_Required">Permissions 
+	 Required</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Before_You_Begin">Before You Begin</a>
+                </p>
+            </li>
+        </ul><span class="BoldItalic">Related pages:</span>
+        <ul style="list-style: square;" class="BulletListBody">
+            <li>
+                <p><a href="Eclipse_User_Management_Basics.htm">Eclipse 
+	 User Management Basics</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="Use_Lists.htm">Use Lists</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../Case_Setup/Configure_Users_and_Groups.htm">Configure 
+	 Users and Groups</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="../Case_Setup/Assign_Permissions.htm">Assign 
+	 Permissions</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="Monitor_User_Activity.htm">Monitor 
+	 User Activity</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Eclipse_Security_Model"></a>
+            <MadCap:keyword term="Eclipse Security Mode" />Eclipse Security Model</h2>
+        <p class="BodyText">The following figure introduces the basic components 
+ of the Eclipse security model. </p>
+        <p class="Image">
+            <img src="../../../Graphics/Admin_Graphics/SecurityModel_Web.png" alt="" border="0" class="Thumbnail_Popup" />
+        </p>
+        <h2><a name="Permissions_Required"></a>
+            <MadCap:keyword term="Permissions Required" />Permissions Required</h2>
+        <p class="BodyText">All members of the Super Admin group can manage Eclipse 
+ security. Others who have Case Administration permissions can also perform 
+ many of these tasks. </p>
+        <h2><a name="Before_You_Begin"></a>Before You Begin</h2>
+        <p class="BodyText">For greatest efficiency, address the following issues 
+ before defining security for your organization.</p>
+        <h3>Determine Administrators</h3>
+        <p class="BodyText">When Eclipse is first installed, an administrator is 
+ defined by the person who installs the product. This administrator is 
+ defined in the service layer, and is identified as the primary Eclipse 
+ system administrator. It is this administrator who will be responsible 
+ for all user and group activities until/unless he or she adds other users 
+ to the system administration group and create a case management group 
+ if appropriate for your site. Thus, identifying and adding other administrators 
+ is something to complete early in the process.</p>
+        <h3>Check License</h3>
+        <p class="BodyText">Ensure that your Eclipse license is sufficient for 
+ the number of users you want to add. If you have any questions <MadCap:annotation MadCap:createDate="2024-04-09T14:22:04.8000120-04:00" MadCap:creator="ddavidson" MadCap:initials="DD" MadCap:comment="CHECK LINKS" MadCap:editor="ddavidson" MadCap:editDate="2024-04-09T14:22:09.1206892-04:00">about</MadCap:annotation> the 
+ number of seats available, contact <a href="https://iprotech.com/resources/ipro-support/" target="_blank">IPRO Support</a>.</p>
+        <table cellspacing="0" style="mc-table-style: url('../../../Resources/Stylesheets/Note_Table.css');" class="TableStyle-Note_Table">
+            <col class="TableStyle-Note_Table-Column-Column1" />
+            <col class="TableStyle-Note_Table-Column-Column2" />
+            <tr class="TableStyle-Note_Table-Body-Body1">
+                <td class="TableStyle-Note_Table-BodyE-Column1-Body1">
+                    <p style="text-align: center;">
+                        <img src="../../../Graphics/Review_Note.png" alt="" style="border: none;" border="0" />
+                    </p>
+                </td>
+                <td class="TableStyle-Note_Table-BodyD-Column2-Body1">
+                    <p class="Note">Note: Starting with release 2015.2.0, 
+		 Named User Tracking is available for Eclipse. The “named user” 
+		 model allows product billing to be based on the number of users 
+		 active during each month, rather than on a maximum number of named 
+		 users. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText">Contact your <MadCap:variable name="Primary.IPRO" /> Sales Representative to learn the 
+ benefits of this capability or <MadCap:variable name="Primary.IPRO" /> Support for technical assistance.</p>
+        <h3>Plan Security Approach</h3>
+        <p>Complete the following steps to plan your security 
+ approach:</p>
+        <ol class="NumbListBody">
+            <li>
+                <p>Familiarize yourself with Eclipse security 
+ by reading <a href="Eclipse_User_Management_Basics.htm">Eclipse User Management 
+ Basics</a>.</p>
+            </li>
+            <li>
+                <p>Based on the options available, evaluate your 
+ cases, users, and Eclipse permissions and determine a security approach 
+ for your organization. </p>
+            </li>
+            <li>
+                <p>For each case, determine which user groups 
+ need to be added and needed permissions. Use templates to expedite the 
+ process. Once a basic approach is determined, add/remove users and groups 
+ at any time, as a normal part of Eclipse administration. </p>
+            </li>
+        </ol>
+    </body>
+</html>

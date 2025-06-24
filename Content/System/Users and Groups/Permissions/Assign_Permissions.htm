@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html style="mc-master-page: url('../../../Resources/MasterPages/Admin_MP.flmsp');" MadCap:conditions="Primary.Admin" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Assign Permissions</title>
+        <link href="../../../Resources/Stylesheets/ADDReview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Assign Permissions</h1>
+        <p class="BodyText">Administrators have the ability to  assign permissions to a group. These permissions then filter down to all users assigned to that group. Users cannot be assigned permissions directly, but rather inherit the permissions that have been set at the group level. </p>
+        <p class="BodyText">The sections in this topic describe the steps you can take to assign permissions to a new group, modify the permissions of an existing group, or override the permissions for a particular case. These procedures are completed in the System Manager. To learn how to create a new group or modify an existing group, see <MadCap:xref href="../Create New Groups.htm">Create New Groups</MadCap:xref> and/or <MadCap:xref href="../Edit a Group.htm">Edit a Group</MadCap:xref>, respectively.</p>
+        <p class="BodyText"> For a full list of permissions available in <MadCap:variable name="Primary.Name" />, see <MadCap:xref href="Permissions_List.htm">Permissions List</MadCap:xref>.</p>
+        <h3>Assign Permissions to a New Group</h3>
+        <p class="BodyText">Complete the following steps to assign permissions to a new group:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Create a new group. You have the option to create a new group from scratch,  from an existing group or from a security template. The way you create the new group will affect how permissions are assigned. For more information on each workflow, see <MadCap:xref href="../Create New Groups.htm">Create New Groups</MadCap:xref> or follow the links in the options listed below.</p>
+                <ul>
+                    <li>
+                        <p>
+                            <MadCap:xref href="../Copy of Create New Groups.htm#Create">Create A New Group From Scratch</MadCap:xref>:&#160;Select this option to assign all permissions manually. </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:xref href="../Copy of Create New Groups.htm#Create2">Create a New Group from an Existing Group</MadCap:xref>:  Select this option to use the permission set of an existing group  as a template for the group you're adding. All permissions assigned to the existing group will be applied to the new group. You can then tweak the permissions as needed to suit the new group. </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:xref href="../Copy of Create New Groups.htm#Create3">Create a New Group from a Security Template</MadCap:xref>: Select this option to choose a pre-existing security template with group permissions already configured. You can then tweak the permissions manually to suit the new group. </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>On the <b>Assign Users</b> step, select the users you would like to assign to the new group. Selected users are highlighted in blue. To assign all users to the group, click <b>Select All</b> in the top-right corner of the box. To search for individual users, type the name in the search bar. When all needed users have been selected, click <b>Continue</b>.</p>
+            </li>
+            <li>
+                <p>  After creating<b></b>your group via one of the options above, and assigning users to the new group<b>, </b>you will reach the<b> Set Permissions</b> step. If you have chosen to create a new group from an existing group or security template, permissions selections will be pre-populated. If you have chosen to create a new group from scratch, or would like to make changes to the pre-populated selections, expand the needed section (Case Management, Media and Data, Search and Review, Reports, or System), then click the check box beside each permission you would like to provide to or remove from the group. You can select all permissions in a given section by clicking <b>Select All</b> at the top right corner of the section. You can clear all permissions in a given section by clicking <b>Select All</b> again. In certain places, permissions can be selected from a drop-down menu. To learn more about the list of available permissions, see <MadCap:xref href="Permissions_List.htm">Permissions List</MadCap:xref>. When finished assigning all permissions, click <b>Continue</b>.</p>
+                <p>
+                    <img src="../../../Graphics/System_Graphics/Set_permissions_new_group.png" class="Thumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>On the <b>Assign Cases</b> step, select the cases that you would like to make accessible to the new group. Selected cases are highlighted in blue. To assign the group to all cases, click <b>Select All</b> in the top-right corner of the box. To search for specific cases,  type the name of the case in the search bar. When all needed cases have been selected, click <b>Save</b>.</p>
+            </li>
+        </ol>
+        <h3>Assign Permissions to an Existing Group</h3>
+        <p class="BodyText">Complete the following steps to modify the permissions of an existing group. For more information, see <MadCap:xref href="../Edit a Group.htm">Edit a Group.</MadCap:xref></p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Click on the name of the group you would like to edit. The group profile opens on the right side of the screen.</p>
+            </li>
+            <li>
+                <p>Click the <b>Edit</b> icon <img src="../../../Resources/Images/Icons/Edit_Icon.png" />. You are now able to modify the users, permissions, and cases for the selected group.</p>
+            </li>
+            <li>
+                <p>On the <b>Permissions</b> tab, expand the needed section (Case Management, Media and Data, Search and Review, Reports, or System), then click the check box beside each permission you would like to provide the group.  You can also remove a permission from the group by clicking on a check box that has already been selected. To learn more about the list of available permissions, see <MadCap:xref href="Permissions_List.htm">Permissions List</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>Click <b>Save</b>.</p>
+            </li>
+            <li>
+                <p>Repeat these steps for all groups needing to be edited.</p>
+            </li>
+            <li>
+                <p>Inform users of changes and explain their new responsibilities.</p>
+            </li>
+        </ol>
+        <h3>Override Permissions on a Case</h3>
+        <p>When a group is assigned to a case, that case "inherits" the group's permissions. Therefore, if a group is assigned permissions A, B, and C, the users in that group will only be allowed to perform actions A, B, and C when working in that case. However, an option exists that allows you to override the permissions for a particular case. For example, let's say a group with permissions A, B, and C have been assigned to four different cases. If you would like that group to have a different set of permissions for Case #3 (e.g., permissions B, C, and E), you can override that case's permissions, then set new permissions to fit the needs of the case in question.</p>
+        <p>For instructions on how to override permissions on a case, proceed through the following steps:</p>
+        <ol class="NumbListBody">
+            <li>Click the <b>Settings</b> icon <img src="../../../Resources/Images/Icons/Settings_Icon.png" /> in the top-right corner of the screen. The Settings icon is a global button that displays in every module of the <MadCap:variable name="Primary.Name First" /> platform.  </li>
+            <li MadCap:conditions="System_Nav.Groups">
+                <p>The System Manager opens. In the left pane of the System Manager, click <b>Groups</b>.</p>
+                <p>
+                    <img src="../../../Graphics/System_Graphics/Left_Nav_Groups.png" class="Thumbnail" />
+                </p>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <p>Click on the name of the group whose case permissions you would like to edit. The group profile opens on the right side of the screen.</p>
+            </li>
+            <li>
+                <p>Click on the <b>Cases</b> tab, then locate the cases whose permissions you would like to override. Each case in the list will either display "Permissions Inherited" or "Permissions Overridden." </p>
+                <ul class="BulletListBody">
+                    <li>
+                        <p>"Permissions Inherited" indicates that the permissions set at the group level will apply to that particular case.</p>
+                    </li>
+                    <li>
+                        <p> "Permissions Overridden" indicates that the permissions set at the group level have been altered for that particular case.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>To change the permissions for a specific case, click <b>Override Permissions</b>.</p>
+            </li>
+            <li>
+                <p>A window pops up with the full list of permissions available in <MadCap:variable name="Primary.Name" />.  Expand the needed sections (Case Management, Media and Data, Search and Review, Reports, or System), then click the check box beside each permission you would like to provide the group for that case.  You can also remove a permission  by clicking on a check box that has already been selected. To learn more about the list of available permissions, see <MadCap:xref href="Permissions_List.htm">Permissions List</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>When finished applying permissions, click <b>Save</b>. The case  displays "Permissions Overridden" in the System Manager to indicate that changes have been made to the permissions list.</p>
+            </li>
+            <li>
+                <p>Repeat these steps for all cases with permissions that need to be overridden.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="BoldItalic">Related Topics</span>
+        </p>
+        <p>
+            <MadCap:xref href="Permissions_List.htm">Permissions List</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="User_Group_Comparison.htm"> Permission Comparison: Case Admin vs. Reviewers</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Create New Groups.htm">Create New Groups</MadCap:xref>
+        </p>
+        <p>
+            <MadCap:xref href="../Edit a Group.htm">Edit a Group</MadCap:xref>
+        </p>
+    </body>
+</html>

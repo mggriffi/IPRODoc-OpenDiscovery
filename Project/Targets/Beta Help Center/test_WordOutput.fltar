@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Word-based Output"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterPageLayout="/Content/Resources/PageLayouts/Word_Output_Layout_Single_Topic.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/ADDReview.css"
+  MasterToc="/Project/TOCs/Word_TOC.fltoc"
+  AutoSizeCaptureCaptions="true"
+  PatchHeadingLevels="true"
+  EmbedImages="true"
+  ConditionTagExpression="exclude[Primary.Blocked]">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    OutputFormat="doc" />
+</CatapultTarget>
